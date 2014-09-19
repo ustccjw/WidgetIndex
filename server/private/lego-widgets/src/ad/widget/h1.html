@@ -1,0 +1,28 @@
+<!-- target:AD_ad_widget_h1 -->
+<div class="ad-widget ad-widget-h1">
+    {{#title}}
+    <h2>
+        <a target="_blank" class="ec-header-title" data-is-main-url="true" href="{{{rcv_url}}}" title2="标题">{{{title}}}</a>{{#display_official_site_icon}}<a class="ec-official-site" target="_blank" href="http://guanwang.baidu.com/vcard/officialsite">官网</a>{{/display_official_site_icon}}
+    </h2>
+    {{/title}}
+    <div class="ec-cont">
+        {{#logo}}<a class="ec-logo" target="_blank" href="{{{logo_rcv_url}}}" title2="logo"><img src="{{logo}}" class="ec-logo-img"></a>{{/logo}}
+        <div class="ec-desc" id="{{#_id}}description{{/_id}}">
+            {{^description_rcv_url}}{{{description}}}{{/description_rcv_url}}
+
+            {{#description_rcv_url}}<a href="{{{description_rcv_url}}}" target="_blank" title2="描述">{{{description}}}</a>{{/description_rcv_url}}
+
+            {{#image_links}}
+            <div id="{{#_id}}head-img-group{{/_id}}" class="ec-img-group"> {{#options}} <a target="_blank" href="{{{rcv_url}}}" title2="按钮{{_index}}" class="ec-img-group-a"><img src="{{image_url}}"></a> {{/options}} </div>
+            {{/image_links}}
+
+            {{#site}}
+            <div class="ec-site">{{{site}}} {{last_update_date}}{{#ps_select}}
+                <div id="tools_{{#_id}}ec{{/_id}}" class="c-tools" data-tools="{{data}}">
+                    <a class="c-tip-icon"><i class="c-icon c-icon-triangle-down-g"></i></a>
+                </div>
+                {{/ps_select}}{{#ps_vsign}}<span id="{{#_id}}c-trust{{/_id}}" class="c-trust-fake"></span>{{/ps_vsign}}{{#ps_msign}}{{#ps_vsign}}<span class="ec-line"></span>{{/ps_vsign}}<a id="{{#_id}}ec-money{{/_id}}"  class="ec-money" target="_blank" href="{{{money_rcv_url}}}" title2="钱标链接"></a><div id="{{#_id}}ec-money-con{{/_id}}"class="ec-money-con"><h4>现金<em>{{a_price}}元</em>至<em>{{b_price}}元</em>红包！</h4><div class="ec-money-logo"></div><p>名额有限，先到先得<a target="_blank" title2="抢红包" href="{{{a_rcv_url}}}">&nbsp;抢红包</a><br/>活动截至：{{year}}年{{month}}月{{day}}日<br/><a target="_blank" title2="红包广场" href="{{{b_rcv_url}}}">更多红包请来红包广场&gt;&gt;</a></p><div class="ec-money-arrow" style="left: 10px;"><em></em><ins></ins></div></div>{{/ps_msign}} - <a href="http://clkmk.baidu.com/clkmk-rcv/lnk?id=54&x=7cfd628d1b3553c4012e3334d6aa9a9620e407637355a14cf73d2f920f7ce6a4661fa0d2e6c2bdc8" target="_blank">品牌推广</a></div>
+            {{/site}}
+        </div>
+    </div>
+</div>

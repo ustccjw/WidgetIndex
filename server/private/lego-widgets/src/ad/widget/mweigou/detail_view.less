@@ -1,0 +1,184 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/weigou/detail_view.less ~ 2013/04/02 17:57:02
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $
+ * @description
+ * detail_view样式文件
+ **/
+
+@orange: #fb4f03;
+@black: #262626;
+@white: #fff;
+@gray: #f5f5f5;
+
+.background-size(@width:100%, @height:100%) {
+    background-size: @width @height;
+    -webkit-background-size: @width @height;
+}
+
+.ec-sg-weigou-detail {
+    padding: 6px 10px 0 10px;
+    font-size: 13px;
+    position: relative;
+    color: @black;
+    background: @white;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+.ec-sg-weigou-detail-my-orders {
+    height: 41px;
+    line-height: 41px;
+    padding: 0 5px 0 3px;
+    background: #eee;
+    font-size: 14px;
+    text-align: right;
+}
+
+.ec-sg-weigou-detail-image {
+    @imgSize: 91px;
+
+    float: left;
+    width: @imgSize;
+    height: @imgSize;
+    padding: 1px;
+    border: 1px solid #ededed;
+
+    img {
+        width: @imgSize;
+        height: @imgSize;
+    }
+}
+
+.ec-sg-weigou-detail-price {
+    float: left;
+    height: 95px;
+    padding: 0 10px 0 15px;
+    position: relative;
+
+    table {
+        height: 65px;
+    }
+
+    strong {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        color: @orange;
+    }
+
+    del {
+        display: block;
+        margin-top: 6px;
+        color: #999;
+    }
+
+    a {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        width: 103px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #b71311;
+        text-align: center;
+        font-size: 14px;
+        background: #df413f;
+        color: @white!important;
+    }
+}
+
+.ec-sg-weigou-detail-title {
+    height: 30px;
+    margin: 10px 0 5px;
+    padding-left: 5px;
+    line-height: 30px;
+    background: @gray;
+}
+
+.ec-sg-weigou-detail-info {
+    line-height: 22px;
+    overflow: hidden;
+
+    dt {
+        float: left;
+    }
+}
+
+.ec-sg-weigou-detail-blank {
+    height: 4px;
+}
+
+.ec-sg-weigou-detail-info-key {
+    width: 65px;
+    height: 22px;
+    margin-left: 5px;
+    vertical-align: top;
+    overflow: hidden;
+    text-align: justify;
+}
+
+/*
+ * 在文本下面加一行隐藏内容，使text-align:justify对单行生效
+ */
+.ec-sg-weigou-detail-info-key:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/*
+ * 允许一行或两行，超过两行则省略并加...
+ * 仅对weibkit内核浏览器有效，其他浏览器只隐藏，不加...
+ * 已知问题是显示为两行时，行高可能是40px，而不是44px，第二行下面少掉了4px
+ * 解决办法是用js遍历修改成44px。更好的方案有待发现
+ */
+.ec-sg-weigou-detail-info-value {
+    max-height: 66px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.ec-sg-weigou-detail-more {
+    height: 37px;
+    margin: 0 -10px;
+    line-height: 37px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: @black!important;
+    background: @gray;
+    text-align: center;
+    overflow: hidden;
+
+    span {
+        display: block;
+        margin: 0 auto;
+        width: 140px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAYAAABCm8wlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNpsULEKgzAUvCS2IO1QUBeH4lZQpIPgIK7tP3d30qWLS9eCi0J16FJM7ItYEelBeMm7y91LWNd1aNv2WpblLQiCI4AnJpimCVZV1flO+DUZY2IYBiWEQBiG4EtSg0hJS4vGM0/T1MAK5NJTEVTBsyyTSZJs1yKlVE8uLmuaBnmezwlrIZdSgmI2/0jHcfaccKCYzzTgTNJFo67rNy+K4rUYbibpmXKMcF33tLS1bVv8SM/zwOmjHr7vX3QjiqIdDa30Po5jWJaFrwADAIOxWqXy58CZAAAAAElFTkSuQmCC) right no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

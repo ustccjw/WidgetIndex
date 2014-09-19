@@ -1,0 +1,26 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id$
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/standard/base.less ~ 2013/10/15 09:48:20
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision$
+ * @description
+ *
+ **/
+#canvas {
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  width: 520px;
+  *width: 518px;
+  padding: 8px 9px 14px 7px;
+  margin-bottom: 20px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

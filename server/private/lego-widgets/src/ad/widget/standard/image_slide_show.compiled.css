@@ -1,0 +1,95 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/standard/image_slide_show.less ~ 2013/10/28 10:11:05
+ * @author liyubei@baidu.com (liyubei)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * image_slide_show样式文件
+ **/
+.ad-widget-standard-image-slide-show .ec-main {
+  position: relative;
+  width: 254px;
+}
+.ad-widget-standard-image-slide-show .ec-image img {
+  width: 254px;
+  height: 143px;
+  display: block;
+  border: none;
+}
+.ad-widget-standard-image-slide-show .ec-navs {
+  position: absolute;
+  bottom: 0;
+  *bottom: -1px;
+  height: 26px;
+  width: 254px;
+  text-align: center;
+  background: #000;
+  filter: alpha(opacity=50);
+  background: rgba(0, 0, 0, 0.5);
+}
+.ad-widget-standard-image-slide-show ul {
+  margin: 10px 0;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+  *display: inline;
+  *zoom: 1;
+}
+.ad-widget-standard-image-slide-show li {
+  width: 6px;
+  height: 6px;
+  line-height: 6px;
+  font-size: 0;
+  background: #b8b8b8;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.ad-widget-standard-image-slide-show .ec-last {
+  margin-right: 0;
+}
+.ad-widget-standard-image-slide-show .ec-active {
+  background: #2c99ff;
+}
+.ad-widget-standard-image-slide-show .ec-arrow {
+  position: absolute;
+  width: 22px;
+  height: 36px;
+  top: 48px;
+  background: #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+.ad-widget-standard-image-slide-show .ec-arrow i {
+  width: 9px;
+  height: 17px;
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  background: url("//bs.baidu.com/lego-mat/arrow-6c76eb48.png") no-repeat;
+  _background-image: url("//bs.baidu.com/lego-mat/arrow-8-b2ed2856.png");
+}
+.ad-widget-standard-image-slide-show .ec-hover .ec-arrow {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.ad-widget-standard-image-slide-show .ec-left-arrow {
+  left: 0;
+}
+.ad-widget-standard-image-slide-show .ec-right-arrow {
+  right: 0;
+}
+.ad-widget-standard-image-slide-show .ec-right-arrow i {
+  background-position: -9px 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

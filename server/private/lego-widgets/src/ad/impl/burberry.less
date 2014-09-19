@@ -1,0 +1,218 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/burberry.less ~ 2012/08/27 14:30:04
+ * @author wangdawei04@baidu.com (wangdawei) liyubei@baidu.com (leeight)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * burberry样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial,sans-serif;
+
+    background-color: #F3F0E9;
+    margin-bottom:20px;
+
+    width: 516px;
+    padding:10px;
+
+    .ad-block-0 {
+        .gain-bfc();
+    }
+
+    .ad-block-0-0 {
+        float: left;
+    }
+    .ad-block-0-1 {
+        .gain-bfc();
+        width: 282px;
+        padding-left: 14px;
+        *padding-left: 11px;
+    }
+
+
+    .ad-widget-small-head {
+        h2 {
+            a {
+                color: #0000cc;
+                font-weight: bold;
+                font-family: "arial";
+                em {
+                    color: #CC0000;
+                    font-style: normal;
+                }
+            }
+        }
+        .ec-image-group {
+            a {
+                border:1px solid #636363;
+            }
+        }
+    }
+
+    .ad-widget-button-group {
+        background-color: transparent;
+        td {
+            border-right: solid 5px #F3F0E9;
+            a {
+                color: #564F32;
+                text-decoration:underline;
+                border:solid 1px #D1C8B1;
+                height:20px;
+                line-height:20px;
+                display:block;
+                background-color:#fff;
+            }
+        }
+    }
+
+    .ad-widget-tab-container {
+        border: solid 1px #D1C8B1;
+        margin-top: 10px;
+    }
+
+    .ec-tab-head {
+        margin: 0px;
+        padding: 0px;
+        background: #ECE9E1;
+        height: 26px;
+        .ec-current-tab {
+            a {
+                background: #ECE9E1;
+                color: #000;
+                font-size: 9pt;
+                border: none;
+                height: 26px;
+                line-height: 26px;
+                padding: 0 0 0 14px;
+                text-align: left;
+            }
+        }
+    }
+
+    .ec-tab-body {
+        border: none;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .ad-widget-small-weibo {
+        position: relative;
+        padding-top: 0px;
+        *zoom: 1;
+        .ec-weibo-head {
+            height: 22px;
+        }
+        .ec-name {
+            color: #0000cc;
+            font-weight: 900;
+            font-size: 14px;
+            padding-right: 20px;
+        }
+        .ec-follow {
+            float: right;
+            width: 66px;
+            height: 22px;
+        }
+        .ec-text {
+            color: #008000;
+            padding: 0px 10px;
+            margin-top: 2px;
+            width: auto;
+        }
+        .ec-seprate {
+            padding: 0px 10px;
+            width: auto;
+        }
+        .ec-context {
+            height: 56px;
+            color:#000000;
+        }
+        .ec-weibo-logo {
+            margin-right: 15px;
+        }
+        .ec-foot {
+            bottom: -5px;
+            left: 70px;
+            position: absolute;
+            width: 430px;
+            height: 20px;
+            background-color: #fff;
+        }
+        .ec-datetime {
+            color: #008000;
+        }
+        .ec-rightbtn {
+            div, a {
+                color:#008000;
+            }
+        }
+    }
+}
+
+.ec-burberry-fwc-1 {
+    .ad-widget-float-window-container {
+        left: 0px;
+        top: 0px;
+    }
+    .ad-widget-video {
+        position: absolute;
+        left: 35px;
+        top: 136px;
+        width: 400px;
+        height: 250px;
+        object{
+            width: 400px;
+            height: 250px;
+        }
+        embed {
+            width: 400px;
+            height: 250px;
+        }
+    }
+    .ad-widget-button-group {
+        background: transparent;
+        position: absolute;
+        left: 461px;
+        top: 252px;
+        width: 228px;
+        td{
+            border: medium none;
+            a {
+                background: none repeat scroll 0 0 #1B1B19;
+                border: 1px solid #A7CADC;
+                color: #090909;
+                font-weight: bold;
+                display: block;
+                font-size: 12px;
+                margin: 4px;
+                padding: 5px 25px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

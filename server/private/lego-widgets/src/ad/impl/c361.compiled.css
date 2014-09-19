@@ -1,0 +1,145 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: c361.less 150523 2012-10-30 10: 06: 05Z  DestinyXie$ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/c361.less ~ 2013/04/18 15: 18: 36
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * c361样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  background-color: #eff4fc;
+  color: #000;
+  width: 520px;
+  height: 370px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#canvas .ad-layout-block-0 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 {
+  float: left;
+  width: 280px;
+  padding-left: 15px;
+}
+#canvas .ad-widget-small-head {
+  font-size: 12px;
+}
+#canvas .ad-widget-small-head h2 a {
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head .ec-description {
+  height: 73px;
+}
+#canvas .ec-image-group a {
+  border-color: #666;
+  margin-right: 11px;
+}
+#canvas .ec-image-group .ec-last {
+  margin-right: 0;
+}
+#canvas .ec-tab-head {
+  background: none;
+  margin-bottom: 0;
+  height: 27px;
+  border-bottom: 1px solid #c8daf0;
+  border-left: 1px solid #c8daf0;
+}
+#canvas .ec-tab-head li {
+  width: 122px;
+  height: 28px;
+  line-height: 28px;
+  margin-left: 0;
+}
+#canvas .ec-tab-head li a {
+  border-left: 0 none;
+  height: 26px;
+  line-height: 26px;
+  padding: 0;
+  _padding-top: 5px;
+  _height: 21px;
+  background-color: #f4f8fc;
+}
+#canvas .ec-tab-head li a img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+  border: 0 none;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+#canvas .ec-tab-body {
+  height: 95px;
+  border: 1px solid #c8daf0;
+  border-top: 0 none;
+  padding: 0 15px 9px;
+  background: #fff;
+}
+#canvas .ec-tab-body .ec-weibo-head .ec-name {
+  color: #55d;
+}
+#canvas .ad-widget-small-weibo {
+  font-size: 12px;
+}
+#canvas .ad-widget-small-weibo .ec-name {
+  padding-right: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-weibo .ec-text {
+  padding: 0 10px;
+}
+#canvas .ad-widget-small-weibo .ec-follow {
+  float: right;
+  width: 66px;
+  height: 22px;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn a {
+  color: #008000;
+  font-size: 12px;
+}
+#canvas .ad-widget-qq-weibo {
+  font-size: 12px;
+  padding-top: 13px;
+}
+#canvas .ad-widget-qq-weibo fieldset {
+  display: none;
+}
+#canvas .ad-widget-qq-weibo .ec-weibo-head,
+#canvas .ad-widget-qq-weibo .ec-context {
+  padding-left: 0;
+  padding-right: 0;
+}
+#canvas .ad-widget-button-group {
+  background: transparent;
+  padding-top: 10px;
+  font-size: 12px;
+}
+#canvas .ad-widget-button-group td {
+  padding-right: 10px;
+  border-right: 0 none;
+}
+#canvas .ad-widget-button-group td a {
+  color: #00c;
+  text-decoration: underline;
+  display: block;
+  padding: 3px 0;
+  background: #fff;
+  border: 1px solid #c8daf0;
+}
+#canvas .ad-widget-button-group .ec-last {
+  padding-right: 0;
+}

@@ -1,0 +1,60 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/video/case10002.less ~ 2014/05/28 11:19:11
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case10002样式文件
+ **/
+#canvas {
+  width: 984px;
+  height: 375px;
+  margin: 0 auto;
+  position: relative;
+}
+#canvas .ad-widget-image {
+  position: absolute;
+}
+#canvas .ad-widget-image img {
+  width: 984px;
+  height: 375px;
+}
+#canvas .ad-widget-player-look-image {
+  width: 480px;
+  height: 270px;
+  position: absolute;
+  top: 75px;
+  left: 252px;
+}
+#canvas .ad-widget-baidu-share-v2 {
+  position: absolute;
+  top: 345px;
+  left: 252px;
+  width: 375px;
+  height: 28px;
+  background: #fff;
+  opacity: .9;
+  padding-left: 5px;
+}
+#canvas .ad-widget-link-without-rcv {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+  top: 345px;
+  left: 632px;
+  background: #fff;
+  opacity: .9;
+  text-align: right;
+}
+#canvas .ad-widget-link-without-rcv a {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  padding-right: 5px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

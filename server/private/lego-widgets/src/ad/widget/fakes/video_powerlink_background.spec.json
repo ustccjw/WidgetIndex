@@ -1,0 +1,31 @@
+{
+    "contents": ["ad.widget.fakes.VideoPowerlinkBackground"],
+    "userPrefs": [
+        {
+            "name": "url",
+            "displayName": "背景图片",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "tip": "",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "maxSize": 300,
+                "ext": "jpg",
+                "width": 1600,
+                "height": 375
+            }
+        },
+        {
+            "name": "color",
+            "displayName": "背景颜色",
+            "defaultValue": "transparent",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "tip": "",
+            "multiline": false
+        }
+    ]
+}

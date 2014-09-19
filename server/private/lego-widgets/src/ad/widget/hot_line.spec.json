@@ -1,0 +1,96 @@
+{
+    "contents": ["ad.widget.HotLine"],
+    "userPrefs": [
+        {
+            "name": "pro_img_url",
+            "displayName": "产品图片",
+            "defaultValue": "",
+            "datatype":"UPLOAD",
+            "rules":{
+                "required":true
+            },
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "width":180,
+                "height":100,
+                "maxSize":15,
+                "ext":"jpg,jpeg"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "pro_rcv_url",
+            "displayName": "图片链接url",
+            "defaultValue": "http://www.baidu.com",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL",
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "hot_line",
+            "displayName": "热线电话",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "text",
+                    "displayName": "热线电话提示信息",
+                    "defaultValue": "HELLO WORLD",
+                    "datatype": "STRING",
+                    "rules": {
+                        "minTextByteLength": 8,
+                        "maxTextByteLength": 28,
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "text_rcv_url",
+                    "displayName": "提示信息链接url",
+                    "defaultValue": "http://www.baidu.com",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "phone_number",
+                    "displayName": "电话号码",
+                    "defaultValue": "预订电话:123",
+                    "datatype": "STRING",
+                    "rules": {
+                        "minTextByteLength": 8,
+                        "maxTextByteLength": 28,
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "phone_number_rcv_url",
+                    "displayName": "电话号码链接url",
+                    "defaultValue": "http://www.baidu.com",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                }
+            ],
+            "rules": {}
+        }
+    ]
+}

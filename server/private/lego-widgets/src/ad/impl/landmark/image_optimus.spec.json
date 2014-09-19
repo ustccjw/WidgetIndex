@@ -1,0 +1,42 @@
+[
+    {
+        "name": "image",
+        "displayName": "擎天柱",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "image_url",
+                "displayName": "图片",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 175,
+                    "height": 300,
+                    "maxSize": 50,
+                    "ext": "jpg,gif,png"
+                },
+                "tip": "http://ecma.bdimg.com/adtest/2d0f617c9e0fd7bc80fd795b6be7d30a.png",
+                "multiline": false
+            },
+            {
+                "name": "image_rcv_url",
+                "displayName": "跳转URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    }
+]

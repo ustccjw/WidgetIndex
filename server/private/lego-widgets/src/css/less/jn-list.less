@@ -1,0 +1,178 @@
+@import-once "jn-basic.less";
+
+@list-lightest-blue: #F1F6FC;
+@list-lighter-blue: #E7F1FB;
+@list-light-blue: #DBEBFA;
+@list-light-gray: #D4D4D4;
+
+.jn-summary-wrapper {
+    border: 1px solid @light-blue;
+    border-bottom: none;
+
+    .jn-row {
+        padding: 8px 0 8px 10px;
+    }
+
+    .ui-form {
+        border-bottom: 1px solid @list-lighter-blue;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.jn-summary {
+    padding: 10px;
+    border-bottom: 1px solid @list-light-blue;
+    background-color: @list-lightest-blue;
+
+    .jn-breadcrumb-row {
+        .clearfix();
+        padding: 0;
+
+        h2,
+        .ui-breadcrumb,
+        .jn-group {
+            float: left;
+            margin: 0 2px;
+            .ie & {
+                line-height: 1.231; /* magic number 用来修复 IE 下纯中文上浮的问题 */
+            }
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .jn-group {
+            margin-left: 15px;
+            a, span {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    /* TODO: 寻找更好的方案：IE6/7 下 <table> 的 margin-bottom 加到 parent 上去了... */
+    overflow: hidden; //for IE7
+    .jn-summary-table {
+        margin-top: 10px;
+        _margin-bottom: 0;
+        _border-bottom: 10px solid @list-lightest-blue;
+    }
+}
+
+/**
+ * 摘要信息表格
+ **/
+.jn-summary-table {
+    .jn-key-value-table();
+    clear: both;
+    margin-top: 5px;
+    line-height: 1.5;
+
+    th {
+        padding: 5px 0 0;
+        white-space: nowrap;
+        color: @light-gray;
+    }
+
+    td {
+        padding: 5px 15px 0 0;
+        white-space: nowrap;
+        a,
+        span,
+        em,
+        strong {
+            .jn-form-text();
+        }
+    }
+
+}
+
+.jn-tab-bar {
+    .clearfix();
+    border-top: 1px solid @list-lightest-blue;
+    border-bottom: 1px solid @list-light-blue;
+    padding: 3px 10px 0;
+    background-color: @list-lighter-blue;
+
+    .ui-tab {
+        float: left;
+        margin-top: 4px;
+    }
+
+    .ui-mcal {
+        float: right;
+        margin-top: 1px;
+    }
+}
+
+.jn-summary-chart {
+    .clearfix();
+    border: 1px solid @list-lighter-blue;
+    border-style: none none solid;
+}
+
+.jn-pie-chart {
+    overflow: hidden;
+    *zoom: 1;
+    border-top: 1px solid @list-lighter-blue;
+
+    .ui-table,
+    .ui-flash {
+        float: left;
+    }
+
+    .ui-table {
+        margin: 20px 55px 20px 40px;
+    }
+}
+
+.jn-list-operation {
+    .clearfix();
+
+    border-top: 1px solid white;
+    padding: 3px 0 4px 10px;
+    background-color: @list-lightest-blue;
+
+    .ui-select,
+    .ui-button{
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .jn-group {
+        _overflow: hidden;
+        float: left;
+        height: 22px;
+        margin-right: -5px;
+        margin-left: 5px;
+        border-left: 1px solid @light-gray;
+        padding-left: 5px;
+
+        &:first-child, &-first {
+            margin-left: 0;
+            border: none;
+            padding: 0;
+        }
+    }
+
+    .floatright {
+        float: right;
+        margin-right: 10px;
+    }
+
+    a,
+    span,
+    em,
+    strong {
+        display: block;
+        height: 22px;
+        line-height: 22px;
+    }
+}
+
+.list-table-foot {
+    padding-top: 2px;
+}

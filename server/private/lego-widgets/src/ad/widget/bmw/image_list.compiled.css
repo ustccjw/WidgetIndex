@@ -1,0 +1,115 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/bmw/image_list.less ~ 2014/05/15 10:43:53
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * image_list样式文件
+ **/
+.ad-widget-bmw-image-list {
+  font: 12px/1.5 arial, sans-serif;
+  width: 536px;
+  height: 55px;
+}
+.ad-widget-bmw-image-list img {
+  border: none;
+}
+.ad-widget-bmw-image-list .ec-image {
+  float: left;
+  height: 55px;
+  position: relative;
+  background-position: -21px 0;
+  cursor: pointer;
+}
+.ad-widget-bmw-image-list .ec-image a {
+  display: block;
+  width: 0 !important;
+  height: 55px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  text-decoration: none;
+  -webkit-transition: left 320ms, width 320ms;
+  -moz-transition: left 320ms, width 320ms;
+  -ms-transition: left 320ms, width 320ms;
+  -o-transition: left 320ms, width 320ms;
+  transition: left 320ms, width 320ms;
+}
+.ad-widget-bmw-image-list .ec-image img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -21px;
+  -webkit-transition: left 320ms;
+  -moz-transition: left 320ms;
+  -ms-transition: left 320ms;
+  -o-transition: left 320ms;
+  transition: left 320ms;
+}
+.ad-widget-bmw-image-list .ec-image .ec-bg {
+  display: none;
+  height: 51px;
+  border: 2px solid #378bff;
+}
+.ad-widget-bmw-image-list .ec-image .ec-text {
+  left: -2px;
+}
+.ad-widget-bmw-image-list .ec-hover {
+  z-index: 9;
+}
+.ad-widget-bmw-image-list .ec-hover a {
+  width: 91px !important;
+  height: 51px;
+  border: 2px solid #378bff;
+  z-index: 2;
+  left: -21px;
+}
+.ad-widget-bmw-image-list .ec-hover img {
+  margin-top: -2px;
+  margin-left: -2px;
+  left: 0;
+}
+.ad-widget-bmw-image-list .ec-hover .ec-text {
+  top: 35px;
+}
+.ad-widget-bmw-image-list .ec-hover.ec-first a {
+  left: 0;
+}
+.ad-widget-bmw-image-list .ec-hover.ec-last a {
+  left: -42px;
+}
+.ad-widget-bmw-image-list .ec-active .ec-bg {
+  display: block;
+}
+.ad-widget-bmw-image-list .ec-text {
+  width: 95px;
+  height: 20px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+.ad-widget-bmw-image-list .ec-opacity-bg {
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ad-widget-bmw-image-list span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

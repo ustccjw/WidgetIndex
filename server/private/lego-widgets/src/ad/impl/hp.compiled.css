@@ -1,0 +1,98 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/hp.less ~ 2012/09/06 10:46:32
+ * @author wangdawei04@baidu.com (wangdawei)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * hp样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 539px;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-h1 h2 a {
+  color: #1818D3;
+}
+#canvas .ec-tabcon-0-0 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tabcon-0-0 .ad-widget-image-normal a {
+  border: none;
+}
+#canvas .ec-tabcon-0-0 .ec-tabcon-0-0-0 {
+  float: left;
+}
+#canvas .ec-tabcon-0-0 .ec-tabcon-0-0-0 .ad-widget-image-normal {
+  width: 180px;
+}
+#canvas .ec-tabcon-0-0 .ec-tabcon-0-0-1 {
+  float: left;
+  margin-left: 15px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tabcon-0-0 .ec-tabcon-0-0-1 .ad-widget-image-normal {
+  width: 185px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head li {
+  margin-left: 9px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head li a {
+  background-color: #E6EBFF;
+  border-bottom: 1px solid #D0DCFB;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-current-tab a {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#canvas .ad-widget-tab-container .ad-widget-image-normal a {
+  width: auto;
+  height: auto;
+}
+#canvas .ad-widget-tab-container .ec-tabcon-0-0 .ec-tabcon {
+  display: block;
+}
+#canvas .ad-widget-tab-container .ec-tabcon-0-0-0 .ad-widget-image-normal a {
+  margin: 10px 15px 15px 0px;
+}
+#canvas .ad-widget-tab-container .ec-tabcon-0-0-0 .ad-widget-image-normal img {
+  width: 180px;
+  height: 110px;
+}
+#canvas .ad-widget-tab-container .ec-tabcon-0-0-1 {
+  margin-top: 10px;
+}
+#canvas .ad-widget-tab-container .ec-tabcon-0-0-1 .ad-widget-image-normal img {
+  width: 185px;
+  height: 40px;
+}
+#canvas .ad-widget-tab-container .ec-tabcon-0-0-1 .ad-widget-section {
+  margin-top: 10px;
+}
+#canvas .ad-widget-tab-container .ec-brand-pic img {
+  width: 180px;
+  height: 110px;
+}
+#canvas .ad-widget-tab-container .ad-widget-tab-cont {
+  margin-top: 15px;
+  height: 130px;
+}
+#canvas .ad-widget-tab-container .ad-widget-tab-cont .ec-brand-pic {
+  padding-left: 0px;
+}
+#canvas .ad-widget-tab-container .ad-widget-tab-cont .ec-brand-intro {
+  height: auto;
+}
+#canvas .ad-widget-table {
+  margin-top: 0px;
+  width: auto;
+  font-family: "宋体";
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

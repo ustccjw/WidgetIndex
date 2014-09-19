@@ -1,0 +1,108 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/advanced/case1100.less ~ 2013/11/11 14:13:31
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 11222 $
+ * @description
+ * case1100样式文件
+ **/
+#canvas {
+  margin-bottom: 20px;
+  width: 520px;
+  padding: 10px;
+  background-color: #eff4fc;
+}
+#canvas .ad-block-0 {
+  *zoom: 1;
+}
+#canvas .ad-block-0:before,
+#canvas .ad-block-0:after {
+  display: table;
+  content: "";
+}
+#canvas .ad-block-0:after {
+  clear: both;
+}
+#canvas .ad-block-0-0,
+#canvas .ad-block-0-1 {
+  float: left;
+}
+#canvas .ad-block-0-0 {
+  margin-right: 10px;
+}
+#canvas .ad-block-0-1 {
+  width: 288px;
+}
+#canvas .ad-widget-video {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-widget-small-head {
+  padding-bottom: 2px;
+}
+#canvas .ad-widget-small-head h2 {
+  padding-bottom: 0;
+}
+#canvas .ad-widget-small-head h2 a {
+  font-weight: bold;
+  color: #00c;
+}
+#canvas .ad-widget-section li {
+  padding-left: 16px;
+  background: url(//bs.baidu.com/adtest/677f6dd6cb1d4e7a6713cdcfdde5c037.png) 0 center no-repeat;
+  margin-bottom: 10px;
+}
+#canvas .ad-widget-section .ec-section-li-3 {
+  margin-bottom: 0;
+}
+#canvas .ec-tab-head {
+  margin-top: 10px;
+}
+#canvas .ec-tab-head li a,
+#canvas .ec-tab-head li a:visited {
+  color: #00c;
+  background-color: #e4ebfa;
+  text-decoration: underline;
+}
+#canvas .ec-tab-head .ec-current-tab a,
+#canvas .ec-tab-head .ec-current-tab a:visited {
+  background-color: #f1f5fc;
+  text-decoration: none;
+  color: #000;
+}
+#canvas .ec-brand-pic {
+  padding-left: 0;
+}
+#canvas .ec-td-border .ec-brand-intro {
+  padding-left: 8px;
+}
+#canvas .ec-brand-intro h1 {
+  margin-bottom: 2px;
+  height: auto;
+}
+#canvas .ec-td-border {
+  width: 166px;
+}
+#canvas .ad-widget-button-list {
+  padding-top: 10px;
+}
+#canvas .ad-widget-button-list td {
+  padding-right: 8px;
+}
+#canvas .ad-widget-button-list .ec-link-wrapper {
+  border: 1px solid #c8daf0;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-list .ec-link-wrapper a {
+  color: #00c;
+  text-decoration: underline;
+}
+#canvas .ad-widget-button-list .ec-last {
+  padding-right: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

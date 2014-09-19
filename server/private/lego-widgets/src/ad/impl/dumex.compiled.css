@@ -1,0 +1,108 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: dumex.less 9923 2012-08-02 10:25:19Z wangdawei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dumex.less ~ 2012/08/02 11:51:39
+ * @author wangdawei
+ * @version $Revision: 9923 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 524px;
+  background: #F6F0E6;
+  margin-bottom: 20px;
+  font: 13px "宋体", arial, sans-serif;
+  padding: 8px 6px;
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-0 .ad-block-0-0 {
+  float: left;
+}
+#canvas .ad-block-0 .ad-block-0-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding-left: 10px;
+}
+#canvas .ad-widget-video {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-widget-video object {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-widget-video embed {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-family: "宋体";
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head h2 a em {
+  color: #CC0000;
+  font-style: normal;
+}
+#canvas .ad-widget-small-head .ec-description {
+  font-family: "宋体";
+  color: #908454;
+}
+#canvas .ad-widget-section {
+  margin-top: 10px;
+  background: url("//bs.baidu.com/adtest/e1dc6b864fbc0524cebac3b0913414ef.png") no-repeat 0 0;
+  padding: 0 0 0 10px;
+}
+#canvas .ad-widget-section li {
+  margin-bottom: 0;
+}
+#canvas .ad-widget-section li a {
+  font-family: "宋体";
+  zoom: 1;
+}
+#canvas .ad-widget-section li span {
+  height: 78px;
+  margin-top: 5px;
+}
+#canvas .ad-widget-section li .ec-icon {
+  height: 18px;
+}
+#canvas .ad-widget-section li p {
+  padding-top: 5px;
+}
+#canvas .ad-widget-section li p span {
+  height: auto;
+}
+#canvas .ad-widget-section li p a {
+  font-family: "宋体";
+  color: #908454;
+  font-size: 13px;
+  text-decoration: none;
+}
+#canvas .ad-widget-section li p a:hover {
+  color: #488048;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+}
+#canvas .ad-widget-button-group td {
+  border: 0;
+}
+#canvas .ad-widget-button-group td a {
+  color: #000;
+  text-decoration: underline;
+  border: solid 1px #D7D5D1;
+  margin: 0 8px 0 0;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  background-color: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

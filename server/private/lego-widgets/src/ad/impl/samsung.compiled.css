@@ -1,0 +1,145 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/samsung.less ~ 2013/12/10 20:24:51
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * samsung样式文件
+ **/
+#canvas {
+  background: url(//bs.baidu.com/lego-mat/bg-be843c96.png) #f0f0f0 repeat-y;
+  width: 516px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#canvas .ad-block {
+  *zoom: 1;
+}
+#canvas .ad-block:before,
+#canvas .ad-block:after {
+  display: table;
+  content: "";
+}
+#canvas .ad-block:after {
+  clear: both;
+}
+#canvas .ad-block-0-0 {
+  width: 220px;
+  margin-right: 16px;
+  float: left;
+}
+#canvas .ad-block-0-1 {
+  width: 280px;
+  float: left;
+  overflow: hidden;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #00c;
+  font-weight: bold;
+}
+#canvas .ec-description {
+  color: #000;
+  font-size: 12px;
+}
+#canvas .ad-block-0-1-0 {
+  height: 110px;
+}
+#canvas .ad-block-1 .ec-normal-con-0 {
+  width: 305px;
+}
+#canvas .ad-widget-section li {
+  list-style: none;
+  background: url(//bs.baidu.com/lego-mat/dot-704fc425.png) no-repeat 0 7px;
+  height: 18px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+#canvas .ad-widget-section li a {
+  white-space: nowrap;
+  font-size: 12px;
+}
+#canvas .ad-widget-tab-container {
+  margin-top: 15px;
+}
+#canvas .ec-tab-head {
+  background: url(//bs.baidu.com/adtest/02bb393db3bc4ea75fc409f4f75680b9.png) repeat-x scroll center bottom transparent;
+  margin: 10px 0px 0px;
+  padding: 0;
+}
+#canvas .ec-tab-head a {
+  border: 1px solid #C3C3C3;
+  background: #F0F0F0;
+  color: #00c;
+  white-space: nowrap;
+}
+#canvas .ec-current-tab a {
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #fbfbfb;
+  color: #333;
+}
+#canvas .ec-tab-body {
+  border: none;
+  height: 120px;
+  overflow: hidden;
+}
+#canvas .ad-widget-tab-cont table {
+  margin-top: 10px;
+}
+#canvas .ec-brand-pic {
+  padding-left: 0;
+}
+#canvas .ec-td-border {
+  width: 180px;
+}
+#canvas .ec-td-border .ec-brand-intro {
+  width: 156px;
+}
+#canvas .ec-brand-intro {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#canvas .ec-brand-intro h1 {
+  font-size: 12px;
+  white-space: nowrap;
+}
+#canvas .ad-widget-normal-container {
+  margin-top: 10px;
+}
+#canvas .ec-normal-con-0,
+#canvas .ec-normal-con-1 {
+  float: left;
+}
+#canvas .ec-normal-con-0 {
+  padding: 0 28px;
+}
+#canvas .ec-normal-con-1 table {
+  margin-top: 0;
+  border-left: 1px solid #e1e1e1;
+}
+#canvas .ad-widget-iframe div {
+  margin-left: 0;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#canvas .ad-widget-button-group td {
+  border: 0;
+}
+#canvas .ad-widget-button-group td a {
+  color: #47362e;
+  text-decoration: underline;
+  border: solid 1px #c3c3c3;
+  margin: 0 8px 0 0;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  background-color: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

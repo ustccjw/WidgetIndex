@@ -1,0 +1,101 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhidao/micro_brand.less ~ 2012/11/29 16:13:22
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * micro_brand样式文件
+ **/
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.ad-widget-zhidao-micro-brand {
+  font: 13px/1.5 arial, sans-serif;
+  color: #000;
+  width: 540px;
+  margin-bottom: 20px;
+}
+.ad-widget-zhidao-micro-brand a {
+  color: #0000cc;
+}
+.ad-widget-zhidao-micro-brand .ec-inner {
+  padding: 10px 0px;
+  /*border-bottom: solid 1px #e1e1e1;*/
+
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-head {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 5px;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-head .ec-title {
+  float: left;
+  font-size: 16px;
+  color: #0000cc;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-head .ec-title em {
+  font-style: normal;
+  color: #cc0000;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-head .ec-baike {
+  float: right;
+  margin-top: 4px;
+  color: #666;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-desc {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 5px;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-desc .ec-logo {
+  float: left;
+  border: solid 1px #ccc;
+  width: 34px;
+  height: 34px;
+  margin-top: 1px;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-desc .ec-text {
+  float: left;
+  width: 498px;
+  margin-left: 5px;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-questions {
+  margin-bottom: 5px;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-questions ul {
+  list-style: none;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-questions ul li {
+  background: url(//bs.baidu.com/adtest/caf14706e126a2bac07678c0aea71ddc.jpg) left no-repeat;
+  padding-left: 13px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-questions ul li .ec-question-text {
+  float: left;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-questions ul li .ec-question-text em {
+  font-style: normal;
+  color: #cc0000;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-questions ul li .ec-answer-info-date {
+  float: left;
+  margin-left: 5px;
+  font-family: "arial";
+  color: #666;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-site {
+  color: #008000;
+}
+.ad-widget-zhidao-micro-brand .ec-inner .ec-site span {
+  color: #666;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

@@ -1,0 +1,138 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/ping_an_pb.less ~ 2012/11/13 15:16:44
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * ping_an_pb样式文件
+ **/
+.ad-widget-tieba-ping-an-pb {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-content {
+  font-size: 14px;
+  line-height: 24px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-banner {
+  background: url(//bs.baidu.com/adtest/685c6479573ee525e408347df037a605.png) no-repeat;
+  line-height: 21px;
+  padding-left: 10px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-main {
+  margin-top: 20px;
+  position: relative;
+  zoom: 1;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-main .ec-ping-an-pb-tip {
+  display: none;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  height: 20px;
+  color: #fca433;
+  border: 1px solid #f6ba77;
+  background-color: #fff9e2;
+  zoom: 1;
+  z-index: 2;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-main .ec-ping-an-pb-iframe {
+  display: none;
+  position: absolute;
+  border: 0;
+  z-index: 1;
+  height: 22px;
+  overflow: hidden;
+}
+.ad-widget-tieba-ping-an-pb table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ad-widget-tieba-ping-an-pb th,
+.ad-widget-tieba-ping-an-pb td,
+.ad-widget-tieba-ping-an-pb tr {
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table {
+  float: left;
+  width: 276px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table .ec-ping-an-pb-empty {
+  text-align: right;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table .ec-ping-an-pb-phone-input {
+  text-align: left;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table table {
+  margin-left: 10px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table tr {
+  vertical-align: top;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table td,
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table th {
+  height: 30px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table td {
+  padding-left: 20px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table th {
+  font-weight: normal;
+  text-align: left;
+  padding-top: 2px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table em {
+  color: #e30102;
+  font-style: normal;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table a.ec-ping-an-pb-submit {
+  display: block;
+  background: url(//bs.baidu.com/adtest/db878bec14731b330f3d30a46e42767e.png) no-repeat;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 95px;
+  height: 22px;
+  line-height: 22px;
+  margin: 1px auto 0;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table a.ec-ping-an-pb-submit:hover {
+  background-image: url(//bs.baidu.com/adtest/658d9484b00d21c900ec14a72bb635d4.png);
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table select {
+  width: 135px;
+  height: 22px;
+  margin: 0;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table input {
+  width: 131px;
+  height: 18px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-table .ec-ping-an-pb-checkbox-wrapper {
+  margin-top: 2px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-image {
+  margin-left: 276px;
+}
+.ad-widget-tieba-ping-an-pb .ec-ping-an-pb-image img {
+  border: none;
+  margin-top: 0;
+  width: 280px;
+  height: 210px;
+}
+.ad-widget-tieba-ping-an-pb .ec-clear {
+  clear: both;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

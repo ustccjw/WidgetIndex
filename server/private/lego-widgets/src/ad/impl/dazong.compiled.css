@@ -1,0 +1,151 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: dazong.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dazong.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 535px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+#canvas .ad-widget-h1 .ec-description {
+  width: 420px;
+}
+#canvas .ec-tab-head {
+  margin: 10px 0;
+}
+#canvas .ec-tab-head li a,
+#canvas .ec-tab-head li a:visited {
+  background: #e4ebfa;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+#canvas .ec-tab-body {
+  margin-bottom: 20px;
+}
+#canvas .ec-tab-body .ad-widget-card-flash {
+  margin-left: 12px;
+}
+#canvas .ad-widget-small-weibo {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head {
+  float: left;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  margin-right: 12px;
+  padding-top: 5px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head a {
+  float: none;
+}
+#canvas .ad-widget-small-weibo .ec-name {
+  padding-right: 18px;
+}
+#canvas .ad-widget-small-weibo .ec-follow {
+  width: auto;
+  margin-top: 5px;
+}
+#canvas .ad-widget-small-weibo .ec-context {
+  float: right;
+  padding-top: 0;
+  margin-right: 12px;
+  width: 420px;
+}
+#canvas .ad-widget-small-weibo .ec-foot {
+  float: right;
+  margin-right: 12px;
+  width: 420px;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn a {
+  color: #008000;
+}
+#canvas .ad-widget-button-group {
+  padding: 0px;
+  height: 26px;
+  line-height: 26px;
+  background: #d3d1f8;
+}
+#canvas .ad-widget-button-group table tr {
+  height: 26px;
+}
+#canvas .ad-widget-button-group table tr td {
+  border: 1px solid #fff;
+  padding: 0px;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group table tr td a {
+  color: #0000cc;
+}
+.ec-dazong-fwc-left .ad-widget-float-window-container {
+  border: 1px solid #d5d5d5;
+}
+.ec-dazong-fwc-left .ec-cont {
+  width: 539px;
+  height: 424px;
+  background: #ffffff url(//bs.baidu.com/adtest/641c6d8d95483ac363c617f98c185219.jpg) no-repeat;
+}
+.ec-dazong-fwc-left .ad-widget-dependency-select {
+  width: 170px;
+}
+.ec-dazong-fwc-left .ad-widget-dependency-select .ec-item select {
+  width: 75px;
+}
+.ec-dazong-fwc-left .ec-fwcon-0 {
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 65px;
+  margin-left: 20px;
+}
+.ec-dazong-fwc-left .ec-fwcon-0 .ec-fwcon {
+  float: left;
+}
+.ec-dazong-fwc-left .ec-fwcon-0 .ec-fwcon-0-0 .ad-widget-dependency-select {
+  width: 172px;
+}
+.ec-dazong-fwc-left .ec-fwcon-0 .ec-fwcon-0-0 .ad-widget-dependency-select .ec-item {
+  margin-right: 22px;
+}
+.ec-dazong-fwc-left .ec-fwcon-0 .ec-fwcon-0-0 .ad-widget-dependency-select .ec-item select {
+  width: 150px;
+}
+.ec-dazong-fwc-left .ec-close {
+  background-image: none;
+  top: 4px;
+  right: 15px;
+  height: 20px;
+  width: 32px;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ec-dazong-fwc-left .ec-close:hover {
+  background-image: none;
+  background-color: #fff;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+.ec-dazong-fwc-left .ad-widget-bmap {
+  margin-top: 15px;
+  width: 500px;
+  height: 300px;
+}
+.ec-dazong-fwc-left .ad-widget-bmap .ec-container {
+  width: 500px;
+  height: 300px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

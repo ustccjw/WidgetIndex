@@ -1,0 +1,120 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/rejoice.less ~ 2013/12/06 16:02:45
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * rejoice样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 520px;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-h1 {
+  font: 13px/1.2 arial, sans-serif;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#canvas .ad-widget-h1 h2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
+}
+#canvas .ad-widget-h1 h2 a {
+  color: #0000cc;
+}
+#canvas .ad-widget-h1 h2 em {
+  color: #cc0000;
+  font-style: normal;
+}
+#canvas .ad-widget-h1 .ec-description {
+  width: 398px;
+  line-height: 19.2px;
+}
+#canvas .ad-widget-h1 .ec-description a {
+  color: #0000cc;
+}
+#canvas .ad-widget-h1 .ec-description .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-image-normal a {
+  border: 1px solid #CCCCCC;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  height: 58px;
+  width: 88px;
+  overflow: hidden;
+}
+#canvas .ad-widget-image-normal a img {
+  border: 0 none;
+}
+#canvas .ad-widget-section img {
+  vertical-align: text-bottom;
+}
+#canvas .ad-widget-section a {
+  color: #0000CC;
+  font-size: 13px;
+  vertical-align: baseline;
+  zoom: 1;
+}
+#canvas .ad-widget-section p {
+  margin-top: 2px;
+}
+#canvas .ad-widget-section p a {
+  color: #000;
+  text-decoration: none;
+}
+#canvas .ec-tab-head {
+  background: url("//bs.baidu.com/lego-mat/line-805ca8c4.png") repeat-x scroll center bottom transparent;
+  height: 24px;
+  list-style: none outside none;
+  margin: 10px 0 5px;
+  padding: 0 8px 0 0;
+  overflow: hidden;
+}
+#canvas .ec-tab-head li {
+  display: inline;
+  float: left;
+  margin-bottom: -1px;
+  margin-left: 0;
+  margin-right: 10px;
+  position: relative;
+}
+#canvas .ec-tab-head li a {
+  background-color: #FFFFFF;
+  border: 0px solid #BECCF1;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  outline: 0 none;
+  padding: 4px 0;
+  text-align: center;
+  text-decoration: none;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #FFFFFF;
+  color: #000;
+  border-color: #BECCF1 #BECCF1 #FFFFFF;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  height: 15px;
+}
+#canvas .ec-tab-body {
+  overflow: hidden;
+  border-bottom: 1px solid #BECCF1;
+  padding: 9px 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

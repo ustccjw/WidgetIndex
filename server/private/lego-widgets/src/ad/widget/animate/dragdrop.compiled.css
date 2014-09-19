@@ -1,0 +1,145 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z dingguoliang01 $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/animate/elevator.less ~ 2013/09/13 15:59:32
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * elevator样式文件
+ **/
+.ad-widget-animate-dragdrop {
+  font-family: arial, "微软雅黑", "黑体", sans-serif;
+  margin: auto;
+  overflow: hidden;
+  height: 290px;
+  width: 536px;
+  text-align: center;
+  /*ie 7*/
+
+  border: 1px solid #a06b37;
+  background-color: #f9963b;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ad-widget-animate-dragdrop * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ad-widget-animate-dragdrop .ec-drop {
+  clear: both;
+  margin: auto;
+  position: relative;
+  width: 536px;
+  height: 130px;
+}
+.ad-widget-animate-dragdrop .ec-drop div {
+  width: 160px;
+  height: 120px;
+  position: absolute;
+  border: 1px solid #305c98;
+  background-color: #4d80Bf;
+  padding: 1px;
+  left: 190px;
+}
+.ad-widget-animate-dragdrop .ec-drop span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 200px;
+  color: #e6ffff;
+  font-weight: bold;
+}
+.ad-widget-animate-dragdrop .ec-drop img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.ad-widget-animate-dragdrop .ec-drag {
+  margin: 30px auto 30px 35px;
+  padding: 0;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-animate-dragdrop .ec-wrapper {
+  float: left;
+  list-style: none;
+  width: 78px;
+  height: 69px;
+  border: 1px solid #305c98;
+  margin: 5px;
+  padding: 1px;
+  background-color: #4d80Bf;
+  position: relative;
+}
+.ad-widget-animate-dragdrop .ec-wrapper img {
+  display: block;
+}
+.ad-widget-animate-dragdrop .ec-wrapper span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 120px;
+  display: block;
+  color: #e6ffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.ad-widget-animate-dragdrop .ec-wrapper div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  _width: 78px;
+  _height: 69px;
+  left: 0px;
+  top: 0px;
+  _left: 1px;
+  _top: 1px;
+  background-color: gold;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ad-widget-animate-dragdrop .ec-mask {
+  -webkit-box-shadow: 0px 0px 4px #0000ff;
+  -moz-box-shadow: 0px 0px 4px #0000ff;
+  box-shadow: 0px 0px 4px #0000ff;
+}
+.ad-widget-animate-dragdrop .ec-mask div {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.ad-widget-animate-dragdrop .ec-highlight {
+  -webkit-box-shadow: 0px 0px 4px #0000ff;
+  -moz-box-shadow: 0px 0px 4px #0000ff;
+  box-shadow: 0px 0px 4px #0000ff;
+  background-color: gold;
+}
+.ad-widget-animate-dragdrop .ec-hide {
+  background-color: transparent;
+  border-color: transparent;
+  visibility: hidden;
+}
+.ad-widget-animate-dragdrop .ec-refresh {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

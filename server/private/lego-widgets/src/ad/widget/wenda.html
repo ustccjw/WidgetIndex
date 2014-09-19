@@ -1,0 +1,22 @@
+<!-- target:AD_ad_widget_wenda -->
+<div class="ad-widget ad-widget-wenda">
+    {{#title}}<h2><span>{{title}}</span></h2>{{/title}}
+    {{#items}}
+    <div class="ad-wd-item">
+        <div class="ad-wd-q">
+            <span class="ad-wd-icon ad-wd-icon-q">问{{#show_colon}}：{{/show_colon}}</span>
+            <a target="_blank" href="{{{rcv_url}}}" title2="问题标题">{{{title}}}</a>
+        </div>
+        <div class="ad-wd-ans">
+            <span class="ad-wd-icon ad-wd-icon-ans">答{{#show_colon}}：{{/show_colon}}</span>
+            <a target="_blank" href="{{{rcv_url}}}">{{{answer}}}</a>
+        </div>
+        <div class="ad-wd-foot">
+            <a href="{{{rcv_url}}}" target="_blank" class="ad-site">{{show_url}}</a><span class="ad-wd-rz"></span><div class="ad-wd-replier">
+                <span>回答者：</span>
+                <a href="{{{rcv_url}}}" target="_blank">{{replier}}</a>
+            </div>
+        </div>
+    </div>
+    {{/items}}
+</div>

@@ -1,0 +1,44 @@
+<!-- target:AD_ad_widget_imageplus_sticker_image_carousel -->
+<div class="ad-widget-imageplus-sticker-image-carousel">
+    <div class="ad-imageplus-title"><i>&nbsp;</i>图片相关信息</div>
+    <div class="ad-imageplus-carousel">
+        <a href="#" class="ad-arrow ad-arrow-next" id="{{#_id}}next{{/_id}}" data-log="9">&nbsp;</a>
+        <a href="#" class="ad-arrow ad-arrow-prev" id="{{#_id}}prev{{/_id}}" data-log="9">&nbsp;</a>
+        <div class="ad-slide-wrapper" id="{{#_id}}wrapper{{/_id}}">
+            <div class="ad-slide-body" id="{{#_id}}body{{/_id}}">
+                {{#adlist}}
+                <div class="ad-slide-item">
+                    {{#idea_url}}
+                    <div class="ad-imageplus-image">
+                        <img src="{{{idea_url}}}"/>
+                        <a href="{{{real_url}}}" data-log="2" target="_blank">&nbsp;</a>
+                    </div>
+                    {{/idea_url}}
+                    <div class="ad-imageplus-bd" style="width:{{item_text_width}}px;">
+                        <div class="ad-imageplus-item-title">
+                            <a href="{{{real_url}}}" data-log="2" target="_blank">{{{title}}}</a>
+                        </div>
+                        <div class="ad-imageplus-desc">
+                            <a href="{{{real_url}}}" data-log="2" target="_blank">{{{desc}}}</a>
+                        </div>
+                    </div>
+                </div>
+                {{/adlist}}
+            </div>
+        </div>
+    </div>
+    <div class="ad-imageplus-source"><a href="http://wangmeng.baidu.com/" data-log="2" target="_blank">- 推广</a></div>
+</div>
+                <!--
+                <div class="ad-slide-item">
+                    <img src="http://ecma.bdimg.com/adtest/abdab139e661dc26e2aa1a09e997b4a7.png" data-src="{{{idea_url}}}"/>
+                    <div class="ad-slide-title">
+                        <a href="{{{real_url}}}" data-log="2" target="_blank">{{{title}}}</a>
+                    </div>
+                    <div class="ad-slide-desc">
+                        <table><tr><td>
+                            <a href="{{{real_url}}}" data-log="2" target="_blank">{{{desc}}}</a>
+                        </td></tr></table>
+                    </div>
+                </div>
+                -->

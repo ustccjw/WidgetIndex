@@ -1,0 +1,91 @@
+[
+    {
+        "name": "flash",
+        "displayName": "图片/flash配置",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "width",
+                "displayName": "宽度",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "NUMBER",
+                    "required": true
+                },
+                "extraAttr": {
+                    "filters": "float"
+                },
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "height",
+                "displayName": "高度",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "NUMBER",
+                    "required": true
+                },
+                "extraAttr": {
+                    "filters": "float"
+                },
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "link_rcv_url",
+                "displayName": "跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "content",
+                "displayName": "内容",
+                "defaultValue": "true",
+                "datatype": "ALTERNATIVE",
+                "rules": {},
+                "enumValues": [{
+                    "value": "image",
+                    "displayValue": "图片",
+                    "items": [{
+                        "name": "src",
+                        "displayName": "图片",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {},
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "ext": "jpg,gif,png"
+                        }
+                    }]
+                },{
+                    "value": "flash",
+                    "displayValue": "FLASH",
+                    "items": [{
+                        "name": "src",
+                        "displayName": "Flash地址",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true,
+                            "stringType": "URL"
+                        },
+                        "extraAttr": {
+                            "fileType": "FLASH",
+                            "ext": "swf"
+                        }
+                    }]
+                }]
+            }
+        ],
+        "rules": {}
+    }
+]

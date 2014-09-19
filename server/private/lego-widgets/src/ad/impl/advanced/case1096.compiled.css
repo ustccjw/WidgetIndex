@@ -1,0 +1,223 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/advanced/case1096.less ~ 2013/11/29 14:10:53
+ * @author chenli11@baidu.com (chenli11)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1096样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial;
+  background-color: #f3f3f3;
+  width: 540px;
+  margin-bottom: 20px;
+}
+#canvas .ad-block-0-0 {
+  position: relative;
+  float: left;
+  padding: 10px 0 10px 10px;
+  _padding-bottom: 8px;
+}
+#canvas .ad-block-0-0 .ec-img-container img {
+  width: 220px;
+  height: 190px;
+  border: 0 none;
+}
+#canvas .ad-block-0-0 .ad-widget-image-show-horizontal {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-block-0-0 .ec-link-list {
+  position: absolute;
+  list-style-type: none;
+  filter: alpha(opacity=80);
+  opacity: .8;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  bottom: 15px;
+  right: 2px;
+  _right: -1px;
+}
+#canvas .ad-block-0-0 .ec-link-list li {
+  margin-right: 3px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: #fff;
+  border: none;
+}
+#canvas .ad-block-0-0 .ec-link-list li a {
+  display: block;
+  color: #333;
+  font-size: 10px;
+  text-decoration: none;
+}
+#canvas .ad-block-0-0 .ec-link-list .ec-current {
+  background: #333;
+  color: #fff;
+}
+#canvas .ad-block-0-0 .ec-link-list .ec-current a {
+  color: #fff;
+}
+#canvas .ad-block-0-1 {
+  float: left;
+  padding: 10px 0 0 12px;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head {
+  width: 286px;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head .ec-description {
+  height: 93px;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head h2 a {
+  color: blue;
+  font-weight: 600;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head .ec-image-group {
+  margin-top: 0;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head .ec-image-group a {
+  margin-right: 18px;
+  border: 1px solid #666;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head .ec-image-group .ec-last {
+  margin-right: 0;
+}
+#canvas .ad-block-1 {
+  clear: both;
+}
+#canvas .ad-block-1 .ad-widget-tab-container {
+  width: 516px;
+  padding: 0 0 12px 10px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-head {
+  margin-bottom: 0;
+  margin-top: 6px;
+  *margin-top: 0px;
+  height: 28px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-head li {
+  margin-left: 0;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-head a,
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-head a:visited {
+  background-color: #f4f8fc;
+  border-right-width: 0;
+  line-height: 18px;
+  color: #00c;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-head .ec-current-tab a,
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-head .ec-current-tab a:visited {
+  background-color: #fff;
+  border-bottom-color: #fff;
+  color: #000;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-list-last a,
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-list-last a:visited {
+  border-right-width: 1px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ec-tab-body {
+  border: solid #c8daf0;
+  border-width: 0 1px 1px 1px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo {
+  font: 12px arial;
+  background-color: #fff;
+  padding: 7px 10px 7px 12px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-text {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 4px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-weibo-text {
+  line-height: 18px;
+  padding-top: 5px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-follow {
+  float: right;
+  width: 66px;
+  height: 22px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-foot {
+  padding-top: 4px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-foot .ec-rightbtn {
+  margin-top: 3px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-small-weibo .ec-foot .ec-rightbtn a {
+  color: green;
+  line-height: 14px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo {
+  font: 12px arial;
+  padding-bottom: 8px;
+  background-color: #fff;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-weibo-head {
+  padding-top: 3px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-weibo-head .ec-name {
+  margin-top: 2px;
+  line-height: 24px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-weibo-head .ec-text {
+  height: 14px;
+  line-height: 14px;
+  margin-top: 7px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-weibo-head .ec-follow {
+  margin-top: 3px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-context {
+  line-height: 18px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-context .ec-weibo-text {
+  padding: 5px 0;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-context .ec-foot {
+  font-size: 12px;
+  line-height: 14px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo .ec-context .ec-rightbtn {
+  font-size: 12px;
+  height: 14px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .ad-widget-qq-weibo fieldset {
+  display: none;
+}
+#canvas .ad-block-2 {
+  padding: 0 0 8px 9px;
+}
+#canvas .ad-block-2 .ad-widget-button-group {
+  width: 521px;
+  background-color: #EFF4FC;
+  padding: 0 0 3px 0;
+}
+#canvas .ad-block-2 .ad-widget-button-group table td {
+  padding-right: 4px;
+  border: none;
+}
+#canvas .ad-block-2 .ad-widget-button-group table td a {
+  padding: 3px 0;
+  font: 12px arial;
+  display: block;
+  border: 1px solid #c8daf0;
+  color: #00c;
+  text-decoration: underline;
+  background-color: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,166 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: htc.less 9923 2012/08/06 10:25:19Z wangdawei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/htc.less ~ 2012/08/06 11:51:39
+ * @author wangdawei
+ * @version $Revision: 9923 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 515px;
+  padding: 10px;
+  background: url(//bs.baidu.com/adtest/23774d17ab2a167c27cf3c2b8c167a88.png) repeat-y;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+}
+#canvas .ad-layout-block-0 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+  height: 190px;
+  margin-right: 14px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 {
+  float: left;
+  width: 280px;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-weight: 900;
+}
+#canvas .ad-widget-small-head .ec-content {
+  padding: 0;
+  margin: 0;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000000;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 13px;
+}
+#canvas .ad-widget-section {
+  margin-top: 15px;
+}
+#canvas .ad-widget-section li {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+#canvas .ad-widget-section li img {
+  vertical-align: middle;
+}
+#canvas .ad-widget-section li a {
+  color: #000;
+  font-size: 13px;
+}
+#canvas .ad-widget-tab .ec-tab-head {
+  background: url(//bs.baidu.com/adtest/7bef06229120d1df22b239a60080712b.png) repeat-x scroll center bottom transparent;
+  height: 24px;
+  list-style: none outside none;
+  margin: 10px 0;
+  padding: 0;
+}
+#canvas .ad-widget-tab .ec-tab-head li {
+  display: inline;
+  float: left;
+  margin-bottom: -1px;
+  margin-left: 8px;
+  position: relative;
+}
+#canvas .ad-widget-tab .ec-tab-head li a,
+#canvas .ad-widget-tab .ec-tab-head li a:visited {
+  background-color: #8ab144;
+  border: 1px solid #8ab144;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  outline: 0 none;
+  padding: 4px 0;
+  text-align: center;
+  text-decoration: none;
+}
+#canvas .ad-widget-tab .ec-tab-head .ec-current-tab a {
+  background-color: transparent;
+  color: #000;
+  border-bottom: 1px solid #f9f9f9;
+}
+#canvas .ad-widget-tab .ec-tab-body {
+  margin: 0px;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item {
+  display: none;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item table td {
+  line-height: 18px;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item table td a {
+  color: #000000;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item table td a img {
+  border: 0px;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-brand-pic {
+  height: 100px;
+  width: 195px;
+  padding-left: 8px;
+  word-wrap: break-word;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-brand-pic img {
+  height: 100px;
+  width: 180px;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-brand-intro {
+  padding-left: 12px;
+  padding-right: 10px;
+  word-wrap: break-word;
+  height: 102px;
+  overflow: hidden;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-brand-intro h1 {
+  margin: 0px;
+  padding: 0px;
+  *margin-bottom: 4px;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-brand-intro h3 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-td-border {
+  border-right: 1px solid #E1E1E1;
+  width: 188px;
+}
+#canvas .ad-widget-tab .ad-widget-tab-item .ec-td-border .ec-brand-intro {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+  padding-top: 10px;
+}
+#canvas .ad-widget-button-group tr td {
+  background-color: transparent;
+  border: 0px solid #c3c3c3;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group tr td a {
+  color: #fff;
+  background-color: #afafaf;
+  border: 1px solid #afafaf;
+  margin: 0 2px;
+  display: block;
+  text-decoration: underline;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

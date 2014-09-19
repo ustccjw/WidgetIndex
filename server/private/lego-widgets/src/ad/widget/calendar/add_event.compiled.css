@@ -1,0 +1,101 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: add_event.less 14265 2012-11-11 15:45:58Z liyubei $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/calendar/add_event.less ~ 2012/11/11 20:31:23
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 14265 $
+ * @description
+ * add_event样式文件
+ **/
+.ad-widget-calendar-add-event {
+  font: 12px/1.5 "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+.ad-widget-calendar-add-event form,
+.ad-widget-calendar-add-event input,
+.ad-widget-calendar-add-event textarea {
+  margin: 0 0 5px;
+}
+.ad-widget-calendar-add-event input,
+.ad-widget-calendar-add-event textarea {
+  font: 11px/1.5 "lucida grande", tahoma, verdana, arial, sans-serif;
+  border: 1px solid #BDC7D8;
+  padding: 2px;
+}
+.ad-widget-calendar-add-event input:focus,
+.ad-widget-calendar-add-event textarea:focus {
+  border-color: #BDC7D8;
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+}
+.ad-widget-calendar-add-event input:invalid,
+.ad-widget-calendar-add-event textarea:invalid {
+  color: red;
+}
+.ad-widget-calendar-add-event .ec-help {
+  font-size: 10px;
+  color: #ccc;
+}
+.ad-widget-calendar-add-event input[type="text"],
+.ad-widget-calendar-add-event input[type="number"] {
+  width: 175px;
+}
+.ad-widget-calendar-add-event textarea {
+  width: 300px;
+  height: 80px;
+}
+.ad-widget-calendar-add-event .ec-ui-button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  background-image: url(//bs.baidu.com/adtest/b1c6da618b1af7168102919aedd9370f.png) no-repeat #eeeeee -1px -343px;
+  border: 1px solid #999;
+  border-bottom-color: #888;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.ad-widget-calendar-add-event .ec-ui-button:hover {
+  text-decoration: none;
+}
+.ad-widget-calendar-add-event .ec-ui-button:active {
+  background: #ddd;
+  border-bottom-color: #999;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.ad-widget-calendar-add-event .ec-ui-button input {
+  background: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+  margin: 0;
+  padding: 1px 0 2px;
+  white-space: nowrap;
+}
+.ad-widget-calendar-add-event .ec-ui-button-confirm {
+  background: url(//bs.baidu.com/adtest/b1c6da618b1af7168102919aedd9370f.png) no-repeat #5b74a8 -1px -441px;
+  border-color: #29447e #29447e #1a356e;
+}
+.ad-widget-calendar-add-event .ec-ui-button-confirm:active {
+  background: #4f6aa3;
+  border-bottom-color: #29447e;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

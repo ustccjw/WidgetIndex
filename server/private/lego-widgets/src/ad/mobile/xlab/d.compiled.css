@@ -1,0 +1,57 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: d.less 10885 2012-08-02 12:47:38Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/mobile/xlab/a.less ~ 2012/08/01 14:12:37
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision: 10885 $ 
+ * @description 
+ *  
+ **/
+.ad-mobile-xlab-d {
+  width: 155px;
+  height: 100px;
+  overflow: hidden;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+.ad-mobile-xlab-d a {
+  color: blue;
+}
+.ad-mobile-xlab-d em {
+  font-style: normal;
+}
+.ad-mobile-xlab-d h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 100%;
+  max-height: 24px;
+  overflow: hidden;
+}
+.ad-mobile-xlab-d p {
+  margin: 0;
+  max-height: 28px;
+  overflow: hidden;
+  line-height: 14px;
+}
+.ad-mobile-xlab-d .meta {
+  height: 12px;
+  line-height: 12px;
+}
+.ad-mobile-xlab-d .meta a {
+  color: #000;
+}
+.ad-mobile-xlab-d ul {
+  margin: 0;
+  padding: 0;
+}
+.ad-mobile-xlab-d li {
+  list-style: none;
+  height: 15px;
+  overflow: hidden;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

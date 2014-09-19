@@ -1,0 +1,203 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: bmw3.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/new_custom/bmw3.less ~ 2013/10/30 14:23:28
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1179样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    margin-bottom: 20px;
+    font: 12px/1.5 arial,sans-serif;
+    background: #000 url(//bs.baidu.com/adtest/e9eb58df09223d7d7112a27a4949b4c3.png) no-repeat;
+    width: 520px;
+    .ad-widget-title {
+        .gain-bfc();
+        a {
+            color: #fff;
+            em {
+                color: #fff;
+            }
+        }
+    }
+    .ad-widget-small-head {
+        width: 253px;
+        .ec-description {
+            color: #cdcdcd;
+            text-indent: 2em;
+            line-height: 18px;
+            a{
+                color: #cdcdcd;
+            }
+        }
+        .ec-site {
+            text-indent: 0;
+            a {
+                color: #666;
+            }
+        }
+        .ec-image-group {
+            width: 254px;
+            position: relative;
+            margin-top: 9px;
+            .ec-last {
+                margin: 0px;
+            }
+        }
+    }
+    .ad-block-0-1 {
+        .gain-bfc();
+        padding: 8px 0 0 0;
+        .ad-widget-image {
+            float: left;
+            width: 254px;
+            height: 143px;
+            cursor: pointer;
+        }
+    }
+
+    .ad-block-0-1-0,
+    .ad-block-0-1-1,
+    .ad-block-0-1-2 {
+        float: left;
+    }
+
+    .ad-block-0-1-0 {
+        margin-right: 10px;
+    }
+    .ad-widget-countdown {
+        margin-top: 9px;
+        width: 230px;
+        height: 41px;
+        padding: 18px 0 0 24px;
+        background: url(//bs.baidu.com/adtest/bdfeca6e9596294a41da0f2a955677db.jpg) no-repeat;
+        color: #ff0000;
+        .ec-digit-text {
+            font-size: 28px;
+            font-family: "方正兰亭细黑","微软雅黑";
+            line-height: 32px;
+            height: 32px;
+        }
+        .ec-unit-text {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .ec-unit-text {
+            padding-left: 5px;
+        }
+        .ec-digit-hour {
+            padding-left: 30px;
+        }
+        .ec-separate-text {
+            font-size: 28px;
+            padding: 0 9px;
+        }
+    }
+    .ad-widget-image {
+        margin-top: 15px;
+        img {
+            width: 520px;
+            height: 121px;
+        }
+    }
+    .ec-bg {
+        display: none;
+    }
+    .ad-widget-image-normal {
+        a {
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: 70px;
+        }
+        img {
+            border: none;
+            height: 70px;
+        }
+        .ec-last {
+            border: none;
+        }
+    }
+    .ad-widget-multi-video-thunbnail {
+        width: 253px;
+        height: 59px;
+        position: relative;
+        margin-top: 10px;
+        top: 0;
+        left: -10px;
+        .ec-thunbnail-bg {
+            display: none;
+        }
+        .ec-thunbnail-cont {
+            width: 265px;
+            height: 59px;
+        }
+        .ec-item {
+            margin: 0 0 0 10px;
+            width: 78px;
+            height: 59px;
+            display: inline;
+        }
+        .ec-item-bg {
+            height: 59px;
+            .opacity(65);
+        }
+        .ec-play-btn {
+            background: #003399;
+        }
+    }
+}
+
+.ec-bmw1-fwc {
+    .ad-widget-video {
+        width: 540px;
+        height: 304px;
+        position: absolute;
+        top: 76px;
+        left: 20px;
+    }
+    
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

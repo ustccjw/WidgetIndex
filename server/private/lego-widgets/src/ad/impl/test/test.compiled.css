@@ -1,0 +1,41 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: lv.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/lv.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 524px;
+  height: 524px;
+  overflow: hidden;
+  border: 6px solid #aa8d7e;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+  background: url(data:image/gif;base64,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) no-repeat bottom right;
+}
+#canvas .ad-layout-block-0 {
+  background: #ffffff;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  background: url(./logo.gif) bottom right no-repeat;
+}
+#canvas .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+#canvas .ad-layout-block-0-1 {
+  float: right;
+  width: 276px;
+  padding: 4px 10px 0px 14px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

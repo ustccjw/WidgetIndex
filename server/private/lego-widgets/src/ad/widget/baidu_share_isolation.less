@@ -1,0 +1,131 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/baidu_share_isolation.less ~ 2014/08/25 12:59:48
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * baidu_share_isolation样式文件
+ **/
+
+.ad-widget-baidu-share-isolation {
+    font: 12px/1.5 arial,sans-serif;
+    margin: 6px 0;
+
+    .ec-clearfix {
+        clear: both;
+    }
+
+    .ec-prefix-txt,
+    .ec-icons,
+    .ec-icon {
+        float: left;
+    }
+
+    .ec-prefix-txt {
+        // font-weight: bold;
+    }
+
+    .ec-icons {
+        // margin-left: 6px;
+    }
+
+    .ec-icon {
+        position: relative;
+    }
+    .ec-icon-link {
+        @width: 16px;
+        display: block;
+        line-height: @width;
+        width: @width;
+        height: @width;
+        background-image: url(//bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png);
+        background-repeat: no-repeat;
+        margin-right: @width / 2;
+    }
+    .ec-icon-weibo .ec-icon-link {
+        background-position: 0 -104px;
+    }
+    .ec-icon-qqweibo .ec-icon-link {
+        background-position: 0 -260px;
+    }
+    .ec-icon-wechat .ec-icon-link {
+        background-position: 0 -1612px;
+    }
+    .ec-icon-renren .ec-icon-link {
+        background-position: 0 -208px;
+    }
+    .ec-icon-douban .ec-icon-link {
+        background-position: 0 -468px;
+    }
+
+
+
+    .ec-qrcode {
+        display: none;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #999;
+        position: absolute;
+        top: 24px;
+        left: -103px;
+        background: white;
+    }
+    .ec-qrcode-pic {
+        // display: block;
+        border: none;
+        margin: 10px;
+        width: 180px;
+        height: 180px;
+    }
+    .ec-qrcode-title {
+        font-weight: bold;
+    }
+    .ec-qrcode-tip {
+        line-height: 22px;
+        color: #666;
+    }
+    .ec-qrcode-close-btn {
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #999;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .ec-icon-qrcode-show .ec-qrcode {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

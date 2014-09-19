@@ -1,0 +1,11 @@
+{
+    "selectors": [{
+        "name": ".ad-widget-baidu-app",
+        "displayName": "App高度",
+        "rules": [{
+            "name": "height",
+            "displayName": "App高度", // 可选
+            "defaultValue": "410px"
+        }]
+    }]
+}

@@ -1,0 +1,111 @@
+{
+    "contents": ["ad.widget.SmallHead"],
+    "userPrefs": [
+        {
+            "name": "titletext",
+            "displayName": "标题",
+            "nameTip": "富文本",
+            "tip": "标题为6~30个汉字，核心<em>飘红词</em>最多可选6个汉字",
+            "defaultValue": "",
+            "datatype": "HTML",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "minTextByteLength": 12,
+                "maxTextByteLength": 60,
+                "tagList" : {
+                    "em": {
+                        "maxTextByteLength": 12,
+                        "minCount": 1,
+                        "maxCount": 1
+                    }
+                }
+            },
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": ["emphasize"]
+                },
+                "tagList" : {
+                    "em": {
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    }
+                }
+            }
+        },
+        {
+            "name": "titleurl_rcv_url",
+            "displayName": "标题url",
+            "defaultValue": "http://www.baidu.com",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL",
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "description_rcv_html",
+            "displayName": "描述",
+            "defaultValue": "HELLO WORLD",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "minByteLength": 100,
+                "maxByteLength": 380
+            },
+            "extraAttr": {},
+            "tip": "描述为50~190个汉字",
+            "multiline": true
+        },
+        {
+            "name": "query",
+            "displayName": "关键词",
+            "datatype": "LIST",
+            "items": [
+                {
+                    "name": "key_word",
+                    "displayName": "关键词文本",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 20
+                    },
+                    "tip": "20字节内",
+                    "multiline": false
+                },
+                {
+                    "name": "rcv_url",
+                    "displayName": "关键词url",
+                    "defaultValue": "http://www.baidu.com",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "stringType": "URL"
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                }
+            ],
+            "tip": "",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name": "site",
+            "displayName": "官方网站",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 40
+            },
+            "tip": "最多可填写40个字节",
+            "multiline": false
+        }
+    ]
+}

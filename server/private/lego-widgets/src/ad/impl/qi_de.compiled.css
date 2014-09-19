@@ -1,0 +1,184 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/qi_de.less ~ 2013/07/26 17:58:50
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * qi_de样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 533px;
+  margin-bottom: 20px;
+}
+#canvas .ad-layout-block-0 h2 {
+  padding: 0 0 5px 0;
+}
+#canvas .ad-layout-block-0 .ec-content {
+  display: none;
+}
+#canvas .ad-layout-block-1 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-0 {
+  float: left;
+  width: 88px;
+  height: 88px;
+  border: 1px solid #dfdfdf;
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-0 img {
+  width: 88px;
+  height: 88px;
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-1 {
+  float: left;
+  width: 430px;
+  padding-left: 8px;
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-1 .ad-widget-small-head .ec-description {
+  position: relative;
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-1 .ad-widget-small-head .ec-description .ec-tel,
+#canvas .ad-layout-block-1 .ad-layout-block-1-1 .ad-widget-small-head .ec-description .ec-consult {
+  margin: 8px 0 5px;
+  color: #64a4ca;
+  display: block;
+  padding-left: 32px;
+  text-decoration: none;
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+  background: url(//bs.baidu.com/adtest/8d24340056bb2062f0283865e7682502.gif) no-repeat;
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-1 .ad-widget-small-head .ec-description .ec-consult {
+  position: absolute;
+  left: 150px;
+  bottom: 19px;
+  background-image: url(//bs.baidu.com/adtest/6c86f8a9ba3dfc9b315d96fe06a13dc7.gif);
+}
+#canvas .ad-layout-block-1 .ad-layout-block-1-1 .ec-site {
+  clear: left;
+}
+#canvas .ad-widget-section {
+  overflow: hidden;
+  zoom: 1;
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+#canvas .ad-widget-section li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+#canvas .ad-widget-section .ec-title {
+  margin-right: 5px;
+}
+#canvas .ad-layout-block-3 {
+  border: 1px solid #ececec;
+}
+#canvas .ad-layout-block-3 .ad-widget-title {
+  overflow: hidden;
+  zoom: 1;
+  background: #fbfbfb;
+  border-bottom: 1px solid #ececec;
+}
+#canvas .ad-layout-block-3 .ad-widget-title h2 {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip {
+  float: right;
+  padding: 3px 10px 0 0;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip span {
+  float: left;
+  height: 16px;
+  line-height: 16px;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip .ec-page-skip-tip {
+  padding: 0 5px;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip .ec-page-skip-arrow {
+  background: url(//bs.baidu.com/adtest/96b12910f29abd63a57a998221328db0.gif) no-repeat 2px 2px;
+  width: 10px;
+  cursor: pointer;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip .ec-page-skip-forward {
+  background-position: -32px 2px;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip .ec-page-skip-backward-disable {
+  cursor: default;
+  background-position: 2px -38px;
+}
+#canvas .ad-layout-block-3 .ad-widget-title .ec-page-skip .ec-page-skip-forward-disable {
+  cursor: default;
+  background-position: -32px -38px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont {
+  margin-top: -1px;
+  border-top: 1px solid #f4f4f4;
+  padding: 10px 0 10px 10px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-brand-pic {
+  height: 50px;
+  width: 67px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-brand-pic a img {
+  border: 1px solid #e4e4e4;
+  width: 65px;
+  height: 48px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-brand-intro {
+  height: 50px;
+  width: 90px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-brand-intro h1 {
+  display: none;
+  margin-bottom: 0;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-brand-intro .ec-des-text-links {
+  line-height: 16px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-brand-intro h3 a {
+  display: block;
+  width: 74px;
+  height: 23px;
+  margin-top: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  background-color: #73b7de;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-td-border {
+  border-right: 0 none;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-td-border .ec-brand-intro {
+  height: 50px;
+  width: 330px;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-td-border .ec-brand-intro h1 {
+  display: block;
+  margin: 0;
+  padding: 1px 0 4px;
+  height: 15px;
+  line-height: 15px;
+  vertical-align: baseline;
+}
+#canvas .ad-layout-block-3 .ad-widget-tab-cont .ec-td-border .ec-brand-intro h1 a {
+  display: block;
+  height: 15px;
+  line-height: 15px;
+  font-weight: normal;
+  color: #0200ce;
+  text-decoration: underline;
+}

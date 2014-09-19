@@ -1,0 +1,58 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-tab-cont .brand-pic",
+            "displayName": "产品图片设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "宽度",
+                    "defaultValue": "180px"
+                },
+                {
+                    "name": "color",
+                    "displayName": "文字颜色",
+                    "defaultValue": "#0001CC"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-tab-cont .td-border",
+            "displayName": "产品描述区域设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "宽度",
+                    "defaultValue": "200px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-tab-cont .td-border .brand-intro",
+            "displayName": "产品描述区域设置",
+            "rules": [
+                {
+                    "name": "padding-left",
+                    "displayName": "左边距",
+                    "defaultValue": "15px"
+                },
+                {
+                    "name": "padding-right",
+                    "displayName": "右边距",
+                    "defaultValue": "15px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-tab-cont .brand-intro",
+            "displayName": "活动区域设置",
+            "rules": [
+                {
+                    "name": "padding-left",
+                    "displayName": "左边距",
+                    "defaultValue": "15px"
+                }
+            ]
+        }
+    ]
+}

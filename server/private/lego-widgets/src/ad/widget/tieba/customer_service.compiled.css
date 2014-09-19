@@ -1,0 +1,69 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/customer_service.less ~ 2013/04/13 17:44:48
+ * @author guyiling@baidu.com (guyiling)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * customer_service样式文件
+ **/
+.ad-widget-tieba-customer-service {
+  width: 230px;
+  margin-top: 10px;
+  color: #666666;
+  font-size: 12px;
+  font-family: arial, sumsun;
+}
+.ad-widget-tieba-customer-service a {
+  color: #1d53bf;
+  text-decoration: none;
+}
+.ad-widget-tieba-customer-service a:hover {
+  text-decoration: underline;
+}
+.ad-widget-tieba-customer-service p {
+  margin: 15px 0 0 0;
+}
+.ad-widget-tieba-customer-service .ec-service-title {
+  height: 27px;
+  padding-left: 30px;
+  background: url(//bs.baidu.com/adtest/b41a3499f49624e9b69bff8d066de7fb.jpg) no-repeat 0 0;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.ad-widget-tieba-customer-service .ec-service-body {
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  padding: 15px 18px 3px;
+  background-color: #ffffff;
+}
+.ad-widget-tieba-customer-service ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.ad-widget-tieba-customer-service li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  background: url(//bs.baidu.com/adtest/c4c65d099990c750e9a173ed3f74b6d6.png) no-repeat;
+  line-height: 16px;
+}
+.ad-widget-tieba-customer-service .ec-service-post {
+  background-position: 0 -8px;
+}
+.ad-widget-tieba-customer-service .ec-service-qiao {
+  background-position: 0 -40px;
+}
+.ad-widget-tieba-customer-service .ec-service-qq {
+  background-position: 0 -72px;
+}
+.ad-widget-tieba-customer-service .ec-service-tel {
+  background-position: 0 -104px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

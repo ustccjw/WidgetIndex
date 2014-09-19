@@ -1,0 +1,13 @@
+<!-- target:AD_ad_widget_zhixin_brand -->
+<div class="ad-widget-zhixin ad-widget-zhixin-brand">
+  <div class="ec-title"><span title="{{title}}">{{title}}</span>{{#extension}}<span class="ec-extension">{{extension}}</span>{{/extension}}</div>
+    {{#rows}}
+        {{#options}}
+        <div class="ec-row">
+        {{#row}}
+        <a{{#ubs_config}} data-ubs-config="{{ubs_config}}"{{/ubs_config}} hideFocus='hideFocus' target="_blank" href="{{{rcv_url}}}" title2="{{name}}" {{#@last}}class="ec-last"{{/@last}}><img src="{{{image_src}}}"><span class="ec-name">{{name}} </span></a>
+        {{/row}}
+        </div>
+        {{/options}}
+    {{/rows}}
+</div>

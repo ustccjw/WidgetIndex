@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.app.html 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/wireless/wide_tel_button.app.html ~ 2013/12/10 14:53:25
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[AD]ad.widget.wireless.WideTelButton</title>
+    <script type="text/javascript" src="../../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../../base.js"></script>
+    <script type="text/javascript" src="wide_tel_button.config.js"></script>
+    <script type="text/javascript">
+        goog.require('ad.Debug');
+        goog.require('ad.Material');
+        goog.require('ad.widget.wireless.WideTelButton');
+    </script>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+ad.Debug(function() {
+    var material = new ad.Material('ec-ma-8964');
+    material.setWidgets(
+        [new ad.widget.wireless.WideTelButton(WIDGET_CONFIG)]
+    );
+    material.show();
+});
+</script>
+</html>

@@ -1,0 +1,143 @@
+{
+    "selectors": [
+        {
+            "name": ".ad-widget-image-cartoon",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "模块宽度",
+                    "defaultValue": "522px"
+                },
+                {
+                    "name": "background-color",
+                    "displayName": "背景色",
+                    "defaultValue": "#b3b3b3"
+                },
+                {
+                    "name": "height",
+                    "displayName": "模块高度",
+                    "defaultValue": "136px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-item-wrapper",
+            "displayName": "胶带设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "胶带宽度",
+                    "defaultValue": "522px"
+                },
+                {
+                    "name": "height",
+                    "displayName": "胶带高度",
+                    "defaultValue": "130px"
+                },
+                {
+                    "name": "left",
+                    "displayName": "胶带离左边距离",
+                    "defaultValue": "1px"
+                },
+                {
+                    "name": "top",
+                    "displayName": "胶带离上边距离",
+                    "defaultValue": "1px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-item-wrapper .ec-item",
+            "displayName": "胶带图片设置",
+            "rules": [
+                {
+                    "name": "height",
+                    "displayName": "胶带图片高度",
+                    "defaultValue": "130px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-item-wrapper .ec-item a:hover",
+            "displayName": "胶带图片hover效果设置",
+            "rules": [
+                {
+                    "name": "border",
+                    "displayName": "边框设置",
+                    "defaultValue": "none"
+                },
+                {
+                    "name": "left",
+                    "displayName": "左偏移",
+                    "defaultValue": "0"
+                },
+                {
+                    "name": "top",
+                    "displayName": "上偏移",
+                    "defaultValue": "0"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-item-wrapper .ec-item a div",
+            "displayName": "胶带图片悬浮文字",
+            "rules": [
+                {
+                    "name": "background-color",
+                    "displayName": "背景颜色",
+                    "defaultValue": "#000"
+                },
+                {
+                    "name": "color",
+                    "displayName": "文字颜色",
+                    "defaultValue": "#999"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-arrow",
+            "displayName": "左右箭头设置",
+            "rules": [
+                {
+                    "name": "bottom",
+                    "displayName": "左右箭头 离底边距离",
+                    "defaultValue": "58px"
+                },
+                {
+                    "name": "width",
+                    "displayName": "左右箭头宽度",
+                    "defaultValue": "16px"
+                },
+                {
+                    "name": "height",
+                    "displayName": "左右箭头高度",
+                    "defaultValue": "24px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-left-arrow",
+            "displayName": "左箭头设置",
+            "rules": [
+                {
+                    "name": "left",
+                    "displayName": "左箭头离左边距离",
+                    "defaultValue": "0px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image-cartoon .ec-right-arrow",
+            "displayName": "右箭头设置",
+            "rules": [
+                {
+                    "name": "right",
+                    "displayName": "右箭头离右边距离",
+                    "defaultValue": "0px"
+                }
+            ]
+        }
+    ]
+}
+

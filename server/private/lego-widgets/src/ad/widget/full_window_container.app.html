@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.app.html 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/full_window_container.app.html ~ 2013/08/13 16:15:31
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 10927 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[AD]ad.widget.FloatFullWindow</title>
+    <script type="text/javascript" src="../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript" src="full_window_container.config.js"></script>
+    <script type="text/javascript">
+        goog.require('ad.Debug');
+        goog.require('ad.Material');
+        goog.require('ad.widget.FullWindowContainer');
+    </script>
+</head>
+<body style="height:1900px;">
+<script type="text/javascript">
+ad.Debug(function(async) {
+    var material = new ad.Material('ec-ma-8964');
+    var fwc = new ad.widget.FullWindowContainer(WIDGET_CONFIG);
+    material.setWidgets(
+        [fwc]
+    );
+    if (async === true) {
+        return material;
+    };
+    material.show();
+    fwc.show();
+});
+</script>
+</body>
+</html>

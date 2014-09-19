@@ -1,0 +1,70 @@
+[
+  {
+    "name" : "物料1",
+    "status" : "success",
+    "url" : "https://www.baidu.com",
+    "cases" : [
+      {
+        "status" : "success",
+        "env" : "Windows XP/IE6",
+        "name" : "物料中链接点击测试",
+        "result" : "PASS",
+        "duration" : "0.3s",
+        "sub_cases" : [
+          {
+            "status" : "success",
+            "env" : "Windows XP/IE6",
+            "name" : "HELLO",
+            "result" : "PASS",
+            "duration" : "0.3s"
+          },
+          {
+            "status" : "success",
+            "env" : "Windows XP/IE6",
+            "name" : "WORLD",
+            "result" : "PASS",
+            "duration" : "0.3s"
+          }
+        ]
+      },
+      {
+        "status" : "error",
+        "env" : "Windows XP/IE6",
+        "name" : "物料统计功能测试",
+        "result" : "丢失了3项统计",
+        "duration" : "4.3s",
+        "preview_image" : [
+          {"name":"A", "url":"http://www.baidu.com/img/logo.gif"},
+          {"name":"B", "url":"http://www.baidu.com/img/logo.gif"},
+          {"name":"DIFF", "url":"http://www.baidu.com/img/logo.gif"}
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "物料2",
+    "status" : "error",
+    "url" : "http://www.baidu.com",
+    "cases" : [
+      {
+        "status" : "success",
+        "env" : "Windows XP/IE6",
+        "name" : "物料中链接点击测试",
+        "result" : "PASS",
+        "duration" : "0.3s"
+      },
+      {
+        "status" : "info",
+        "env" : "Windows XP/Firefox",
+        "name" : "物料统计功能测试",
+        "result" : "丢失了3项统计",
+        "duration" : "4.3s",
+        "preview_image" : [
+          {"name":"A", "url":"http://www.baidu.com/img/logo.gif"},
+          {"name":"B", "url":"http://www.baidu.com/img/logo.gif"},
+          {"name":"DIFF", "url":"http://www.baidu.com/img/logo.gif"}
+        ]
+      }
+    ]
+  }
+]

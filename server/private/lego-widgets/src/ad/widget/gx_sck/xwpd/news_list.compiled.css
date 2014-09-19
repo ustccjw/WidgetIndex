@@ -1,0 +1,51 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/gx_sck/xwpd/news_list.less ~ 2014/05/04 14:56:04
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * news_list样式文件
+ **/
+.ad-widget-gx_sck-xwpd-news-list {
+  font: 13px/1.5 arial, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-item {
+  color: #2a1adf;
+  line-height: 22px;
+  position: relative;
+  padding-left: 14px;
+  background: url("//bs.baidu.com/adtest/60da81e42c84823c2a0d9daea6b324a3.png") no-repeat 0 8px;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-item em {
+  color: #C60A00;
+  font-style: normal;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-item a {
+  color: #0000cc;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-source {
+  color: #6f6f6f;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-source a {
+  color: #008000;
+  text-decoration: none;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-source-text {
+  color: #008000;
+}
+.ad-widget-gx_sck-xwpd-news-list .ec-news-time {
+  margin-left: 6px;
+  position: absolute;
+  right: 10px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

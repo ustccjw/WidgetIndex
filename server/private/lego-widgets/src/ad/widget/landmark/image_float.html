@@ -1,0 +1,21 @@
+<!-- target:AD_ad_widget_landmark_image_float -->
+<div class="ad-widget-landmark ad-widget-landmark-image-float">
+    <img id="{{#_id}}image{{/_id}}" src="{{image}}" class="ec-base-image" />
+    <div id="{{#_id}}float{{/_id}}" class="ec-lm-float" style="display:none;">
+        {{#float_image}}
+        <a href="{{{rcv_url}}}" target="_blank" title2="浮层图片">
+            <img src="{{float_image}}" width="{{float_width}}" height="{{float_height}}" />
+        </a>
+        {{/float_image}}
+        {{#float_flash}}
+        <object id="{{#_id}}swf{{/_id}}" width="{{float_width}}" height="{{float_height}}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+            <param value="opaque" name="wmode">
+            <param value="always" name="allowscriptaccess">
+            <param value="{{float_flash}}" name="movie">
+            <embed id="{{#_id}}embed{{/_id}}" width="{{float_width}}" height="{{float_height}}" align="middle" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="{{#_id}}swf{{/_id}}" src="{{float_flash}}" allowscriptaccess="always" wmode="opaque">
+        </object>
+        <a href="{{{rcv_url}}}" class="ec-lm-layer" title2="浮层FLASH" target="_blank">&nbsp;</a>
+        {{/float_flash}}
+        <a id="{{#_id}}close{{/_id}}" class="ec-lm-close" href="#">&nbsp;</a>
+    </div>
+</div>

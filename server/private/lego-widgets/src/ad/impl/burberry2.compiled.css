@@ -1,0 +1,124 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: burberry2.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/burberry2.less ~ 2012/08/27 14:30:04
+ * @author fanxueliang@baidu.com
+ * @version $Revision: 11222 $ 
+ * @description 
+ * burberry样式文件
+ **/
+#canvas {
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  font: 12px/1.5 arial, sans-serif;
+  background-color: #eee;
+  margin-bottom: 20px;
+  width: 518px;
+  padding: 10px;
+}
+#canvas .ad-block-0 {
+  margin-bottom: 10px;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-1-0 {
+  float: left;
+}
+#canvas .ad-block-1-1 {
+  float: left;
+  width: 253px;
+  padding-left: 10px;
+  _padding-left: 7px;
+}
+#canvas .ad-widget-video object,
+#canvas .ad-widget-video embed {
+  display: block;
+}
+#canvas .ad-widget-small-head {
+  width: 254px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+  text-indent: 2em;
+}
+#canvas .ad-widget-small-head .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-widget-small-head .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 10px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  margin-right: 10px;
+}
+#canvas .ad-widget-small-head .ec-image-group a,
+#canvas .ad-widget-small-head .ec-image-group img {
+  display: block;
+  width: 78px;
+  height: 59px;
+  border: none;
+}
+#canvas .ad-widget-small-head .ec-image-group .ec-last {
+  margin-right: 0;
+}
+#canvas .ad-widget-iframe {
+  margin-top: 10px;
+  height: 140px;
+}
+#canvas .ad-widget-iframe div {
+  margin: 0;
+}
+#canvas .ad-widget-button-group {
+  margin-top: 15px;
+  padding: 0;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group td {
+  padding: 0;
+  height: 28px;
+  border: none;
+}
+#canvas .ad-widget-button-group td a {
+  color: #000;
+  text-decoration: none;
+  border-right: solid 1px #000;
+  height: 13px;
+  *height: 15px;
+  *line-height: 15px;
+  display: block;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group .ec-last a {
+  border: none;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container {
+  left: 0px;
+  top: 0px;
+}
+.ec-burberry-fwc-1 .ad-widget-video {
+  position: absolute;
+  left: 20px;
+  top: auto;
+  bottom: 20px;
+  width: 540px;
+  height: 304px;
+}
+.ec-burberry-fwc-1 .ad-widget-video object,
+.ec-burberry-fwc-1 .ad-widget-video embed {
+  display: block;
+  width: 540px;
+  height: 304px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

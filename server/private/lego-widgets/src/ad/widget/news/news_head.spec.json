@@ -1,0 +1,85 @@
+{
+    'contents': ['ad.widget.news.Head'],
+    'userPrefs': [
+        {
+            "name": "logo",
+            "displayName": "logo",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "logo_rcv_url",
+                    "displayName": "图片跳转地址",
+                    "defaultValue": "http://www.baidu.com",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL",
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "logo",
+                    "displayName": "上传图片",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "maxSize":50,
+                        "ext":"jpg,gif,png"
+                    },
+                    "tip": "",
+                    "multiline": false
+                }
+            ],
+            "rules": {}
+        },
+        {
+            "name": "news_origin",
+            "displayName": "news_origin",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "left_text",
+                    "displayName": "新闻源",
+                    "defaultValue": "HELLO WORLD",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "right_text",
+                    "displayName": "新闻源提供单位",
+                    "defaultValue": "HELLO WORLD",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                }
+            ]
+        },
+        {
+            "name": "description",
+            "displayName": "描述",
+            "defaultValue": "HELLO WORLD",
+            "datatype": "STRING",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        }
+    ]
+}

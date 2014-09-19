@@ -1,0 +1,32 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/landmark/single_image.less ~ 2013/12/05 18:50:23
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * single_image样式文件
+ **/
+#canvas {
+  position: relative;
+  width: 259px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #E1E1E1;
+}
+#canvas .ad-widget-image img {
+  width: 259px;
+  height: 146px;
+}
+#canvas .ad-widget-image-layer {
+  right: 0;
+  height: 18px;
+  line-height: 18px;
+}
+#canvas .ad-widget-image-layer span {
+  padding: 2px 3px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

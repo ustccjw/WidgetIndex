@@ -1,0 +1,301 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/wireless_custom/burberry/smart.less ~ 2014/02/13 15:58:05
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * smart样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    .wlpl-canvas-border();
+    padding: 12px 0;
+    .ad-widget-wireless-head {
+        padding-bottom: 6px;
+        .ec-official-site {
+            background-color: #3c75e0;
+        }
+        .ec-head-title {
+            padding: 0 10px 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .ec-head-content {
+            padding: 0 10px;
+        }
+        .ec-logo-img {
+            width: 54px;
+            height: 54px;
+            margin-top: 10px;
+        }
+        .ec-head-desc {
+            padding: 6px 0 0 0;
+            line-height: 22px;
+        }
+    }
+    .ad-block-1 {
+        padding: 0 10px;
+    }
+    .ad-widget-wireless-tip-button {
+        border-top: 1px solid #f5f5f5;
+        b {
+            font-weight: normal;
+        }
+    }
+    .ec-tip-button-hide {
+        display: none;
+    }
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container {
+    background: url(//bs.baidu.com/adtest/ae601aea8fdf6515c3de781a3059e26a.png) no-repeat #fff;
+    background-size: 100% 2px;
+    padding-top: 2px;
+    color: #262626;
+    -webkit-overflow-scrolling : touch;
+    a, a:focus, a:active {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .ec-sub {
+        display: none;
+    }
+    .ec-close {
+        right: 15px;
+        top: 13px;
+        width: 19px;
+        height: 19px;
+        background: url("//bs.baidu.com/adtest/3f016a065803ff97ff1f51d4695eef6e.png") no-repeat 3px 3px;
+        background-size: 13px 13px;
+    }
+    .ec-close:hover {
+        background: url("//bs.baidu.com/adtest/3f016a065803ff97ff1f51d4695eef6e.png") no-repeat 3px 3px;
+        background-size: 13px 13px;
+    }
+    .ec-cont {
+        width: 100%;
+        top: 2px;
+    }
+    .ec-fwcon-0 {
+        padding: 12px 0 12px 10px;
+        font-size: 17px;
+        line-height: 17px;
+        background: #f5f5f5;
+        border-bottom: 1px solid #efefef;
+        text-align: left;
+        .ec-logo {
+            width: 11px;
+            height: 12px;
+            margin-right: 10px;
+        }
+    }
+    .ec-fwcon-1 {
+        background-color: #fff;
+        padding: 12px 10px;
+        text-align: left;
+        .ec-item-title {
+            font-size: 17px;
+            line-height: 17px;
+            padding-bottom: 8px;
+        }
+        .ec-item {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .ec-item-wrap{
+        }
+        .ec-button-wrap {
+            padding: 0 20px 8px;
+            margin: 8px 0 0;
+        }
+        .ec-button {
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            background-color: #3675df;
+            text-align: center;
+            text-decoration: none;
+            .border-radius(3px);
+            border: 1px solid #3675df;
+            height: 30px;
+            line-height: 30px;
+        }
+        .ec-button:active {
+            background-color: #0028ac;
+            border: 1px solid #0028ac;
+            .box-shadow(0 2px 0 #0b3181 inset);
+        }
+        .ec-light-button {
+            display: block;
+            color: #0058d2;
+            font-size: 14px;
+            background-color: #e8f4ff;
+            text-align: center;
+            text-decoration: none;
+            .border-radius(3px);
+            border: 1px solid #92b9f8;
+            height: 30px;
+            line-height: 30px;
+        }
+        .ec-light-button:active {
+            background-color: #c9dff4;
+            border: 1px solid #92b9f8;
+            .box-shadow(0 2px 0 #afd1ff inset);
+        }
+        .ec-button-disable,
+        .ec-button-disable:active {
+            color: #aaa;
+            background-color: #f5f5f5;
+            border: 1px solid #eee;
+            .box-shadow(0 0 0 #f5f5f5 inset);
+        }
+        .ec-row {
+            .gain-bfc();
+            margin-bottom: 12px;
+        }
+        .ec-row-title {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .ec-row-title2 {
+            padding-top: 6px;
+        }
+        .ec-input {
+            font-size: 14px;
+            color: #262626;
+            background-color: #fff;
+            border: 1px solid #d2d6dd;
+            height: 32px;
+            width: 100%;
+            line-height: 24px;
+            padding: 3px 8px;
+            .box-sizing(border-box);
+            .border-radius(3px);
+            .box-shadow(0 2px 0 rgba(0,0,0,0.05) inset);
+        }
+        .ec-input:focus,
+        .ec-input:active {
+            .border-radius(3px);
+            border-color: #3b75df;
+        }
+        .ec-input-default {
+            color: #aaa;
+        }
+        .ec-input-error {
+            display: none;
+            clear: both;
+            font-size: 14px;
+            color: #c00;
+            padding-top: 6px;
+        }
+        .ec-mobile {
+            float: left;
+            width: 187px;
+        }
+        .ec-get-identify-wrap {
+            float: right;
+            padding-left: 6px;
+            width: 107px;
+            height: 32px;
+        }
+        .ec-name {
+            float: left;
+            width: 218px;
+        }
+        .ec-select-wrap {
+            text-decoration: none;
+            height: 32px;
+            position: relative;
+        }
+        .ec-select-wrap:after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            width: 0;
+            height: 0;
+            font-size: 0;
+            border: 4px solid #777;
+            border-color: #777 transparent transparent;
+        }
+        .ec-select-default .ec-select-show-value {
+            color: #aaa;
+        }
+        .ec-select-show-value {
+            color: #262626;
+            background-color: transparent;
+        }
+        .ec-select-gender-wrap {
+            float: right;
+            margin-left: 6px;
+            width: 76px;
+        }
+        .ec-select-province-wrap {
+            float: left;
+            width: 147px;
+        }
+        .ec-select-city-wrap {
+            float: right;
+            margin-left: 6px;
+            width: 147px;
+        }
+        .ec-select-city-wrap {
+            float: right;
+        }
+        .ec-select-wrap select {
+            top: 1px;
+            left: 1px;
+            position: absolute;
+            height: 30px;
+            opacity: 0;
+        }
+        .ec-select-gender {
+            width: 74px;
+        }
+        .ec-select-province,
+        .ec-select-city {
+            width: 145px;
+        }
+        .ec-button-submit-wrap {
+            height: 60px;
+            padding-top: 150px;
+        }
+        .ec-submit-success-title {
+            text-align: center;
+            font-size: 14px;
+            padding-bottom: 12px;
+        }
+        .ec-button-submit-success {
+            width: 135px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

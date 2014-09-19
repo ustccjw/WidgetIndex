@@ -1,0 +1,69 @@
+{
+    "contents": ["ad.widget.ImageTopBackground"],
+    "userPrefs": [
+        {
+            "name": "primary",
+            "displayName": "主背景图",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "url",
+                    "displayName": "主背景图",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "tip": "",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "height": 365,
+                        "width": 1920,
+                        "maxSize": 500,
+                        "ext": "jpg"
+                    }
+                },
+                {
+                    "name": "repeat",
+                    "displayName": "重复",
+                    "defaultValue": "no-repeat",
+                    "datatype": "HIDDEN",
+                    "rules": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "position",
+                    "displayName": "位置",
+                    "defaultValue": "top center",
+                    "datatype": "HIDDEN",
+                    "rules": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "color",
+                    "displayName": "颜色",
+                    "defaultValue": "transparent",
+                    "datatype": "HIDDEN",
+                    "rules": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "height",
+                    "displayName": "高度",
+                    "defaultValue": "365",
+                    "datatype": "HIDDEN",
+                    "extraAttr": {
+                        "filters": "int"
+                    },
+                    "rules": {},
+                    "tip": "",
+                    "multiline": false
+                }
+            ],
+            "rules": {}
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/ping_an_frs.less ~ 2012/11/13 10:21:03
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * ping_an_frs样式文件
+ **/
+.ad-widget-tieba-ping-an-frs {
+  font-size: 12px;
+  line-height: 1.5;
+  height: 85px;
+  color: #000;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-left {
+  float: left;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-left img {
+  width: 114px;
+  height: 85px;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-right {
+  margin-left: 114px;
+  height: 85px;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-right select {
+  width: 97px;
+  height: 22px;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-right input {
+  padding: 0;
+  margin: 0;
+  _margin-top: -1px;
+  height: 18px;
+  width: 93px;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-items {
+  float: left;
+  margin: 0 0 0 10px;
+  width: 95px;
+  _display: inline;
+  _zoom: 1;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-item {
+  height: 22px;
+  margin-bottom: 9px;
+  float: left;
+  _overflow: hidden;
+  vertical-align: middle;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-main {
+  width: 341px;
+  position: relative;
+  zoom: 1;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-tip {
+  display: none;
+  line-height: 20px;
+  position: absolute;
+  padding: 0 5px;
+  color: #fca433;
+  border: 1px solid #f6ba77;
+  background-color: #fff9e2;
+  zoom: 1;
+  z-index: 2;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-iframe {
+  display: none;
+  position: absolute;
+  border: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-submit {
+  display: block;
+  background: url(//bs.baidu.com/adtest/db878bec14731b330f3d30a46e42767e.png) no-repeat;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 95px;
+  height: 22px;
+  line-height: 22px;
+  margin: 1px 0 0;
+}
+.ad-widget-tieba-ping-an-frs .ec-ping-an-frs-submit:hover {
+  background-image: url(//bs.baidu.com/adtest/658d9484b00d21c900ec14a72bb635d4.png);
+}
+.ad-widget-tieba-ping-an-frs .ec-clear {
+  clear: both;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

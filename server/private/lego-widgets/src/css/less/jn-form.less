@@ -1,0 +1,116 @@
+@import-once "jn-basic.less";
+
+/**
+ * 表格/表单区域容器样式
+ **/
+.jn-form-container() {
+    border: 1px solid @light-blue;
+}
+
+.jn-form-segment,
+.jn-form-segment-upper {
+    .jn-form-container();
+    _border-bottom: none;
+
+    & + .jn-form-segment {
+        border-top: none;
+    }
+
+    h3 {
+        height: 29px;
+        margin: 0;
+        border-bottom: 1px solid @light-blue;
+        padding: 0 10px;
+        background: url("/assets/img/coupFormTitleBar.png") repeat-x 0 0;
+        font-size: 12px;
+        line-height: 29px;
+    }
+}
+
+.jn-form-block,
+.jn-form-block-upper {
+    .jn-form-container();
+    margin: 0 0 20px 0;
+
+    h3, caption {
+        margin: 0;
+        border-bottom: 1px solid @light-blue;
+        padding: 10px;
+        background-color: @lightest-blue;
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    caption {
+        border: 1px solid @light-blue;
+        border-bottom: none;
+        font-weight: 700;
+    }
+}
+
+.jn-form-block-upper, .jn-form-segment-upper {
+    margin-bottom: 0;
+
+     .jn-form-body {
+        border-top: 1px solid @light-blue;
+     }
+
+    &, & .jn-form-body, & h3 {
+        border-bottom: none;
+    }
+}
+
+table.jn-form-block {
+    width: 100%;
+}
+
+.jn-form-body {
+    .clearfix();
+    padding: 8px 10px;
+}
+
+.jn-form-segment-last {
+    margin-bottom: 20px; /* FIXME: 非 IE6 浏览器也暂时依赖此项设置 */
+    border-bottom:  1px solid @light-blue;
+}
+
+/**
+ * 详细信息表格/表单
+ **/
+.jn-detail-form {
+    .jn-key-value-table();
+
+    .jn-detail-form {
+        th {
+            width: auto;
+        }
+    }
+
+    td, th {
+        padding: 6px 5px 6px 2px;
+    }
+
+    .ui-table {
+        td, th {
+            padding: 0;
+        }
+    }
+
+
+    th {
+        width: 130px;
+    }
+
+    td {
+        .jn-row {
+            margin-bottom: 5px;
+        }
+
+    }
+}
+
+.jn-detail-form td {
+    .jn-row;
+
+    display: table-cell;
+}

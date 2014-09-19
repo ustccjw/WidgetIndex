@@ -1,0 +1,17 @@
+<!-- target:AD_ad_widget_imageplus_v2_dock_tab -->
+<div class="ad-widget-imageplus-v2-dock-tab">
+    <div class="ad-ip-panels" id="{{#_id}}panels{{/_id}}">
+        {{#adlist}}
+        <div class="ad-ip-panel"{{^@first}} style="display:none;"{{/@first}}>
+            <!-- INSERT_POINT -->
+            <a class="ad-ip-minimize" data-ignore href="#"><span><i>-</i></span></a>
+        </div>
+        {{/adlist}}
+    </div>
+    <div class="ad-ip-tabs" id="{{#_id}}tabs{{/_id}}">
+        {{#adlist}}
+        <a href="#" data-ignore data-index="{{@index}}" style="width:{{item_width}}px;" class="ad-ip-tab{{#@first}} ad-ip-tab-active{{/@first}}{{#@last}} ad-ip-last{{/@last}}"><span><i>{{bid_word}}</i></span></a>
+        {{/adlist}}
+    </div>
+    <a class="ad-ip-close" data-ignore id="{{#_id}}close{{/_id}}" href="#"><span><i>X</i></span></a>
+</div>

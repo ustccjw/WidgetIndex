@@ -1,0 +1,31 @@
+<!-- target:AD_ad_widget_zhixin_rank -->
+<div class="ad-widget-zhixin ad-widget-zhixin-rank">
+
+    {{#title}}
+    <h2 class="ec-rank-head">
+        <span>{{{title}}}</span>
+    </h2>
+    {{/title}}
+
+    <ul class="ec-rank">
+    <li class="ec-head">
+        <div class="ec-trend">搜索指数</div>
+        <div class="ec-name">排名</div>
+    </li>
+    {{#ranks}}
+    <li>
+        <span>{{rate}}</span>
+        <strong class="ec-rank-no{{_index}}">{{_index}}</strong>
+        <a target="_blank" href="{{{text_rcv_url}}}" title2="eczx_rank_{{_index}}">{{{text}}}</a>
+    </li>
+    {{/ranks}}
+    </ul>
+
+    <div class="ec-rank-foot">
+    来源: 
+    {{#foot}}
+    <a target="_blank" href="{{{text_rcv_url}}}" title2="eczx_rank_foot">{{text}}</a>{{^@last}} - {{/@last}}
+    {{/foot}}
+    </div>
+
+</div>

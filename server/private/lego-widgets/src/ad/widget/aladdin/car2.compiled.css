@@ -1,0 +1,50 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/aladdin/car2.less ~ 2013/09/26 09:59:04
+ * @author liyubei@baidu.com (liyubei)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * car2样式文件
+ **/
+.ad-widget-aladdin-car2 {
+  font: 13px/1.5 arial, sans-serif;
+}
+.ad-widget-aladdin-car2 ul {
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-aladdin-car2 h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.ad-widget-aladdin-car2 p {
+  margin: 0;
+}
+.ad-widget-aladdin-car2 ul,
+.ad-widget-aladdin-car2 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ad-widget-aladdin-car2 li {
+  float: left;
+  margin-right: 12px;
+}
+.ad-widget-aladdin-car2 h3,
+.ad-widget-aladdin-car2 em,
+.ad-widget-aladdin-car2 cite {
+  font-style: normal;
+  font-weight: normal;
+}
+.ad-widget-aladdin-car2 cite {
+  color: #008000;
+}
+.ad-widget-aladdin-car2 em {
+  color: #cc0000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

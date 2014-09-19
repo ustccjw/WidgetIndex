@@ -1,0 +1,169 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dell2.less ~ 2013/11/25 16:14:59
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * dell2样式文件
+ **/
+#canvas {
+  font: 13px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+  padding: 7px 10px 14px 9px;
+  width: 518px;
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.072);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.072);
+}
+#canvas .ad-widget-h1 .ec-header-title {
+  color: #00c;
+}
+#canvas .ad-widget-h1 .ec-cont {
+  display: none;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+#canvas .ad-block-1 .ec-description {
+  text-indent: 2em;
+  line-height: 20px;
+  color: #000;
+}
+#canvas .ad-block-1 .ec-description a {
+  color: #00c;
+}
+#canvas .ad-block-1 .ec-description .ec-site {
+  padding-top: 0;
+  text-indent: 0;
+}
+#canvas .ad-block-1 .ec-description .ec-site a {
+  color: #666;
+}
+#canvas .ad-block-1-0 {
+  float: left;
+  width: 121px;
+  height: 121px;
+  padding-top: 4px;
+}
+#canvas .ad-block-1-0 img {
+  width: 121px;
+  height: 121px;
+}
+#canvas .ad-block-1-1 {
+  float: left;
+  width: 380px;
+  padding-left: 9px;
+}
+#canvas .ad-widget-section {
+  overflow: hidden;
+  zoom: 1;
+  width: 380px;
+  padding-top: 2px;
+  *padding-top: 0;
+  _padding-top: 3px;
+}
+#canvas .ad-widget-section li {
+  float: left;
+  width: 190px;
+  margin-bottom: 0;
+  padding-top: 3px;
+  *padding-top: 3px;
+  _padding-top: 5px;
+}
+#canvas .ad-widget-section li .ec-icon {
+  vertical-align: middle;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  width: 8px;
+  height: 8px;
+  font-size: 0;
+}
+#canvas .ad-widget-section li .ec-icon1 {
+  background: #1ea5ff;
+}
+#canvas .ad-widget-section li .ec-icon2 {
+  background: #4fc277;
+}
+#canvas .ad-widget-section li .ec-icon3 {
+  background: #ff8211;
+}
+#canvas .ad-widget-section li .ec-icon4 {
+  background: #f5c439;
+}
+#canvas .ad-widget-section li a {
+  zoom: 1;
+}
+#canvas .ad-widget-image-normal {
+  padding-bottom: 10px;
+  height: 40px;
+}
+#canvas .ad-widget-image-normal a img {
+  border: 0 none;
+  width: 166px;
+  height: 40px;
+}
+#canvas .ad-widget-tab-container {
+  width: 518px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head {
+  position: relative;
+  margin: 0px;
+  background: none;
+  background-color: #0188cc;
+  padding: 0px;
+  height: 30px;
+  overflow: hidden;
+  width: 518px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head li {
+  margin: 0px;
+  height: 30px;
+  line-height: 30px;
+  border-left: 1px solid #0188cc;
+  border-right: 1px solid #0188cc;
+}
+#canvas .ad-widget-tab-container .ec-tab-head li a {
+  display: block;
+  background-color: #0188cc;
+  color: #fff;
+  border: none;
+  margin-left: -1px;
+  border-right: 1px solid #fff;
+  padding: 0px;
+  margin-top: 9px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-tab-list-last a {
+  border-right-color: transparent;
+  _border-right: 0 none;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-current-tab {
+  background: #5bb4e5;
+  left: -2px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-current-tab a {
+  background: #5bb4e5;
+  margin-left: 0;
+  padding-left: 2px;
+  border-right: 0 none;
+}
+#canvas .ad-widget-tab-container .ec-tab-body {
+  overflow: hidden;
+  zoom: 1;
+  height: 140px;
+  background-color: #eee;
+}
+#canvas .ad-widget-tab-container .ec-tab-body .ec-tabcon {
+  height: 100%;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

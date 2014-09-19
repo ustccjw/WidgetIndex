@@ -1,0 +1,11 @@
+<ul class="row image-show">
+    <li ng-repeat="image in res.images" class="col-xs-6 col-md-3 image-show-img">
+        <a ng-href="{{image.rcv_url}}" class="thumbnail">
+            <img ng-src="{{image.src}}" />
+            <span>{{image.widget}}</span>
+        </a>
+    </li>
+</ul>
+<div class="image-show-loading" ng-if="req.flag" my-loading="req.load()">
+    <img src="/loading.gif" />
+</div>

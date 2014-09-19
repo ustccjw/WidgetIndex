@@ -1,0 +1,170 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/image/tour.less ~ 2013/01/16 11:09:49
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * tour样式文件
+ **/
+.ad-widget-image-tour {
+  font: 13px/1.5 "宋体", arial, sans-serif;
+}
+.ad-widget-image-tour ul {
+  list-style: none;
+}
+.ad-widget-image-tour ul,
+.ad-widget-image-tour p {
+  margin: 0px;
+  padding: 0px;
+}
+.ad-widget-image-tour a {
+  color: #0000cc;
+}
+.ad-widget-image-tour .ec-header {
+  font-size: 15px;
+  color: #0033CC;
+  margin-bottom: 15px;
+}
+.ad-widget-image-tour .ec-header em {
+  color: #CC0000;
+  font-style: normal;
+}
+.ad-widget-image-tour .ec-main {
+  margin-bottom: 15px;
+}
+.ad-widget-image-tour .ec-inner {
+  width: 203px;
+  height: 439px;
+  border: solid 1px #DADADA;
+  border-radius: 5px;
+}
+.ad-widget-image-tour .ec-head {
+  height: 38px;
+  border-bottom: solid 1px #DADADA;
+}
+.ad-widget-image-tour .ec-head ul {
+  width: 100%;
+  height: 38px;
+}
+.ad-widget-image-tour .ec-head li {
+  float: left;
+  background: url(//bs.baidu.com/adtest/ca942e24dec651149a5aaf5fd641794d.jpg) repeat-x;
+  height: 30px;
+  width: 80px;
+  padding: 8px 0px 0px 21px;
+  font-size: 15px;
+  color: #6C6C6C;
+  font-weight: normal;
+  cursor: pointer;
+}
+.ad-widget-image-tour .ec-head li.ec-tour {
+  border-right: solid 1px #DADADA;
+  width: 79px;
+}
+.ad-widget-image-tour .ec-head li.ec-hotel {
+  position: relative;
+}
+.ad-widget-image-tour .ec-head .ec-hui {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: #E30000;
+  font-weight: normal;
+}
+.ad-widget-image-tour .ec-head li.ec-hover {
+  background: url(//bs.baidu.com/adtest/2427c3a99c5ccb16c66ca17dd77ab186.jpg) repeat-x;
+  font-weight: bold;
+}
+.ad-widget-image-tour .ec-body {
+  padding: 10px 5px;
+  position: relative;
+  height: 380px;
+}
+.ad-widget-image-tour .ec-tour .ec-img,
+.ad-widget-image-tour .ec-hotel .ec-img {
+  float: left;
+}
+.ad-widget-image-tour .ec-tour li,
+.ad-widget-image-tour .ec-hotel li {
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-image-tour .ec-tour li .ec-title,
+.ad-widget-image-tour .ec-hotel li .ec-title {
+  margin-bottom: 6px;
+}
+.ad-widget-image-tour .ec-tour li a img,
+.ad-widget-image-tour .ec-hotel li a img {
+  border: solid 1px #888;
+}
+.ad-widget-image-tour .ec-tour li {
+  margin-bottom: 5px;
+  *margin-bottom: 0px;
+  _margin-bottom: 0px;
+}
+.ad-widget-image-tour .ec-tour .ec-detail {
+  margin-left: 5px;
+  float: left;
+  color: #6c6c6c;
+}
+.ad-widget-image-tour .ec-tour .ec-price span {
+  color: #CC0000;
+  font-weight: bold;
+}
+.ad-widget-image-tour .ec-tour .ec-bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.ad-widget-image-tour .ec-hotel li {
+  margin-bottom: 12px;
+}
+.ad-widget-image-tour .ec-hotel .ec-detail {
+  margin-left: 5px;
+  float: left;
+  color: #6c6c6c;
+}
+.ad-widget-image-tour .ec-hotel .ec-title {
+  margin-bottom: 5px;
+}
+.ad-widget-image-tour .ec-hotel .ec-price {
+  color: #CC0000;
+  font-weight: bold;
+}
+.ad-widget-image-tour .ec-hotel .ec-brand {
+  color: #6C6C6C;
+  margin-top: -10px;
+}
+.ad-widget-image-tour .ec-hotel .ec-level {
+  color: #6C6C6C;
+  margin-top: 5px;
+}
+.ad-widget-image-tour .ec-hotel .ec-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+}
+.ad-widget-image-tour .ec-ticket ul {
+  margin-bottom: 10px;
+}
+.ad-widget-image-tour .ec-ticket li {
+  color: #CC0000;
+  font-weight: bold;
+}
+.ad-widget-image-tour .ec-ticket li a {
+  display: block;
+  margin-left: 50px;
+  margin-top: -20px;
+  font-weight: normal;
+}
+.ad-widget-image-tour .ec-head {
+  margin-bottom: 10px;
+  color: #6C6C6C;
+  font-weight: bold;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

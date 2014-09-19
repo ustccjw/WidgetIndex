@@ -1,0 +1,36 @@
+<div class="examples-show" ng-controller="ExamplesController">
+    <div class="row examples-show-insert">
+        <div class="col-md-2">
+            <button type="button" class="btn btn-default" ng-click="exp.flag=!exp.flag">添加样例</button>
+        </div>
+        <div class="col-md-10">
+            <form name="example_form" class="examples-show-form" ng-show="exp.flag" ng-submit="exp.submit()" novalidate>
+                <div class="form-group">
+                    <label for="image_url">示例图片</label>
+                    <input type="url" name="image_url" id="image_url" class="form-control" placeholder="https://" ng-model="exp.img" required />
+                </div>
+                <div class="form-group">
+                    <label for="config">配置文本</label>
+                    <textarea class="form-control" rows="3" name="config" id="config" ng-model="exp.config" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" ng-disabled="example_form.$invalid">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row" ng-repeat="example in exp.examples">
+        <span class="glyphicon glyphicon-trash examples-show-remove" ng-click="exp.remove($index)"></span>
+        <div clear="both"></div>
+        <div class="col-md-6">
+            <div class="examples-show-img">
+                <img ng-src="{{example.img}}" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="examples-show-config">
+                <pre><code>{{example.config}}</code></pre>
+            </div>
+        </div>
+    </div>
+</div>

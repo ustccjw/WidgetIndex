@@ -1,0 +1,63 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: header.less 10002 2012-06-30 15:51:42Z loutongbing $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/header.less ~ 2012/06/04 15:06:49
+ * @author loutongbing
+ * @version $Revision: 10002 $ 
+ * @description 
+ *    
+ **/
+.ad-widget-header {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  *zoom: 1;
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-header em {
+  color: #cc0000;
+  font-style: normal;
+}
+.ad-widget-header .ec-image {
+  float: left;
+  width: 73px;
+  height: 73px;
+  border: 1px solid #ccc;
+}
+.ad-widget-header .ec-tip-image {
+  border: none;
+  float: left;
+  margin-left: -52px;
+  margin-top: 57px;
+}
+.ad-widget-header .ec-figcaption {
+  overflow: hidden;
+  *zoom: 1;
+  padding-left: 10px;
+}
+.ad-widget-header .ec-figcaption a {
+  color: blue;
+}
+.ad-widget-header .ec-figcaption h2 {
+  font-size: 14px;
+}
+.ad-widget-header .ec-figcaption h2,
+.ad-widget-header .ec-figcaption p {
+  padding: 0;
+  margin: 0;
+}
+.ad-widget-header .ec-figcaption .ec-description-link {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+.ad-widget-header .ec-figcaption .ec-footer {
+  color: #008000;
+  font-size: 13px;
+  text-decoration: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,72 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: landmark1.less 9564 2012-06-06 04:43:29Z loutongbing $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/landmark1.less ~ 2012/06/06 11:51:39
+ * @author loutongbing
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 270px;
+  background: #ffffff;
+  padding-bottom: 20px;
+}
+#canvas a {
+  font-size: 13px;
+}
+#canvas h2 a {
+  font-size: 16px;
+  font-weight: normal;
+  color: #0000cc;
+}
+#canvas h2 {
+  height: 19px;
+  line-height: 19px;
+  margin-bottom: 4px;
+}
+#canvas .ad-layout-row-1 {
+  margin-top: 5px;
+}
+#canvas .ad-layout-row-1 img {
+  width: 270px;
+  height: 140px;
+}
+#canvas .ad-layout-row-1 a {
+  color: #000000;
+}
+#canvas .ad-layout-row-1 .ec-description {
+  margin-top: 4px;
+}
+#canvas .ec-pic-des {
+  display: block;
+}
+#canvas .ad-layout-row-2 ul {
+  margin-top: 8px;
+}
+#canvas .ad-layout-row-2 li {
+  width: 88px;
+  margin-left: 2px;
+  margin-bottom: 1px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #C2D8F8;
+  border: none;
+}
+#canvas .ad-layout-row-2 .ec-o1 {
+  margin-left: 0px;
+}
+#canvas .ad-layout-row-2 a {
+  color: #0000cc;
+}
+#canvas .ad-layout-row-3 .ad-widget-float {
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  z-index: 1;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

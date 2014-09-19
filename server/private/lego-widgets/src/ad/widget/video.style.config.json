@@ -1,0 +1,21 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-video object, .ad-widget-video embed, .ad-widget-video a, .ad-widget-video a img",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "视频宽度设置", // 可选
+                    "defaultValue": "220px"
+                },
+                {
+                    "name": "height",
+                    "displayName": "视频高度设置", // 可选
+                    "defaultValue": "190px"
+                }
+            ]
+        }
+    ]
+}
+

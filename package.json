@@ -1,0 +1,40 @@
+{
+  "name": "Widgets.org",
+  "description": "Widgets filing build on koa.",
+  "version": "0.0.1",
+  "author": "ustccjw <317713370@qq.com>",
+  "license": "MIT",
+  "repository": "ustccjw/Widgets.org",
+  "main": "server",
+  "dependencies": {
+    "koa": "*",
+    "koa-logger": "*",
+    "koa-compress": "*",
+    "koa-static": "*",
+    "koa-router": "*",
+    "koa-json": "*",
+    "koa-favicon": "*",
+    "co-views": "*",
+    "co-body": "*",
+    "co-fs": "*",
+    "co": "*",
+    "ejs": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "start": "node --harmony-generators server/serve",
+    "refresh": "node --harmony-generators server/private/tools/transverse",
+    "autograb": "cd server/private/tools & phantomjs screenshot.js"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-less": "^1.3.5",
+    "gulp-ng-annotate": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.1"
+  }
+}

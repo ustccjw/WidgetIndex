@@ -1,0 +1,56 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/avatar/tab_toggler.less ~ 2014/05/21 17:36:10
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * tab_toggler样式文件
+ **/
+.ad-widget-imageplus-avatar-tab-toggler {
+  cursor: pointer;
+  width: 102px;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-indicator-ctn {
+  text-align: center;
+  width: 102px;
+  height: 20px;
+  background-color: transparent;
+  background-color: rgba(102, 102, 102, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC666666,endColorstr=#CC666666)\9;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-indicator-ctn:last-of-type {
+  filter: none;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-toggle-indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(http://ecma.bdimg.com/adtest/f6146556cb0eb26517b5994baec0fcc0.png) no-repeat;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-indicator-up {
+  background-position: 0 3px;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-indicator-down {
+  background-position: 0 -18px;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-toggle-tab {
+  width: 100px;
+  border: 1px solid #666;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  color: #656565;
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF)\9;
+}
+.ad-widget-imageplus-avatar-tab-toggler .ec-ec-toggle-tab:first-of-type {
+  filter: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

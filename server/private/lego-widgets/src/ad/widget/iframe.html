@@ -1,0 +1,9 @@
+<!-- target:AD_ad_widget_iframe -->
+<div class="ad-widget ad-widget-iframe">
+    {{#image}}
+    <a id="{{#_id}}image{{/_id}}" href="{{{image_rcv_url}}}" target="_blank"><img src="{{image}}" /></a>
+    {{/image}}
+    {{#src}}
+    <div><iframe id="{{#_id}}iframe{{/_id}}" width="{{width}}" height="{{height}}" frameborder="0" src="{{src}}" style="overflow:hidden;" scrolling="no" {{#transparent}}allowTransparency="true"{{/transparent}}></iframe></div>
+    {{/src}}
+</div>

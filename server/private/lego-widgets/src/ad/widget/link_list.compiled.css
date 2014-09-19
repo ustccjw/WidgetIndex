@@ -1,0 +1,32 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: footer.less 9564 2012-06-06 04:43:29Z loutongbing $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/footer.less ~ 2012/06/04 15:16:21
+ * @author loutongbing
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+.ad-widget-link-list {
+  margin: 0;
+  padding: 0;
+  font: 12px/1.5 arial, sans-serif;
+  height: 24px;
+}
+.ad-widget-link-list li {
+  list-style: none;
+  float: left;
+  border: 1px solid #FFFFFF;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #D3D1F8;
+}
+.ad-widget-link-list a {
+  color: blue;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

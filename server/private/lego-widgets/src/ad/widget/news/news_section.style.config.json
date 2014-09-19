@@ -1,0 +1,29 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-news-section li",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "margin-bottom",
+                    "displayName": "栏目间距",
+                    "options": ['8px', '0px'],
+                    "defaultValue": "8px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-news-head li a",
+            "displayName": "栏目链接文本设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "字体颜色",
+                    "options": ['#0000cc', '#0000ff'],
+                    "defaultValue": "#0000cc"
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,20 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/contact_info.less ~ 2014/07/30 15:52:21
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * contact_info样式文件
+ **/
+.ad-widget-contact-info {
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-contact-info .ec-text {
+  color: blue;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

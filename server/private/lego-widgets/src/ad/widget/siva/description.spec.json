@@ -1,0 +1,32 @@
+{
+    "contents": [
+        "ad.widget.siva.Description"
+    ],
+    "userPrefs": [
+        {
+            "name": "desc",
+            "displayName": "描述信息",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "minByteLength": 60,
+                "maxByteLength": 88
+            },
+            "tip": "描述信息30-44个汉字",
+            "multiline": false
+        },
+        {
+            "name": "target_rcv_url",
+            "displayName": "描述及按键跳转URL",
+            "defaultValue": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL"
+            },
+            "tip": "",
+            "multiline": false
+        }
+    ]
+}

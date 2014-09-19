@@ -1,0 +1,24 @@
+<!-- target:AD_ad_widget_video_multi_image_slide -->
+<div class="ad-widget-video ad-widget-video-multi-image-slide">
+    <div class="ec-img-container">
+        {{#options}}
+        <div class="ec-img-wrapper" id="{{#_id}}img{{@index}}{{/_id}}"{{^@first}} style="display:none"{{/@first}}>
+            {{#child_options}}
+            <a title2="PAGE{{page_index}}图片{{@index}}" target="_blank" class="ec-img" href="{{{rcv_url}}}">
+                <img src="{{image_url}}" />
+            </a>
+            {{/child_options}}
+        </div>
+        {{/options}}
+    </div>
+    {{#show_page_dots}}
+    <div class="ec-page-dots">
+        <a href="javascript:void(0)" id="{{#_id}}page-prev{{@index}}{{/_id}}" class="ec-page-arrow ec-page-prev"></a>
+        {{#options}}
+        <span class="ec-dot{{#@first}} ec-dot-current{{/@first}}" id="{{#_id}}dot{{@index}}{{/_id}}" data-index="{{@index}}">
+        </span>
+        {{/options}}
+        <a href="javascript:void(0)" id="{{#_id}}page-next{{@index}}{{/_id}}" class="ec-page-arrow ec-page-next"></a>
+    </div>
+    {{/show_page_dots}}
+</div>

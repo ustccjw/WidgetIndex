@@ -1,0 +1,20 @@
+<!-- target:AD_ad_widget_smart_style_head -->
+<div class="ad-widget ad-widget-smart-style-head">
+    <h3 class="ec-title"><img src="{{brand_logo}}">{{brand_title}}<span class="ec-brand-num">(共{{brand_count}}个)：</span></h3>
+    <div class="ec-brand-models" id="{{#_id}}models{{/_id}}">
+        {{#models}}
+            <div class="ec-model{{#@first}} ec-model-1{{/@first}}{{#_newline}} ec-newline{{/_newline}}">
+                <img class="ec-model-img" src="{{model_img}}" />
+                <div class="ec-model-hotspot"></div>
+                <a class="ec-model-desc" target="_blank" href="{{{model_search_url}}}" title2="车型名-{{_index}}">{{model_desc}}</a>
+                <div class="ec-model-bg"></div>
+                <div class="ec-model-info">
+                    <span class="ec-model-text ec-model-price">{{model_price}}</span>
+                    <span class="ec-model-text ec-model-displacement">{{model_displacement}}</span>
+                    <a class="ec-model-text ec-model-site" target="_blank" href="{{{model_rcv_url}}}" title2="官网-{{_index}}">进入官网</a>
+                </div>
+            </div>
+        {{/models}}
+    </div>
+    <p class="ec-bottom"><a target="_blank" href="{{{more_url}}}" title2="查看更多" class="ec-more">查看更多官方车型&gt;&gt;</a><a href="http://clkmk.baidu.com/clkmk-rcv/lnk?id=54&amp;x=7cfd628d1b3553c4012e3334d6aa9a9620e407637355a14cf73d2f920f7ce6a4661fa0d2e6c2bdc8" target="_blank" class="ec-brandlink">来自品牌推广</a></p>
+</div>

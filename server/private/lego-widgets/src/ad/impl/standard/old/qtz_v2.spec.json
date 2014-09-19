@@ -1,0 +1,243 @@
+[
+    {
+      "name": "root",
+      "datatype": "OBJECT",
+      "items": [
+        {
+          "name": "file_type",
+          "displayName": "擎天柱文件类型",
+          "defaultValue": "image",
+          "datatype": "ALTERNATIVE",
+          "rules": {},
+          "extraAttr": {},
+          "enumValues": [
+            {
+              "value": "image",
+              "displayValue": "图片",
+              "items": [
+                {
+                  "name": "src",
+                  "displayName": "擎天柱图片",
+                  "datatype": "UPLOAD",
+                  "rules": {
+                    "required": true
+                  },
+                  "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 175,
+                    "height": 300,
+                    "maxSize": 30,
+                    "ext": "jpg,png,gif"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "flash",
+              "displayValue": "FLASH",
+              "items": [
+                {
+                  "name": "src",
+                  "displayName": "上传FLASH文件",
+                  "datatype": "UPLOAD",
+                  "rules": {
+                    "required": true
+                  },
+                  "extraAttr": {
+                    "fileType": "FLASH",
+                    "width": 175,
+                    "height": 300,
+                    "maxSize": 30,
+                    "ext": "swf"
+                  }
+                },
+                {
+                  "name": "ipad_img_src",
+                  "displayName": "iPad备份图片",
+                  "datatype": "UPLOAD",
+                  "rules": {},
+                  "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 175,
+                    "height": 300,
+                    "maxSize": 30,
+                    "ext": "jpg,png,gif"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "click_url",
+          "displayName": "擎天柱URL",
+          "tip": "http://",
+          "datatype": "STRING",
+          "rules": {
+            "stringType": "URL"
+          }
+        },
+        {
+          "name": "is_show_share",
+          "displayName": "是否显示分享按钮？",
+          "defaultValue": "true",
+          "datatype": "ALTERNATIVE",
+          "rules": {},
+          "enumValues": [
+            {
+              "value": "true",
+              "displayValue": "显示",
+              "items": [
+                    {
+                        "name": "display",
+                        "displayName": "display",
+                        "defaultValue": "true",
+                        "datatype": "HIDDEN",
+                        "rules": {},
+                        "extraAttr": {
+                            "filters": "bool"
+                        }
+                    },
+                    {
+                        "name": "common",
+                        "datatype": "OBJECT",
+                        "rules": {},
+                        "items": [
+                            {
+                                "name": "bdDesc",
+                                "displayName": "分享摘要",
+                                "tip": "最多可填写200个字节",
+                                "datatype": "STRING",
+                                "multiline": true,
+                                "rules": {
+                                    "required": true,
+                                    "maxByteLength": 200
+                                }
+                            },
+                            {
+                                "name": "bdText",
+                                "displayName": "分享文字",
+                                "tip": "最多可填写200个字节",
+                                "datatype": "STRING",
+                                "multiline": true,
+                                "rules": {
+                                    "required": true,
+                                    "maxByteLength": 200
+                                }
+                            },
+                            {
+                                "name": "bdPic",
+                                "displayName": "分享图片",
+                                "datatype": "UPLOAD",
+                                "rules": {},
+                                "extraAttr": {
+                                    "fileType": "IMAGE",
+                                    "maxSize": 50,
+                                    "ext": "jpg,jpeg"
+                                }
+                            },
+                            {
+                                "name": "bdUrl",
+                                "displayName": "分享url",
+                                "tip": "http://",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "maxByteLength": 80
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "type",
+                        "displayName": "分享按钮",
+                        "datatype": "OBJECT",
+                        "rules": {
+                            "jsRule": "function(item){var index = 0;var key;for (key in item){if(item.hasOwnProperty(key) && item[key]){index++;}} if(index > 4){return '分享按钮不能超过4个';}else{return '';}}"
+                        },
+                        "extraAttr": {},
+                        "items": [
+                            {
+                                "name": "weixin",
+                                "displayName": "微信分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "tsina",
+                                "displayName": "新浪微博分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "tqq",
+                                "displayName": "腾讯微博分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "renren",
+                                "displayName": "人人分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "kaixin001",
+                                "displayName": "开心分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "douban",
+                                "displayName": "豆瓣分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "tsohu",
+                                "displayName": "搜狐分享",
+                                "defaultValue": "false",
+                                "datatype": "BOOL",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            }
+                        ]
+                    }
+              ]
+            },
+            {
+              "value": "false",
+              "displayValue": "不显示",
+              "items": []
+            }
+          ]
+        }
+      ]
+    }
+]

@@ -1,0 +1,19 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/m/rolling/single_image.less ~ 2014/09/11 17:39:12
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * m/rolling/single_image样式文件
+ **/
+a,
+img {
+  display: block;
+  max-width: 100%;
+  border: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

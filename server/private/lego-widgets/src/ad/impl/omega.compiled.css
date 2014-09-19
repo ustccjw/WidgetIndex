@@ -1,0 +1,190 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: omega.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/omega.less ~ 2012/09/27 14:17:21
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * encore样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  background: #ede2dc url(//bs.baidu.com/adtest/56797b3de514302a5935a392ccad335d.png) repeat-y;
+  margin-bottom: 20px;
+  width: 516px;
+  height: 381px;
+  padding: 10px;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-1 .ad-block-1-0 {
+  float: left;
+}
+#canvas .ad-block-1 .ad-block-1-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding-left: 14px;
+}
+#canvas .ad-widget-title {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+#canvas .ad-widget-title a {
+  color: #0000cc;
+  font-weight: 700;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head h2 a em {
+  color: #CC0000;
+  font-style: normal;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 17px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #c3c3c3;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+}
+#canvas .ad-widget-button-group td {
+  border: none;
+  padding: 0 4px;
+}
+#canvas .ad-widget-button-group td.ec-first {
+  padding-left: 0;
+}
+#canvas .ad-widget-button-group td.ec-last {
+  padding-right: 0;
+}
+#canvas .ad-widget-button-group td a {
+  color: #47362E;
+  text-decoration: none;
+  border: solid 1px #C4B5A2;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  background-color: #fff;
+}
+#canvas .ad-widget-tab-container {
+  margin-top: 10px;
+}
+#canvas .ec-tab-head {
+  background: url("//bs.baidu.com/lego-mat/line-805ca8c4.png") repeat-x center bottom;
+  height: 24px;
+  list-style: none;
+  margin: 10px 0px 0px;
+}
+#canvas .ec-tab-head li {
+  display: inline;
+  float: left;
+  margin-bottom: -1px;
+  margin-left: 8px;
+  position: relative;
+}
+#canvas .ec-tab-head li a,
+#canvas .ec-tab-head li a:visited {
+  background-color: #EDE2DC;
+  border: 1px solid #C4B5A2;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 4px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #0000cc;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  background-color: #F0ECE8;
+  border-bottom: 1px solid #F0ECE8;
+  color: #333;
+}
+#canvas .ec-tab-body {
+  border: none;
+  height: 114px;
+  overflow: hidden;
+  background-color: transparent;
+}
+#canvas .ad-widget-tab-cont table {
+  margin-top: 12px;
+  width: 100%;
+}
+#canvas .ad-widget-tab-cont .ec-td-border {
+  width: auto;
+  border: none;
+}
+#canvas .ad-widget-tab-cont .ec-td-border .ec-brand-intro {
+  position: relative;
+}
+#canvas .ad-widget-tab-cont .ec-td-border .ec-brand-intro h1 {
+  margin: -5px 0px 0px 0px;
+  height: 22px;
+  line-height: 22px;
+}
+#canvas .ad-widget-tab-cont .ec-td-border .ec-brand-intro h1 a {
+  font-weight: normal;
+}
+#canvas .ad-widget-tab-cont .ec-td-border .ec-brand-intro .ec-des-more {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  color: #47362e;
+  text-decoration: underline;
+}
+#canvas .ad-widget-tab-cont .ec-brand-pic {
+  width: auto;
+  padding: 0px;
+  margin-left: 12px;
+}
+.ec-omega-fwc-video .ad-widget-float-window-container {
+  left: 0px;
+  top: 0px;
+}
+.ec-omega-fwc-video .ad-widget-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 438px;
+  height: 305px;
+}
+.ec-omega-fwc-video .ad-widget-video object {
+  width: 438px;
+  height: 305px;
+}
+.ec-omega-fwc-video .ad-widget-video embed {
+  width: 438px;
+  height: 305px;
+}
+.ec-omega-fwc-video .ec-close {
+  background: url("//bs.baidu.com/adtest/4b348c9f43dab02e891d512f7d54d32b.png") no-repeat scroll 0 0 transparent;
+  border: 0 none;
+  cursor: pointer;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 1px;
+  top: -17px;
+  width: 54px;
+  z-index: 999999;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.ec-omega-fwc-video .ec-close:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  background: url("//bs.baidu.com/adtest/4b348c9f43dab02e891d512f7d54d32b.png") no-repeat scroll 0 0 transparent;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

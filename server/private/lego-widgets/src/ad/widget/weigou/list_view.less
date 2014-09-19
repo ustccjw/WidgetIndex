@@ -1,0 +1,304 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/weigou/list_view.less ~ 2013/03/04 14:04:41
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * list_view样式文件
+ **/
+
+.ad-widget-weigou-list-view {
+}
+
+.ecl-weigou-list-wrapper {
+    width: 636px;
+    line-height: 1.3;
+    overflow: hidden;
+}
+
+.ecl-weigou-filter {
+    margin-top: 5px;
+
+    .ecl-weigou-filter-name {
+        float: left;
+    }
+
+    ul, li {
+        float: left;
+    }
+
+    li {
+        display: inline;
+        margin: 0 5px;
+        padding: 2px 5px;
+        cursor: pointer;
+    }
+
+    li.selected {
+        background: #6BA2F5;
+        color: #FFF;
+        cursor: default;
+    }
+
+}
+
+.ecl-weigou-morebtn {
+    font-size: 12px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    background: #FFF;
+    border: 1px solid #CCC;
+    margin: 13px auto 0;
+    color: #AAA;
+}
+
+.ecl-weigou-list {
+    padding: 0 0 10px;
+}
+
+.ecl-weigou-product-list {
+    height: 196px;
+    width: 656px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 6px;
+}
+
+.ecl-weigou-product {
+    float: left;
+    width: 129px;
+    height: 188px;
+    overflow: hidden;
+    _display: inline;
+    margin: 8px 8px 0 0;
+    background: #FFF;
+    position: relative;
+    cursor: pointer;
+
+    .ecl-weigou-product-top {
+        width: 110px;
+        margin: 8px auto 0;
+
+        img {
+            width: 110px;
+            height: 110px;
+        }
+    }
+
+    .ecl-weigou-product-inner {
+        border: 1px solid #eee;
+        height: 186px;
+    }
+
+    .ecl-weigou-product-center {
+        margin: 0 5px;
+        line-height: 19px;
+        height: 38px;
+        overflow: hidden;
+    }
+
+    .ecl-weigou-product-bottom {
+        margin: 0 5px;
+        line-height: 19px;
+        height: 19px;
+        overflow: hidden;
+    }
+
+    .ecl-weigou-product-price {
+        font-size: 12px;
+        font-weight: bold;
+        strong {
+            color: #ff7800;
+        }
+    }
+
+    .ecl-weigou-product-original-price {
+        color: #999;
+        margin-left: 1px;
+        height: 19px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .ecl-weigou-product-image {
+        cursor: pointer;
+    }
+
+    .ecl-weigou-product-name {
+        color: #00c;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+}
+
+.mouseover {
+    .ecl-weigou-product-vendor {
+
+        b {
+            background-position: 0 -458px;
+        }
+        span {
+            background: #ff7800;
+        }
+    }
+
+    .ecl-weigou-product-inner {
+        border: 1px solid #ff7800;
+    }
+}
+
+.ecl-weigou-product-vendor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+
+    b {
+        float: left;
+        height: 17px;
+        width: 17px;
+        background: url(/src/ad/impl/weigou/weigou.gif) -31px -458px;
+    }
+    span {
+        float: left;
+        height: 17px;
+        line-height: 17px;
+        _line-height: 19px;
+        overflow: hidden;
+        padding-left: 3px;
+        background: #d6d6d6;
+        color: #fff;
+    }
+}
+
+
+
+.ecl-weigou-pager {
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+
+    a {
+        display: inline-block;
+        line-height: 22px;
+        text-align: center;
+        height: 22px;
+        width: 22px;
+        border: 1px solid #e1e1e1;
+        margin: 0 5px;
+        text-decoration: none;
+    }
+
+    a.selected {
+        border: 1px solid #FAFAFA;
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+.ecl-weigou-list .ecl-weigou-product-list2 {
+    height: auto;
+}
+
+.ecl-weigou-product-list2 {
+
+    .ecl-weigou-product {
+        width: 266px;
+        height: 146px;
+        overflow: hidden;
+        margin: 8px 8px 0 0;
+    }
+    
+    .ecl-weigou-product-inner {
+        height: 144px;
+        color: #666;
+    }
+
+    .ecl-weigou-product-left {
+        float: left;
+        height: 110px;
+        width: 110px;
+        overflow: hidden;
+        margin: 16px 0 0 4px;
+        _display: inline;
+        _zoom: 1;
+    }
+
+    .ecl-weigou-product-right {
+        float: left;
+        margin-left: 4px;
+        width: 130px;
+        _display: inline;
+        _zoom: 1;
+    }
+
+    img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .ecl-weigou-product-name-wrapper {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 10px;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .ecl-weigou-product-src {
+        margin: 8px 0 8px 0;
+    }
+
+    .ecl-weigou-product-price {
+        float: none;
+        font-weight: normal;
+    }
+
+    .ecl-weigou-product-original-price {
+        float: none;
+        margin-left: 0;
+    }
+
+    .ecl-weigou-product-detail {
+        margin-top: 8px;
+
+        a {
+            color: #00c;
+        }
+    }
+}
+
+.ecl-weigou-list-noresult {
+    height: 120px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+/*
+.ecl-weigou-send-close {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background: url(/src/ad/impl/weigou/weigou.gif) 0 -481px;
+}
+*/
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

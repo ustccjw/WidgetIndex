@@ -1,0 +1,21 @@
+<!-- target:AD_ad_widget_imageplus_box -->
+<div class="ad-widget-imageplus ad-widget-imageplus-box">
+    {{#box.icon_clickable}}
+    <a class="ad-widget-imageplus-box-icon {{box.icon_class}}" href="{{{real_url}}}" target="_blank" id="{{#_id}}icon{{/_id}}" data-log="2" data-attach="1"
+        style="width:{{box.icon_width}}px;height:{{box.icon_height}}px;">
+        <!-- span遮盖了整个a，故需要加data-log和data-attach -->
+        <span data-log="2" data-attach="1">&nbsp;</span>
+    </a>
+    {{/box.icon_clickable}}
+    {{^box.icon_clickable}}
+    <span class="ad-widget-imageplus-box-icon {{box.icon_class}}"
+        id="{{#_id}}icon{{/_id}}"
+        style="width:{{box.icon_width}}px;height:{{box.icon_height}}px;">
+        &nbsp;
+    </span>
+    {{/box.icon_clickable}}
+    <div class="ad-widget-imageplus-box-bd" id="{{#_id}}content{{/_id}}">
+        <div class="ad-widget-imageplus-box-bg"></div>
+        {{{_content}}}
+    </div>
+</div>

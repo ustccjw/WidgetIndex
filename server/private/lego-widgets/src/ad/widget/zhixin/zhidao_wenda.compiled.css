@@ -1,0 +1,118 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhixin/zhidao_wenda.less ~ 2014/02/20 19:48:24
+ * @author chenli11@baidu.com (chestnutchen)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * zhidao_wenda样式文件
+ **/
+.ad-widget-zhixin-zhidao-wenda {
+  font: 13px/1.5 arial, sans-serif;
+}
+.ad-widget-zhixin-zhidao-wenda em {
+  color: #c00;
+  font-style: normal;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-icon {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  text-align: center;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-title {
+  font-size: 16px;
+  line-height: 24px;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-title .ec-icon {
+  margin-top: 4px;
+  background-color: #53c178;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-content {
+  margin-top: 2px;
+  color: #333;
+  *zoom: 1;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-content:before,
+.ad-widget-zhixin-zhidao-wenda .ec-content:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-zhidao-wenda .ec-content:after {
+  clear: both;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-content .ec-icon {
+  margin-top: 2px;
+  background-color: #1fa4ff;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-content .ec-answer {
+  float: left;
+  width: 490px;
+  word-wrap: break-word;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-foot {
+  margin: 2px 0 5px 26px;
+  color: #008000;
+  *zoom: 1;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-foot:before,
+.ad-widget-zhixin-zhidao-wenda .ec-foot:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-zhidao-wenda .ec-foot:after {
+  clear: both;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-site,
+.ad-widget-zhixin-zhidao-wenda .ec-date {
+  float: left;
+  margin-right: 5px;
+}
+.ad-widget-zhixin-zhidao-wenda ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 25px;
+}
+.ad-widget-zhixin-zhidao-wenda li {
+  *zoom: 1;
+}
+.ad-widget-zhixin-zhidao-wenda li:before,
+.ad-widget-zhixin-zhidao-wenda li:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-zhidao-wenda li:after {
+  clear: both;
+}
+.ad-widget-zhixin-zhidao-wenda li a {
+  display: block;
+  width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.ad-widget-zhixin-zhidao-wenda li a,
+.ad-widget-zhixin-zhidao-wenda li span {
+  float: left;
+}
+.ad-widget-zhixin-zhidao-wenda li .ec-lu {
+  float: right;
+  margin-right: 10px;
+}
+.ad-widget-zhixin-zhidao-wenda li span {
+  color: #666;
+}
+.ad-widget-zhixin-zhidao-wenda .ec-more {
+  color: #7777cc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

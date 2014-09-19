@@ -1,0 +1,70 @@
+<!-- target:AD_ad_widget_tab_cont -->
+<div class="ad-widget ad-widget-tab-cont">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            {{#pro_img_url}}
+            <td class="ec-td-pic-border" valign="top" align="left">
+                <div class="ec-brand-pic">
+                    {{#pro_rcv_url}}
+                    <a target="_blank" title2="图片" href="{{{pro_rcv_url}}}"><img src="{{pro_img_url}}"/></a>
+                    {{/pro_rcv_url}}
+                    {{^pro_rcv_url}}
+                    <img src="{{pro_img_url}}"/>
+                    {{/pro_rcv_url}}
+                </div>
+            </td>
+            {{/pro_img_url}}
+            {{#des_title}}
+            <td class="ec-td-border" valign="top" align="left">
+                <div class="ec-brand-intro">
+                    {{#des_title}}
+                        <h1>
+                        {{#des_title_rcv_url}}
+                        <a target="_blank" title2="标题" href="{{{des_title_rcv_url}}}" >{{des_title}}</a>
+                        {{/des_title_rcv_url}}                        
+                        {{^des_title_rcv_url}}
+                        {{des_title}}
+                        {{/des_title_rcv_url}}
+                        </h1>
+                    {{/des_title}}
+
+                    {{#des_text}}
+                        {{#des_text_rcv_url}}
+                        <a target="_blank" title2="描述" href="{{{des_text_rcv_url}}}" >{{des_text}}</a>
+                        {{/des_text_rcv_url}}
+                        {{^des_text_rcv_url}}
+                        {{des_text}}
+                        {{/des_text_rcv_url}}
+                    {{/des_text}}
+
+                    {{#des_text_links}}
+                    <div class="ec-des-text-links" id="{{#_id}}des_text_links{{/_id}}">{{{des_text_links}}}</div>
+                    {{/des_text_links}}
+                    {{#des_more}}
+                    <a target="_blank" class="ec-des-more" title2="更多" href="{{{des_more_rcv_url}}}" >{{des_more}}</a>
+                    {{/des_more}}
+                </div>
+            </td>
+            {{/des_title}}
+            {{#type_title}}
+            <td valign="top" align="left">
+                <div class="ec-brand-intro  ec-brand-links">
+                    {{#type_title}}
+                    <h1>
+                        {{#type_title_rcv_url}}
+                        <a target="_blank" href="{{{type_title_rcv_url}}}" title2="序列标题">{{type_title}}</a>
+                        {{/type_title_rcv_url}}
+                        {{^type_title_rcv_url}}
+                        <a title2="序列标题">{{type_title}}</a>
+                        {{/type_title_rcv_url}}
+                    </h1>
+                    {{/type_title}}
+                    {{#type_links}}
+                    <h3><a target="_blank" class="ec-type-list" title2="序列{{_itemindex}}" href="{{{rcv_url}}}" >{{#type}}<span>{{type}}</span>&nbsp;|&nbsp;{{/type}}{{text}}</a></h3>
+                    {{/type_links}}
+                </div>
+            </td>
+            {{/type_title}}
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,89 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhixin/zhidao.less ~ 2013/10/31 10:19:22
+ * @author liyubei@baidu.com (liyubei)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * zhidao样式文件
+ **/
+.ad-widget-zhixin-zhidao {
+  font: 13px/1.5 arial, sans-serif;
+}
+.ad-widget-zhixin-zhidao em {
+  color: #c00;
+  font-style: normal;
+}
+.ad-widget-zhixin-zhidao .ec-title {
+  font-size: 16px;
+}
+.ad-widget-zhixin-zhidao .ec-tip {
+  color: #666;
+  margin-top: 3px;
+}
+.ad-widget-zhixin-zhidao .ec-answer {
+  margin-top: 2px;
+}
+.ad-widget-zhixin-zhidao .ec-answer strong {
+  color: #666;
+  font-weight: normal;
+}
+.ad-widget-zhixin-zhidao .ec-foot {
+  color: #008000;
+  *zoom: 1;
+}
+.ad-widget-zhixin-zhidao .ec-foot:before,
+.ad-widget-zhixin-zhidao .ec-foot:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-zhidao .ec-foot:after {
+  clear: both;
+}
+.ad-widget-zhixin-zhidao .ec-site,
+.ad-widget-zhixin-zhidao .ec-date {
+  float: left;
+  margin-right: 10px;
+}
+.ad-widget-zhixin-zhidao ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 16px;
+  margin-top: 5px;
+}
+.ad-widget-zhixin-zhidao li {
+  *zoom: 1;
+}
+.ad-widget-zhixin-zhidao li:before,
+.ad-widget-zhixin-zhidao li:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-zhidao li:after {
+  clear: both;
+}
+.ad-widget-zhixin-zhidao li a {
+  display: block;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.ad-widget-zhixin-zhidao li a,
+.ad-widget-zhixin-zhidao li span {
+  float: left;
+}
+.ad-widget-zhixin-zhidao li span {
+  color: #666;
+  width: 80px;
+}
+.ad-widget-zhixin-zhidao .ec-more {
+  color: #7978c6;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

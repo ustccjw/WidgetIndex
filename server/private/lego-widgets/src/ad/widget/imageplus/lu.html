@@ -1,0 +1,22 @@
+<!-- target:AD_ad_widget_imageplus_lu -->
+<div class="ad-widget-imageplus ad-widget-imageplus-lu">
+    <ul>
+    {{#adlist}}
+    <li class="ad-widget-imageplus-lu-ad">
+        <a href="{{{real_url}}}" data-log="2" target="_blank">
+            <h3 class="ad-widget-imageplus-lu-ad-title">
+                <i>{{_index}}</i>
+                <span>{{{title}}}</span>
+            </h3>
+            {{#idea_url}}
+            <img src="{{{idea_url}}}" alt=""/>
+            {{/idea_url}}
+        </a>
+    </li>
+    {{/adlist}}
+    </ul>
+    <div class="ad-widget-imageplus-lu-ft">
+        <span class="ad-widget-imageplus-lu-logo" alt=""></span>
+        百度推广
+    </div>
+</div>

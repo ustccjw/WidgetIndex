@@ -1,0 +1,179 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/ishop/list_view.less ~ 2012/11/13 18:23:02
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * list_view样式文件
+ **/
+
+.ad-widget-ishop-list-view {
+    width: 540px;
+    overflow: hidden;
+    background: #fbfbfb;
+
+    .ishop-item-list {
+        overflow: hidden;
+        padding-left: 11px;
+    }
+
+    .ishop-item-wrapper {
+        float: left;
+        margin: 0 10px 10px 0;
+        /* hack for IE6 */
+        _display: inline;
+        width: 122px;
+        height: 185px;
+        overflow: hidden;
+        position: relative;
+
+        background: #FFF;
+    }
+
+    .ishop-item {
+        border: 1px solid #e0e0e0;
+        width: 120px;
+        height: 183px;
+
+        .ishop-item-inner {
+            border: 1px solid #FFF;
+            height: 181px;
+        }
+
+        .ishop-item-top {
+            margin: auto;
+            width: 118px;
+        }
+
+        .ishop-item-logo-wrapper {
+            img {
+                width: 118px;
+                height: 118px;
+                cursor: pointer;
+                display: block;
+            }
+        }
+
+        .ishop-item-logo-hover {
+            border: 1px solid #2a87f0;
+        }
+
+        .ishop-item-bottom {
+            width: 103px;
+            margin: 3px auto 0;
+        }
+
+        .ishop-item-name-wrapper {
+            height: 36px;
+            overflow: hidden;
+        }
+        a.ishop-item-name {
+            color: #666;
+            text-decoration: none;
+            word-break: break-all;
+            word-wrap: break-word;
+            zoom:1;
+            display: inline-block;
+        }
+        a.ishop-item-name:hover {
+            text-decoration: underline;
+        }
+
+        .ishop-item-price {
+            color: #cc0000;
+            width: 66px;
+            overflow: hidden;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .hot, .new, .recommand {
+            background: url(//bs.baidu.com/adtest/b934f0bd22b2927b07bb806f6e01e8ba.png);
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            top: 0;
+            left: 0;
+        }
+
+        .hot {
+            background-position: 0 -18px;
+        }
+        .new {
+            background-position: 0 -60px;
+        }
+        .recommand {
+            background-position: 0 -102px;
+        }
+
+    }
+
+    .ishop-item-vendor {
+        display: none;
+        height: 18px;
+        position: absolute;
+        right: 1px;
+        bottom: 2px;
+        _bottom: -1px;
+        color: #FFF;
+
+        b {
+            float: left;
+            background: url(//bs.baidu.com/adtest/b023f26bd9bc4939168c6819dc9d4b24.png) no-repeat;
+            width: 7px;
+            height: 18px;
+        }
+        span {
+            float: left;
+            height: 18px;
+            line-height: 18px;
+            padding-right: 4px;
+            background: url(//bs.baidu.com/adtest/b023f26bd9bc4939168c6819dc9d4b24.png) -7px 0 no-repeat;
+        }
+    }
+
+    .ishop-item-hover {
+        .ishop-item {
+            border: 1px solid #dc0707;
+        }
+        .ishop-item-inner {
+            border: 1px solid #dc0707;
+        }
+        .ishop-item-vendor {
+            display: block;
+        }
+    }
+
+    .clearfix {
+        clear: both;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

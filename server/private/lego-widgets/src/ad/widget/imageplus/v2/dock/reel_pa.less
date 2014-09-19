@@ -1,0 +1,224 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/imageplus/v2/dock/reel_pa.less ~ 2014/09/05 11:51:01
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * reel_pa样式文件
+ **/
+
+@import-once "mixins.less";
+
+.baiduimageplus-d-reel-pa {
+    position: relative;
+    width: 100%;
+    height: 75px + 26px;
+    cursor: default; // 删掉此处会导致IE78下鼠标点击穿透iframe的bug
+    margin-top: 25px;
+
+    a {
+        outline: none;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .baiduimageplus-d-reel-pa-big-title {
+        display: none;
+    }
+
+    .baiduimageplus-d-reel-pa-hd {
+        height: 26px;
+        line-height: 26px;
+        text-indent: 10px;
+        .text-overflow();
+        color: #FFF;
+
+        a {
+            font-size: 14px;
+            color: #FFF;
+        }
+    }
+
+    .baiduimageplus-d-reel-pa-bd {
+        position: relative;
+        margin: 10px 0;
+        overflow: hidden;
+        _zoom: 1;
+    }
+
+    .baiduimageplus-d-reel-pa-img {
+        float: left;
+        _display: inline;
+        width: 50px;
+        height: 50px;
+        margin: 5px 12px 0 10px;
+
+        img {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+    }
+
+    .baiduimageplus-d-reel-pa-txt {
+        margin-right: 70px + 15px;
+        height: 1.5 * 12px * 3;
+        overflow: hidden;
+        zoom: 1;
+        line-height: 1.5;
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: left;
+        text-decoration: none;
+        -webkit-line-clamp: 2;
+        a {
+            color: #FFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    a.baiduimageplus-d-reel-pa-title {
+        color: #CCC;
+    }
+    .baiduimageplus-d-reel-pa-bt {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        margin: 0;
+        width: 70px;
+        height: 25px;
+        display: block;
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        background: #BC0000;
+        box-shadow: 2px 2px 4px #000;
+        border-radius: 5px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    /*
+    .baiduimageplus-d-reel-pa-logo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        left: auto;
+        z-index: 3;
+        height: 18px;
+        width: 18px;
+        text-indent: -9999px;
+        background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;
+        background-position: 0 0;
+        _filter: progid:dximagetransform.microsoft.alphaimageloader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/logo-border-light.png",sizingMethod="crop");
+        _background: none;
+    }
+    */
+
+
+    .baiduimageplus-top,
+    .baiduimageplus-bottom {
+        background: url(http://ecma.bdimg.com/adtest/c6407e73cc100fd10a6e4a0bd9d051a2.png);
+    }
+
+    .baiduimageplus-d-reel-pa-reel {
+        position: relative;
+        width: 0;
+        height: 80px;
+        left: -5px;
+        top: -5px;
+        float:left;
+        overflow: visible;
+        font-size: 0;
+        opacity: 0.9;
+    }
+
+    .baiduimageplus-top {
+        background-position: 0 top;
+        margin-bottom:20px;
+        width: 20px;
+        height: 70px;
+
+        .box-shadow(-3px 7px 6px #000);
+    }
+    .baiduimageplus-bottom {
+        width: 20px;
+        height: 10px;
+        background-position: 0 bottom;
+        position: absolute;
+        top: 70px;
+    }
+
+    .baiduimageplus-d-reel-pa-paper {
+        width: 400px;
+        overflow: hidden;
+        float:left;
+        position: relative;
+    }
+
+    .baiduimageplus-d-reel-pa-content {
+        width: 600px;
+    }
+
+    .baiduimageplus-d-reel-bg {
+        height: 75px;
+        width: 100%;
+        position: absolute;
+        background: #000;
+        .opacity(75);
+    }
+
+    .baiduimageplus-d-reel-pa-close {
+        position:absolute;
+        top: -25px;
+        left: auto;
+        right: 0;
+        z-index: 3;
+        width: 25px;
+        height: 25px;
+        overflow: hidden !important;
+        text-indent: -9999px;
+        background: url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,28 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/v2/icon/single_image.less ~ 2014/07/14 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * v2/icon/single_image样式文件
+ **/
+.baiduimageplus-i-image {
+  font: 12px/1.5 arial, sans-serif;
+  position: relative;
+  padding: 1px;
+  overflow: hidden;
+  _zoom: 1;
+  background-color: #FFF;
+}
+.baiduimageplus-i-image a,
+.baiduimageplus-i-image img {
+  display: block;
+  width: 300px;
+  height: 250px;
+  border: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

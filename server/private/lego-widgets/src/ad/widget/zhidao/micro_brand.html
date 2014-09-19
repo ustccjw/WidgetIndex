@@ -1,0 +1,49 @@
+<!-- target:AD_ad_widget_zhidao_micro_brand -->
+<div class="ad-widget-zhidao ad-widget-zhidao-micro-brand">
+    <div class="ec-inner">
+        <div class="ec-head">
+            <div class="ec-title">
+                <a title2="知道起跑线-标题" href="{{{title_rcv_url}}}" target="_blank">{{{title}}}</a>
+            </div>
+            {{#baike_text}}
+            {{#baike_rcv_url}}
+            <div class="ec-baike">
+                百科词条: <a title2="百科词条" href="{{{baike_rcv_url}}}" target="_blank">{{baike_text}}</a>
+            </div>
+            {{/baike_rcv_url}}
+            {{/baike_text}}
+        </div>
+        <div class="ec-desc">
+            <div class="ec-logo">
+                <a title2="知道起跑线-LOGO" href="{{{title_rcv_url}}}" target="_blank">
+                    <img src="{{logo}}" width="{{width}}" height="{{height}}" />
+                </a>
+            </div>
+            <div class="ec-text">
+                {{desc}}
+            </div>
+        </div>
+        <form method="POST" action="http://wbapi.baidu.com/service/util/intermediate?mcid=1&url=http://www.baidu.com" target="_blank" style="display:none;" id="{{#_id}}form{{/_id}}">
+            <textarea name="mockData" id="{{#_id}}mock{{/_id}}"></textarea>
+        </form>
+        <div class="ec-questions" id="{{#_id}}questions{{/_id}}">
+            <ul>
+                {{#options}}
+                <li>
+                    <a title2="问题{{_index}}" data-index="{{_index}}" class="ec-question-text" href="{{{intermediate_url}}}{{intermediate_params}}" data-rcv-url="{{{question_rcv_url}}}" target="_blank">
+                        {{{title}}}
+                    </a>
+                    {{#answer_count}}
+                    <p class="ec-answer-info-date">
+                        {{answer_count}}个回答 {{date}}
+                    </p>
+                    {{/answer_count}}
+                </li>
+                {{/options}}
+            </ul>
+        </div>
+        <div class="ec-site">
+            {{{site}}} - <span>知道推广</span>
+        </div>
+    </div>
+</div>

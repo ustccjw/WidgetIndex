@@ -1,0 +1,63 @@
+{
+    "contents": ["ad.widget.FloatWindowContainer"],
+    "userPrefs": [
+        {
+            "name": "width",
+            "displayName": "浮层宽度",
+            "defaultValue": "720",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "height",
+            "displayName": "浮层高度",
+            "defaultValue": "420",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "float_bg",
+            "displayName": "浮层背景",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "src",
+                    "displayName": "浮层背景图",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "tip": "",
+                    "rules": {},
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "width": 720,
+                        "height": 420,
+                        "maxSize": 400,
+                        "ext": "jpg"
+                    }
+                },
+                {
+                    "name": "rcv_url",
+                    "displayName": "浮层跳转地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "tip": "",
+                    "multiline": false
+                }
+            ],
+            "rules": {}
+        }
+    ]
+}

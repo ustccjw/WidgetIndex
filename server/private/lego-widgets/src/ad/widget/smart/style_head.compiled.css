@@ -1,0 +1,154 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/smart/style_head.less ~ 2013/12/23 11:09:49
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * style_head样式文件
+ **/
+.ad-widget-smart-style-head {
+  font: 13px/1.54 arial, sans-serif;
+}
+.ad-widget-smart-style-head .ec-title {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+.ad-widget-smart-style-head .ec-title img {
+  margin-right: 5px;
+  border: none;
+  vertical-align: middle;
+}
+.ad-widget-smart-style-head .ec-brand-num {
+  font-weight: normal;
+  color: #999;
+}
+.ad-widget-smart-style-head .ec-bottom {
+  margin: 0;
+  overflow: hidden;
+  _zoom: 1;
+}
+.ad-widget-smart-style-head .ec-bottom a {
+  text-decoration: none;
+}
+.ad-widget-smart-style-head .ec-more {
+  float: left;
+}
+.ad-widget-smart-style-head .ec-brandlink {
+  color: #999;
+  float: right;
+}
+.ad-widget-smart-style-head .ec-brand-models {
+  margin: 7px 0 6px;
+  overflow: hidden;
+  _zoom: 1;
+}
+.ad-widget-smart-style-head .ec-model {
+  float: left;
+  position: relative;
+  width: 130px;
+  height: 73px;
+  overflow: hidden;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-hotspot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 55px;
+  background-color: blue;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ad-widget-smart-style-head .ec-model .ec-model-desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  _bottom: -1px;
+  width: 130px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  line-height: 18px;
+  height: 18px;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-text {
+  display: block;
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-price {
+  margin-top: 2px;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-displacement {
+  margin: 1px 0 5px 10px;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-site {
+  line-height: 18px;
+  height: 18px;
+  background-color: #2c99ff;
+  display: inline-block;
+  padding: 0 8px;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 73px;
+}
+.ad-widget-smart-style-head .ec-model .ec-model-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 73px;
+  background-color: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ad-widget-smart-style-head .ec-model-1 {
+  width: 259px;
+  height: 146px;
+}
+.ad-widget-smart-style-head .ec-model-1 .ec-model-hotspot {
+  width: 259px;
+  height: 128px;
+}
+.ad-widget-smart-style-head .ec-model-1 .ec-model-desc {
+  _bottom: 0;
+  width: 259px;
+}
+.ad-widget-smart-style-head .ec-model-1 .ec-model-price {
+  margin-top: 38px;
+}
+.ad-widget-smart-style-head .ec-model-1 .ec-model-bg {
+  width: 259px;
+  height: 146px;
+}
+.ad-widget-smart-style-head .ec-hover .ec-model-desc,
+.ad-widget-smart-style-head .ec-hover .ec-model-hotspot {
+  display: none;
+}
+.ad-widget-smart-style-head .ec-hover .ec-model-info,
+.ad-widget-smart-style-head .ec-hover .ec-model-bg {
+  display: block;
+}
+.ad-widget-smart-style-head .ec-newline {
+  clear: left;
+}
+.ad-widget-smart-style-head .ec-model-img {
+  border: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

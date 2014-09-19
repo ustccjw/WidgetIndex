@@ -1,0 +1,64 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/description.less ~ 2013/03/13 15:49:14
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $
+ * @description
+ * description样式文件
+ **/
+.ad-widget-description {
+  font: 12px/1.5 arial, sans-serif;
+  width: 145px;
+  overflow: hidden;
+  line-height: 1.5;
+  font-size: 13px;
+  color: #333;
+}
+.ad-widget-description h2,
+.ad-widget-description dt,
+.ad-widget-description dl,
+.ad-widget-description dd {
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-description h2 {
+  margin-bottom: 7px;
+  font-size: 13px;
+  line-height: 1.625;
+}
+.ad-widget-description ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.ad-widget-description li {
+  margin: 0;
+  list-style: none;
+  height: 23px;
+  line-height: 23px;
+}
+.ad-widget-description li b {
+  float: left;
+  width: 40px;
+  font-weight: normal;
+}
+.ad-widget-description .ec-desc-more {
+  display: block;
+  margin: 5px 0 0 0;
+  width: 106px;
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(//bs.baidu.com/adtest/fd6246cd186ed6e428df95aa9551a4fb.png) no-repeat 0 0;
+}
+.ad-widget-description .ec-desc-text {
+  margin-top: 12px;
+  line-height: 21px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

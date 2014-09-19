@@ -1,0 +1,68 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: wdw.less  2012-07-19 10:25:19Z wangdawei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/wdw.less ~ 2012/07/19 11:51:39
+ * @author wangdawei
+ * @version $Revision$ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 544px;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-h1 {
+  margin-bottom: 7px;
+}
+#canvas .ad-widget-h1 h2 a {
+  color: #0000cc;
+}
+#canvas .ad-widget-h1 h2 em {
+  color: #cc0000;
+  font-style: normal;
+}
+#canvas .ad-widget-h1 .ec-description {
+  width: 425px;
+  line-height: 19.2px;
+  padding-left: 9px;
+}
+#canvas .ad-widget-h1 .ec-description a {
+  color: #0000cc;
+}
+#canvas .ad-widget-h1 .ec-description .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-h1 .ec-content {
+  padding-top: 6px;
+}
+#canvas .ad-widget-h1 .ec-content a {
+  margin-right: 0;
+}
+#canvas .ad-widget-section {
+  margin-bottom: 8px;
+}
+#canvas .ad-widget-section a {
+  font-size: 13px;
+}
+#canvas .ad-widget-image-multi-region {
+  margin-bottom: 5px;
+}
+#canvas .ad-widget-button-group {
+  width: 539px;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group tr td {
+  background-color: #D3D1F8;
+  border-right: 5px solid #fff;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group tr td a {
+  color: #0000cc;
+  text-decoration: underline;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

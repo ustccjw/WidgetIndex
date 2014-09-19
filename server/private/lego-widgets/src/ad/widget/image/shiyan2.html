@@ -1,0 +1,29 @@
+<!-- target:AD_ad_widget_image_shiyan2 -->
+<div class="ad-widget-image ad-widget-image-shiyan2">
+    <div class="ec-main">
+        <div class="ec-head">
+            <div class="ec-logo" style="width:{{logo_width}}px;height:{{logo_height}}px;"> <img width="{{logo_width}}" border="0" height="{{logo_height}}" src="{{logo}}" /> </div>
+            <p class="ec-title">{{category}}</p>
+        </div>
+        <div class="ec-body">
+            <ul id="{{#_id}}shiyan2-ul{{/_id}}">
+                {{#options}}
+
+
+
+                <li>
+                    <div class="ec-text" style="display:{{#@first}}none{{/@first}}{{^@first}}block{{/@first}};">{{_index}}.{{title}}</div>
+                    <div class="ec-block" style="display:{{#@first}}block{{/@first}}{{^@first}}none{{/@first}};">
+                        <div class="ec-head">{{_index}}.<span>{{title}}</span></div>
+                        <a target="_blank" class="ec-img" href="{{{rcv_url}}}" title="{{title}}" style="width:{{width}}px;height:{{height}}px;"> <img width="{{width}}" border="0" height="{{height}}" src="{{src}}" /> </a>
+                        <p class="ec-text">{{text}}</p>
+                        <a class="ec-play" href="{{{rcv_url}}}" target="_blank"></a> </div>
+                </li>
+                {{/options}}
+            </ul>
+            <div class="ec-bottom"> <a class="ec-more" href="{{#more_rcv_url}}{{{more_rcv_url}}}{{/more_rcv_url}}{{^more_rcv_url}}{{{rcv_url}}}{{/more_rcv_url}}" target="_blank" title="查看更多推荐游戏"> 查看更多<em>{{more_text}}</em>>> </a> <br />
+                <div class="ec-site"> {{show_url}} - <span>图片推广</span> </div>
+            </div>
+        </div>
+    </div>
+</div>

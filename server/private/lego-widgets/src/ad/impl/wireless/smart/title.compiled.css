@@ -1,0 +1,39 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless/smart/title.less ~ 2013/12/25 14:36:59
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * smart样式文件
+ **/
+#canvas .ad-widget-wireless-title {
+  padding-bottom: 8px;
+  font-size: 17px;
+}
+#canvas .ad-widget-wireless-title .ec-official-site {
+  vertical-align: text-top;
+  margin-left: 6px;
+}
+#canvas .ad-widget-wireless-title .ec-link {
+  padding-right: 0;
+}
+#canvas .ad-widget-wireless-title .ec-title {
+  color: #00c;
+}
+#canvas .ad-widget-wireless-title .ec-link {
+  display: inline-block;
+  position: relative;
+  padding-right: 40px;
+}
+#canvas .ad-widget-wireless-title .ec-official-site {
+  padding-right: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

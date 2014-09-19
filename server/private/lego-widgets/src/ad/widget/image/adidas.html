@@ -1,0 +1,20 @@
+<!-- target:AD_ad_widget_image_adidas -->
+<div id="{{#_id}}main{{/_id}}" class="ad-widget-image ad-widget-image-adidas" style="width:{{width}}px;height:{{height}}px;">
+    <div id="{{#_id}}left{{/_id}}" class="ec-image-adidas-left" style="width:{{width}}px;height:{{height}}px;">
+        <a title2="左侧跳转" href="{{{rcv_url}}}" target="_blank">
+            <img style="width:{{width}}px;height:{{height}}px;" src="{{img_src}}" />
+        </a>
+    </div>
+    <div class="ec-image-adidas-right" style="width:{{width}}px;height:{{height}}px;">
+    {{^is_img}}
+    <object width="{{width}}" height="{{height}}" id="{{#_id}}swf{{/_id}}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+        <param value="opaque" name="wmode">
+        <param value="always" name="allowscriptaccess">
+        <param value="{{swf_src}}" name="movie">
+        <embed width="{{width}}" align="middle" height="{{height}}" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="{{#_id}}swf{{/_id}}" src="{{swf_src}}" allowscriptaccess="always" wmode="opaque">
+    </object>
+    {{/is_img}}
+    {{#is_img}}<img width="{{width}}" height="{{height}}" src="{{swf_src}}" />{{/is_img}}
+    <a id="{{#_id}}link{{/_id}}" href="{{{rcv_url}}}" title2="右侧跳转" target="_blank" style="width:{{width}}px;height:{{height}}px">&nbsp;</a>
+    </div>
+</div>

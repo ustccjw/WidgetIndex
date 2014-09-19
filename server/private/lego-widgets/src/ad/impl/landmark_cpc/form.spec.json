@@ -1,0 +1,247 @@
+[
+    {
+        "name": "title",
+        "display": "title",
+        "displayName": "标题",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "image_url",
+                "displayName": "Logo图片",
+                "defaultValue": "",
+                "tip": "请上传高16px文件大小15KB (1K=1024)以下类型为jpg、gif、png的图片",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "height": 16,
+                    "maxSize": 15,
+                    "ext": "jpg,png,gif"
+                },
+                "multiline": false
+            },
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "tip": "标题最多14个汉字",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 28
+                },
+                "multiline": false
+            }, {
+                "name": "target_rcv_url",
+                "displayName": "Logo & 标题跳转URL",
+                "defaultValue": "http://",
+                "tip": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                },
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "video",
+        "display": "video",
+        "displayName": "视频",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "video_url",
+                "displayName": "视频",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "tip": "请上传长宽比16:9文件大小15M以下类型为flv或mp4的视频",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "FLV",
+                    "maxSize": 15000,
+                    "ext": "flv,mp4"
+                }
+            },
+            {
+                "name": "pic_url",
+                "displayName": "视频缩略图",
+                "datatype": "UPLOAD",
+                "tip": "请上传宽259px高146px文件大小30K以下任意格式的图片",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "maxSize": 30,
+                    "width": 259,
+                    "height": 146,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "big_pic_url",
+                "displayName": "视频缩略图",
+                "datatype": "UPLOAD",
+                "tip": "请上传宽540px高304px文件大小30K以下任意格式的图片",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "maxSize": 30,
+                    "width": 540,
+                    "height": 304,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "click_rcv_url",
+                "displayName": "视频跳转URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "form",
+        "display": "form",
+        "displayName": "表单",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "input_list",
+                "displayName": "输入栏",
+                "defaultValue": "",
+                "datatype": "LIST",
+                "tip": "",
+                "rules": {
+                    "required": true,
+                    "maxCount": 3,
+                    "minCount": 3
+                },
+                "items": [
+                    {
+                        "name": "type",
+                        "displayName": "类型",
+                        "defaultValue": "text",
+                        "datatype": "ENUM",
+                        "enumValues": [
+                            {
+                                "displayValue": "文本",
+                                "value": "text"
+                            },
+                            {
+                                "displayValue": "电子邮箱",
+                                "value": "email"
+                            },
+                            {
+                                "displayValue": "手机号码",
+                                "value": "tel"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "name",
+                        "displayName": "提交信息名称",
+                        "defaultValue": "信息名称",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 11
+                        },
+                        "tip": "提交信息名称最多4个汉字",
+                        "multiline": false
+                    }
+                ],
+                "extraAttr": {
+                    "initialCount": 3
+                }
+            },
+            {
+                "name": "button_text",
+                "displayName": "按钮文字",
+                "defaultValue": "点击提交",
+                "datatype": "STRING",
+                "tip": "按钮文字最多4个汉字",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 11
+                },
+                "multiline": false
+            },
+            {
+                "name": "info_text",
+                "displayName": "提交成功提示",
+                "defaultValue": "提交成功",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 11
+                },
+                "multiline": false,
+                "tip": "提交成功提示4个汉字"
+            },
+            {
+                "name": "success_rcv_url",
+                "displayName": "成功提交跳转链接",
+                "defaultValue": "http://www.baidu.com",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true
+                },
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "url",
+        "display": "url",
+        "displayName": "显示URL",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "showurl",
+                "displayName": "显示URL",
+                "defaultValue": "",
+                "tip": "显示URl最多36个字节",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 36
+                },
+                "multiline": false
+            }, {
+                "name": "target_rcv_url",
+                "displayName": "跳转URL",
+                "defaultValue": "http://",
+                "tip": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                },
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    }
+
+]

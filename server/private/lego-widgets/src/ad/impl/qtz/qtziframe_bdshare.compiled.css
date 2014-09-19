@@ -1,0 +1,25 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: qtziframe_bdshare.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/qtz/qtziframe_bdshare.less ~ 2012/08/27 14:30:04
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * burberry样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-iframe {
+  height: 300px;
+  width: 175px;
+}
+#canvas .ad-widget-iframe div {
+  margin: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

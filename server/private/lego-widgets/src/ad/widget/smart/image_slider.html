@@ -1,0 +1,10 @@
+<!-- target:AD_ad_widget_smart_image_slider -->
+<div class="ad-widget ad-widget-image-slider">
+    <a id="{{#_id}}link{{/_id}}" class="ec-image-ctn" href="{{{image_rcv_url}}}" target="_blank" title2="banner图1">
+        <img id="{{#_id}}img{{/_id}}" src="{{image_src}}" />
+    </a>
+    <ul id="{{#_id}}navs{{/_id}}" class="ec-nav-ctn">{{#options}}<li data-index="{{@index}}"
+          class="{{#@first}}ec-current {{/@first}}{{#@last}}ec-last{{/@last}}"
+          title="第{{_index}}张" style="background-color: #{{color}}"></li>{{/options}}
+    </ul>
+</div>

@@ -1,0 +1,29 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/tagcloud3d.less ~ 2014/04/11 16:52:04
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * tagcloud3d样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 259px;
+}
+#canvas .ad-block-0 {
+  position: relative;
+}
+#canvas .ad-block-0-0,
+#canvas .ad-block-0-1 {
+  position: absolute;
+}
+#canvas .ad-widget-image img {
+  width: 259px;
+  height: 220px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

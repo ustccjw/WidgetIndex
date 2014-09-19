@@ -1,0 +1,65 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: scrollbarv.app.html 11929 2012-09-18 08:33:05Z wangdawei04 $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/scrollbarv.app.html ~ 2012/08/08 21:41:35
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 11929 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[AD]scrollbarv 测试</title>
+    <script type="text/javascript" src="//bs.baidu.com/adtest/d1cd9d9d2cf72283b9d89245249c3c42.js"></script>
+    <script type="text/javascript" src="//bs.baidu.com/adtest/6360ae8ce6117fe616ea45c9f7586da5.js"></script>
+    <style type="text/css">
+        body{width: 150px;position:relative;}
+        ul,li{padding:0;margin:0;}
+    </style>
+    <link type="text/css" rel="stylesheet" href="http://bs.baidu.com/public01/ps/scrollbarv.css" />
+</head>
+<body style="margin:0px;">
+    <div class="c-dropdown2-menu-inner" style="height: 200px;"><ul class="c-dropdown2-menubox" style=""><li data-value="undefined" class="c-dropdown2-group">上半年</li><li data-value="201301" class="c-dropdown2-option c-dropdown2-selected" data-selected="selected">2013年1月</li><li data-value="201302" class="c-dropdown2-option">2013年2月</li><li data-value="201303" class="c-dropdown2-option">2013年3月</li><li data-value="201304" class="c-dropdown2-option">2013年4月</li><li data-value="201305" class="c-dropdown2-option">2013年5月</li><li data-value="201306" class="c-dropdown2-option">2013年6月</li><li data-value="undefined" class="c-dropdown2-group">下半年</li><li data-value="201307" class="c-dropdown2-option">2013年7月</li><li data-value="201308" class="c-dropdown2-option">2013年8月</li><li data-value="undefined" class="c-dropdown2-group">上半年</li><li data-value="201301" class="c-dropdown2-option c-dropdown2-selected" data-selected="selected">2013年1月</li><li data-value="201302" class="c-dropdown2-option">2013年2月</li><li data-value="201303" class="c-dropdown2-option">2013年3月</li><li data-value="201304" class="c-dropdown2-option">2013年4月</li><li data-value="201305" class="c-dropdown2-option">2013年5月</li><li data-value="201306" class="c-dropdown2-option">2013年6月</li><li data-value="undefined" class="c-dropdown2-group">下半年</li><li data-value="201307" class="c-dropdown2-option">2013年7月</li><li data-value="201308" class="c-dropdown2-option">2013年8月</li></ul></div>
+</body>
+<script type="text/javascript">
+    function bdsrequire(id, url, callback) {
+        if (!url || !id) {
+            return;
+        }
+
+        function load() {
+            var parts = url.split('?');
+            var conf = {
+                'paths': {}
+            };
+            conf['paths'][id] = parts[0].replace(/\.js$/, '');
+            if (parts.length >= 2) {
+                conf['urlArgs'] = {};
+                conf['urlArgs'][id] = parts.slice(1).join('?');
+            }
+            require.config(conf);
+            require([id], function(data){
+                callback(data);
+            });
+        }
+
+        if (typeof require === "function") {
+            load();
+        }
+    };
+    bdsrequire('scrollbarv','http://bs.baidu.com/public01/ps/scrollbarv.js', function(scrollbarv){
+        ss = scrollbarv({content:$('.c-dropdown2-menu-inner').get(0),initDom:$('.c-dropdown2-option').get(0),mousewheellock: true});
+    });
+</script>
+</html>

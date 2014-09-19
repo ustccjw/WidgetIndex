@@ -1,0 +1,19 @@
+<!-- target:AD_ad_widget_image_normal -->
+<div class="ec-bg"></div>
+<div id="{{#_id}}imgnormal{{/_id}}" class="ad-widget ad-widget-image-normal">
+    {{#options}}
+    <a {{#ubs_config}}data-ubs-config="{{ubs_config}}"{{/ubs_config}}
+        {{#width}}style="width:{{width}}px"{{/width}}
+        {{#@first}}class="ec-first"{{/@first}}
+        {{#@last}}class="ec-last"{{/@last}}
+        href="{{{rcv_url}}}" target="_blank" title2="图片链接{{_index}}">
+        <img src="{{{img_url}}}" />
+        {{#text}}
+            <div class="ec-opacity-bg"></div>
+            <span>{{{text}}}</span>
+        {{/text}}
+    </a>
+    {{/options}}
+</div>
+
+

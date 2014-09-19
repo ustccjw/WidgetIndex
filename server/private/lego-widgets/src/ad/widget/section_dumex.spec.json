@@ -1,0 +1,153 @@
+{
+    "contents": [
+        "ad.widget.Section"
+    ],
+    "userPrefs": [
+        {
+            "name": "options",
+            "displayName": "栏目项",
+            "datatype": "LIST",
+            "tip": "",
+            "rules": {},
+            "items": [
+                {
+                    "name": "icon_url",
+                    "displayName": "栏目标题前面小图标",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "maxSize":50,
+                        "ext":"jpg,gif,png"
+                    },
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "text",
+                    "displayName": "栏目标题文字",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "text_rcv_url",
+                    "displayName": "栏目标题URL",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL",
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "alternative_desc",
+                    "displayName":"可选栏目详细",
+                    "datatype":"ALTERNATIVE",
+                    "defaultValue":"blank",
+                    "rules":{},
+                    "extraAttr":{},
+                    "enumValues":[
+                        {
+                            "value": "blank",
+                            "displayValue": "无栏目详细",
+                            "items": []
+                        }, {
+                            "value": "link",
+                            "displayValue": "栏目描述",
+                            "items":[{
+                                "name": "detail",
+                                "displayName": "栏目描述",
+                                "datatype": "LIST",
+                                "tip": "",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "text",
+                                        "displayName": "描述文字",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {},
+                                        "tip": "",
+                                        "multiline": false
+                                    },
+                                    {
+                                        "name": "rcv_url",
+                                        "displayName": "描述文字URL",
+                                        "defaultValue": "http://",
+                                        "datatype": "STRING",
+                                        "rules": {
+                                            "stringType": "URL"
+                                        },
+                                        "extraAttr": {},
+                                        "tip": "",
+                                        "multiline": false
+                                    }
+                                ]
+                            }]
+                        },
+                        {
+                            "value": "iframe",
+                            "displayValue": "栏目iframe",
+                            "rules": {},
+                            "items":[
+                                {
+                                    "name": "height",
+                                    "displayName": "iframe高度",
+                                    "defaultValue": "78",
+                                    "datatype": "STRING",
+                                    "rules": {
+                                        "stringType": "NUMBER"
+                                    },
+                                    "extraAttr": {
+                                        "filters": "float"
+                                    },
+                                    "tip": "",
+                                    "multiline": false
+                                },
+                                {
+                                    "name": "width",
+                                    "displayName": "iframe宽度",
+                                    "defaultValue": "499",
+                                    "datatype": "STRING",
+                                    "rules": {
+                                        "stringType": "NUMBER"
+                                    },
+                                    "extraAttr": {
+                                        "filters": "float"
+                                    },
+                                    "tip": "",
+                                    "multiline": false
+                                },
+                                {
+                                    "name": "src",
+                                    "displayName": "iframeURL",
+                                    "defaultValue": "http://",
+                                    "datatype": "STRING",
+                                    "rules": {
+                                        "stringType": "URL"
+                                    },
+                                    "extraAttr": {},
+                                    "tip": "",
+                                    "multiline": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

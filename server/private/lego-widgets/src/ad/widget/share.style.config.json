@@ -1,0 +1,31 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-share",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "margin-left",
+                    "displayName": "左边距",
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "margin-top",
+                    "displayName": "上边距",
+                    "defaultValue": "0px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-share font",
+            "displayName": "“分享到”文字",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "颜色",
+                    "defaultValue": "#999"
+                }
+            ]
+        }
+    ]
+}

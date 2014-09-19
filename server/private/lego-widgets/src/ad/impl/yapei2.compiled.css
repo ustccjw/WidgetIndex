@@ -1,0 +1,127 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/yapei2.less ~ 2013/07/23 11:35:03
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $
+ * @description
+ * yapei2样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  color: #a4a4a4;
+  background-color: #eee;
+  width: 517px;
+  padding: 8px 6px 6px 6px;
+  border: 3px solid #f5f5f5;
+  margin-bottom: 20px;
+}
+#canvas .ad-layout-block-0 {
+  overflow: hidden;
+  zoom: 1;
+  padding-bottom: 10px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 {
+  float: left;
+  width: 283px;
+  padding-left: 10px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 a {
+  color: #00c;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 .ec-site a {
+  color: #4e8705;
+  text-decoration: none;
+}
+#canvas .ad-widget-colorlist {
+  padding-top: 8px;
+  width: 270px;
+}
+#canvas .ad-widget-colorlist a {
+  color: #3e3ef1;
+}
+#canvas .ad-widget-colorlist li {
+  width: 130px;
+}
+#canvas .ad-widget-colorlist li .ec-color-flag {
+  width: 5px;
+  height: 11px;
+  line-height: 10px;
+  font-size: 0px;
+  margin-bottom: 1px;
+}
+#canvas .ad-widget-colorlist li .ec-color-green {
+  background-color: #89ba4f;
+}
+#canvas .ad-widget-colorlist li .ec-color-yellow {
+  background-color: #2c93be;
+}
+#canvas .ad-widget-colorlist li .ec-color-red {
+  background-color: #f179c0;
+}
+#canvas .ad-widget-colorlist li .ec-color-purple {
+  background-color: #7f4dbe;
+}
+#canvas .ad-widget-section {
+  background: url("//bs.baidu.com/adtest/52084efd4d5c5516f9d30c2916f7dd19.jpg") no-repeat;
+  padding: 4px 7px;
+}
+#canvas .ad-widget-section a {
+  color: #3e3ef1;
+  zoom: 1;
+}
+#canvas .ad-widget-section li img,
+#canvas .ad-widget-section li .ec-icon {
+  margin-right: 5px;
+}
+#canvas .ad-widget-section span {
+  color: #596770;
+}
+#canvas .ad-widget-section p a {
+  color: #596770;
+  text-decoration: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#canvas .ad-widget-section .ec-icon1 {
+  background: #D80901;
+}
+#canvas .ad-widget-section .ec-icon2 {
+  background: #F7C500;
+}
+#canvas .ad-widget-section .ec-section-li-1 span {
+  height: 78px;
+}
+#canvas .ad-widget-section .ec-section-li-1 .ec-icon {
+  height: 18px;
+}
+#canvas .ad-widget-button-group {
+  background: transparent;
+  padding: 0 10px;
+  padding-bottom: 0;
+  font-size: 12px;
+}
+#canvas .ad-widget-button-group td {
+  padding-right: 9px;
+  border-right: 0 none;
+}
+#canvas .ad-widget-button-group td a {
+  color: #007aaa;
+  text-decoration: underline;
+  display: block;
+  padding: 2px 0;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+}
+#canvas .ad-widget-button-group .ec-last {
+  padding-right: 0;
+}

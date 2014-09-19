@@ -1,0 +1,148 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: meadjohnson.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/impl/meadjohnson.less ~ 2013/07/23 11:35:03
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 150523 $
+ * @description
+ * yapei2样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial,sans-serif;
+    color: #a4a4a4;
+    background-color: #eee;
+    width: 522px;
+    padding: 4px;
+    border: 3px solid #f5f5f5;
+    margin-bottom: 20px;
+    
+    .ad-widget-title {
+        margin-bottom: 5px;
+        a {
+            color: #0000cc;
+        }
+    }
+    .ad-layout-block-1 {
+        .gain-bfc();
+        padding-bottom: 10px;
+        .ad-layout-block-1-0 {
+            float: left;
+            width: 220px;
+            height: 190px;
+        }
+        .ad-layout-block-1-1 {
+            float: left;
+            width: 290px;
+            padding-left: 10px;
+            a {
+                color: #00c;
+            }
+            .ec-site a {
+                color: #4e8705;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .ad-widget-colorlist {
+        padding-top: 8px;
+        width: 290px;
+        a {
+            color: #3e3ef1;
+        }
+        li {
+            width: 130px;
+            .ec-color-flag {
+                width: 5px;
+                height: 11px;
+                line-height: 10px;
+                font-size: 0px;
+                margin-bottom: 1px;
+            }
+            .ec-color-green {
+                background-color: #89ba4f;
+            }
+            .ec-color-yellow {
+                background-color: #2c93be;
+            }
+            .ec-color-red {
+                background-color: #f179c0;
+            }
+            .ec-color-purple {
+                background-color: #7f4dbe;
+            }
+        }
+    }
+
+    .ad-widget-section {
+        background: url("//bs.baidu.com/adtest/52084efd4d5c5516f9d30c2916f7dd19.jpg") no-repeat;
+        padding: 4px 7px;
+        a {
+            color: #3e3ef1;
+            zoom: 1;
+        }
+        li img,
+        li .ec-icon{
+            margin-right: 5px;
+        }
+        span {
+            color: #596770;
+        }
+        p {
+            a {
+                color: #596770;
+                text-decoration: none;
+                word-wrap:break-word;
+                word-break:break-all;
+            }
+        }
+        .ec-icon1 {
+            background: #D80901;
+        }
+        .ec-icon2 {
+            background: #F7C500;
+        }
+        .ec-section-li-1{
+            margin-bottom: 0;
+            span {
+                height: auto;
+            }
+            .ec-icon {
+                height: 18px;
+            }
+        }
+    }
+
+    .ad-widget-button-group {
+        background: transparent;
+        padding: 0 10px;
+        padding-bottom: 0;
+        font-size: 12px;
+        td {
+            padding-right: 9px;
+            border-right: 0 none;
+            a {
+                color: #007aaa;
+                text-decoration: underline;
+                display: block;
+                padding: 2px 0;
+                background: #fff;
+                border: 1px solid #d1d1d1;
+            }
+        }
+        .ec-last {
+            padding-right: 0;
+        }
+    }
+}

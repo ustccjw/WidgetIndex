@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: last.test.html 11526 2012-09-04 10:23:58Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/test/last.test.html ~ 2012/05/10 10:49:04
+ * @author liyubei@baidu.com (liyubei)
+ * @version $Revision: 11526 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[TEST]ad.last.test</title>
+    <script type="text/javascript" src="../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript">
+        goog.require('ad.Debug');
+        goog.require('ad.test.last');
+        goog.require('third_party.qunit.Qunit');
+    </script>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="root"></div>
+</body>
+<script type="text/javascript">
+function bootstrap() {
+  test('HitTheCache', function(){
+    Coordinations = [{"x" : 0, "y" : 0}, {"x" : 102, "y" : 102}];
+    ok(HitTheCache(0, 0, 102, 102) !== false);
+    ok(HitTheCache(1, 1, 102, 102) !== false);
+    ok(HitTheCache(1, 1, 102, 103) !== false);
+    ok(HitTheCache(1, 1, 103, 103) === false);
+    ok(HitTheCache(0, 0, 103, 103) !== false);
+    ok(HitTheCache(0, 0, 102, 103) !== false);
+  });
+}
+
+ad.Debug(bootstrap);
+</script>
+</html>

@@ -1,0 +1,72 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/flag/lu.less ~ 2014/07/17 00:56:30
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * lu样式文件
+ **/
+.ad-widget-imageplus-flag-lu {
+  /*
+    font: 12px/1.5 arial,sans-serif;
+    text-align: left;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 76px + 25px;
+    overflow: hidden;
+    border: none;
+    background-color: transparent !important;
+
+    .ad-widget-imageplus-inner {
+        position: relative; // 修复IE6,7下bug
+        margin: 25px 0 0 0;
+        padding: 0;
+        width: 100%;
+        height: 76px;
+        overflow: hidden;
+    }
+
+    iframe {
+        float: none;
+        display: block;
+        position: relative;
+        top: 76px - 24px;
+        left: 0;
+        bottom: auto;
+        right: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow:hidden;
+        height: 101px !important;
+        border: none;
+        vertical-align: baseline;
+        .transition(top 0.5s);
+    }
+    */
+
+  position: relative;
+  width: 265px;
+  height: 120px;
+  margin: 0;
+  padding: 5px 10px 8px;
+  overflow: hidden;
+  _zoom: 1;
+  color: #FFF;
+  font-size: 12px;
+  line-height: 1.5;
+  background: transparent;
+}
+.ad-widget-imageplus-flag-lu iframe {
+  width: 265px;
+  height: 120px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

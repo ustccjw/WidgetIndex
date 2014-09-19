@@ -1,0 +1,64 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/product.less ~ 2013/09/02 15:04:48
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * product样式文件
+ **/
+.ad-widget-imageplus-product {
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-imageplus-product-info {
+  width: 270px;
+  height: 106px;
+  overflow: hidden;
+}
+.ad-widget-imageplus-product-idea {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 10px;
+  top: 10px;
+}
+.ad-widget-imageplus-product-idea img {
+  position: static !important;
+  cursor: auto !important;
+  width: 83px !important;
+  height: 83px !important;
+  border: solid 1px #DCDCDB;
+}
+.ad-widget-imageplus-product-text {
+  margin: 10px 10px 0 105px ;
+}
+.ad-widget-imageplus-product-desc {
+  text-align: left !important;
+  color: #333;
+  margin-top: -2px;
+  overflow: hidden;
+  height: 36px;
+}
+.ad-widget-imageplus-product-price {
+  text-align: left !important;
+  font-size: 15px;
+  color: #FF9999;
+  margin: 4px 0px;
+}
+.ad-widget-imageplus-product-seller {
+  text-align: left !important;
+  color: #999;
+}
+.ad-widget-imageplus-product-redirect {
+  position: absolute;
+  width: 270px;
+  height: 106px;
+  background: url(http://ecma.bdimg.com/public03/imageplus/product-kankan.png) 200px 77px no-repeat;
+  left: 0px;
+  top: 0px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

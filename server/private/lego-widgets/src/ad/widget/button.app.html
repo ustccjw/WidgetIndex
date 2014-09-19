@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.app.html 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/button.app.html ~ 2013/01/24 21:08:37
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[AD]ad.widget.Button</title>
+    <script type="text/javascript" src="../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript" src="button.config.js"></script>
+</head>
+<body>
+
+<div id="canvas" data-rendered="true">
+  <div class="layout">
+    <div class="ad-block ad-block-0">
+      <div class="ad-block ad-block-0-0" id="ad-w-6kq797">
+        <div class="ad-widget ad-widget-button ">
+          <a id="ad-w-6kq797-button" class="ec-button" style="width:95px;height:24px;line-height:24px;background:url(http://bs.baidu.com/adtest/5567e4e159428a73f94d8820ba17bfab.jpg) no-repeat 0 0" title2="按钮" href="http://www.baidu.com" target="_blank">免费下载APP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    goog.require('ad.Debug');
+    goog.require('ad.material.BaseMaterial');
+    goog.require('ad.widget.Button');
+    goog.require('ad.plugin.ClickMonkey');
+</script>
+<script type="text/javascript">
+ad.Debug(function(async) {
+    var material = new ad.material.BaseMaterial();
+    material.setWidgets(
+        [new ad.widget.Button(WIDGET_CONFIG)]
+    );
+    if(async === true) {
+        return material;
+    }
+    material.show();
+});
+</script>
+</html>

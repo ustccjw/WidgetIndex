@@ -1,0 +1,755 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/imageplus/tuhua/board.less ~ 2014/05/29 16:07:09
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * board样式文件
+ **/
+
+@import-once "mixins.less";
+
+.ad-widget-imageplus-tuhua-board {
+    color:white;
+    font-family:"微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    position:absolute;
+    right:0;
+    top:0;
+    overflow:hidden;
+    z-index:999;
+
+    .transition(~"height 0.5s"); // width 0.5s,
+
+    .clearfix();
+
+    .ie-background-opacity(rgba(0, 0, 0, 0.8));
+
+    .ad-tuhua-panel {
+        position:absolute;
+        top:0;
+        right:0;
+    }
+
+    .ad-tuhua-title {
+        .ie-background-opacity(rgba(0, 0, 0, 0.4));
+
+        .clearfix();
+
+        .ad-icon-mail,
+        .ad-icon-comment,
+        .ad-icon-plus,
+        .ad-icon-return {
+            width:48px;
+            height:40px;
+            line-height:40px;
+            display:block;
+            text-decoration:none;
+            float:right;
+            color:white;
+            font-size:30px;
+            text-align:center;
+            position:relative;
+
+            b {
+                color:red;
+                font-size:10px;
+                font-family:'Arial' !important;
+                position:absolute;
+                right:2px;
+                top:4px;
+                line-height:10px;
+            }
+
+            &:hover {
+                color:orange;
+            }
+        }
+
+        .ad-icon-plus {
+            width:36px;
+            font-size:26px;
+        }
+
+        .ad-icon-mail-shake {
+            -webkit-animation: receive_message 3s ease 1s infinite;
+               -moz-animation: receive_message 3s ease 1s infinite;
+                    animation: receive_message 3s ease 1s infinite;
+        }
+
+        .ad-self-pic {
+            float:right;
+            margin-top:8px;
+            margin-right:8px;
+            margin-left:5px;
+            cursor:pointer;
+            position:relative;
+            z-index:1000;
+
+            .ad-tuhua-user-panel {
+                margin:0;
+                padding:0;
+                display:none;
+                position:absolute;
+                top:29px;
+                right:0;
+                font-size:12px;
+                color:#333;
+                padding:5px 10px;
+                background:#fff;
+
+                .clearfix();
+
+                .opacity(90);
+
+                .box-shadow(2px 2px 0px #666);
+            }
+
+            .ad-tuhua-user-panel-arrow {
+                border: 5px solid transparent;
+                border-bottom: 5px solid #fff;
+                height: 0;
+                width: 0;
+                overflow: hidden;
+                position:absolute;
+                top:-10px;
+                right:7px;
+            }
+        }
+
+        .ad-tuhua-user-panel-hover {
+            .ad-tuhua-user-panel {
+                display:block;
+            }
+        }
+
+        .ad-user-nickname {
+            white-space:nowrap;
+        }
+
+        .ad-user-info {
+            float:right;
+        }
+
+        .ad-icon-return {
+            color: white;
+            float:left;
+
+            .opacity(60);
+
+            &:hover {
+                color:orange;
+
+                .opacity(80);
+            }
+        }
+
+        .ad-tuhua-user-notice {
+            float:right;
+            margin-right:10px;
+            margin-top:14px;
+            line-height:12px;
+            font-size:12px;
+
+            input {
+                display:inline-block;
+                .ie7-inline-block();
+                vertical-align:middle;
+                margin-right:5px;
+            }
+
+            a {
+                vertical-align:middle;
+                color:white;
+                text-decoration:underline;
+            }
+        }
+    }
+
+    .ad-tuhua-body {
+        .clearfix();
+
+        margin:10px;
+    }
+
+    .ad-carousel {
+        height:180px;
+
+        .clearfix();
+    }
+
+    .ad-arrow {
+        display:block;
+        width:30px;
+        height:100%;
+        line-height:100%;
+        float:left;
+        text-decoration:none;
+        color:white;
+        text-align:center;
+        font-size:30px;
+
+        .opacity(60);
+    }
+
+    .ad-arrow-prev,
+    .ad-arrow-next {
+        &:hover {
+            color:orange;
+        }
+    }
+
+    .ad-slide-wrapper {
+        width:300px;
+        height:100%;
+        float:left;
+        overflow:hidden;
+        position:relative;
+    }
+
+    .ad-slide-body {
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    .ad-slide-item {
+        height:100%;
+        float:left;
+        margin-right:10px;
+
+        table {
+            width:100%;
+            height:100%;
+            border:none;
+            border-collapse:collapse;
+            position:relative;
+        }
+
+        td {
+            text-align:center;
+            vertical-align:middle;
+            padding:10px 15px;
+            line-height:20px;
+            font-size:14px;
+        }
+
+        b {
+            a {
+                text-decoration:underline;
+                color:#ccc;
+            }
+            i {
+                font-style:normal;
+                color:#ccc;
+                text-decoration:underline;
+            }
+        }
+
+        .ad-user-profile {
+            position:absolute;
+            left:0px;
+            top:0px;
+            height:40px;
+            line-height:40px;
+
+            img {
+                float:left;
+                border:none;
+                margin-right:5px;
+                cursor:pointer;
+            }
+        }
+
+        .ad-user-nocomment {
+            visibility:hidden;
+        }
+
+        .ad-user-self {
+            .ad-reply-entry {
+                display:none;
+            }
+
+            b {
+                color:orange;
+
+                a {
+                    color:orange;
+                }
+            }
+        }
+    }
+
+    .ad-act-complain {
+        position:absolute;
+        top:8px;
+        right:0;
+        color:#fff;
+        font-size:12px;
+        .opacity(50);
+
+        &:hover {
+            .opacity(100);
+        }
+    }
+
+    .ad-tuhua-foot {
+        height:36px;
+        margin-top:10px;
+        position:relative;
+        overflow:hidden;
+        zoom:1;
+
+        input {
+            margin: 0;
+            font-size: 14px;
+            outline:none;
+            color:#333;
+            padding:8px 4px;
+            background:#FFF;
+            border:none;
+            height:36px;
+            *height:30px;
+            line-height:20px;
+            background-image:-webkit-gradient(linear, 0 0, 0 2, from(#ececec), to(#fff));
+            background-image:-moz-linear-gradient(top, #ececec, #fff 2px, #fff);
+
+            .box-sizing(border-box);
+
+            float:left;
+        }
+
+        a.ad-button {
+            margin-left:10px;
+            display:block;
+            float:left;
+            width:100px;
+            height:36px;
+            line-height:36px;
+            color:white;
+            text-align:center;
+            border:none;
+            font-size:14px;
+            text-decoration:none;
+
+            .ie-background-opacity(rgba(0, 0, 0, 0.8));
+        }
+
+        label {
+            position:absolute;
+            left:6px;
+            top:0px;
+            height:36px;
+            line-height:36px;
+            color:#999;
+            font-size:14px;
+        }
+
+        .ad-icon-add {
+            width:41px;
+            height:40px;
+            line-height:40px;
+            display:block;
+            text-decoration:none;
+            float:right;
+            color:white;
+            font-size:30px;
+            text-align:center;
+            position:relative;
+
+            &:hover {
+                color:orange;
+            }
+        }
+
+        .ad-comment-entry {
+            text-align:right;
+            height:40px;
+            line-height:40px;
+            position:absolute;
+            top:0;
+            right:10px;
+            overflow:hidden;
+
+            span {
+                font-size:20px;
+                font-weight:bold;
+                display:none;
+            }
+        }
+    }
+
+    .ad-reply-container {
+        float:right;
+        height:36px;
+        overflow:hidden;
+        white-space:nowrap;
+        width:0;
+        margin-right:-10px;
+        position:relative;
+    }
+
+    .ad-reply-container-open {
+        // .transition(width 0.5s);
+
+        width:100%;
+    }
+
+    .ad-reply-entry {
+        color:white;
+        font-size:20px;
+        text-decoration:none;
+    }
+
+    .ad-mail-list {
+        overflow-x:hidden;
+        overflow-y:scroll;
+        padding:0 10px 0 0;
+    }
+
+    .ad-mail-item {
+        line-height:24px;
+        font-size:12px;
+        padding:10px;
+        margin-bottom:10px;
+        font-weight:normal;
+        position:relative;
+        *zoom:1;
+
+        .ie-background-opacity(rgba(0, 0, 0, 0.5));
+
+        b {
+            font-size:14px;
+            i {
+                font-style:normal;
+                color:#ccc;
+                text-decoration:underline;
+            }
+
+            a {
+                color:#ccc;
+                text-decoration:underline;
+            }
+        }
+
+        a.ad-mail-entry {
+            color:white;
+            font-size:22px;
+            text-decoration:none;
+            position:absolute;
+            right:10px;
+            top:10px;
+
+            &:hover {
+                color:orange;
+            }
+        }
+
+        img {
+            float:left;
+            border:none;
+            margin-right:5px;
+            cursor:pointer;
+        }
+    }
+
+    .ad-mail-detail-list {
+        overflow-x:hidden;
+        overflow-y:scroll;
+        padding:0 10px 0 0;
+    }
+
+    .ad-mail-detail-item {
+        margin-bottom:15px;
+        line-height:24px;
+        font-size:12px;
+        font-weight:normal;
+        position:relative;
+
+        b {
+            font-size:14px;
+            display:inline-block;
+            vertical-align:middle;
+
+            i {
+                font-style:normal;
+                color:#ccc;
+                text-decoration:underline;
+            }
+        }
+
+        a {
+            font-size:22px;
+            color:white;
+            text-decoration:none;
+            position:absolute;
+            right:10px;
+            top:10px;
+
+            &:hover {
+                color:orange;
+            }
+        }
+
+        img {
+            border:none;
+            margin-right:5px;
+            vertical-align:middle;
+        }
+
+        img.ad-user-pic {
+            border:none;
+            margin-right:5px;
+            float:left;
+        }
+
+        .ad-mail-detail-message-container {
+            margin-left:35px;
+            position:relative;
+
+            .clearfix();
+        }
+
+        .ad-mail-detail-message {
+            padding:8px 10px;
+            float:left;
+
+            .ie-background-opacity(rgba(0, 0, 0, 0.5));
+
+            .border-radius(5px);
+        }
+
+        span.ad-small-arrow {
+            display:block;
+            height:0;
+            line-height:0;
+            font-size:0;
+            width:0;
+            height:0;
+            position:absolute;
+            top:7px;
+            left:-10px;
+            border-right:5px solid #000000;
+            border-left:5px solid transparent;
+            border-top:5px solid transparent;
+            border-bottom:5px solid transparent;
+            *border-style: dashed solid dashed dashed;
+
+            .opacity(50);
+        }
+    }
+
+    .ad-mail-detail-item-self {
+        text-align:right;
+
+        a {
+            right:auto;
+            left:10px;
+            top:10px;
+        }
+
+        img.ad-user-pic {
+            border:none;
+            margin-left:5px;
+            margin-right:0;
+            float:right;
+        }
+
+        .ad-mail-detail-message-container {
+            margin-right:35px;
+            margin-left:0;
+        }
+
+        .ad-mail-detail-message {
+            float:right;
+
+            .ie-background-opacity(rgba(0, 128, 0, 0.5));
+        }
+
+        span.ad-small-arrow {
+            position:absolute;
+            left:auto;
+            top:5px;
+            right:-10px;
+            border-left:5px solid #008000;
+            border-right:5px solid transparent;
+            border-top:5px solid transparent;
+            border-bottom:5px solid transparent;
+            *border-style: dashed dashed dashed solid;
+        }
+    }
+
+    .ad-tuhua-notice-content {
+        font-size:12px;
+        overflow-y:auto;
+        color:#eee;
+        line-height:20px;
+
+        p {
+            margin-top:10px;
+            margin-bottom:10px;
+            text-indent:2em;
+        }
+
+        h2 {
+            margin:0;
+            font-size:16px;
+        }
+
+        .ad-item {
+            display:block;
+            margin-top:5px;
+            margin-bottom:5px;
+
+            b {
+                text-decoration:underline;
+                display:block;
+                font-size:13px;
+            }
+        }
+
+        .ad-sub-item {
+            display:block;
+            padding-left:2em;
+            background:url(http://ecma.bdimg.com/adtest/84423e5e4fca5c5fd57f8727b45661b6.png) 8px 4px no-repeat;
+        }
+    }
+
+    .ad-tuhua-complain-content {
+        font-size:14px;
+        overflow-y:auto;
+        color:#eee;
+        line-height:20px;
+
+        .ad-complain-object {
+            line-height:22px;
+            padding:10px;
+            margin-left:12px;
+            margin-right:8px;
+            *zoom:1;
+
+            .border-radius(5px);
+
+            .ie-background-opacity(rgba(0, 0, 0, 0.6));
+        }
+
+        .ad-complain-message {
+            margin-top:5px;
+            color:#ccc;
+        }
+
+        .ad-complain-type {
+            margin-left:10px;
+        }
+
+        a.ad-complain-submit {
+            margin-top:12px;
+            margin-left:10px;
+            margin-bottom:15px;
+            display:block;
+            float:left;
+            width:100px;
+            height:36px;
+            line-height:36px;
+            color:white;
+            text-align:center;
+            border:none;
+            font-size:14px;
+            text-decoration:none;
+
+            .ie-background-opacity(rgba(4, 73, 190, 0.8));
+
+            &:hover {
+                .ie-background-opacity(rgba(4, 73, 190, 1));
+            }
+        }
+
+        img {
+            width:22px;
+            height:22px;
+            float:left;
+            margin-right:5px;
+        }
+
+        h2 {
+            margin:6px 0;
+            font-size:16px;
+        }
+
+        input.ad-complain-reason {
+            margin: 6px 0 0;
+            font-size: 14px;
+            outline:none;
+            color:#333;
+            padding:8px 4px;
+            background:#FFF;
+            border:none;
+            width:294px;
+            height:30px;
+            *height:24px;
+            line-height:20px;
+            background-image:-webkit-gradient(linear, 0 0, 0 2, from(#ececec), to(#fff));
+            background-image:-moz-linear-gradient(top, #ececec, #fff 2px, #fff);
+
+            .box-sizing(border-box);
+        }
+    }
+
+    .ad-tip {
+        position:absolute;
+        padding:10px;
+        bottom:56px;
+        right:10px;
+        line-height:20px;
+        font-size:14px;
+
+        .border-radius(5px);
+
+        .ie-background-opacity(rgba(10, 10, 10, 0.7));
+    }
+
+    .ad-tip-success {
+        color:#60f000;
+    }
+
+    .ad-tip-error {
+        color:#f03030;
+    }
+
+    .ad-tip-info {
+        color:#fff;
+    }
+}
+
+.ad-tuhua-mode-righttop {
+    right:10px;
+    top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

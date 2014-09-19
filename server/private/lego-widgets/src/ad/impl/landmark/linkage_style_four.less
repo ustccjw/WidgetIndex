@@ -1,0 +1,164 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id:  linkage_style_four.less 12406 2012-09-28 03: 46: 29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/landmark/linkage_style_four.less ~ 2012/09/28 11: 32: 23
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision:  12406 $ 
+ * @description 
+ * linkage_style_four样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 260px;
+    background: #ffffff;
+    margin-bottom : 20px;
+    text-align: left;
+    z-index: -1;
+
+    .layout {
+        position: relative;
+    }
+    
+    .ad-widget-video-title {
+        background: url(//bs.baidu.com/adtest/afd5388295bab5bf79cb1e7fb6647ab6.png) no-repeat left center;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 900;
+        
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
+    .ad-widget-image-show-vertical-img {
+        width: 164px;
+        height: 172px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #e1e1e1;
+        border-right: 0;
+        position: relative;
+        float: none;
+        a {
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 164px;
+            height: 172px;
+            position: relative;
+            text-decoration: none;
+            img {
+                display: block;
+                width: 164px;
+                height: 172px;
+                border: none;
+            }
+            
+            div {
+                position: absolute;
+                width: 164px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 13px;
+                color: #fff;
+                background: #000;
+                .opacity(70);
+                bottom: 0;
+                text-align: center;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .ad-widget-image-show-vertical {
+        border-right: 1px solid #e1e1e1;
+        z-index: 8888;
+        width: 300px;
+        li {
+            height: 29px;
+            font-size: 13px;
+            line-height: 29px;
+            border: 0;
+            text-align: left;
+            background-color: transparent;
+            background: url(//bs.baidu.com/adtest/2d26cd979afa2bae746bf72ad123a2ed.png);
+            a {
+                color: #0000cc;
+                display: block;
+                margin-left: 5px;
+                padding-left: 5px;
+                height: 28px;
+                border-top: 1px solid #e1e1e1;
+            }
+        }
+        .ec-current {
+            background: url(//bs.baidu.com/adtest/fc79d9ac639c2e8dafc99c37ad7bcad9.png);
+            background-color: transparent;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .ec-titles {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ad-widget-link-list {
+        position: absolute;
+        top: 172px;
+        left: 165px;
+        z-index: 99999;
+        .gain-bfc();
+        width: 92px;
+        height: 28px;
+        border: 1px solid #e1e1e1;
+        border-left: 0;
+        li {
+            height: 28px;
+            font-size: 13px;
+            line-height: 28px;
+            border: 0;
+            text-align: left;
+            padding: 0 5px;
+            background-color: #fff;
+            float: none;
+            a {
+                color: #0000cc;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim:  set ts=4 sw=4 sts=4 tw=100:  */

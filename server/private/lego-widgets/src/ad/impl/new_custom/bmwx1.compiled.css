@@ -1,0 +1,155 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: bmwx1.less 11222 2012-08-20 02:53:59Z dingguoliang01 $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/bmwx1.less ~ 2013/10/30 14:23:28
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1179样式文件
+ **/
+#canvas {
+  margin-bottom: 20px;
+  font: 12px/1.5 arial, sans-serif;
+  width: 520px;
+  position: relative;
+  background: none repeat scroll 0 0 #F6F6F6;
+}
+#canvas .ad-widget-title {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-small-head {
+  width: 253px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  text-indent: 2em;
+  line-height: 18px;
+}
+#canvas .ad-widget-small-head .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-widget-small-head .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  width: 254px;
+  position: relative;
+  margin-top: 9px;
+}
+#canvas .ad-widget-small-head .ec-image-group .ec-last {
+  margin: 0px;
+}
+#canvas .ad-block-0-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding: 8px 0 0 0;
+}
+#canvas .ad-block-0-1 .ad-widget-image {
+  float: left;
+  width: 254px;
+  height: 143px;
+  cursor: pointer;
+}
+#canvas .ad-block-0-1-0,
+#canvas .ad-block-0-1-1 {
+  float: left;
+}
+#canvas .ad-block-0-1-0 {
+  margin-right: 10px;
+}
+#canvas .ad-widget-image {
+  margin-top: 15px;
+}
+#canvas .ad-widget-image img {
+  width: 520px;
+  height: 121px;
+}
+#canvas .ec-bg {
+  display: none;
+}
+#canvas .ad-widget-image-normal a {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 70px;
+}
+#canvas .ad-widget-image-normal img {
+  border: none;
+  height: 70px;
+}
+#canvas .ad-widget-image-normal .ec-last {
+  border: none;
+}
+#canvas .ad-widget-flash {
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 199;
+}
+#canvas .ec-float-close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+#canvas .ec-float-close:hover {
+  background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail {
+  top: 56px;
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail .ec-thunbnail-cont {
+  height: 258px;
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail .ec-thunbnail-bg {
+  display: none;
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail .ec-play-btn {
+  margin: auto;
+  position: relative;
+  top: -40px;
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail .ec-title {
+  top: 50px;
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail .ec-item {
+  margin: 20px 0 0 10px;
+}
+.ec-bmwx1-fwc .ad-widget-multi-video-thunbnail .ec-blue {
+  color: #1E95FA;
+}
+.ec-bmwx1-fwc .ad-widget-video {
+  width: 540px;
+  height: 304px;
+  position: absolute;
+  top: 76px;
+  left: 20px;
+}
+.ec-bmwx1-fwc .ec-close {
+  width: 35px;
+  height: 35px;
+  top: 0;
+  right: 0;
+  background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+.ec-bmwx1-fwc .ec-close:hover {
+  background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

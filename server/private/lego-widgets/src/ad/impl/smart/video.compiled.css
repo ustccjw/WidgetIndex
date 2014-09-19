@@ -1,0 +1,65 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/smart/video.less ~ 2013/10/31 11:27:41
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * video样式文件
+ **/
+#canvas {
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  font: 13px/1.54 arial;
+  width: 518px;
+  padding: 9px;
+  margin-bottom: 20px;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  _zoom: 1;
+  margin-top: 6px;
+}
+#canvas .ad-widget-video {
+  height: 146px;
+}
+#canvas .ad-block-1-0,
+#canvas .ad-block-1-1 {
+  float: left;
+}
+#canvas .ad-block-1-0 {
+  margin-right: 10px;
+}
+#canvas .ad-block-1-1 {
+  width: 254px;
+}
+#canvas .ec-description {
+  text-indent: 2em;
+  line-height: 20px;
+  color: #000;
+}
+#canvas .ec-site {
+  text-indent: 0;
+}
+#canvas .ec-date {
+  display: none;
+}
+#canvas .ad-widget-section {
+  margin-top: 4px;
+}
+#canvas .ad-widget-section li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

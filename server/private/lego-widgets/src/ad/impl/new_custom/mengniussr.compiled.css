@@ -1,0 +1,155 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/mengniussr.less ~ 2014/04/14 11:24:29
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * mengniussr样式文件
+ **/
+#canvas {
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  font: 12px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+  width: 528px;
+  border: 5px solid #e0245f;
+  padding: 0;
+  background: #fff;
+  position: relative;
+}
+#canvas .ad-block-0 {
+  padding: 4px 5px 0 5px;
+}
+#canvas .ad-block-1 {
+  height: 144px;
+  overflow: hidden;
+  background: #fff;
+  padding: 9px 5px 10px 5px;
+}
+#canvas .ad-block-1 .ad-block-1-0 {
+  float: left;
+  width: 254px;
+}
+#canvas .ad-block-1 .ad-block-1-1 {
+  float: left;
+  width: 254px;
+  padding-left: 10px;
+}
+#canvas .ad-block-1 .ad-block-1-1 .ec-bg {
+  display: none;
+}
+#canvas .ad-widget-title {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-title h2 {
+  float: left;
+  width: 400px;
+}
+#canvas .ad-widget-title a {
+  color: #0000cc;
+  max-width: 350px;
+  word-berak: normal;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#canvas .ad-widget-small-head {
+  width: 254px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+  text-indent: 2em;
+}
+#canvas .ad-widget-small-head .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-widget-small-head .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-video object,
+#canvas .ad-widget-video embed {
+  display: block;
+}
+#canvas .ad-widget-image-normal {
+  margin-top: 11px;
+}
+#canvas .ad-widget-image-normal img {
+  border: none;
+}
+#canvas .ad-widget-image-normal div,
+#canvas .ad-widget-image-normal span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 29px;
+  height: 18px;
+}
+#canvas .ad-widget-image-normal div {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  background: #000;
+}
+#canvas .ad-widget-image-normal span {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #fff;
+  line-height: 18px;
+}
+#canvas .ad-widget-button-group {
+  position: relative;
+  background-color: #F864B2;
+}
+#canvas .ad-widget-button-group td {
+  border-right-color: white;
+  height: 13px;
+  line-height: 13px;
+}
+#canvas .ad-widget-button-group a {
+  color: white;
+}
+#canvas .ad-widget-image {
+  width: 100%;
+  height: 140px;
+  cursor: pointer;
+}
+#canvas .ad-widget-image img {
+  width: 100%;
+  height: 140px;
+}
+#canvas .ad-widget-flash {
+  background: #fff;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: 199;
+}
+#canvas .ec-float-close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+#canvas .ec-float-close:hover {
+  background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

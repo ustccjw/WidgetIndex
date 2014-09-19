@@ -1,0 +1,88 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-tab-container .tab-head",
+            "displayName": "tab头设置",
+            "rules": [
+                {
+                    "name": "margin-top",
+                    "displayName": "上（外）边距",
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "margin-bottom",
+                    "displayName": "下（外）边距",
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding",
+                    "displayName": "内边距",
+                    "defaultValue": "0px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-tab-container .tab-head li a",
+            "displayName": "tab头标题设置",
+            "rules": [
+                {
+                    "name": "background-color",
+                    "displayName": "背景色",
+                    "defaultValue": "#E4EBFB"
+                },
+                {
+                    "name": "color",
+                    "displayName": "文字颜色",
+                    "defaultValue": "#0001CC"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-tab-container .tab-head .current-tab a, .ad-widget-tab-container .tab-head .current-tab a:visited",
+            "displayName": "活动状态tab头标题设置",
+            "rules": [
+                {
+                    "name": "border-bottom",
+                    "displayName": "下边框颜色",
+                    "defaultValue": "1px solid #FFFFFF"
+                },
+                {
+                    "name": "background-color",
+                    "displayName": "背景色",
+                    "defaultValue": "#FFFFFF"
+                },
+                {
+                    "name": "color",
+                    "displayName": "文字颜色",
+                    "defaultValue": "#0001CC"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-tab-container .tab-body",
+            "displayName": "tab内容区域设置",
+            "rules": [
+                {
+                    "name": "padding-top",
+                    "displayName": "上边距",
+                    "defaultValue": "10px"
+                },
+                {
+                    "name": "padding-bottom",
+                    "displayName": "下边距",
+                    "defaultValue": "10px"
+                },
+                {
+                    "name": "padding-left",
+                    "displayName": "左边距",
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding-right",
+                    "displayName": "右边距",
+                    "defaultValue": "0px"
+                }
+            ]
+        }
+    ]
+}

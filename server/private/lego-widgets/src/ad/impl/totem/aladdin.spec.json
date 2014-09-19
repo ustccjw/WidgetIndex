@@ -1,0 +1,175 @@
+[
+    {
+        "name": "aladdin",
+        "displayName": "显贵阿拉丁",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "ads",
+                "displayName": "元素",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "title",
+                        "displayName": "标题",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 26
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "ad_owner",
+                        "displayName": "广告主名称",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 26
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "logo",
+                        "displayName": "LOGO",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "stringType": "IMAGE"
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "show_url",
+                        "displayName": "show_url",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 38
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "small_img_url",
+                        "displayName": "小图图片地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "IMAGE",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "middle_img_url",
+                        "displayName": "中图图片地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "IMAGE",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "small_width",
+                        "displayName": "小图宽度",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER",
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "small_height",
+                        "displayName": "小图高度",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER",
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "middle_width",
+                        "displayName": "中图宽度",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER",
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "middle_height",
+                        "displayName": "中图高度",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER",
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 4,
+                    "maxCount": 4
+                },
+                "extraAttr": {}
+            }
+        ],
+        "rules": {}
+    }
+]

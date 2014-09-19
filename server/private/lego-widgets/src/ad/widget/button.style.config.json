@@ -1,0 +1,20 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-button .ec-button",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "字体颜色",
+                    "defaultValue": "#000"
+                },
+                {
+                    "name": "font-weight",
+                    "displayName": "字体加粗",
+                    "defaultValue": "normal"
+                }
+            ]
+        }
+    ]
+}

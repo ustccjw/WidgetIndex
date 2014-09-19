@@ -1,0 +1,258 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/lexus.less ~ 2014/07/25 14:40:05
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * lexus样式文件
+ **/
+#canvas {
+  font: 13px/1.5 arial, sans-serif;
+  width: 518px;
+  margin-bottom: 20px;
+  border: 1px solid #F0F0F0;
+  padding: 9px;
+  background: #fdfdfd url(//bs.baidu.com/adtest/2a6aaa64bd30f96786c96eb29d6e0d0f.jpg) no-repeat 0 0;
+}
+.ad-block-0 {
+  margin: 0 0 8px 0;
+}
+.ad-block-1 {
+  margin: 5px 0;
+  height: 144px;
+}
+.ad-block-1-0 {
+  float: left;
+}
+.ad-block-1-1 {
+  height: 100%;
+  margin-left: 264px;
+  position: relative;
+}
+.ad-block-1-1 .ad-widget-small-head .ec-description {
+  line-height: 1.5;
+  text-indent: 2em;
+}
+.ad-block-1-1 .ad-widget-small-head .ec-description .ec-site {
+  text-indent: 0;
+}
+.ad-block-1-1 .ad-widget-image-normal {
+  margin-top: 6px;
+  *margin-top: 4px;
+  _margin-top: 8px;
+}
+.ad-block-1-1 .ad-widget-image-normal a {
+  width: 78px;
+  height: 59px;
+  margin: 0 0 0 10px;
+  _margin-left: 8px;
+  overflow: hidden;
+}
+.ad-block-1-1 .ad-widget-image-normal a img {
+  width: 100%;
+  border: none;
+}
+.ad-block-1-1 .ad-widget-image-normal .ec-first {
+  margin-left: 0;
+}
+.ad-block-2 {
+  margin-top: 15px;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head {
+  height: 28px;
+  margin: 0;
+  text-align: center;
+  background: #808080;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li {
+  display: block;
+  float: left;
+  margin: 0;
+  height: 100%;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab {
+  background-color: #CCC;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a {
+  color: #333;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head a {
+  display: block;
+  height: 15px;
+  margin: 6px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  border: none;
+  border-right: 1px solid white;
+  background-color: transparent;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a,
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-previous-tab a,
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-tab-list-last a {
+  border-bottom: none;
+  background-color: transparent;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-tab-list-last a {
+  border-right: none;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a {
+  border-right-color: #CCC;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-previous-tab a {
+  border-right-color: #808080;
+}
+.ad-block-2 .ad-widget-tab-container .ec-tab-body {
+  height: 96px;
+  overflow: hidden;
+  padding: 10px 0 15px 0;
+}
+.ad-block-2 .ad-widget-iframe a img {
+  width: 255px;
+  height: 96px;
+}
+.ad-block-2 .ad-widget-iframe div {
+  margin-left: 8px;
+}
+.ad-block-2 .ad-widget-normal-container .ec-normal-con {
+  float: left;
+  width: 255px;
+  margin-left: 8px;
+}
+.ad-block-2 .ad-widget-normal-container .ec-normal-con-0 {
+  margin-left: 0;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-image img {
+  width: 255px;
+  height: 96px;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-htmltext .ec-htmltext-desc {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #E0E0E0;
+  background: transparent;
+  line-height: 1.5;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-htmltext a {
+  color: #333;
+  text-decoration: none;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list {
+  margin-top: 10px;
+  position: relative;
+  font-size: 13px;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list a {
+  color: #333;
+  text-decoration: underline;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list li {
+  float: none;
+  position: absolute;
+  border: none;
+  height: auto;
+  line-height: 1;
+  text-align: left;
+  padding-left: 10px;
+  background: transparent url(//bs.baidu.com/adtest/38f98f20c5664bbf56df06a36c53b517.gif) no-repeat 2px center;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list .ec-o1 {
+  left: 0;
+  top: 0;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list .ec-o2 {
+  left: 0;
+  top: 25px;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list .ec-o3 {
+  left: 128px;
+  top: 0;
+}
+.ad-block-2 .ad-widget-normal-container .ad-widget-link-list .ec-o4 {
+  left: 128px;
+  top: 25px;
+}
+.ec-float-image-fwc .ad-widget-float-window-container .ec-close,
+.ec-float-video-fwc .ad-widget-float-window-container .ec-close {
+  width: 36px;
+  height: 36px;
+  top: 0;
+  right: 0;
+  background: #000000 url(//bs.baidu.com/adtest/7b6b3a690f1048161e97ce2e198b75b5.gif) no-repeat center center;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.ec-float-image-fwc .ad-widget-float-window-container .ec-close:hover,
+.ec-float-video-fwc .ad-widget-float-window-container .ec-close:hover {
+  background: #000000 url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat center center;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.ec-float-video-fwc .ad-widget-video {
+  position: absolute;
+  left: 20px;
+  top: 76px;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 {
+  left: 580px;
+  top: 172px;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-thunbnail-bg {
+  display: none;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-thunbnail-cont {
+  height: auto;
+  top: auto;
+  bottom: 0;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-item {
+  height: 78px;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-play-btn {
+  top: 18px;
+  margin-left: 30px;
+  background-color: #2297ff;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-item-bg {
+  background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-title {
+  display: block;
+  margin: 0;
+  position: static;
+  line-height: 1.5;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-item-playing .ec-title {
+  display: block;
+  color: #2297ff;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail-v2 .ec-item-playing.ec-hover .ec-title {
+  display: block;
+}
+.ad-widget-button-group {
+  margin-bottom: 5px;
+  background: #B3B3B3;
+  padding: 7px 0;
+}
+.ad-widget-button-group tr,
+.ad-widget-button-group td {
+  height: 14px;
+  padding: 0;
+}
+.ad-widget-button-group td {
+  border-color: #383838;
+  line-height: 14px;
+  *line-height: 16px;
+}
+.ad-widget-button-group td a {
+  color: #333;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

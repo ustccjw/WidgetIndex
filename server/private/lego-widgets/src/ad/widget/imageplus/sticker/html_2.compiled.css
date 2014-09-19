@@ -1,0 +1,46 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/html_2.less ~ 2014/05/08 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * pa样式文件
+ **/
+.ad-widget-imageplus-sticker-html_2 {
+  font: 12px/1.5 arial, sans-serif;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  height: 76px;
+  overflow: hidden;
+  border: none;
+  background-color: transparent !important;
+}
+.ad-widget-imageplus-sticker-html_2 iframe {
+  float: none;
+  display: block;
+  position: relative;
+  top: 52px;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 101px !important;
+  border: none;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s;
+}
+.ad-widget-imageplus-sticker-html_2 iframe.ad-widget-imageplust-sticker-html_2-hover {
+  top: -25px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

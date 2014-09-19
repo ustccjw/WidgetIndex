@@ -1,0 +1,36 @@
+<!-- target:AD_ad_widget_header -->
+
+<div class="ad-widget-header ad-widget"> 
+    {{#logo}} 
+    <a id="{{#_id}}title-image{{/_id}}" class="ec-logo" title2="logo" target="_blank" href="{{{logo_rcv_url}}}"> 
+        <img class="ec-image" src="{{logo}}" /> 
+        {{#tip_image_src}} 
+        <img id="{{#_id}}tip-image{{/_id}}" class="ec-tip-image" src="{{tip_image_src}}" /> 
+        {{/tip_image_src}}
+        {{#logo_title}} 
+        <span>{{logo_title}}</span> 
+        {{/logo_title}} 
+    </a>
+    {{/logo}}
+    <div class="ec-figcaption"> {{#title}}
+        <h2><a data-is-main-url="true" title2="标题" target="_blank" href="{{{rcv_url}}}">{{{title}}}</a></h2>
+        {{/title}}
+        {{#description_rcv_url}}
+        <a title2="header描述" class="ec-description-link" target="_blank" href="{{{description_rcv_url}}}">{{description_rcv_html}}</a> 
+        {{/description_rcv_url}}
+        
+        {{^description_rcv_url}}
+        <div class="ec-description" id="{{#_id}}description{{/_id}}"> {{{description_rcv_html}}} </div>
+        {{/description_rcv_url}}
+        {{#list}}
+        <ul>
+            {{#options}}
+            <li class="ec-li-{{@index}}{{#@first}} ec-li-first{{/@first}}{{#@last}} ec-li-last{{/@last}}" ><a title2="短描述{{@index}}" target="_blank" href="{{{rcv_url}}}">{{text}}</a></li>
+            {{/options}}
+        </ul>
+        {{/list}}
+        {{#footer_rcv_url}} <a title2="header底部连接" class="ec-footer" target="_blank" href="{{{footer_rcv_url}}}">{{site}}</a> {{/footer_rcv_url}}
+        {{^footer_rcv_url}}
+        <div class="ec-site">{{{site}}} {{last_update_date}} - <a href="http://clkmk.baidu.com/clkmk-rcv/lnk?id=54&x=7cfd628d1b3553c4012e3334d6aa9a9620e407637355a14cf73d2f920f7ce6a4661fa0d2e6c2bdc8" target="_blank" style="color:#666;">品牌推广</a></div>
+        {{/footer_rcv_url}} </div>
+</div>

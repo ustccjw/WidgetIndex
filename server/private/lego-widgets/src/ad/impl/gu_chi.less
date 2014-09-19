@@ -1,0 +1,245 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/gu_chi.less ~ 2013/10/14 14:59:32
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * gu_chi样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 524px;
+    background: #ffffff;
+    border: 6px solid #5a2502;
+    margin-bottom: 20px;
+    font: 13px arial,sans-serif;
+
+    .ad-widget-title {
+        padding: 4px 0 0 4px;
+        a {
+            color: #4c4c4c;
+        }
+    }
+
+    .ad-block-0 {
+        .gain-bfc();
+        background: #ffffff;
+    }
+
+    /** 视频模块 */
+    .ad-block-0-0 {
+        float: left;
+        width: 220px;
+        padding-top: 4px;
+        padding-left: 4px;
+    }
+
+    /** 右侧描述和按钮区域 */
+    .ad-block-0-1 {
+        float: right;
+        width: 276px;
+        padding: 4px 10px 0px 14px;
+    }
+
+    .ad-block-0-0-1 {
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .ad-widget-small-head h2 {
+        padding-bottom: 3px;
+    }
+
+    .ad-widget-button-group {
+        padding: 2px 0px;
+        background-color: transparent;
+        td {
+            border: 0;
+            a {
+                color: #8f6e5e;
+                text-decoration: none;
+                border: solid 1px #d8cbc4;
+                margin: 0 5px 0 0;
+                height: 28px;
+                line-height: 28px;
+                display: block;
+                background-color: #fff;
+                font-family: "宋体";
+            }
+        }
+    }
+
+    .ad-widget-tab-container {
+        background-color: #986a4b;
+    }
+
+    .ec-tab-head {
+        margin: 0px;
+        background: none;
+        background-color: #5b2b0c;
+        padding: 0px;
+        height: 30px;
+        overflow: hidden;
+        width: 524px;
+        li {
+            margin: 0px;
+            height: 30px;
+            border: none;
+            a {
+                background-color: #5b2b0c;
+                color: #ffeee4;
+                height: 10px;
+                line-height: 10px;
+                *line-height: 14px;
+                border: none;
+                border-right: solid 1px #885e44;
+                margin-top: 10px;
+                padding: 0px;
+            }
+        }
+
+        .ec-current-tab {
+            color: #fffffd;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            background-color: #703812;
+            margin-top: 0px;
+            position: relative;
+            left: -1px;
+        }
+        .ec-current-tab a {
+            height: 12px;
+            line-height: 12px;
+            vertical-align: top;
+            background-color: #703812;
+            border-right: 0;
+        }
+
+        .ec-tab-list-last {
+            padding-right: 4px;
+            a {
+                border-right: none; 
+            }
+        }
+    }
+
+    .ec-tab-body {
+        .gain-bfc();
+        height: 141px;
+        *height: 145px;
+    }
+
+    table {
+        table-layout: fixed;
+    }
+
+    .ad-widget-table {
+        border: none;
+        padding: 0px 10px 15px 10px;
+        width: 240px;
+        float: left;
+        margin-top: 5px;
+        td {
+            border: none;
+            text-align: left;
+            line-height: 20px;
+            color: #fdeee2;
+            a {
+                color: #fdeee2;
+                text-decoration: none;
+            }
+        }
+        thead {
+            tr {
+                background-color: #986a4b;
+            }
+            td {
+                text-align: center;
+                border: none;
+                border-bottom: solid 1px #ffede2;
+            }
+        }
+        col {
+            width: 80px;
+        }
+        col.ec-0 {
+            width: 100px;
+        }
+        col.ec-1, col.ec-2 {
+            width: 70px;
+        }
+        tbody {
+            tr {
+                background-color: #986a4b;
+            }
+            .ec-row-0 td {
+                padding-top: 5px;
+            }
+            td a,
+            td span {
+                white-space: nowrap;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                word-berak: normal;
+                word-wrap: normal;
+            }
+            .ec-0 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .ec-tab-content-4 {
+        .ec-normal-con-0 {
+            position: relative;
+        }
+
+        .ec-normal-con-0-0 {
+            position: absolute;
+            height: 140px;
+            overflow: hidden;
+        }
+
+        .ec-normal-con-0-1 {
+            position: absolute;
+            left: 25px;
+            top: 40px;
+        }
+
+        .ad-widget-lv-list .ec-inner {
+            padding-right: 0px;
+            background-color: #986a4b;
+        }
+
+        .ec-detail {
+            margin-left: 40px;
+            width: 260px;
+            overflow: hidden;
+        }
+
+        .ad-widget-dependency-select {
+            .ec-item {
+                float: none;
+                margin-bottom: 10px;
+            }
+            .ec-item
+            .ec-title {
+                color: #FFEDE3;
+            }
+        }
+    }
+}

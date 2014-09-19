@@ -1,0 +1,75 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/leju/spot_news.less ~ 2014/05/22 18:03:53
+ * @author chenli11@baidu.com (chestnutchen)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * spot_news样式文件
+ **/
+.ad-widget-leju-spot-news {
+  padding-bottom: 10px;
+  font: 13px arial, sans-serif;
+}
+.ad-widget-leju-spot-news fieldset {
+  margin: 0 0 3px 0;
+  overflow: hidden;
+  padding: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: solid 1px #eaeaea;
+}
+.ad-widget-leju-spot-news legend {
+  line-height: 20px;
+  text-align: left;
+  margin-left: -2px;
+  *margin-left: -9px;
+  padding-right: 10px;
+  color: #000;
+}
+.ad-widget-leju-spot-news h2 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 20px;
+}
+.ad-widget-leju-spot-news h2 em {
+  color: #cc0000;
+  font-style: normal;
+  text-decoration: underline;
+}
+.ad-widget-leju-spot-news .ec-content {
+  width: 520px;
+  line-height: 20px;
+}
+.ad-widget-leju-spot-news .ec-title {
+  *zoom: 1;
+  margin-bottom: 2px;
+}
+.ad-widget-leju-spot-news .ec-title:before,
+.ad-widget-leju-spot-news .ec-title:after {
+  display: table;
+  content: "";
+}
+.ad-widget-leju-spot-news .ec-title:after {
+  clear: both;
+}
+.ad-widget-leju-spot-news .ec-title .ec-origin {
+  float: right;
+  color: #aaa;
+  font-size: 12px;
+}
+.ad-widget-leju-spot-news .ec-title .ec-title-link {
+  float: left;
+}
+.ad-widget-leju-spot-news .ec-description {
+  color: #666;
+}
+.ad-widget-leju-spot-news .ec-description a {
+  color: #000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

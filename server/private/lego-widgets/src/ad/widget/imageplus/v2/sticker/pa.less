@@ -1,0 +1,163 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/imageplus/v2/sticker/pa.less ~ 2014/08/04 18:00:32
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ **/
+@import-once "mixins.less";
+
+.baiduimageplus-s-pa {
+    position: relative;
+    width: 100%;
+    height: 75px + 26px;
+    overflow: hidden;
+    cursor: default;
+
+    a {
+        outline: none;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .baiduimageplus-s-pa-hd {
+        position: relative;
+        z-index: 2;
+        height: 26px;
+        line-height: 26px;
+        text-indent: 10px;
+        .text-overflow();
+        color: #FFF;
+
+        a {
+            font-size: 14px;
+            color: #FFF;
+        }
+    }
+
+    .baiduimageplus-s-pa-bd {
+        position: relative;
+        z-index: 2;
+        margin: 10px 0;
+        overflow: hidden;
+        _zoom: 1;
+    }
+
+    .baiduimageplus-s-pa-img {
+        float: left;
+        _display: inline;
+        width: 50px;
+        height: 50px;
+        margin: 5px 12px 0 10px;
+
+        img {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+    }
+
+    .baiduimageplus-s-pa-txt {
+        margin-right: 70px + 15px;
+        height: 1.5 * 12px * 3;
+        overflow: hidden;
+        zoom: 1;
+        line-height: 1.5;
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: left;
+        text-decoration: none;
+        -webkit-line-clamp: 2;
+        a {
+            color: #FFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    a.baiduimageplus-s-pa-title {
+        color: #CCC;
+    }
+    .baiduimageplus-s-pa-bt {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        margin: 0;
+        width: 70px;
+        height: 25px;
+        display: block;
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        text-align: center;
+        line-height: 25px;
+        background: #BC0000;
+        box-shadow: 2px 2px 4px #000;
+        border-radius: 5px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    /*
+    .baiduimageplus-s-pa-logo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        left: auto;
+        z-index: 3;
+        height: 18px;
+        width: 18px;
+        text-indent: -9999px;
+        background: url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;
+        background-position: 0 0;
+        _filter: progid:dximagetransform.microsoft.alphaimageloader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/logo-border-light.png",sizingMethod="crop");
+        _background: none;
+    }
+    */
+}
+
+// 为了避免IE8下点穿iframe的bug，必须加这层透明层
+.baiduimageplus-s-pa-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    .opacity(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

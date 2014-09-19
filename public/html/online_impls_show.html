@@ -1,0 +1,12 @@
+<div class="online-impls-show" ng-controller="OnlineImplsController">
+    <h4 class="online-impls-show-title">{{req.impl}} 在线物料</h4>
+    <div class="online-impls-show-impl" ng-repeat="impl in opl.onlineImpls">
+        <div class="online-impls-show-link">
+            <span class="glyphicon glyphicon-send"></span>
+            <a ng-href="{{impl.url}}" target="_blank">templateId: {{impl.id}}</a>
+        </div>
+        <div class="online-impls-show-img">
+            <img ng-src="{{impl.img}}" />
+        </div>
+    </div>
+</div>

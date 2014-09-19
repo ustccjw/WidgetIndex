@@ -1,0 +1,36 @@
+{
+    "contents": ["ad.widget.VideoTitle"],
+    "userPrefs": [
+        {
+            "name": "tip_text",
+            "displayName": "tip_text",
+            "defaultValue": "HELLO WORLD",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 30
+            }
+        },
+        {
+            "name": "text",
+            "displayName": "视频标题",
+            "defaultValue": "HELLO WORLD",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 30
+            }
+        },
+        {
+            "name": "rcv_url",
+            "displayName": "视频标题跳转地址",
+            "defaultValue": "http://baidu.com",
+            "datatype": "STRING",
+            "rules": {
+                "required": "true",
+                "stringType": "URL"
+            }
+        }
+    ]
+}
+

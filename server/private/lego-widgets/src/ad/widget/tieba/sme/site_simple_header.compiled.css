@@ -1,0 +1,154 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/sme/site_simple_header.less ~ 2013/04/19 15:38:32
+ * @author guyiling@baidu.com (guyiling)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * site_simple_header样式文件
+ **/
+.ad-widget-tieba-sme-site-simple-header {
+  width: 980px;
+  margin-bottom: 10px;
+  font: 12px/1.5 arial, sans-serif;
+  color: #666666;
+}
+.ad-widget-tieba-sme-site-simple-header img {
+  display: block;
+  -ms-interpolation-mode: bicubic;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-profile {
+  *zoom: 1;
+  border: 1px solid #81b0f6;
+  padding: 17px 29px;
+  background-color: #fff;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-profile:before,
+.ad-widget-tieba-sme-site-simple-header .ec-site-profile:after {
+  display: table;
+  content: "";
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-profile:after {
+  clear: both;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-name-row {
+  *zoom: 1;
+  *height: 44px;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-name-row:before,
+.ad-widget-tieba-sme-site-simple-header .ec-site-name-row:after {
+  display: table;
+  content: "";
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-name-row:after {
+  clear: both;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-logo {
+  float: left;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #E5E5E5;
+  padding: 1px;
+  background: url("//bs.baidu.com/adtest/b8c01e879bca8ba54bd0effdb2395c4a.gif?t=130415114619") no-repeat center center #ffffff;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-logo a {
+  display: block;
+  width: 100%;
+  height: auto;
+  height: 100%;
+  text-decoration: none;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-logo img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  border: none;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-name {
+  float: left;
+  _display: inline;
+  margin: 5px 0 0 15px;
+  font: 20px/30px "Microsoft YaHei", SimHei, sans-serif;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-name a {
+  color: #666666;
+  text-decoration: none;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-frs-link {
+  float: left;
+  margin: 13px 9px;
+  display: block;
+  _display: inline;
+  color: #999;
+  text-decoration: none;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-frs-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-action-button {
+  float: right;
+  display: block;
+  width: 161px;
+  height: 25px;
+  margin-top: 4px;
+  background: url("//bs.baidu.com/adtest/1f4e2e8ffcda12cfce351f5a64791ce9.jpg") no-repeat 0 0;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery {
+  float: left;
+  clear: both;
+  margin: 12px 0 0;
+  padding-left: 0;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item {
+  display: block;
+  _display: inline;
+  position: relative;
+  float: left;
+  margin-right: 15px;
+  width: 125px;
+  height: 90px;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item a {
+  display: block;
+  width: 100%;
+  height: auto;
+  height: 100%;
+  text-decoration: none;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item img {
+  width: 100%;
+  height: auto;
+  height: 100%;
+  border: none;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item .ec-site-gallery-layer,
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item .ec-site-gallery-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item .ec-site-gallery-layer {
+  height: 20px;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ad-widget-tieba-sme-site-simple-header .ec-site-gallery-item .ec-site-gallery-caption {
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,120 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tab_slider.less ~ 2013/04/23 15:13:19
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * tab_slider样式文件
+ **/
+.ad-widget-tab-slider {
+  font: 12px/1.5 arial, sans-serif;
+  line-height: 24px;
+  position: relative;
+  z-index: 0;
+}
+.ad-widget-tab-slider ol,
+.ad-widget-tab-slider div,
+.ad-widget-tab-slider p {
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-tab-slider ol {
+  list-style: none;
+}
+.ad-widget-tab-slider ol li {
+  display: block;
+}
+.ad-widget-tab-slider-flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ad-widget-tab-slider-flashlink {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ad-widget-tab-slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ad-widget-tab-slider-img img {
+  border: none;
+  display: block;
+}
+div.ad-widget-tab-slider-info {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  z-index: 1;
+  width: 300px;
+  overflow: hidden;
+  background-color: #FFF;
+}
+div.ad-widget-tab-slider-info-1,
+div.ad-widget-tab-slider-info-2,
+div.ad-widget-tab-slider-info-3 {
+  padding-top: 10px;
+  background: url(//bs.baidu.com/adtest/59ffc2e63f59b040243748e7fe72198f.gif) no-repeat 0 0 transparent;
+}
+div.ad-widget-tab-slider-info-2 {
+  left: 325px;
+  background-position: -300px 0;
+}
+div.ad-widget-tab-slider-info-3 {
+  left: 635px;
+  background-position: -600px 0;
+}
+div.ad-widget-tab-slider-info-content {
+  overflow: hidden;
+  padding-top: 6px;
+  _zoom: 1;
+  background: url(//bs.baidu.com/adtest/cd19504a000a96ca2d12529248ad941b.gif) repeat-x 0 0 #ffffff;
+}
+div.ad-widget-tab-slider-info-content .ad-widget-tab-slider-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  float: left;
+}
+div.ad-widget-tab-slider-info-content .ad-widget-tab-slider-icon img {
+  border: none;
+  float: left;
+}
+div.ad-widget-tab-slider-info-content div {
+  float: left;
+}
+div.ad-widget-tab-slider-info-content div h2 {
+  margin: 0;
+  line-height: 20px;
+}
+div.ad-widget-tab-slider-info-content div h2 a {
+  font-size: 14px;
+  font-family: 宋体, Arial;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+div.ad-widget-tab-slider-info-content div p {
+  position: relative;
+}
+div.ad-widget-tab-slider-info-content div p a {
+  font-size: 12px;
+  font-family: 宋体, Arial;
+  font-weight: bold;
+  color: #6C6C6C;
+  text-decoration: none;
+}
+div.ad-widget-tab-slider-shrink .ad-widget-tab-slider-icon {
+  visibility: hidden;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

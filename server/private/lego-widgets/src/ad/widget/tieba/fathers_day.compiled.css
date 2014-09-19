@@ -1,0 +1,535 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/fathers_day.less ~ 2013/06/07 16:29:45
+ * @author yandongbin@baidu.com (yandongbin)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * fathers_day样式文件
+ **/
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#head,
+#footer,
+#com_userbar {
+  display: none;
+}
+#container {
+  width: auto;
+}
+.ad-widget-tieba-fathers-day {
+  font: 12px/1.5 arial, sans-serif;
+  /** CODE HERE. */
+
+}
+.ad-widget-tieba-fathers-day .container {
+  margin-left: auto;
+  margin-right: auto;
+  _width: 1400px;
+  max-width: 1400px;
+}
+.ad-widget-tieba-fathers-day .container .header .ec-logo {
+  background-image: url("http://bs.baidu.com/adtest/dc0e80049195262ed8a3798d6b29ba54.jpg");
+  background-repeat: no-repeat;
+  height: 50px;
+  margin-left: 50px;
+}
+.ad-widget-tieba-fathers-day .container .header .baidu-logo {
+  display: inline-block;
+  width: 134px;
+  height: 50px;
+  float: left;
+}
+.ad-widget-tieba-fathers-day .container .header .pingan-logo {
+  margin-left: 10px;
+  display: inline-block;
+  width: 240px;
+  height: 50px;
+}
+.ad-widget-tieba-fathers-day .container .header .hao123-logo {
+  display: inline-block;
+  float: right;
+  width: 112px;
+  height: 37px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-image: url("http://bs.baidu.com/adtest/09e4e6a09affddde5dde749a7889884e.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step1 {
+  position: relative;
+  background-position: center center;
+  height: 274px;
+  background-image: url("http://bs.baidu.com/adtest/19719faa40aac7ecb313fb9185e3cf26.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step2 {
+  position: relative;
+  background-position: center center;
+  height: 229px;
+  background-image: url("http://bs.baidu.com/adtest/52fe49761006a6c360f481b7abab4a14.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step3-warp {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  height: 250px;
+}
+.ad-widget-tieba-fathers-day .container .step3 {
+  position: relative;
+  background-position: center center;
+  height: 272px;
+  background-image: url("http://bs.baidu.com/adtest/fd789c0d3950b435ea6a8f7a31f658b4.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step3 input {
+  position: absolute;
+  left: 266px;
+  width: 114px;
+  font-size: 16px;
+  line-height: 28px\9;
+  height: 28px;
+}
+.ad-widget-tieba-fathers-day .container .step3 #myAge {
+  top: 20px;
+}
+.ad-widget-tieba-fathers-day .container .step3 #fatherAge {
+  top: 62px;
+}
+.ad-widget-tieba-fathers-day .container .step3 #homeDay {
+  top: 103px;
+}
+.ad-widget-tieba-fathers-day .container .step3 #compute {
+  display: inline-block;
+  position: absolute;
+  left: 226px;
+  top: 154px;
+  width: 200px;
+  height: 60px;
+}
+.ad-widget-tieba-fathers-day .container .step4-warp {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 300px;
+}
+.ad-widget-tieba-fathers-day .container .step4 {
+  position: relative;
+  background-position: center center;
+  height: 326px;
+  background-image: url("http://bs.baidu.com/adtest/44a60b99674488ebfc7ad922324ee5ab.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step4 textarea {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 716px;
+  height: 70px;
+  left: 39px;
+  top: 178px;
+  font-size: 16px;
+  resize: none;
+  border: 0;
+  outline: none;
+}
+.ad-widget-tieba-fathers-day .container .step4 .dear-father {
+  *line-height: 30px;
+  height: 30px;
+  position: absolute;
+  color: #4b4b4b;
+  font-size: 16px;
+  top: 147px;
+  font-family: "Microsoft Yahei", sans-serif;
+  width: 200px;
+  left: 39px;
+  border: 0;
+  padding-left: 4px;
+  padding-top: 2px;
+  background-color: white;
+}
+.ad-widget-tieba-fathers-day .container .step4 input {
+  position: absolute;
+  left: 462px;
+  top: 260px;
+  width: 190px;
+  height: 27px;
+  font-size: 16px;
+  line-height: 27px\9;
+}
+.ad-widget-tieba-fathers-day .container .step4 #validate {
+  top: 296px;
+  left: 462px;
+  width: 90px;
+}
+.ad-widget-tieba-fathers-day .container .step4 #img {
+  position: absolute;
+  display: none;
+  top: 302px;
+  left: 570px;
+  border: 0;
+}
+.ad-widget-tieba-fathers-day .container .step4 span {
+  position: absolute;
+  font-weight: 900;
+  color: #4b4b4b;
+  font-family: "Microsoft Yahei", sans-serif;
+  top: 302px;
+  font-size: 16px;
+  left: 360px;
+}
+.ad-widget-tieba-fathers-day .container .step4 #send {
+  position: absolute;
+  left: 666px;
+  top: 262px;
+  width: 94px;
+  height: 30px;
+}
+.ad-widget-tieba-fathers-day .container .step5-warp {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  height: 230px;
+}
+.ad-widget-tieba-fathers-day .container .step5 {
+  position: relative;
+  background-position: center center;
+  height: 244px;
+  background-image: url("http://bs.baidu.com/adtest/bdedd3896c2ef6c8b28f529035a8c13e.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step5 #btn-left {
+  position: absolute;
+  width: 28px;
+  height: 70px;
+  left: -65px;
+  top: 90px;
+}
+.ad-widget-tieba-fathers-day .container .step5 #btn-right {
+  position: absolute;
+  width: 28px;
+  height: 70px;
+  left: 1040px;
+  top: 90px;
+}
+.ad-widget-tieba-fathers-day .container .step5 .rollbox {
+  width: 1010px;
+  overflow: hidden;
+}
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont {
+  margin-top: 36px;
+  width: 1010px;
+  overflow: hidden;
+  float: left;
+}
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont {
+  width: 10000000px;
+}
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont #List1,
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont #List2 {
+  float: left;
+}
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont #List1 .pic,
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont #List2 .pic {
+  font-size: 14px;
+  padding: 30px 0px 0px 30px;
+  width: 290px;
+  height: 150px;
+  float: left;
+  margin-right: 38px;
+  background-image: url("http://bs.baidu.com/adtest/aa18cb2bf2d9eb56f0abeb80dd87fc1a.jpg");
+  background-repeat: no-repeat;
+}
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont #List1 .pic p,
+.ad-widget-tieba-fathers-day .container .step5 .rollbox .Cont .ScrCont #List2 .pic p {
+  width: 254px;
+}
+.ad-widget-tieba-fathers-day .container .step6-warp {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 350px;
+}
+.ad-widget-tieba-fathers-day .container .step6-warp .p1,
+.ad-widget-tieba-fathers-day .container .step6-warp .p2,
+.ad-widget-tieba-fathers-day .container .step6-warp .p3 {
+  position: absolute;
+  top: 170px;
+  width: 255px;
+  height: 180px;
+  display: block;
+}
+.ad-widget-tieba-fathers-day .container .step6-warp .p1 {
+  left: 0;
+}
+.ad-widget-tieba-fathers-day .container .step6-warp .p2 {
+  left: 270px;
+}
+.ad-widget-tieba-fathers-day .container .step6-warp .p3 {
+  left: 540px;
+}
+.ad-widget-tieba-fathers-day .container .step6 {
+  position: relative;
+  background-position: center center;
+  height: 355px;
+  background-image: url("http://bs.baidu.com/adtest/79a9b851eaccca179bc53ae8b5a8e74b.jpg");
+}
+.ad-widget-tieba-fathers-day .container .step6 #join {
+  position: absolute;
+  left: 688px;
+  top: 122px;
+  width: 94px;
+  height: 28px;
+}
+.ad-widget-tieba-fathers-day .container .step7 {
+  display: none;
+  position: relative;
+  background-position: center center;
+  height: 211px;
+  background-image: url("http://bs.baidu.com/adtest/2ba735f73aeca7a000af036464ba1d22.jpg");
+}
+.ad-widget-tieba-fathers-day #popup {
+  position: absolute;
+  width: 730px;
+  top: -6000px;
+  left: -6000px;
+  z-index: 3000;
+  background-color: white;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container {
+  background-color: white;
+  height: 380px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab {
+  overflow: hidden;
+  zoom: 1;
+  margin-left: 50px;
+  border: 2px solid #eca261;
+  width: 640px;
+  height: 370px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab .tab-input-info,
+.ad-widget-tieba-fathers-day #popup .tab-container .tab .tab-product-detail {
+  margin-bottom: 10px;
+  float: left;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 28px;
+  width: 320px;
+  height: 28px;
+  color: white;
+  background-color: #eca261;
+  text-align: center;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-input-info-content,
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content {
+  height: 320px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab .selected {
+  background-color: white;
+  color: black;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-input-info-content {
+  display: block;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-input-info-content iframe {
+  margin-top: 40px;
+  margin-left: 90px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content {
+  display: none;
+  clear: both;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table {
+  width: 606px;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-left: 18px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table .product-name,
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table .deadline {
+  width: 60px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table .taocan-content {
+  width: 75px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table .baoe {
+  width: 55px;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table th {
+  background-color: #ebebeb;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table td,
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table th {
+  border: 1px solid #b4b4b4;
+}
+.ad-widget-tieba-fathers-day #popup .tab-container .tab #tab-product-detail-content table .center {
+  text-align: center;
+}
+.ad-widget-tieba-fathers-day #popup .chexian-container {
+  position: relative;
+  background-color: white;
+}
+.ad-widget-tieba-fathers-day #popup .chexian-container .chexian {
+  margin-left: 206px;
+}
+.ad-widget-tieba-fathers-day #popup .chexian-container .chexian .baojia {
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
+.ad-widget-tieba-fathers-day #popup .chexian-container .chexian .jiangpin {
+  color: red;
+  font-weight: bold;
+}
+.ad-widget-tieba-fathers-day #popup .chexian-container .chexian .chexian-compute {
+  background-color: #f5f5f5;
+  width: 436px;
+  border: 2px solid #eca261;
+}
+.ad-widget-tieba-fathers-day #popup .chexian-container .chexian .chexian-compute .compute-title {
+  background-color: #eca261;
+  color: white;
+  height: 28px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step1 {
+  position: relative;
+  height: 357px;
+  background-image: url("http://bs.baidu.com/adtest/8c84341043db107bdd14d3883e2cb396.jpg");
+}
+.ad-widget-tieba-fathers-day #popup .popup-step1 #close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 682px;
+  top: 0px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step1 #times {
+  color: red;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  width: 362px;
+  height: 44px;
+  left: 250px;
+  top: 155px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step1 #times .text {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step1 #times .num {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.ad-widget-tieba-fathers-day #popup .rule {
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+  background-color: white;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step2 {
+  position: relative;
+  height: 113px;
+  background-image: url("http://bs.baidu.com/adtest/4a3692405d2d47f2470cf1dad11cbc1c.jpg");
+}
+.ad-widget-tieba-fathers-day #popup .popup-step3 {
+  position: relative;
+  height: 108px;
+  background-image: url("http://bs.baidu.com/adtest/32e5666f345d2f329b9c6cb246a5222b.jpg");
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 {
+  position: relative;
+  height: 216px;
+  background-image: url("http://bs.baidu.com/adtest/afdd197fc897bcf27ef40f976d99443d.jpg");
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .jingwai1,
+.ad-widget-tieba-fathers-day #popup .popup-step4 .yiwai1 {
+  position: absolute;
+  width: 206px;
+  height: 32px;
+  top: 15px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .jingwai1 {
+  left: 65px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .yiwai1 {
+  left: 396px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .jingwai2,
+.ad-widget-tieba-fathers-day #popup .popup-step4 .yiwai2 {
+  position: absolute;
+  width: 127px;
+  height: 115px;
+  top: 66px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .jingwai2 {
+  left: 54px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .yiwai2 {
+  left: 392px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .jingwai3,
+.ad-widget-tieba-fathers-day #popup .popup-step4 .yiwai3 {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  top: 150px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .jingwai3 {
+  left: 202px;
+}
+.ad-widget-tieba-fathers-day #popup .popup-step4 .yiwai3 {
+  left: 542px;
+}
+.ad-widget-tieba-fathers-day #popup .others {
+  margin: 15px 34px 30px 34px;
+  border: 2px solid #eca261;
+  background-color: #ececec;
+}
+.ad-widget-tieba-fathers-day #popup .others .lipin-info {
+  color: red;
+  margin-left: 8px;
+}
+.ad-widget-tieba-fathers-day #popup .others .lipin-info-detail {
+  margin-left: 8px;
+}
+.ad-widget-tieba-fathers-day #popup .rule a {
+  float: right;
+  margin-right: 40px;
+  color: red;
+}
+.ad-widget-tieba-fathers-day #layer {
+  display: none;
+  position: fixed;
+  _position: absolute;
+  background-color: #a8adb6;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.ad-widget-tieba-fathers-day .footer p {
+  color: #77c;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ad-widget-tieba-fathers-day .footer span {
+  margin: 0 5px;
+}
+.ad-widget-tieba-fathers-day .footer .link {
+  margin-top: 10px;
+  width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

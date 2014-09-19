@@ -1,0 +1,70 @@
+[{
+    "name": "chaxun",
+    "displayName": "相关查询",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "title",
+        "displayName": "相关查询标题",
+        "tip": "相关查询标题",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "minByteLength": 8,
+            "maxByteLength": 24
+        }
+    }, {
+        "name": "list",
+        "displayName": "列表行",
+        "datatype": "LIST",
+        "rules": {
+            "minCount": 1,
+            "maxCount": 4
+        },
+        "extraAttr": {},
+        "items": [{
+            "name": "title",
+            "displayName": "查询标题",
+            "tip": "查询标题",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "minByteLength": 2,
+                "maxByteLength": 8
+            }
+        }, {
+            "name": "row",
+            "displayName": "结果",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 1,
+                "maxCount": 3
+            },
+            "extraAttr": {
+                "initialCount": 2
+            },
+            "items": [{
+                "name": "name",
+                "displayName": "文字",
+                "tip": "文字",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 2,
+                    "maxByteLength": 8
+                }
+            }, {
+                "name": "rcv_url",
+                "displayName": "跳转链接",
+                "defaultValue": "http://",
+                "tip": "",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                }
+            }]
+        }]
+    }]
+}]

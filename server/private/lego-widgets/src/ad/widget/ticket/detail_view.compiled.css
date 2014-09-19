@@ -1,0 +1,126 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/ticket/detail_view.less ~ 2013/05/14 16:10:17
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * detail_view样式文件
+ **/
+.ecl-ticket-detail-top {
+  overflow: hidden;
+  margin-top: 10px;
+  zoom: 1;
+}
+.ecl-ticket-detail-top-left {
+  float: left;
+}
+.ecl-ticket-detail-top-right {
+  float: left;
+  margin: 0 0 0 20px;
+  _zoom: 1;
+  _display: inline;
+}
+.ecl-ticket-detail-pic-wrapper {
+  border: 1px solid #e4e4e4;
+  background: #fafafa;
+  padding: 5px 6px;
+}
+.ecl-ticket-detail-pic-wrapper img {
+  display: block;
+  width: 169px;
+  height: 215px;
+}
+.ecl-ticket-detail-info-item {
+  margin-bottom: 6px;
+  overflow: hidden;
+  _zoom: 1;
+}
+.ecl-ticket-detail-info-item span {
+  float: left;
+}
+.ecl-ticket-detail-info-item .orange {
+  color: #fc7700;
+}
+.ecl-ticket-detail-info-item .price {
+  margin-left: 5px;
+}
+.ecl-ticket-detail-info-item .seperator {
+  margin: 0 2px;
+}
+.ecl-ticket-detail-name {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+.ecl-ticket-detail-center {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+.ecl-ticket-detail-prices,
+.ecl-ticket-detail-number,
+.ecl-ticket-detail-agendas {
+  display: none;
+  overflow: hidden;
+}
+.ecl-ticket-detail-prices table,
+.ecl-ticket-detail-number table,
+.ecl-ticket-detail-agendas table {
+  border-spacing: 0;
+}
+.ecl-ticket-detail-prices th,
+.ecl-ticket-detail-number th,
+.ecl-ticket-detail-agendas th {
+  border-spacing: 0;
+  vertical-align: top;
+  font-weight: normal;
+  width: 80px;
+  _width: 75px;
+  text-align: right;
+  padding-top: 5px;
+}
+.ecl-ticket-detail-prices td,
+.ecl-ticket-detail-number td,
+.ecl-ticket-detail-agendas td {
+  border-spacing: 0;
+  overflow: hidden;
+}
+.ecl-ticket-detail-agendas {
+  display: block;
+}
+.ecl-ticket-detail-agenda {
+  position: relative;
+  border: 1px solid #e1e1e1;
+  width: 102px;
+  height: 38px;
+  overflow: hidden;
+  margin: 0 0 10px 10px;
+  _display: inline;
+  _zoom: 1;
+  float: left;
+}
+.ecl-ticket-detail-agenda span {
+  height: 36px;
+}
+.ecl-ticket-detail-agenda .ecl-l {
+  float: left;
+  width: 40px;
+  margin: 2px 0 0 5px;
+}
+.ecl-ticket-detail-agenda .ecl-r {
+  float: left;
+  margin: 2px 0 0 10px;
+}
+.ecl-ticket-detail-agenda-mouseover {
+  border: 1px solid #ffd181;
+}
+div.ecl-ticket-detail-agenda-selected {
+  border: 1px solid #ff3000;
+  background: #fffae9;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

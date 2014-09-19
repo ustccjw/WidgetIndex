@@ -1,0 +1,398 @@
+[
+    {
+        "name": "line",
+        "displayName": "line",
+        "datatype": "OBJECT",
+        "display": "none",
+        "items": [
+            {
+                "name": "theme",
+                "displayName": "theme",
+                "datatype": "STRING",
+                "defaultValue": "0",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "image_url",
+                "displayName": "image_url",
+                "datatype": "LIST",
+                "defaultValue": "[\"//bs.baidu.com/adtest/d4add6fa5b4093a9ae19ee29c31b061d.gif\",\"//bs.baidu.com/adtest/5fad070baac7ea958d282ad78c56cfd1.gif\"]",
+                "rules": {},
+                "element": {
+                    "name": "-",
+                    "displayName": "-",
+                    "datatype": "STRING",
+                    "rules": {}
+                }
+            },
+            {
+                "name": "class",
+                "displayName": "class",
+                "datatype": "STRING",
+                "defaultValue": "ec-line",
+                "rules": {},
+                "extraAttr": {}
+            },
+            {
+                "name": "transparent_image",
+                "displayName": "transparent_image",
+                "datatype": "STRING",
+                "defaultValue": "http://ecma.bdimg.com/adtest/6f4fb113ea0626557ae208d37fb36eb7.gif",
+                "rules": {},
+                "extraAttr": {}
+            }
+        ]
+    },
+    {
+        "name": "videos",
+        "displayName": "视频",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "视频",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "player_ver",
+                        "displayName": "player_ver",
+                        "defaultValue": "7",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        }
+                    },
+                    {
+                        "name": "playermode",
+                        "displayName": "playermode",
+                        "defaultValue": "normal",
+                        "datatype": "HIDDEN",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "img_url",
+                        "displayName": "首帧图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 260,
+                            "height": 146,
+                            "maxSize": 30,
+                            "ext": "jpg"
+                        },
+                        "tip": "http://dummyimage.com/424x240"
+                    },
+                    {
+                        "name": "video_url",
+                        "displayName": "视频文件",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "FLV",
+                            "maxSize": 1024,
+                            "ext": "flv"
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "tip": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 255
+                        },
+                        "extraAttr": {},
+                        "multiline": false
+                    },
+                    {
+                        "name": "width",
+                        "displayName": "width",
+                        "defaultValue": "260",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        }
+                    },
+                    {
+                        "name": "height",
+                        "displayName": "height",
+                        "defaultValue": "146",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        }
+                    },
+                    {
+                        "name": "is_play",
+                        "displayName": "is_play",
+                        "defaultValue": "false",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "BOOL"
+                        },
+                        "extraAttr": {}
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 2,
+                    "maxCount": 6
+                },
+                "extraAttr": {
+                    "initialCount": 3
+                }
+            }
+        ]
+    },
+    {
+        "name": "description",
+        "displayName": "描述",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "rcv_html",
+                "displayName": "内容（可选）",
+                "datatype": "STRING",
+                "multiline": true,
+                "rules": {
+                    "minByteLength": 84,
+                    "maxByteLength": 112
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "内容跳转地址（可选）",
+                "datatype": "STRING",
+                "tip": "http://",
+                "rules": {
+                    "stringType": "URL",
+                    "maxByteLength": 255
+                }
+            }
+        ]
+    },
+    {
+        "name": "links",
+        "displayName": "链接",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "链接",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 0,
+                    "maxCount": 5
+                },
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "tip": "9~18个汉字",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "minByteLength": 18,
+                            "maxByteLength": 36
+                        }
+                    },
+                    {
+                        "name": "text_rcv_url",
+                        "displayName": "跳转地址",
+                        "tip": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "stringType": "URL",
+                            "maxByteLength": 255
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "baidu_share",
+        "displayName": "分享",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "rules": {},
+        "items": [
+            {
+                "name": "cfg",
+                "displayName": "是否显示分享按钮？",
+                "defaultValue": "true",
+                "datatype": "ALTERNATIVE",
+                "rules": {},
+                "enumValues": [
+                    {
+                        "value": "true",
+                        "displayValue": "显示",
+                        "items": [
+                            {
+                                "name": "display",
+                                "displayName": "display",
+                                "defaultValue": "true",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "common",
+                                "datatype": "OBJECT",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "bdText",
+                                        "displayName": "分享文字",
+                                        "tip": "最多可填写200个字节",
+                                        "datatype": "STRING",
+                                        "multiline": true,
+                                        "rules": {
+                                            "required": true,
+                                            "maxByteLength": 200
+                                        }
+                                    },
+                                    {
+                                        "name": "bdPic",
+                                        "displayName": "分享图片",
+                                        "datatype": "UPLOAD",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "fileType": "IMAGE",
+                                            "maxSize": 50,
+                                            "ext": "jpg,jpeg"
+                                        }
+                                    },
+                                    {
+                                        "name": "bdUrl",
+                                        "displayName": "分享url",
+                                        "tip": "http://",
+                                        "datatype": "STRING",
+                                        "rules": {
+                                            "stringType": "URL",
+                                            "maxByteLength": 80
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "type",
+                                "displayName": "分享按钮",
+                                "datatype": "OBJECT",
+                                "rules": {
+                                    "jsRule": "function(item){var index = 0;var key;for (key in item){if(item.hasOwnProperty(key) && item[key]){index++;}} if(index > 4){return '分享按钮不能超过4个';}else{return '';}}"
+                                },
+                                "extraAttr": {},
+                                "items": [
+                                    {
+                                        "name": "tsina",
+                                        "displayName": "新浪微博分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "tqq",
+                                        "displayName": "腾讯微博分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "weixin",
+                                        "displayName": "微信分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "renren",
+                                        "displayName": "人人分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "kaixin001",
+                                        "displayName": "开心分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "douban",
+                                        "displayName": "豆瓣分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "tsohu",
+                                        "displayName": "搜狐分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "false",
+                        "displayValue": "不显示",
+                        "items": []
+                    }
+                ]
+            }
+        ]
+    }
+]

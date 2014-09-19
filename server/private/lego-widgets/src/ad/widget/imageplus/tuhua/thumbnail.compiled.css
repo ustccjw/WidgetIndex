@@ -1,0 +1,124 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/tuhua/thumbnail.less ~ 2014/05/29 17:42:11
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * thumbnail样式文件
+ **/
+.ad-widget-imageplus-tuhua-thumbnail {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-family: "微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  *zoom: 1;
+}
+.ad-widget-imageplus-tuhua-thumbnail:before,
+.ad-widget-imageplus-tuhua-thumbnail:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-thumbnail:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-icon-logo {
+  width: 48px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+  float: left;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-icon-logo:hover {
+  color: orange !important;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-icon-logo b {
+  color: red;
+  font-size: 10px;
+  font-family: 'Arial' !important;
+  position: absolute;
+  right: -1px;
+  top: 1px;
+  line-height: 10px;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-icon-logo-shake {
+  -webkit-animation: receive_message 3s ease 1s infinite;
+  -moz-animation: receive_message 3s ease 1s infinite;
+  animation: receive_message 3s ease 1s infinite;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-icon-plus {
+  font-size: 22px;
+  width: 36px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-decoration: none;
+  float: left;
+  margin-top: 6px;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-icon-plus:hover {
+  color: orange !important;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip-wrapper {
+  float: left;
+  line-height: 40px;
+  height: 40px;
+  margin-left: 10px;
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip {
+  width: 420px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  *zoom: 1;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip:before,
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip-item {
+  width: 180px;
+  margin-right: 10px;
+  margin-top: 5px;
+  float: left;
+  padding: 0px 10px;
+  line-height: 30px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip-item a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 30px;
+  white-space: nowrap;
+}
+.ad-widget-imageplus-tuhua-thumbnail .ad-message-tip-item a b {
+  color: #ccc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

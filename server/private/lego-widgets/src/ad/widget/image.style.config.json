@@ -1,0 +1,67 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-image",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "margin",
+                    "displayName": "外边距",
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "width",
+                    "displayName": "容器宽度",
+                    "defaultValue": "auto"
+                },
+                {
+                    "name": "height",
+                    "displayName": "容器高度",
+                    "defaultValue": "auto"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image img",
+            "displayName": "图片",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "宽度",
+                    "defaultValue": "auto"
+                },
+                {
+                    "name": "height",
+                    "displayName": "高度",
+                    "defaultValue": "auto"
+                },
+                {
+                    "name": "display",
+                    "displayName": "display",
+                    "defaultValue": "inline"
+                },
+                {
+                    "name": "cursor",
+                    "displayName": "鼠标样式",
+                    "defaultValue": "auto"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-image .ad-widget-image-layer",
+            "displayName": "图片悬浮文字",
+            "rules": [
+                {
+                    "name": "margin-bottom",
+                    "displayName": "下边距",
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "width",
+                    "displayName": "宽度",
+                    "defaultValue": "100%"
+                }
+            ]
+        }
+    ]
+}

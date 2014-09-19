@@ -1,0 +1,114 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: mengniu.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/mengniu.less ~ 2013/03/18 13:45:50
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * lv2样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 515px;
+    background: #ffffff;
+    border:6px solid #142985;
+    padding: 4px;
+    margin-bottom: 20px;
+    font:13px arial, simsun, sans-serif;
+
+    .ad-block-0 {
+        .gain-bfc();
+        background: #ffffff;
+    }
+
+    /** 视频模块 */
+    .ad-block-0-0 {
+        float:left;
+        width:220px;
+        margin-right: 15px;
+        .ad-widget-image, 
+        .ad-widget-image a, 
+        .ad-widget-image img {
+            width: 220px;
+            height: 190px;
+            display: block;
+        }
+    }
+
+    /** 右侧描述和按钮区域 */
+    .ad-block-0-1 {
+        float:left;
+        width:280px;
+    }
+    .ad-widget-small-head {
+        a {
+            color: #0000cc;
+        }
+        h2 {
+            padding-bottom: 7px;
+            font-weight: 700;
+        }
+        .ec-site {
+            padding-top: 3px;
+            a {
+                color: #666;
+            }
+        }
+        .ec-description {
+            color: #000;
+        }
+    }
+    .ad-widget-section {
+        a {
+            color: #0000cc;
+            zoom: 1;
+            float: left;
+        }
+        li {
+            margin: 13px 0 0 0;
+            *margin: 12px 0 0 0;
+            .gain-bfc();
+        }
+        img {
+            margin: 5px 5px 0 0 ;
+            float: left;
+        }
+    }
+    .ad-block-1-0 {
+        margin-top: 10px;
+        .ad-widget-image, 
+        .ad-widget-image a, 
+        .ad-widget-image img {
+            width: 515px;
+            height: 130px;
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

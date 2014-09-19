@@ -1,0 +1,154 @@
+{
+    "contents": ["ad.widget.Slider"],
+    "userPrefs": [
+        {
+            "name": "width",
+            "displayName": "图片宽度",
+            "defaultValue": "660",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "height",
+            "displayName": "图片高度",
+            "defaultValue": "200",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "delay",
+            "displayName": "切换延迟响应时间",
+            "defaultValue": "200",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "interval_time",
+            "displayName": "切换时间间隔",
+            "defaultValue": "4000",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "mode",
+            "displayName": "切换模式",
+            "defaultValue": "horizontal",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "first_show_index",
+            "displayName": "首次载入图片索引",
+            "defaultValue": "0",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "options",
+            "displayName": "图片",
+            "datatype": "LIST",
+            "items": [
+                {
+                    "name": "img_url",
+                    "displayName": "上传图片",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "tip": "",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "width": 660,
+                        "height": 200,
+                        "maxSize": 50,
+                        "ext": "jpg,png"
+                    }
+                },
+                {
+                    "name": "rcv_url",
+                    "displayName": "跳转地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "stringType": "URL"
+                    },
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "extra",
+                    "displayName": "额外信息",
+                    "datatype": "OBJECT",
+                    "items": [
+                        {
+                            "name": "img_url",
+                            "displayName": "覆盖层小图片",
+                            "defaultValue": "",
+                            "datatype": "UPLOAD",
+                            "tip": "",
+                            "rules": {},
+                            "extraAttr": {
+                                "fileType": "IMAGE",
+                                "width": 56,
+                                "height": 56,
+                                "maxSize": 10,
+                                "ext": "jpg,png"
+                            }
+                        },
+                        {
+                            "name": "info",
+                            "displayName": "覆盖层文字",
+                            "defaultValue": "",
+                            "datatype": "STRING",
+                            "rules": {
+                                "minByteLength": 10,
+                                "maxByteLength": 24
+                            },
+                            "tip": "请填写5~12个汉字",
+                            "multiline": false
+                        }
+                    ],
+                    "rules": {}
+                }
+            ],
+            "tip": "",
+            "rules": {
+                "minCount": 1,
+                "maxCount": 5
+            }
+        }
+    ]
+}
+

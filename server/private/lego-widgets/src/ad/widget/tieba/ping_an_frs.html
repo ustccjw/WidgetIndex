@@ -1,0 +1,68 @@
+<!-- target:AD_ad_widget_tieba_ping_an_frs -->
+<div class="ad-widget-tieba ad-widget-tieba-ping-an-frs">
+    <div class="ec-ping-an-frs-left">
+        <img src="{{image_url}}" />
+    </div>
+    <div class="ec-ping-an-frs-right">
+        <div id="ping-an-frs-main" class="ec-ping-an-frs-main">
+            <div id="ping-an-frs-tip" class="ec-ping-an-frs-tip"></div>
+            <iframe id="ping-an-frs-iframe" class="ec-ping-an-frs-iframe"></iframe>
+            <form id="ping-an-frs-form" frameborder="0" target="_blank" action="{{{action_url}}}" accept-charset="{{charset}}" method="POST">
+                <input type="hidden" name="mediaSourse" value="C03-BDTB-JSQ01" />
+                <input type="hidden" name="WT.mc_id" value="C03-BDTB-JSQ01" />
+                <input type="hidden" name="departmentCode" value=""/>
+                <input type="hidden" name="email" value="" />
+                <input type="hidden" id="ping-an-frs-province-name" name="provinceName" />
+                <input type="hidden" id="ping-an-frs-city-name" name="cityName" />
+                <div class="ec-ping-an-frs-items">
+                    <div class="ec-ping-an-frs-item">
+                        <select id="ping-an-frs-province-select" name="provinceCode">
+                            <option value="">车辆所在省*</option>
+                            {{#_provinces}}
+                            <option value="{{{value}}}">{{{name}}}</option>
+                            {{/_provinces}}
+                        </select>
+                    </div>
+                    <div class="ec-ping-an-frs-item">
+                        <select id="ping-an-frs-year-select" name="purchaseDate">
+                            <option value="">购车时间*</option>
+                            {{#_years}}
+                            <option value="{{{value}}}">{{{name}}}</option>
+                            {{/_years}}
+                        </select>
+                    </div>
+                    <div class="ec-ping-an-frs-item">
+                        <select id="ping-an-frs-month-select" name="contractExpiredMonth">
+                            <option value="">保险到期月*</option>
+                            {{#_months}}
+                            <option value="{{{value}}}">{{{name}}}</option>
+                            {{/_months}}
+                        </select>
+                    </div>
+                </div>
+                <div class="ec-ping-an-frs-items">
+                    <div class="ec-ping-an-frs-item">
+                        <select id="ping-an-frs-city-select" name="cityCode">
+                            <option value="">车辆所在市*</option>
+                        </select>
+                    </div>
+                    <div class="ec-ping-an-frs-item">
+                        <input id="ping-an-frs-price-input" name="vehiclePrice" type="text" data-value="车价*　（万元）" value="车价*　（万元）"/>
+                    </div>
+                    <div class="ec-ping-an-frs-item">
+                        <a href="javascript:void(0)" id="ping-an-frs-submit" class="ec-ping-an-frs-submit">车险快速报价</a>
+                    </div>
+                </div>
+                <div class="ec-ping-an-frs-items">
+                    <div class="ec-ping-an-frs-item">
+                        <input id="ping-an-frs-license-input" name="licenseNo" type="text" data-value="车牌号*" value="车牌号*"/>
+                    </div>
+                    <div class="ec-ping-an-frs-item">
+                        <input id="ping-an-frs-phone-input" name="mobilePhone" type="text" data-value="手机号码*" maxlength="11" value="手机号码*" />
+                    </div>
+                </div>
+                <div class="ec-clear"></div>
+            </form>
+        </div>
+    </div>
+</div>

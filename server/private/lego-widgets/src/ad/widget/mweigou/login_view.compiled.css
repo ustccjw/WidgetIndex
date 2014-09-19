@@ -1,0 +1,155 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/mweigou/login_view.less ~ 2013/05/04 12:01:05
+ * @author liyubei@baidu.com (liyubei)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * login_view样式文件
+ **/
+.ad-widget-mweigou-login-view {
+  font: 14px/1.5 arial, sans-serif;
+  background: #fff;
+  position: relative;
+  /*
+     * 字号至少为16px才能避免点击后自动放大
+     */
+
+}
+.ad-widget-mweigou-login-view h1 {
+  background: #f5f5f5;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+.ad-widget-mweigou-login-view a {
+  display: block;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+}
+.ad-widget-mweigou-login-view input {
+  height: 28px;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #666666;
+  border: 1px solid #d5d5d5;
+  background: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.ad-widget-mweigou-login-view strong {
+  color: #fb4f03;
+}
+.ad-widget-mweigou-login-view figure {
+  overflow: hidden;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+.ad-widget-mweigou-login-view figure table {
+  border-spacing: 0;
+}
+.ad-widget-mweigou-login-view figure th,
+.ad-widget-mweigou-login-view figure td {
+  text-align: left;
+  font-weight: normal;
+}
+.ad-widget-mweigou-login-view figure th {
+  width: 70px;
+  text-align: right;
+}
+.ad-widget-mweigou-login-view figure .image {
+  float: left;
+  border: 1px solid #ededed;
+  width: 78px;
+  height: 78px;
+}
+.ad-widget-mweigou-login-view figure figcaption {
+  position: relative;
+  margin-left: 88px;
+}
+.ad-widget-mweigou-login-view figure h2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: normal;
+}
+.ad-widget-mweigou-login-view figure h2,
+.ad-widget-mweigou-login-view figure tr {
+  line-height: 26px;
+}
+.ad-widget-mweigou-login-view .loading {
+  text-align: center;
+  padding: 100px 0;
+}
+.ad-widget-mweigou-login-view .body {
+  padding-top: 10px;
+}
+.ad-widget-mweigou-login-view .form {
+  padding: 0 0 15px 0;
+  color: #666666;
+}
+.ad-widget-mweigou-login-view .form table {
+  width: 99%;
+}
+.ad-widget-mweigou-login-view .form th,
+.ad-widget-mweigou-login-view .form td {
+  height: 38px;
+}
+.ad-widget-mweigou-login-view .form th {
+  width: 100px;
+  text-align: right;
+  font-weight: normal;
+}
+.ad-widget-mweigou-login-view .form input {
+  width: 100%;
+}
+.ad-widget-mweigou-login-view .right {
+  float: right;
+  width: 83px;
+}
+.ad-widget-mweigou-login-view .vcode-getter,
+.ad-widget-mweigou-login-view .change-mobile,
+.ad-widget-mweigou-login-view .vcode-checker {
+  font-size: 12px;
+  color: #0058d2;
+  background: #ebf4fd;
+  border: 1px solid #c1d8f5;
+}
+.ad-widget-mweigou-login-view .input-narrow {
+  margin-right: 100px;
+}
+.ad-widget-mweigou-login-view .input-wide {
+  margin-right: 12px;
+}
+.ad-widget-mweigou-login-view .submit {
+  width: 110px;
+  font-size: 14px;
+  color: #ffffff !important;
+  background: #df413f;
+  border: 1px solid #b71311;
+}
+.ad-widget-mweigou-login-view .error {
+  color: #f00;
+}
+.ad-widget-mweigou-login-view .error th,
+.ad-widget-mweigou-login-view .error td {
+  height: 20px;
+}
+.ad-widget-mweigou-login-view .disabled {
+  color: #ffffff;
+  background: #ddd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#c0c0c0));
+  border: 1px solid #b9b9b9;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

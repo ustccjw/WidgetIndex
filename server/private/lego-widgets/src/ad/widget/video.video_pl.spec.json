@@ -1,0 +1,94 @@
+{
+    "contents": ["ad.widget.Video"],
+    "userPrefs": [
+        {
+            "name": "video_url",
+            "displayName": "视频文件",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "nameTip": "(请上传720px * 395px的flv视频)",
+            "tip": "",
+            "extraAttr":{
+                "fileType":"FLV",
+                "maxSize":15000,
+                "ext":"flv"
+            }
+        },
+        {
+            "name": "rcv_url",
+            "displayName": "视频跳转地址",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "descriptionTip": "视频点击跳转地址",
+            "multiline": false
+        },
+        {
+            "name": "ipad_img",
+            "displayName": "ipad显示图片",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "tip": "",
+            "multiline": false,
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "width": 720,
+                "height": 420,
+                "maxSize":50,
+                "ext":"jpg,png"
+            }
+        },
+        {
+            "name": "player_ver",
+            "displayName": "播放器版本",
+            "defaultValue": "5",
+            "datatype": "HIDDEN",
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "width",
+            "displayName": "视频宽度",
+            "defaultValue": "720",
+            "datatype": "HIDDEN",
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "height",
+            "displayName": "视频高度",
+            "defaultValue": "420",
+            "datatype": "HIDDEN",
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "is_play",
+            "displayName": "是否自动播放",
+            "defaultValue": true,
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "bool"
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: wp.app.html 11572 2012-09-05 14:58:44Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/test/wp.app.html ~ 2012/08/08 21:41:35
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 11572 $ 
+ * @description
+ * 展示某个模块的Widget Preference
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ad.test.wp</title>
+    <script type="text/javascript" src="../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript" src="../../jn/demo/er_ad_widget_list.data.js"></script>
+    <script type="text/javascript">
+        goog.require('app.Launch');
+        goog.require('ad.test.wp');
+        goog.include('third_party/bootstrap/css/bootstrap.css');
+        goog.include('third_party/bootstrap/css/bootstrap-responsive.css');
+        goog.include('third_party/bootstrap/css/docs.css');
+        goog.include('ad/test/wp.less');
+    </script>
+    <script type="text/javascript">
+        (function(){
+            var info = ad.test.wp.GetWidget();
+            if (info && info['ns']) {
+                goog.require(info['ns']);
+            }
+        })();
+    </script>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="">广告物料测试平台</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="">
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">查看测试结果</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="jumbotron subhead">
+    <div class="container">
+        <h3>其它(r8964)</h3>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <section>
+            <ol>
+                <li>根据WIDGET_CONFIG计算ad.json.Schema</li>
+                <li>根据第一步的结果生成表单</li>
+                <li>根据表单的获取WIDGET_CONFIG生成Widget的预览</li>
+            </ol>
+        </section>
+    </div>
+    <div class="row">
+        <div class="span6">
+            <section class="ui-mateditor">
+                <div id="wp"></div>
+            </section>
+        </div>
+        <div class="span6">
+            <section class="material">
+                <div id="material"></div>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+app.Launch(ad.test.wp);
+</script>
+</html>

@@ -1,0 +1,305 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/advanced/case1096.less ~ 2013/11/29 14:10:53
+ * @author chenli11@baidu.com (chenli11)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1096样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial;
+    background-color: #f3f3f3;
+    width: 540px;
+    margin-bottom: 20px;
+
+    .ad-block-0-0 {
+        position: relative;
+        float: left;
+        padding: 10px 0 10px 10px;
+        _padding-bottom: 8px;
+
+        .ec-img-container {
+
+            img {
+                width: 220px;
+                height: 190px;
+                border: 0 none;            
+            }
+
+        }
+
+        .ad-widget-image-show-horizontal {
+            width: 220px;
+            height: 190px;
+        }
+
+        .ec-link-list {
+            position: absolute;
+            list-style-type: none;
+            filter: Alpha(Opacity=80);
+            opacity: .8;
+            z-index: 2;
+            margin: 0;
+            padding: 0;
+            bottom: 15px;
+            right: 2px;
+            _right: -1px;
+
+            li {
+                margin-right: 3px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                background: #fff;
+                border: none;
+
+                a {
+                    display: block;
+                    color: #333;
+                    font-size: 10px;
+                    text-decoration: none;
+                }
+            }
+
+            .ec-current {
+                background: #333;
+                color: #fff;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+    .ad-block-0-1 {
+        float: left;
+        padding: 10px 0 0 12px;
+
+        .ad-widget-small-head {
+            width: 286px;
+
+            .ec-description {
+                height: 93px;
+            }
+
+            h2 {
+                a {
+                    color: blue;
+                    font-weight: 600;
+                }
+            }
+
+            .ec-image-group {
+                margin-top: 0;
+                a {
+                    margin-right: 18px;
+                    border: 1px solid #666;
+                }
+                .ec-last {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .ad-block-1 {
+        clear: both;
+
+        .ad-widget-tab-container {
+            width: 516px;
+            padding: 0 0 12px 10px;
+
+            .ec-tab-head {
+                margin-bottom: 0;
+                margin-top: 6px;
+                *margin-top: 0px;
+                height: 28px;
+                li {
+                    margin-left: 0;
+                }
+                a,
+                a:visited {
+                    background-color: #f4f8fc;
+                    border-right-width: 0;
+                    line-height: 18px;
+                    color: #00c;
+                }
+                .ec-current-tab {
+                    a,
+                    a:visited {
+                        background-color: #fff;
+                        border-bottom-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+
+            .ec-tab-list-last {
+                a,
+                a:visited {
+                    border-right-width: 1px;
+                }
+            }
+
+            .ec-tab-body {
+                border: solid #c8daf0;
+                border-width: 0 1px 1px 1px;
+            }
+
+            .ad-widget-small-weibo {
+                font: 12px arial;
+                background-color: #fff;
+                padding: 7px 10px 7px 12px;
+
+                .ec-name {
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-top: 2px;
+                }
+
+                .ec-text {
+                    height: 16px;
+                    line-height: 16px;
+                    margin-top: 4px;
+                }
+
+                .ec-weibo-text {
+                    line-height: 18px;
+                    padding-top: 5px;
+                }
+
+                .ec-follow {
+                    float: right;
+                    width: 66px;
+                    height: 22px;
+                }
+
+                .ec-foot {
+                    padding-top: 4px;
+
+                    .ec-rightbtn {
+                        margin-top: 3px;
+                        a {
+                            color: green;
+                            line-height: 14px; 
+                        }
+                    }
+                }
+            }
+
+            .ad-widget-qq-weibo {
+                font: 12px arial;
+                padding-bottom: 8px;
+                background-color: #fff;
+
+                .ec-weibo-head {
+
+                    padding-top: 3px;
+
+                    .ec-name {
+                        margin-top: 2px;
+                        line-height: 24px;
+                    }
+
+                    .ec-text {
+                        height: 14px;
+                        line-height: 14px;
+                        margin-top: 7px;
+                    }
+
+                    .ec-follow {
+                        margin-top: 3px;
+                    }
+
+                }
+
+                .ec-context {
+                    line-height: 18px;
+
+                    .ec-weibo-text {
+                        padding: 5px 0;
+                    }
+
+                    .ec-foot {
+                        font-size: 12px;
+                        line-height: 14px;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                    .ec-rightbtn {
+                        font-size: 12px;
+                        height: 14px;
+                    }
+
+                }
+
+                fieldset {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+    .ad-block-2 {
+        padding: 0 0 8px 9px;
+
+        .ad-widget-button-group {
+            width: 521px;
+            background-color: #EFF4FC;
+            padding: 0 0 3px 0;
+
+            table {
+                td {
+                    padding-right: 4px;
+                    border: none;
+
+                    a {
+                        padding: 3px 0;
+                        font: 12px arial;
+                        display: block;
+                        border: 1px solid #c8daf0;
+                        color: #00c;
+                        text-decoration: underline;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

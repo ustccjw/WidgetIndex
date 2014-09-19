@@ -1,0 +1,40 @@
+<!-- target:AD_ad_widget_imageplus_v2_sticker_multimedia -->
+<div class="baiduimageplus-s-multimedia">
+    <div class="baiduimageplus-s-multimedia-hd">
+        <a data-log="2" data-mid="{{{mid}}}" href="{{{real_url}}}" target="_blank">{{title}}</a>
+    </div>
+    <div class="baiduimageplus-s-multimedia-bd{{#show_arrow}} baiduimageplus-s-multimedia-bd-arrow{{/show_arrow}}
+        {{#no_vbar_arrow}}baiduimageplus-s-multimedia-bd-no-vbar_arrow{{/no_vbar_arrow}}">
+        <div class="baiduimageplus-s-multimedia-img-ctn" style="width:{{view_width}}px;"
+        id="{{#_id}}baiduimageplus-s-multimedia-img-ctn{{/_id}}">
+            {{#is_flash}}
+                <div class="baiduimageplus-s-multimedia-flash-ctn">
+                    <object width="{{width}}" height="{{height}}"
+                    codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+                    classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+                        <param value="{{idea_url}}" name="movie">
+                        <param value="opaque" name="wmode">
+                        <embed width="{{width}}" height="{{height}}" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                        type="application/x-shockwave-flash" src="{{idea_url}}" wmode="opaque">
+                    </object>
+                </div>
+                <a href="{{{real_url}}}" class="baiduimageplus-s-multimedia-flash-link"
+                id="{{#_id}}baiduimageplus-s-multimedia-flash-link{{/_id}}"
+                data-log="2" data-mid="{{{mid}}}" target="_blank" style="width:{{view_width}}px;"></a>
+            {{/is_flash}}
+            {{^is_flash}}
+                <a class="baiduimageplus-s-multimedia-img-link" href="{{{real_url}}}" data-log="2" data-mid="{{{mid}}}" target="_blank">
+                    <img src="{{idea_url}}" width="{{width}}" height="{{height}}"/>
+                </a>
+            {{/is_flash}}
+            {{#show_vbar}}<div class="baiduimageplus-s-multimedia-vbar" id="{{#_id}}baiduimageplus-s-multimedia-vbar{{/_id}}"></div>{{/show_vbar}}
+            {{#show_hbar}}<div class="baiduimageplus-s-multimedia-hbar" id="{{#_id}}baiduimageplus-s-multimedia-hbar{{/_id}}"></div>{{/show_hbar}}
+        </div>
+        {{#show_arrow}}
+            <div class="baiduimageplus-s-multimedia-arrow-ctn" style="width: {{arrow_width}}px">
+                <a class="baiduimageplus-s-multimedia-arrow-link" href="{{{real_url}}}" data-log="2" data-mid="{{{mid}}}" target="_blank"></a>
+            </div>
+        {{/show_arrow}}
+    </div>
+    <a class="baiduimageplus-s-multimedia-logo" href="http://wangmeng.baidu.com/" title="百度网盟推广" target="_blank"></a>
+</div>

@@ -1,0 +1,204 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id$ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/weigou/ipad/ipad.less ~ 2013/05/02 16:26:14
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision$ 
+ * @description 
+ * Weigou iPad
+ **/
+.ecl-weigou {
+  font-size: 14px;
+}
+.ecl-weigou-detail-name {
+  font-size: 16px;
+}
+.ecl-weigou-detail-price {
+  margin-top: 0;
+}
+.ecl-weigou-detail-price .price {
+  font-size: 18px;
+}
+.ecl-weigou-detail-vendor {
+  margin-top: 0;
+}
+.ecl-weigou-detail-counter {
+  margin-top: 0;
+}
+.ecl-weigou-detail-counter .ecl-weigou-detail-minus,
+.ecl-weigou-detail-counter .ecl-weigou-detail-plus {
+  display: none;
+}
+.ecl-weigou-detail-counter .ecl-weigou-detail-counter-input {
+  margin: 0 auto;
+}
+.ecl-weigou-detail-counter input {
+  width: 25px;
+  font-size: 13px;
+}
+.ecl-weigou-detail-submit-wrapper span {
+  font-size: 17px;
+}
+.ecl-weigou-detail-submit {
+  font-size: 18px;
+}
+.ecl-weigou-rcmd-title {
+  font-size: 16px;
+}
+.ecl-weigou-rcmd-tip {
+  font-size: 14px;
+}
+.ecl-weigou-rcmd-tip-name-wrapper {
+  font-size: 16px;
+}
+.ecl-weigou-rcmd-tip-price strong {
+  font-size: 15px;
+}
+.ecl-weigou-rcmd-tip-attr {
+  width: 155px;
+}
+.ecl-weigou-detail-attr-inner {
+  width: 380px;
+}
+.ecl-weigou-pur-attr-item {
+  width: 190px;
+}
+.ecl-weigou-morebtn {
+  font-size: 14px;
+}
+.ecl-weigou-product .ecl-weigou-product-price {
+  font-size: 14px;
+}
+.ecl-weigou-product-list2 .ecl-weigou-product-name-wrapper {
+  font-size: 14px;
+  height: 34px;
+  overflow: hidden;
+}
+.ecl-weigou-product-list2 .ecl-weigou-product-src {
+  margin: 5px 0 0 0;
+}
+.ecl-weigou-pur-section th {
+  font-size: 14px;
+}
+.ecl-weigou-pur-title {
+  font-size: 16px;
+}
+.ecl-weigou-counter .ecl-weigou-minus,
+.ecl-weigou-counter .ecl-weigou-plus {
+  display: none;
+}
+.ecl-weigou-counter .ecl-weigou-count {
+  margin: 0 auto;
+  float: none;
+  display: inline-block;
+}
+.ecl-weigou-counter input {
+  width: 25px;
+  font-size: 13px;
+}
+.ecl-weigou-pur-list td {
+  font-size: 14px;
+}
+#ecl-weigou-username-input {
+  width: 194px;
+}
+#ecl-weigou-pur-submit {
+  font-size: 18px;
+}
+.ecl-weigou-pur-form-container th {
+  width: 120px;
+}
+.ecl-weigou-pur-form-container td {
+  font-size: 14px;
+}
+.ecl-weigou-pur-form-container input {
+  width: 166px;
+  font-size: 13px;
+}
+.ecl-weigou-get-mobile-code {
+  font-size: 12px;
+}
+.ecl-weigou-pur-selector,
+.ecl-weigou-pur-pick-address {
+  width: 200px;
+}
+#ecl-weigou-pur-total-price {
+  font-size: 20px;
+}
+#ecl-weigou-pur-total-price-text {
+  font-size: 14px;
+}
+#ecl-weigou-pur-return-btn {
+  font-size: 17px;
+}
+#ecl-weigou-pur-check,
+#ecl-weigou-pur-submit-loading {
+  font-size: 18px;
+}
+#ecl-weigou-pur-vcode-verify span {
+  font-size: 12px;
+}
+.ecl-weigou-success-title span {
+  font-size: 20px;
+}
+.ecl-weigou-success-btn {
+  font-size: 18px;
+}
+.ecl-weigou-header-logo {
+  font-size: 17px;
+  margin: 10px 0 0 5px;
+}
+.ecl-weigou-header-item {
+  margin-right: 5px;
+}
+.ecl-weigou-address {
+  width: 136px;
+}
+#ecl-weigou-back-btn {
+  right: 0;
+  top: 38px;
+  left: auto;
+  z-index: 100;
+  width: 20px !important;
+  height: 38px !important;
+  padding-top: 7px;
+  line-height: 16px !important;
+  font-size: 13px;
+  color: #fff !important;
+  background: #df1f1c;
+  text-align: center;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#ecl-weigou-pur-return-btn,
+#ecl-weigou-detail-return-btn {
+  display: none;
+}
+.ecl-weigou-detail-right {
+  width: 300px;
+}
+.ecl-weigou-rcmd-item-bottom label {
+  width: 70px;
+  display: inline-block;
+}
+.ecl-weigou-rcmd-gallery-left {
+  width: 27px;
+  left: -11px;
+  direction: rtl;
+}
+.ecl-weigou-rcmd-gallery-right {
+  width: 27px;
+  right: -11px;
+}
+.ecl-weigou-product-errmsg {
+  background: none;
+  padding-left: 5px;
+  width: 65px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

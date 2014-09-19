@@ -1,0 +1,12 @@
+<!-- target:AD_ad_widget_zhidao_native_related_knowledge -->
+<div class="ad-widget-zhidao_native ad-widget-zhidao_native-related-knowledge">
+    <h3 class="ec-related-title">相关知识</h3>
+    <div class="ec-related-lists">
+        {{#related_list}}
+            {{#@even}}<div class="ec-related-row">{{/@even}}
+                <a class="ec-related-item" title2="相关知识{{_index}}" target="_blank" href="{{{rcv_url}}}">{{{text}}}</a>
+            {{#@odd}}</div>{{/@odd}}
+            {{#@even}}{{#@last}}</div>{{/@last}}{{/@even}}
+        {{/related_list}}
+    </div>
+</div>

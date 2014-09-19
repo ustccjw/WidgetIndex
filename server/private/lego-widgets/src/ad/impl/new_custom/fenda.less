@@ -1,0 +1,193 @@
+/**
+ * @author chenjiawei01@baidu.com
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 538px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    background: url("//bs.baidu.com/adtest/626f0a72d88169d601c5451718acf60d.png") no-repeat 0 0;
+    font: 12px/1.5 arial,sans-serif;
+
+    .ad-block-0 {
+        border: 5px solid #FDC733;
+    }
+    .ad-block-0-0-1 {
+        float: left;
+        width: 254px;
+        margin-right: 10px;
+    }
+    .ad-block-0-0-2 {
+        float: left;
+        position: relative;
+        width: 248px;
+        height: 143px;
+    }
+
+    .ad-block-0-0 {
+        .gain-bfc();
+        margin: 0 8px;
+        padding: 3px 0 15px 0;
+
+        .ad-widget-title {
+            padding-bottom: 8px;
+            a {
+                color: #00c;
+            }
+        }
+
+        .ad-widget-video {
+            width: 254px;
+            height: 143px;
+            object, embed {
+                display: block;
+            }
+        }
+
+        .ad-widget-small-head {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #F1F1F1;
+            .ec-description {
+                text-indent: 2em;
+                .ec-site {
+                    text-indent: 0;
+                }
+            }
+        }
+
+        .ad-widget-sina-weibo {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 0;
+            .ec-name {
+                color: #00c;
+            }
+            .ec-follow {
+                float: right;
+                width: auto;
+            }
+            .ec-text {
+                border-right: none;
+                height: 20px;
+                line-height: 20px;
+            }
+            .ec-weibo-text {
+                text-indent: 2em;
+            }
+            .ec-rightbtn {
+                a {
+                    color: #00c;
+                    border-right: none;
+                }
+            }
+        }
+
+        .ad-widget-qq-weibo {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 0;
+            .ec-weibo-head {
+                padding: 0;
+                .ec-name {
+                    height: 20px;
+                    line-height: 20px;
+                    color: #00c;
+                    font-size: 13px;
+                    font-weight: normal;
+                    background: none;
+                }
+                .ec-follow {
+                    float: right;
+                    width: auto;
+                    height: 20px;
+                    line-height: 20px;
+                }
+                .ec-text {
+                    padding: 0 4px;
+                    margin: 0;
+                    border-right: none;
+                    height: 20px;
+                    line-height: 20px;
+
+                }
+            }
+            .ec-context {
+                padding: 0;
+                padding-top: 3px;
+                .ec-weibo-text {
+                    text-indent: 2em;
+                }
+                .ec-foot {
+                    padding: 0;
+                    padding-top: 3px;
+                }
+                .ec-from {
+                    display: none;
+                }
+                .ec-rightbtn {
+                    a {
+                        color: #00c;
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+    .ad-block-0-2 {
+        .ad-widget-image {
+            .ec-img {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.ec-fenda-video-fwc {
+    .ec-float-bg-ifr {
+        z-index: -1;
+    }
+    .ad-widget-video {
+        width: 540px;
+        height: 304px;
+        position: absolute;
+        top: 76px;
+        left: 20px;
+    }
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}
+
+.ec-fenda-flash-fwc {
+    .ec-float-bg-ifr {
+        z-index: -1;
+    }
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}

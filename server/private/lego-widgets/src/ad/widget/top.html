@@ -1,0 +1,29 @@
+<!-- target:AD_ad_widget_top -->
+<div class="ad-widget ad-widget-top">
+   {{#top_title}}
+    <div class="ec-top-title">{{top_title}}</div>
+   {{/top_title}}
+
+   {{#options}}
+    <div class="ec-top-item ec-top-item-{{_index}}" style="background:url({{no_icon}}) no-repeat left center;">
+        <span class="ec-top-index">{{_index}}</span>
+        {{#text_rcv_url}}
+        <span class="ec-top-text">
+            <a target="_blank" href="{{{text_rcv_url}}}" title2="top-link-{{_index}}">
+                {{text}}
+            </a>
+        </span>
+        {{/text_rcv_url}}
+        {{^text_rcv_url}}
+        <span class="ec-top-text">{{text}}</span>
+        {{/text_rcv_url}}
+
+        {{#number}}
+        <span class="ec-top-num">{{number}}</span>
+        {{/number}}
+        {{#status_icon}}
+        <img class="ec-top-status" src="{{status_icon}}" />
+        {{/status_icon}}
+    </div>
+   {{/options}}
+</div>

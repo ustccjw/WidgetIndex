@@ -1,0 +1,131 @@
+<!-- target:AD_ad_widget_mweigou_purchase_view2 -->
+<div class="ec-sg-weigou-purchase">
+    <section class="ec-sg-weigou-purchase-section">
+        <header class="ec-sg-weigou-purchase-header">确认收货信息</header>
+        <section class="ec-sg-weigou-purchase-body">
+            <div class="ec-sg-weigou-purchase-address-item"></div>
+            <div class="ec-sg-weigou-purchase-addresses">
+                <div class="ec-sg-weigou-purchase-addres-cover">
+                    <span>使用历史地址</span>
+                    <b></b>
+                </div>
+                <select class="ec-sg-weigou-purchase-select WA_LOG_BTN"></select>
+            </div>
+            <div class="ec-sg-weigou-purchase-newaddr">
+                <b class="ec-sg-weigou-purchase-bottom-tag"></b>
+                <header class="ec-sg-weigou-purchase-newaddr-header WA_LOG_BTN">
+                    <span>使用新地址</span>
+                    <i class="ec-sg-weigou-purchase-newaddr-plus"></i>
+                </header>
+                <div class="ec-sg-weigou-purchase-form">
+                    <table cellspacing="0" cellpadding="0" border="0"><tbody>
+                        <tr>
+                            <th>收货人：<span>*请填写收货人姓名</span></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ec-sg-weigou-purchase-input-wide">
+                                    <input type="text" class="ec-sg-weigou-purchase-receiver" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>收货地址：<span>*请选择收货人所在省市区</span></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ec-sg-weigou-purchase-input-wide">
+                                    <input type="text" class="ec-sg-weigou-purchase-region" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display:none">
+                            <th>
+                                <select class="ec-sg-weigou-purchase-town"></select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>详细地址：<span>*请填写详细地址</span></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ec-sg-weigou-purchase-input-wide">
+                                    <input type="text" class="ec-sg-weigou-purchase-address" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ec-sg-weigou-purchase-newaddr-btns">
+                                    <a href="javascript:;" class="ec-sg-weigou-purchase-newaddr-ok WA_LOG_BTN">确定</a>
+                                    <a href="javascript:;" class="ec-sg-weigou-purchase-newaddr-cancel WA_LOG_BTN">取消</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="ec-sg-weigou-purchase-section">
+        <header class="ec-sg-weigou-purchase-header">确认商品清单</header>
+        <section class="ec-sg-weigou-purchase-body">
+            <div class="ec-sg-weigou-clearfix">
+                <div class="ec-sg-weigou-purchase-image">
+                    <img src="<%:h= picture %>" />
+                </div>
+                <div class="ec-sg-weigou-purchase-list">
+                    <h2><%:h= name %></h2>
+                    <div class="ec-sg-weigou-purchase-vendor">发货商家：<span><%:h=vendor%></span></div>
+                    <div>商品数量：<input type="number" value="1" min="1" max="999" class="ec-sg-weigou-purchase-count" />&nbsp;件</div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="ec-sg-weigou-purchase-bottom">
+        <div class="ec-sg-weigou-clearfix">
+            <div class="ec-sg-weigou-purchase-checkboxes">
+                <div>
+                    <input type="checkbox" id="ec-sg-weigou-purchase-invoice" class="ec-sg-weigou-purchase-invoice" />
+                    <label for="ec-sg-weigou-purchase-invoice">需要发票</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ec-sg-weigou-purchase-agreement" class="ec-sg-weigou-purchase-agreement" checked />
+                    <label for="ec-sg-weigou-purchase-agreement">同意<a class="ec-sg-weigou-purchase-agreement-link" href="http://weigou.baidu.com/service/site/page?view=agreement" target="_blank">使用协议</a></label>
+                </div>
+            </div>
+            <div class="ec-sg-weigou-purchase-prices">
+                <table>
+                    <tr class="ec-sg-weigou-purchase-goods-price">
+                        <th>商品总价：</th>
+                        <td>￥<%:h=price.toFixed(1)%></td>
+                    </tr>
+                    <tr class="ec-sg-weigou-purchase-offers">
+                        <th>优惠：</th>
+                        <td></td>
+                    </tr>
+                    <tr class="ec-sg-weigou-purchase-fare">
+                        <th>运费：</th>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ec-sg-weigou-clearfix">
+            <div class="ec-sg-weigou-purchase-details">
+                <div class="ec-sg-weigou-purchase-details-top"></div>
+                <div class="ec-sg-weigou-purchase-details-middle"></div>
+                <div class="ec-sg-weigou-purchase-details-bottom">
+                    <span class="ec-sg-weigou-left">支付方式：货到付款</span>
+                    <span class="ec-sg-weigou-right">合计
+                        <strong class="ec-sg-weigou-purchase-total-price"></strong>
+                        <i>元</i>
+                    </span>
+                </div>
+            </div>
+            <a href="javascript:;" class="ec-sg-weigou-purchase-check WA_LOG_BTN">确定，查看运费</a>
+            <a href="javascript:;" class="ec-sg-weigou-purchase-submit WA_LOG_BTN" style="display:none">确定购买</a>
+        </div>
+    </section>
+
+</div>

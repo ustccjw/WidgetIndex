@@ -1,0 +1,42 @@
+{
+    "contents": ["ad.widget.siva.Title_icon16"],
+    "userPrefs": [{
+        "name": "image_url",
+        "displayName": "Logo图片",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "UPLOAD",
+        "rules": {
+            "required": true
+        },
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "maxSize": 15,
+            "height":16,
+            "ext": "jpg,gif,png"
+        },
+        "multiline": false
+    },{
+        "name": "title",
+        "displayName": "标题",
+        "defaultValue": "",
+        "tip": "标题最多14个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 28
+        },
+        "multiline": false
+    }, {
+        "name": "target_rcv_url",
+        "displayName": "Logo & 标题跳转URL",
+        "defaultValue": "http://",
+        "tip": "",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "stringType": "URL"
+        },
+        "multiline": false
+    }]
+}

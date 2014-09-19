@@ -1,0 +1,299 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: intermediate_page.less 12394 2012-09-28 02:47:52Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/xlab/intermediate_page.less ~ 2012/09/20 10:48:27
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 12394 $ 
+ * @description 
+ * intermediate_page样式文件
+ **/
+@import-once "mixins.less";
+
+.ad-widget-xlab-intermediate-page {
+    font: 12px/1.5 arial,sans-serif;
+
+    background-color: #d1d1d1;
+    padding: 5px;
+
+    width: 690px;
+    height: 480px;
+
+    .wrapper {
+        padding: 12px;
+        background: #fff;
+        position: relative;
+        zoom: 1;
+    }
+
+    a {
+        color: #00c;
+    }
+
+    img {
+        display: block;
+        border: none;
+    }
+
+    h3, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        border: none;
+        width: 100%;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    .close {
+        top: 9px;
+        right: 11px;
+        color: #666;
+        position: absolute;
+        padding-left: 15px;
+        text-decoration: none;
+        background: url(//bs.baidu.com/adtest/icon-close.png) center left no-repeat;
+    }
+
+    .thumbnails {
+        width: 75px;
+        position: relative;
+        list-style: none;
+        margin-bottom: -7px;
+        position: relative; 
+        
+        li {
+            margin-bottom: 7px;
+            *margin-bottom: 3px;
+            position: relative;
+            height: 60px;
+        }
+
+        img {
+            border: 1px solid #d9d9d9;
+            cursor: pointer;
+        }
+
+        .icon {
+            padding: 0;
+            display: none;
+            width: 5px;
+            height: 9px;
+            font-size: 0;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            background: url(//bs.baidu.com/adtest/icon.png);
+        }
+
+        .active {
+            .icon {
+                display: block;
+            }
+            img {
+                border: 1px solid #e09e9e;
+            }
+        }
+    }
+
+    .product-preview {
+        padding-left: 4px;
+        img {
+            border: 1px solid #d9d9d9;
+        }
+    }
+
+    .meta {
+        font-size: 13px;
+        color: #666;
+        padding-left: 20px;
+        h3 {
+            font-size: 16px;
+            font-weight: normal;
+            height: 48px;
+        }
+
+        .rebate-price,
+        .market-price,
+        .rating-summary {
+            line-height: 29px;
+            height: 30px;
+        }
+
+        .rating-summary {
+            *padding-top: 5px;
+        }
+
+        .rebate-price {
+            color: #c00;
+            font-size: 16px;
+            label {
+                color: #666;
+                font-size: 13px;
+            }
+        }
+        .rating-summary {
+            a {
+                color: #000;
+                margin-left: 10px;
+            }
+            img {
+                display: inline-block;
+            }
+        }
+    }
+
+    .buy-it {
+        .gain-bfc();
+        img, .tip {
+            float: left;
+        }
+        .tip {
+            margin-top: 10px;
+            padding-left: 10px;
+            color: #999;
+        }
+    }
+
+    dt {
+        border-top: 1px solid #e2e2e2;
+        background: url(//bs.baidu.com/adtest/bg.png) 0px 1px repeat-x;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 7px 12px 10px 11px;
+        zoom: 1;
+        color: #333;
+        a {
+            float: right;
+            font-weight: normal;
+            color: #333;
+        }
+    }
+
+    dl, dd {
+        margin: 0;
+        margin-top: 12px;
+    }
+    dd {
+        margin-top: 0;
+        td {
+            vertical-align: middle;
+        }
+    }
+
+    dd {
+        .rating-summary {
+            font-size: 11px;
+            color: #A10000;
+            width: 100px;
+            text-align: center;
+            border-right: 1px solid #d9d9d9;
+            .value {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .rating-detail {
+        width: 236px;
+        border-right: 1px solid #d9d9d9;
+        th {
+            width: 45px;
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
+
+    .rating-comments {
+        padding-left: 15px;
+        vertical-align: top;
+        .comment {
+            color: #999;
+            width: 315px;
+            .text-overflow();
+            .author {
+                color: #666;
+            }
+        }
+    }
+
+    .progress {
+        background: #efeff1;
+        border: 1px solid #c9c9c9;
+        width: 143px;
+        margin: 8px 0;
+        .bar {
+            height: 10px;
+            font-size: 0;
+            background: url(//bs.baidu.com/adtest/progress-bar.png) repeat-x;
+        }
+    }
+
+    .products {
+        .gain-bfc();
+        margin-right: -40px;
+        width: 706px;
+    }
+
+    .product-item {
+        width: 215px;
+        font-size: 13px;
+        float: left;
+        margin-right: 10px;
+
+        img {
+            border: 1px solid #d9d9d9;
+            float: left;
+            margin-right: 9px;
+            margin-left: 2px;
+        }
+        .info {
+            .gain-bfc();
+        }
+        h3 {
+            height: 32px;
+            font-size: 13px;
+            line-height: 16px;
+            overflow: hidden;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        .market-price {
+            color: #666;
+        }
+        .rebate-price {
+            color: #c00;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

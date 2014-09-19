@@ -1,0 +1,14 @@
+<!-- target:AD_ad_widget_contact_info -->
+<div class="ad-widget ad-widget-contact-info">
+    <ul class="ec-list">
+        {{#options}}
+        <li class="ec-item ec-item-{{_index}}">
+            <span class="ec-name">{{name}}</span>
+            <span class="ec-separator">{{separator}}</span>
+            {{#rcv_url}}<a href="{{{rcv_url}}}" class="ec-text" title2="item-{{_index}}" target="_blank">{{text}}</a>{{/rcv_url}}
+            {{#mail_address}}<a href="mailto:{{{mail_address}}}" class="ec-text" title2="item-{{_index}}">{{text}}</a>{{/mail_address}}
+            {{^link_type}}<span class="ec-text">{{text}}</span>{{/link_type}}
+        </li>
+        {{/options}}
+    </ul>
+</div>

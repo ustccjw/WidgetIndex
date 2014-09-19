@@ -1,0 +1,173 @@
+[{
+    "name": "title",
+    "displayName": "标题块",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "logoimg",
+        "displayName": "logo图片",
+        "defaultValue": "",
+        "datatype": "OBJECT",
+        "items": [{
+            "name": "logoimg",
+            "displayName": "logo图片",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {},
+            "tip": "http://dummyimage.com/16x16/ccc/666",
+            "multiline": false,
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "width": 16,
+                "height": 16,
+                "maxSize": 10,
+                "ext": "jpg,png"
+            }
+        }],
+        "rules": {},
+        "tip": "",
+        "multiline": false,
+        "extraAttr": {}
+    }, {
+        "name": "activetitle",
+        "displayName": "标题",
+        "nameTip": "富文本",
+        "tip": "标题为6~30个汉字，核心<em>飘红词</em>最多可选6个汉字",
+        "defaultValue": "",
+        "datatype": "HTML",
+        "multiline": false,
+        "rules": {
+            "required": true,
+            "minTextByteLength": 12,
+            "maxTextByteLength": 60,
+            "tagList": {
+                "em": {
+                    "maxTextByteLength": 12,
+                    "minCount": 1,
+                    "maxCount": 1
+                }
+            }
+        },
+        "extraAttr": {
+            "editorConfig": {
+                "tools": [
+                    "emphasize"
+                ]
+            },
+            "tagList": {
+                "em": {
+                    "isAllowNoContent": false,
+                    "isSimpleTag": false
+                }
+            }
+        }
+    }, {
+        "name": "active_rcv_url",
+        "displayName": "跳转地址",
+        "defaultValue": "",
+        "datatype": "STRING",
+        "rules": {
+            "stringType": "URL",
+            "required": true,
+            "maxByteLength": 255
+        },
+        "extraAttr": {},
+        "tip": "",
+        "multiline": false
+    }]
+}, {
+    "name": "images",
+    "displayName": "图片列表",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "width",
+        "displayName": "图片宽度",
+        "defaultValue": "78",
+        "datatype": "HIDDEN",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "multiline": false
+    }, {
+        "name": "height",
+        "displayName": "图片高度",
+        "defaultValue": "78",
+        "datatype": "HIDDEN",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "multiline": false
+    }, {
+        "name": "options",
+        "displayName": "图片",
+        "datatype": "LIST",
+        "rules": {
+            "required": true,
+            "minCount": 1,
+            "maxCount": 6
+        },
+        "items": [{
+            "name": "img_url",
+            "displayName": "图片地址",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {
+                "stringType": "URL",
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "ext": "jpg,gif,png,jpeg",
+                "width": 78,
+                "height": 78
+            }
+        }, {
+            "name": "rcv_url",
+            "displayName": "跳转链接",
+            "defaultValue": "http://",
+            "tip": "",
+            "datatype": "STRING",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "stringType": "URL"
+            }
+        }, {
+            "name": "text",
+            "displayName": "图片文字",
+            "datatype": "STRING",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "minByteLength": 4,
+                "maxByteLength": 12
+            }
+        }]
+    }]
+}, {
+    "name": "show_url",
+    "displayName": "官网地址",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "site",
+        "displayName": "官方网站",
+        "tip": "最多可填写24个字节",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 24
+        }
+    }, {
+        "name": "hide_brand_text",
+        "displayName": "隐藏推广文字",
+        "defaultValue": true,
+        "datatype": "BOOL",
+        "display": "none"
+    }],
+    "rules": {
+        "required": true
+    },
+    "extraAttr": {}
+}]

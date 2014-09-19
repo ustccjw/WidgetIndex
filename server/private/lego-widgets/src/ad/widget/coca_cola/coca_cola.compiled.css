@@ -1,0 +1,78 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/coca_cola/coca_cola.less ~ 2014/03/03 17:16:13
+ * @author loutongbing@baidu.com (loutongbing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * coca_cola样式文件
+ **/
+.ad-widget-coca_cola-coca-cola {
+  font: 13px/1.5 arial, sans-serif;
+  position: relative;
+  zoom: 1;
+  /** CODE HERE. */
+
+}
+.ad-widget-coca_cola-coca-cola a {
+  text-decoration: none;
+}
+.ad-widget-coca_cola-coca-cola img {
+  display: block;
+  border: solid 1px #c1c1c1;
+}
+.ad-widget-coca_cola-coca-cola .ec-navs {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  line-height: 26px;
+  height: 26px;
+  width: 259px;
+  text-align: center;
+  background: #000;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  text-align: left;
+}
+.ad-widget-coca_cola-coca-cola .ec-text {
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  line-height: 15px;
+  height: 15px;
+  color: #fff;
+}
+.ad-widget-coca_cola-coca-cola .ec-blue-layout {
+  width: 62px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #309aff;
+  text-align: center;
+}
+.ad-widget-coca_cola-coca-cola .ec-time-container {
+  width: 62px;
+  height: 30px;
+  background-color: #309aff;
+  position: absolute;
+  left: 0px;
+  bottom: 3px;
+  word-wrap: normal;
+}
+.ad-widget-coca_cola-coca-cola .ec-time-container span {
+  color: #fff;
+}
+.ad-widget-coca_cola-coca-cola .ec-time-container .ec-number {
+  font: 30px/1 Microsoft Yahei, sans-serif;
+}
+.ad-widget-coca_cola-coca-cola .ec-time-container .ec-day {
+  margin-left: -4px;
+  line-height: 1em;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

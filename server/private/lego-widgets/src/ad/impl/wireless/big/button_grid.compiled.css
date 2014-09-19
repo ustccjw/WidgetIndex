@@ -1,0 +1,40 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless/big/button_grid.less ~ 2013/12/25 14:36:59
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * smart样式文件
+ **/
+#canvas .ad-widget-wireless-button-grid {
+  font-size: small;
+  margin-right: -8px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-wireless-button-grid .ec-row {
+  float: left;
+  *margin-bottom: 8px;
+}
+#canvas .ad-widget-wireless-button-grid a {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  color: #5388DC;
+  text-decoration: none;
+  overflow: hidden;
+  background: url(//bs.baidu.com/adtest/7239c73cf52d44ec36e9035f34d2d05a.png) no-repeat;
+  padding: 5px 30px 5px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

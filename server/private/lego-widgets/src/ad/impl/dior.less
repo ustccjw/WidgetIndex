@@ -1,0 +1,150 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/dior.less ~ 2012/11/27 13:04:08
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * dior样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 535px;
+    height: 400px;
+    background: #efefef;
+    margin-bottom: 20px;
+    font:13px arial,sans-serif;
+
+    .ad-layout-block-0 {
+        padding: 10px 10px 0px 10px;
+        .gain-bfc();
+        .ad-layout-block-0-0{
+            float:left;
+        }
+        .ad-layout-block-0-1{
+            float:left;
+            width:286px;
+            margin-left: 9px;
+        }
+    }
+
+    .ad-widget-small-head {
+        background-color: transparent;
+        h2 {
+            a {
+                color:#0000cc;
+                font-weight:bold;
+                em {
+                    color: #CC0000;
+                    font-style: normal;
+                }
+            }
+        }
+        .ec-description {
+            color: #000;
+            a {
+                color:#0000cc;
+            }
+            .ec-site a {
+                color: #666;
+            }
+        }
+    }
+    .ad-widget-small-weibo {
+        .ec-name {
+            color: #000;
+        }
+        .ec-text,
+        .ec-datetime {
+            color: #000;
+        }
+        .ec-context {
+            height: 34px;
+            overflow: hidden;
+        }
+        .ec-rightbtn {
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .ad-layout-block-1{
+        padding: 0px 5px;
+        .ad-widget-button-group {
+            margin-top: 2px;
+            padding: 4px 0px;
+            background-color: #b5b7b6;
+            td {
+                border-right: 1px solid #cccdcc;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .ad-layout-block-2 {
+        padding: 0px 5px;
+    }
+    .ad-widget-image-cartoon {
+        background-color: transparent;
+        width: auto;
+        height: 155px;
+        padding: 0px;
+        .ec-item-wrapper {
+            width: 100%;
+            height: 155px;
+        }
+        .ec-item {
+            height: 155px;
+
+            a {
+                position: relative;
+                height: 155px;
+            }
+
+            a:hover div {
+                color: #000;
+            }
+
+            div {
+                display: block;
+                color: #eee;
+                background-color: #b5b7b6;
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

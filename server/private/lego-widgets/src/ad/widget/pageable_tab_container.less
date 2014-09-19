@@ -1,0 +1,141 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: pageable_tab_container.less 10019 2012-07-02 10:17:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/pageable_tab_container.less ~ 2012/07/02 17:44:45
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 10019 $ 
+ * @description 
+ *  
+ **/
+@import-once "mixins.less";
+
+.ad-widget-pageable-tab-container {
+    font: 12px/1.5 arial,sans-serif;
+
+    .ec-tab-head-container {
+        position: relative;
+        width: 502px;
+        padding: 0 15px;
+        height: 31px;
+        border: 1px solid #BECCF1;
+        border-bottom: none;
+    }
+
+    .ec-disabled {
+        .opacity(40);
+    }
+
+    .ec-tab-arrow {
+        position: absolute;
+        cursor: pointer;
+        top: 0px;
+        width: 15px;
+        height: 31px;
+        border: 0;
+        padding: 0;
+    }
+    .ec-tab-left-arrow {
+        left: 0px;
+        background: #BECCF1 url(//bs.baidu.com/adtest/a52da1bb1e283aea68af074df47e12bd.png) no-repeat;
+    }
+    .ec-tab-right-arrow {
+        right: 0px;
+        background: #BECCF1 url(//bs.baidu.com/adtest/9530f337e590d4ddc92a9db08b5d7a7a.png) no-repeat;
+    }
+
+    .ec-tab-head-wrapper {
+        position: relative;
+        width: 100%;
+        height: 31px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .ec-tab-head {
+        height: 31px;
+        list-style: none outside none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+        background: url("//bs.baidu.com/lego-mat/line-805ca8c4.png") repeat-x scroll center bottom transparent;
+        
+        li {
+            display: block;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            background-color: #F1F5FF;
+            text-align: center;
+            border: none;
+        }
+
+        .ec-current-tab {
+            position: relative;
+            background-color: #fff;
+            border-left: 1px solid #BECCF1;
+            border-right: 1px solid #BECCF1;
+            height: 31px;
+            a {
+                background-color: #fff;
+                position: relative;
+            }
+
+            span {
+                border-right: none;
+            }
+        }
+
+        .ec-tab-list-1 {
+            border-left: none;
+        }
+        .ec-previous-tab {
+            span {
+                border-right: none;
+            }
+        }
+        a, a:visited {
+            display: inline-block;
+            height: 15px;
+            color: #0000cc;
+            line-height: 15px;
+            margin: 7px 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            span {
+                border-right: 1px solid #BECCF1;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

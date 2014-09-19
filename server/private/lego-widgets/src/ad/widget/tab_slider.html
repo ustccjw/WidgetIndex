@@ -1,0 +1,63 @@
+<!-- target:AD_ad_widget_tab_slider -->
+<div class="ad-widget ad-widget-tab-slider" style="width:{{{width}}}px;height:{{{height}}}px;">
+    <ol id="{{#_id}}list{{/_id}}">
+        {{#options}}
+            <li>
+                {{#is_current}}
+                <div class="ad-widget-tab-slider-panel ad-widget-tab-slider-visible" style="display:block;">
+                {{/is_current}}
+                {{^is_current}}
+                <div class="ad-widget-tab-slider-panel ad-widget-tab-slider-hidden" style="display:none;">
+                {{/is_current}}
+                {{^swf}}
+                <a class="ad-widget-tab-slider-img" href="{{{img_link_rcv_url}}}" target="_blank" title2="多图轮播大图{{_index}}{{#custom_title2}}-{{{custom_title2}}}{{/custom_title2}}">
+                    <img src="{{{img_url}}}" width="{{{width}}}" height="{{{height}}}" />
+                </a>
+                {{/swf}}
+                {{#swf}}
+                    {{^is_ipad}}
+                    <div class="ad-widget-tab-slider-flash">
+                        <object width="{{width}}" height="{{height}}" id="{{#_id}}swf{{/_id}}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+                            <param value="opaque" name="wmode">
+                            <param value="always" name="allowscriptaccess">
+                            <param value="{{swf}}" name="movie">
+                            <embed width="{{width}}" align="middle" height="{{height}}" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="{{#_id}}swf{{/_id}}" src="{{swf}}" allowscriptaccess="always" wmode="opaque">
+                        </object>
+                    </div>
+                    <a class="ad-widget-tab-slider-flashlink" href="{{{img_link_rcv_url}}}" title2="大图轮播Flash链接{{_index}}(ipad){{#custom_title2}}-{{{custom_title2}}}{{/custom_title2}}" id="{{#_id}}link{{/_id}}" target="_blank" style="width:{{width}}px;height:{{height}}px">&nbsp;</a>
+                    {{/is_ipad}}
+                    {{#is_ipad}}
+                        <a class="ad-widget-tab-slider-img" href="{{{img_link_rcv_url}}}" target="_blank" title2="大图轮播Flash链接{{_index}}(ipad){{#custom_title2}}-{{{custom_title2}}}{{/custom_title2}}">
+                            <img src="{{{img_url}}}" width="{{{width}}}" height="{{{height}}}" />
+                        </a>
+                    {{/is_ipad}}
+                {{/swf}}
+                </div>
+                {{#is_current}}
+                <div class="ad-widget-tab-slider-info ad-widget-tab-slider-info-{{_index}} ad-widget-tab-slider-expand" style="width:{{{tab_width}}}px;left:{{{_tab_css_left}}}px;height:{{{tab_height}}}px" data-index="{{_index}}">
+                {{/is_current}}
+                {{^is_current}}
+                <div class="ad-widget-tab-slider-info ad-widget-tab-slider-info-{{_index}} ad-widget-tab-slider-shrink" style="width:{{{tab_width}}}px;left:{{{_tab_css_left}}}px;height:{{{tab_shrink_height}}}px" data-index="{{_index}}">
+                {{/is_current}}
+                    <div class="ad-widget-tab-slider-info-content">
+                        <a class="ad-widget-tab-slider-icon" href="{{{icon_link_rcv_url}}}" target="_blank" title2="多图轮播图标链接{{_index}}{{#custom_icon_title2}}-{{{custom_icon_title2}}}{{/custom_icon_title2}}">
+                            <img src="{{{icon_url}}}" alt="" width="{{{icon_width}}}" height="{{{icon_height}}}" />
+                        </a>
+                        <div>
+                            <h2><a href="{{{title_link_rcv_url}}}" target="_blank" title2="多图轮播标题链接{{_index}}{{#custom_title_title2}}-{{{custom_title_title2}}}{{/custom_title_title2}}">{{{title}}}</a></h2>
+                            <p>
+                            {{#desc_link_rcv_url}}
+                            <a href="{{{desc_link_rcv_url}}}" target="_blank" title2="多图轮播描述链接{{_index}}{{#custom_desc_title2}}-{{{custom_desc_title2}}}{{/custom_desc_title2}}">
+                            {{/desc_link_rcv_url}}
+                                {{{desc}}}
+                            {{#desc_link_rcv_url}}
+                            </a>
+                            {{/desc_link_rcv_url}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        {{/options}}
+    </ol>
+</div>

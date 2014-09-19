@@ -1,0 +1,153 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/caijing.less ~ 2013/12/05 10:18:58
+ * @author chenli11@baidu.com (chenli11)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * caijing样式文件
+ **/
+#canvas {
+  font: 13px/1.5 arial;
+  width: 540px;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-h1 {
+  padding-bottom: 5px;
+}
+#canvas .ad-widget-h1 .ec-desc {
+  line-height: 19px;
+  width: 438px;
+  _width: 435px;
+}
+#canvas .ad-widget-section {
+  padding-top: 4px;
+}
+#canvas .ad-widget-section li {
+  padding-left: 2px;
+  margin-bottom: 0;
+}
+#canvas .ad-widget-section .ec-icon {
+  width: 8px;
+  height: 15px;
+}
+#canvas .ad-widget-image-cartoon {
+  margin: 14px 0 4px 13px;
+  width: 501px;
+  height: 90px;
+  position: relative;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  height: 90px;
+  margin: 0 21px;
+  width: 459px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-body {
+  overflow: hidden;
+  zoom: 1;
+  padding: 12px 0;
+  background: url("//bs.baidu.com/adtest/776dabe6b947509ab2cfbb8bb39491eb.gif") repeat-x;
+}
+#canvas .ad-widget-image-cartoon .ec-item {
+  height: 66px;
+  background: #ccc;
+}
+#canvas .ad-widget-image-cartoon .ec-item a,
+#canvas .ad-widget-image-cartoon .ec-item img {
+  width: 90px;
+  height: 66px;
+}
+#canvas .ad-widget-image-cartoon .ec-arrow {
+  width: 20px;
+  height: 90px;
+  top: 0;
+}
+#canvas .ad-widget-image-cartoon .ec-left-arrow {
+  left: 0;
+}
+#canvas .ad-widget-image-cartoon .ec-right-arrow {
+  right: 0;
+}
+#canvas .ad-widget-small-weibo {
+  font: 12px arial;
+}
+#canvas .ad-widget-small-weibo fieldset {
+  margin-left: 0;
+  overflow: hidden;
+  padding: 0;
+  height: 18px;
+  border-left: none;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: solid 1px #e1e1e1;
+}
+#canvas .ad-widget-small-weibo fieldset legend {
+  text-align: left;
+  margin-left: 0;
+  margin-left: -5px;
+  padding-left: 18px;
+  padding-right: 8px;
+  color: black;
+  background: url(//bs.baidu.com/adtest/8403656a166cd0710a16062ff647c558.gif) no-repeat left center;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head {
+  padding: 0 10px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-follow {
+  float: right;
+  height: 22px;
+  line-height: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 66px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-logo a {
+  line-height: 24px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-name {
+  height: 22px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-text {
+  margin-top: 5px;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 10px;
+}
+#canvas .ad-widget-small-weibo .ec-context {
+  padding: 8px 10px 0;
+}
+#canvas .ad-widget-small-weibo .ec-context .ec-weibo-text {
+  line-height: 18px;
+}
+#canvas .ad-widget-small-weibo .ec-context .ec-foot {
+  line-height: 14px;
+  padding-top: 10px;
+}
+#canvas .ad-widget-small-weibo .ec-context .ec-rightbtn a {
+  color: green;
+}
+#canvas .ad-widget-button-group {
+  margin-top: 5px;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group tr {
+  background-color: #f7cbbb;
+}
+#canvas .ad-widget-button-group td {
+  border-color: #fff;
+  border-width: 2px;
+  height: 22px;
+  line-height: 22px;
+}
+#canvas .ad-widget-button-group td a {
+  text-decoration: underline;
+  color: #c00;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

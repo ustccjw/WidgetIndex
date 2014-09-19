@@ -1,0 +1,132 @@
+<!-- target:AD_ad_widget_mweigou_purchase_view -->
+<div class="ec-sg-weigou-purchase">
+    <div class="ec-sg-weigou-clearfix">
+        <div class="ec-sg-weigou-purchase-image">
+            <img src="<%:h= picture %>" />
+        </div>
+        <div class="ec-sg-weigou-purchase-vendor"><%:h= vendor %></div>
+        <div class="ec-sg-weigou-purchase-list">
+            <h2><%:h= name %></h2>
+            <div>商品数量：<input type="number" value="1" class="ec-sg-weigou-purchase-count" />&nbsp;件</div>
+            <div>商品总价：<span class="ec-sg-weigou-purchase-goods-price">￥<%:h= price.toFixed(2) %></span></div>
+        </div>
+    </div>
+
+    <form class="ec-sg-weigou-purchase-form">
+        <table cellspacing="0" cellpadding="0" border="0"><tbody>
+            <tr>
+                <th>付款方式：</th>
+                <td><strong>货到付款</strong></td>
+            </tr>
+            <tr>
+                <th>手机号码：</th>
+                <td>
+                    <div class="ec-sg-weigou-purchase-float-right">
+                        <a class="ec-sg-weigou-purchase-vcode-getter WA_LOG_BTN" href="javascript:;" />获取验证码</a>
+                        <a class="ec-sg-weigou-purchase-change-mobile WA_LOG_BTN" href="javascript:;" style="display:none">更换手机号</a>
+                    </div>
+                    <div class="ec-sg-weigou-purchase-input-narrow">
+                        <input type="tel" class="ec-sg-weigou-purchase-mobile" />
+                    </div>
+                </td>
+            </tr>
+            <tr class="ec-sg-weigou-purchase-error" style="display:none">
+                <th></th>
+                <td>*请输入手机号</td>
+            </tr>
+            <tr>
+                <th>验证码/密码：</th>
+                <td>
+                    <div class="ec-sg-weigou-purchase-float-right">
+                        <a class="ec-sg-weigou-purchase-vcode-checker WA_LOG_BTN" href="javascript:;" />验证</a>
+                        <div class="ec-sg-weigou-purchase-vcode-ok" style="display:none"></div>
+                    </div>
+                    <div class="ec-sg-weigou-purchase-input-narrow">
+                        <input class="ec-sg-weigou-purchase-vcode" />
+                    </div>
+                    <input type="hidden" class="ec-sg-weigou-purchase-vcode-result"></div>
+                </td>
+            </tr>
+            <tr class="ec-sg-weigou-purchase-error" style="display:none">
+                <th></th>
+                <td>*短信验证码/密码不正确</td>
+            </tr>
+            <tr style="display:none">
+                <th></th>
+                <td>
+                    <div>
+                        <select class="ec-sg-weigou-purchase-addresses WA_LOG_OTHER">
+                            <option value="0">使用之前的地址</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>收货人：</th>
+                <td>
+                    <div class="ec-sg-weigou-purchase-input-wide">
+                        <input type="text" class="ec-sg-weigou-purchase-receiver" />
+                    </div>
+                </td>
+            </tr>
+            <tr class="ec-sg-weigou-purchase-error" style="display:none">
+                <th></th>
+                <td>*请填写收货人姓名</td>
+            </tr>
+            <tr>
+                <th>收货区域：</th>
+                <td>
+                    <div class="ec-sg-weigou-purchase-input-wide">
+                        <input type="text" class="ec-sg-weigou-purchase-region" />
+                    </div>
+                </td>
+            </tr>
+            <tr class="ec-sg-weigou-purchase-error" style="display:none">
+                <th></th>
+                <td>*请选择收货人所在省市区</td>
+            </tr>
+            <tr style="display:none">
+                <th></th>
+                <td>
+                    <select class="ec-sg-weigou-purchase-town"></select>
+                </td>
+            </tr>
+            <tr>
+                <th>详细地址：</th>
+                <td>
+                    <div class="ec-sg-weigou-purchase-input-wide">
+                        <input type="text" class="ec-sg-weigou-purchase-address" />
+                    </div>
+                </td>
+            </tr>
+            <tr class="ec-sg-weigou-purchase-error" style="display:none">
+                <th></th>
+                <td>*请填写详细地址</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="checkbox" id="ec-sg-weigou-purchase-invoice" class="ec-sg-weigou-purchase-invoice" />
+                    <label for="ec-sg-weigou-purchase-invoice">需要发票</label>
+                    <input type="checkbox" checked="checked" id="ec-sg-weigou-purchase-agreement" class="ec-sg-weigou-purchase-agreement" />
+                    <label for="ec-sg-weigou-purchase-agreement">同意<a class="ec-sg-weigou-purchase-agreement-link" href="http://weigou.baidu.com/service/site/page?view=agreement" target="_blank">使用协议</a></label>
+                </td>
+            </tr>
+            <tr style="display:none">
+                <th></th>
+                <td>
+                    <div class="ec-sg-weigou-purchase-fare">运费：<span></span></div>
+                    <div class="ec-sg-weigou-purchase-discount" style="display:none">优惠：<span></span></div>
+                    <div class="ec-sg-weigou-purchase-total-price">合计：<strong></strong></div>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <a class="ec-sg-weigou-purchase-submit ec-sg-weigou-purchase-disabled WA_LOG_BTN" href="javascript:;">确定，查看运费</a>
+                </td>
+            </tr>
+        </tbody></table>
+    </form>
+</div>
+

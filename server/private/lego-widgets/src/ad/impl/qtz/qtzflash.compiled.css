@@ -1,0 +1,18 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: qtzflash.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/qtz/qtzflash.less ~ 2012/08/27 14:30:04
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * burberry样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

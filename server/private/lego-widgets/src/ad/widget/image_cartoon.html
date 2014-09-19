@@ -1,0 +1,17 @@
+<!-- target:AD_ad_widget_image_cartoon -->
+<div class="ad-widget ad-widget-image-cartoon">
+    <div class="ec-item-wrapper">
+        <div class="ec-item-body" id="{{#_id}}images{{/_id}}" style="width:{{_item_body_width}}">
+            {{#_viewable_pool}}<!-- import:AD_ad_widget_image_cartoon_item -->{{/_viewable_pool}}
+        </div>
+    </div>
+    {{^disable}}
+    <div class="ec-arrow ec-left-arrow" id="{{#_id}}left-arrow{{/_id}}"><img src="{{left_arrow}}"/></div>
+    <div class="ec-arrow ec-right-arrow" id="{{#_id}}right-arrow{{/_id}}"><img src="{{right_arrow}}"/></div>
+    {{/disable}}
+</div>
+
+<!-- target:AD_ad_widget_image_cartoon_item -->
+<div class="ec-item" style="width:{{_width}};margin-right:{{image_margin}}px" data-index="{{_origin_index}}">
+    <a target="_blank" title2="胶片图{{_origin_index}}" href="{{{imgurl_rcv_url}}}"><img src="{{imgsrc}}"/>{{#linktext}}<div style="width:{{_width}}">{{linktext}}</div>{{/linktext}}</a>
+</div>

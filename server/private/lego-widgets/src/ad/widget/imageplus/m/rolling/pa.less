@@ -1,0 +1,121 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/imageplus/v2/rolling/pa.less ~ 2014/09/05 14:27:57
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * sticker/pa样式文件
+ **/
+@import-once "mixins.less";
+
+.baiduimageplusm-r-pa {
+    position: relative; // for IE6
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+
+    a {
+        outline: none;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .baiduimageplusm-r-hd {
+        margin: 0 16px;
+        height: 26px;
+        line-height: 26px;
+        border-bottom: 1px solid #5a5d60;
+        color: #FFF;
+        .text-overflow();
+
+        a {
+            font-size: 14px;
+            color: #FFF;
+        }
+    }
+
+    .baiduimageplusm-r-bd {
+        position: relative;
+        margin: 10px 15px 0;
+        overflow: hidden;
+        _zoom: 1;
+    }
+
+    .baiduimageplusm-r-img {
+        float: left;
+        _display: inline;
+        width: 50px;
+        height: 50px;
+        margin: 0 12px 0 0;
+
+        img {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: none;
+        }
+    }
+
+    .baiduimageplusm-r-txt {
+        height: 1.5 * 12px * 3;
+        overflow: hidden;
+        zoom: 1;
+        line-height: 1.5;
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: left;
+        text-decoration: none;
+        -webkit-line-clamp: 2;
+        a {
+            color: #FFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .baiduimageplusm-r-bt {
+        float: right;
+        margin: 0;
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        text-align: center;
+        background: #FF6000;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

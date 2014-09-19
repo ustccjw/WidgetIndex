@@ -1,0 +1,85 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: ns_zhidao.less 9607 2012-06-08 17:10:22Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/ns_zhidao.less ~ 2012/06/09 00:32:22
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 9607 $ 
+ * @description 
+ *  
+ **/
+.ad-widget-ns-zhidao {
+  font: 13px arial, "宋体", sans-serif;
+  line-height: 20px;
+}
+.ad-widget-ns-zhidao ul,
+.ad-widget-ns-zhidao li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-ns-zhidao em {
+  font-style: normal;
+  color: #c00;
+}
+.ad-widget-ns-zhidao .ec-ns-head {
+  overflow: hidden;
+  zoom: 1;
+  height: 28px;
+  line-height: 28px;
+  background: #F7F7F7;
+  border: none;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 0 10px;
+}
+.ad-widget-ns-zhidao .ec-ns-head-num {
+  float: right;
+  color: #999;
+}
+.ad-widget-ns-zhidao .ec-ns-head-source {
+  color: #666;
+}
+.ad-widget-ns-zhidao .ec-ns-q-title,
+.ad-widget-ns-zhidao .ec-ns-q-answer {
+  padding-left: 12px;
+}
+.ad-widget-ns-zhidao .ec-ns-related-question {
+  margin-left: 12px;
+  padding: 3px 0;
+}
+.ad-widget-ns-zhidao .ec-ns-related-question li {
+  line-height: 22px;
+  list-style: none;
+  background: url(//bs.baidu.com/adtest/01022354ced64fbae82da13b7c06e434.gif) 0 9px no-repeat;
+  padding-left: 8px;
+}
+.ad-widget-ns-zhidao .ec-ns-q-title {
+  padding-top: 12px;
+}
+.ad-widget-ns-zhidao .ec-ns-foot {
+  padding-left: 18px;
+}
+.ad-widget-ns-zhidao .ec-ns-foot a {
+  color: #7B77CB;
+}
+.ad-widget-ns-zhidao .ec-ns-online-qa {
+  padding-top: 8px;
+  margin-left: 18px;
+  line-height: 24px;
+  color: #666;
+}
+.ad-widget-ns-zhidao .ec-ns-online-qa a {
+  width: 88px;
+  height: 24px;
+  color: #333;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  background: url(//bs.baidu.com/adtest/68bc231116b7abb26ba4888d1c59f098.png) no-repeat;
+  float: left;
+  margin-right: 6px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

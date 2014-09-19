@@ -1,0 +1,221 @@
+<!-- target:AD_ad_widget_ctrip -->
+<div class="ad-widget ad-widget-ctrip">
+    <div id="{{#_id}}tripSearch{{/_id}}" class="ad-widget-widget ad-widget-tripSearch">
+        <ul id="{{#_id}}trip-ul{{/_id}}" class="ad-widget-trip-ul">
+            <li class="ad-widget-trip-li ad-widget-current ad-widget-current-top" id="{{#_id}}triptab1{{/_id}}">机票</li>
+            <li class="ad-widget-trip-li " id="{{#_id}}triptab2{{/_id}}">酒店</li>
+            <li class="ad-widget-trip-li " id="{{#_id}}triptab3{{/_id}}">旅游</li>
+            <li class="ad-widget-trip-li " id="{{#_id}}triptab4{{/_id}}">火车票</li>
+        </ul>
+        <div id="{{#_id}}content{{/_id}}" class="ad-widget-content">
+            <div class="ad-widget-trip-content ad-widget-content-air" id="{{#_id}}content-air{{/_id}}" style="display: none;">
+                <div class="ad-widget-trip-options">
+                    <div id="{{#_id}}flightSwitch{{/_id}}" class="ad-widget-air-type">
+                        <label class="ad-widget-domestic-label">
+                            <input id="{{#_id}}air-native{{/_id}}" class="ad-widget-flightway" name="flightway-air" type="radio" checked="checked" value="0"/>国内机票
+                        </label>&nbsp;
+                        <label class="ad-widget-domestic-label">
+                            <input id="{{#_id}}air-internal{{/_id}}" class="ad-widget-flightway" name="flightway-air" type="radio" value="1"/>国际机票
+                        </label>
+                    </div>
+                    <div class="ad-widget-flightway-type">
+                        <label class="ad-widget-domestic-label">
+                            <input id="{{#_id}}flightway-go{{/_id}}" class="ad-widget-flightway" name="flightway-type" type="radio" checked="checked" value="0"/>单程
+                        </label>&nbsp;
+                        <label class="ad-widget-domestic-label">
+                            <input id="{{#_id}}flightway-go-back{{/_id}}" class="ad-widget-flightway" name="flightway-type" type="radio" value="1"/>往返
+                        </label>
+                    </div>
+                </div>
+                <form id="{{#_id}}domestic-airway{{/_id}}" class="ad-widget-sub-form ad-widget-air-form" target="_blank" method="GET" action="http://u.ctrip.com/union/CtripRedirect.aspx" style="display:block">
+                    <div>
+                        <input type="hidden" name="utm_medium" value="cpc"/>
+                        <input type="hidden" name="utm_campaign" value="baidu81"/>
+                        <input type="hidden" name="utm_source" value="baidu"/>
+                        <input type="hidden" name="TypeID" value="20"/>
+                        <input type="hidden" name="sid" value="155952"/>
+                        <input type="hidden" name="allianceid" value="4897"/>
+                        <input type="hidden" name="ouid" value="domflight"/>
+                        <input type="hidden" name="StartCity" id="{{#_id}}domestic-startcity{{/_id}}" value="上海"/>
+                        <input type="hidden" name="DestCity" id="{{#_id}}domestic-endcity{{/_id}}" value="北京"/>
+                        <input type="hidden" name="encoding" value="2"/>
+                        <input type="hidden" id="{{#_id}}native-flightway{{/_id}}" name="Flightway" value="0"/>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="ad-widget-domestic-startcity">出发城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" id="{{#_id}}domestic-startcity-src{{/_id}}" class="ad-widget-default-text"  defaulttext="请输入出发城市" value="请输入出发城市"/>
+                        </div>
+                        <label class="ad-widget-control-label" for="ad-widget-domestic-endcity" style="padding-left:9px;">到达城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-right">
+                            <input type="text" id="{{#_id}}domestic-endcity-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入到达城市" value="请输入到达城市"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}domestic-startdate{{/_id}}">出发日期</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" name="DepartDate" id="{{#_id}}domestic-startdate{{/_id}}"/>
+                        </div>
+                        <label id="{{#_id}}date1-label{{/_id}}" class="ad-widget-control-label" for="{{#_id}}domestic-enddate{{/_id}}" style="padding-left:9px;display:none;">返回日期</label>
+                        <div id="{{#_id}}date1-input{{/_id}}" class="ad-widget-item-input ad-widget-item-right" style="display:none;">
+                            <input type="text" name="ReturnDate" id="{{#_id}}domestic-enddate{{/_id}}"/>
+                        </div>
+                        &nbsp;<input type="button" value="立即搜索" id="{{#_id}}domsch-air{{/_id}}" class="ad-widget-form-submit ad-widget-domsch-air"/>
+                    </div>
+                </form>
+                <form id="{{#_id}}inter-airway{{/_id}}" class="ad-widget-sub-form ad-widget-air-form" method="GET" target="_blank" action="http://u.ctrip.com/union/CtripRedirect.aspx"   style="display:none" >
+                    <div>
+                        <input type="hidden" name="utm_medium" value="cpc"/>
+                        <input type="hidden" name="utm_campaign" value="baidu81"/>
+                        <input type="hidden" name="utm_source" value="baidu"/>
+                        <input type="hidden" name="TypeID" value="21"/>
+                        <input type="hidden" name="sid" value="155952"/>
+                        <input type="hidden" name="allianceid" value="4897"/>
+                        <input type="hidden" name="ouid" value="intflight"/>
+                        <input type="hidden" name="StartCity" id="{{#_id}}inter-startcity{{/_id}}" value="北京"/>
+                        <input type="hidden" name="DestCity" id="{{#_id}}inter-endcity{{/_id}}" value="首尔"/>
+                        <input type="hidden" name="encoding" value="2"/>
+                        <input type="hidden" id="{{#_id}}internal-flightway{{/_id}}" name="Flightway" value="0"/>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="ad-widget-inter-startcity">出发城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" id="{{#_id}}inter-startcity-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入出发城市" value="请输入出发城市"/>
+                        </div>
+                        <label class="ad-widget-control-label" for="ad-widget-inter-endcity" style="padding-left:9px;">到达城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-right">
+                            <input type="text" id="{{#_id}}inter-endcity-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入到达城市" value="请输入到达城市"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}inter-startdate{{/_id}}">出发日期</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" name="DepartDate" id="{{#_id}}inter-startdate{{/_id}}"/>
+                        </div>
+                        <label id="{{#_id}}date2-label{{/_id}}" class="ad-widget-control-label" for="{{#_id}}inter-enddate{{/_id}}" style="padding-left:9px;display: none;">返回日期</label>
+                        <div id="{{#_id}}date2-input{{/_id}}" class="ad-widget-item-input ad-widget-item-right" style="display:none;">
+                            <input type="text" name="ReturnDate" id="{{#_id}}inter-enddate{{/_id}}"/>
+                        </div>
+                        &nbsp;<input type="button" value="立即搜索" id="{{#_id}}intersch-air{{/_id}}" class="ad-widget-form-submit ad-widget-intersch-air" />
+                    </div>
+                </form>
+            </div>
+            <div class="ad-widget-trip-content ad-widget-content-hotel" id="{{#_id}}content-hotel{{/_id}}" style="display: block;">
+                <form class="ad-widget-sub-form ad-widget-hotel-form" target="_blank" method="GET" action="http://u.ctrip.com/union/CtripRedirect.aspx">
+                    <div>
+                        <input type="hidden" name="utm_medium" value="cpc"/>
+                        <input type="hidden" name="utm_campaign" value="baidu81"/>
+                        <input type="hidden" name="utm_source" value="baidu"/>
+                        <input type="hidden" name="TypeID" value="10"/>
+                        <input type="hidden" name="sid" value="155952"/>
+                        <input type="hidden" name="allianceid" value="4897"/>
+                        <input type="hidden" name="ouid" value="hotel"/>
+                        <input type="hidden" name="CityName" id="{{#_id}}domestic-checkin{{/_id}}" value="上海"/>
+                        <input type="hidden" name="HotelName" id="{{#_id}}domestic-keyword{{/_id}}"/>
+                        <input type="hidden" name="encoding" value="2"/>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}domestic-checkin-src{{/_id}}">入住城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" id="{{#_id}}domestic-checkin-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入入住城市" value="请输入入住城市"/>
+                        </div>
+                        <label class="ad-widget-control-label" for="{{#_id}}domestic-keyword-src{{/_id}}" style="padding-left:8px;">&#12288;关键字</label>
+                        <div class="ad-widget-item-input ad-widget-item-right">
+                            <input type="text" id="{{#_id}}domestic-keyword-src{{/_id}}"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}domestic-checkindate{{/_id}}">入住日期</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" name="CheckInDate" id="{{#_id}}domestic-checkindate{{/_id}}"/>
+                        </div>
+                        <label class="ad-widget-control-label" for="{{#_id}}domestic-checkoutdate{{/_id}}" style="padding-left:8px;">退房日期</label>
+                        <div class="ad-widget-item-input ad-widget-item-right"><input type="text" name="CheckOutDate" id="{{#_id}}domestic-checkoutdate{{/_id}}" /></div>
+                    </div>
+                    <div class="ad-widget-search-btn">
+                        <input type="button" value="立即搜索" id="{{#_id}}domsch-hotel{{/_id}}" class="ad-widget-form-submit ad-widget-domsch-hotel"/>
+                    </div>
+                </form>
+            </div>
+            <div class="ad-widget-trip-content ad-widget-content-tour" id="{{#_id}}content-tour{{/_id}}" style="display: none;">
+                <form id="{{#_id}}number-tour{{/_id}}" class="ad-widget-sub-form ad-widget-tour-form" method="GET" target="_blank" action="http://u.ctrip.com/union/CtripRedirect.aspx">
+                    <div>
+                        <input type="hidden" name="utm_medium" value="cpc"/>
+                        <input type="hidden" name="utm_campaign" value="baidu81"/>
+                        <input type="hidden" name="utm_source" value="baidu"/>
+                        <input type="hidden" name="TypeID" value="30"/>
+                        <input type="hidden" name="AllianceID" value="4897"/>
+                        <input type="hidden" name="SID" value="155952"/>
+                        <input type="hidden" name="Ouid" value="vacation"/>
+                        <input type="hidden" name="StartCity" id="{{#_id}}tour-start-city{{/_id}}" value="北京"/>
+                        <input type="hidden" name="SearchValue" id="{{#_id}}tour-end-city{{/_id}}" value="三亚"/>
+                        <input type="hidden" name="encoding" value="2"/>
+                        <input type="hidden" name="Channel" value="1"/>
+                        <input type="hidden" name="isctrip" value="T"/>
+                        <input type="hidden" name="CurrentTab" value="126"/>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}tour-start-city-src{{/_id}}">出发城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" id="{{#_id}}tour-start-city-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入出发城市" value="请输入出发城市"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}tour-end-city-src{{/_id}}">目的城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-right">
+                            <input type="text" id="{{#_id}}tour-end-city-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入目的城市" value="请输入目的城市"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-search-btn">
+                        <input type="button" value="立即搜索" id="{{#_id}}stasch-tour{{/_id}}" class="ad-widget-form-submit ad-widget-stasch-tour"/>
+                    </div>
+                </form>
+                <div class="ad-widget-tour-places">
+                    {{#types}}
+                        <div class="ad-widget-tour-places-type">
+                            <span class="ad-widget-type-title">{{title}}</span>
+                            {{#items}}
+                            <a href="{{{rcv_url}}}" class="ad-widget-type-title-item{{_index}}" title2="类型{{index}}链接{{_index}}" target="_blank">{{text}}</a>
+                            {{/items}}
+                        </div>
+                    {{/types}}
+                </div>
+            </div>
+            <div class="ad-widget-trip-content ad-widget-content-train" id="{{#_id}}content-train{{/_id}}" style="display: none;">
+                <form id="{{#_id}}number-train{{/_id}}" class="ad-widget-sub-form ad-widget-train-form" method="GET" target="_blank" action="http://u.ctrip.com/union/CtripRedirect.aspx">
+                    <div>
+                        <input type="hidden" name="utm_medium" value="cpc"/>
+                        <input type="hidden" name="utm_campaign" value="baidu81"/>
+                        <input type="hidden" name="utm_source" value="baidu"/>
+                        <input type="hidden" name="TypeID" value="90"/>
+                        <input type="hidden" name="AllianceID" value="4897"/>
+                        <input type="hidden" name="SID" value="155952"/>
+                        <input type="hidden" name="Ouid" value="train"/>
+                        <input type="hidden" name="StartCityCn" id="{{#_id}}start-city{{/_id}}" value="上海"/>
+                        <input type="hidden" name="DestCityCn" id="{{#_id}}end-city{{/_id}}" value="北京"/>
+                        <input type="hidden" name="encoding" value="2"/>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="ad-widget-start-city">出发城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" id="{{#_id}}start-city-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入出发城市" value="请输入出发城市"/>
+                        </div>
+                        <label class="ad-widget-control-label" for="ad-widget-end-city" style="padding-left:9px;">到达城市</label>
+                        <div class="ad-widget-item-input ad-widget-item-right">
+                            <input type="text" id="{{#_id}}end-city-src{{/_id}}" class="ad-widget-default-text" defaulttext="请输入到达城市" value="请输入到达城市"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-item-content">
+                        <label class="ad-widget-control-label" for="{{#_id}}train-date{{/_id}}">出发日期</label>
+                        <div class="ad-widget-item-input ad-widget-item-left">
+                            <input type="text" name="StartDate" id="{{#_id}}train-date{{/_id}}"/>
+                        </div>
+                    </div>
+                    <div class="ad-widget-search-btn">
+                        <input type="button" value="立即搜索" id="{{#_id}}stasch-train{{/_id}}" class="ad-widget-form-submit ad-widget-stasch-train"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

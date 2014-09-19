@@ -1,0 +1,43 @@
+<!-- target:AD_ad_widget_zhidao_game -->
+<div class="ad-widget-zhidao ad-widget-zhidao-game">
+    {{#options}}
+    <div class="ec-item">
+        <div class="ec-game-logo">
+            <a target="_blank" href="{{{img_rcv_url}}}" title2="图片{{@index}}" >
+            <img src="{{img}}" />
+            </a>
+        </div>
+        <div class="ec-game-content">
+            <div class="ec-title">
+                {{#rankings}}
+                <span class="ec-rankings">{{rankings}}</span>
+                {{/rankings}}
+                <a target="_blank" href="{{{title_rcv_url}}}" title2="标题{{@index}}" >{{title}}</a>
+            </div>
+            {{#description}}
+            <div class="ec-description">{{description}}</div>
+            {{/description}}
+            {{#type}}
+            <div class="ec-type">类型：<span>{{type}}</span></div>
+            {{/type}}
+            {{#players}}
+            <div class="ec-players">人数：<span>{{players}}人</span></div>
+            {{/players}}
+            {{#time}}
+            <div class="ec-time">时间：<span>{{time}}</span></div>
+            {{/time}}
+            {{#play_rcv_url}}
+            <div class="ec-button"><a target="_blank" href="{{{play_rcv_url}}}" title2="按钮{{@index}}">开始游戏</a></div>
+            {{/play_rcv_url}}
+            {{#links}}
+            <div class="ec-link"><a target="_blank" href="{{{text_rcv_url}}}" title2="描述链接{{@index}}">{{text}}</a></div>
+            {{/links}}
+        </div>
+    </div>
+    {{/options}}
+    {{#more_rcv_url}}
+        <div class="ec-more">
+            <a target="_blank" href="{{{more_rcv_url}}}" title2="查看更多{{@index}}">查看更多&gt;&gt;</a>
+        </div>
+    {{/more_rcv_url}}
+</div>

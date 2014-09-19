@@ -1,0 +1,6 @@
+*.config.js
+*.min.js
+*.json.js
+*.spec.js
+*_mockup.js
+build/task/*

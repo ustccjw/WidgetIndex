@@ -1,0 +1,55 @@
+<!-- target:AD_ad_widget_baike_tab_container -->
+<div class="ad-widget-baike ad-widget-baike-tab-container">
+    <div class="ec-left">
+        <h3>明星产品</h3>
+        <ul id="{{#_id}}tab{{/_id}}">
+            {{#options}}
+            <li>
+                <h4>{{header}}</h4>
+                <div {{#@first}}class="ec-show"{{/@first}}>
+                {{#@first}}
+                    {{#items}}
+                    <a href="#" hidefocus="hidefocus" data-option-index="{{_option_index}}" data-item-index="{{_item_index}}">
+                        {{title}}
+                        {{#@first}}
+                        <span id="{{#_id}}attach{{/_id}}"></span>
+                        {{/@first}}
+                    </a>
+                    {{/items}}
+                {{/@first}}
+                {{^@first}}
+                    {{#items}}
+                    <a href="#" hidefocus="hidefocus" data-option-index="{{_option_index}}" data-item-index="{{_item_index}}">
+                        {{title}}
+                    </a>
+                    {{/items}}
+                {{/@first}}
+                </div>
+            </li>
+            {{/options}}
+        </ul>
+    </div>
+    <div class="ec-right">
+    {{#options}}
+    {{#@first}}
+        {{#items}}
+        {{#@first}}
+        <div class="ec-poster">
+            <h4 id="{{#_id}}title{{/_id}}">{{title}}</h4>
+            <img id="{{#_id}}img{{/_id}}" src="{{img}}">
+        </div>
+        <div class="ec-desc">
+            <h4>商品说明</h4>
+            <div id="{{#_id}}desc{{/_id}}">
+                {{#desc}}
+                <p>{{p}}</p>
+                {{/desc}}
+            </div>
+        </div>
+        {{/@first}}
+        {{/items}}
+    {{/@first}}
+    {{/options}}
+    </div>
+    {{#copyright}}<div class="ec-copyright"><span></span>{{copyright}}<span></span></div>{{/copyright}}
+</div>

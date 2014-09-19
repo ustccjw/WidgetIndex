@@ -1,0 +1,24 @@
+<!-- target:AD_ad_widget_search_box -->
+<div class="ad-widget ad-widget-search-box">
+    <form
+        id="{{#_id}}form{{/_id}}"
+        action="{{form.action}}"
+        target="_blank"
+        {{#form.method}}method="{{form.method}}"{{/form.method}}
+        {{#form.charset}}accept-charset="{{form.charset}}"{{/form.charset}}>
+
+        {{#form.params}}
+        <input type="hidden" name="{{key}}" value="{{value}}" />
+        {{/form.params}}
+        {{#form.label_query_name}}
+        <label for="{{form.query_name}}">{{form.label_query_name}}</label>
+        {{/form.label_query_name}}
+        <input type="text" name={{form.query_name}} id="{{#_id}}text{{/_id}}" value="{{placeholder}}" class="ec-text ec-placeholder">
+        {{#rcv_url}}
+        <a href="{{{rcv_url}}}" title2="submit" target="_blank"><input id="{{#_id}}submit-button{{/_id}}" type="button" class="ec-submit-button" value="{{button_text}}"></a>
+        {{/rcv_url}}
+        {{^rcv_url}}
+        <input id="{{#_id}}submit-button{{/_id}}" type="button" class="ec-submit-button" value="{{button_text}}">
+        {{/rcv_url}}
+    </form>
+</div>

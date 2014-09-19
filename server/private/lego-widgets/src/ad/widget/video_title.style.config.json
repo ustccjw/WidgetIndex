@@ -1,0 +1,22 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-video-title a",
+            "displayName": "文字设置",
+            "rules": [
+                {
+                    "name": "text-decoration",
+                    "displayName": "显示下划线",
+                    "options": ["none", "underline"],
+                    "defaultValue": "underline"
+                },
+                {
+                    "name": "color",
+                    "displayName": "颜色",
+                    "defaultValue": "#200000"
+                }
+            ]
+        }
+    ]
+}
+

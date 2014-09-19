@@ -1,0 +1,18 @@
+<!-- target:AD_ad_widget_landmark_multi_image_resizable -->
+<div id="{{#_id}}wrapper{{/_id}}" class="ad-widget-landmark ad-widget-landmark-multi-image-resizable">
+    <div class="ec-title">
+        <div class="ec-line"></div>
+        <a title2="官方网站" href="{{{site_rcv_url}}}" target="_blank">官方网址&gt;&gt;</a>
+        <span>{{title}}</span>
+    </div>
+    <div class="ec-images">
+        {{#images}}
+        <div class="ec-item">
+            <a title2="图片跳转{{@index}}" href="{{{rcv_url}}}" target="_blank">
+                <img src="{{image}}" />
+            </a>
+            <a title2="图片标题跳转{{@index}}" href="{{{rcv_url}}}" target="_blank">{{title}}</a>
+        </div>
+        {{/images}}
+    </div>
+</div>

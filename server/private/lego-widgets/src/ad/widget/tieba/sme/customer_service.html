@@ -1,0 +1,22 @@
+<!-- target:AD_ad_widget_tieba_customer_service -->
+<div class="ad-widget-tieba ad-widget-tieba-customer-service">
+    <div class="ec-service-title"{{#title_background_url}} style="border:1px solid #E6E6E6;padding-left:8px;background:url({{title_background_url}}) no-repeat 0 0;"{{/title_background_url}}>咨询官方</div>
+    <div class="ec-service-body">
+        <ul>
+            <li class="ec-service-post"><a title2="发贴咨询链接" href="{{{new_post_url}}}">发贴咨询</a></li>
+            {{#service_qq}}
+            <li class="ec-service-qq">
+                <a title2="在线咨询链接" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{service_qq}}&site=qq&menu=yes">在线即时咨询</a>
+            </li>
+            {{/service_qq}}
+            {{#tel}}
+            <li class="ec-service-tel">{{tel}}</li>
+            {{/tel}}
+            {{#rcv_url}}
+            <li class="ec-service-url">
+                <a href="{{{rcv_url}}}" target="_blank">官网链接</a>
+            </li>
+            {{/rcv_url}}
+        </ul>
+    </div>
+</div>

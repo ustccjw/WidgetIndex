@@ -1,0 +1,271 @@
+[
+    {
+        "name": "card_main",
+        "displayName": "名片",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 12,
+                    "maxTextByteLength": 60,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 4,
+                            "maxTextByteLength": 20,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最少6个汉字，最多30个汉字",
+                "multiline": false
+            },
+            {
+                "name": "title_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "display_official_site_icon",
+                "datatype": "BOOL",
+                "displayName": "是否显示“官网”字样",
+                "defaultValue": false,
+                "display": "none",
+                "rules": {}
+            },
+            {
+                "name": "logo_img",
+                "displayName": "LOGO",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 75,
+                    "height": 75,
+                    "maxSize": 10,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "logo_rcv_url",
+                "displayName": "LOGO跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "description",
+                "displayName": "描述",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 72,
+                    "maxByteLength": 136
+                },
+                "extraAttr": {},
+                "multiline": true
+            },
+            {
+                "name": "links",
+                "displayName": "短链",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 2,
+                    "maxCount": 2
+                },
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文字",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "minByteLength": 4,
+                            "maxByteLength": 30
+                        },
+                        "extraAttr": {},
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 1024
+                        },
+                        "extraAttr": {},
+                        "tip": "http://",
+                        "multiline": false
+                    }
+                ]
+            },
+            {
+                "name": "site",
+                "displayName": "网址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 32
+                },
+                "extraAttr": {},
+                "tip": "www.",
+                "multiline": false
+            }
+        ]
+    },
+    {
+        "name": "news_list",
+        "displayName": "新闻列表",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "新闻",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "title",
+                        "displayName": "新闻标题",
+                        "defaultValue": "",
+                        "datatype": "HTML",
+                        "rules": {
+                            "required": true,
+                            "minTextByteLength": 4,
+                            "maxTextByteLength": 44,
+                            "tagList": {
+                                "em": {
+                                    "minTextByteLength": 4,
+                                    "maxTextByteLength": 20,
+                                    "minCount": 1,
+                                    "maxCount": 1
+                                }
+                            }
+                        },
+                        "extraAttr": {
+                            "editorConfig": {
+                                "tools": [
+                                    "emphasize"
+                                ]
+                            },
+                            "tagList": {
+                                "em": {
+                                    "isAllowNoContent": false,
+                                    "isSimpleTag": false
+                                }
+                            }
+                        },
+                        "multiline": false
+                    },
+                    {
+                        "name": "title_rcv_url",
+                        "displayName": "新闻标题跳转地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 1024
+                        },
+                        "extraAttr": {},
+                        "tip": "http://",
+                        "multiline": false
+                    },
+                    {
+                        "name": "source",
+                        "displayName": "新闻来源",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "minByteLength": 4,
+                            "maxByteLength": 16
+                        },
+                        "extraAttr": {},
+                        "multiline": false
+                    },
+                    {
+                        "name": "time",
+                        "displayName": "日期",
+                        "defaultValue": "",
+                        "tip": "20XX-XX-XX",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "regex": {
+                                "pattern": "^20\\d{2}-\\d{2}-\\d{2}$",
+                                "modifiers": "i",
+                                "errorText": "日期格式错误"
+                            }
+                        },
+                        "extraAttr": {},
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 2,
+                    "maxCount": 2
+                }
+            }
+        ]
+    },
+    {
+        "name": "ader_info",
+        "displayName": "官网V认证请求URL",
+        "defaultValue": "",
+        "datatype": "HIDDEN",
+        "rules": {
+            "required": true,
+            "regex": {
+                "pattern": "^(http://10.)|(http://gx.baidu.com)",
+                "errorText": "不是合法的URL",
+                "modifiers": "i"
+            }
+        }
+    }
+]

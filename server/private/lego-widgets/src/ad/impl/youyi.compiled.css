@@ -1,0 +1,117 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: youyi.less 150523 2013-06-07 10:29:22Z DestinyXie$ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/youyi.less ~ 2013/06/07 10:29:22
+ * @author xiebin01@baidu.com (DestinyXie), fanxueliang@baidu.com
+ * @version $Revision: 150523 $ 
+ * @description 
+ * youyi样式文件
+ **/
+#canvas {
+  padding-top: 50px;
+  background: url("//bs.baidu.com/adtest/4b229a60f381d4ee4b4a6edfe0d80d14.jpg") no-repeat;
+  font: 12px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+  width: 538px;
+}
+#canvas .layout {
+  width: 518px;
+  background: #CAEFFF;
+  padding: 10px 5px 5px;
+  border: 5px solid #27B0FC;
+  border-top: none;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding-top: 8px;
+}
+#canvas .ad-block-1-0,
+#canvas .ad-block-1-1 {
+  float: left;
+}
+#canvas .ad-block-1-0 {
+  margin-right: 10px;
+}
+#canvas .ad-widget-title {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-title h2 .ec-official-site {
+  background-color: #2B99FF;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  margin-left: 10px;
+  padding: 0 6px;
+  vertical-align: text-bottom;
+}
+#canvas .ad-widget-title a {
+  color: #0000cc;
+  word-wrap: normal;
+}
+#canvas .ad-widget-video object,
+#canvas .ad-widget-video embed {
+  display: block;
+}
+#canvas .ad-widget-small-head {
+  width: 254px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #333;
+  text-indent: 2em;
+}
+#canvas .ad-widget-small-head .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-widget-small-head .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 10px;
+}
+#canvas .ad-widget-small-head .ec-image-group a,
+#canvas .ad-widget-small-head .ec-image-group img {
+  width: 78px;
+  height: 59px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  margin-right: 10px;
+  border: none;
+}
+#canvas .ad-widget-small-head .ec-image-group .ec-last {
+  margin-right: 0;
+}
+#canvas .ad-widget-image {
+  margin-top: 10px;
+}
+#canvas .ad-widget-image img {
+  width: 518px;
+  height: 108px;
+}
+#canvas .ad-widget-button-group {
+  background: #CAEFFF;
+  padding: 10px 0 5px 0;
+}
+#canvas .ad-widget-button-group tr td {
+  border-right: 0 none;
+  padding-right: 10px;
+}
+#canvas .ad-widget-button-group tr td a {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #22A0E9;
+  background: #22A0E9;
+  color: #fff;
+  text-decoration: none;
+}
+#canvas .ad-widget-button-group .ec-last {
+  padding-right: 0;
+}

@@ -1,0 +1,34 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/siva/description_v2.less ~ 2013/11/18 17:18:45
+ * @author taoxutian@baidu.com (taoxutian)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * description_v2样式文件
+ **/
+.ad-widget-siva-description-v2 {
+  width: 259px;
+  position: relative;
+}
+.ad-widget-siva-description-v2 a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  line-height: 20px;
+  text-align: justify;
+}
+a.ad-widget-siva-description-v2-see-more {
+  color: #0000cc;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

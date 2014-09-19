@@ -1,0 +1,371 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: ctrip.less 10927 2012-08-05 07:35:29Z fanxueliang $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/ctrip.less ~ 2013/01/24 21:08:37
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 10927 $
+ * @description
+ * button样式文件
+ **/
+
+@import-once "mixins.less";
+
+.ad-widget-ctrip {
+    font: 13px/1.5 arial,sans-serif;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    label, form {
+        margin: 0;
+        padding: 0;
+    }
+    .ad-widget-tripSearch {
+        z-index: 10;
+        width: 535px;
+        height: 124px;
+    }
+    .ad-widget-content {
+        padding: 10px 8px 0px 8px;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ad-widget-flightway {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        .ad-widget-default-text {
+            color: #666;
+        }
+    }
+    .ad-widget-trip-ul {
+        .gain-bfc();
+        background: url(//bs.baidu.com/lego-mat/line-805ca8c4.png) repeat-x center bottom;
+        width: 535px;
+        height: 24px;
+    }
+    .ad-widget-trip-li {
+        float: left;
+        display: inline;
+        color: #0000cc;
+        cursor: pointer;
+        font-size: 12px;
+        height: 22px;
+        line-height: 22px;
+        width: 122px;
+        margin-left: 8px;
+        border: 1px solid #BECCF1;
+        border-bottom:none;
+        background: #E4EBFB;
+        text-align: center;
+    }
+    .ad-widget-current {
+        color: #000;
+        background-color: #FFF;
+        height: 23px;
+        cursor: default;
+    }
+    .ad-widget-trip-options {
+        .gain-bfc();
+        margin-bottom: 5px;
+    }
+    .ad-widget-air-type,
+    .ad-widget-flightway-type {
+        float: left;
+        height: 18px;
+        line-height: 18px;
+    }
+    .ad-widget-air-type {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #ccc;
+    }
+    .ad-widget-item-content {
+        height: 32px;
+        line-height: 32px;
+    }
+    .ad-widget-item-left,
+    .ad-widget-item-right{
+        display: inline;
+        color: #333;
+        font-size: 12px;
+        line-height: 32px;
+        height: 32px;
+        text-indent: -100px;
+    }
+    .ad-widget-item-left{
+        width: 211px;
+    }
+    .ad-widget-item-right{
+        width: 240px;
+    }
+    .ad-widget-item-left input,
+    .ad-widget-item-right input {
+        width: 135px;
+        *width: 130px;
+        padding-left: 3px;
+        margin-left: 5px;
+        border-color: #BBB #DDD #DDD #BBB;
+        border-style: solid;
+        border-width: 1px;
+        height: 20px;
+        line-height: 20px;
+        outline: none;
+        color: #333;
+    }
+    .ad-widget-search-btn {
+        padding-top: 3px;
+    }
+    .ad-widget-form-submit {
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        width: 85px;
+        height: 24px;
+        line-height: 24px;
+        border: 0;
+        color: #000;
+        font-size: 12px;
+        background: url(//bs.baidu.com/adtest/bdc4be2651656ea82b0f017958d7635c.jpg) no-repeat;
+    }
+    .ad-widget-hotel-form,
+    .ad-widget-train-form,
+    .ad-widget-content-tour {
+        margin-top: 0px;
+    }
+    .ad-widget-content-tour {
+        .gain-bfc();
+    }
+    .ad-widget-tour-places,
+    .ad-widget-tour-form {
+        float: left;
+    }
+    .ad-widget-tour-form {
+        width: 205px;
+    }
+    .ad-widget-tour-places {
+        display: inline;
+        width: 290px;
+        margin-left: 7px;
+        padding-left: 14px;
+        border-left: 1px solid #e1e1e1;
+    }
+    .ad-widget-tour-places .ad-widget-tour-places-type {
+        height: 16px;
+        color: #000;
+        line-height: 16px;
+        padding: 7px 0;
+        .gain-bfc();
+    }
+    .ad-widget-tour-places-type a,
+    .ad-widget-tour-places-type span {
+        float: left;
+        display: inline;
+    }
+    .ad-widget-tour-places-type a{
+        padding: 0 5px;
+        color: #0000cc;
+        border-left: 1px solid #c3c3c3;
+    }
+    .ad-widget-tour-places-type .ad-widget-type-title-item1 {
+        border-left: none;
+    }
+    .ad-widget-content-air {
+        margin-top: 0px;
+    }
+}
+
+.ui-autocomplete {
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 3px #EEEEEE;
+}
+.ui-autocomplete-ctn{
+    margin: 0;
+    padding: 0;
+    height: 160px;
+    width: 135px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    list-style: none;
+}
+.ui-autocomplete-item {
+    width: 135px;
+    overflow:hidden;
+    list-style: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+    padding:0 10px 0 10px;
+    cursor: default;
+}
+.ui-autocomplete-item-hover{
+    background: #4778DA;
+    color: #FFFFFF;
+}
+span.ui-autocomplete-item-hl {
+    color: #F60;
+}
+.ui-calendar {
+    position: absolute;
+    font: 16px/20px, arial, sans-serif;
+    background: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #dadada;
+    box-shadow: 1px 1px 9px #ccc;
+    text-align: center;
+}
+.ui-calendar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 30px;
+    clear: both;
+    width: 210px;
+    color: #333;
+    zoom: 1;
+}
+.ui-calendar ul:after {
+    display: block;
+    content: "";
+    visibility: hidden;
+    font-size: 0;
+    clear: both;
+    height: 0;
+}
+.ui-calendar li {
+    float: left;
+    text-align: center;
+    width: 30px;
+    padding: 3px 0;
+    cursor: pointer;
+}
+.ui-calendar .ui-calendar-navigation {
+    font-size: 14px;
+    border-bottom: 1px solid #dadada;
+}
+.ui-calendar .ui-calendar-month-year {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 150px;
+}
+.ui-calendar .month:hover,
+.ui-calendar .year:hover {
+    color: #d64;
+}
+.ui-calendar .ui-calendar-previous-year:hover,
+.ui-calendar .ui-calendar-previous-month:hover,
+.ui-calendar .ui-calendar-next-month:hover,
+.ui-calendar .ui-calendar-next-year:hover {
+    color: #d64;
+}
+.ui-calendar .ui-calendar-data-container {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.ui-calendar .ui-calendar-date-column .previous-month,
+.ui-calendar .ui-calendar-date-column .next-month {
+    color: #ccc;
+}
+.ui-calendar .ui-calendar-year-column li,
+.ui-calendar .ui-calendar-month-column li {
+    width: 65px;
+    margin: 2px;
+    padding: 2px 0;
+    border-radius: 4px;
+}
+.ui-calendar li.ui-calendar-day-0,
+.ui-calendar li.ui-calendar-day-6 {
+    color: #d64;
+}
+.ui-calendar .ui-calendar-year-column li:hover,
+.ui-calendar .ui-calendar-month-column li:hover,
+.ui-calendar .ui-calendar-date-column li:hover {
+    color: #333;
+    background: #dadada;
+}
+.ui-calendar .ui-calendar-date-column li.disabled-date {
+    background: #eee;
+    color: #bbb;
+    cursor: not-allowed;
+}
+.ui-calendar .ui-calendar-year-column li.focused-element,
+.ui-calendar .ui-calendar-month-column li.focused-element,
+.ui-calendar .ui-calendar-date-column li.focused-element {
+    color: #fff;
+    background: #d64;
+}
+.ui-calendar .ui-calendar-footer {
+    color: #999;
+}
+.ui-calendar .ui-calendar-today,
+.ui-calendar .ui-calendar-time {
+    width: auto;
+    padding: 3px 4px;
+}
+.ui-calendar .ui-calendar-time {
+    float: right;
+}
+.ui-calendar ul,
+.ui-calendar .ui-calendar-data-container {
+    *float: left;
+    *clear: both;
+}
+.ui-calendar-control {
+     border-top: 1px solid #dadada;
+}
+.ui-calendar-previous-month{
+    left: 5px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 38px;
+    cursor: pointer;
+    margin-top: -19px;
+    text-indent: -99999px;
+    background: #FFF url(//bs.baidu.com/adtest/21ea08a59fbf796cfe6bbcc87ece287e.png) 0 0 no-repeat;
+    background-position: 0 0;
+}
+.ui-calendar-next-month {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 38px;
+    cursor: pointer;
+    margin-top: -19px;
+    text-indent: -99999px;
+    background: #FFF url(//bs.baidu.com/adtest/21ea08a59fbf796cfe6bbcc87ece287e.png) 0 0 no-repeat;
+    right: 5px;
+    background-position: -20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

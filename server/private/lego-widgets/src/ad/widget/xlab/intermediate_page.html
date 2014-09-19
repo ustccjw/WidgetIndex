@@ -1,0 +1,86 @@
+<!-- target:AD_ad_widget_xlab_intermediate_page -->
+<div class="ad-widget-xlab ad-widget-xlab-intermediate-page">
+  <div class="wrapper">
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <ul id="{{#_id}}thumbnails{{/_id}}" class="thumbnails">
+            {{#detail.thumbnails}}
+            <li class="active"><img data-large-image-src="{{large}}" src="{{small}}" width="68" height="58"/><i class="icon"></i></li>
+            {{/detail.thumbnails}}
+          </ul>
+        </td>
+        <td>
+          <div class="product-preview">
+            <a target="_blank" href="{{{detail.large_image_url}}}"><img width="258" height="192" id="{{#_id}}large-image{{/_id}}" /></a>
+          </div>
+        </td>
+        <td>
+          <div class="meta">
+            <img src="{{detail.merchant_logo_url}}" width="111" height="17" />
+            <h3><a target="_blank" href="{{{detail.product_url}}}">{{detail.product_name}}</a></h3>
+            <div class="rebate-price"><label>售价：</label>￥{{detail.rebate_price}}</div>
+            <div class="market-price"><label>市场价：</label>￥{{detail.market_price}}</div>
+            <div class="rating-summary"><label>用户评分：</label><img src="http://bs.baidu.com/adtest/5-star.png" width="69" height="13"/><a target="_blank" href="{{{detail.product_comment_url}}}">（{{detail.product_comment_count}}人已评论）</a></div>
+            <div class="buy-it">
+              <a target="_blank" href="{{{detail.product_view_url}}}"><img width="128" height="38" src="http://bs.baidu.com/adtest/button.png" alt="查看详情" /></a>
+              <div class="tip">优惠：购物满59元免运费</div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <dl>
+      <dt>商品评价</dt>
+      <dd>
+        <table cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="rating-summary">好评率<div class="value">{{ratings.good}}%</div></td>
+            <td class="rating-detail">
+              <table cellpadding="0" cellspacing="0">
+                <tr>
+                  <th>好评</th>
+                  <td><div class="progress"><div class="bar" style="width:{{ratings.good}}%"></div></div></td>
+                  <th>{{ratings.good}}%</th>
+                </tr>
+                <tr>
+                  <th>中评</th>
+                  <td><div class="progress"><div class="bar" style="width:{{ratings.middle}}%"></div></div></td>
+                  <th>{{ratings.middle}}%</th>
+                </tr>
+                <tr>
+                  <th>差评</th>
+                  <td><div class="progress"><div class="bar" style="width:{{ratings.bad}}%"></div></div></td>
+                  <th>{{ratings.bad}}%</th>
+                </tr>
+              </table>
+            </td>
+            <td class="rating-comments">
+              {{#ratings.comments}}
+              <div class="comment"><span class="author">{{author}}：</span>{{content}}</div>
+              {{/ratings.comments}}
+              <a target="_blank" href="{{{ratings.more_comment_url}}}">查看全部评价&gt;&gt;</a>
+            </td>
+          </tr>
+        </table>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a target="_blank" href="{{{recommands.more_url}}}">更多&gt;&gt;</a>猜你喜欢</dt>
+      <dd>
+        <div class="products">
+          {{#recommands.items}}
+          <div class="product-item">
+            <a target="_blank" href="{{{url}}}"><img src="{{image_url}}" width="78" height="78"></a>
+            <div class="info">
+              <h3>{{confidence_rate}}%会买：<a title="{{title}}" target="_blank" href="{{{url}}}">{{title}}</a></h3>
+              <div class="market-price">市场价￥{{market_price}}</div>
+              <div class="rebate-price">售价￥{{rebate_price}}</div>
+            </div>
+          </div>
+          {{/recommands.items}}
+        </div>
+      </dd>
+    </dl>
+  </div>
+</div>

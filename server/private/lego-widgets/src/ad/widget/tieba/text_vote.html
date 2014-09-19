@@ -1,0 +1,16 @@
+<!-- target:AD_ad_widget_tieba_text_vote -->
+<div class="ad-widget-tieba ad-widget-tieba-text-vote">
+    <div class="ec-text-vote-main-image">
+        <img src="{{image_url}}" />
+    </div>
+    <div class="ec-text-vote-right">
+        <div class="ec-text-vote-desc">
+            {{#description}}
+                <div class="ec-text-vote-desc-item">{{.}}</div>
+            {{/description}}
+        </div>
+        <div class="ec-text-vote-btn">
+            <a href="{{{tieba_post_url}}}" target="_blank">参与投票</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: multi_video_thunbnail.less  2012-07-19 10:17:29Z wangdawei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/multi_video_thunbnail.less~ 2012/07/19 22:10:40
+ * @author wangdawei(wangdawei04@baidu.com)
+ * @version $Revision:$ 
+ * @description 
+ *  
+ **/
+.ad-widget-multi-video-thunbnail {
+  width: 230px;
+  height: 208px;
+  position: absolute;
+  top: 116px;
+  left: 580px;
+}
+.ad-widget-multi-video-thunbnail .ec-thunbnail-bg {
+  display: block;
+  width: 230px;
+  height: 208px;
+  background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ad-widget-multi-video-thunbnail .ec-thunbnail-cont {
+  overflow: hidden;
+  zoom: 1;
+  position: absolute;
+  width: 230px;
+  height: 208px;
+  top: 0;
+  left: 0;
+}
+.ad-widget-multi-video-thunbnail .ec-item {
+  float: left;
+  margin: 10px 0 0 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  position: relative;
+  display: inline;
+}
+.ad-widget-multi-video-thunbnail .ec-item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.ad-widget-multi-video-thunbnail .ec-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+  color: #fff;
+}
+.ad-widget-multi-video-thunbnail .ec-play-btn {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  left: 0;
+  color: #fff;
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 10px;
+  background: #2C99FF;
+}
+.ad-widget-multi-video-thunbnail .ec-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 56px;
+  color: #fff;
+}
+.ad-widget-multi-video-thunbnail .ec-video-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.35);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

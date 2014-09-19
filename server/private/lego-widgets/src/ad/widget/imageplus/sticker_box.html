@@ -1,0 +1,13 @@
+<!-- target:AD_ad_widget_imageplus_sticker_box -->
+<div class="ad-widget-imageplus-sticker {{box._theme_class}}">
+    {{#box.is_cut_show}}<div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-wrapper" id="{{#_id}}wrapper{{/_id}}">{{/box.is_cut_show}}
+    <div class="ad-widget-imageplus-sticker-bg" id="{{#_id}}background{{/_id}}"></div>
+    <div class="ad-widget-imageplus-sticker-bd" id="{{#_id}}body{{/_id}}">
+        {{{_content}}}
+    </div>
+    {{#box.is_cut_show}}</div>{{/box.is_cut_show}}
+    <a class="ad-widget-imageplus-sticker-close" href="#" id="{{#_id}}close{{/_id}}">X</a>
+</div>
+<div class="ad-widget-imageplus-sticker-thumbnail" id="{{#_id}}thumbnail{{/_id}}" style="display:none;">
+    <a href="#" title="点击展开"><i>&nbsp;</i>图片相关信息</a>
+</div>

@@ -1,0 +1,178 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/sprite.less ~ 2014/08/18 11:17:20
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $
+ * @description
+ * sprite样式文件
+ **/
+#canvas {
+  font: 13px/1.5 arial, sans-serif;
+  width: 528px;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 5px solid #009639;
+}
+#canvas .ad-block-0 {
+  margin: 3px 5px 8px 5px;
+}
+#canvas .ad-block-1 {
+  margin: 5px;
+  height: 144px;
+}
+#canvas .ad-block-1-0 {
+  float: left;
+}
+#canvas .ad-block-1-1 {
+  height: 100%;
+  margin-left: 264px;
+  position: relative;
+}
+#canvas .ad-block-1-1 .ad-widget-small-head .ec-description {
+  line-height: 1.5;
+  text-indent: 2em;
+}
+#canvas .ad-block-1-1 .ad-widget-small-head .ec-description .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list-fluid {
+  margin-top: 6px;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list-fluid .ec-link {
+  float: left;
+  width: 120px;
+  _width: 118px;
+  height: 24px;
+  margin-bottom: 8px;
+  *margin-bottom: 5px;
+  _margin-bottom: 8px;
+  border: 1px solid #D8D8D8;
+  line-height: 24px;
+  text-align: center;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list-fluid .ec-link .ec-link-wrapper a {
+  height: auto;
+  color: black;
+  text-decoration: none;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list-fluid .ec-link-0,
+#canvas .ad-block-1-1 .ad-widget-button-list-fluid .ec-link-2 {
+  margin-left: 0;
+}
+#canvas .ad-block-2 {
+  margin-top: 15px;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head {
+  height: 28px;
+  margin: 0;
+  text-align: center;
+  background: #88c369;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li {
+  display: block;
+  float: left;
+  margin: 0;
+  height: 100%;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab {
+  background-color: #009639;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a {
+  color: #fff;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head a {
+  display: block;
+  height: 15px;
+  margin: 6px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  border: none;
+  border-right: 1px solid white;
+  background-color: transparent;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a,
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-previous-tab a,
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-tab-list-last a {
+  border-bottom: none;
+  background-color: transparent;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-tab-list-last a {
+  border-right: none;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a {
+  border-right-color: #009639;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-previous-tab a {
+  border-right-color: #88c369;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-body {
+  height: 127px;
+  overflow: hidden;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-image img {
+  width: 100%;
+  height: 127px;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo {
+  margin: 10px;
+  padding: 0;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo .ec-name {
+  padding-right: 20px;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo .ec-follow {
+  float: right;
+  width: 78px;
+  height: 23px;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo .ec-text {
+  height: auto;
+  margin-top: 4px;
+  padding: 0 8px;
+  color: #447d30;
+  line-height: 1;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo .ec-seprate {
+  border-color: #447d30;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo .ec-rightbtn {
+  margin-top: 2px;
+  line-height: 1.2;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ad-widget-sina-weibo .ec-rightbtn a {
+  padding: 0 3px;
+  color: #447d30;
+}
+.ec-float-video-layer-fwc .ad-widget-float-window-container .ec-cont {
+  left: 28px;
+  top: 72px;
+}
+.ec-float-video-layer-fwc .ad-widget-float-window-container .ad-widget-video,
+.ec-float-video-layer-fwc .ad-widget-float-window-container .ad-widget-video embed,
+.ec-float-video-layer-fwc .ad-widget-float-window-container .ad-widget-video object {
+  width: 540px;
+  height: 304px;
+}
+.ec-float-video-layer-fwc .ad-widget-float-window-container .ec-close {
+  width: 35px;
+  height: 35px;
+  background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  right: 0;
+  top: 0;
+}
+.ec-float-video-layer-fwc .ad-widget-float-window-container .ec-close:hover {
+  background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

@@ -1,0 +1,31 @@
+<!-- target:AD_ad_widget_zhidao_faq -->
+<div class="ad-widget-zhidao ad-widget-zhidao-faq">
+    <div class="ec-faq-content">
+        {{#title}}
+        <div class="ec-faq-title">推广链接</div>
+        {{/title}}
+        {{#options}}
+        <div class="ec-faq-item">
+            {{#question}}
+            <div class="ec-faq-question">
+                <a target="_blank" title2="问题{{@index}}" href="{{{question_rcv_url}}}" >{{{question}}}</a>
+            </div>
+            {{/question}}
+            {{#answer}}
+            <div class="ec-faq-answer">
+                <img src="//bs.baidu.com/adtest/16db3a671123285a65777e837ef6636b.jpg" />
+                <a target="_blank" title2="回答{{@index}}" href="{{{answer_rcv_url}}}" >{{{answer}}}</a>
+            </div>
+            {{/answer}}
+            <div class="ec-faq-foot">
+                {{#reason}}
+                <span class="ec-foot-left">{{reason}}</span>
+                {{/reason}}
+                {{#source}}
+                <span class="ec-foot-right">{{source}}</span>
+                {{/source}}
+            </div>
+        </div>
+        {{/options}}
+    </div>
+</div>

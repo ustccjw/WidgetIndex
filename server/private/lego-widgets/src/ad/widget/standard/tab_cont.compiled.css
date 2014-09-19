@@ -1,0 +1,81 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/standard/tab_cont.less ~ 2013/10/26 20:40:54
+ * @author liyubei@baidu.com (liyubei)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * tab_cont样式文件
+ **/
+.ad-widget-standard-tab-cont {
+  font: 13px/20px arial, sans-serif;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-standard-tab-cont .ec-img,
+.ad-widget-standard-tab-cont .ec-description {
+  float: left;
+}
+.ad-widget-standard-tab-cont .ec-img {
+  margin-right: 10px;
+}
+.ad-widget-standard-tab-cont .ec-img img {
+  display: block;
+}
+.ad-widget-standard-tab-cont .ec-description {
+  width: 250px;
+  height: 96px;
+  overflow: hidden;
+}
+.ad-widget-standard-tab-cont p,
+.ad-widget-standard-tab-cont ul {
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-standard-tab-cont a {
+  color: #000;
+}
+.ad-widget-standard-tab-cont p {
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 7px;
+}
+.ad-widget-standard-tab-cont p a {
+  text-decoration: none;
+}
+.ad-widget-standard-tab-cont img {
+  border: none;
+  width: 255px;
+  height: 96px;
+}
+.ad-widget-standard-tab-cont ul {
+  list-style: none;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-standard-tab-cont li {
+  float: left;
+  width: 130px;
+  line-height: 23px;
+}
+.ad-widget-standard-tab-cont li a {
+  background: url(//bs.baidu.com/lego-mat/black-dot-93b0c977.png) no-repeat left center;
+  padding-left: 6px;
+}
+.ad-widget-standard-tab-cont .ec-1,
+.ad-widget-standard-tab-cont .ec-2 {
+  margin-top: 6px;
+}
+.ad-widget-standard-tab-cont .ec-2,
+.ad-widget-standard-tab-cont .ec-4 {
+  width: 118px;
+  text-align: right;
+}
+.ad-widget-standard-tab-cont .ec-pro-title a {
+  text-decoration: none;
+  font-weight: 700;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

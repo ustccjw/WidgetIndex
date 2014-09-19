@@ -1,0 +1,701 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/tuhua/board.less ~ 2014/05/29 16:07:09
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * board样式文件
+ **/
+.ad-widget-imageplus-tuhua-board {
+  color: white;
+  font-family: "微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+  *zoom: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+}
+.ad-widget-imageplus-tuhua-board:before,
+.ad-widget-imageplus-tuhua-board:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-board:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title {
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000, endColorstr=#66000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000, endColorstr=#66000000);
+  *zoom: 1;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title:before,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-mail,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-comment,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-plus,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-return {
+  width: 48px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+  float: right;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-mail b,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-comment b,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-plus b,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-return b {
+  color: red;
+  font-size: 10px;
+  font-family: 'Arial' !important;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  line-height: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-mail:hover,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-comment:hover,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-plus:hover,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-return:hover {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-plus {
+  width: 36px;
+  font-size: 26px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-mail-shake {
+  -webkit-animation: receive_message 3s ease 1s infinite;
+  -moz-animation: receive_message 3s ease 1s infinite;
+  animation: receive_message 3s ease 1s infinite;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-self-pic {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-self-pic .ad-tuhua-user-panel {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 29px;
+  right: 0;
+  font-size: 12px;
+  color: #333;
+  padding: 5px 10px;
+  background: #fff;
+  *zoom: 1;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -webkit-box-shadow: 2px 2px 0px #666666;
+  -moz-box-shadow: 2px 2px 0px #666666;
+  box-shadow: 2px 2px 0px #666666;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-self-pic .ad-tuhua-user-panel:before,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-self-pic .ad-tuhua-user-panel:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-self-pic .ad-tuhua-user-panel:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-self-pic .ad-tuhua-user-panel-arrow {
+  border: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: 7px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-tuhua-user-panel-hover .ad-tuhua-user-panel {
+  display: block;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-user-nickname {
+  white-space: nowrap;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-user-info {
+  float: right;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-return {
+  color: white;
+  float: left;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-icon-return:hover {
+  color: orange;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-tuhua-user-notice {
+  float: right;
+  margin-right: 10px;
+  margin-top: 14px;
+  line-height: 12px;
+  font-size: 12px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-tuhua-user-notice input {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-title .ad-tuhua-user-notice a {
+  vertical-align: middle;
+  color: white;
+  text-decoration: underline;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-body {
+  *zoom: 1;
+  margin: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-body:before,
+.ad-widget-imageplus-tuhua-board .ad-tuhua-body:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-body:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-board .ad-carousel {
+  height: 180px;
+  *zoom: 1;
+}
+.ad-widget-imageplus-tuhua-board .ad-carousel:before,
+.ad-widget-imageplus-tuhua-board .ad-carousel:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-board .ad-carousel:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-board .ad-arrow {
+  display: block;
+  width: 30px;
+  height: 100%;
+  line-height: 100%;
+  float: left;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.ad-widget-imageplus-tuhua-board .ad-arrow-prev:hover,
+.ad-widget-imageplus-tuhua-board .ad-arrow-next:hover {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-wrapper {
+  width: 300px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-body {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item {
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item table {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-collapse: collapse;
+  position: relative;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 15px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item b a {
+  text-decoration: underline;
+  color: #ccc;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item b i {
+  font-style: normal;
+  color: #ccc;
+  text-decoration: underline;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item .ad-user-profile {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 40px;
+  line-height: 40px;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item .ad-user-profile img {
+  float: left;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item .ad-user-nocomment {
+  visibility: hidden;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item .ad-user-self .ad-reply-entry {
+  display: none;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item .ad-user-self b {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-slide-item .ad-user-self b a {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-act-complain {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ad-widget-imageplus-tuhua-board .ad-act-complain:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot {
+  height: 36px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot input {
+  margin: 0;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+  padding: 8px 4px;
+  background: #FFF;
+  border: none;
+  height: 36px;
+  *height: 30px;
+  line-height: 20px;
+  background-image: -webkit-gradient(linear, 0 0, 0 2, from(#ececec), to(#ffffff));
+  background-image: -moz-linear-gradient(top, #ececec, #ffffff 2px, #ffffff);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot a.ad-button {
+  margin-left: 10px;
+  display: block;
+  float: left;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot label {
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  height: 36px;
+  line-height: 36px;
+  color: #999;
+  font-size: 14px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot .ad-icon-add {
+  width: 41px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+  float: right;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot .ad-icon-add:hover {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot .ad-comment-entry {
+  text-align: right;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  overflow: hidden;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-foot .ad-comment-entry span {
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+.ad-widget-imageplus-tuhua-board .ad-reply-container {
+  float: right;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  margin-right: -10px;
+  position: relative;
+}
+.ad-widget-imageplus-tuhua-board .ad-reply-container-open {
+  width: 100%;
+}
+.ad-widget-imageplus-tuhua-board .ad-reply-entry {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 10px 0 0;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item {
+  line-height: 24px;
+  font-size: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  position: relative;
+  *zoom: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item b {
+  font-size: 14px;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item b i {
+  font-style: normal;
+  color: #ccc;
+  text-decoration: underline;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item b a {
+  color: #ccc;
+  text-decoration: underline;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item a.ad-mail-entry {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item a.ad-mail-entry:hover {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-item img {
+  float: left;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 10px 0 0;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item {
+  margin-bottom: 15px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item b {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item b i {
+  font-style: normal;
+  color: #ccc;
+  text-decoration: underline;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item a:hover {
+  color: orange;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item img {
+  border: none;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item img.ad-user-pic {
+  border: none;
+  margin-right: 5px;
+  float: left;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item .ad-mail-detail-message-container {
+  margin-left: 35px;
+  position: relative;
+  *zoom: 1;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item .ad-mail-detail-message-container:before,
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item .ad-mail-detail-message-container:after {
+  display: table;
+  content: "";
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item .ad-mail-detail-message-container:after {
+  clear: both;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item .ad-mail-detail-message {
+  padding: 8px 10px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item span.ad-small-arrow {
+  display: block;
+  line-height: 0;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 7px;
+  left: -10px;
+  border-right: 5px solid #000000;
+  border-left: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  *border-style: dashed solid dashed dashed;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item-self {
+  text-align: right;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item-self a {
+  right: auto;
+  left: 10px;
+  top: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item-self img.ad-user-pic {
+  border: none;
+  margin-left: 5px;
+  margin-right: 0;
+  float: right;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item-self .ad-mail-detail-message-container {
+  margin-right: 35px;
+  margin-left: 0;
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item-self .ad-mail-detail-message {
+  float: right;
+  background-color: rgba(0, 128, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80008000, endColorstr=#80008000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80008000, endColorstr=#80008000);
+}
+.ad-widget-imageplus-tuhua-board .ad-mail-detail-item-self span.ad-small-arrow {
+  position: absolute;
+  left: auto;
+  top: 5px;
+  right: -10px;
+  border-left: 5px solid #008000;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  *border-style: dashed dashed dashed solid;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-notice-content {
+  font-size: 12px;
+  overflow-y: auto;
+  color: #eee;
+  line-height: 20px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-notice-content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-indent: 2em;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-notice-content h2 {
+  margin: 0;
+  font-size: 16px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-notice-content .ad-item {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-notice-content .ad-item b {
+  text-decoration: underline;
+  display: block;
+  font-size: 13px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-notice-content .ad-sub-item {
+  display: block;
+  padding-left: 2em;
+  background: url(http://ecma.bdimg.com/adtest/84423e5e4fca5c5fd57f8727b45661b6.png) 8px 4px no-repeat;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content {
+  font-size: 14px;
+  overflow-y: auto;
+  color: #eee;
+  line-height: 20px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content .ad-complain-object {
+  line-height: 22px;
+  padding: 10px;
+  margin-left: 12px;
+  margin-right: 8px;
+  *zoom: 1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content .ad-complain-message {
+  margin-top: 5px;
+  color: #ccc;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content .ad-complain-type {
+  margin-left: 10px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content a.ad-complain-submit {
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  display: block;
+  float: left;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: rgba(4, 73, 190, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc0449be, endColorstr=#cc0449be);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc0449be, endColorstr=#cc0449be);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content a.ad-complain-submit:hover {
+  background-color: #0449be;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0449be, endColorstr=#ff0449be);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0449be, endColorstr=#ff0449be);
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content img {
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin-right: 5px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content h2 {
+  margin: 6px 0;
+  font-size: 16px;
+}
+.ad-widget-imageplus-tuhua-board .ad-tuhua-complain-content input.ad-complain-reason {
+  margin: 6px 0 0;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+  padding: 8px 4px;
+  background: #FFF;
+  border: none;
+  width: 294px;
+  height: 30px;
+  *height: 24px;
+  line-height: 20px;
+  background-image: -webkit-gradient(linear, 0 0, 0 2, from(#ececec), to(#ffffff));
+  background-image: -moz-linear-gradient(top, #ececec, #ffffff 2px, #ffffff);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ad-widget-imageplus-tuhua-board .ad-tip {
+  position: absolute;
+  padding: 10px;
+  bottom: 56px;
+  right: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b30a0a0a, endColorstr=#b30a0a0a);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b30a0a0a, endColorstr=#b30a0a0a);
+}
+.ad-widget-imageplus-tuhua-board .ad-tip-success {
+  color: #60f000;
+}
+.ad-widget-imageplus-tuhua-board .ad-tip-error {
+  color: #f03030;
+}
+.ad-widget-imageplus-tuhua-board .ad-tip-info {
+  color: #fff;
+}
+.ad-tuhua-mode-righttop {
+  right: 10px;
+  top: 10px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

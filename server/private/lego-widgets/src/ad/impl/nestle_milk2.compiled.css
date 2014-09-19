@@ -1,0 +1,76 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/nestle_milk2.less ~ 2014/04/28 11:18:23
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * nestle_milk2样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  background: #fff;
+  border: 3px solid #945CA6;
+  margin-bottom: 20px;
+  width: 515px;
+  padding: 2px 6px;
+}
+#canvas .ad-widget-title h2 {
+  margin-bottom: 5px;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-1 .ad-block-1-0 {
+  float: left;
+}
+#canvas .ad-block-1 .ad-block-1-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding-left: 14px;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head h2 a em {
+  color: #CC0000;
+  font-style: normal;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 10px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #c3c3c3;
+}
+#canvas .ad-widget-iframe {
+  height: 90px;
+  padding-top: 10px;
+}
+#canvas .ad-widget-iframe div {
+  margin: 0;
+}
+#canvas .ad-widget-button-group {
+  padding-bottom: 0;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group td {
+  border-right: solid 1px #fff;
+}
+#canvas .ad-widget-button-group td a {
+  color: #fff;
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  background-color: #945CA6;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

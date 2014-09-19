@@ -1,0 +1,10 @@
+{
+    "contents": ["ad.widget.tieba.Blank"],
+    "userPrefs": [
+        {
+            "name": "placeholder",
+            "displayName": "占位",
+            "datatype": "HIDDEN"
+        }
+    ]
+}

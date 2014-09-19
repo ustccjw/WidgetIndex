@@ -1,0 +1,29 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dianjing/main.less ~ 2013/02/26 21:19:50
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * main样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  /** CODE HERE. */
+
+}
+#canvas .dianjing-flag {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+  background: url(http://bs.baidu.com/adtest/323a70822f8c03c903fbad86a629d848.png) 0 0 no-repeat;
+  _background: none;
+  _filter: progid:dximagetransform.microsoft.alphaimageloader(enabled="true", sizingMethod="corp", src="http://bs.baidu.com/adtest/323a70822f8c03c903fbad86a629d848.png");
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

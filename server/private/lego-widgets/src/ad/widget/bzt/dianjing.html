@@ -1,0 +1,72 @@
+<!-- target:AD_ad_widget_bzt_dianjing -->
+<div class="ad-widget-bzt ad-widget-bzt-dianjing" id="{{#_id}}dianjing{{/_id}}" style="width:{{width_change}}px;height:0px;">
+    <a class="ec-dianjing-flag" href="###"></a>
+    <div class="ec-dianjing-flag-tip">
+        <div class="ec-hack">
+            查看标识获取更多信息
+            <div class="ec-dianjing-flag-tip-close"></div>
+        </div>
+    </div>
+    {{#bks}}
+    <div class="ec-dianjing-block">
+        <a class="ec-biaozhu ec-dianjing-biaozhu-bk" style="left:{{icon_top_left_x_change}}px;top:{{icon_top_left_y_change}}px;" href="###"></a>
+        <div class="ec-dianjing-bg-info-bk">
+            <div class="ec-dianjing-info-bg" style="left:{{info_top_left_x}}px;top:{{info_top_left_y}}px;"></div>
+            <div class="ec-dianjing-info" style="left:{{info_top_left_x}}px;top:{{info_top_left_y}}px;">
+                <div class="ec-title">{{title}}</div>
+                <div class="ec-body">
+                    <div class="ec-dianjing-bk-idea">
+                        <img class="ec-dianjing-idea-img" width="63" height="63" border="0" src="{{idea_url}}" style="position:static; cursor:auto;" />
+                    </div>
+                    <div class="ec-dianjing-bk-desc">{{desc}}<a class="ec-more" href="###">了解更多</a>
+                    </div>
+                </div>
+                <div class="ec-footer">百度百科</div>
+                <a class="ec-dianjing-redirect-bk" href="{{{encry_url}}}&actionid=2&attach=0" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    {{/bks}}
+    {{#ads}}
+    <div class="ec-dianjing-block">
+        <a class="ec-biaozhu ec-dianjing-biaozhu" style="left:{{icon_top_left_x_change}}px;top:{{icon_top_left_y_change}}px;" href="###"></a>
+        <div class="ec-dianjing-bg-info">
+            <div class="ec-dianjing-info-bg" style="left:{{info_top_left_x}}px;top:{{info_top_left_y}}px;"></div>
+            <div class="ec-dianjing-info" style="left:{{info_top_left_x}}px;top:{{info_top_left_y}}px;">
+                <div class="ec-dianjing-idea">
+                    <img class="ec-dianjing-idea-img" width="83" height="83" border="0" src="{{idea_url}}" style="position:static; cursor:auto;" />
+                </div>
+                <div class="ec-dianjing-text" style="text-align: left;">
+                    <div class="ec-dianjing-desc">{{desc}}</div>
+                    <div class="ec-dianjing-price">¥{{price_change}}</div>
+                    <div class="ec-dianjing-seller">{{seller_name}}</div>
+                </div>
+                <a class="ec-dianjing-redirect" href="{{{encry_url}}}&actionid=2&attach=0" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    {{/ads}}
+    {{#vds}}
+    <div class="ec-dianjing-block">
+        <a class="ec-biaozhu ec-dianjing-biaozhu-vd" style="left:{{icon_top_left_x_change}}px;top:{{icon_top_left_y_change}}px;" href="###"></a>
+        <div class="ec-dianjing-bg-info-vd">
+            <div class="ec-dianjing-info vd-long" style="left:{{info_top_left_x}}px;top:{{info_top_left_y}}px;">
+                <div class="ec-vd-inner">
+                    <div class="ec-dianjing-idea">
+                        <img class="ec-dianjing-idea-img" border="0" src="{{idea_url}}" style="position:static; cursor:auto;" />
+                        <div class="ec-start"></div>
+                    </div>
+                    <div class="ec-dianjing-text" style="text-align: left;">
+                        {{#title}}
+                        <div class="ec-dianjing-title">{{title}}</div>
+                        {{/title}}
+                        <div class="ec-dianjing-desc">{{desc}}</div>
+                        <div class="ec-dianjing-seller">{{seller_name}}</div>
+                    </div>
+                    <a class="ec-dianjing-redirect" href="{{{encry_url}}}&actionid=2&attach=0" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/vds}}
+</div>

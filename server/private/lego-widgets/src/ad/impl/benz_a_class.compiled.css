@@ -1,0 +1,142 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/benz_a_class.less ~ 2013/01/24 21:36:04
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * benz_a_class样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 529px;
+  padding: 5px;
+  background-color: #C3C3C3;
+  margin-bottom: 20px;
+}
+#canvas .ad-layout-block-0 {
+  padding: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 {
+  float: left;
+  width: 280px;
+  margin-left: 15px;
+}
+#canvas .ad-widget-video-title {
+  height: 20px;
+  line-height: 20px;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 18px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #ccc;
+}
+#canvas .ad-widget-image-cartoon {
+  background-color: #C3C3C3;
+  width: 528px;
+  height: 158px;
+  padding-top: 10px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  width: 528px;
+  height: 152px;
+}
+#canvas .ad-widget-image-cartoon .ec-item {
+  height: 152px;
+}
+#canvas .ad-widget-image-cartoon .ec-item span {
+  color: #fff;
+  bottom: -1px;
+  z-index: 1000000;
+}
+#canvas .ad-widget-image-cartoon .ec-arrow {
+  bottom: 70px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-float-window-container {
+  left: 0px;
+  top: 0px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-video {
+  position: absolute;
+  left: 35px;
+  top: 136px;
+  width: 400px;
+  height: 250px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-video object {
+  width: 400px;
+  height: 250px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-video embed {
+  width: 400px;
+  height: 250px;
+}
+.ec-benz-a-class-fwc-1 .ec-bg {
+  background-color: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  width: 235px;
+  height: 250px;
+  position: absolute;
+  left: 450px;
+  top: 136px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-image-normal {
+  position: absolute;
+  left: 450px;
+  top: 136px;
+  width: 235px;
+  padding: 10px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-image-normal a {
+  position: relative;
+  color: #fff;
+  margin: 0 15px 7px 0;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-image-normal a img {
+  border: none;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-image-normal a span {
+  font: 13px "宋体";
+  color: #fff;
+  display: block;
+  margin-top: 3px;
+}
+.ec-benz-a-class-fwc-1 .ad-widget-image-normal a .ec-cover {
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 55px;
+  background-color: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  font: 13px "宋体";
+  color: #c9c9c9;
+  line-height: 55px;
+}
+.ec-benz-a-class-fwc-1 .ec-close {
+  width: 30px;
+  height: 30px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

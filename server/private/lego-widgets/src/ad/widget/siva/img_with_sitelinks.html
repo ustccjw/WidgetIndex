@@ -1,0 +1,10 @@
+<!-- target:AD_ad_widget_siva_img_with_sitelinks -->
+<div class="ad-widget-siva ad-widget-siva-img-with-sitelinks">
+	{{#img}}
+	<a href="{{{img_target_rcv_url}}}" target="_blank" title2="产品图片跳转URL">
+		<img width="270" height="140" src="{{img_url}}" />
+	</a>
+	{{/img}}
+	<div class="ec-siva-widget-sitelinks-bg"></div>
+	<ul class="ec-siva-widget-sitelinks-links">{{#sitelinks}}<li class="ad-widget-siva-sitelinks-link{{#@last}}-last{{/@last}}"><a href="{{{text_rcv_url}}}" target="_blank" title2="产品图片子链{{@index}}">{{text}}</a></li>{{/sitelinks}}</ul>
+</div>

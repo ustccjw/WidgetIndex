@@ -1,0 +1,19 @@
+<!-- target:AD_ad_widget_aladdin_cosmetic_related_products -->
+<div class="ad-widget-aladdin ad-widget-aladdin-cosmetic-related-products">
+    <div class="ec-title">
+        <span>{{{title}}}</span>
+    </div>
+    <table width="100%" cellpadding="0" cellspacing="2px">
+    {{#options}}
+    <tr>
+        <th><span>{{title}}</span></th>
+        <td>{{#links}}<a href="{{{rcv_url}}}" target="_blank" title2="链接{{_index}}">{{text}}</a>{{/links}}</td>
+    </tr>
+    {{/options}}
+    </table>
+    {{#more_url}}
+    <div class="ec-more">
+        <a href="{{{rcv_url}}}" title2="更多链接" target="_blank">{{text}}</a>
+    </div>
+    {{/more_url}}
+</div>

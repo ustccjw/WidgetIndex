@@ -1,0 +1,92 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: iknow2.less 10949 2012-08-06 08:51:44Z loutongbing $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/xlab/iknow2.less ~ 2012/07/11 10:16:18
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision: 10949 $ 
+ * @description 
+ *  
+ **/
+.ad-widget-xlab-iknow2 {
+  font: 13px/1.2 arial, sans-serif;
+  background: url(//bs.baidu.com/adtest/067382ee660354e89e2b14683a546b1c.png) no-repeat;
+  width: 270px;
+  height: 240px;
+  position: relative;
+  *zoom: 1;
+}
+.ad-widget-xlab-iknow2:before,
+.ad-widget-xlab-iknow2:after {
+  display: table;
+  content: "";
+}
+.ad-widget-xlab-iknow2:after {
+  clear: both;
+}
+.ad-widget-xlab-iknow2 a {
+  background: transparent;
+  display: inline-block;
+  height: 240px;
+  width: 270px;
+  opacity: 0;
+  position: absolute;
+  text-decoration: none;
+  z-index: 100;
+}
+.ad-widget-xlab-iknow2 .logo_image {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+.ad-widget-xlab-iknow2 .logo_image img {
+  width: 65px;
+  height: 52px;
+}
+.ad-widget-xlab-iknow2 .image {
+  position: absolute;
+  top: 2px;
+  left: 84px;
+}
+.ad-widget-xlab-iknow2 .image img {
+  width: 125px;
+  height: 125px;
+}
+.ad-widget-xlab-iknow2 .name {
+  position: absolute;
+  left: 23px;
+  top: 130px;
+  font-weight: bold;
+  color: #272635;
+}
+.ad-widget-xlab-iknow2 .price {
+  position: absolute;
+  left: 23px;
+  top: 147px;
+  color: #c80d00;
+  font-size: 16px;
+}
+.ad-widget-xlab-iknow2 .price span {
+  font-size: 24px;
+}
+.ad-widget-xlab-iknow2 .tip {
+  position: absolute;
+  left: 23px;
+  top: 175px;
+  font-size: 8px;
+  color: #a1a1a1;
+}
+.ad-widget-xlab-iknow2 .stock {
+  position: absolute;
+  left: 200px;
+  top: 185px;
+  font-size: 14px;
+  color: #313131;
+}
+.ad-widget-xlab-iknow2 .stock strong {
+  font-size: 20px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

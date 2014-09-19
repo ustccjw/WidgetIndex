@@ -1,0 +1,322 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/business_app/auto_show.less ~ 2013/03/13 14:14:29
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * auto_show2样式文件
+ **/
+#canvas {
+  font: 12px/1.5 "宋体";
+  color: #333;
+  width: 535px;
+  /* 原来是540px 改成 535px */
+
+  margin: 0 auto;
+  padding: 0 0 2px 0;
+  position: relative;
+  z-index: 1;
+  background-color: #fbfbfb;
+  /* reset iframe style */
+
+}
+#canvas .ad-widget-iframe {
+  font-size: inherit;
+  height: auto;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-iframe a,
+#canvas .ad-widget-iframe div {
+  float: none;
+  display: inline;
+}
+#canvas .ad-widget-iframe div {
+  display: block;
+}
+#canvas .ad-widget-iframe a {
+  text-decoration: none;
+}
+#canvas .ad-widget-iframe a img {
+  display: block;
+  border: 0px;
+  width: auto;
+  height: auto;
+}
+#canvas .ad-widget-iframe div {
+  margin-left: 0;
+}
+#canvas .ad-block-1-0 {
+  height: 370px;
+}
+#canvas .ad-block-1-0 .ad-widget-iframe {
+  height: 370px;
+}
+#canvas .ad-widget-tab-container {
+  padding: 0px;
+  margin: 0px;
+  height: 35px;
+  background-color: #ffffff;
+}
+#canvas .ad-widget-tab-container ul.ec-tab-head {
+  padding: 0px;
+  margin: 0px;
+  background: transparent;
+  height: 35px;
+  border-bottom: 1px solid #e3e3e3;
+}
+#canvas .ad-widget-tab-container ul.ec-tab-head li {
+  margin: 0px;
+  height: 35px;
+  border-right: 1px solid #e3e3e3;
+}
+#canvas .ad-widget-tab-container ul.ec-tab-head li a {
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  background: #FFF;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px;
+}
+#canvas .ad-widget-tab-container ul.ec-tab-head .ec-current-tab a {
+  color: #333;
+  background: #FBFBFB;
+  border-bottom: 2px solid #378bff;
+}
+#canvas .ec-normal-con-0-0 {
+  padding: 15px 0px;
+  overflow: hidden;
+  height: 25px;
+  background-color: white;
+  font-size: 13px;
+  _zoom: 1;
+}
+#canvas .ec-normal-con-0-0 .ad-widget-select-label {
+  float: left;
+  _display: inline;
+  margin-left: 5px;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #000000;
+}
+#canvas .ec-normal-con-0-0 .ad-widget-place-label {
+  float: left;
+  _display: inline;
+  margin-left: 12px;
+  line-height: 25px;
+  font-weight: normal;
+  font-size: 13px;
+  color: #666666;
+}
+#canvas .ec-normal-con-0-0 .ad-widget-website-label {
+  float: right;
+  _display: inline;
+  line-height: 25px;
+  margin-right: 10px;
+  font-size: 13;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0-1 {
+  margin-right: 10px;
+  margin-left: 5px;
+  width: 380px;
+  float: left;
+  _display: inline;
+}
+#canvas .ad-widget-iframe-image-or-video {
+  width: 100%;
+  height: 217px;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow {
+  width: 100%;
+  height: 100%;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-img,
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow img {
+  display: block;
+  width: 380px;
+  height: 217px;
+  border: none;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-link-right,
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-link-left {
+  top: 98.5px;
+  width: 20px;
+  height: 40px;
+  z-index: 2;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-mask-right,
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-mask-left {
+  top: 88.5px;
+  width: 35px;
+  height: 60px;
+  position: absolute;
+  background-color: #000000;
+  z-index: 1;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-mask-right {
+  left: 345px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-mask-left {
+  left: 0px;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-mask-hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-link-right {
+  background-image: url("//bs.baidu.com/adtest/fdb1b94525d47872d54638abc22ded71.png");
+  background-position: 3px 0px;
+  left: 350px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-link-left {
+  background-image: url("//bs.baidu.com/adtest/6cf00c163050f2a59125737866f708d5.png");
+  background-position: 2px 0px;
+  left: 5px;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+#canvas .ad-widget-iframe-image-or-video .ad-widget-image-show-arrow .ec-pic-des {
+  display: none;
+}
+#canvas .ad-widget-description {
+  height: 290px;
+  width: 140px;
+  position: relative;
+  color: #666666;
+}
+#canvas .ad-widget-description h2 {
+  font-size: 13px;
+  font-family: "宋体";
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+#canvas .ad-widget-description li {
+  font-size: 13px;
+  font-family: "宋体";
+  height: auto;
+  line-height: 19px;
+}
+#canvas .ad-widget-description .ec-desc-more {
+  position: absolute;
+  bottom: 5px;
+  width: 115px;
+  height: 31px;
+  right: 15px;
+  background-image: url("//bs.baidu.com/adtest/925953bfaf9b35aacee2647ba8121d03.jpg");
+}
+#canvas .ec-tab-content-2 .ad-widget-iframe {
+  height: 320px;
+}
+#canvas .ec-tab-content-2 .ad-widget-detail {
+  padding: 0;
+  overflow: auto;
+  height: 300px;
+  width: 520px;
+  margin: 0 5px 0 10px;
+  overflow-x: hidden;
+  color: #666;
+  font-size: 13px;
+}
+#canvas .ec-tab-content-2 .ad-widget-detail li {
+  float: left;
+  _display: inline;
+  margin: -1px 0 0 0;
+  padding: 0;
+  width: 520px;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  list-style: none;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+  background: #ffffff;
+}
+#canvas .ec-tab-content-2 .ad-widget-detail li b {
+  float: left;
+  _display: inline;
+  text-align: right;
+  width: 120px;
+  font-weight: normal;
+}
+#canvas .ec-tab-content-2 .ad-widget-detail li span {
+  float: left;
+  _display: inline;
+  width: 120px;
+  padding-left: 10px;
+}
+#canvas .ec-tab-content-2 .ad-widget-detail li .ec-detail-key {
+  background-color: #f6f6f6;
+}
+#canvas .ec-tab-content-2 .ad-widget-detail .ec-detail-first {
+  margin-top: 0;
+  border-top: 1px solid #efefef;
+}
+#canvas .ad-widget-dependency-select {
+  width: 188px;
+  float: left;
+}
+#canvas .ad-widget-dependency-select .ec-item select {
+  border: 1px solid #c5c5c5;
+  color: #333333;
+  width: 188px;
+  height: 26px;
+  padding: 3px 0;
+}
+#canvas .ad-widget-image-normal {
+  text-align: center;
+}
+#canvas .ad-widget-image-normal a {
+  margin: 0px;
+  width: 95px;
+  height: 73px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#canvas .ad-widget-image-normal a:focus {
+  outline: none;
+}
+#canvas .ad-widget-image-normal img {
+  width: 95px;
+  height: 73px;
+  border: 0px;
+}
+#canvas .ad-widget-image-normal .ec-img-current {
+  border-width: 3px 4px 4px 3px;
+  border-style: solid;
+  border-color: #378BFF;
+  width: 89px;
+  height: 67px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

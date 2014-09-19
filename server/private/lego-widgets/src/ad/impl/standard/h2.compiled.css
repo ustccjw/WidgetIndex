@@ -1,0 +1,48 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id$ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/standard/h2.less ~ 2013/10/28 16:23:53
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision$ 
+ * @description 
+ * ad.widget.H2
+ **/
+#canvas .ad-widget-h2 {
+  margin-top: 5px;
+}
+#canvas .ad-widget-h2 img {
+  width: 78px;
+  height: 59px;
+}
+#canvas .ad-widget-h2 .ec-items {
+  padding: 0;
+}
+#canvas .ad-widget-h2 .ec-item {
+  width: 166px;
+  margin-right: 10px;
+}
+#canvas .ad-widget-h2 .ec-description {
+  padding: 0;
+  padding-left: 10px;
+  width: 78px;
+}
+#canvas .ad-widget-h2 .ec-price {
+  color: #000;
+}
+#canvas .ad-widget-h2 .ec-price span {
+  display: block;
+  color: #ff8a00;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+#canvas .ad-widget-h2 .ec-price strong {
+  font-weight: 700;
+}
+#canvas .ad-widget-h2 .ec-last {
+  margin-right: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

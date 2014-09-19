@@ -1,0 +1,177 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/icon_box.less ~ 2014/06/13 16:46:00
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * box样式文件
+ **/
+.baiduimageplus-i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  margin: 0;
+  padding: 0;
+  width: 0px;
+  height: 0px;
+  overflow: visible !important;
+}
+.baiduimageplus-i.baiduimageplus-i-show_bd {
+  z-index: 13;
+}
+.baiduimageplus-i-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  z-index: 10;
+  width: 38px;
+  height: 38px;
+  overflow: visible !important;
+  cursor: pointer;
+}
+.baiduimageplus-i-icon .baiduimageplus-i-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa.png')\9;
+}
+.baiduimageplus-i-icon:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-hover.png')\9;
+}
+.baiduimageplus-i-icon .baiduimageplus-i-fake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.baiduimageplus-i-notlink {
+  cursor: default;
+}
+.baiduimageplus-i-notlink .baiduimageplus-i-fake {
+  cursor: default;
+}
+.baiduimageplus-i-icon-medical .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-medical.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-medical.png')\9;
+}
+.baiduimageplus-i-icon-medical:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-medical-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-medical-hover.png')\9;
+}
+.baiduimageplus-i-icon-decoration .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-decoration.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-decoration.png')\9;
+}
+.baiduimageplus-i-icon-decoration:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-decoration-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-decoration-hover.png')\9;
+}
+.baiduimageplus-i-icon-machine .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-machine.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-machine.png')\9;
+}
+.baiduimageplus-i-icon-machine:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-machine-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-machine-hover.png')\9;
+}
+.baiduimageplus-i-icon-photo .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-photo.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-photo.png')\9;
+}
+.baiduimageplus-i-icon-photo:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-photo-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-photo-hover.png')\9;
+}
+.baiduimageplus-i-icon-tourism .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-tourism.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-tourism.png')\9;
+}
+.baiduimageplus-i-icon-tourism:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-tourism-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/pa-tourism-hover.png')\9;
+}
+.baiduimageplus-i-icon-game .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/game.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/game.png')\9;
+}
+.baiduimageplus-i-icon-game:hover .baiduimageplus-i-pic {
+  background: url("http://ecma.bdimg.com/public03/imageplus/game-hover.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/game-hover.png')\9;
+}
+.baiduimageplus-i-extra {
+  float: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  position: static;
+  display: block;
+  visibility: visible;
+  text-align: left;
+  background: transparent;
+  box-sizing: content-box;
+  position: absolute;
+  top: 19px;
+  left: -66px;
+  width: 170px;
+  height: 38px;
+  background: #FFF;
+  z-index: 9;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.baiduimageplus-i-bd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  z-index: 11;
+  height: 0;
+  overflow: hidden;
+  background: #FFF;
+  -webkit-box-shadow: 2px 2px 4px #000000;
+  -moz-box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px #000000;
+}
+.baiduimageplus-i-show_bd .baiduimageplus-i-bd {
+  height: auto;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

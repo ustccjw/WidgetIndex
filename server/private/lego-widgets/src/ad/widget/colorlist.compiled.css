@@ -1,0 +1,48 @@
+/**
+ * src/ad/widget/colorlist.less ~ 2013-06-19 11:15:31;
+ * @author xiongjie(xiongjie01@baidu.com)
+ * @description colorlsit default css
+ **/
+.ad-widget-colorlist {
+  font: 13px arial, sans-serif;
+  width: 500px;
+}
+.ad-widget-colorlist ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+.ad-widget-colorlist .ec-colorlist-item {
+  float: left;
+  width: 220px;
+  line-height: 24px;
+  overflow: hidden;
+}
+.ad-widget-colorlist .ec-colorlist-item .ec-color-flag {
+  display: inline-block;
+  overflow: hidden;
+  width: 10px;
+  height: 18px;
+  vertical-align: middle;
+  background-color: #009900;
+  margin-right: 4px;
+}
+.ad-widget-colorlist .ec-colorlist-item .ec-color-red {
+  background-color: #D80901;
+}
+.ad-widget-colorlist .ec-colorlist-item .ec-color-yellow {
+  background-color: #F46600;
+}
+.ad-widget-colorlist .ec-colorlist-item .ec-color-purple {
+  background-color: #653599;
+}
+.ad-widget-colorlist .ec-colorlist-item a {
+  *zoom: 1;
+}
+.ad-widget-colorlist .ec-colorlist-item .ec-colorlist-desc {
+  padding: 0;
+  margin: 4px 0 0;
+  line-height: 18px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

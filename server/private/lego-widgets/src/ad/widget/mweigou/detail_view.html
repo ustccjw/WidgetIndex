@@ -1,0 +1,26 @@
+<!-- target:AD_ad_widget_mweigou_detail_view -->
+<div class="ec-sg-weigou-detail">
+    <div class="ec-sg-weigou-clearfix">
+        <div class="ec-sg-weigou-detail-image">
+            <img src="<%:h= picture %>" />
+        </div>
+        <div class="ec-sg-weigou-detail-price">
+            <table><tbody><tr><td>
+                <strong>现价：￥<%:h= price.toFixed(2) %></strong>
+                <% if (original_price && price < original_price) { %>
+                <del>原价：￥<%:h= original_price.toFixed(2) %></del>
+                <% } %>
+            </td></tr></tbody></table>
+            <a class="ec-sg-weigou-detail-buy WA_LOG_BTN" href="javascript:;">快速购买</a>
+        </div>
+    </div>
+
+    <div class="ec-sg-weigou-detail-title">商品详情</div>
+    <dl class="ec-sg-weigou-detail-info">加载中...</dl>
+    <div class="ec-sg-weigou-detail-blank"></div>
+    <a class="ec-sg-weigou-detail-more WA_LOG_BTN" style="display:none" href="javascript:;">
+        <span>点击展开更多详情</span>
+    </a>
+
+    <a class="ec-sg-weigou-detail-top ec-sg-weigou-top WA_LOG_BTN" style="display:none" href="javascript:;"></a>
+</div>

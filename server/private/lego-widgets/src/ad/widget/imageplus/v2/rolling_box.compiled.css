@@ -1,0 +1,163 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/v2/rolling_box.less ~ 2014/08/15 15:37:15
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ **/
+.baiduimageplus-r,
+.baiduimageplus-r-x,
+.baiduimageplus-r-line,
+.baiduimageplus-r-title,
+.baiduimageplus-r-holder,
+.baiduimageplus-r-ct,
+.baiduimageplus-r-bg,
+.baiduimageplus-r-bd,
+.baiduimageplus-r-close {
+  float: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  position: static;
+  display: block;
+  visibility: visible;
+  text-align: left;
+  background: transparent;
+  box-sizing: content-box;
+}
+.baiduimageplus-r,
+.baiduimageplus-r-x,
+.baiduimageplus-r-line,
+.baiduimageplus-r-title,
+.baiduimageplus-r-holder,
+.baiduimageplus-r-angle {
+  font: 12px/1.5 arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: 100%;
+  height: 0;
+  overflow: visible !important;
+  background-color: transparent;
+}
+.baiduimageplus-r-x {
+  height: 18px;
+  -webkit-transition: top .5s, bottom .5s;
+  -moz-transition: top .5s, bottom .5s;
+  -ms-transition: top .5s, bottom .5s;
+  -o-transition: top .5s, bottom .5s;
+  transition: top .5s, bottom .5s;
+}
+.baiduimageplus-r-bottom .baiduimageplus-r-x {
+  top: auto;
+  bottom: 0;
+}
+.baiduimageplus-r-holder {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.baiduimageplus-r-line {
+  height: 4px;
+  background-color: #FF6000;
+}
+.baiduimageplus-r-bottom .baiduimageplus-r-line {
+  margin-top: 14px;
+}
+.baiduimageplus-r-title {
+  left: auto;
+  right: 0;
+  width: 56px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFF;
+  background-color: #FF6000;
+}
+.baiduimageplus-r-angle {
+  left: auto;
+  right: 56px;
+  width: 0;
+  height: 0;
+  border-top: 9px solid #FF6000;
+  border-right: 9px solid #FF6000;
+  border-bottom: 9px dotted transparent;
+  border-left: 9px dotted transparent;
+}
+.baiduimageplus-r-hover .baiduimageplus-r-line,
+.baiduimageplus-r-hover .baiduimageplus-r-title {
+  color: #CCC;
+  background-color: #000;
+}
+.baiduimageplus-r-hover .baiduimageplus-r-angle {
+  border-top-color: #000;
+  border-right-color: #000;
+}
+.baiduimageplus-r-ct {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  z-index: 2;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.baiduimageplus-r-bottom .baiduimageplus-r-ct {
+  top: auto;
+  bottom: 0;
+}
+.baiduimageplus-r-bd {
+  position: relative;
+  z-index: 2;
+  margin: 0 16px;
+  -webkit-transition: margin-top 0.5s;
+  -moz-transition: margin-top 0.5s;
+  -ms-transition: margin-top 0.5s;
+  -o-transition: margin-top 0.5s;
+  transition: margin-top 0.5s;
+}
+.baiduimageplus-r-bd iframe {
+  position: relative;
+}
+.baiduimageplus-r-bg {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000 !important;
+}
+.baiduimageplus-r-close {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: auto;
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  overflow: hidden !important;
+  background: url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent;
+}
+.baiduimageplus-r-hover .baiduimageplus-r-close {
+  display: block;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

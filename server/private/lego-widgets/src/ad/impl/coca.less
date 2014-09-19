@@ -1,0 +1,164 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: coca.less 150523 2013-06-05 14:06:00Z  DestinyXie$ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/coca.less ~ 2013/06/05 14:06:00
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * coca样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial, sans-serif;
+
+    margin-bottom: 20px;
+    width: 525px;
+    padding: 5px;
+    background: #ededed;
+
+    .ad-layout-block-0 {
+        .gain-bfc();
+        background: #fff;
+        padding: 7px 5px;
+        .ad-layout-block-0-0 {
+            float: left;
+        }
+        .ad-layout-block-0-1 {
+            .gain-bfc();
+            padding-left: 14px;
+        }
+    }
+
+    .ad-widget-small-head {
+        h2 a {
+            color: #0200cf;
+        }
+        .ec-description {
+            color: #000;
+        }
+    }
+
+    .ad-widget-small-weibo {
+        .ec-name {
+            color: #000;
+            padding-right: 18px;
+            margin-right: 8px;
+        }
+        .ec-text {
+            color: #000;
+        }
+        .ec-datetime {
+            color: #200100;
+        }
+        .ec-rightbtn {
+            a {
+                color: #437d31;
+            }
+            .ec-seprate {
+                border-right: 1px solid #437d31;
+            }
+        }
+    }
+
+    .ad-layout-block-1 h2 {
+        color: #000;
+        padding: 8px 0 8px 6px;
+        font-size: 13px;
+    }
+
+    .ad-layout-block-2 {
+        background: #fff;
+        padding: 5px 0 5px 1px;
+    }
+
+    .ec-img-desc {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 439px;
+        height: 110px;
+        padding: 20px 0 0 83px;
+        overflow: hidden;
+        zoom: 1;
+        z-index: 201;
+        background: #fff;
+    }
+
+    .ec-share-back {
+        position: absolute;
+        cursor: pointer;
+        top: 59px;
+        left: 39px;
+        width: 23px;
+        height: 23px;
+        background: url(//bs.baidu.com/adtest/061b95c6800d76aad5691a7047d69594.gif) no-repeat;
+    }
+
+    .ec-share-pic {
+        float: left;
+        width: 126px;
+        height: 94px;
+        border: 1px solid #ededed;
+        img {
+            border: 0 none;
+        }
+    }
+    
+    .ec-share-desc {
+        float: left;
+        width: 150px;
+        line-height: 20px;
+        padding: 30px 10px;
+        text-align: center;
+        a {
+            color: #262626;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        em {
+            font-style: normal;
+            color: #c20116;
+            text-decoration: none;
+        }
+    }
+    
+    .ec-share-link {
+        float: left;
+        width: 110px;
+        margin-top: 13px;
+        border-left: 1px solid #e9e9e9;
+        padding-left: 20px;
+        line-height: 16px;
+        a {
+            height: 16px;
+            padding-left: 22px;
+            margin-bottom: 9px;
+            display: block;
+            cursor: pointer;
+            color: #0001cd;
+            text-decoration: underline;
+            background: url("//bs.baidu.com/adtest/f5167cd670ad73a48bd58215f5cf7076.png") no-repeat;
+        }
+    }
+
+    .ec-sina-share {
+        background-position: 0px -48px;
+    }
+    
+    .ec-qqweibo-share {
+        background-position: 0px -80px;
+    }
+
+    .ec-renren-share {
+        background-position: 0px -16px;
+    }
+}

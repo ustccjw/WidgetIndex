@@ -1,0 +1,56 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/wireless/series_tel.less ~ 2013/12/30 15:08:54
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * series_tel样式文件
+ **/
+.ad-widget-wireless-series-tel {
+  font-size: 13px;
+  line-height: 18px;
+}
+.ad-widget-wireless-series-tel p {
+  margin: 0;
+}
+.ad-widget-wireless-series-tel .ec-tel-item {
+  padding: 10px 0 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.ad-widget-wireless-series-tel .ec-series-ctn {
+  color: #262626;
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  overflow: hidden;
+}
+.ad-widget-wireless-series-tel .ec-series-info {
+  float: left;
+}
+.ad-widget-wireless-series-tel .ec-series-dial {
+  float: right;
+  border: 1px solid #d7d7d7;
+  background: #f5f5f5;
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 6px 8px 6px 6px;
+}
+.ad-widget-wireless-series-tel .ec-series-name {
+  margin-bottom: 6px;
+}
+.ad-widget-wireless-series-tel .ec-series-telnum {
+  color: #999;
+}
+.ad-widget-wireless-series-tel .ec-dial-icon {
+  border: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

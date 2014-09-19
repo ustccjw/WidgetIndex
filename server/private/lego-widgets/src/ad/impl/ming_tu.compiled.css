@@ -1,0 +1,102 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/ming_tu.less ~ 2013/11/04 14:50:55
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * ming_tu样式文件
+ **/
+#canvas {
+  width: 515px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-0-0 {
+  float: left;
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-block-0-1 {
+  float: left;
+  padding-left: 14px;
+  width: 280px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 0 none;
+}
+#canvas .ad-widget-tab-container .ec-tab-head a {
+  background-color: #f1f5ff;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-current-tab a {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+#canvas .ec-tab-body {
+  height: 105px;
+}
+#canvas .ad-widget-iframe {
+  height: 105px;
+}
+#canvas .ad-widget-image-cartoon {
+  width: 515px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  height: 110px;
+}
+#canvas .ad-widget-image-cartoon .ec-arrow {
+  bottom: 48px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  width: 475px;
+  margin-left: 20px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper .ec-item {
+  width: 112px;
+  height: 103px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper .ec-item a {
+  width: 112px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper .ec-item img {
+  width: 112px;
+  height: 103px;
+}
+#canvas .ec-tab-content-4 .ec-brand-intro {
+  width: 300px;
+  padding-top: 20px;
+  height: 82px;
+}
+#canvas .ec-tab-content-4 .ec-brand-intro h1 {
+  display: none;
+}
+#canvas .ec-tab-content-4 .ec-brand-intro h3 {
+  padding-left: 5px;
+  background: url(//bs.baidu.com/adtest/ef6ccd6591ec5e1fca5ca795035a44e2.gif) 0 8px no-repeat;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+  padding-bottom: 0 none;
+}
+#canvas .ad-widget-button-group td {
+  border-right: solid 1px #FFF;
+}
+#canvas .ad-widget-button-group td a {
+  color: #0000cc;
+  text-decoration: none;
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  background-color: #D3D1F8;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

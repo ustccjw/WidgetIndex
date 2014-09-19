@@ -1,0 +1,131 @@
+[
+    {
+        "name": "flash2",
+        "displayName": "flash2",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "bg",
+                "displayName": "底图",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "width",
+                        "displayName": "宽度",
+                        "defaultValue": "180",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "底图宽度",
+                        "multiline": false
+                    },
+                    {
+                        "name": "height",
+                        "displayName": "高度",
+                        "defaultValue": "530",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "底图高度",
+                        "multiline": false
+                    },
+                    {
+                        "name": "src",
+                        "displayName": "图片上传",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE"    
+                        },
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "link_rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "rules": {}
+            },
+            {
+                "name": "flash",
+                "displayName": "flash",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "width",
+                        "displayName": "宽度",
+                        "defaultValue": "400",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "height",
+                        "displayName": "高度",
+                        "defaultValue": "530",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "src",
+                        "displayName": "flash上传",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "FLASH"    
+                        },
+                        "tip": "",
+                        "multiline": false
+                    }
+                ]
+            },
+            {
+                "name": "is_flashvars",
+                "displayName": "是否启用接口",
+                "defaultValue": true,
+                "datatype": "BOOL",
+                "rules": {},
+                "extraAttr": {}
+            }
+        ]
+    }
+]

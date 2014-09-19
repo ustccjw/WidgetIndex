@@ -1,0 +1,91 @@
+[
+    {
+        "name": "header",
+        "displayName": "推广文字链",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 6,
+                    "maxTextByteLength": 24,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 6,
+                            "maxTextByteLength": 12,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最少3个汉字，最多12个汉字",
+                "multiline": false
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "http://e.baidu.com/?refer=103&kw=@word@",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                },
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "description_rcv_html",
+                "displayName": "描述",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 60
+                },
+                "tip": "最多可填30个汉字",
+                "multiline": true
+            },
+            {
+                "name": "footer_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "http://e.baidu.com/?refer=103&kw=@word@",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                },
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "site",
+                "displayName": "显示地址",
+                "defaultValue": "e.baidu.com",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 40
+                },
+                "tip": "最多可填写40字节",
+                "multiline": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+<!-- target:AD_ad_widget_lv_timeliness_head -->
+<div class="ad-widget ad-widget-lv-timeliness-head">
+    <a href="{{{activity_rcv_url}}}" class="ec-poster-ctn" title2="海报" target="_blank"><img src="{{{poster_src}}}" class="ec-poster-img" id="{{#_id}}poster-img{{/_id}}"/></a>
+    {{#_render_countdown}}
+    <div class="ec-countdown-text ec-countdown-hidden" id="{{#_id}}countdown-text{{/_id}}"></div>
+    <div class="ec-start-time" id="{{#_id}}start-time{{/_id}}">{{endTime}}</div>
+    {{/_render_countdown}}
+    <a id="{{#_id}}activity-over{{/_id}}" target="_blank" class="ec-activity-over" title2="进入活动" href="{{{tshow_rcv_url}}}"{{#_render_countdown}} style="display:none"{{/_render_countdown}}>{{btn_text}}</a>
+    <div class="ec-more-info">
+        <div class="ec-entry-ctn">
+            {{#entries}}
+                <a target="_blank" class="ec-entry-item{{#@last}} ec-last{{/@last}}" href="{{{entry_rcv_url}}}" title2="入口{{_index}}"><img src="{{{entry_src}}}" class="ec-entry-icon"/></a>
+            {{/entries}}
+        </div>
+    </div>
+</div>

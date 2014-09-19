@@ -1,0 +1,58 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/zhidao_native/product_case.less ~ 2014/04/14 17:42:19
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * product_case样式文件
+ **/
+.ad-widget-zhidao_native-product-case {
+  font: 13px arial, "宋体";
+}
+.ad-widget-zhidao_native-product-case .ec-product-title {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: normal;
+}
+.ad-widget-zhidao_native-product-case .ec-product-lists {
+  overflow: hidden;
+  *zoom: 1;
+}
+.ad-widget-zhidao_native-product-case .ec-product-item {
+  float: left;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  width: 133px;
+  margin-right: 18px;
+}
+.ad-widget-zhidao_native-product-case .ec-product-last {
+  margin-right: 0;
+}
+.ad-widget-zhidao_native-product-case .ec-product-link {
+  margin-bottom: 4px;
+  display: block;
+  height: 91px;
+}
+.ad-widget-zhidao_native-product-case .ec-product-img {
+  border: none;
+  width: 133px;
+  height: 91px;
+}
+.ad-widget-zhidao_native-product-case .ec-product-intro {
+  color: #787878;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

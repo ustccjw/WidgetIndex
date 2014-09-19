@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ad.widget.Widget Specification List</title>
+    <link rel="stylesheet" type="text/css" href="spec.css" />
+    <script src="http://bs.baidu.com/adcoup-mat/lego-sdk/release/latest/sdk-cdn.js"></script>
+  </head>
+  <body>
+      <div class="est-header">
+          <header>ad.widget.*的使用的spec情况</header>
+          <input type="search" placeholder="样式名称/Widget名称" />
+      </div>
+      <div class="est-body">
+          <div class="widgets"></div>
+          <div class="preview">
+              <div class="specs"></div>
+              <div id="spec-editor" style="display:none"></div>
+              <div id="spec-preview" style="display:none"><textarea readonly onfocus="this.select()" onclick="this.select()"></textarea></div>
+          </div>
+      </div>
+  </body>
+  <script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '../../../app.json');
+  xhr.onreadystatechange = function(){
+      if (xhr.status === 200 && xhr.readyState === 4) {
+          init(JSON.parse(xhr.responseText));
+      }
+  }
+  xhr.send(null);
+
+  var G_response;   // 总的数据
+  var C_response;   // 当前用的数据
+  function init(response) {
+    G_response = response;
+    buildHtml(response);
+    initEvent();
+  }
+
+
+  function showPreview() {
+    document.getElementById('spec-editor').style.display = '';
+    document.getElementById('spec-preview').style.display = '';
+  }
+
+  function hidePreview() {
+    document.getElementById('spec-editor').style.display = 'none';
+    document.getElementById('spec-preview').style.display = 'none';
+  }
+
+  var G_selectedTarget = null;
+  function initEvent() {
+    document.querySelector('.widgets').onclick = function(evt) {
+      var target = evt.target;
+      if (target.nodeType === 1 && target.nodeName === 'LI') {
+        if (G_selectedTarget) {
+           G_selectedTarget.classList.remove('selected');
+        }
+        target.classList.add('selected');
+        G_selectedTarget = target;
+        var ns = target.dataset.ns;
+        hidePreview();
+        buildPreviewHtml(C_response[ns], ns);
+      }
+    };
+    document.querySelector('.specs').onclick = function(evt) {
+      var target = evt.target;
+      if (target.nodeType === 1 && target.nodeName === 'INPUT') {
+        var index = target.dataset.index;
+        var ns = target.dataset.ns;
+        showPreview();
+        updateForm(C_response[ns][index].spec);
+      }
+    }
+    document.querySelector('input[type=search]').oninput = function() {
+      document.querySelector('.specs').innerHTML = '';
+      hidePreview();
+      buildHtml(filterResponse(this.value));
+    }
+  }
+
+  /**
+   * 从G_response过滤一下相关的内容
+   */
+  function filterResponse(query) {
+    var miniResponse = {};
+    for (var key in G_response) {
+      var specs = G_response[key];
+      if (key.toLowerCase() === query.toLowerCase()) {
+        miniResponse[key] = specs;
+      }
+      else {
+        var miniSpecs = [];
+        for (var i = 0; i < specs.length; i ++) {
+          if (specs[i].template.name.indexOf(query) != -1) {
+            miniSpecs.push(specs[i]);
+          }
+        }
+        if (miniSpecs.length) {
+          miniResponse[key] = miniSpecs;
+        }
+      }
+    }
+
+    return miniResponse;
+  }
+
+  var G_form;
+  function updateForm(spec) {
+    var options = {
+        'templateId': 8964,
+        'templateName': '测试表单(8964)',
+        'spec': [spec],
+        'renders': [
+            {
+                'id': 123,
+                'name': 'DEBUG_AD_CONFIG',
+                'js': 'http://ecma.bdimg.com/public03/debug_ad_config.js'
+            }
+        ]
+    };
+    try {
+      G_form = lego.sdk.create(document.getElementById('spec-editor'), options);
+    } catch(ex) {
+      alert('出错了!');
+    }
+
+    var value = JSON.stringify(spec, null, 2);
+    document.querySelector('#spec-preview textarea').value = value;
+  }
+
+  function buildPreviewHtml(data, ns) {
+    var html = ['<ul>'];
+    for (var i = 0; i < data.length; i ++) {
+      var spec = data[i].spec;
+      var template = data[i].template;
+      html.push('<li><label><input data-index="' + i + '" data-ns="' + ns +
+        '" name="spec" type="radio" />&nbsp;<a target="_blank" href="http://lego-off.baidu.com/#/lego/template/material/create~templateId=' +
+        template.id + '">' + template.name + '</a></label></li>');
+    }
+    html.push('</ul>');
+    document.querySelector('.specs').innerHTML = html.join('');
+  }
+
+  function buildHtml(response) {
+      var html = ['<ul>'];
+      for (var namespace in response) {
+          var specs = response[namespace];
+          html.push('<li data-ns="' + namespace + '">' + namespace + '<span>(' + specs.length + ')</span></li>');
+      }
+      html.push('</ul>');
+      document.querySelector('.widgets').innerHTML = html.join('');
+      C_response = response;
+  }
+  </script>
+</html>

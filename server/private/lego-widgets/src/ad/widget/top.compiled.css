@@ -1,0 +1,55 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: top.less  2012-07-16 10:17:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/top.less ~ 2012/07/16 22:10:40
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision:$ 
+ * @description 
+ *  
+ **/
+.ad-widget-top {
+  font: 12px arial, sans-serif;
+  text-align: left;
+}
+.ad-widget-top .ec-top-title {
+  font-size: 12px;
+  font-family: 宋体;
+  font-weight: 900;
+  color: #000;
+  line-height: 22px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.ad-widget-top .ec-top-item {
+  border-top: 1px solid #e1e1e1;
+  height: 27px;
+  line-height: 27px;
+}
+.ad-widget-top .ec-top-index {
+  display: inline-block;
+  font-size: 12px;
+  width: 16px;
+  color: #fff;
+  margin-right: 5px;
+  text-align: center;
+}
+.ad-widget-top .ec-top-text {
+  display: inline-block;
+  color: #1680bc;
+}
+.ad-widget-top .ec-top-text a {
+  text-decoration: none;
+  color: #1680bc;
+}
+.ad-widget-top .ec-top-num {
+  display: inline-block;
+  width: 60px;
+  color: #646464;
+}
+.ad-widget-top .ec-top-status {
+  vertical-align: middle;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

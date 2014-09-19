@@ -1,0 +1,226 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: lv_test.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/lv_test.less ~ 2012/06/06 11:51:39
+ * @author songao(songao@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 524px;
+  height: 396px;
+  background: #ffffff;
+  border: 6px solid #aa8d7e;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+  zoom: 1;
+  background: #ffffff;
+}
+#canvas .ad-block-0 .ad-block-0-0 {
+  float: left;
+  width: 220px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+#canvas .ad-block-0 .ad-block-0-1 {
+  float: right;
+  width: 276px;
+  padding: 4px 10px 0px 14px;
+}
+#canvas .ad-block-0 .ad-block-0-1 .ad-block-0-1-0 {
+  margin-bottom: 7px;
+}
+#canvas .ad-block-0 .ad-block-0-1 .ad-widget-button-group {
+  padding: 3px 0px;
+  background-color: transparent;
+}
+#canvas .ad-block-0 .ad-block-0-1 .ad-widget-button-group td {
+  border: 0;
+}
+#canvas .ad-block-0 .ad-block-0-1 .ad-widget-button-group td a {
+  color: #8f6e5e;
+  text-decoration: none;
+  border: solid 1px #d8cbc4;
+  margin: 0 5px 0 0;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  background-color: #fff;
+  font-family: "宋体";
+}
+#canvas .ad-block-1 .ad-widget-tab-container {
+  background-color: #7d614f;
+}
+#canvas .ad-block-1 .ad-widget-tab-container ul.tab-head {
+  margin: 0px;
+  background: none;
+  background-color: #584537;
+  padding: 0px;
+  height: 30px;
+  overflow: hidden;
+  width: 524px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container ul.tab-head li {
+  margin: 0px;
+  height: 30px;
+  border-left: solid 1px #584537;
+  border-right: solid 1px #584537;
+}
+#canvas .ad-block-1 .ad-widget-tab-container ul.tab-head li a {
+  background-color: #584537;
+  color: #ffeee4;
+  height: 10px;
+  line-height: 10px;
+  *line-height: 14px;
+  border: none;
+  margin-top: 10px;
+  padding: 0px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container ul.tab-head li a.current {
+  color: #fffffd;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  background-color: #7d6050;
+  margin-top: 0px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container ul.tab-head li.tab-list-last a {
+  border-right: none;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body {
+  overflow: hidden;
+  zoom: 1;
+  height: 141px;
+  *height: 145px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table {
+  border: none;
+  padding: 0px 10px 15px 10px;
+  width: 240px;
+  float: left;
+  margin-top: 5px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table td {
+  border: none;
+  text-align: left;
+  line-height: 20px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table td a {
+  color: #fdeee2;
+  text-decoration: none;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table thead tr {
+  background-color: #7d614f;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table thead tr td {
+  text-align: center;
+  border: none;
+  border-bottom: solid 1px #ffede2;
+  margin-bottom: 20px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table thead tr td font {
+  color: #fffdfe;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table tbody tr {
+  background-color: #7d614f;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .ad-widget-table table tbody tr.row-1 td {
+  padding-top: 5px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 {
+  position: relative;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 .normal-con-0-0 {
+  position: absolute;
+  height: 140px;
+  overflow: hidden;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 .normal-con-0-0 .ad-widget-lv-list .inner {
+  padding-right: 0px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 .normal-con-0-0 .ad-widget-lv-list .inner .detail {
+  margin-left: 40px;
+  width: 260px;
+  overflow: hidden;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 .normal-con-0-1 {
+  position: absolute;
+  left: 25px;
+  top: 40px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 .normal-con-0-1 .ad-widget-dependency-select .item {
+  float: none;
+  margin-bottom: 10px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-2 .normal-con-0 .normal-con-0-1 .ad-widget-dependency-select .item .title {
+  color: #FFEDE3;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-4 {
+  padding: 5px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-4 .ad-widget-small-weibo {
+  background-color: #fff;
+  padding: 20px 10px 10px 10px;
+  height: 101px;
+  line-height: normal;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-4 .ad-widget-small-weibo .weibo-head {
+  position: relative;
+  margin-bottom: 5px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-4 .ad-widget-small-weibo .weibo-head .follow {
+  position: absolute;
+  right: 0px;
+}
+#canvas .ad-block-1 .ad-widget-tab-container .tab-body .tabcon-0-4 .ad-widget-small-weibo .context {
+  margin-bottom: 5px;
+}
+#canvas .ad-widget-small-weibo .weibo-head .name {
+  color: #200000;
+}
+.lv-fwc-1 .ad-widget-float-window-container .cont {
+  margin: 70px 0px 0px 15px;
+}
+.lv-fwc-1 .ad-widget-float-window-container .close {
+  background-image: none;
+  top: 4px;
+  right: 15px;
+  height: 20px;
+  width: 32px;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.lv-fwc-1 .ad-widget-float-window-container .close:hover {
+  background-image: none;
+  background-color: #fff;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+.lv-fwc-1 .ad-widget-float-window-container .ad-widget-dependency-select .item {
+  margin-right: 5px;
+}
+.lv-fwc-1 .ad-widget-float-window-container .ad-widget-dependency-select .item span {
+  display: none;
+}
+.lv-fwc-1 .ad-widget-float-window-container .ad-widget-dependency-select .item select {
+  width: 133px;
+}
+.lv-fwc-1 .ad-widget-float-window-container .ad-widget-bmap {
+  margin: 15px 0px 0px 5px;
+  width: 500px;
+  height: 300px;
+}
+.lv-fwc-1 .ad-widget-float-window-container .ad-widget-bmap .container {
+  width: 500px;
+  height: 300px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

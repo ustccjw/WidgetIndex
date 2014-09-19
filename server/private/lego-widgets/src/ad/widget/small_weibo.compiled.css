@@ -1,0 +1,130 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: small_weibo.less 9848 2012-06-20 10:14:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/h1.less ~ 2012/06/07 22:10:40
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 9848 $ 
+ * @description 
+ *  
+ **/
+.ad-widget-small-weibo {
+  font: 13px arial, sans-serif;
+  line-height: 18px;
+  padding-top: 13px;
+}
+.ad-widget-small-weibo fieldset {
+  margin-left: 0px;
+  overflow: hidden;
+  padding: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: solid 1px #e1e1e1;
+}
+.ad-widget-small-weibo legend {
+  text-align: left;
+  margin-left: -3px;
+  *margin-left: -8px;
+  color: #000;
+}
+.ad-widget-small-weibo .ec-weibo-head {
+  color: #4c4c4c;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-small-weibo .ec-weibo-head .ec-seprate {
+  padding-right: 4px;
+  *padding-left: 3px;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+}
+.ad-widget-small-weibo .ec-logo {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 2px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+.ad-widget-small-weibo .ec-logo img {
+  border: 0px;
+}
+.ad-widget-small-weibo .ec-name {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 2px;
+  color: #5555DD;
+  display: inline-block;
+  /** padding-right: 20px 放到了模板里面去设置了，因为有时候没有背景图 */
+
+}
+.ad-widget-small-weibo .ec-follow {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  width: 60px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+.ad-widget-small-weibo .ec-follow img {
+  border: none;
+}
+.ad-widget-small-weibo .ec-text {
+  float: left;
+  height: 18px;
+  line-height: 18px;
+  padding-left: 4px;
+  *padding-left: 3px;
+  color: #666;
+  display: inline-block;
+}
+.ad-widget-small-weibo .ec-context {
+  padding-top: 3px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-small-weibo .ec-weibo-logo {
+  float: left;
+  text-decoration: none;
+  display: block;
+}
+.ad-widget-small-weibo .ec-weibo-logo img {
+  border: 0px;
+  display: block;
+}
+.ad-widget-small-weibo .ec-foot {
+  padding-top: 3px;
+  line-height: 20px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-small-weibo .ec-datetime {
+  float: left;
+  color: #666;
+}
+.ad-widget-small-weibo .ec-rightbtn {
+  float: right;
+}
+.ad-widget-small-weibo .ec-rightbtn div,
+.ad-widget-small-weibo .ec-rightbtn a {
+  float: left;
+  width: 35px;
+  text-align: center;
+  color: #200000;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.ad-widget-small-weibo .ec-seprate {
+  border-right: 1px solid #ccc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

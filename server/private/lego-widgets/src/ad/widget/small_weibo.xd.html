@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="//bs.baidu.com/adtest/10960616bded97c4fee8d5bcb115fdd0.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+        function queryString(sKey) {
+            var opts = {
+                source: window.location.href.toString(),
+                split: "&"
+            };
+            var rs = new RegExp("(^|)" + sKey + "=([^\\" + opts.split + "]*)(\\" + opts.split + "|$)", "gi").exec(opts.source),
+            tmp;
+            if (tmp = rs) {
+                return tmp[2];
+            }
+            return null;
+        }
+        var version = queryString('version');
+        var source = queryString('source');
+        if(version == 'simple'){
+            try {
+                //fix me
+                if(source){
+                    opener[source + 'WB'].loginStatus = true;
+                    opener[source + 'WB'].waitReady();
+                }
+            } catch(e) {
+                window.close();
+            }
+            window.opener = null;
+            window.open("", "_self");
+            window.close();
+        }else{
+            new WB({"key" : source, xdpath : ""});
+            window[source + 'WB'].connect.loginReady();
+            window[source + 'WB'].client.initClientProxy();
+        }
+        
+    </script>
+  </body>
+</html>

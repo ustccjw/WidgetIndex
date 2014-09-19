@@ -1,0 +1,203 @@
+<!-- target:AD_ad_widget_weigou_detail_view -->
+<div class="ecl-weigou-detail">
+    <div class="ecl-weigou-detail-top">
+        <div class="ecl-weigou-detail-left">
+            <div class="ecl-weigou-detail-image-container">
+                <div>
+                <img <%
+                if(gallery.length !== 0) {
+                    print('src="' + gallery[0] + '"');
+                }
+                %> class="ecl-weigou-detail-image" />
+                </div>
+            </div>
+        </div>
+        <div class="ecl-weigou-detail-right">
+            <div class="ecl-weigou-detail-name">
+                <a href="javascript:;" title="<%:h=name%>"></a>
+            </div>
+            <div class="ecl-weigou-detail-vendor c-clearfix">
+                <span>商品来源：</span>
+                <span class="ecl-weigou-detail-verdor-name"><%:h=vendor%></span>
+                <%if(typeof attributes !== 'undefined' && attributes.length>0){%>
+                <a id="ecl-weigou-detail-attr-link" href="javascript:;" class="OP_LOG_BTN" data-click="{fm:'behz'}">查看详情</a>
+                <div id="ecl-weigou-detail-attr" style="display:none">
+                    <iframe></iframe>
+                    <span class="ecl-tip-arrow"></span>
+                    <b class="OP_LOG_BTN" data-click="{fm:'behz'}"></b>
+                    <div class="ecl-weigou-detail-attr-wrapper">
+                        <div class="ecl-weigou-detail-attr-inner" <%if(attributes.length <= 8){print('style="width:180px"')}%>>
+                            <%
+                            var item;
+                            for(var i=0,length=attributes.length;i<length;i++) {
+                            item=attributes[i];
+                            %>
+                            <div class="ecl-weigou-pur-attr-item" title="<%:h=item['key']%>：<%:h=item['value']%>"></div>
+                            <%
+                            }
+                            %>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+            </div>
+            <div class="ecl-weigou-detail-price c-clearfix">
+                <span>现　　价：</span>
+                <span class="ecl-weigou-money">¥</span>
+                <span class="price"><%:h=price.toFixed(2)%></span>
+                <span class="tag"></span>
+            </div>
+            <%
+            if(typeof original_price !== 'undefined' && original_price !== 0 && original_price > price) {
+            %>
+            <div class="ecl-weigou-detail-original-price c-clearfix">
+                <span>原　　价：</span>
+                <s>¥<%=original_price.toFixed(2)%></s>
+            </div>
+            <%
+            }
+            %>
+            <div class="ecl-weigou-detail-counter c-clearfix">
+                <span class="ecl-weigou-detail-counter-title">购买数量：</span>
+                <span class="ecl-weigou-detail-minus OP_LOG_BTN" data-click="{fm:'behz'}"></span>
+                <span class="ecl-weigou-detail-counter-input">
+                    <input id="ecl-weigou-detail-input" type="text" value="1" onclick="this.select()" />
+                </span>
+                <span class="ecl-weigou-detail-plus OP_LOG_BTN" data-click="{fm:'behz'}"></span>
+            </div>
+            <div class="ecl-weigou-detail-submit-wrapper">
+                <div class="ecl-weigou-detail-submit OP_LOG_BTN" data-click="{fm:'behz'}"></div>
+                <span id="ecl-weigou-detail-return-btn" class="OP_LOG_BTN" data-click="{fm:'behz'}">返回</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="ecl-weigou-detail-bottom"></div>
+</div>
+
+<!-- target:ecl_detail_rcmd -->
+<div class="ecl-weigou-detail-rcmd">
+    <div class="ecl-weigou-rcmd-title"> 一起买 </div>
+    <div class="ecl-weigou-rcmd-container">
+        <div class="ecl-weigou-rcmd-left">
+            <div class="ecl-weigou-rcmd-item">
+                <div class="ecl-weigou-rcmd-item-top">
+                    <img src="<%=main.logo%>" />
+                </div>
+                <div class="ecl-weigou-rcmd-item-middle">
+                    <a href="javascript:;" class="ecl-weigou-rcmd-item-name" title="<%:h=main.name%>"></a>
+                </div>
+                <div class="ecl-weigou-rcmd-item-bottom">
+                    <span class="ecl-weigou-money">¥</span>
+                    <strong><%=main.price.toFixed(2)%></strong>
+                </div>
+            </div>
+        </div>
+        <div class="ecl-weigou-rcmd-middle">
+            <b></b>
+        </div>
+        <div class="ecl-weigou-rcmd-right c-clearfix">
+            <div class="ecl-weigou-rcmd-gallery-container c-clearfix">
+                <div class="ecl-weigou-rcmd-gallery">
+                    <div class="ecl-weigou-rcmd-gallery-wrapper">
+                        <ul class="c-clearfix">
+                        <%
+                        var item;
+                        for(var i = 0, length = list.length; i < length; i++) {
+                        item = list[i];
+                        %>
+                        <li>
+                            <div class="ecl-weigou-rcmd-item-top ecl-weigou-rcmd-item-top-true" data-id="<%=item.id%>">
+                                <img src="<%:h=item.logo%>" data-id="<%=item.id%>" data-index="<%=i%>"/>
+                            </div>
+                            <div class="ecl-weigou-rcmd-item-middle">
+                                <a href="javascript:;" class="ecl-weigou-rcmd-item-name ecl-weigou-rcmd-item-name-true" data-id="<%=item.id%>" title="<%:h=item.name%>"></a>
+                            </div>
+                            <div class="ecl-weigou-rcmd-item-bottom OP_LOG_BTN" data-click="{fm:'behz'}" data-id="<%=item.id%>">
+                                <input class="ecl-weigou-rcmd-item-input" id="ecl-weigou-rcmd-item-input<%=i%>" type="checkbox" value="<%=item.id%>">
+                                <label for="ecl-weigou-rcmd-item-input<%=i%>">
+                                    <span class="ecl-weigou-money">¥</span>
+                                    <strong><%=item.price%></strong>
+                                </label>
+                            </div>
+                        </li>
+                        <%
+                        }
+                        %>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ecl-weigou-rcmd-gallery-left OP_LOG_BTN" data-click="{fm:'behz'}">
+                    <div class="disabled"></div>
+                </div>
+                <div class="ecl-weigou-rcmd-gallery-right OP_LOG_BTN" data-click="{fm:'behz'}">
+                    <%
+                    if(list.length <= 3) {
+                        print('<div class="disabled"></div>');
+                    } else {
+                        print('<div></div>');
+                    }
+                    %>
+                </div>
+            </div>
+        </div>
+        <div class="ecl-weigou-rcmd-bottom c-clearfix">
+            <span>已选择</span>
+            <span class="ecl-weigou-rcmd-count-wrapper">(<span id="ecl-weigou-rcmd-count">1</span>)</span>
+            <span>种商品</span>
+            <span class="ecl-weigou-rcmd-buy OP_LOG_BTN" data-click="{fm:'behz'}">　　　</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- target:ecl_rcmd_template  -->
+<div class="ecl-weigou-rcmd-tip-inner c-clearfix">
+    <b class="OP_LOG_BTN" data-click="{fm:'behz'}"></b>
+    <div class="ecl-weigou-rcmd-tip-left">
+        <div>
+            <img src="<%:h=picture%>" />
+        </div>
+    </div>
+    <div class="ecl-weigou-rcmd-tip-right">
+        <div class="ecl-weigou-rcmd-tip-top">
+            <div class="ecl-weigou-rcmd-tip-name-wrapper">
+                <span title="<%:h=name%>"></span>
+            </div>
+            <%if(typeof vendor !== 'undefined') {%>
+            <div class="ecl-weigou-rcmd-tip-vendor">
+                <span>商家来源：<%:h=vendor%></span>
+            </div>
+            <%}%>
+            <div class="ecl-weigou-rcmd-tip-price">
+                <span>现价：</span>
+                <span class="ecl-weigou-money">¥</span>
+                <strong><%:h=price.toFixed(2)%></strong>
+            </div>
+            <%
+            if(typeof original_price !== 'undefined' && original_price !== 0 && original_price > price) {
+            %>
+            <div class="ecl-weigou-rcmd-tip-original-price">
+                <s>原价：¥<%:h=original_price.toFixed(2)%></s>
+            </div>
+            <%}%>
+        </div>
+        <%
+        if(typeof attributes !== 'undefined') {
+        %>
+            <div class="ecl-weigou-rcmd-tip-attrs c-clearfix">
+            <%
+            var item;
+            for(var i=0,length=attributes.length;i<length;i++){
+                item=attributes[i];
+            %>
+                <div class="ecl-weigou-rcmd-tip-attr" title="<%:h=item.key%>：<%:h=item.value%>"></div>
+            <%
+            }
+            %>
+            </div>
+        <%
+        }
+        %>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: video_style_three.less 12406 2012-09-28 03:46:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/landmark/video_style_three.less ~ 2012/09/28 11:32:23
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 12406 $ 
+ * @description 
+ * video_style_three样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 280px;
+    height:234px;
+    background: #ffffff;
+    margin-bottom : 20px;
+    z-index:-1;
+    .layout{
+        position:relative;
+    }
+    h2 {
+        height : 19px;
+        line-height : 19px;
+        a {
+            color : #0000cc;
+        }
+    }
+    .ad-widget-header  {
+        footer {
+          font-size : 13px;
+          height: 13px;
+          line-height: 13px;
+        }
+        h2 {
+          margin: 0px;
+          font-size : 16px;
+          font-weight : normal;
+        }
+        .ec-figcaption{
+            padding-left:0px;
+            margin-bottom:4px;
+        }
+    }
+    .ad-widget-link-list {
+        .gain-bfc();
+        line-height:24px;
+        height:24px;
+        li {
+            width : 66px;
+            margin-left: 2px;
+            margin-top: 3px;
+            height : 24px;
+            line-height: 24px;
+            background-color: #C2D8F8;
+            border : none;
+            a {
+                font-size : 13px;
+                color : #0000cc;
+            }
+        }
+        .ec-o1 {
+            margin-left: 0px;
+        }
+        ul {
+            height : 24px;
+            margin:0px;
+            padding:0px;
+            margin-bottom :15px;
+            margin-top :5px;
+        }
+    }
+    .ad-widget-video-title{
+        text-align:left;
+        font-size:13px;
+        color:#000;
+    }
+    .ad-widget-video{
+        embed{
+            height: 234px;
+            width: 280px;
+        }
+        object{
+            height: 234px;
+            width: 280px;
+        }
+    }
+    .ad-layout-row-4{
+        display:none;
+        position:absolute;
+        top:0px;
+        left:-17px;
+        z-index:9999999;
+        width:297px;
+        .gain-bfc();
+        .ad-layout-col-0{
+            width:17px;
+            height:50px;
+            float:left;
+            cursor:pointer;
+        }
+        .ad-layout-col-1{
+            float:left;
+            width:280px;
+            height:234px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

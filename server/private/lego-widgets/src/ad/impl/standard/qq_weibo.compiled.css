@@ -1,0 +1,48 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id$ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/standard/qq_weibo.less ~ 2013/10/30 15:25:31
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision$ 
+ * @description 
+ * ad.widget.QQWeibo
+ **/
+#canvas .ad-widget-qq-weibo {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 15px;
+}
+#canvas .ad-widget-qq-weibo fieldset {
+  display: none;
+}
+#canvas .ad-widget-qq-weibo .ec-weibo-head {
+  padding-left: 0;
+  padding-right: 0;
+}
+#canvas .ad-widget-qq-weibo .ec-name {
+  font-size: 13px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: normal;
+  color: #55d;
+}
+#canvas .ad-widget-qq-weibo .ec-text {
+  padding-left: 4px;
+}
+#canvas .ad-widget-qq-weibo .ec-seprate {
+  padding-right: 4px;
+}
+#canvas .ad-widget-qq-weibo .ec-rightbtn .ec-seprate {
+  padding-right: 0;
+}
+#canvas .ad-widget-qq-weibo .ec-context,
+#canvas .ad-widget-qq-weibo .ec-foot {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

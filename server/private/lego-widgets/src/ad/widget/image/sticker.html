@@ -1,0 +1,22 @@
+<!-- target:AD_ad_widget_image_sticker -->
+<div class="ad-widget-image ad-widget-image-sticker"> <a class="ec-title ec-string-cut" data-max-length="33" href="{{{rcv_url}}}" target="_blank" title="{{city}}周边酒店-{{seller_name}}"><em>{{city}}</em>{{seller_name}}</a>
+    <ul >
+        {{#options}}
+        <li style="width:{{width}}px;">
+            <div class="ec-img" style="width:{{width}}px;height:{{height}}px;"> <a style="width:{{width}}px;height:{{height}}px;" href="{{{rcv_url}}}" target="_blank"></a> <img width="{{width}}" border="0" height="{{height}}" src="{{src}}" />
+                <div class="ec-info-bg" style="width:{{width}}px;"></div>
+                <div class="ec-info" style="width:{{width}}px;">
+                    <div class="ec-inner"> {{#price}}
+                        <p class="ec-price">¥{{price}}</p>
+                        {{/price}}
+                        {{#score}}
+                        <p class="ec-score">评价：{{score}}</p>
+                        {{/score}} </div>
+                </div>
+            </div>
+            <a target="_blank" class="ec-text ec-string-cut" data-max-length="48" href="{{{rcv_url}}}" title="{{text}}">{{text}}</a> </li>
+        {{/options}}
+    </ul>
+    <a class="ec-more" href="{{#more_rcv_url}}{{{more_rcv_url}}}{{/more_rcv_url}}{{^more_rcv_url}}{{{rcv_url}}}{{/more_rcv_url}}" target="_blank" title="查看更多{{city}}酒店"> 查看更多<em>{{city}}</em>酒店》 </a> <br />
+    <div class="ec-site"> {{show_url}} - <span>图片推广</span> </div>
+</div>

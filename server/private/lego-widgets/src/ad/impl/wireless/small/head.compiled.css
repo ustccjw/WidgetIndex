@@ -1,0 +1,47 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless/small/head.less ~ 2013/12/25 14:36:59
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * smart样式文件
+ **/
+#canvas .ad-widget-wireless-head {
+  font-size: 13px;
+}
+#canvas .ad-widget-wireless-head .ec-head-title {
+  font-size: 16px;
+}
+#canvas .ad-widget-wireless-head .ec-head-title span {
+  zoom: 1;
+  text-decoration: underline;
+}
+#canvas .ad-widget-wireless-head .ec-head-title em {
+  text-decoration: underline;
+}
+#canvas .ad-widget-wireless-head .ec-head-title .ec-official-site {
+  font-size: 12px;
+  margin-bottom: 1px;
+  text-decoration: none;
+}
+#canvas .ad-widget-wireless-head .ec-more-info {
+  font-size: small;
+}
+#canvas .ad-widget-wireless-head .ec-logo-img {
+  padding: 5px 0;
+  margin-right: 8px;
+  width: 34px;
+  height: 34px;
+}
+#canvas .ad-widget-wireless-head .ec-head-desc {
+  overflow: hidden;
+  zoom: 1;
+  padding: 3px 0 2px 0;
+  font-size: small;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

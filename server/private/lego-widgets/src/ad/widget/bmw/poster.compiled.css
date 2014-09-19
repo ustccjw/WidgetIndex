@@ -1,0 +1,71 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/bmw/poster.less ~ 2014/05/14 10:58:51
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * poster样式文件
+ **/
+.ad-widget-bmw-poster {
+  font: 12px/1.5 arial, sans-serif;
+  width: 536px;
+  height: 235px;
+  position: relative;
+}
+.ad-widget-bmw-poster .ec-image {
+  display: block;
+  border: none;
+}
+.ec-banner {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  left: 0;
+  top: 210px;
+}
+.ec-banner-bg {
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.ec-banner-main {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+.ec-banner-main .ec-title,
+.ec-banner-main .ec-links {
+  float: left;
+}
+.ec-banner-main .ec-title {
+  margin-left: 10px;
+  line-height: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+.ec-banner-main .ec-links {
+  float: left;
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+  list-style-type: none;
+  line-height: 25px;
+}
+.ec-banner-main .ec-link {
+  float: left;
+  margin-right: 16px;
+}
+.ec-banner-main .ec-link a {
+  color: white;
+}
+.ec-banner-main .ec-link.ec-last {
+  margin-right: 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

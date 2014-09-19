@@ -1,0 +1,35 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/sticker-pa/single_image.less ~ 2013/09/03 15:54:32
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * sticker/single_image样式文件
+ **/
+.ad-widget-imageplus-sticker-single_image {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.ad-widget-imageplus-sticker-single_image img {
+  display: block;
+  margin: 0 auto;
+}
+.ad-widget-imageplus-sticker-single_image a {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

@@ -1,0 +1,287 @@
+[
+    {
+        "name": "0",
+        "displayName": "头部模块",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "OBJECT",
+        "nameTip": "",
+        "descriptionTip": "",
+        "rules": {},
+        "extraAttr": {},
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "logo",
+                "displayName": "logo",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "logo_rcv_url",
+                        "displayName": "图片跳转地址",
+                        "tip": "http://www.baidu.com",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 255,
+                            "stringType": "URL"
+                        }
+                    },
+                    {
+                        "name": "logo",
+                        "displayName": "logo图片",
+                        "tip": "http://dummyimage.com/92x92/ccc/999",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 92,
+                            "height": 92,
+                            "maxSize": 10,
+                            "ext": "jpg,gif,jpeg"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "title",
+                "displayName": "title",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "title_main",
+                        "displayName": "标题",
+                        "tip": "标题最多30个汉字，可添加核心\u003cem\u003e飘红词\u003c/em\u003e",
+                        "datatype": "HTML",
+                        "rules": {
+                            "required": true,
+                            "minTextByteLength": 1,
+                            "maxTextByteLength": 60,
+                            "tagList": {
+                                "em": {
+                                    "maxTextByteLength": 60,
+                                    "minCount": 1,
+                                    "maxCount": 1
+                                }
+                            }
+                        },
+                        "extraAttr": {
+                            "editorConfig": {
+                                "tools": [
+                                    "emphasize"
+                                ]
+                            },
+                            "tagList": {
+                                "em": {
+                                    "isAllowNoContent": false,
+                                    "isSimpleTag": false
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "title_main_rcv_url",
+                        "displayName": "标题跳转地址",
+                        "tip": "http://www.baidu.com",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 255,
+                            "stringType": "URL"
+                        }
+                    },
+                    {
+                        "name": "title_sub",
+                        "displayName": "新闻源提供单位",
+                        "tip": "XXX官方提供(最多20字节)",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 20
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "description",
+                "displayName": "描述",
+                "tip": "60～120汉字（120～240字节）",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 120,
+                    "maxByteLength": 240
+                },
+                "multiline": true
+            },
+            {
+                "name": "news_origin",
+                "displayName": "news_origin",
+                "datatype": "OBJECT",
+                "rules": {
+                    "required": true
+                },
+                "items": [
+                    {
+                        "name": "origin",
+                        "displayName": "新闻源",
+                        "tip": "新闻源最多20字节",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 20
+                        }
+                    },
+                    {
+                        "name": "time",
+                        "displayName": "时间",
+                        "tip": "2013-11-12 15:50",
+                        "datatype": "STRING",
+                        "nameTip": "如2013-11-12 15:50",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 18
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "1",
+        "displayName": "栏目模块",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "OBJECT",
+        "nameTip": "",
+        "descriptionTip": "",
+        "rules": {},
+        "extraAttr": {},
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "栏目",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 3,
+                    "maxCount": 3
+                },
+                "items": [
+                    {
+                        "name": "icon",
+                        "displayName": "栏目图标",
+                        "defaultValue": "http://ecmc.bdimg.com/adtest/12c4a72cc128eddd9917c34efd2670db.png",
+                        "datatype": "HIDDEN"
+                    },
+                    {
+                        "name": "text",
+                        "displayName": "栏目标题",
+                        "tip": "新闻标题最多30个字",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 60
+                        }
+                    },
+                    {
+                        "name": "text_rcv_url",
+                        "displayName": "栏目标题跳转地址",
+                        "tip": "http://www.baidu.com",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 255,
+                            "stringType": "URL"
+                        }
+                    },
+                    {
+                        "name": "origin",
+                        "displayName": "新闻源",
+                        "tip": "新闻源最多20字节",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 20
+                        }
+                    },
+                    {
+                        "name": "time",
+                        "displayName": "时间",
+                        "tip": "2013-11-12 15:50",
+                        "datatype": "STRING",
+                        "nameTip": "如2013-11-12 15:50",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 18
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "2",
+        "displayName": "多图模块",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "OBJECT",
+        "nameTip": "",
+        "descriptionTip": "",
+        "rules": {},
+        "extraAttr": {},
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "图片列表",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 3,
+                    "maxCount": 5
+                },
+                "items": [
+                    {
+                        "name": "img_url",
+                        "displayName": "图片地址",
+                        "tip": "http://dummyimage.com/100x70/ccc/999",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 100,
+                            "height": 70,
+                            "maxSize": 10,
+                            "ext": "jpg,gif,jpeg"
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "图片链接地址",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 255,
+                            "stringType": "URL"
+                        }
+                    },
+                    {
+                        "name": "text",
+                        "displayName": "图片说明",
+                        "tip": "最多7个汉字",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 14
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

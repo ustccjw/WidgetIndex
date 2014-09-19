@@ -1,0 +1,82 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/smart/yh_head.less ~ 2013/12/23 21:08:15
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * yh_head样式文件
+ **/
+ @import-once "mixins.less";
+
+.ad-widget-smart-yh-head {
+    font: 13px/1.54 arial,sans-serif;
+
+    .ec-head-row {
+        line-height: 20px;
+        padding: 0;
+        margin: 0;
+        span {
+            margin-left: 6px;
+        }
+    }
+    .ec-displacement, .ec-price {
+        float: left;
+        .ie7-inline-block();
+    }
+    .ec-price {
+        margin-left: 30px;
+    }
+    .ec-consumption-value {
+        font-weight: bold;
+    }
+    .ec-head-site {
+        clear: left;
+        color: #008102;
+    }
+    .ec-head-site-text {
+        color: #666;
+    }
+    .ec-try-btn {
+        margin-top: 8px;
+        .smart-btn();
+        height: 24px;
+        width: 164px;
+    }
+    .ec-try-btn:hover {
+        border-color: #388bff;
+    }
+    .ec-try-btn:active {
+        border-color: #a2a6ab;
+        background-color: #f0f0f0;
+        .box-shadow(~"inset 1px 1px 1px #c7c7c7");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

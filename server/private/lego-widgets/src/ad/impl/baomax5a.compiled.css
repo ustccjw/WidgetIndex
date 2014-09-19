@@ -1,0 +1,304 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: baomax5a.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/baomax5a.less ~ 2012/08/27 14:30:04
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * hm样式文件
+ **/
+#canvas {
+  font: 12px/1.5 "宋体", arial, sans-serif;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 10px 8px 15px 10px;
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  width: 518px;
+}
+#canvas .ec-official-site {
+  margin-top: 3px;
+}
+#canvas .ad-widget-title {
+  display: inline-block;
+}
+#canvas .ad-widget-title h2 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-title h2 a,
+#canvas .ad-widget-title h2 span {
+  float: left;
+}
+#canvas .ad-widget-title h2 a {
+  color: #0000cc;
+}
+#canvas .ad-block-0-0 {
+  height: 24px;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-1 .ad-block-1-0 {
+  float: left;
+}
+#canvas .ad-block-1 .ad-block-1-1 {
+  overflow: hidden;
+  zoom: 1;
+  width: 256px;
+  padding-left: 8px;
+  _padding-left: 5px;
+}
+#canvas .ad-widget-image-show-horizontal {
+  width: 254px;
+  height: 143px;
+  position: relative;
+}
+#canvas .ad-widget-image-show-horizontal .ec-img-container,
+#canvas .ad-widget-image-show-horizontal .ec-img-container a,
+#canvas .ad-widget-image-show-horizontal .ec-img-container a img {
+  width: 254px;
+  height: 143px;
+  display: inline-block;
+  border: none;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list li {
+  width: 20px;
+  height: 6px;
+  margin-left: 2px;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list li a {
+  disploy: none;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list li.ec-current {
+  border: 1px solid #2C99FE;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o0 {
+  background: #fff;
+  border: 1px solid #dadada;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o1 {
+  background: #E47732;
+  border: 1px solid #E47732;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o2 {
+  background: #BC272B;
+  border: 1px solid #BC272B;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o3 {
+  background: #B6B6B6;
+  border: 1px solid #B6B6B6;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o4 {
+  background: #5A5657;
+  border: 1px solid #5A5657;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o5 {
+  background: #000;
+  border: 1px solid #000;
+}
+#canvas .ad-widget-image-show-horizontal .ec-link-list .ec-o6 {
+  background: #847E72;
+  border: 1px solid #847E72;
+}
+#canvas .ad-widget-small-head {
+  padding-left: 2px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  font-size: 12px;
+  line-height: 19px;
+}
+#canvas .ad-widget-button {
+  width: 85px;
+  height: 26px;
+  margin: 6px 0 9px 2px;
+}
+#canvas .ec-bg {
+  display: none;
+}
+#canvas .ad-widget-image-normal {
+  padding: 2px;
+}
+#canvas .ad-widget-image-normal a,
+#canvas .ad-widget-image-normal img {
+  width: 78px;
+  height: 43px;
+  display: block;
+  border: none;
+}
+#canvas .ad-widget-image-normal a {
+  margin-right: 10px;
+}
+#canvas .ad-widget-image-normal a.ec-last {
+  margin-right: 0;
+}
+#canvas .ad-widget-image-normal span {
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  width: 78px;
+  height: 43px;
+  line-height: 43px;
+  top: 0;
+  left: 0;
+  color: #FF8311;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  z-index: 110;
+}
+#canvas .ad-widget-image-normal span i {
+  font-size: 10px;
+  font-style: normal;
+}
+#canvas .ad-widget-image-normal .ec-opacity-bg {
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  width: 78px;
+  height: 43px;
+  line-height: 43px;
+  border: 2px solid #FF8311;
+  top: -2px;
+  left: -2px;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 100;
+}
+#canvas .ad-widget-image-normal a.ec-hover span,
+#canvas .ad-widget-image-normal a.ec-hover .ec-opacity-bg {
+  display: block;
+}
+#canvas .ad-widget-section {
+  margin-top: 6px;
+}
+#canvas .ad-widget-section li {
+  margin-bottom: 3px;
+}
+#canvas .ad-widget-section li img {
+  margin-right: 3px;
+  vertical-align: baseline;
+}
+#canvas .ad-widget-section li p {
+  margin-top: 2px;
+  margin-left: 20px;
+}
+#canvas .ad-widget-section li p a {
+  color: #333;
+  text-decoration: none;
+}
+#canvas .ad-widget-button-group {
+  background: #828282;
+  padding: 5px 0;
+  margin-top: 6px;
+}
+#canvas .ad-widget-button-group tr td {
+  border: none;
+  height: 16px;
+}
+#canvas .ad-widget-button-group tr td a {
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  border: none;
+  border-right: 1px solid #fff;
+  text-decoration: none;
+  background: transparent;
+  height: 13px;
+  line-height: 13px;
+  *height: 15px;
+  *line-height: 15px;
+  margin: 1px 0 2px 0;
+  *margin: 0 0 1px 0;
+}
+#canvas .ad-widget-button-group .ec-last a {
+  border-right: none;
+}
+#canvas .ad-widget-small-weibo {
+  margin-top: 9px;
+  padding-top: 6px;
+  border-top: 1px solid #e1e1e1;
+  position: relative;
+}
+#canvas .ad-widget-small-weibo legend {
+  margin-left: -900px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head {
+  height: 20px;
+  padding-top: 2px;
+}
+#canvas .ad-widget-small-weibo .ec-name {
+  color: #0000cc;
+  font-weight: normal;
+  font-size: 14px;
+  padding-right: 20px;
+}
+#canvas .ad-widget-small-weibo .ec-follow {
+  float: right;
+  width: 66px;
+  height: 22px;
+}
+#canvas .ad-widget-small-weibo .ec-text {
+  height: 13px;
+  *height: 15px;
+  line-height: 1;
+  *line-height: 15px;
+  padding: 0px 10px;
+  margin-top: 3px;
+  *margin-top: 2px;
+  width: auto;
+  color: #008100;
+}
+#canvas .ad-widget-small-weibo .ec-text span {
+  color: #008100;
+}
+#canvas .ad-widget-small-weibo .ec-seprate {
+  padding: 0px 10px;
+  width: auto;
+  color: #008100;
+}
+#canvas .ad-widget-small-weibo .ec-seprate span {
+  color: #008100;
+}
+#canvas .ad-widget-small-weibo .ec-context {
+  color: #000000;
+}
+#canvas .ad-widget-small-weibo .ec-context .ec-weibo-text {
+  height: auto;
+  overflow: hidden;
+  line-height: 18px;
+}
+#canvas .ad-widget-small-weibo .ec-datetime {
+  color: #999;
+}
+#canvas .ad-widget-small-weibo .ec-datetime span {
+  color: #999;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn {
+  height: 20px;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn div,
+#canvas .ad-widget-small-weibo .ec-rightbtn a {
+  height: 13px;
+  line-height: 13px;
+  *height: 15px;
+  *line-height: 15px;
+  margin: 3px 0 4px 0;
+  *margin: 2px 0 3px 0;
+  color: #008100;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

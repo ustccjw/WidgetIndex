@@ -1,0 +1,43 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: ns_pic.less 9607 2012-06-08 17:10:22Z fanxueliang $ 
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/ns_pic.less ~ 2012/06/09 00:32:22
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 9607 $ 
+ * @description 
+ *
+ **/
+.ad-widget-ns-pic {
+  font: 13px arial, "宋体", sans-serif;
+  line-height: 20px;
+}
+.ad-widget-ns-pic a {
+  color: #0000ca;
+  line-height: 20px;
+}
+.ad-widget-ns-pic a em {
+  font-style: normal;
+  color: #cc0001;
+  text-decoration: underline;
+}
+.ad-widget-ns-pic .ec-ns-head {
+  overflow: hidden;
+  zoom: 1;
+  height: 20px;
+  line-height: 20px;
+  background: url(//bs.baidu.com/adtest/2da65007e768fe648160d21f08a96fbc.png) repeat-x;
+  border: 1px solid #aaa;
+  padding: 0 10px;
+}
+.ad-widget-ns-pic .ec-ns-head-num {
+  float: right;
+  color: #999;
+}
+.ad-widget-ns-pic .ec-ns-head-source {
+  color: #666;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

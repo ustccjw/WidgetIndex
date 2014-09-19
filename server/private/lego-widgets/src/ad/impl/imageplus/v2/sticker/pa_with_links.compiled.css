@@ -1,0 +1,34 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/imageplus/v2/sticker/pa_with_links.less ~ 2014/08/04 12:23:12
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ **/
+#canvas .baiduimageplus-s-visible .baiduimageplus-s-bd-inner {
+  top: -26px;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -ms-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  transition: top 0.5s;
+}
+#canvas .baiduimageplus-s-close {
+  top: 5px;
+  right: 5px;
+  line-height: 25px;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+  color: #FFF !important;
+  background: transparent;
+}
+#canvas .baiduimageplus-s-close:hover {
+  background: #000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

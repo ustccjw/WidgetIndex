@@ -1,0 +1,60 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: video_style_three.less 12406 2012-09-28 03:46:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/landmark/video_style_three.less ~ 2012/09/28 11:32:23
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 12406 $ 
+ * @description 
+ * video_style_three样式文件
+ **/
+#canvas {
+  width: 222px;
+  background: #ffffff;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-title {
+  margin-bottom: 8px;
+}
+#canvas .ad-widget-video {
+  width: 220px;
+  height: 185px;
+  border: solid 1px #ccc;
+  margin-bottom: 8px;
+}
+#canvas .ad-widget-header {
+  margin-bottom: 8px;
+}
+#canvas .ad-widget-header .ec-figcaption {
+  width: auto;
+  padding: 0px;
+}
+#canvas .ad-widget-link-list {
+  overflow: hidden;
+  zoom: 1;
+  line-height: 24px;
+  height: 24px;
+}
+#canvas .ad-widget-link-list li {
+  width: auto;
+  margin-left: 2px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #C2D8F8;
+  border: none;
+  padding: 0px 8px;
+}
+#canvas .ad-widget-link-list li a {
+  font-size: 13px;
+  color: #0000cc;
+}
+#canvas .ad-widget-link-list .ec-o1 {
+  margin-left: 0px;
+}
+#canvas .ad-widget-link-list .ec-o2 {
+  width: 65px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

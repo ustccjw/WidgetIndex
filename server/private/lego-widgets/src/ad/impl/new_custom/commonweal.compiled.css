@@ -1,0 +1,88 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: commonweal.less 11222 2012-08-20 02:53:59Z dingguoliang01 $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/commonweal.less ~ 2013/10/30 14:23:28
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1179样式文件
+ **/
+#canvas {
+  margin-bottom: 20px;
+  font: 12px/1.5 arial, sans-serif;
+  width: 520px;
+}
+#canvas a {
+  outline: none;
+}
+#canvas .ad-block-0-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding: 8px 0 0 0;
+}
+#canvas .ad-block-0-1-0,
+#canvas .ad-block-0-1-1 {
+  float: left;
+}
+#canvas .ad-block-0-1-0 {
+  margin-right: 10px;
+}
+#canvas .ad-widget-small-head {
+  width: 253px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  text-indent: 2em;
+  line-height: 18px;
+}
+#canvas .ad-widget-small-head .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-widget-small-head .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-image-normal {
+  width: 254px;
+  height: 61px;
+  overflow: hidden;
+  margin-top: 9px;
+}
+#canvas .ad-widget-image-normal span {
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  line-height: 20px;
+  left: 47px;
+  background-color: #000000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  color: white;
+}
+#canvas .ad-widget-image-normal .ec-last {
+  margin: 0;
+}
+#canvas .ad-widget-image-normal img {
+  border: none;
+}
+#canvas .ad-widget-section {
+  background-color: #E4E4E4;
+  height: 26px;
+  line-height: 26px;
+  margin: 10px 0 0;
+  padding: 0;
+  text-indent: 10px;
+  width: 518px;
+}
+#canvas .ad-widget-section .ec-title {
+  height: 26px;
+  margin: 0;
+}
+#canvas .ad-widget-image img {
+  width: 518px;
+  height: 137px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

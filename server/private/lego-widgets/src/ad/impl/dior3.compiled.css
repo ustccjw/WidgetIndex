@@ -1,0 +1,182 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dior3.less ~ 2012/08/27 14:30:04
+ * @author wangdawei04@baidu.com (wangdawei) liyubei@baidu.com (leeight)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * burberry样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  background: url(//bs.baidu.com/adtest/6c45cf98abb50dba47cc8726557587e7.jpg) no-repeat;
+  margin-bottom: 20px;
+  height: 375px;
+  width: 521px;
+  padding: 10px 7px;
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+  zoom: 1;
+  padding: 0 3px;
+}
+#canvas .ad-block-0-0 {
+  float: left;
+}
+#canvas .ad-block-0-1 {
+  float: left;
+  width: 280px;
+  padding-left: 14px;
+}
+#canvas .ad-block-2 {
+  padding: 0 3px;
+}
+#canvas .ad-widget-video {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-widget-video object,
+#canvas .ad-widget-video embed {
+  display: block;
+}
+#canvas .ad-widget-small-head h2 {
+  width: 280px;
+  height: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+}
+#canvas .ad-widget-small-head em {
+  color: #CC0000;
+  font-style: normal;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #C4C2C5;
+}
+#canvas .ec-brand-intro h1 a {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  vertical-align: baseline;
+  width: 115px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+#canvas .ec-td-border .ec-brand-intro h1 a {
+  width: 165px;
+}
+#canvas .ad-widget-tab-container {
+  background-color: #fff;
+  margin-top: 10px;
+}
+#canvas .ec-tab-head {
+  margin: 0px;
+  background: none;
+  background-color: #B3B3B3;
+  padding: 0px;
+  height: 30px;
+  overflow: hidden;
+  width: 521px;
+}
+#canvas .ec-tab-head li {
+  margin: 0px;
+  height: 30px;
+  border-left: solid 1px #B3B3B3;
+  border-right: solid 1px #B3B3B3;
+}
+#canvas .ec-tab-head li a {
+  background-color: #B3B3B3;
+  color: #fff;
+  height: 10px;
+  line-height: 10px;
+  *line-height: 14px;
+  border: none;
+  border-right: 1px solid #CBCBCB;
+  margin-top: 10px;
+  padding: 0px;
+}
+#canvas .ec-tab-head .ec-current-tab {
+  border-left: solid 1px #D5D5D5;
+  border-right: solid 1px #D5D5D5;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  color: #000;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  background-color: #D5D5D5;
+  margin-top: 0;
+  border-right: none;
+}
+#canvas .ec-tab-head .ec-previous-tab a,
+#canvas .ec-tab-head .ec-tab-list-last a {
+  border-right: none;
+}
+#canvas .ec-tab-body {
+  overflow: hidden;
+  zoom: 1;
+  height: 120px;
+}
+#canvas .ad-widget-tab-cont {
+  margin-top: 10px;
+}
+#canvas .ad-widget-button-group {
+  background: #fff;
+  padding: 0;
+}
+#canvas .ad-widget-button-group td {
+  border-right: solid 1px #fff;
+}
+#canvas .ad-widget-button-group td a {
+  color: #000;
+  text-decoration: underline;
+  height: 22px;
+  line-height: 22px;
+  display: block;
+  background-color: #e8e8e8;
+}
+.ec-dior3-fwc-1 .ad-widget-float-window-container {
+  left: 0px;
+  top: 0px;
+}
+.ec-dior3-fwc-1 .ad-widget-video {
+  position: absolute;
+  left: 35px;
+  top: 136px;
+  width: 400px;
+  height: 250px;
+}
+.ec-dior3-fwc-1 .ad-widget-video object,
+.ec-dior3-fwc-1 .ad-widget-video embed {
+  width: 400px;
+  height: 250px;
+  display: block;
+}
+.ec-dior3-fwc-1 .ad-widget-link-list {
+  position: absolute;
+  left: 450px;
+  top: 230px;
+  width: 180px;
+  height: 78px;
+}
+.ec-dior3-fwc-1 .ad-widget-link-list li {
+  width: 180px;
+  height: 30px;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  float: none;
+}
+.ec-dior3-fwc-1 .ad-widget-link-list a {
+  display: block;
+  width: 180px;
+  height: 30px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

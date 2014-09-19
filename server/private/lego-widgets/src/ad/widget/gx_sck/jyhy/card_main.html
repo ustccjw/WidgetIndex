@@ -1,0 +1,28 @@
+<!-- target:AD_ad_widget_gx_sck_jyhy_card_main -->
+<div class="ad-widget-gx_sck-jyhy ad-widget-gx_sck-jyhy-card-main">
+    <div class="ec-card-main">
+        <h2>
+            <a href="{{{title_rcv_url}}}" title2="标题" target="_blank">{{{title}}}</a>
+            {{#display_official_site_icon}}
+            <a id="{{#_id}}icon-gw{{/_id}}" style="display:none" class="ec-official-site" target="_blank" href="http://guanwang.baidu.com/vcard/officialsite">官网</a>
+            {{/display_official_site_icon}}
+        </h2>
+        <div class="ec-card-main-body">
+            <div class="ec-card-main-logo">
+                <a href="{{{logo_rcv_url}}}" title2="logo" target="_blank">
+                    <img src="{{logo_img}}" />
+                </a>
+            </div>
+            <div class="ec-card-main-ctn">
+                <p class="ec-description">{{description}}</p>
+                <p class="ec-description">简介: {{intro}}</p>
+                <p class="ec-address-ctn"><span class="ec-address-text" title="{{address}}">地址: {{_trunked_address}}</span><a class="ec-map-icon" href="{{{poi_url}}}" title2="地图链接" target="_blank">地图</a></p>
+                <ul class="ec-links">
+                    {{#links}}
+                        <li class="ec-link-item ec-link-item-{{@index}}"><a class="ec-link" href="{{{rcv_url}}}" target="_blank" title2="短链{{_index}}">{{text}}</a></li>
+                    {{/links}}
+                </ul>
+            </div>
+        </div>
+    </div>   
+</div>

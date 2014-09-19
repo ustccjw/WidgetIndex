@@ -1,0 +1,13 @@
+[
+    {
+        "name": "height",
+        "displayName": "空白高度",
+        "defaultValue": "350",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "extraAttr": {
+            "filters": "float"
+        }
+    }
+]

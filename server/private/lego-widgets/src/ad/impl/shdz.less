@@ -1,0 +1,244 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: shdz.less 9923 2012-08-15 10:25:19Z wangdawei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/shdz.less ~ 2012/08/15 11:51:39
+ * @author wangdawei
+ * @version $Revision: 9923 $ 
+ * @description 
+ *  
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 516px;
+    height:372px;
+    padding:10px;
+    margin-bottom: 20px;
+    font:13px arial,"宋体",sans-serif;
+    background:#F1F5FC;
+    .ad-layout-wrapper{
+        overflow: hidden;
+        zoom: 1;
+        .ad-layout-row-0{
+            float:left;
+            div.ad-widget-slider{
+                width:220px;
+                height:190px;
+                ol {
+                    li {
+                        width: 220px;
+                        height: 190px;
+                    }
+                }
+                ul {
+                    li {
+                        background: none repeat scroll 0 0 #FFFFFF;
+                        color:#ccc;
+                        .border-radius(0px);
+                        font-size: 12px;
+                        height: 16px;
+                        line-height: 16px;
+                        margin-right: 6px;
+                        width: 16px;
+                    }
+                    li.cur {
+                        font-weight:bold;
+                        .opacity(100);
+                    }
+                }
+            }
+        }
+        .ad-layout-row-1{
+            float:right;
+            width:280px;
+            div.ad-widget-h1 {
+                width:285px;
+                h2 {
+                    margin:0 0 8px 0;
+                    a {
+                        font-family:arial, "宋体";
+                        color:#0000cc;
+                        font-size:16px;
+                        font-weight:bold;
+                        em {
+                            color: #CC0000;
+                            font-style: bold;
+                        }
+                    }
+                }
+                div.content{
+                    padding:0;
+                    margin:10px 0;
+                    div.description {
+                          width:auto;
+                          font-family:"宋体";
+                          color:#000000;
+                          font-size:13px;
+                    }
+                }
+            }
+            div.ad-widget-small-weibo {
+                margin:0px;
+                padding:0px;
+                a, span, div {
+                    color:#666;
+                }
+                div.weibo-head {
+                    .name{
+                        padding-right:20px;
+                    }
+                    a {
+                        color: #5555DD;
+                    }
+                }
+                div.context {
+                    height:35px;
+                    overflow:hidden;
+                }
+                div.text {
+                    width:auto;
+                }
+            }
+        }
+    }
+    
+    div.ad-widget-tab {
+        margin-top:5px;
+        .tab-head{
+            background: url("//bs.baidu.com/lego-mat/line-805ca8c4.png") repeat-x scroll center bottom transparent;
+            height: 24px;
+            list-style: none outside none;
+            margin: 10px 0 5px;
+            padding: 0 8px 0 0;
+            
+            li{
+                display: inline;
+                float: left;
+                margin-bottom: -1px;
+                margin-left: 8px;
+                position: relative;
+                
+                a, a:visited{
+                    background-color: #fff;
+                    border: 1px solid #BECCF1;
+                    display: block;
+                    font-size: 12px;
+                    line-height: 14px;
+                    outline: 0 none;
+                    padding: 4px 0;
+                    text-align: center;
+                    text-decoration: none;
+                }
+                a.current{
+                    background-color: #F1F5FC;
+                    border-bottom: 1px solid #F1F5FC;
+                }
+            }
+        }
+        
+        .tab-body{
+            margin:0px;
+            .tabcon{
+                display:none;
+                table td{
+                    line-height:18px;
+                    a{
+                        color: #000000;
+                        font-family: "宋体";
+                        font-size: 13px;
+                        line-height: 20px;
+                        text-decoration: none;
+                        
+                        img{
+                            border:0px;
+                        }
+                    }
+                }
+                
+                .brand-pic {
+                    height: 100px;
+                    width: 195px;
+                    padding-left:8px;
+                    word-wrap: break-word;
+                    
+                    img{
+                        height: 100px;
+                        width: 180px;
+                    }
+                }
+                
+                .brand-intro {
+                    padding-left: 12px;
+                    padding-right: 10px;
+                    word-wrap: break-word;
+                    height:102px;
+                    overflow:hidden;
+                    h1{
+                        margin:0px;
+                        padding:0px;
+                        *margin-bottom:4px;
+                    }
+                    h3{
+                        margin:0px;
+                        padding:0px;
+                        font-weight:normal;
+                    }
+                }
+                
+                table td.td-border{
+                    border-right: 1px solid #E1E1E1;
+                    
+                    .brand-intro {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+    div.ad-widget-button-group {
+        background:none;
+        tr td {
+            border:none;
+            a {
+                color: #0000cc;
+                font-size:12px;
+                display:block;
+                border:solid 1px #C8DAF0;
+                margin:4px;
+                text-decoration: underline;
+                padding:2px 7px;
+                background:#fff;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

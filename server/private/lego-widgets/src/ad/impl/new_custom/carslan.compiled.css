@@ -1,0 +1,209 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/carslan.less ~ 2014/08/18 15:47:26
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * carslan样式文件
+ **/
+#canvas {
+  font: 13px/1.5 arial, sans-serif;
+  width: 530px;
+  margin-bottom: 20px;
+  border: 4px solid #e73b65;
+}
+#canvas .ad-block-0 {
+  margin: 3px 5px 8px 5px;
+}
+#canvas .ad-block-1 {
+  margin: 5px;
+  height: 144px;
+}
+#canvas .ad-block-1-0 {
+  float: left;
+}
+#canvas .ad-block-1-1 {
+  height: 100%;
+  margin-left: 264px;
+  position: relative;
+}
+#canvas .ad-block-1-1 .ad-widget-small-head .ec-description {
+  line-height: 1.5;
+  text-indent: 2em;
+}
+#canvas .ad-block-1-1 .ad-widget-small-head .ec-description .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail {
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+  height: auto;
+  /*.ec-title {
+            margin-left: 0;
+            text-align: center;
+        }*/
+
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail .ec-thunbnail-cont {
+  position: static;
+  width: auto;
+  height: auto;
+  float: right;
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail .ec-thunbnail-bg {
+  display: none;
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail .ec-item {
+  width: 78px;
+  height: 59px;
+  margin: 0 0 0 11px;
+  overflow: hidden;
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail .ec-item img {
+  width: 100%;
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail .ec-item-bg {
+  height: 100%;
+  background: #ff7294;
+}
+#canvas .ad-block-1-1 .ad-widget-multi-video-thunbnail .ec-play-btn {
+  background-color: #e73b65;
+}
+#canvas .ad-block-2 {
+  margin-top: 16px;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head {
+  height: 28px;
+  margin: 0;
+  text-align: center;
+  background: #e73b65;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li {
+  display: block;
+  float: left;
+  margin: 0;
+  height: 100%;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab {
+  background-color: #ff7294;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head a {
+  display: block;
+  height: 15px;
+  margin: 6px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 16px;
+  color: white;
+  border: none;
+  border-right: 1px solid white;
+  background-color: transparent;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a,
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-previous-tab a,
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-tab-list-last a {
+  border-bottom: none;
+  background-color: transparent;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-tab-list-last a {
+  border-right: none;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-current-tab a {
+  border-right-color: #ff7294;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-head li.ec-previous-tab a {
+  border-right-color: #e73b65;
+}
+#canvas .ad-block-2 .ad-widget-tab-container .ec-tab-body {
+  background-color: #ff7294;
+}
+#canvas .ad-block-2 .ad-widget-button-group {
+  padding: 8px 0;
+  font-size: 12px;
+  background: transparent;
+}
+#canvas .ad-block-2 .ad-widget-button-group tr,
+#canvas .ad-block-2 .ad-widget-button-group td {
+  height: 13px;
+}
+#canvas .ad-block-2 .ad-widget-button-group td {
+  line-height: 13px;
+  border-right-color: #000;
+  overflow: hidden;
+}
+#canvas .ad-block-2 .ad-widget-button-group a {
+  color: #000;
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon {
+  width: 100%;
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon .ec-item-wrapper {
+  width: 100%;
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon .ec-item {
+  overflow: hidden;
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon .ec-item img {
+  width: 100%;
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon .ec-arrow {
+  bottom: 50px;
+  background: #000;
+  width: 22px;
+  height: 36px;
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon .ec-left-arrow {
+  background-image: url(//bs.baidu.com/adtest/e03e418ffbbf7fae5c4227eefc13efbd.png);
+}
+#canvas .ad-block-2 .ad-widget-image-cartoon .ec-right-arrow {
+  background-image: url(//bs.baidu.com/adtest/da8c94b0d380adb8e66f159da27252ff.png);
+}
+#canvas .ad-block-2 .ec-normal-con-0-0 {
+  height: 128px;
+  width: 100%;
+  overflow: hidden;
+}
+.ec-float-image-fwc .ad-widget-float-window-container .ec-close,
+.ec-float-video-fwc .ad-widget-float-window-container .ec-close {
+  width: 36px;
+  height: 36px;
+  top: 0;
+  right: 0;
+  background: #000000 url('//bs.baidu.com/adtest/7b6b3a690f1048161e97ce2e198b75b5.gif') no-repeat center center;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.ec-float-image-fwc .ad-widget-float-window-container .ec-close:hover,
+.ec-float-video-fwc .ad-widget-float-window-container .ec-close:hover {
+  background: #000000 url('//bs.baidu.com/adtest/7b6b3a690f1048161e97ce2e198b75b5.gif') no-repeat center center;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.ec-float-video-fwc .ad-widget-video {
+  position: absolute;
+  left: 20px;
+  top: 76px;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail {
+  left: 580px;
+  top: 172px;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail .ec-play-btn {
+  background-color: #e73b65;
+}
+.ec-float-video-fwc .ad-widget-multi-video-thunbnail .ec-item-bg {
+  background: #ff7294;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

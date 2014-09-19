@@ -1,0 +1,59 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-colorlist",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "宽度", // 可选
+                    "defaultValue": "500px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-colorlist .ec-colorlist-item",
+            "displayName": "列表项设置",
+            "rules": [
+                {
+                    "name": "float",
+                    "displayName": "是否显示2列，默认2列", // 可选
+                    "options": ["none", "left"],
+                    "defaultValue": "left"
+                },
+                {
+                    "name": "width",
+                    "displayName": "每列宽度", // 可选
+                    "defaultValue": "220px"
+                },
+                {
+                    "name": "padding-bottom",
+                    "displayName": "垂直间距", // 可选
+                    "options": ["0", "12px"],
+                    "defaultValue": "0"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-colorlist ul .ec-color-flag",
+            "displayName": "色块设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "宽度",
+                    "defaultValue": "10px"
+                },
+                {
+                    "name": "height",
+                    "displayName": "高度", // 可选
+                    "defaultValue": "18px"
+                },
+                {
+                    "name": "margin-right",
+                    "displayName": "右外边距", // 可选
+                    "defaultValue": "4px"
+                }
+            ]
+        }
+    ]
+}

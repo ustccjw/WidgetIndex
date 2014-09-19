@@ -1,0 +1,112 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: news_head.less 12298 2012-09-26 04:32:59Z fanxueliang $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/news/news_head.less ~ 2012/06/07 22:10:40
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 12298 $
+ * @description
+ *
+ **/
+.ad-widget-news-head {
+  overflow: hidden;
+  zoom: 1;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font: 13px/1.2 arial, sans-serif;
+}
+.ad-widget-news-head h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.ad-widget-news-head h2 em {
+  color: #cc0000;
+  font-style: normal;
+  text-decoration: underline;
+}
+.ad-widget-news-head .ec-content {
+  overflow: hidden;
+  zoom: 1;
+  width: 535px;
+  line-height: 18px;
+}
+.ad-widget-news-head .ec-content .ec-logo {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin-top: 0px;
+  margin-right: 10px;
+  border: 1px solid #eee;
+}
+.ad-widget-news-head .ec-content .ec-logo img {
+  border: none;
+  display: block;
+}
+.ad-widget-news-head .ec-content .ec-title {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 3px;
+}
+.ad-widget-news-head .ec-content .ec-title .ec-title-sub {
+  float: right;
+  font-size: 12px;
+  color: #666;
+}
+.ad-widget-news-head .ec-content .ec-title .ec-title-sub a {
+  color: #666;
+}
+.ad-widget-news-head .ec-content .ec-title .ec-title-main {
+  font-size: 14px;
+  float: left;
+  font-weight: 700;
+}
+.ad-widget-news-head .ec-content .ec-title .ec-title-main a {
+  color: #0000cc;
+}
+.ad-widget-news-head .ec-content .ec-title .ec-title-main em {
+  color: #cc0000;
+  font-style: normal;
+  text-decoration: underline;
+}
+.ad-widget-news-head .ec-content .ec-news-origin {
+  color: #999;
+  float: right;
+}
+.ad-widget-news-head .ec-content .ec-description {
+  color: #000;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-news-head .ec-content .ec-description a {
+  color: #000080;
+}
+.ad-widget-news-head .ec-content .ec-description .ec-head-img-group {
+  line-height: 16px;
+  padding-top: 3px;
+}
+.ad-widget-news-head .ec-content .ec-description .ec-head-img-group a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.ad-widget-news-head .ec-content .ec-description .ec-head-img-group a img {
+  border: none;
+  display: block;
+}
+.ad-widget-news-head .ec-content .ec-time {
+  margin-left: 6px;
+}
+.ad-widget-news-head .ec-content .ec-site {
+  padding-top: 1px;
+  word-spacing: -1px;
+  color: #008000;
+}
+.ad-widget-news-head .ec-content .ec-site a {
+  color: #666;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

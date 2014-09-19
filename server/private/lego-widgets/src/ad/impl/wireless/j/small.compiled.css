@@ -1,0 +1,61 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless/j/small.less ~ 2013/12/26 15:22:11
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * small样式文件
+ **/
+#canvas .ec-list {
+  display: none;
+}
+#canvas .ad-widget-wireless-product-list .ec-title {
+  white-space: normal;
+}
+#canvas .ad-widget-wireless-product-list img {
+  border: none;
+}
+#canvas .ad-widget-button-group {
+  background: none;
+  padding: 6px 0 0;
+}
+#canvas .ad-widget-button-group td {
+  border: none;
+  text-align: left;
+  padding: 0 0 0 10px;
+  background: url(//bs.baidu.com/adtest/8f25d0baddbdf325a5d35deefef878c9.png) no-repeat left center;
+}
+#canvas .ad-widget-button-group a {
+  color: #00c;
+  font-size: small;
+}
+#canvas .ad-widget-button-list {
+  padding-bottom: 0;
+}
+#canvas .ad-widget-button-list a {
+  font-size: small;
+}
+#canvas .ec-tel-item {
+  padding: 8px 0 4px;
+}
+#canvas .ad-widget-wireless-series-tel {
+  font-size: small;
+  line-height: 16px;
+}
+#canvas .ec-series-name {
+  margin-bottom: 4px;
+}
+#canvas .ec-series-dial {
+  padding: 4px 6px 4px 4px;
+}
+#canvas .ad-widget-wireless-series-tel .ec-dial-icon {
+  width: 14px;
+  height: 14px;
+  margin-top: -3px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

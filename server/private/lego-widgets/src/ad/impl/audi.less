@@ -1,0 +1,201 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/impl/audi.less ~ 2013/01/18 15:48:01
+ * @author wangdawei04@baidu.com (wangdawei04) liyubei@baidu.com (leeight)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * audi样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial,sans-serif;
+
+    background-color: #EFF4FC;
+
+    width: 516px;
+    height: 354px;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .ad-layout-block-0 {
+        .gain-bfc();
+    }
+
+    .ad-layout-block-0-0 {
+        float: left;
+    }
+
+    .ad-layout-block-0-1 {
+        float: left;
+        width: 285px;
+        margin-left: 10px;
+    }
+
+    .ad-widget-small-head {
+        h2 a {
+            color: #0000cc;
+            font-weight: bold;
+        }
+        .ec-site {
+            margin-top: 6px;
+        }
+    }
+
+    .ad-widget-section {
+        margin-top: 15px;
+        li {
+            background: url(//bs.baidu.com/adtest/37325a438a2e60aee57cce46c2e077b6.jpg) no-repeat left center;
+            padding-left: 15px;
+            margin-bottom: 7px;
+        }
+    }
+
+    .ad-layout-block-1 {
+    }
+
+    .ad-widget-tab-container {
+        margin-top:5px;
+    }
+
+    .ec-tab-head {
+        margin:0px;
+        li {
+            margin-left:0px;
+            a {
+                border-right: none;
+                background-color: #F7F7FF;
+                color: #0000CE;
+            }
+        }
+        .ec-current-tab a {
+            background-color: #fff;
+            color: #000;
+            border-bottom: solid 1px #fff;
+        }
+
+        .ec-tab-list-2 {
+            a {
+                border-right: solid 1px #CBDAE7;
+            }
+        }
+    }
+
+    .ec-tab-body {
+        height:80px;
+        border:solid 1px #CBDAE7;
+        border-top:solid 0px #CBDAE7;
+        padding:8px 10px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .ad-widget-qq-weibo {
+        .ec-context {
+            height: 36px;
+        }
+    }
+
+    .ad-widget-small-weibo {
+        padding: 0px 8px;
+        margin-bottom: 15px;
+        .ec-name {
+            color: #0000cc;
+            font-weight: 900;
+            font-size: 14px;
+            padding-right: 20px;
+        }
+        .ec-follow {
+            float: right;
+            width: 66px;
+            height: 22px;
+        }
+        .ec-text {
+            color: #008000;
+            padding: 0px 10px;
+            margin-top: 2px;
+            width: auto;
+        }
+        .ec-seprate {
+            padding: 0px 10px;
+            width: auto;
+        }
+        .ec-context {
+            color: #000000;
+            height: 36px;
+        }
+        .ec-datetime {
+            color: #008000;
+        }
+        .ec-rightbtn {
+            div, a {
+                color: #008000;
+            }
+        }
+    }
+
+    .ad-widget-button-group {
+        background-color: transparent;
+        td {
+            border-right: solid 5px #F1F5FC;
+            a {
+                color: #0000CE;
+                text-decoration: underline;
+                border: solid 1px #C6D6F5;
+                height: 24px;
+                line-height: 24px;
+                display: block;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.ad-widget-float-window-container {
+    left: 0px;
+    top: 0px;
+    .ad-widget-video {
+        position: absolute;
+        left: 35px;
+        top: 136px;
+        width: 400px;
+        height: 250px;
+        object{
+            width: 400px;
+            height: 250px;
+        }
+        embed {
+            width: 400px;
+            height: 250px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 */

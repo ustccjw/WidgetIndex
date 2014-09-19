@@ -1,0 +1,60 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/couple_right.less ~ 2014/02/19 15:15:55
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * couple_right样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  width: 259px;
+  border-bottom: 1px solid #e1e1e1;
+}
+#canvas .ad-widget-title {
+  width: 259px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+#canvas .ad-widget-title a:link,
+#canvas .ad-widget-title a:visited {
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+#canvas .ec-slide a:link,
+#canvas .ec-slide a:visited {
+  color: #000;
+  text-decoration: none;
+}
+#canvas .ad-widget-baidu-share-v2 {
+  overflow: hidden;
+  zoom: 1;
+  padding-top: 3px;
+}
+#canvas .ad-widget-baidu-share-v2 #bdshare {
+  float: right;
+}
+#canvas .ad-widget-baidu-share-v2 a {
+  padding-left: 31px;
+}
+#canvas .ad-widget-baidu-share-v2 .bds_more {
+  margin-right: 3px;
+  padding-left: 22px;
+}
+#canvas .ad-widget-baidu-share-v2 font {
+  color: #000;
+  margin-top: 1px;
+  padding-right: 4px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

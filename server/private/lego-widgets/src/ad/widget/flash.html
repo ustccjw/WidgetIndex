@@ -1,0 +1,20 @@
+<!-- target:AD_ad_widget_flash -->
+<div class="ad-widget ad-widget-flash" style="width:{{style_width}};height:{{style_height}}">
+    {{^is_ipad}}
+    <div class="ec-flash" id="{{#_id}}flash{{/_id}}">
+        <object width="{{width}}" height="{{height}}" id="{{#_id}}swf{{/_id}}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+            <param value="{{wmode}}" name="wmode">
+            <param value="always" name="allowscriptaccess">
+            <param value="{{src}}" name="movie">{{#is_flashvars}}
+            <param name="flashvars" value="jsapi={{jsapi}}&id={{#_id}}swf{{/_id}}{{flashvars_param}}">{{/is_flashvars}}
+            <embed id="{{#_id}}embed{{/_id}}" width="{{width}}" align="middle" height="{{height}}" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="{{#_id}}swf{{/_id}}" {{#is_flashvars}} flashvars="jsapi={{jsapi}}&id={{#_id}}swf{{/_id}}{{flashvars_param}}" {{/is_flashvars}} src="{{src}}" allowscriptaccess="always" wmode="{{wmode}}">
+        </object>
+    </div>
+    {{#link_rcv_url}}<a href="{{{link_rcv_url}}}" title2="Flash链接" id="{{#_id}}link{{/_id}}" target="_blank" style="width:{{style_width}};height:{{style_height}}">&nbsp;</a>{{/link_rcv_url}}
+    {{/is_ipad}}
+    {{#is_ipad}}
+    <a href="{{{ipad_link_rcv_url}}}" class="ec-ipad-link" title2="Flash链接(ipad)" target="_blank" style="width:{{style_width}};height:{{style_height}}">
+        <img width="{{width}}" height="{{height}}" src="{{ipad_img}}" />
+    </a>
+    {{/is_ipad}}
+</div>

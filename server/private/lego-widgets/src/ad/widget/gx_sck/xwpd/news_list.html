@@ -1,0 +1,7 @@
+<!-- target:AD_ad_widget_gx_sck_xwpd_news_list -->
+<ul class="ad-widget-gx_sck-xwpd ad-widget-gx_sck-xwpd-news-list">
+    {{#options}}
+    <li class="ec-news-item{{#@first}} ec-first{{/@first}}{{#@last}} ec-last{{/@last}}"><a class="ec-news-title" title2="新闻{{_index}}" href="{{{title_rcv_url}}}" target="_blank">{{{title}}}</a><span class="ec-news-source">新闻源：{{#source_rcv_url}}<a href="{{{source_rcv_url}}}">{{source}}</a>{{/source_rcv_url}}{{^source_rcv_url}}<span class="ec-news-source-text">{{source}}</span>{{/source_rcv_url}}<span class="ec-news-time">{{time}}</span></span>
+    </li>
+    {{/options}}
+</ul>

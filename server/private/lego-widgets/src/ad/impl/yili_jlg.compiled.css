@@ -1,0 +1,156 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: yili_jlg.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/yili_jlg.less ~ 2012/08/20 13:19:37
+ * @author fanxueliang@baidu.com
+ * @version $Revision: 11222 $ 
+ * @description 
+ * lqd样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  background: #F8F8D0;
+  margin-bottom: 20px;
+  width: 515px;
+  padding: 10px;
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-0 .ad-block-0-0 {
+  float: left;
+}
+#canvas .ad-block-0 .ad-block-0-1 {
+  overflow: hidden;
+  zoom: 1;
+  padding-left: 14px;
+}
+#canvas .ad-widget-small-head {
+  width: 280px;
+  *width: 278px;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head h2 a em {
+  color: #CC0000;
+  font-style: normal;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #636363;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+}
+#canvas .ad-widget-tab-container {
+  margin-top: 10px;
+}
+#canvas .ec-tab-head {
+  padding: 0px;
+  margin: 0px;
+}
+#canvas .ec-tab-head li {
+  margin-left: 0px;
+}
+#canvas .ec-tab-head li a {
+  background-color: #F7F7FF;
+  color: #0000CE;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  background-color: #fff;
+  color: #000;
+  border-bottom: solid 1px #fff;
+}
+#canvas .ec-tab-body {
+  border: solid 1px #CBDAE7;
+  border-top: solid 0px #CBDAE7;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+}
+#canvas .ad-widget-button-group td {
+  border-right: solid 5px #F8F8D0;
+}
+#canvas .ad-widget-button-group td a {
+  color: #fff;
+  text-decoration: underline;
+  border: solid 1px #B81820;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  background-color: #B81820;
+}
+#canvas .ad-widget-button-group td.ec-last {
+  border-right: none;
+}
+#canvas .ad-widget-small-weibo {
+  padding: 0px;
+  position: relative;
+  margin-left: 70px;
+  width: 420px;
+}
+#canvas .ad-widget-small-weibo .ec-logo {
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  width: 53px;
+  height: 53px;
+  border: 1px solid #f0f0f0;
+  text-decoration: none;
+}
+#canvas .ad-widget-small-weibo .ec-logo img {
+  width: 53px;
+  height: 53px;
+  border: none;
+  display: block;
+}
+#canvas .ad-widget-small-weibo .ec-name {
+  color: #0000cc;
+  font-weight: 900;
+  font-size: 14px;
+  padding-right: 20px;
+}
+#canvas .ad-widget-small-weibo .ec-follow {
+  position: absolute;
+  top: 60px;
+  left: -70px;
+  width: 66px;
+  height: 22px;
+}
+#canvas .ad-widget-small-weibo .ec-text {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #808080;
+  padding: 0px 10px;
+  margin-top: 2px;
+  width: auto;
+}
+#canvas .ad-widget-small-weibo .ec-seprate {
+  right: 71px;
+  padding: 0px 10px;
+  width: auto;
+}
+#canvas .ad-widget-small-weibo .ec-context {
+  color: #000000;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-text {
+  height: 36px;
+  overflow: hidden;
+}
+#canvas .ad-widget-small-weibo .ec-datetime {
+  color: #808080;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn div,
+#canvas .ad-widget-small-weibo .ec-rightbtn a {
+  color: #008000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

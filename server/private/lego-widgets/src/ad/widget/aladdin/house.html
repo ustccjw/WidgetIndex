@@ -1,0 +1,34 @@
+<!-- target:AD_ad_widget_aladdin_house -->
+<div class="ad-widget-aladdin ad-widget-aladdin-house">
+    <h3><a title2="标题" href="{{{title_rcv_url}}}" target="_blank">{{{title}}}</a></h3>
+    <div class="ec-figure">
+        <div class="ec-image">
+            <a href="{{{img_rcv_url}}}" target="_blank" title2="图片"><img src="{{img_src}}" /></a>
+            {{#site_name}}<div class="ec-figcaption">{{site_name}}</div>{{/site_name}}
+        </div>
+        <div class="ec-detail">
+            <table cellpadding="0" cellspacing="0" width="100%">
+                <colgroup>
+                    <col class="ec-0"><col class="ec-1">
+                    <col class="ec-2"><col class="ec-3">
+                </colgroup>
+                <tr><th>小区均价：</th><td>{{house_price}}</td><th>环比：</th><td>{{rate}}</td></tr>
+                <tr><th>小区类别：</th><td colspan="3">{{type}}</td></tr>
+            </table>
+            <ul class="ec-links">
+                {{#links}}
+                <li><a href="{{{rcv_url}}}" title2="链接{{_index}}" target="_blank">{{text}}</a></li>
+                {{/links}}
+            </ul>
+            {{#more}}
+            <ul class="ec-more-info">
+                <li class="ec-more-title"><span>更多资讯：</span></li>
+                {{#options}}
+                <li class="ec-info{{@index}}"><a href="{{{rcv_url}}}" title2="资讯{{@index}}" target="_blank">{{text}}</a></li>
+                {{/options}}
+            </ul>
+            {{/more}}
+            <cite>{{site}}</cite>
+        </div>
+    </div>
+</div>

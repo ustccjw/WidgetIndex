@@ -1,0 +1,76 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/gallery.less ~ 2012/10/10 09:01:19
+ * @author  ()
+ * @version $Revision: 10927 $ 
+ * @description 
+ * gallery样式文件
+ **/
+.ad-widget-tieba-gallery {
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-tieba-gallery ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ad-widget-tieba-gallery ul li {
+  padding: 0;
+  float: left;
+  display: inline;
+  margin-right: 10px;
+  overflow: hidden;
+  height: 75px;
+}
+.ad-widget-tieba-gallery .ec-gallery-video,
+.ad-widget-tieba-gallery .ec-gallery-image {
+  position: relative;
+  overflow: hidden;
+}
+.ad-widget-tieba-gallery .ec-gallery-video .ec-gallery-video-cover-wrapper {
+  position: absolute;
+  overflow: hidden;
+}
+.ad-widget-tieba-gallery .ec-gallery-video .ec-gallery-video-cover-wrapper b {
+  display: block;
+  width: 100px;
+  height: 75px;
+  background: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ad-widget-tieba-gallery .ec-gallery-image .ec-gallery-expand {
+  background: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ad-widget-tieba-gallery .ec-gallery-expand {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ad-widget-tieba-gallery .ec-gallery-video-bg {
+  display: block;
+  width: 100px;
+  height: 75px;
+  background: url(//bs.baidu.com/adtest/6611ad1ea58b31b9f9362cee0b4eeaef.png) no-repeat;
+  _background: none;
+  _filter: progid:dximagetransform.microsoft.alphaimageloader(src="//bs.baidu.com/adtest/6611ad1ea58b31b9f9362cee0b4eeaef.png", sizingMethod="scale");
+}
+.ad-widget-tieba-gallery .ec-gallery-video-bg.ec-gallery-video-hover {
+  background: url(//bs.baidu.com/adtest/ca752cc5cc3dc23fe572041851f2882f.png) no-repeat;
+  _background: none;
+  _filter: progid:dximagetransform.microsoft.alphaimageloader(src="//bs.baidu.com/adtest/ca752cc5cc3dc23fe572041851f2882f.png", sizingMethod="scale");
+}
+.ad-widget-tieba-gallery .ec-clear {
+  clear: both;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,320 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: qdsuhu.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/qdsuhu.less ~ 2013/03/18 13:45:50
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * lv2样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 524px;
+    background: #ffffff;
+    border:6px solid #E9AFBE;
+    margin-bottom: 20px;
+    font:13px arial, simsun, sans-serif;
+
+    .ad-block-0 {
+        .gain-bfc();
+        background: #ffffff;
+    }
+
+    /** 视频模块 */
+    .ad-block-0-0 {
+        float:left;
+        width:220px;
+        padding-top:4px;
+        padding-left:4px;
+    }
+
+    /** 右侧描述和按钮区域 */
+    .ad-block-0-1 {
+        float:right;
+        width:276px;
+        padding:4px 10px 0px 14px;
+    }
+
+    .ad-block-0-0-1 {
+        height: 20px;
+        line-height: 20px;
+    }
+    .ad-widget-video-title {
+        a {
+            color: #160203;
+        }
+        height: 20px;
+        line-height: 20px;
+    }
+    .ad-widget-small-head {
+        h2 a {
+            color: #0000cc;
+        }
+        .ec-description {
+            color: #333;
+            a {
+                color: #0000cc;
+            }
+            .ec-site a {
+                color: #666;
+            }
+        }
+        .ec-image-group {
+            margin-top: 7px;
+            a {
+                border: 1px solid #c3c3c3;
+            }
+        }
+    }
+    
+    .ad-widget-tab-container {
+        background-color: #FFECF7;
+        margin-top: 10px;
+    }
+
+    .ec-tab-head {
+        margin: 0px;
+        background: none;
+        background-color: #FF799E;
+        padding: 0px;
+        height: 30px;
+        overflow: hidden;
+        width: 524px;
+        li {
+            margin: 0px;
+            height: 30px;
+            border-left: solid 1px #FF799E;
+            border-right: solid 1px #FF799E;
+            a {
+                background-color: #FF799E;
+                color: #fff;
+                height: 10px;
+                line-height: 10px;
+                *line-height: 14px;
+                border: none;
+                border-right: 1px solid #FF8AAE;
+                margin-top: 10px;
+                padding: 0px;
+            }
+        }
+        .ec-current-tab {
+            border-left: solid 1px #FEECF8;
+            border-right: solid 1px #FEECF8;
+        }
+        .ec-current-tab a {
+            color: #ED7DA3;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            background-color: #FEECF8;
+            margin-top: 0;
+            border-right:none; 
+        }
+        .ec-previous-tab,
+        .ec-tab-list-last {
+            a {
+                border-right:none; 
+            }
+        }
+    }
+
+    .ec-tab-body {
+        .gain-bfc();
+        height: 140px;
+    }
+    
+    .ad-widget-image-cartoon {
+        .ec-item-wrapper {
+            padding: 5px 1px;
+        }
+        .ec-item {
+            a {
+                width: 102px;
+                height: 130px;
+            }
+            div {
+                background: #7f7f7f;
+            }
+        }
+    }
+    .ad-widget-tab-cont {
+        padding-top: 10px;
+        .ec-td-border {
+            border-right: 1px solid #F0CEEC;
+        }
+        a {
+            color: #666;
+        }
+        h1 a {
+            color: #000;
+            display: block;
+        }
+        .ec-brand-intro {
+            padding-left: 10px;
+        }
+    }
+    .ad-widget-button-group {
+        background: #FFECF7;
+        padding: 5px 0 0;
+        td {
+            border: none;
+            a {
+                color: #FF789D;
+                text-decoration: underline;
+                border: noen;
+                margin: 0 5px 0 0;
+                height: 18px;
+                line-height: 18px;
+                display: block;
+                background-color: #FFECF7;
+            }
+        }
+    }
+    .ec-normal-tab3-0 {
+        .gain-bfc();
+    }
+    .ec-normal-tab3-0-0,
+    .ec-normal-tab3-0-1 {
+        float:left;
+        width: 230px;
+    }
+    .ec-normal-tab3-0-0 {
+        padding-right: 15px;
+        border-right: 1px solid #EBD3E3;
+    }
+    .ec-normal-tab3-0-1 {
+        padding-left: 15px;
+    }
+    .ec-tab-content-2 {
+        .ec-tabcon-0 {
+            padding: 15px;
+        }
+        .gain-bfc();
+        .ad-widget-title {
+            a {
+                font-size: 13px;
+                color: #000;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+        .ad-widget-link-list {
+            height: auto;
+            .gain-bfc();
+            a {
+                color: #695E66;
+                text-decoration: none;
+            }
+            li {
+                height: 20px;
+                line-height: 20px;
+                text-align: left;
+                width: 115px;
+                overflow: hidden;
+                background: none;
+                border: none;
+            }
+        }
+    }
+    
+    .ec-tab-content-3 {
+        .ec-tabcon-0 {
+            padding: 20px 0 20px 20px;
+        }
+        .ec-normal-tab4-0 {
+            .gain-bfc();
+            .ec-normal-tab4 {
+                float: left;
+            }
+        }
+        .ad-widget-image-link {
+            width: 180px;
+            height: 100px;
+            margin-left: 0;
+            margin-right: 15px;
+        }
+        .ad-widget-section {
+            img {
+                vertical-align: middle;
+            }
+            a {
+                color: #666;
+                text-decoration: none;
+            }
+            li {
+                width: 300px;
+                height: 20px;
+                overflow: hidden;
+                margin: 0px;
+            }
+        }
+    }
+    .ec-tab-content-4 {
+        .ad-widget-small-weibo {
+            padding: 25px 15px 15px;
+            height: 101px;
+            line-height:normal;
+        }
+
+        .ec-weibo-head {
+            position: relative;
+            margin-bottom: 5px;
+        }
+        
+        .ec-name {
+            color: #000;
+        }
+        .ec-text, 
+        .ec-rightbtn a {
+            height: 13px;
+            line-height: 13px;
+            margin-top: 3px;
+            *height: 15px;
+            *line-height: 15px;
+            *margin-top: 2px;
+        }
+        .ec-follow {
+            width: 57px;
+            height: 18px;
+            position: absolute;
+            right: 0px;
+        }
+
+        .ec-context {
+            margin-bottom: 5px;
+        }
+        .ec-rightbtn {
+            a,
+            div {
+                color: #333;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,234 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: xd_snt.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/xd_snt.less ~ 2013/03/18 13:45:50
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * lv2样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 524px;
+    background: #ffffff;
+    border: 6px solid #abc9e5;
+    margin-bottom: 20px;
+    font: 13px arial,sans-serif;
+
+    .ad-layout-block-0 {
+        .gain-bfc();
+        background: #ffffff;
+    }
+
+    .ad-layout-block-0-0 {
+        float: left;
+        width: 220px;
+        padding-top: 4px;
+        padding-left: 4px;
+    }
+
+    .ad-widget-video-title {
+        color: #000;
+    }
+
+    .ad-layout-block-0-1 {
+        float: right;
+        width: 276px;
+        padding: 4px 10px 0px 14px;
+    }
+
+    .ad-widget-small-head {
+        h2 {
+            a {
+                color: #0000cc;
+            }
+        }
+        .ec-description {
+            color: #000;
+        }
+    }
+
+    .ad-widget-section {
+        margin-top: 10px;
+        li {
+            a{
+                line-height: 20px;
+            }
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .ad-widget-button-group {
+        padding: 3px 0 0 0;
+        background-color: transparent;
+        td {
+            border: 0;
+            a {
+                color: #3b6d9e;
+                text-decoration: none;
+                border: solid 1px #bad0e8;
+                margin: 0 5px 0 0;
+                height: 25px;
+                line-height: 25px;
+                display: block;
+                background-color: #EEF7FF;
+            }
+        }
+    }
+
+    .ad-widget-tab-container {
+        background-color: #00448d;
+    }
+
+    .ec-tab-head {
+        margin: 0px;
+        background: none;
+        padding: 0px;
+        height: 30px;
+        overflow: hidden;
+        width: 524px;
+        li {
+            margin: 0px;
+            height: 30px;
+            border-left: solid 1px #00448d;
+            border-right: solid 1px #00448d;
+            a {
+                background-color: #00448d;
+                color: #fffeff;
+                height: 10px;
+                line-height: 10px;
+                *line-height: 14px;
+                border: none;
+                margin-top: 10px;
+                padding: 0px;
+            }
+        }
+        .ec-current-tab {
+            border-left: solid 1px #6897cb;
+            border-right: solid 1px #6897cb;
+        }
+        .ec-current-tab a {
+            color: #fffeff;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            background-color: #6897cb;
+            margin-top: 0px;
+        }
+    }
+
+    .ec-tab-body {
+        background-color: #6897cb;
+        .gain-bfc();
+        .ec-tabcon-0 {
+            .ec-tabcon {
+                height: 136px;
+            }
+        }
+    }
+
+    .ad-widget-image-cartoon {
+        .ec-item-wrapper {
+            margin-left: 1px;
+            padding: 3px 0px;
+            span{
+                color: #fffeff;
+                background: #000;
+                .opacity(75);
+            }
+        }
+    }
+
+    .ad-widget-iframe {
+        background: #fff;
+        padding: 15px 0 0 15px;
+        height: 121px;
+        div {
+            margin-left: 15px;
+        }
+    }
+
+    .ad-widget-table {
+        border: none;
+        font-size: 12px;
+        padding: 0px 10px 5px 10px;
+        height: 126px;
+        width: 240px;
+        float: left;
+        margin-top: 5px;
+        td {
+            border: none;
+            text-align: center;
+            line-height: 20px;
+            a {
+                color: #00448b;
+                text-decoration: none;
+            }
+        }
+        thead {
+            tr {
+                background-color: #fff;
+                td {
+                    text-align: center;
+                    border: none;
+                    border-bottom: solid 1px #004491;
+                    margin-bottom: 20px;
+                    font-weight: 900;
+                    font {
+                        color: #004491;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                background-color: #fff;
+            }
+            .ec-row-1 td {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .ad-widget-normal-container {
+        .gain-bfc();
+        background: #fff;
+    }
+
+    .ad-widget-tab-cont {
+        padding: 15px 0;
+        height: 106px;
+        background: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

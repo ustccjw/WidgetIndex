@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网上车展</title>
+    <script type="text/javascript" src="//bs.baidu.com/adtest/1647bb956d1729c0241a3140621c5263.st"></script>
+    <script type="text/javascript">
+    baidu.app.loaded();
+    </script>
+    <script type="text/javascript">
+    /* ===============================================
+        配置
+    * ===============================================/
+    /* 下面对于字数的限制并非严格，如果需要写更多字，则请在IE6下测试看下效果是否符合预期 */
+    var infoData = {
+        id: 'benz',     /* 必需是英文或字母，用于统计功能 */
+        name: '奔驰',   /* 厂商名字 */
+        url: 'http://baidu.com',    /* 厂商主页url */
+        logoUrl: 'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/logo.png', /* 厂商logo的url地址 */
+        place: '2.3',               /* 厂商所在展馆位置 */
+        cars: [     /* 所有车型，车型数量不能超过20个 */
+            /* 车型1开始 */
+            {
+                /* 车型名字，不得超过9个中文，三个英文为两个中文 */
+                name: '奔驰A级',
+                /* 多张车型图片,可左右切换 370*240 */
+                pics: [
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/1.jpg',
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/2.jpg',
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/3.jpg',
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/4.jpg'
+                ],
+                /* 车型编号，不得超过9个中文，三个数字为两个中文 */
+                model: 'A160, A180',
+                /* 车型价格，以如下形式填写，如使用其他形式则不要超过6个中文，三个数字为两个中文 */
+                price: '10.78-14.83万',
+                /* 车型的类型，不得超过6个中文，三个数字为两个中文 */
+                type: '紧凑车型',
+                /* 车型的级别，不得超过7个英文 */
+                'class': 'MPV',
+                /* 车型的简介，不的超过32个字 */
+                intro: '奔驰级轿车奔驰级奔驰级奔驰级奔驰级奔驰级轿车奔驰级奔驰级奔驰级奔',
+                /* 车型的详细参数 */
+                other: [
+                    /* 参数名， 参数值 */
+                    /* 参数名不能超过四个字 */
+                    /* 参数值不能超过8个中文，或10个英文 */
+                    /* 可以有任意对参数 */
+                    {key: '发动机', value: 'L4 181马力'},
+                    {key: '变速箱', value: '5档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '810*1802*1570*'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'},
+                    {key: '发动机', value: 'L4 181马力'},
+                    {key: '变速箱', value: '5档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '4810*1802*1570'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'},
+                    {key: '发动机', value: 'L4 181马力'},
+                    {key: '变速箱', value: '5档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '4810*1802*1570'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'},
+                    {key: '发动机', value: 'L4 181马力'},
+                    {key: '变速箱', value: '5档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '4810*1802*1570'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'}
+                ]
+            },
+            /* 车型1结束 */
+            {
+                name: '奔驰奔驰奔驰奔驰吃',
+                /* 车型图片, 370*240, 如果是ipad的时候会显示图片 */
+                pic: 'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/10.jpg',
+                /* 车型视频，370*240 */
+                video: 'http://eiv.baidu.com/mapm2/bmw/120601_pl_01/sp.flv',
+                model: '奔驰奔驰奔驰奔驰吃',
+                price: '奔驰奔驰奔驰',
+                type: '紧凑车型',
+                'class': 'MPV',
+                intro: '奔驰级轿车奔驰级奔驰级奔驰级奔驰级奔驰级轿车奔驰级奔驰级奔驰级奔',
+                other: [
+                    {key: '发动机', value: 'WWWWWWWWWW'},
+                    {key: '变速箱', value: '当档自动当档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '4810*1802*1570'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'}
+                ]
+            },
+            {
+                name: '奔驰C级',
+                pics: [
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/11.jpg',
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/12.jpg'
+                ],
+                model: 'C160, C180',
+                price: '10.78-24.83万',
+                type: '紧凑车型',
+                'class': 'WWWWWWW',
+                intro: '奔驰C级轿车奔驰A级奔驰A级奔驰A级奔驰A级',
+                other: [
+                    {key: '发动机机', value: 'L4 181马力'},
+                    {key: '变速箱箱', value: '5档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '4810*1802*1570'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'}
+                ]
+            },
+            {
+                name: '奔驰D级',
+                pics: [
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/20.jpg',
+                    'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/21.jpg'
+                ],
+                model: 'D260, D280',
+                price: '12.78-22.83万',
+                type: '紧凑车型',
+                'class': 'MPV',
+                intro: '奔驰D级轿车奔驰A级奔驰A级奔驰A级奔驰A级',
+                other: [
+                    {key: '发动机', value: 'L4 181马力'},
+                    {key: '变速箱', value: '5档自动'},
+                    {key: '产地属性', value: '国产'},
+                    {key: '长宽高', value: '4810*1802*1570'},
+                    {key: '轴距', value: '2830'},
+                    {key: '前轮距', value: '155'},
+                    {key: '后轮距', value: '715'}
+                ]
+            }
+        ],
+        /* 厂商简介 */
+        intro: {
+            /* 简介图片地址 宽度不得超过530px，高度自定，底色为FBFBFB */
+            /* 如果高度超过270px，则会产生滚动条，故宽度不得超过505px */
+            pic_url: 'http://eiv.baidu.com/mapm2/zhouminming01/business_app/cars/intro_pic.png'
+        }
+    };
+    /* ===============================================
+        配置结束
+    * ===============================================/
+
+
+
+
+
+    /**
+     * 日志发送监听函数，如果你需要用自己的监听函数则请实现它
+     *
+     * @param {string} msg 日志，有如下可能：
+     *
+     *             msg值                                   对应情况
+     *           TAB1CLICK_HOME_FROM_LIST                在从列表页展示APP时，点击官方网站（Tab显示第一个）
+     *           TAB2CLICK_HOME_FROM_LIST                在从列表页展示APP时，点击官方网站（Tab显示第二个）
+     *           TAB1CLICK_HOME                          在直接展示APP时，点击官方网站（Tab显示第一个）
+     *           TAB2CLICK_HOME                          在直接展示APP时，点击官方网站（Tab显示第二个）
+     *           TAB1点击                                点击第一个tab（默认展示的情况不算在内）
+     *           TAB2点击                                点击第二个tab
+     *           TAB1videocomplete                       视频播放完成（全局）
+     *           TAB1videocomplete_车型名字              视频播放完成
+     *           TAB1videostart                          视频开始播放（全局）
+     *           TAB1videostart_车型名字                 视频开始播放
+     *           TAB1上一张                              图片向左轮换（全局）
+     *           TAB1上一张_车型名字_图片序号            图片向左轮换
+     *           TAB1下一张                              图片向右轮换（全局）
+     *           TAB1下一张_车型名字_图片序号            图片向右轮换
+     *           TAB1点击查看大图                        点击查看大图（全局）
+     *           TAB1点击查看大图_车型名字_图片序号      点击查看大图
+     *           TAB1选择车型                            选择参展新车（初次加载不计算在内）（全局）
+     *           TAB1选择车型_车型名字                   选择参展新车（初次加载不计算在内）
+     *           TAB1查看配置参数                        查看参考参数（全局）
+     *           TAB1查看配置参数_车型名字               查看参考参数
+     *
+     * 还会有些无效点击，请忽略
+     */
+    function autoShowLogListener(msg) {
+        // alert(msg);
+        // console.log(msg);
+    }
+    </script>
+</head>
+<body>
+<script charset="utf-8" src="//bs.baidu.com/adtest/137cb9ecdd897f8fdd1eff6beb1c4c6c.js"></script>
+</body>
+</html>

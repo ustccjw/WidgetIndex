@@ -1,0 +1,146 @@
+/**
+ * src/ad/impl/guerlain.less ~ 2013-06-07 14:43:05;
+ * @author xiongjie01@baidu.com
+ *  
+ **/
+#canvas {
+  width: 520px;
+  background: #f6f6f6;
+  padding: 10px;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+}
+#canvas .ad-block-0 .ad-block-0-0 {
+  float: left;
+  margin-right: 15px;
+}
+#canvas .ad-block-0 .ad-block-0-1 {
+  float: left;
+  width: 282px;
+}
+#canvas .ad-block-1 {
+  *zoom: 1;
+  margin-top: 8px;
+}
+#canvas .ad-widget-small-head {
+  height: 190px;
+  position: relative;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #00c;
+  font-weight: bold;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+  font-size: 12px;
+}
+#canvas .ad-widget-small-head .ec-site {
+  margin-top: 4px;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 0;
+  position: absolute;
+  /*底线与视频对齐*/
+
+  bottom: 0;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border-color: #c3c3c3;
+  margin-right: 15px;
+}
+#canvas .ad-widget-small-head .ec-image-group .ec-last {
+  margin-right: 0;
+}
+#canvas .ec-tab-head {
+  padding: 0 8px;
+  margin: 0;
+  background-image: url(//bs.baidu.com/adtest/ac2b6cca7934321f3e8f72b2ccca4c77.png);
+}
+#canvas .ec-tab-head .ec-tab-list-1 {
+  margin-left: 0;
+}
+#canvas .ec-tab-head li a {
+  background-color: #a9a9a9;
+  border-color: #959595;
+  color: #fff;
+  white-space: nowrap;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  color: #000;
+  background-color: #f6f6f6;
+  font-weight: bold;
+  border-bottom: 1px solid #f6f6f6;
+}
+#canvas .ec-tab-body {
+  height: 110px;
+  margin-top: 10px;
+  clear: left;
+}
+#canvas .ec-td-border {
+  width: 185px;
+  border-right: 1px solid #e1e1e1;
+}
+#canvas .ec-td-border .ec-brand-intro {
+  width: 159px;
+}
+#canvas .ec-brand-pic {
+  width: 180px;
+}
+#canvas .ec-brand-intro {
+  padding: 0 12px 0 14px;
+  position: relative;
+  top: -4px;
+}
+#canvas .ec-brand-intro h1 {
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+#canvas .ec-brand-intro h1 a {
+  line-height: 20px;
+}
+#canvas .ec-brand-intro-last {
+  padding-right: 0;
+}
+#canvas .ad-widget-button-group {
+  padding: 0;
+  background-color: #fff;
+}
+#canvas .ad-widget-button-group td {
+  border: none;
+  padding-right: 8px;
+  line-height: auto;
+  height: auto;
+}
+#canvas .ad-widget-button-group a {
+  border: 1px solid #c3c3c3;
+  display: block;
+  height: 15px;
+  line-height: 15px;
+  padding: 2px 0;
+  color: #000;
+  text-decoration: underline;
+}
+#canvas .ad-widget-button-group .ec-last {
+  padding-right: 0;
+}
+.ec-guerlain-fwc-1 .ec-close {
+  top: 8px;
+  right: 8px;
+  width: 54px;
+  height: 20px;
+  background: url(//bs.baidu.com/adtest/8bfaf63e578733293e3a78b7bce6bd4c.png) #dddddd;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.ec-guerlain-fwc-1 .ec-close:hover {
+  background-image: url(//bs.baidu.com/adtest/8bfaf63e578733293e3a78b7bce6bd4c.png);
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 */

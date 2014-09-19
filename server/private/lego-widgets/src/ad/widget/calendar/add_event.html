@@ -1,0 +1,32 @@
+<!-- target:AD_ad_widget_calendar_add_event -->
+<div class="ad-widget-calendar ad-widget-calendar-add-event">
+    <form class="ec-form-horizontal" id="{{#_id}}form{{/_id}}">
+        <div class="ec-control-group">
+            <div class="ec-controls">
+                <input type="text" name="title" placeholder="Event Title" class="ec-title" value="Hello Facebook" required>
+            </div>
+        </div>
+        <div class="ec-control-group">
+            <div class="ec-controls">
+                <input type="number" name="start" placeholder="Start Time" required min="0" max="720" value="100">
+                <span class="ec-help">0 means 9AM</span>
+            </div>
+        </div>
+        <div class="ec-control-group">
+            <div class="ec-controls">
+                <input type="number" name="end" placeholder="End Time" required min="1" max="720" value="200">
+                <span class="ec-help">60 means 10AM</span>
+            </div>
+        </div>
+        <div class="ec-control-group">
+            <div class="ec-controls">
+                <textarea name="description" placeholder="Event Detail">Hello Facebook.</textarea>
+            </div>
+        </div>
+        <div class="ec-control-group">
+            <div class="ec-controls">
+                <label class="ec-ui-button ec-ui-button-confirm"><input type="submit" value="Add Event" /></label>
+            </div>
+        </div>
+    </form>
+</div>

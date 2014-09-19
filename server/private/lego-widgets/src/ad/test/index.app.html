@@ -1,0 +1,167 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: index.app.html 11507 2012-09-04 04:01:48Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/test/index.app.html ~ 2012/08/08 21:41:35
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 11507 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>广告物料测试平台</title>
+    <script type="text/javascript" src="../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../base.js"></script>
+    <script type="text/javascript">
+        goog.require('app.Launch');
+        goog.include('third_party/bootstrap/css/bootstrap.css');
+        goog.include('third_party/bootstrap/css/bootstrap-responsive.css');
+        goog.include('third_party/bootstrap/css/docs.css');
+        goog.include('ad/test/index.less');
+    </script>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="./index.app.html">广告物料测试平台</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="">
+                        <a href="./index.app.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">查看测试结果</a>
+                    </li>
+                    <!--
+                    <li class="">
+                        <a href="./scaffolding.html">Scaffolding</a>
+                    </li>
+                    <li class="">
+                        <a href="./base-css.html">Base CSS</a>
+                    </li>
+                    <li class="">
+                        <a href="./components.html">Components</a>
+                    </li>
+                    <li class="">
+                        <a href="./javascript.html">Javascript</a>
+                    </li>
+                    <li class="">
+                        <a href="./customize.html">Customize</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="jumbotron subhead">
+    <div class="container">
+        <h3>查看测试结果(r8964)</h3>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav">
+                <li><a href="#物料1"><i class="icon-chevron-right"></i> 物料1</a></li>
+                <li><a href="#物料2"><i class="icon-chevron-right"></i> 物料2</a></li>
+            </ul>
+        </div>
+        <div class="span9">
+            <section id="view-results"></section>
+        </div>
+    </div>
+</div>
+
+<textarea id="test-case-tpl" style="display:none">
+    <dl class="ad-test-case ad-test-{{status}}">
+        <dt><a target="_blank" href="{{{url}}}" title="查看{{name}}测试记录详情">{{name}}</a><i class="icon-chevron-up"></i></dt>
+        <dd>
+            <table class="table">
+                <thead>
+                    <th width="20%">系统环境</th>
+                    <th>测试项目</th>
+                    <th>测试结果</th>
+                    <th width="10%">执行时间</th>
+                    <th>预览截图</th>
+                </thead>
+                <tbody>
+                {{#cases}}
+                    <tr class="{{status}}">
+                        <td>{{env}}</td>
+                        <td>{{name}}</td>
+                        <td>{{result}}</td>
+                        <td>{{duration}}</td>
+                        <td>
+                            {{#preview_image}}
+                            <a title="{{url}}" target="_blank" href="{{{url}}}">{{name}}</a>&nbsp;&nbsp;
+                            {{/preview_image}}
+                            {{^preview_image}}--{{/preview_image}}
+                        </td>
+                    </tr>
+                {{/cases}}
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+</textarea>
+
+</body>
+<script type="text/javascript">
+function render(data) {
+    var template = baidu.g('test-case-tpl').value;
+
+    var item = null,
+        html = [];
+    for(var i = 0, j = data.length; i < j; i ++) {
+        item = data[i];
+        html.push(Mustache.render(template, item));
+    }
+
+    baidu.g("view-results").innerHTML = html.join('');
+}
+
+app.Launch(function() {
+    baidu.ajax.get("index.json", function(xhr){
+        var data = eval('(' + xhr.responseText + ')');
+        render(data);
+    });
+
+    baidu.on(document, 'click', function(e){
+        var target = baidu.event.getTarget(e || window.event);
+        if (target.nodeType == 1 &&
+            target.nodeName == 'DT') {
+            var dd = target.nextElementSibling;
+            if (dd.style.display == 'none') {
+                dd.style.display = '';
+                target.lastChild.className = 'icon-chevron-up';
+            } else {
+                dd.style.display = 'none';
+                target.lastChild.className = 'icon-chevron-down';
+            }
+        }
+    });
+});
+</script>
+</html>

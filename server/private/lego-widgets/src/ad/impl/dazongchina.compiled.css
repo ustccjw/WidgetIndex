@@ -1,0 +1,117 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: dazongchina.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dazongchina.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 519px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+#canvas .ec-tab-head {
+  margin: 15px 0px 10px 0px;
+}
+#canvas .ec-tab-head li a,
+#canvas .ec-tab-head li a:visited {
+  background: #e4ebfa;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+#canvas .ec-tab-body {
+  margin-bottom: 0px;
+}
+#canvas .ec-brand-pic {
+  height: 90px;
+  padding-left: 8px;
+  width: 195px;
+  word-wrap: break-word;
+}
+#canvas .ec-brand-pic a img {
+  height: 90px;
+  width: 195px;
+}
+#canvas .ec-td-border {
+  border-right: 0 solid #E1E1E1;
+  width: 310px;
+}
+#canvas .ec-td-border .ec-brand-intro {
+  height: 92px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+#canvas .ec-td-border .ec-brand-intro a {
+  line-height: 18px;
+}
+#canvas .ad-widget-small-weibo {
+  padding: 0px 8px;
+  margin-bottom: 15px;
+}
+#canvas .ad-widget-small-weibo .ec-name {
+  color: #0000cc;
+  font-weight: 900;
+  font-size: 14px;
+  padding-right: 20px;
+}
+#canvas .ad-widget-small-weibo .ec-follow {
+  float: right;
+  width: 66px;
+  height: 22px;
+}
+#canvas .ad-widget-small-weibo .ec-text {
+  color: #008000;
+  padding: 0px 10px;
+  margin-top: 2px;
+}
+#canvas .ad-widget-small-weibo .ec-seprate {
+  padding: 0px 10px;
+}
+#canvas .ad-widget-small-weibo .ec-context {
+  color: #000000;
+}
+#canvas .ad-widget-small-weibo .ec-datetime {
+  color: #008000;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn div,
+#canvas .ad-widget-small-weibo .ec-rightbtn a {
+  color: #008000;
+}
+#canvas .ad-widget-card-flash {
+  margin-bottom: 15px;
+  margin-left: 8px;
+}
+#canvas .ec-tab-content-0 .ad-widget-tab-item {
+  width: 490px;
+  height: 105px;
+}
+#canvas .ad-widget-button-group {
+  padding: 0px;
+  height: 26px;
+  line-height: 26px;
+  background: #d3d1f8;
+}
+#canvas .ad-widget-button-group table tr {
+  height: 26px;
+}
+#canvas .ad-widget-button-group td {
+  border: 1px solid #fff;
+  padding: 0px;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group td a {
+  color: #0000cc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 */

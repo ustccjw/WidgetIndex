@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Test Timer</title>
+    <style type="text/css">
+    #vcode-getter { border: 1px solid #c3d9ff; display: inline-block; padding: 5px; }
+    </style>
+  </head>
+  <body>
+    <div id="vcode-getter"></div>
+    <div id="log"></div>
+    <script type="text/javascript">
+    var START_TIME = new Date();
+    var GET_VCODE_DELAY_SECONDS = 60;
+
+    function g(id) {
+        return document.getElementById(id);
+    }
+
+    // 控制获取手机验证码的时间间隔
+    var getVCodeDelaySeconds = GET_VCODE_DELAY_SECONDS;
+    var delay = function() {
+        var NOW = new Date();
+        var detal = parseInt((NOW - START_TIME) / 1000, 10);
+        if (detal < GET_VCODE_DELAY_SECONDS) {
+            g('vcode-getter').innerHTML = ((GET_VCODE_DELAY_SECONDS - detal) + '秒后可重新获取');
+            setTimeout(delay, 1000);
+        } else {
+            g('vcode-getter').innerHTML = ('获取手机验证码');
+            getVCodeDelaySeconds = GET_VCODE_DELAY_SECONDS;
+        }
+    };
+    delay();
+
+    function addLog(msg) {
+      var now = new Date();
+      var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+
+      g('log').innerHTML += ('[' + time + ']:&nbsp' + msg + '<br>');
+    }
+
+    window.addEventListener('focus', function(){
+      addLog('focus');
+    }, false);
+
+    window.addEventListener('blur', function(){
+      addLog('blur');
+    }, false);
+    </script>
+  </body>
+</html>

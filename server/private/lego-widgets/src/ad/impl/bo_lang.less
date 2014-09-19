@@ -1,0 +1,257 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/bo_lang.less ~ 2013/09/11 10:43:10
+ * @author xiebin01@baidu.com (DestinyXie) fanxueliang@baidu.com
+ * @version $Revision: 150523 $ 
+ * @description 
+ * bo_lang样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 526px;
+    background: #ffffff;
+    border: 5px solid #000;
+    margin-bottom: 20px;
+    font: 13px arial,sans-serif;
+
+    .ad-layout-block-0 {
+        .gain-bfc();
+        background: #ffffff;
+        padding-bottom: 7px;
+    }
+    .ad-layout-block-0-0 {
+        float: left;
+        width: 220px;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .ad-widget-small-head {
+        height: 162px;
+        h2 {
+            a {
+                color: #0000cc;
+            }
+        }
+        .ec-description {
+            color: #000;
+        }
+    }
+    .ad-layout-block-0-1 {
+        float: right;
+        width: 276px;
+        padding: 5px 10px 0px 14px;
+        .ad-widget-button-group {
+            padding: 0;
+            background-color: transparent;
+            td {
+                border: 0;
+            }
+            a {
+                color: #3d3d3d;
+                text-decoration: none;
+                border: solid 1px #b2b2b2;
+                margin: 0 5px 0 0;
+                height: 25px;
+                line-height: 25px;
+                display: block;
+                background-color: #fff;
+                font-family: "宋体";
+            }
+        }
+    }
+    .ad-widget-tab-container {
+        width: 526px;
+        .ec-tab-head {
+            margin: 0px;
+            background: none;
+            background-color: #000;
+            padding: 0px;
+            height: 30px;
+            overflow: hidden;
+            width: 526px;
+            li {
+                margin: 0px;
+                height: 30px;
+                line-height: 30px;
+                border-right: 1px solid #000;
+                border-left: 1px solid #000;
+                a {
+                    display: inline-block;
+                    background-color: #000;
+                    color: #fff;
+                    width: 100%;
+                    border: none;
+                    margin-left: -1px;
+                    border-right: 1px solid #fff;
+                    padding: 0px;
+                    _margin-top: 9px;
+                }
+            }
+            .ec-tab-list-last a {
+                border-right: none;
+            }
+            .ec-current-tab a {
+                font-weight: bold;
+                color: #0068B8;
+            }
+        }
+        .ec-tab-body {
+            .gain-bfc();
+            height: 132px;
+            background-color: #000;
+            .ec-tabcon {
+                height: 100%;
+            }
+        }
+    }
+    .ad-widget-image-cartoon {
+        .ec-item-wrapper {
+            width: 518px;
+            margin-left: 4px;
+        }
+        .ec-item {
+            a,
+            img {
+                width: 102px;
+                height: 130px;
+            }
+        }
+        a:hover {
+            position: static;
+            border: 0 none;
+        }
+
+    }
+    .ec-tab-content-3 {
+        height: 100%;
+        position: relative;
+    }
+    /** 表单的tab */
+    .ec-tab-content-list {
+        .ec-normal-con-0 {
+            position: relative;
+        }
+
+        .ec-normal-con-0-0 {
+            position: absolute;
+            height: 132px;
+            overflow: hidden;
+        }
+
+        .ec-normal-con-0-1 {
+            position: absolute;
+            left: 25px;
+            top: 50px;
+        }
+
+        .ad-widget-lv-list .ec-inner {
+            background: none;
+            padding: 25px 0 0 25px;
+
+            .ec-detail {
+                margin-left: 40px;
+                width: 260px;
+                overflow: hidden;
+            }
+            .ec-show-detail {
+                background: #717171;
+            }
+        }
+
+        .ad-widget-dependency-select {
+            .ec-item {
+                float: none;
+                margin-bottom: 10px;
+                .ec-title {
+                    color: #FFEDE3;
+                }
+            }
+        }
+    }
+    .ad-widget-table {
+        border: none;
+        padding: 0px 10px;
+        width: 240px;
+        float: left;
+        margin-top: 20px;
+        td {
+            border: none;
+            text-align: left;
+            padding-left: 10px;
+            line-height: 20px;
+            a {
+                color: #dbdbdb;
+                text-decoration: none;
+            }
+        }
+        thead {
+            tr {
+                background-color: #000;
+                td {
+                    text-align: center;
+                    border: none;
+                    color: #dbdbdb;
+                    border-bottom: solid 1px #828282;
+                    a {
+                        color: #dbdbdb;
+                    }
+                }
+            }
+        }
+        col.ec-0 {
+            width: 120px;
+        }
+        col.ec-1, col.ec-2 {
+            width: 60px;
+        }
+        tbody {
+            tr {
+                background-color: #000;
+            }
+            .ec-row-0 td {
+                padding-top: 5px;
+            }
+            td a {
+                white-space: nowrap;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+            }
+            .ec-0 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .ad-layout-block-2 {
+        background-color: #000;
+        .ad-widget-button-group {
+            padding: 5px 0px;
+            width: 520px;
+            background-color: #000;
+            td {
+                border: 0;
+            }
+            a {
+                color: #00AFE8;
+                text-decoration: none;
+                border: 0 none;
+                text-decoration: underline;
+                margin: 0 5px 0 0;
+                background-color: #000;
+                font-family: "宋体";
+            }
+        }
+    }
+}

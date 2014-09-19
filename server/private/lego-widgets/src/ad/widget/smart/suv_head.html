@@ -1,0 +1,13 @@
+<!-- target:AD_ad_widget_smart_suv_head -->
+<div class="ad-widget-smart ad-widget-smart-suv-head">
+    <h2 class="ec-title">{{{title}}}</h2>
+    <div class="ec-image-ctn">
+        {{#images}}
+        <div class="ec-brand-item ec-brand-item-{{_index}}{{#@last}} ec-last{{/@last}}">
+            <a title2="图片链接{{_index}}" target="_blank" href="{{{brand_rcv_url}}}" class="ec-brand-pic"><img src="{{{img_src}}}" /></a>
+            <a title2="车型链接{{_index}}" target="_blank" href="{{{brand_search_url}}}" class="ec-brand-name">{{{brand_name}}}</a>
+            <span class="ec-brand-desc">{{{brand_desc}}}</span>
+        </div>
+        {{/images}}
+    </div>
+</div>

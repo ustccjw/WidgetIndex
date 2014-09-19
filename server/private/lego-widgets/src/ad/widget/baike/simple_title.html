@@ -1,0 +1,36 @@
+<!-- target:AD_ad_widget_baike_simple_title -->
+<div class="ad-widget-baike ad-widget-baike-simple-title">
+    <a class="ec-left" hidefocus="hidefocus" href="{{{brand_rcv_url}}}" target="_blank"><img src="{{brand_img}}"></a>
+    <div>
+        <h3>{{title}}</h3>
+        <p>{{description_rcv_html}}</p>
+        <ul>
+            {{#options}}
+            <li>
+                {{label}}：{{text}}
+            </li>
+            {{/options}}
+            {{#site}}
+            <li>
+                {{label}}：<a target="_blank" href="{{{site_rcv_url}}}">{{text}}</a>
+                {{#sina_weibo_rcv_url}}
+                <a hidefocus="hidefocus" href="{{{sina_weibo_rcv_url}}}" target="_blank">
+                    <img class="ec-sina" src="//bs.baidu.com/adtest/ed947a8abc770f46ef5b0230a4667a96.png">
+                </a>
+                {{/sina_weibo_rcv_url}}
+                {{#tencent_weibo_rcv_url}}
+                <a hidefocus="hidefocus" href="{{{tencent_weibo_rcv_url}}}" target="_blank">
+                    <img class="ec-tencent" src="//bs.baidu.com/adtest/a6372a786b5fb065c4be327ff3dc5551.png">
+                </a>
+                {{/tencent_weibo_rcv_url}}
+            </li>
+            {{/site}}
+        </ul>
+    </div>
+    <div class="ec-right">
+        <a hidefocus="hidefocus" href="{{{poster_rcv_url}}}" target="_blank">
+            <img class="ec-mask" src="//bs.baidu.com/adtest/e66cd72a18adb4accc82e922d70a9afe.png"/>
+            <img  src="{{poster_img}}"/>
+        </a>
+    </div>
+</div>

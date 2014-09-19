@@ -1,0 +1,100 @@
+{
+    "contents": [
+        "ad.widget.siva.FormV2"
+    ],
+    "userPrefs": [
+        {
+            "name": "input_list",
+            "displayName": "输入栏",
+            "defaultValue": "",
+            "datatype": "LIST",
+            "tip": "",
+            "rules": {
+                "required": true,
+                "maxCount": 3,
+                "minCount": 3
+            },
+            "items": [
+                {
+                    "name": "type",
+                    "displayName": "类型",
+                    "defaultValue": "text",
+                    "datatype": "ENUM",
+                    "enumValues": [
+                        {
+                            "displayValue": "文本",
+                            "value": "text"
+                        },
+                        {
+                            "displayValue": "电子邮箱",
+                            "value": "email"
+                        },
+                        {
+                            "displayValue": "手机号码",
+                            "value": "tel"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "displayName": "提交信息名称",
+                    "defaultValue": "信息名称",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 8
+                    },
+                    "tip": "提交信息名称最多4个汉字",
+                    "multiline": false
+                }
+            ],
+            "extraAttr": {
+                "initialCount": 3
+            }
+        },
+        {
+            "name": "button_text",
+            "displayName": "按钮文字",
+            "defaultValue": "点击提交",
+            "datatype": "STRING",
+            "tip": "按钮文字最多4个汉字",
+            "rules": {
+                "required": true,
+                "maxByteLength": 8
+            },
+            "multiline": false
+        },
+        {
+            "name": "info_text",
+            "displayName": "提交成功提示",
+            "defaultValue": "提交成功",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 8
+            },
+            "multiline": false,
+            "tip": "提交成功提示4个汉字"
+        },
+        {
+            "name": "charge_rcv_url",
+            "displayName": "计费链接",
+            "defaultValue": "http://www.baidu.com",
+            "datatype": "HIDDEN",
+            "rules": {
+                "required": true
+            },
+            "multiline": false
+        },
+        {
+            "name": "success_rcv_url",
+            "displayName": "成功提交跳转链接",
+            "defaultValue": "http://www.baidu.com",
+            "datatype": "STRING",
+            "rules": {
+                "required": true
+            },
+            "multiline": false
+        }
+    ]
+}

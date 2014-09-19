@@ -1,0 +1,52 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: suggestion.less  2012-07-16 10:17:29Z wangdawei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/suggestion.less ~ 2012/07/16 22:10:40
+ * @author wangdawei(wangdawei04@baidu.com)
+ * @version $Revision:$ 
+ * @description 
+ *  
+ **/
+.ad-widget-suggestion {
+  font: 12px arial, sans-serif;
+  width: 120px;
+  display: inline-block;
+}
+.ad-widget-suggestion .ec-suggestion {
+  width: 100%;
+  padding: 0;
+  height: 20px;
+  line-height: 20px;
+}
+.ad-widget-suggestion .ec-suggestion-items {
+  margin: 0;
+  padding: 0;
+  display: none;
+  list-style: none;
+  line-height: 18px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 3px #eee;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 108px;
+  background: #fff;
+}
+.ad-widget-suggestion .ec-item {
+  list-style: none;
+  margin-left: 2px;
+  background: #fff;
+  color: #333;
+}
+.ad-widget-suggestion .ec-item em {
+  color: #ff0000;
+  font-style: normal;
+}
+.ad-widget-suggestion .ec-item-hover {
+  background: #0000cc;
+  color: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

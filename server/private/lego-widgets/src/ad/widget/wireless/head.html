@@ -1,0 +1,21 @@
+<!-- target:AD_ad_widget_wireless_head -->
+<div class="ad-widget ad-widget-wireless-head">
+    {{#rcv_url}}
+    <a target="_blank" class="ec-head" data-is-main-url="true" href="{{{rcv_url}}}" title2="主标题">
+        {{#title}}
+        <div class="ec-head-title">
+            <span>{{{title}}}</span>{{#display_official_site_icon}}<span class="ec-official-site">官网</span>{{/display_official_site_icon}}
+        </div>
+        {{/title}}
+        <div class="ec-head-content">
+            {{#logo}}<img src="{{logo}}" class="ec-logo-img" />{{/logo}}
+            <div class="ec-head-desc">
+                {{{description}}}
+                {{#site}}
+                <div class="ec-more-info"><span class="ec-site">{{{site}}}</span>-<span class="ec-brand">品牌推广</span></div>
+                {{/site}}
+            </div>
+        </div>
+    </a>
+    {{/rcv_url}}
+</div>

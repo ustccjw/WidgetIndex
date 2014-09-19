@@ -1,0 +1,43 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: game.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/zhidao/game.less ~ 2013/01/24 16:22:18
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * result样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, "宋体", sans-serif;
+  width: 268px;
+  padding: 0px;
+}
+#canvas .ec-tab-head {
+  padding: 0;
+  margin: 0 0 12px 0;
+  height: 29px;
+  background-image: url(//bs.baidu.com/adtest/fc0e921376092188535f3f9772622d08.jpg);
+}
+#canvas .ec-tab-head li a {
+  height: 27px;
+  line-height: 27px;
+  padding: 0px;
+  border: 1px solid #E4E8F1;
+  background: #F9FAFE;
+  color: #656766;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  height: 27px;
+  line-height: 27px;
+  padding: 0px;
+  border: 1px solid #E4E8F1;
+  border-bottom: 1px solid #FFF;
+  background: #FFF;
+  font-weight: 700;
+  color: #000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

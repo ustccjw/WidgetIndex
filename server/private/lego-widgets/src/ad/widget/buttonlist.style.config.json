@@ -1,0 +1,70 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-button-list td",
+            "displayName": "按钮设置",
+            "rules": [
+                {
+                    "name": "padding-right",
+                    "displayName": "右边距", // 可选
+                    "defaultValue": "6px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-button-list .ec-link-wrapper",
+            "displayName": "单链接样式",
+            "rules": [
+                {
+                    "name": "border-style",
+                    "displayName": "边框样式", // 可选
+                    "defaultValue": "solid",
+                    "options": ["solid", "none"]
+                },
+                {
+                    "name": "border-width",
+                    "displayName": "边框宽度", // 可选
+                    "defaultValue": "1px"
+                },
+                {
+                    "name": "border-color",
+                    "displayName": "边框颜色", // 可选
+                    "defaultValue": "#d1c8b1"
+                },
+                {
+                    "name": "background",
+                    "displayName": "背景色", // 可选
+                    "options": ["none"],
+                    "defaultValue": "#EFF8F0"
+                },
+                {
+                    "name": "height",
+                    "displayName": "高度", // 可选
+                    "defaultValue": "20px"
+                },
+                {
+                    "name": "line-height",
+                    "displayName": "行高", // 可选
+                    "defaultValue": "20px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-button-list .ec-link-wrapper a",
+            "displayName": "文字样式",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "颜色", // 可选
+                    "defaultValue": "#564f32"
+                },
+                {
+                    "name": "text-decoration",
+                    "displayName": "是否显示下划线", // 可选
+                    "defaultValue": "none",
+                    "options": ["underline", "none"]
+                }
+            ]
+        }
+    ]
+}

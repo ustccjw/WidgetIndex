@@ -1,0 +1,83 @@
+[
+    {
+        "name": "wenda",
+        "displayName": "问答数据",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "items",
+                "displayName": "问答项",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "title",
+                        "displayName": "标题",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "answer",
+                        "displayName": "答案",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "replier",
+                        "displayName": "回答者",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "show_url",
+                        "displayName": "显示URL",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 1
+                },
+                "extraAttr": {}
+            }
+        ]
+    }
+]

@@ -1,0 +1,208 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.app.html 11222 2012-08-20 02:53:59Z liyubei $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/impl/weigou/mobile/mobile.app.html ~ 2013/04/02 17:56:01
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 11222 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Ad ad.impl.weigou.mobile.Weigou</title>
+    <script src="../../../../third_party/zepto/Zepto.js"></script>
+    <script src="../../../../third_party/zepto/zepto.patch.js"></script>
+    <style id="ls_style_page" type="text/css">
+*{margin:0;padding:0}body{text-align:center;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-size-adjust:none;-webkit-text-size-adjust:none;background-color:white}a{color:#00C}.atext{color:#00C;font-size:120%}#top{text-align:center;background:-webkit-gradient(linear,left top,left bottom,from(#f3f3f3),color-stop(0.37,#f3f3f3),to(#e7e7e7));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f3f3f3,endColorstr=#e7e7e7);padding:12px 0 6px 0;border-bottom:1px solid #b4b4b4}#footer_wrap{background:#f4f4f4;padding:8px 0;border-bottom:1px solid #b4b4b4;border-top:1px solid #cecece;box-shadow:0 1px 0 #fff inset;-webkit-box-shadow:0 1px 0 #fff inset}#head{position:relative;height:auto;width:100%;margin-bottom:8px}#logo{display:block;width:72px;height:23px;background:url(//bs.baidu.com/adtest/f960ce1c7f2a31f53d9d3a2a148be69b.png) no-repeat;background-size:72px 23px;-webkit-background-size:72px 23px;position:relative;top:-2px;left:9px}#h_tabs{width:222px;height:26px;position:absolute;top:0;right:12px}.h_tab{display:block;float:left;height:26px;width:44px;font-size:14px;color:#46446d;font-weight:bold;text-decoration:none;text-align:center}.tabTx{display:block;border-radius:4px;-webkit-border-radius:4px;line-height:16px;margin:0 auto;padding:4px 5px}#switchBt{border:0}.more_show{color:#0058d2}.cur{color:#0058d2;background:#bdd8ff;border-radius:2px;-webkit-border-radius:2px;border:1px solid #7691b8}.arrow{margin-left:3px;position:absolute;top:9px;right:0;width:8px;height:5px;display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNpinDVr1lIGBoYoIP7IgAr4gXgZC5BIAWJmIA5HU7ASJMcEJL5DTZiOJDkdKvadBSrwD4izgPgPlJ8HUwkQYACeSAzsFKcuKQAAAABJRU5ErkJggg==) no-repeat}.arrow_show{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEBJREFUeNpiZIi4xIAEJkHpPJgAC5RmAuIpQJyJJJ4DxP9AEpxAvAxJkgHKBolxglTOAeJwIP7IgApAYn8BAgwAWxMKC0BJ5vUAAAAASUVORK5CYII=) no-repeat}a.tab:last-child{border:0}#more{margin-top:8px;background-color:white;display:none;background:#e5e5e5;border-top:1px solid #c1c1c1;border-bottom:1px solid #cecece;box-shadow:1px 0 0 rgba(216,216,216,.21) inset,0 1px 0 rgba(216,216,216,.21) inset,-1px 0 0 rgba(216,216,216,.21) inset,0 1px 0 rgba(255,255,255,.75),0 -1px 0 rgba(255,255,255,.75);-webkit-box-shadow:1px 0 0 rgba(216,216,216,.21) inset,0 1px 0 rgba(216,216,216,.21) inset,-1px 0 0 rgba(216,216,216,.21) inset,0 1px 0 rgba(255,255,255,.75),0 -1px 0 rgba(255,255,255,.75);padding:15px 0;position:relative}#more_ar{position:absolute;top:-8px;right:22px;width:12px;height:8px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAwRENDN0Y0NkQ5RDExRTE4RjcyQzhCNjNBQ0M5NTFEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAwRENDN0Y1NkQ5RDExRTE4RjcyQzhCNjNBQ0M5NTFEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDBEQ0M3RjI2RDlEMTFFMThGNzJDOEI2M0FDQzk1MUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDBEQ0M3RjM2RDlEMTFFMThGNzJDOEI2M0FDQzk1MUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4f4cSNAAAAdElEQVR42pzOMQoAIQwEwBgPKyv//xSv03uOla3kiCBYbcSFsBDCECciZEQPHDpgC3hzXtAVIl+tlFIibQSxBaxBECMgxkghhNkIYgR47+dSG0FsASsI4hPAgvgUQJCrpcgpsGeMQb13aq3RcwPsH2l+AQYAR+lIK/EA870AAAAASUVORK5CYII=) no-repeat;background-size:12px 8px;-webkit-background-size:12px 8px}.more_links{width:300px;margin:0 auto;text-align:left!important;height:14px}.more_links:last-child{margin-top:25px}.more_links a{font-size:14px;color:#545164;font-weight:bold;line-height:100%;text-decoration:none;padding:0 15px}#aow{display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAIAAAA2KZn2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARNJREFUeNqEkFtPg0AQhWHB4As1omuApkBWaxMb+f+/wegTXaCUNF56oRottWm5FXASTENKrOdx5nxnLmy52zENlWX5NplwHKcqCsuyTQPfLBVFMZsH2zgJgoDnT/DlBULowIOazOL9wx+P223VNO9dzwtXKxh+DIP259dyOBqZpimKoiRJvd4tddwoig5IVGeWYWi7br9/J0nnVVGWZU3rWNRO0rROoj3zvV5Tx4F4jHE9WNd1fIWhlef5nkQVs9lsB9Qm5Brim08ihLRaZ87Qg8t/MWCiOLYo7WgavIH5Q93ujXAqPL+8ViRKs8waUEVV4AbmqGDbJMvmwQJI/uHxCYYYhsH8J0EQwDmdzjzf/xFgAOE+koq0Y6dgAAAAAElFTkSuQmCC) no-repeat;background-size:9px 5px;-webkit-background-size:9px 5px;width:9px;height:5px;position:absolute;top:-5px;right:20px}#se_box,#se_box2{margin-top:2px;margin-left:7px;margin-right:7px;position:relative}#se_wrap{width:100%;height:39px;position:relative;border-radius:2px;-webkit-border-radius:2px;position:relative;box-shadow:1px 1px 1px rgba(0,0,0,0.2) inset;-webkit-box-shadow:1px 1px 1px rgba(0,0,0,0.2) inset;background:#fff;border:1px solid #6e6e6e}#se_inner{height:39px;position:absolute!important;right:74px!important;top:0!important;left:0!important;background:#fff}.se-input{display:block;width:100%;margin:2px 0;padding:6px 35px 6px 6px;font-size:18px;line-height:24px;border:0;border-radius:0;-webkit-border-radius:0;background-color:transparent;-webkit-tap-highlight-color:rgba(255,0,0,0);-webkit-appearance:none;-webkit-box-sizing:border-box}#se_bn,#se_bn2{color:#000;box-shadow:0 1px 2px #fff inset;-webkit-box-shadow:0 1px 2px #fff inset;text-shadow:0 1px 1px #fff;-webkit-text-shadow:0 1px 1px #fff;background:-webkit-linear-gradient(top,#f7f6f6 0,#f7f6f6 28%,#dfdfdf 100%);background-color:#ececec;padding:0;text-align:center;white-space:nowrap;font-size:0;line-height:39px;font-weight:bold;background-size:74px 39px;-webkit-background-size:74px 39px;width:74px;height:39px;position:absolute;top:0;right:0;z-index:2;-webkit-appearance:none;-webkit-box-sizing:border-box;border:0;border-left:1px solid #888;border-radius:0;-webkit-border-radius:0;letter-spacing:-1px}#se_bn span,#se_bn2 span{font-style:normal;font-size:16px;color:#000}#cross,#cross2{position:absolute;top:0;right:0!important;width:35px;bottom:0;display:none;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAqFJREFUWEfFmclOAzEMQFsWsS/iyFr2HQr8/1fBhQMIv1FThSEZO560RLJamCwvju143OHA34YydEtkU2RNZHUiYcZP+fIlwifyIfIu8u1fsmzkunQ/ERmLvBXKi/Q/nWywbNWC3mjtshCsayM3k9MoQOjuyhEfirxWhIw3MJJ5F/rSLskEVzMCjGHvZI0VLyxH/TgHyAD87LFdID3OUupc7f6Y165Vsxz3wxw12YYlMmxosDjO9T9CBmhMDoVlG96tHd+ToY82B/ao9SHeJhuBXAtBZ9KHUMKntlDu+cVkDkC0ObZTpEzQNRA4TIPGpweWNeI5NNjbNija7ILEucICYWwpbAwZ5uB0NFPaiWG5u7VjwH7bzQqbgmTsuWFd+jSNXVmMm414YPtAsiZ+00QA0jRNm/HzEti+kGHdPUD3C0GtmiXTStm15bjbijsG1DNQg60JyVqkhIN7h0bDjnNmUEuTccJidqScHadg4+hg9W7NT9TbSJsgZwbA1oJkjSqgKZsMoJ4bLKWc3kefgwzHb70UtJPr5Uw5745ttIZmuZDc4QnI9ktZsMmSS0HT5DQ8eQJ+F6QWujw22wT80ivUAlkbtrlCS5KSEshasNOkBFhLmueBrAE7TfMA1RJnktuc41icIXcpFCfOwGp1pVGUDXlvnDgaWOIrFZQ/zfJyByxa8GZcQbMWSPr+eg2JiY/kD+0otXccbTzPLQUOwli2sVNyP8tis+yjFiDYAe8nNbTm3YippBNUjb0ywLuYd1xRkSzAUqiad9kxWRnpstXwbHlONotzuQu5AZZwRDTQ6lLe46ass2jRmrUPO/ZkPrkNcMHgCzNr2C65gScyjGXczH++Se2cH8QORNAOlbe4NETU4H/8WMHViaO0X6PN2vwBXtDwHrylQ1oAAAAASUVORK5CYII=) no-repeat scroll center center transparent;z-index:2;background-size:16px 16px;-webkit-background-size:16px 16px}.keyword,.keyword a{color:#c60a00}a em{text-decoration:underline}a font{text-decoration:underline}em{font-style:normal;color:#c60a00}#results{text-align:left}.result_title{text-align:left;text-decoration:none;font-size:120%;word-break:break-all}.result_title>em,.relativeword>a{text-decoration:none}.result a,.resitem a,.result a em,.result a font,.resitem a em,.resitem a font{text-decoration:none}.abs,.result_snippet{line-height:18px;word-break:break-all;padding:0 0 7px}.result_url{color:#2dbe00}.result_snipshot{color:#6d6d6d}.site,.date,.size{color:#1f992f}.gray{color:#666}#pinyin{text-align:left;padding-top:10px;padding-left:7px;font-weight:bold}#pinyin a{color:#c60a00}#pagenav{padding:10px 20px 17px 20px}.return-link a,#copy a,#pinyin a,#pagenav a{text-decoration:none}#relativewords{text-align:left;padding:15px 5px 15px 5px;background-color:#eff2fa;border-width:1px 0;border-color:#c9e0f6;border-style:solid;border-bottom:0}.relativewords_title{font-size:120%}.relativeword{display:inline-block;width:144px;height:14px;line-height:130%;padding:10px 5px 8px 0;overflow:hidden}#copy{font-size:80%;color:#77C;padding:5px;padding-bottom:15px;text-align:center}#copy span{color:#666}#copy a{color:#77C;margin-left:5px}.return-link{padding:8px 5px 5px 5px;text-align:center}.animate{-webkit-animation:ChangeColor 300ms linear}@-webkit-keyframes ChangeColor{0%{background:#dae6ff}50%{background:#dae6ff}100%{background:transparent}}input[type="search"]::-webkit-search-cancel-button{display:none}input[type="search"]:focus{background-color:transparent}.result{padding:0 10px 15px}.resitem{padding:0 6px 15px}.result .result_title,.resitem .result_title{padding:8px 0 8px;display:block}.result_title .result_title_abs{color:#262626;word-break:break-all;font-size:14px;line-height:20px;margin:8px 0 -8px 0}.result .result_snippet,.result .abs{line-height:20px!important;color:#262626!important}.ec_wise_ad+.result{padding:0 10px 15px;margin-top:0}.ec_wise_ad+.resitem{padding:0 6px 15px;margin-top:0}.resitem:last-child{padding:7px 6px 15px!important}#relativewords{padding:15px 10px}.relativeword{width:139px}a.gray{text-decoration:none}.results>.result:first-child,.results>.resitem:first-child{padding-top:7px}.result:before,.resitem:before{content:"";border-top:1px solid #e8e8e8;display:block;padding-top:7px}.result:first-child:before,.resitem:first-child:before{content:"";border-top:0 none;display:block;padding-top:0}.card-result:before{border-top:0 none;padding-top:0}.resitem:before{margin:0 4px}.results>.card-result{margin-top:5px;margin-bottom:5px}.card-result+.card-result{margin-top:16px!important}.card-result:first-child{margin-top:0}.card-result:last-child{margin-bottom:15px}.card-result+.result:before,.card-result+.resitem:before{border-top:0 none}.ec_wise_ad+.card-result{margin-top:0}.ec_wise_ad+.result:before,.ec_wise_ad+.resitem:before{border-top:0 none}.wa-topcelebrity-result+.card-result{margin-top:0}a.result_title:visited{color:#800080}a.result_title:visited .result_title_abs{color:#242424!important}a.result_title:visited .result_title_abs em{color:#c30a00!important}.ec_wise_ad+.card-result{margin:-1px 0 0 0}.top-result+.card-result{margin-top:0}.touched{background-color:#eef3fe!important}.suggest-div button{display:block;border:0;width:100%;height:100%;background:none transparent;-webkit-appearance:none;margin:0;padding:0;font-size:16px;line-height:22px;position:relative;text-align:left;color:#878787}.sugAdd{position:absolute;right:0;top:1px;bottom:1px;width:52px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAI5JREFUSEtjZCACLF261J6RkbELpPT///9l0dHRB4nQRlgJ0ODny5Yt+w/CIDZhHUSqgBkKo4nURljZqMHwMBohQQFK/ECvnkT3LgX8kyAzGZATPwWGgTMPSiYCGvyEWgYiGfyEAcjxoKaroWZ5EM52QBUjJLkRExajQUH7Qgg5E4HYxMQLUWpgmYiUxA8AOdLMz+iDKvIAAAAASUVORK5CYII=) no-repeat scroll center center #fff;background-size:11px 11px;-webkit-background-size:11px 11px;z-index:1}.suggest-div{position:absolute;z-index:30;left:0;top:41px;border:1px solid #b4b4b4;border-top:0;width:100%;background:#FFF;border-bottom-left-radius:2px;border-bottom-right-radius:2px;-webkit-border-bottom-left-radius:2px;-webkit-border-bottom-right-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,0.2);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.2)}.suggest-close{position:absolute;right:0;bottom:0;text-align:center;color:#666;font-size:14px;line-height:34px;z-index:2;border-left:1px solid #c5c5c5;padding:0 12px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.suggest-close::after{border-left:1px solid #fff;content:'';position:absolute;top:0;bottom:0;left:0;content:''}.his,.sug{font-size:16px;line-height:22px;border-bottom:1px solid #d3d3d3;color:#555;word-break:break-all;padding:6px 50px 6px 5px;text-align:left;-webkit-tap-highlight-color:rgba(0,0,0,0);position:relative}.sug{color:#878787}.suggest-title{height:34px;background:#f7f7f7}.suggest-title .history-clear{color:#666;font-size:14px;line-height:34px;width:85px;height:34px;-webkit-tap-highlight-color:rgba(0,0,0,0)}.history-clear{border-right:1px solid #c5c5c5;padding:0 5px;position:relative}.history-clear::after{content:'';border-right:1px solid #fff;position:absolute;right:0;top:0;bottom:0}.his b,.sug b,.his em,.sug em{font-weight:bold;font-style:normal;color:#333}div.direct{height:38px;padding:6px 5px}.directIcon{position:relative;margin:0 10px 0 0;float:left;vertical-align:middle}.directText{position:relative}.directText p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.directText .title{line-height:22px;font-size:16px;color:#333}.directText .info{font-size:12px;line-height:12px;color:#878787;margin:2px 0}.directText .pre{white-space:pre}.directText .num{font-size:20px}.directText .leftBorder{font-size:12px;margin-left:10px;padding-left:10px;color:#878787;border-left:1px solid #bfbfbf}.directIcon1{margin:0 0 0 -3px}.directIcon1 .icon{position:relative;width:42px;height:42px;top:-2px}.directText1{margin-left:42px}.directText1 .title{font-size:16px}.directText1 .right{padding:0 5px;line-height:18px;font-size:12px;right:2px;top:10px;color:#878787;position:absolute;border:1px solid #c8c8c8;border-radius:2px}.directIcon2 .icon{position:relative;top:10px;width:16px;height:16px}.directText2{margin-left:25px}.directText2 .info{line-height:14px;color:#008000}.directIcon3 .icon{position:relative;width:36px;height:36px;top:1px}.directText3{top:1px;margin-left:46px}.directText3 .title span{position:relative;top:-2px;border:1px solid #6fa4ef;border-radius:2px;color:white;text-shadow:1px 1px 1px #4f7dbd;background-color:#6fa4ef;padding:0 2px;line-height:18px;font-size:12px;margin-left:5px}.directText4 .ball{position:relative;float:left;font-size:12px;text-align:center;width:18px;height:18px;line-height:18px;margin:2px 2px 2px 0;color:#fff;border-radius:9px}.directText4 .redball{background:#bd0005}.directText4 .blueball{background:#2e569b}div.direct.d8,div.direct.d9,div.direct.d10,div.direct.d14,div.direct.d15{height:23px}.directText15 b{font-size:12px}.directText15 a{margin-left:1px;background:url('http://wap.baidu.com/static/index/sugtel.png') no-repeat;background-color:#689af1;background-size:18px 18px;border-radius:10px;color:white;padding:0 5px 0 24px;background-position:1px 1px;margin-right:10px;border:1px solid #689af1;text-decoration:none}.touched{background-color:#eef3fe!important}.suggest-item-last{border-bottom:0}
+    </style>
+    <script>
+        var A = {
+            ec: {
+                weigou: {
+                    "data": {
+                        "success":"true",
+                        "attribute_count":5,
+                        "attributes": [
+                            {
+                                "key":"操控",
+                                "value":"电容屏触屏"
+                            },
+                            {
+                                "key":"外观",
+                                "value":"直板"
+                            }
+                        ],
+                        "id":"176610352",
+                        "name":"苹果（APPLE）iPhone 4 8G版 3G手机（黑色）WCDMA\/GSM",
+                        "original_price":2848,
+                        "picture":"http:\/\/s3.bae.baidu.com:80\/ma-image\/176610352_1618434994_451129690_126_126.jpg",
+                        "price":2899,
+                        "vendor":"京东商城",
+                        "vendor_id":276
+                    }
+                }
+            }
+        };
+    </script>
+    <script type="text/javascript" src="../../../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../../base.js"></script>
+    <script type="text/javascript">
+        goog.require('ad.impl.weigou.mobile.Weigou');
+    </script>
+</head>
+<body style="background:#eee; -webkit-text-size-adjust:none">
+    <div id="page">
+        <div id="results">
+            <div class="result" srcid="12341" style="margin-top: 20px;">
+                <!-- weigou content -->
+                <div id="ec-sg-weigou" class="ec-sg-weigou">
+                    <div id="ec-sg-weigou-placeholder">
+                        <header class="ec-sg-weigou-header">
+                            <span class="ec-sg-weigou-header-logo">百度微购</span>
+                            <div class="ec-sg-weigou-header-tags">
+                                <div><b class="ec-sg-weigou-header-tags-1"></b><span>快速购买</span></div>
+                                <div><b></b><span>正品行货</span></div>
+                            </div>
+                        </header>
+                        <div class="ec-sg-weigou-views">
+                            <div id="ec-sg-weigou-list-placeholder" class="ec-sg-weigou-view">
+                                <a class="ec-sg-weigou-list-my-orders" href="http://weigou.baidu.com/service/user/order/list" target="_blank">我的订单</a>
+                                <section class="ec-sg-weigou-list-regions">
+                                    <span>选择收货地址：</span>
+                                    <div class="ec-sg-weigou-list-regions-select">
+                                        <select value="上海">
+                                            <option value="全国">全国</option>
+                                            <option value="北京">北京</option>
+                                            <option value="上海">上海</option>
+                                            <option value="天津">天津</option>
+                                            <option value="重庆">重庆</option>
+                                            <option value="河北">河北</option>
+                                            <option value="山西">山西</option>
+                                            <option value="内蒙古">内蒙古</option>
+                                            <option value="辽宁">辽宁</option>
+                                            <option value="吉林">吉林</option>
+                                            <option value="黑龙江">黑龙江</option>
+                                            <option value="江苏">江苏</option>
+                                            <option value="浙江">浙江</option>
+                                            <option value="安徽">安徽</option>
+                                            <option value="福建">福建</option>
+                                            <option value="江西">江西</option>
+                                            <option value="山东">山东</option>
+                                            <option value="河南">河南</option>
+                                            <option value="湖北">湖北</option>
+                                            <option value="湖南">湖南</option>
+                                            <option value="广东">广东</option>
+                                            <option value="广西">广西</option>
+                                            <option value="海南">海南</option>
+                                            <option value="四川">四川</option>
+                                            <option value="贵州">贵州</option>
+                                            <option value="云南">云南</option>
+                                            <option value="陕西">陕西</option>
+                                            <option value="甘肃">甘肃</option>
+                                            <option value="青海">青海</option>
+                                            <option value="宁夏">宁夏</option>
+                                            <option value="新疆">新疆</option>
+                                            <option value="台湾">台湾</option>
+                                            <option value="香港">香港</option>
+                                            <option value="澳门">澳门</option>
+                                        </select>
+                                    </div>
+                                </section>
+                                <div class="ec-sg-weigou-list-main">
+                                    <article class="ec-sg-weigou-list">
+                                        <table class="ec-sg-weigou-list-item" data-id="157964925">
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <img src="http://t11.baidu.com/it/u=496150465,3381860409&amp;fm=58"/ >
+                                                    </th>
+                                                    <td>
+                                                        <p class="ec-sg-weigou-item-name" title="iphone5s，来自百度微购，百度专卖，值得信赖">iphone5s，来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信来自百度微购，百度专卖，值得信赖赖赖赖赖赖赖赖来自百度微购，百度专卖，值得信赖</p>
+                                                        <p>
+                                                            <span>发货商家：</span>
+                                                            <span class="ec-sg-weigou-orange">京东商城</span>
+                                                        </p>
+                                                        <p class="ec-sg-weigou-item-price">
+                                                            <span>价格：</span>
+                                                            <span class="ec-sg-weigou-orange">2848</span>
+                                                            <a href="javascript:;">查看详情</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="ec-sg-weigou-list-item" data-id="176538036">
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <img src="http://t11.baidu.com/it/u=496150465,3381860409&amp;fm=58"/ >
+                                                    </th>
+                                                    <td>
+                                                        <p class="ec-sg-weigou-item-name" title="iphone4s，来自百度微购，百度专卖，值得信赖">iphone4s，来自百度微购，百度专卖，值得信赖</p>
+                                                        <p>
+                                                            <span>发货商家：</span>
+                                                            <span class="ec-sg-weigou-orange">京东商城</span>
+                                                        </p>
+                                                        <p class="ec-sg-weigou-item-price">
+                                                            <span>价格：</span>
+                                                            <span class="ec-sg-weigou-orange">2848</span>
+                                                            <a href="javascript:;">查看详情</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="ec-sg-weigou-list-item" data-id="176538230">
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <img src="http://t11.baidu.com/it/u=496150465,3381860409&amp;fm=58"/ >
+                                                    </th>
+                                                    <td>
+                                                        <p class="ec-sg-weigou-item-name" title="iphone4s，来自百度微购，百度专卖，值得信赖">iphone4s，来自百度微购，百度专卖，值得信赖</p>
+                                                        <p>
+                                                            <span>发货商家：</span>
+                                                            <span class="ec-sg-weigou-orange">京东商城</span>
+                                                        </p>
+                                                        <p class="ec-sg-weigou-item-price">
+                                                            <span>价格：</span>
+                                                            <span class="ec-sg-weigou-orange">2848</span>
+                                                            <a href="javascript:;">查看详情</a>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </article>
+                                    <section class="ec-sg-weigou-list-morebtn">
+                                        <span>查看更多商品</span>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="result" style="height:500px"></div>
+
+    <script>
+        // goog.mockups('ad.impl.mweigou.mockup');
+    </script>
+</body>
+</html>

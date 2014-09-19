@@ -1,0 +1,70 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/siva/img_with_sitelinks.less ~ 2013/09/06 22:07:14
+ * @author yangfan12@baidu.com (yangfan12)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * img_with_sitelinks样式文件
+ **/
+.ad-widget-siva-img-with-sitelinks {
+  line-height: 0;
+  position: relative;
+  font-size: 12px;
+  width: 270px;
+}
+.ad-widget-siva-img-with-sitelinks img {
+  border: none;
+}
+.ad-widget-siva-img-with-sitelinks ul {
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-siva-img-with-sitelinks .ec-siva-widget-sitelinks-bg {
+  position: absolute;
+  bottom: 0;
+  _top: 115px;
+  left: 0;
+  text-align: centner;
+  background: url(//bs.baidu.com/adtest/3f7e80df019b11c94af1821c1857b2ce.png) no-repeat left top #000000;
+  height: 25px;
+  line-height: 25px;
+  width: 270px;
+  filter: alpha(opcity=60);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: .6;
+  color: white;
+}
+.ad-widget-siva-img-with-sitelinks .ec-siva-widget-sitelinks-links {
+  background: url(//bs.baidu.com/adtest/3f7e80df019b11c94af1821c1857b2ce.png) no-repeat left top;
+  font-family: Microsoft Yahei, simhei;
+  position: absolute;
+  bottom: 0;
+  _top: 115px !important;
+  left: 0;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  width: 268px;
+  color: white;
+}
+.ad-widget-siva-img-with-sitelinks .ec-siva-widget-sitelinks-links li {
+  display: inline;
+  background: url(//bs.baidu.com/adtest/7673572aafbf7b7f4540349764f2ffb6.png) no-repeat right top;
+}
+.ad-widget-siva-img-with-sitelinks .ec-siva-widget-sitelinks-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0 7px 0 8px;
+}
+.ad-widget-siva-img-with-sitelinks .ec-siva-widget-sitelinks-links a:hover {
+  text-decoration: underline;
+}
+.ad-widget-siva-img-with-sitelinks .ec-siva-widget-sitelinks-links li.ad-widget-siva-sitelinks-link-last {
+  background: none transparent scroll repeat 0% 0%;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,106 @@
+{
+    "contents":["ad.widget.baike.TimeLine"],
+    "userPrefs": [
+        {
+            "name": "options",
+            "displayName": "时间节点",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 8,
+                "maxCount": 20
+            },
+            "items": [
+                {
+                    "name": "type",
+                    "displayName": "样式类型",
+                    "datatype": "ENUM",
+                    "defaultValue": "normal",
+                    "nameTip": "",
+                    "descriptionTip": "",
+                    "rules": {},
+                    "extraAttr": {},
+                    "enumValues": [
+                        {
+                            "value": "normal",
+                            "displayValue": "图片(200*160)+描述"
+                        },
+                        {
+                            "value": "picture",
+                            "displayValue": "只有图片(200*260)"
+                        },
+                        {
+                            "value": "text",
+                            "displayValue": "只有描述"
+                        }
+                    ]
+                },
+                {
+                    "name": "title",
+                    "displayName": "标题",
+                    "tip": "请输入事件标题,最多11个汉字",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 22
+                    },
+                    "extraAttr": {}
+                },
+                {
+                    "name": "desc",
+                    "displayName": "描述",
+                    "defaultValue": "",
+                    "multiline": true,
+                    "tip": "请输入商品的详细描述信息,最多140个汉字",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 280
+                    },
+                    "extraAttr": {}
+                },
+                {
+                    "name": "small_img",
+                    "displayName": "小图片",
+                    "datatype": "UPLOAD",
+                    "rules": {},
+                    "extraAttr": {
+                        "width": 200,
+                        "height": 160,
+                        "maxSize": 50,
+                        "fileType": "IMAGE",
+                        "ext": "jpg"
+                    }
+                },
+                {
+                    "name": "big_img",
+                    "displayName": "大图片",
+                    "datatype": "UPLOAD",
+                    "rules": {},
+                    "extraAttr": {
+                        "width": 527,
+                        "height": 323,
+                        "maxSize": 100,
+                        "fileType": "IMAGE",
+                        "ext": "jpg"
+                    }
+                },
+                {
+                    "name": "time",
+                    "displayName": "时间",
+                    "defaultValue": "",
+                    "tip": "请输入时间（格式要求2010或者2010.1）",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "regex": {
+                            "pattern": "\\d{4}(\\.(1[0-2]|[1-9]))?",
+                            "errorText": "格式必须满足YYYY.M或者YYYY.MM!"
+                        }
+                    },
+                    "extraAttr": {}
+                }
+            ]
+        }
+    ]
+}

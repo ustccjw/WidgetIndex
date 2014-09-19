@@ -1,0 +1,86 @@
+{
+    "contents": [
+        "ad.widget.DependencySelect"
+    ],
+    "userPrefs": [
+        {
+            "name": "datasource_url",
+            "displayName": "datasource_url",
+            "tip": "http://",
+            "datatype": "STRING",
+            "defaultValue": "//bs.baidu.com/adtest/b046a8056da60c47cd308c4f0b82f08d.js",
+            "rules": {
+                "stringType": "URL",
+                "required": true,
+                "maxByteLength": 255
+            },
+            "extraAttr": {},
+            "multiline": false
+        },
+        {
+            "name": "dependency",
+            "displayName": "dependency",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 1,
+                "maxCount": 5
+            },
+            "items": [
+                {
+                    "name": "name",
+                    "displayName": "name",
+                    "tip": "最多10个字节（5个汉字）",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 10
+                    }
+                },
+                {
+                    "name": "title",
+                    "displayName": "title",
+                    "defaultValue": "title",
+                    "datatype": "HTML",
+                    "rules": {
+                        "required": true,
+                        "minTextByteLength": 10,
+                        "maxTextByteLength": 30,
+                        "tagList": {
+                            "em": {
+                                "minTextByteLength": 2,
+                                "maxTextByteLength": 12,
+                                "minCount": 1,
+                                "maxCount": 1
+                            }
+                        }
+                    },
+                    "extraAttr": {
+                        "editorConfig": {
+                            "tools": [
+                                "emphasize"
+                            ]
+                        },
+                        "tagList": {
+                            "em": {
+                                "isAllowNoContent": false,
+                                "isSimpleTag": false
+                            }
+                        }
+                    },
+                    "tip": "请输入标题，最少5个汉字，最多15个汉字,飘红词最多6个汉字",
+                    "multiline": false
+                },
+                {
+                    "name": "default",
+                    "displayName": "default",
+                    "tip": "最多10个字节（5个汉字）",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 10
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "image",
+        "displayName": "图片（adrc）",
+        "datatype": "OBJECT",
+        "items": [ 
+            {
+                "name": "image_rcv_url",
+                "displayName": "图片跳转地址",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                },
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "image_url",
+                "displayName": "图片",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 984,
+                    "height": 90,
+                    "maxSize": 50
+                }
+            }
+        ]
+    }
+]

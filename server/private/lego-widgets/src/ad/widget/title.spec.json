@@ -1,0 +1,110 @@
+{
+    "contents": ["ad.widget.Title"],
+    "userPrefs": [
+        {
+            "name": "logoimg",
+            "displayName": "logoimg",
+            "tip": "../impl/img/burberry.png",
+            "datatype": "UPLOAD",
+            "defaultValue": "../impl/img/burberry.png",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "width": 180,
+                "height": 100,
+                "maxSize": 15,
+                "ext": "jpg,png"
+            }
+        },
+        {
+            "name": "logo_rcv_url",
+            "displayName": "logo_rcv_url",
+            "tip": "http://",
+            "datatype": "STRING",
+            "defaultValue": "www.baidu.com",
+            "rules": {
+                "stringType": "URL",
+                "required": true,
+                "maxByteLength": 255
+            },
+            "extraAttr": {},
+            "multiline": false
+        },
+        {
+            "name": "activetip",
+            "displayName": "活动TIP文本",
+            "tip": "活动TIP文本",
+            "datatype": "STRING",
+            "rules": {
+                "maxByteLength": 32
+            }
+        },
+        {
+            "name": "title",
+            "displayName": "标题",
+            "tip": "标题为6~25个汉字，核心<em>飘红词</em>最多可选6个汉字",
+            "datatype": "HTML",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "minByteLength": 12,
+                "maxByteLength": 50,
+                "tagList" : {
+                    "em": {
+                        "maxTextByteLength": 12,
+                        "minCount": 1,
+                        "maxCount": 1
+                    }
+                }
+            },
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": ["emphasize"]
+                },
+                "tagList" : {
+                    "em": {
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    }
+                }
+            }
+        },
+        {
+            "name": "display_official_site_icon",
+            "displayName": "显示官网标识",
+            "defaultValue": true,
+            "datatype": "BOOL"
+        },
+        {
+            "name": "rcv_url",
+            "displayName": "标题跳转地址",
+            "tip": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL",
+                "maxByteLength": 255
+            }
+        },
+        {
+            "name": "activetitle",
+            "displayName": "活动标题",
+            "tip": "活动标题",
+            "datatype": "STRING",
+            "rules": {
+                "maxByteLength": 32
+            }
+        },
+        {
+            "name": "active_rcv_url",
+            "displayName": "活动标题链接地址",
+            "tip": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL",
+                "maxByteLength": 255
+            }
+        }
+    ]
+}

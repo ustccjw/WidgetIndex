@@ -1,0 +1,24 @@
+<!-- target:AD_ad_widget_gx_sck_comp_card_main -->
+
+<div class="ad-widget-gx_sck ad-widget-gx_sck-comp-card-main">
+    <div class="ec-inner">
+        <div class="ec-title"> <a href="{{{title_rcv_url}}}" title2="名片左侧-标题" target="_blank">{{{title}}}</a> </div>
+        <div class="ec-main"> {{#logo}}
+            <div class="ec-logo"> <a href="{{{logo_rcv_url}}}" title2="名片左侧-LOGO" data-link-text="[LOGO图片]" target="_blank"> <img src="{{logo}}" border="0" width="90" height="90" /> </a> </div>
+            {{/logo}}
+            <div class="ec-detail">
+                <div class="ec-detail1">{{detail1}}</div>
+                <div class="ec-site"> 官方网站：<span>{{show_url}}</span> </div>
+                <div class="ec-detail2">{{detail2}}</div>
+                <ul class="ec-link">
+                    {{#link1}}
+                    <li> <a href="{{{rcv_url}}}" title2="短连接1" target="_blank">{{text}}</a> </li>
+                    {{/link1}}
+                    {{#link2}}
+                    <li> <a href="{{{rcv_url}}}" title2="短连接2" target="_blank">{{text}}</a> </li>
+                    {{/link2}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/qtz/qtz_bmw_x5_a.less ~ 2013/10/11 11:05:53
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * qtz_bmw_x5_a样式文件
+ **/
+#canvas {
+  font: 13px/1.5 arial, sans-serif;
+  width: 270px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaeaea;
+}
+#canvas .ad-widget-title {
+  padding: 11px 0 0;
+}
+#canvas .ad-widget-title h2 {
+  color: #666;
+  font-size: 12px;
+  line-height: 19px;
+}
+#canvas .ad-widget-title h2 a {
+  color: #333;
+}
+#canvas .ad-widget-section {
+  padding-top: 8px;
+  color: #333;
+}
+#canvas .ad-widget-section a {
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+}
+#canvas .ad-widget-section p {
+  margin: 0;
+  padding-top: 1px;
+}
+#canvas .ad-widget-section li {
+  margin-bottom: 0;
+}
+#canvas .ad-widget-link-list {
+  height: 19px;
+  padding-left: 1px;
+}
+#canvas .ad-widget-link-list li {
+  height: 19px;
+  line-height: 19px;
+  border: 0 none;
+  background-color: transparent;
+  padding-right: 15px;
+}
+#canvas .ad-widget-link-list li a {
+  color: #00c;
+}
+#canvas .ad-block-4 .ad-widget-section a {
+  float: left;
+  padding-bottom: 1px;
+}
+#canvas .ad-block-4 .ad-widget-section p {
+  clear: left;
+}
+#canvas .ad-block-6 .ad-widget-title {
+  padding-top: 3px;
+}
+#canvas .ad-block-6 .ad-widget-title h2 {
+  font-size: 12px;
+}
+#canvas .ad-block-6 .ad-widget-title h2 a {
+  color: #00c;
+}

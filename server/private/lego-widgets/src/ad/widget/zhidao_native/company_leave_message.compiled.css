@@ -1,0 +1,111 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhidao_native/company_leave_message.less ~ 2014/04/16 15:53:34
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * company_leave_message样式文件
+ **/
+.ad-widget-zhidao_native-company-leave-message {
+  border: 1px solid #ddd;
+  width: 610px;
+  color: #666;
+  font-size: 14px;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-title {
+  height: 46px;
+  line-height: 46px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  padding-left: 22px;
+  font-weight: bold;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-body {
+  padding: 25px 22px;
+  background: white;
+}
+.ad-widget-zhidao_native-company-leave-message input,
+.ad-widget-zhidao_native-company-leave-message textarea {
+  display: block;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  background: #fff;
+  resize: none;
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  outline: 0;
+  font-family: Arial;
+  margin-bottom: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 1px #f8f8f8 inset;
+  -moz-box-shadow: 1px 1px 1px #f8f8f8 inset;
+  box-shadow: 1px 1px 1px #f8f8f8 inset;
+}
+.ad-widget-zhidao_native-company-leave-message textarea {
+  margin-top: 0;
+  width: 544px;
+  height: 80px;
+  margin-bottom: 12px;
+}
+.ad-widget-zhidao_native-company-leave-message input {
+  margin-top: 2px;
+  float: left;
+}
+.ad-widget-zhidao_native-company-leave-message input.ad-text-virtual,
+.ad-widget-zhidao_native-company-leave-message textarea.ad-text-virtual {
+  color: #999;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-input-name {
+  width: 176px;
+  margin-right: 16px;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-input-email {
+  width: 330px;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-error {
+  color: #c00;
+  line-height: 20px;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-button-row {
+  padding-top: 10px;
+}
+.ad-widget-zhidao_native-company-leave-message .ad-button-row a,
+.ad-widget-zhidao_native-company-leave-message .ad-button-row a:hover {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  width: 350px;
+  height: 46px;
+  padding: 0 15px;
+  line-height: 46px;
+  color: white;
+  text-align: center;
+  border: 1px solid #45a500;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #4ab200;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 1px #f2f2f2;
+  -moz-box-shadow: 0 1px 1px #f2f2f2;
+  box-shadow: 0 1px 1px #f2f2f2;
+  background-color: #45a800;
+  background-image: -moz-linear-gradient(top, #4ab200, #3e9a00);
+  background-image: -ms-linear-gradient(top, #4ab200, #3e9a00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4ab200), to(#3e9a00));
+  background-image: -webkit-linear-gradient(top, #4ab200, #3e9a00);
+  background-image: -o-linear-gradient(top, #4ab200, #3e9a00);
+  background-image: linear-gradient(top, #4ab200, #3e9a00);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ab200', endColorstr='#3e9a00', GradientType=0);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

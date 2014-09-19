@@ -1,0 +1,118 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/siva/form_v2.less ~ 2013/11/20 11:54:55
+ * @author taoxutian@baidu.com (taoxutian)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * form_v2样式文件
+ **/
+
+.ad-widget-siva-form-v2 {
+    width: 259px;
+    font-family:arial;
+    .ad-widget-siva-form-v2-controle{
+        margin: 0;
+        margin-bottom: 10px;
+        input{
+            font-family:arial;
+            border-top: 1px solid #999999;
+            border-left: 1px solid #999999;
+            border-bottom: 1px solid #d8d8d8;
+            border-right: 1px solid #d8d8d8;
+            height: 16px;
+            padding: 4px 0;
+            padding-left: 3px;
+            width: 254px;
+            margin: 0;
+            outline: none;
+            color: #666;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            outline-color: #fff;
+        }
+        .ad-widget-siva-form-error{
+            color: #fe0000
+        }
+        .ad-widget-siva-form-placeholder{
+            height: 12px;
+            padding: 6px 0;
+            padding-left: 3px;
+        }
+        input:invalid {
+            box-shadow:none;
+        }
+        
+    }
+    .ad-widget-siva-form-v2-controle-last{
+        input{
+            width: 153px;
+            float: left;   
+        }
+        margin-bottom:0;
+    }
+    .ad-widget-siva-form-v2-submit{
+        background: #378bff;
+        float: right;
+        display: block;
+        height: 26px;
+        width: 91px;
+        text-decoration: none;
+        line-height: 26px;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+        overflow: hidden;
+        
+    }
+    .ad-widget-siva-form-info{
+        float: right;
+        height: 26px;
+        line-height: 26px;
+        width: 91px;
+        font-size: 13px;
+        display: none;
+        img{
+            margin-right: 6px;
+            margin-top: 6px;
+            float: left;
+        }
+    }
+
+}
+.ad-widget-siva-form-success{
+    .ad-widget-siva-form-info{
+        display: block;
+    }
+    .ad-widget-siva-form-v2-submit{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

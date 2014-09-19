@@ -1,0 +1,40 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/skoda3.less ~ 2014/04/15 14:35:32
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * skoda3样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  margin-bottom: 20px;
+}
+#canvas .ec-ipad-link img:first-child {
+  display: none;
+}
+#canvas .ec-ipad-link img:last-child {
+  display: block;
+}
+.container_l #canvas {
+  width: 1012px;
+}
+.container_s #canvas {
+  width: 955px;
+}
+/*横屏*/
+@media all and (orientation: landscape) {
+  #canvas .ec-ipad-link img:first-child {
+    width: 1000px;
+    display: block;
+  }
+  #canvas .ec-ipad-link img:last-child {
+    display: none;
+  }
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

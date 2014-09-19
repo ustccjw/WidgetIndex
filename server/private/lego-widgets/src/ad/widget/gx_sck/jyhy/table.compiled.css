@@ -1,0 +1,311 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/gx_sck/jyhy/table.less ~ 2014/04/02 17:00:34
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * table样式文件
+ **/
+.ad-widget-gx_sck-jyhy-table {
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-gx_sck-jyhy-table h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+.ad-widget-gx_sck-jyhy-table h2 a {
+  color: #0000cb;
+}
+.ad-widget-gx_sck-jyhy-table h2 a em {
+  color: #c00;
+  text-decoration: underline;
+  font-style: normal;
+}
+.ec-table-head table .ec-teacher {
+  width: 75px;
+}
+.ec-table-head table .ec-teacher div {
+  width: 60px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-head table .ec-teacher div a {
+  color: #0002c9;
+  text-decoration: none;
+}
+.ec-table-head table .ec-course {
+  width: 94px;
+}
+.ec-table-head table .ec-course div {
+  width: 79px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-head table .ec-intro {
+  width: 188px;
+}
+.ec-table-head table .ec-intro div {
+  width: 173px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ec-table-head table .ec-campus {
+  width: 90px;
+}
+.ec-table-head table .ec-campus div {
+  width: 75px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-head table .ec-consult {
+  width: 73px;
+}
+.ec-table-body table .ec-teacher {
+  width: 75px;
+}
+.ec-table-body table .ec-teacher div {
+  width: 60px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-body table .ec-teacher div a {
+  color: #0002c9;
+  text-decoration: none;
+}
+.ec-table-body table .ec-course {
+  width: 94px;
+}
+.ec-table-body table .ec-course div {
+  width: 79px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-body table .ec-intro {
+  width: 188px;
+}
+.ec-table-body table .ec-intro div {
+  width: 173px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ec-table-body table .ec-campus {
+  width: 90px;
+}
+.ec-table-body table .ec-campus div {
+  width: 75px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-body table .ec-consult {
+  width: 73px;
+}
+.ec-table-campus .ec-table-head table .ec-teacher {
+  width: 78px;
+}
+.ec-table-campus .ec-table-head table .ec-teacher div {
+  width: 63px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-campus .ec-table-head table .ec-teacher div a {
+  color: #0002c9;
+  text-decoration: none;
+}
+.ec-table-campus .ec-table-head table .ec-course {
+  width: 172px;
+}
+.ec-table-campus .ec-table-head table .ec-course div {
+  width: 157px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-campus .ec-table-head table .ec-intro {
+  width: 202px;
+}
+.ec-table-campus .ec-table-head table .ec-intro div {
+  width: 187px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ec-table-campus .ec-table-head table .ec-campus {
+  width: 0;
+}
+.ec-table-campus .ec-table-head table .ec-campus div {
+  width: -15;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-campus .ec-table-head table .ec-consult {
+  width: 73px;
+}
+.ec-table-campus .ec-table-body table .ec-teacher {
+  width: 78px;
+}
+.ec-table-campus .ec-table-body table .ec-teacher div {
+  width: 63px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-campus .ec-table-body table .ec-teacher div a {
+  color: #0002c9;
+  text-decoration: none;
+}
+.ec-table-campus .ec-table-body table .ec-course {
+  width: 172px;
+}
+.ec-table-campus .ec-table-body table .ec-course div {
+  width: 157px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-campus .ec-table-body table .ec-intro {
+  width: 202px;
+}
+.ec-table-campus .ec-table-body table .ec-intro div {
+  width: 187px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.ec-table-campus .ec-table-body table .ec-campus {
+  width: 0;
+}
+.ec-table-campus .ec-table-body table .ec-campus div {
+  width: -15;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ec-table-campus .ec-table-body table .ec-consult {
+  width: 73px;
+}
+.ec-table {
+  margin-top: 0;
+  border-left: solid 1px #f3f3f3;
+  border-right: solid 1px #f3f3f3;
+  width: 538px;
+}
+.ec-table-head {
+  width: 538px;
+  height: 28px;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+.ec-table-head table {
+  width: 100%;
+}
+.ec-table-head table td {
+  font: 12px/1.5 arial, sans-serif;
+  color: #666666;
+  height: 28px;
+  padding: 0;
+}
+.ec-table-body {
+  position: relative;
+  overflow: hidden;
+  border-bottom: solid 1px #f3f3f3;
+  width: 538px;
+}
+.ec-table-body table {
+  width: 100%;
+}
+.ec-table-body table td {
+  font: 12px/1.5 arial, sans-serif;
+  color: #333333;
+  border-top: solid 1px #f3f3f3;
+  height: 32px;
+  padding: 0;
+}
+.ec-table-body table td.ec-consult a {
+  display: block;
+  border: solid 1px #d8d8d8;
+  width: 45px;
+  height: 18px;
+  background-color: #f9f9f9;
+  color: #666;
+  text-decoration: none;
+  text-align: center;
+}
+.ec-map-icon {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 16px;
+  background: url("//bs.baidu.com/adtest/6486826774ba539c816e99febfa2edd8.png") 0 -1px no-repeat;
+}
+.ec-table-campus .ec-table-body .ec-intro div {
+  position: relative;
+}
+.ec-table-campus .ec-table-body .ec-intro span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 130px;
+}
+/* 尾部 */
+.ec-bottom {
+  margin-top: 6px;
+  /* PS分享菜单 */
+
+}
+.ec-bottom span {
+  font: 12px arial;
+  color: #008000;
+}
+.ec-bottom .c-tools {
+  display: inline;
+}
+.ec-bottom .c-tools .c-tip-icon i {
+  display: inline-block;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+  background: url(//bs.baidu.com/adtest/9536bfa0556d2d3b610d821e7d558913.png) -384px -336px no-repeat;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

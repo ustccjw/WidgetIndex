@@ -1,0 +1,348 @@
+/**
+ * @author chenjiawei01@baidu.com
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    margin-bottom: 20px;
+    font: 12px/1.5 arial,sans-serif;
+    width: 536px;
+    border: 1px solid #e3e3e3;
+    border-bottom-color: #e0e0e0;
+    border-right-color: #ececec;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+    -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+    -o-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+
+    .ad-block-0-0 {
+        padding: 10px 8px 0 8px;
+        .ad-widget-title {
+            a {
+                color: #00c;
+            }
+        }
+    }
+    .ad-block-0-1 {
+        .gain-bfc();
+        padding: 10px 8px 0 8px;
+    }
+
+    .ad-block-0-2 {
+        padding: 15px 8px 15px 8px;
+    } 
+
+    .ad-block-0-1-0,
+    .ad-block-0-1-1,
+    .ad-block-0-1-2 {
+        float: left;
+    }
+
+    .ad-block-0-1-0 {
+        margin-right: 10px;
+        .ad-widget-video {
+            width: 254px;
+            height: 144px;
+            object, embed {
+                display: block;
+            }
+        }
+    }
+    .ad-block-0-1-1 {
+        .ad-widget-small-head {
+            width: 253px;
+            .ec-description {
+                color: #333;
+                text-indent: 2em;
+               // word-break : normal;
+                a {
+                    color: #00c;
+                }
+            }
+            .ec-site {
+                text-indent: 0;
+                a {
+                    color: #666;
+                }
+            }
+        }
+    }
+    .ad-block-0-1-2 {
+        .ad-widget-multi-video-thunbnail {
+            width: 253px;
+            height: 43px;
+            position: relative;
+            margin-top: 10px;
+            top: 0;
+            left: -10px;
+            .ec-thunbnail-bg {
+                display: none;
+            }
+            .ec-thunbnail-cont {
+                width: 265px;
+                height: 43px;
+            }
+            .ec-item {
+                margin: 0 0 0 10px;
+                width: 78px;
+                height: 43px;
+                display: inline;
+            }
+            .ec-title {
+                height: 20px;
+                line-height: 20px;
+                margin-left: 0;
+                margin-top: 3px;
+                text-align: center;
+            }
+            .ec-item-bg {
+                height: 43px;
+                .opacity(65);
+            }
+            .ec-play-btn {
+                margin-left: 18px;
+                height: 20px;
+                line-height: 20px;
+                top: 12px;
+                background: #2C99FF;
+            }
+        }
+    }
+
+    .ad-block-0-2-0 {
+        .ad-widget-tab-container {
+            .ec-tab-head {
+                margin: 0px;
+                background: #6f6f6f;
+                padding: 0px;
+                height: 28px;
+                overflow: hidden;
+                width: 520px;
+                li {
+                    margin: 0px;
+                    height: 28px;
+                    border-left: solid 1px #6f6f6f;
+                    border-right: solid 1px #6f6f6f;
+                    _border-color:tomato;
+                    _filter:chroma(color=tomato);
+                    a {
+                        background: none;
+                        color: #fff;
+                        height: 10px;
+                        line-height: 10px;
+                        *line-height: 14px;
+                        border: none;
+                        border-right: 1px solid #d4d4d4;
+                        margin-top: 9px;
+                        padding: 0px;
+                    }
+                }
+                .ec-current-tab{
+                    border-left: solid 1px #d4d4d4;
+                    border-right: solid 1px #d4d4d4;
+                    a {
+                        color: #6f6f6f;
+                        height: 28px;
+                        line-height: 28px;
+                        background: #d4d4d4;
+                        margin-top: 0;
+                        border: none;
+                    }
+                }
+                .ec-previous-tab,
+                .ec-tab-list-last {
+                    a {
+                        border-right:none; 
+                    }
+                }
+            }
+            .ec-tab-body {
+                .gain-bfc();
+                height: 140px;
+                .ec-tab-content-form .ad-widget-lv-list .ec-inner .ec-detail{
+                    width: 240px;
+                }
+            }
+        }
+
+        /** 表单的tab */
+        .ec-tab-content-form {
+            .ec-normal-con-0 {
+                position: relative;
+                width: 100%;
+                height: 140px;
+            }
+
+            .ec-normal-con-0-0 {
+                position: absolute;
+                height: 140px;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .ec-normal-con-0-1 {
+                position: absolute;
+                left: 12px;
+                top: 36px;
+            }
+
+            .ad-widget-lv-list .ec-inner {
+                padding: 10px 0 22px 10px;
+                background: #d4d4d4;
+                color: #333;
+                height: 108px;
+                .ec-select {
+                    width: 249px;
+                }
+                .ec-select a {
+                    color: #333;
+                }
+                .ec-detail {
+                    height: 105px;
+                    position: relative;
+                    margin-left: 0;
+                    border-left: 1px solid #b5b5b5;
+                    padding: 0 10px;
+                    overflow: hidden;
+                }
+                .ec-show-detail {
+                    background: url(//bs.baidu.com/adtest/37003fd2ba4253883083e46db6ad0ef8.png) repeat-x;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 91px;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0;
+                    color: #fff;
+                }
+            }
+
+            .ad-widget-dependency-select {
+                .ec-item {
+                    float: none;
+                    margin-bottom: 10px;
+                    .ec-title {
+                        color: #333;
+                    }
+                    select {
+                        width: 190px;
+                        line-height: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        .ad-widget-image-cartoon {
+            width: 520px;
+            .ec-item-wrapper {
+                width: 520px;
+                height: auto;
+                .ec-item {
+                   height: auto;
+                }
+            }
+        }
+
+        /* weibo的tab */
+        .ec-tab-content-weibo {
+            background: #d4d4d4;
+            padding-top: 10px;
+            padding-bottom: 22px;
+            height: 108px;
+            color: #333;
+            a {
+                color: #333;
+                text-decoration: none;
+            }
+            .ec-normal-con-0 {
+                position: relative;
+                width: 100%;
+                height: 108px;
+                .ec-normal-con-0-0 {
+                    position: absolute;
+                    width: 239px;
+                    height: 108px;
+                    padding: 0 10px;
+                    overflow: hidden;
+                    border-right: 1px solid #b5b5b5;
+                    .ad-widget-sina-weibo {
+                        padding-top: 0;
+                        .ec-follow {
+                            float: right;
+                            width: 67px;
+                            height: 22px;
+                        }
+                        /*
+                        .ec-name {
+                            margin: 0;
+                        }
+                        */
+                        .ec-text {
+                            color: #333;
+                            height: 20px;
+                            line-height: 20px;
+                            /*.ec-show-detail
+                            padding: 0;
+                            span::before {
+                                content: '：';
+                            } 
+                            */
+                        }
+                        .ec-context {
+                            padding-top: 10px;
+                            .ec-weibo-text {
+                                text-indent: 2em;
+                                word-break : normal;
+                            }
+                            .ec-datetime {
+                                color: #6f6f6f;
+                            }
+                            .ec-rightbtn {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .ec-normal-con-0-1 {
+                    position: absolute;
+                    left: 260px;
+                    padding: 0 10px;
+                    .ad-widget-small-head {
+                        width: 240px;
+                        .ec-logo {
+                            float: left;
+                            height: auto;
+                            padding-right: 10px;
+                            margin-top: 0;
+                        }
+                        .ec-description {
+                            line-height: 21px;
+                            text-indent: 0;
+                            word-break : normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ec-tag-heuer-flash-fwc {
+    .ec-float-bg-ifr {
+        z-index: -1;
+    }
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}

@@ -1,0 +1,452 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: qq_weibo.js 9823 2012-06-19 02:51:16Z fanxueliang $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/qq_weibo.js ~ 2012/06/07 22:07:55
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 9823 $
+ * @description
+ * 头部小微博效果
+ **/
+
+goog.require('ad.env');
+goog.require('ad.widget.Widget');
+goog.require('ad.widget.Widget');
+goog.require('ui.events');
+
+goog.include('ad/widget/qq_weibo.html');
+goog.include('ad/widget/qq_weibo.less');
+
+goog.provide('ad.widget.QQWeibo');
+
+/**
+ * @constructor
+ * @param {Object=} data 数据集合.
+ * @extends {ad.widget.Widget}
+ */
+ad.widget.QQWeibo = function(data) {
+    ad.widget.Widget.call(this, data);
+    this._view = 'AD_ad_widget_qq_weibo';
+    this._serverUrl = 'http://wbapi.baidu.com/service/oauth/proxy?';
+    this._serverLoginUrl = 'http://wbapi.baidu.com/service/oauth/query?';
+    this.loginUrl = '';
+    this.user_timeline = '/statuses/user_timeline.json';
+    this.friendships_create = '/qqweibo/friends/add';
+    this.favorites_create = '/qqweibo/fav/addt';
+    window['qqwbWB'] = this;
+    /**
+     * @type {Object}
+     */
+    this.weibo_result;
+    
+    /** 自定义微博内容title2前缀
+     * @type {string}
+     */
+    this.custom_context_title2_prx = 'qq-weibo-link';
+};
+baidu.inherits(ad.widget.QQWeibo, ad.widget.Widget);
+
+
+/**
+ * @override
+ */
+ad.widget.QQWeibo.prototype.enterDocument = function() {
+    ad.widget.QQWeibo.superClass.enterDocument.call(this);
+    var me = this;
+    var url = me._serverUrl + 'source=qqwb&id=' + me._data['id'] + '&_uri=' + me.user_timeline;
+    baidu.sio.callByServer(url, function(sResult, bStatus) {
+        if (sResult["ret"] == 0 && sResult["errcode"] == 0) {
+            me.weibo_result = sResult["data"];
+            if (me._data['is_display_fans']) {
+                baidu.g(me.getId('fans')).innerHTML = me.weibo_result['fansnum'];
+            }
+            if (me._data['is_display_weibo']) {
+                baidu.g(me.getId('weibo')).innerHTML = me.weibo_result['tweetnum'];
+            }
+            baidu.g(me.getId('name')).innerHTML = me._data['name'] || me.weibo_result['nick'];
+            baidu.g(me.getId('context')).innerHTML = me._data['context'] ? me._data['context'] : me._weiboContentFormat();
+            var weiboCreateTime = me._parseStrToDate(1000 * me.weibo_result['tweetinfo'][0]['timestamp']);
+            if (me._data['is_display_foot']) {
+                baidu.g(me.getId('datetime')).innerHTML = weiboCreateTime.date + '&nbsp;' + weiboCreateTime.time;
+            }
+            if(me.weibo_result['tweetinfo'] && me.weibo_result['tweetinfo'][0] && me.weibo_result['tweetinfo'][0]['id']){
+                baidu.dom.setAttr(baidu.g(me.getId('crit')), "href" ,"http://t.qq.com/p/t/" + me.weibo_result['tweetinfo'][0]['id']);
+            }
+            me.trigger(ui.events.TIME_LINE_LOADED, sResult['data']);
+            //微博内容文字链加title2
+            var panel_context = baidu.g(me.getId('context'));
+            var links = panel_context.getElementsByTagName('A');
+            if (links.length) {
+                for (var i = 0, l = links.length; i < l; i++) {
+                    var key = links[i];
+                    key.setAttribute('title2', me.custom_context_title2_prx + (i + 1));
+                }
+            }
+        }
+    });
+    var login_server_url = me._serverLoginUrl + 'source=qqwb&version=simple&xd=' + me._data['xdpath'];
+    baidu.sio.callByServer(login_server_url, function(sResult) {
+        if(sResult['success'] == "1"){
+            me['loginStatus'] = true;
+        }else{
+            me['loginStatus'] = false;
+            me.loginUrl = sResult['login_url'];
+        }
+    });
+};
+/**
+ * @private
+ */
+ad.widget.QQWeibo.prototype.patchData = function() {
+    if (this._data) {
+        this._data['account_url'] = 'http://t.qq.com/' + this._data['id'];
+        this._data['is_ipad'] = ad.env.isIpad;
+        this._data['is_display_icon'] = false;
+        this._data['is_display_fans'] = typeof this._data['is_display_fans'] === 'undefined' ? true : this._data['is_display_fans'];
+        this._data['is_display_weibo'] = typeof this._data['is_display_weibo'] === 'undefined' ? true : this._data['is_display_weibo'];
+        this._data['is_display_foot'] = typeof this._data['is_display_foot'] === 'undefined' ? true : this._data['is_display_foot'];
+        this._data['weibo_context_length'] = this._data['weibo_context_length'] ? this._data['weibo_context_length'] : 160;
+        this._data['xdpath'] = this._data['xdpath'] ? this._data['xdpath'] : 'http://' + document.location.host + '/stat/xd_all.html';
+    }
+};
+
+/**
+ * @private
+ * @param {string|number} str 原始日期时间字符串.
+ * @return {{date:string,time:string}}
+ */
+ad.widget.QQWeibo.prototype._parseStrToDate = function(str) {
+    var month = ['1月', '2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+    var full_date = new Date(str);
+    var date = month[full_date.getMonth()] + full_date.getDate() + "日";
+    var time = full_date.getHours() + ":" + full_date.getMinutes();
+    var obj = {'date': date, 'time': time};
+    return obj;
+};
+/**
+ * @private
+ * @param {string} str 原始微博内容字符串.
+ * @param {number} len 截取长度.
+ * @return {string} 截取后的微博内容.
+ */
+ad.widget.QQWeibo.prototype._stringLengthFormat = function(str,len) {
+    str = str.replace(new RegExp('>','g'),'&gt;').replace(new RegExp('<','g'),'&lt;');
+    var regexp = /((http|ftp|https|file):([^'"\s\u4E00-\u9FA5])+)/ig;
+    var text;
+    if (str.replace(/[^\x00-\xff]|[@，。；：“”？【】！、]/g, 'ci').length <= (len - 1)) {
+        text = str.replace(regexp, '<a class="weibo_link" target="_blank" href="$1">$1</a>');
+        return text;
+    }
+    var testString = str.replace(/[^\x00-\xff]|[@，。；：“”？【】！、]/g, 'ci');
+    var linkArr = [];
+    var linkArrLen = 0;
+
+    var i = parseInt((len - 1) / 2, 10);
+    var cutString;
+    while (str.substring(0, i).replace(/[^\x00-\xff]|[@，。；：“”？【】！、]/g, 'ci').length <= (len - 1)) {
+        cutString = str.substring(0, i);
+        i = i + 1;
+    }
+    if (str.match(regexp) != null) {
+        var result,
+            newReg = new RegExp(regexp);/*songao: the lastIndex of match is remembered in IE*/
+        while ((result = newReg.exec(str)) != null) {
+            var length = result[0].length;
+            var start = result.index;
+            var end = start + length;
+            if (start >= (cutString.length - 1)) {
+                break;
+            }else if (end >= (cutString.length - 1)) {
+                linkArr.unshift({'lastIndex' : start, 'lastlink' : result[0]});
+                linkArrLen = linkArr.length;/*songao: return of unshift is not right in IE*/
+            }else {
+                linkArr[0] = {
+                    'lastIndex' : start,
+                    'lastlink' : result[0]
+                };
+            }
+        }
+    }
+    if (linkArrLen == 1) {
+        var linkLen = cutString.length - linkArr[0]['lastIndex'];
+        var cutLen = linkArr[0]['lastlink'].length - linkLen;
+        var cutLinkText = '';
+        cutLinkText = str.substring(0, cutString.length - linkLen - cutLen - 4);
+        text = cutLinkText + '... ' + linkArr[0]['lastlink'] + /*add a whitespace here, to avoid link ends with '...' -> */' ...';
+        text = text.replace(regexp, '<a class="weibo_link" target="_blank" href="$1">$1</a>');
+        return text;
+    }else if (linkArrLen == 2) {
+        if (linkArr[0]['lastIndex'] - linkArr[1]['lastIndex'] - linkArr[1]['lastlink'].length <= linkArr[0]['lastlink'].length) {
+            text = str.substring(0, linkArr[0]['lastIndex']) + /*add a whitespace here, to avoid link ends with '...' -> */' ...';
+            text = text.replace(regexp, '<a class="weibo_link" target="_blank" href="$1">$1</a>');
+            return text;
+        }else {
+            var linkLen = cutString.length - linkArr[0]['lastIndex'];
+            var cutLen = linkArr[0]['lastlink'].length - linkLen;
+            var j = parseInt(linkArr[1]['lastIndex'] / 2, 10);
+            var cutLinkText = '';
+            cutLinkText = str.substring(0, cutString.length - linkLen - cutLen - 2);
+            text = cutLinkText + '... ' + linkArr[0]['lastlink'] + /*add a whitespace here, to avoid link ends with '...' -> */' ...';
+            text = text.replace(regexp, '<a class="weibo_link" target="_blank" href="$1">$1</a>');
+            return text;
+        }
+    }else {
+        text = cutString.substring(0, cutString.length - 4) + '...';
+        return text;
+    }
+};
+/**
+ * @private
+ * @param {string} str 原始转发微博内容字符串.
+ * @param {number} len 截取长度.
+ * @return {string} 截取后的转发微博内容.
+ */
+ad.widget.QQWeibo.prototype._stringTransmitionFormat = function(str,len) {
+    var regexp = /((http|ftp|https|file):([^'"\s\u4E00-\u9FA5])+)/ig;
+    var text;
+    if (str.replace(/[^\x00-\xff]|[@，。；：“”？【】！、]/g, 'ci').length <= (len)) {
+        return str;
+    }
+    var testString = str.replace(/[^\x00-\xff]|[@，。；：“”？【】！、]/g, 'ci');
+    //var lastIndex = 0;
+    //var lastlink = "";
+    var linkArr = [];
+    var linkArrLen = 0;
+
+    var i = parseInt((len - 1) / 2, 10);
+    var cutString;
+    while (str.substring(0, i).replace(/[^\x00-\xff]|[@，。；：“”？【】！、]/g, 'ci').length <= (len)) {
+        cutString = str.substring(0, i);
+        i = i + 1;
+    }
+    if (str.match(regexp) != null) {
+        var result,
+            newReg = new RegExp(regexp);/*songao: the lastIndex of match is remembered in IE*/
+        while ((result = newReg.exec(str)) != null) {
+            var length = result[0].length;
+            var start = result.index;
+            var end = start + length;
+            if (start >= (cutString.length - 1)) {
+                break;
+            }else if (end >= (cutString.length - 1)) {
+                linkArr.unshift({'lastIndex' : start, 'lastlink' : result[0]});
+                linkArrLen = linkArr.length;/*songao: return of unshift is not right in IE*/
+            }else {
+                linkArr[0] = {
+                    'lastIndex' : start,
+                    'lastlink' : result[0]
+                };
+            }
+        }
+    }
+    if (linkArrLen == 1) {
+        var linkLen = cutString.length - linkArr[0]['lastIndex'];
+        var cutLen = linkArr[0]['lastlink'].length - linkLen;
+        var cutLinkText = '';
+        cutLinkText = str.substring(0, cutString.length - linkLen - cutLen - 4);
+        text = cutLinkText + '... ' + linkArr[0]['lastlink'];
+        return text;
+    }else if (linkArrLen == 2) {
+        if (linkArr[0]['lastIndex'] - linkArr[1]['lastIndex'] - linkArr[1]['lastlink'].length <= linkArr[0]['lastlink'].length) {
+            text = str.substring(0, linkArr[0]['lastIndex']) + '...';
+            return text;
+        }else {
+            var linkLen = cutString.length - linkArr[0]['lastIndex'];
+            var cutLen = linkArr[0]['lastlink'].length - linkLen;
+            var j = parseInt(linkArr[1]['lastIndex'] / 2, 10);
+            var cutLinkText = '';
+            cutLinkText = str.substring(0, cutString.length - linkLen - cutLen - 2);
+            text = cutLinkText + '... ' + linkArr[0]['lastlink'];
+            return text;
+        }
+    }else {
+        text = cutString.substring(0, cutString.length - 4) + '...';
+        return text;
+    }
+};
+/**
+ * @private
+ * @return {string} 截取后的微博内容.
+ */
+ad.widget.QQWeibo.prototype._weiboContentFormat = function() {
+    var text = "";
+    if (this.weibo_result['tweetinfo'][0] && this.weibo_result['tweetinfo'][0]['text']) {
+        text = this._stringLengthFormat(this.weibo_result['tweetinfo'][0]['origtext'], this._data['weibo_context_length']);
+    }
+    return text;
+};
+/**
+ * @private
+ *
+ */
+ad.widget.QQWeibo.prototype._weiboAddAttention = function() {
+    var me = this;
+    var url = me._serverUrl + 'user_id=' + me._data['id'] + '&version=simple&source=qqwb' + '&_uri=' + me.friendships_create;
+    baidu.sio.callByServer(url, function(sResult) {
+        if (sResult['ret'] == 0) {
+            alert('关注成功');
+        }else {
+            alert('关注失败，原因：[' + sResult['msg'] + ']');
+        }
+    });
+};
+/**
+ * @private
+ *
+ */
+ad.widget.QQWeibo.prototype._weiboStore = function() {
+    var me = this;
+    var url = me._serverUrl + 'id=' + me.weibo_result['tweetinfo'][0]['id'] + '&version=simple&source=qqwb' + '&_uri=' + me.favorites_create;
+    baidu.sio.callByServer(url, function(sResult) {
+        if (sResult['ret'] == 0) {
+            alert('收藏成功');
+        }else {
+            alert('收藏失败，原因：[' + sResult['msg'] + ']');
+        }
+    });
+};
+
+/**
+ * 登陆状态
+ */
+ad.widget.QQWeibo.prototype['loginStatus'] = false;
+/**
+ * 微博服务队列
+ */
+ad.widget.QQWeibo.prototype.wait_fun_list = [];
+/**
+ * 检查登陆状态
+ * @return {boolean} 登陆状态
+ */
+ad.widget.QQWeibo.prototype.checkLogin = function() {
+    var me = this;
+    return me['loginStatus'] === true;
+};
+/**
+ * 登陆
+ * @param {Function=} opt_callback 登陆成功后处理函数
+ */
+ad.widget.QQWeibo.prototype.login = function(opt_callback) {
+    var me = this;
+    me['waitReady'](opt_callback, true);
+    if (!me.checkLogin()) {
+        var url = me.loginUrl + '&callback=' + me._data['xdpath'] + '&source=sina';
+        var oauth_login_window = window.open(url, "oauth_login_window", "width=800,height=600,toolbar=no,menubar=no,status=no");
+        oauth_login_window.focus();
+        return
+    }
+};
+/**
+ * 登陆前后的准备工作
+ * @param {Function=} opt_callback 登陆成功后处理函数
+ * @param {boolean=} opt_status 添加到队列的方式
+ */
+ad.widget.QQWeibo.prototype['waitReady'] = function(opt_callback, opt_status) {
+    var me = this;
+    if (opt_callback != null) {
+        if (opt_status == true) {
+            me.wait_fun_list.unshift(opt_callback);
+        } else {
+            me.wait_fun_list.push(opt_callback);
+        }
+    }
+    if (me.checkLogin()) {
+        for (var i = 0, len = me.wait_fun_list.length; i < len; i++) {
+            me.wait_fun_list[i].call()
+        }
+        me.wait_fun_list = []
+    }
+};
+
+/**
+ * @private
+ *
+ */
+ad.widget.QQWeibo.prototype.bindEvent = function() {
+    var me = this;
+    baidu.on(baidu.g(me.getId('follow')), 'click', function(e) {
+        var ev = e || window.event;
+        me.sendLog('qq微博收听', 'weibofollow');
+        me.trigger(ui.events.WEIBO_FOLLOW);
+        if (ad.env.isIpad) {
+            return;
+        }
+        if (me.checkLogin()) {
+            me._weiboAddAttention();
+        }else {
+            me.login(function() {
+                //alert("登录成功");
+                me._weiboAddAttention();
+            });
+        }
+        baidu.event.stop(ev);
+    });
+    function getParamsOfShareWindow(width, height) {
+        return ['toolbar=0,status=0,resizable=1,width=' + width + ',height=' + height + ',left=', (screen.width - width) / 2, ',top=', (screen.height - height) / 2].join('');
+    }
+    if (me._data['is_display_foot']) {
+        baidu.on(baidu.g(me.getId('transformation')), 'click', function(e) {
+            var ev = e || window.event;
+            me.sendLog('qq微博转播', 'transformation');
+            me.trigger(ui.events.WEIBO_TRANSFORMATION);
+            if (ad.env.isIpad) {
+                return;
+            }
+            var context = '//@' + me.weibo_result['name'] + ':' + (me._data['context'] ? me._data['context'] : me.weibo_result['tweetinfo'][0]['text']);
+            var pic = '';
+            if (me.weibo_result['tweetinfo'][0]['image'] && me.weibo_result['tweetinfo'][0]['image'][0]) {
+                pic = encodeURIComponent(me.weibo_result['tweetinfo'][0]['image'][0]);
+            }
+            context = me._stringTransmitionFormat(context, 260);
+            var title = encodeURIComponent(context);
+            var url = 'http://share.v.t.qq.com/index.php?c=share&a=index&url='+ encodeURIComponent(document.location.href) +'&title=' + title + '&pic=' + pic;
+            var params = getParamsOfShareWindow(607, 523);
+            baidu.event.stop(ev);
+            window.open(url, 'share', params);
+        });
+        baidu.on(baidu.g(me.getId('store')), 'click', function(e) {
+            var ev = e || window.event;
+            me.sendLog('qq微博收藏', 'store');
+            me.trigger(ui.events.WEIBO_STORE);
+            if (ad.env.isIpad) {
+                return;
+            }
+            if (me.checkLogin()) {
+                me._weiboStore();
+            }else {
+                me.login(function() {
+                    //alert("登录成功");
+                    me._weiboStore();
+                });
+            }
+            baidu.event.stop(ev);
+        });
+        baidu.on(baidu.g(me.getId('crit')), 'click', function() {
+            me.trigger(ui.events.WEIBO_CRIT);
+        });
+        baidu.on(baidu.g(me.getId('name')), 'click', function() {
+            me.trigger(ui.events.WEIBO_NAME);
+        });
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

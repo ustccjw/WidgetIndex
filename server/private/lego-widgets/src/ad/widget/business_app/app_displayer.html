@@ -1,0 +1,37 @@
+<!-- target:AD_ad_widget_business_app_app_displayer -->
+<div class="ad-widget-business_app ad-widget-business_app-app-displayer">
+    {{#logo}}
+    <img src="{{logo}}" class="ec-app-displayer-logo">
+    {{/logo}}
+    <div class="ec-app-displayer-intro">
+        {{intro}}
+        <ul>
+            {{#bar}}
+            <li>
+                {{#rcv_url}}
+                <a target="_blank" href="{{{rcv_url}}}" title2="物条{{_index}}">{{info}}</a>
+                {{/rcv_url}}
+                {{^rcv_url}}
+                {{info}}
+                {{/rcv_url}}
+            </li>
+            {{/bar}}
+        </ul>
+    </div>
+    <ul class="ec-app-displayer-wrapper">
+        {{#options}}
+        <li class="{{^_big}}ec-app-displayer-small{{/_big}} {{#_float_right}}ec-app-displayer-right{{/_float_right}}">
+            <a title2="展示{{_index}}">
+                <img src="{{img_url}}" >
+                <div class="ec-app-displayer-mask"></div>
+                <div class="ec-app-displayer-info">
+                    {{#infos}}
+                    <p>{{name}}{{{desc_rcv_html}}}</p>
+                    {{/infos}}
+                    <h3 data-index="{{@index}}"></h3>
+                </div>
+            </a>
+        </li>
+        {{/options}}
+    </ul>
+</div>

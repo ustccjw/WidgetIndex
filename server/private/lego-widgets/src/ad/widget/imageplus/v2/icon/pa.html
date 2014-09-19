@@ -1,0 +1,25 @@
+<!-- target:AD_ad_widget_imageplus_v2_icon_pa -->
+<div class="baiduimageplus-i-pa">
+    <div class="baiduimageplus-i-pa-title">
+        {{#trade_id}}
+        <span class="baiduimageplus-i-pa-{{{trade_id}}}">&nbsp;</span>
+        {{/trade_id}}
+        {{{title}}}
+    </div>
+    <div class="baiduimageplus-i-pa-bd">
+        {{#idea_url}}
+        <img src="{{{idea_url}}}"/>
+        {{/idea_url}}
+        <div class="baiduimageplus-i-pa-text">
+            <div class="baiduimageplus-i-pa-desc">{{{desc}}}</div>
+            <div class="baiduimageplus-i-pa-url">
+                {{show_url}}
+                {{#is_v}}
+                <span class="baiduimageplus-i-pa-v">&nbsp;</span>
+                {{/is_v}}
+            </div>
+        </div>
+    </div>
+    <div class="baiduimageplus-i-pa-ft">-推广</div>
+    <a class="baiduimageplus-i-pa-redirect" href="{{{real_url}}}" data-log="2" data-mid="{{mid}}" target="_blank">&nbsp;</a>
+</div>

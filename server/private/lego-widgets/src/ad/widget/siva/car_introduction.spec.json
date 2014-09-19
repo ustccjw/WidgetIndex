@@ -1,0 +1,127 @@
+{
+    "contents": ["ad.widget.siva.Car_introduction"],
+    "userPrefs": [{
+        "name": "desc",
+        "displayName": "描述",
+        "defaultValue": "",
+        "tip": "标题最多36个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 72
+        },
+        "multiline": false
+    }, {
+        "name": "title",
+        "displayName": "标题",
+        "defaultValue": "",
+        "tip": "标题最多10个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 20
+        },
+        "multiline": false
+    }, {
+        "name": "field_name1",
+        "displayName": "字段1",
+        "defaultValue": "",
+        "tip": "标题最多6个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    }, {
+        "name": "field_name2",
+        "displayName": "字段2",
+        "defaultValue": "",
+        "tip": "标题最多6个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    }, {
+        "name": "field_name3",
+        "displayName": "字段3",
+        "defaultValue": "",
+        "tip": "标题最多6个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    }, {
+        "name": "field_name4",
+        "displayName": "字段4",
+        "defaultValue": "",
+        "tip": "标题最多6个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    },{
+        "name": "field_value1",
+        "displayName": "值1",
+        "defaultValue": "",
+        "tip": "标题最多7个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    },{
+        "name": "field_value2",
+        "displayName": "值2",
+        "defaultValue": "",
+        "tip": "标题最多7个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    },{
+        "name": "field_value3",
+        "displayName": "值3",
+        "defaultValue": "",
+        "tip": "标题最多7个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    },{
+        "name": "field_value4",
+        "displayName": "值4",
+        "defaultValue": "",
+        "tip": "标题最多7个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 14
+        },
+        "multiline": false
+    },
+    {
+        "name": "target_rcv_url",
+        "displayName": "查看更多跳转URL",
+        "defaultValue": "http://",
+        "tip": "",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "stringType": "URL",
+            "maxByteLength": 36
+        },
+        "multiline": false
+    }]
+}

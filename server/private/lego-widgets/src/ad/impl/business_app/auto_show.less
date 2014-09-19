@@ -1,0 +1,316 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/business_app/auto_show.less ~ 2013/03/13 14:14:29
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * auto_show样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial,sans-serif;
+    font-size: 13px;
+    color: #333;
+    width: 540px;   /* 原来是554px 改成 540px */
+    margin: 0 auto;
+    padding: 0 0;
+    position: relative;
+    z-index: 1;
+    background-color: #fbfbfb;
+
+    .border-radius(@r) {
+        -webkit-border-radius: @r;
+        -moz-border-radius: @r;
+        -ms-border-radius: @r;
+        -o-border-radius: @r;
+        border-radius: @r;
+    }
+    .float(@d) {
+        float: @d;
+        _display: inline;
+    }
+
+    /* reset iframe style */
+    .ad-widget-iframe{
+        font-size: inherit;
+        height: auto;
+        .gain-bfc();
+        a, div{
+            float: none;
+            display: inline;
+        }
+        div {
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            img{
+                display:block;
+                border: 0px;
+                width: auto;
+                height: auto;
+            }
+        }
+        div{
+            margin-left: 0;
+        }
+    }
+
+    .ad-widget-tab-container {
+        padding: 10px 0;
+        ul.tab-head {
+            margin:0px;
+            padding:0px;
+            background: transparent;
+            height: 26px;
+            li {
+                margin-left: 10px;
+                a {
+                    margin: 1px 0 0 0;
+                    padding: 0;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    font-size: 13px;
+                    background: #FFF;
+                    color: #069;
+                    cursor: pointer;
+                    border: solid 1px #E0E0E0;
+                }
+            }
+
+            .current-tab a {
+                color: #333;
+                background: #FBFBFB;
+                border-bottom-color: #FBFBFB;
+            }
+        }
+        div.tab-body {
+            overflow: hidden;
+            padding:10px 5px;
+            width: 530px;
+            height: 270px;
+            background-color: #FBFBFB;
+            border-top: solid 1px #E0E0E0;
+        }
+    }
+
+    .normal-con-0-0 {
+        margin-bottom: 6px;
+        overflow: hidden;
+        _zoom: 1;
+        .ad-widget-select-label {
+            .float(left);
+            margin-top: 4px;
+        }
+    }
+
+    @eachImageCartoonWidth: 370px;
+    @eachImageCartoonHeight: 240px;
+    .ad-widget-iframe.ad-widget-iframe-image-or-video {
+        .float(left);
+        margin-right: 15px;
+        width: @eachImageCartoonWidth;
+        height: @eachImageCartoonHeight;
+        .ad-widget-image-show-arrow {
+            width: @eachImageCartoonWidth;
+            height: @eachImageCartoonHeight;
+            .img,
+            img {
+                display: block;
+                width: @eachImageCartoonWidth;
+                height: @eachImageCartoonHeight;
+                border: none;
+            }
+            .link-right,
+            .link-left {
+                top: (@eachImageCartoonHeight - 20)/2;
+                width: 20px;
+                height: 40px;
+                background-color: #cbcbcb;
+            }
+            .link-right {
+                background-image:
+                url("//bs.baidu.com/adtest/0248c4b18a19642fd065a7e949fff652.png");
+                background-position: 3px 8px;
+                left: @eachImageCartoonWidth - 20;
+                .border-radius(5px 0 0 5px);
+            }
+            .link-left {
+                background-image: url("//bs.baidu.com/adtest/fa782221c1c80651dec94f27793e400b.png");
+                background-position: 2px 8px;
+                left: 0px;
+                .border-radius(0 5px 5px 0);
+            }
+            .pic-des {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 120px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                font-size: 13px;
+                color: #CACACA;
+                filter: alpha(opacity=50);
+                opacity: 0.5;
+                background: #000;
+            }
+        }
+    }
+
+    .ad-widget-description {
+        .float(left);
+    }
+
+    .ad-widget-intro {
+        height: 270px;
+        overflow: auto;
+        overflow-x: hidden;
+        img {
+            .float(left);
+            margin: 0;
+            padding: 0;
+        }
+        .intro-desc {
+            text-indent: 2em;
+            font-size: 13px;
+            line-height: 1.6;
+            p {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .ad-widget-iframe {
+        height: auto;
+    }
+
+    .ad-widget-detail {
+        position: absolute;
+        top: 37px;
+        left: 1px;
+        display: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        overflow-x: hidden;
+        width: 536px;
+        height: 290px;
+        color: #666;
+        background: #FBFBFB;
+
+        li {
+            .float(left);
+            margin: -1px 0 0 0;
+            padding: 0;
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            overflow: hidden;
+            list-style: none;
+            border-top: 1px solid #EFEFEF;
+            border-bottom: 1px solid #EFEFEF;
+            background: #FBFBFB;
+
+            b {
+                .float(left);
+                margin-left: 20px;
+                width: 90px;
+                font-weight: normal;
+            }
+            span {
+                .float(left);
+                width: 146px;
+            }
+        }
+        .detail-first {
+            margin-top: 0;
+            border-top: none;
+        }
+        .detail-highlight {
+            background: #FFF;
+        }
+    }
+    .showIframe .ad-widget-detail {
+        display: block;
+    }
+    &.ad-widget-show-banner .showIframe .ad-widget-detail {
+        top: 84px;
+    }
+
+
+    .ad-widget-banner {
+        float: none;
+        display: block;
+        margin: 0 10px;
+        padding: 10px 0;
+        width: 538px;
+        height: 26px;
+        line-height: 26px;
+        color: #999;
+        font-size: 13px;
+        .gain-bfc();
+        border-bottom: 1px solid #E0E0E0;
+        img {
+            .float(left);
+            margin-left: 10px;
+        }
+        span, a {
+            margin: 0 0 0 10px;
+            padding-right: 10px;
+        }
+        span {
+            border-right: 1px solid #CCC;
+        }
+        .banner-name {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            b {
+                font-weight: normal;
+                color: #CC0000;
+            }
+        }
+        a {
+            float: none;
+            font-size: 13px;
+            color: #0000CC;
+        }
+    }
+
+    .ad-widget-dependency-select .item select {
+        width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

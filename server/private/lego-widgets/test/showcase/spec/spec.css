@@ -1,0 +1,248 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id$ 
+ * 
+ **************************************************************************/
+/**
+ * spec.less ~ 2013/12/05 22:37:11
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision$ 
+ * @description 
+ *  
+ **/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+body > .est-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+}
+body > .est-body {
+  margin-top: 80px;
+}
+body > .est-body:before,
+body > .est-body:after {
+  display: table;
+  content: "";
+}
+body > .est-body:after {
+  clear: both;
+}
+header {
+  background-color: rgba(51, 51, 51, 0.8);
+  box-shadow: 0 0 5px #333333;
+  padding: 20px 10px;
+  color: #fff;
+}
+input[type=search] {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 200px;
+}
+.preview {
+  float: left;
+  padding-left: 10px;
+  width: 880px;
+}
+.widgets {
+  float: left;
+  width: 300px;
+}
+.widgets ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 10px;
+}
+.widgets li {
+  display: block;
+  padding: 4px;
+  border-left: 5px solid #c3d9ff;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+.widgets li:hover {
+  border-left-color: green;
+  background: #c3d9ff;
+}
+.widgets li span {
+  font-size: 12px;
+  padding-left: 5px;
+}
+.widgets li.selected {
+  border-left-color: green;
+  background: #c3d9ff;
+}
+.specs {
+  overflow: hidden;
+}
+.specs:before,
+.specs:after {
+  display: table;
+  content: "";
+}
+.specs:after {
+  clear: both;
+}
+.specs ul {
+  list-style: none;
+  float: left;
+  margin-left: -10px;
+}
+.specs ul li {
+  float: left;
+  margin-left: 10px;
+}
+.specs li {
+  line-height: 120%;
+}
+.canvas-container {
+  display: none !important;
+}
+#spec-editor {
+  width: 450px;
+  display: inline-block;
+}
+#spec-preview {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 11px;
+}
+#spec-preview textarea {
+  width: 385px;
+  height: 500px;
+  font-family: monospace;
+}
+a strong {
+  background: yellow;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

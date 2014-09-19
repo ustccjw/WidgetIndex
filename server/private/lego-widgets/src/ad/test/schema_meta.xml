@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+    <ModulePrefs title="SCHEMA META" width="517" height="124" description="用于配置schema" screenshot="IGNORE" thumbnail="IGNORE"></ModulePrefs>
+    <!-- 共有属性 -->
+    <UserPref name="name" display_name="字段名(英文字母或下划线)" datatype="string" readonly="true" default_value="">
+        <Rules><![CDATA[
+            {
+                "required" : true
+            }
+        ]]>
+        </Rules>
+    </UserPref>
+    <UserPref name="displayName" display_name="显示名" datatype="string" default_value="">
+        <Rules><![CDATA[
+            {
+                "required" : true
+            }
+        ]]>
+        </Rules>
+    </UserPref>
+
+    <!-- 特有属性 -->
+    <UserPref name="datatype" display_name="数据类型" datatype="alternative" default_value="STRING">
+        <EnumValue value="STRING" display_value="STRING">
+            <UserPref name="defaultValue" display_name="默认值" datatype="string" default_value=""></UserPref>
+            <UserPref name="tip" display_name="提示文字" datatype="string" default_value=""></UserPref>
+            <UserPref name="multiline" display_name="是否多行" datatype="bool"></UserPref>
+            <UserPref name="rules" display_name="验证规则" datatype="list">
+                <UserPref name="type" display_name="验证类型" datatype="alternative" default_value="required">
+                    <EnumValue value="required" display_value="必填"></EnumValue>
+                    <EnumValue value="minByteLength" display_value="不小于N字节">
+                        <UserPref name="value" display_name="N值(正整数)" datatype="string" default_value="" tip="指定允许的最小字节数">
+                            <Rules><![CDATA[
+                                {
+                                    "required" : true,
+                                    "stringType": "INTEGER"
+                                }
+                            ]]>
+                            </Rules>
+                        </UserPref>
+                    </EnumValue>
+                    <EnumValue value="maxByteLength" display_value="不大于N字节">
+                        <UserPref name="value" display_name="N值(正整数)" datatype="string" default_value="" tip="指定允许的最大字节数">
+                            <Rules><![CDATA[
+                                {
+                                    "required" : true,
+                                    "stringType": "INTEGER"
+                                }
+                            ]]>
+                            </Rules>
+                        </UserPref>
+                    </EnumValue>
+                    <EnumValue value="stringType" display_value="字符串数据类型">
+                        <UserPref name="value" display_name="类型" datatype="enum" default_value="URL">
+                            <EnumValue value="URL" display_value="URL" />
+                            <EnumValue value="NUMBER" display_value="数字" />
+                            <EnumValue value="INTEGER" display_value="整数" />
+                            <EnumValue value="FLOAT" display_value="浮点数" />
+                            <EnumValue value="IMAGE" display_value="图片URL" />
+                        </UserPref>
+                    </EnumValue>
+                </UserPref>
+            </UserPref>
+        </EnumValue>
+        <EnumValue value="LIST" display_value="LIST">
+            <UserPref name="tip" display_name="提示文字" datatype="string" default_value=""></UserPref>
+            <UserPref name="rules" display_name="验证规则" datatype="list">
+                <UserPref name="type" display_name="验证类型" datatype="alternative" default_value="minCount">
+                    <EnumValue value="minCount" display_value="不少于N个">
+                        <UserPref name="value" display_name="N值(正整数)" datatype="string" default_value="" tip="指定允许的最小个数">
+                            <Rules><![CDATA[
+                                {
+                                    "required" : true,
+                                    "stringType": "INTEGER"
+                                }
+                            ]]>
+                            </Rules>
+                        </UserPref>
+                    </EnumValue>
+                    <EnumValue value="maxCount" display_value="不多于N个">
+                        <UserPref name="value" display_name="N值(正整数)" datatype="string" default_value="" tip="指定允许的最大个数">
+                            <Rules><![CDATA[
+                                {
+                                    "required" : true,
+                                    "stringType": "INTEGER"
+                                }
+                            ]]>
+                            </Rules>
+                        </UserPref>
+                    </EnumValue>
+                </UserPref>
+            </UserPref>
+        </EnumValue>
+        <EnumValue value="OBJECT" display_value="OBJECT"></EnumValue>
+    </UserPref>
+    <Content type="html"><![CDATA[
+        <!-- ... -->
+    ]]>
+    </Content>
+</Module>
+

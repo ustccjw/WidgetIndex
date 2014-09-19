@@ -1,0 +1,89 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhixin/milestone_bk.less ~ 2014/02/20 10:27:00
+ * @author chenli11@baidu.com (chestnutchen)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * milestone_bk样式文件
+ **/
+.ad-widget-zhixin-milestone-bk {
+  font: 13px/1.5 arial, sans-serif;
+  width: 516px;
+  padding: 0;
+  margin-top: 17px;
+  position: relative;
+}
+.ad-widget-zhixin-milestone-bk .ec-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 476px;
+  height: 85px;
+  margin: 0 5px 0 20px;
+  background: url('//bs.baidu.com/uaq-image-opt/20140303/66355.lankoubg.jpg') repeat-x center 50px #ffffff;
+}
+.ad-widget-zhixin-milestone-bk .ec-item-body {
+  color: #333;
+  position: relative;
+}
+.ad-widget-zhixin-milestone-bk .ec-milestone {
+  position: relative;
+  display: inline-block;
+  _display: inline;
+  float: left;
+  width: 95px;
+  height: 85px;
+  text-align: center;
+  background: url('//bs.baidu.com/adtest/5498ccf4b8b586790ff74087ee79636e.png') no-repeat center 40px transparent;
+}
+.ad-widget-zhixin-milestone-bk .ec-arrow {
+  top: 0;
+  position: absolute;
+  z-index: 200;
+  background: #fff;
+  width: 15px;
+  height: 85px;
+  cursor: pointer;
+}
+.ad-widget-zhixin-milestone-bk .ec-left-arrow {
+  left: 0;
+  background: url('//bs.baidu.com/uaq-image-opt/20140303/72591.arrow.png') no-repeat 1px 41px #ffffff;
+}
+.ad-widget-zhixin-milestone-bk .ec-right-arrow {
+  right: 0;
+  background: url('//bs.baidu.com/uaq-image-opt/20140303/72591.arrow.png') no-repeat -25px 41px #ffffff;
+}
+.ad-widget-zhixin-milestone-bk .ec-text {
+  padding: 0;
+  margin: 0;
+}
+.ad-widget-zhixin-milestone-bk .ec-year {
+  padding: 0;
+  margin: 46px 0 0;
+}
+.ad-widget-zhixin-milestone-bk .ec-foot {
+  color: #008000;
+  margin-top: 6px;
+  *zoom: 1;
+}
+.ad-widget-zhixin-milestone-bk .ec-foot:before,
+.ad-widget-zhixin-milestone-bk .ec-foot:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-milestone-bk .ec-foot:after {
+  clear: both;
+}
+.ad-widget-zhixin-milestone-bk .ec-site {
+  clear: left;
+}
+.ad-widget-zhixin-milestone-bk .ec-site,
+.ad-widget-zhixin-milestone-bk .ec-date {
+  float: left;
+  margin-right: 5px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

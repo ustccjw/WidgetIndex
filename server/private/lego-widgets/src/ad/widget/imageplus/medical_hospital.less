@@ -1,0 +1,181 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/imageplus/pa.less ~ 2013/09/02 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * pa样式文件
+ **/
+@import-once "mixins.less";
+
+.ad-widget-imageplus-medical_hospital {
+    font: 12px/1.5 arial,sans-serif;
+    width: 273px;
+    text-align: left;
+    color: #333;
+    background-color: #FFF;
+
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    em {
+        color: red;
+        font-style: normal;
+    }
+}
+
+/* title */
+.ad-widget-imageplus-medical_hospital-title {
+    span {
+        display: inline-block;
+        _zoom: 1;
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        background: url("http://ecma.bdimg.com/public03/imageplus/pa-icons.png") no-repeat -32px 0;
+    }
+
+    a {
+        display: block;
+        padding: 6px 15px 4px;
+        width: 273px - (15px * 2);
+        height: 15px;
+        line-height: 16px;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        color: inherit;
+        white-space: nowrap;
+        background-color: #F5F5F5;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+/* body */
+.ad-widget-imageplus-medical_hospital-li {
+    margin: 0 15px;
+    padding: 0;
+
+    a {
+        color: #00C;
+    }
+    li {
+        margin: 7px 0 0;
+        padding: 0 0 7px;
+        list-style: none;
+        overflow: hidden;
+        _zoom: 1;
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    p {
+        clear: both;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.ad-widget-imageplus-medical_hospital-li-t {
+    float: left;
+    width: 180px;
+
+    a {
+        margin-right: 5px;
+    }
+}
+
+.ad-widget-imageplus-medical_hospital-li-v {
+    display: inline-block;
+    _zoom: 1;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    background: url("http://ecma.bdimg.com/public03/imageplus/pa-icons.png") no-repeat -80px 0;
+}
+
+// 星级样式和百度UE样式规范保持一致（http://fedev.baidu.com/~shuxiaoqin/iframework/?qq-pf-to=pcqq.c2c）
+.ad-widget-imageplus-medical_hospital-li-start {
+    position: relative;
+    float: right;
+    width: 59px;
+    height: 14px;
+    vertical-align: text-bottom;
+    font-style: normal;
+    overflow: hidden;
+    background: url(http://fedev.baidu.com/~shuxiaoqin/img/icons.png) no-repeat 0 0;
+    background-position: -312px 0;
+    _background-image: url(http://fedev.baidu.com/~shuxiaoqin/img/icons.gif);
+
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 14px;
+        vertical-align: text-bottom;
+        font-style: normal;
+        overflow: hidden;
+        text-indent: -9999px;
+        background: url(http://fedev.baidu.com/~shuxiaoqin/img/icons.png) no-repeat 0 0;
+        background-position: -240px -24px;
+        _background-image: url(http://fedev.baidu.com/~shuxiaoqin/img/icons.gif);
+    }
+}
+
+/* all */
+a.ad-widget-imageplus-medical_hospital-all {
+    display: block;
+    margin: 7px 15px 0;
+    color: #999;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* foot */
+.ad-widget-imageplus-medical_hospital-ft {
+    padding-right: 10px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

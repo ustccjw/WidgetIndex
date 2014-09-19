@@ -1,0 +1,39 @@
+<!-- target:AD_ad_widget_ns_zhidao -->
+<div class="ad-widget ad-widget-ns-zhidao">
+    <div class="ec-ns-head">
+        <div class="ec-ns-head-num">找到相关问题约&nbsp;<span>{{answer_number}}</span>&nbsp;项</div>
+        <div class="ec-ns-head-source">来自官方回答—<span>{{answer_source}}</span></div>
+    </div>
+    <div class="ec-ns-q-title"><a href="{{{question_rcv_url}}}" target="_blank" title2="问题明细[标题]">{{question_title}}</a></div>
+    <div class="ec-ns-q-answer">官方答案：{{question_answer}}</div>
+    <ul class="ec-ns-related-question">
+        {{#related_questions}}
+        <li><a href="{{{rcv_url}}}" target="_blank" title2="相关问题[问题{{_index}}]">{{title}}</a></li>
+        {{/related_questions}}
+    </ul>
+    <div class="ec-ns-foot">
+        <a target="_blank" title2="更多链接" href="{{{more_rcv_url}}}">更多<em>{{more_text}}</em>相关官方回答&gt;&gt;</a>
+    </div>
+    <div class="ec-ns-online-qa">
+        <a href="{{{button_rcv_url}}}" target="_blank" class="ec-ns-online-button" title2="在线提问按钮">在线提问</a>
+        {{answer_provider}}在线提供权威作答
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

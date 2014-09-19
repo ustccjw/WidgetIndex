@@ -1,0 +1,92 @@
+{
+    "contents": [
+        "ad.widget.Bmap"
+    ],
+    "userPrefs": [
+        {
+            "name": "city_name",
+            "displayName": "city_name",
+            "tip": "最多10个字节（5个汉字）",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 10,
+                "minByteLength": 0
+            }
+        },
+        {
+            "name": "address",
+            "displayName": "address",
+            "tip": "最多10个字节（5个汉字）",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 10,
+                "minByteLength": 0
+            }
+        },
+        {
+            "name": "icon",
+            "displayName": "icon",
+            "datatype": "OBJECT",
+            "display": "toggle-block",
+            "items": [
+                {
+                    "name": "url",
+                    "displayName": "url",
+                    "tip": "//bs.baidu.com/adtest/9da409dd8c467c7f80b4039c8446b876.png",
+                    "datatype": "UPLOAD",
+                    "defaultValue": "//bs.baidu.com/adtest/9da409dd8c467c7f80b4039c8446b876.png",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "width": 180,
+                        "height": 100,
+                        "maxSize": 15,
+                        "ext": "jpg,png,jpeg,gif"
+                    }
+                },
+                {
+                    "name": "width",
+                    "displayName": "width",
+                    "defaultValue": "46",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "NUMBER"
+                    },
+                    "extraAttr": {
+                        "filters": "float"
+                    }
+                },
+                {
+                    "name": "height",
+                    "displayName": "height",
+                    "defaultValue": "45",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "NUMBER"
+                    },
+                    "extraAttr": {
+                        "filters": "float"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "datasource_url",
+            "displayName": "datasource_url",
+            "tip": "http://",
+            "datatype": "STRING",
+            "defaultValue": "//bs.baidu.com/adtest/fa5cd64b8a99e8a82924f5c519e11729.js",
+            "rules": {
+                "stringType": "URL",
+                "required": true,
+                "maxByteLength": 255
+            },
+            "extraAttr": {},
+            "multiline": false
+        }
+    ]
+}

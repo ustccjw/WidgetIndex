@@ -1,0 +1,20 @@
+<!-- target:AD_ad_widget_float_window_container -->
+{{#display_mask}}
+<div id="{{#_id}}mask{{/_id}}" style="top:0px; left:0px; position:absolute; display:none;">
+    <iframe frameborder="0" style="filter:progid:DXImageTransform.Microsoft.Alpha(opacity:0);position:absolute;top:0px;left:0px;width:100%;height:100%;z-index:-1" src="about:blank"></iframe>
+    <div style="position:absolute;top:0px;left:0px;width:100%;height:100%;z-index:-1;background:#000;opacity:0.3;filter:opacity(30);z-index:2147483639;">&nbsp;</div>
+</div>
+{{/display_mask}}
+<div id="{{#_id}}fwc{{/_id}}" class="ad-widget ad-widget-float-window-container" style="width:{{width}}px;height:{{height}}px;">
+    {{#display_bg_iframe}}
+    <iframe class="ec-float-bg-ifr" width="{{width}}" height="{{height}}" src="javascript:false;" scrolling="no" frameborder="0"></iframe>
+    {{/display_bg_iframe}}
+    <div class="ec-sub" style="width:{{width}}px;height:{{height}}px;"></div>
+    {{#float_bg}}
+    <a title2="浮层{{id}}链接跳转" href="{{{float_bg.rcv_url}}}" class="ec-float-bg" target="_blank" style="{{#float_bg.src}}background:url({{float_bg.src}});{{/float_bg.src}}width:{{width}}px;height:{{height}}px;">&nbsp;</a>
+    {{/float_bg}}
+    <div id="{{#_id}}cont{{/_id}}" class="ec-cont">
+        {{{_content}}}
+    </div>
+    <a id="{{#_id}}close{{/_id}}" title2="浮层{{id}}关闭" class="ec-close">&nbsp;</a>
+</div>

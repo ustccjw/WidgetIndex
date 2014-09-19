@@ -1,0 +1,96 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/floatvideo/film.less ~ 2012/12/25 12:11:30
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * film样式文件
+ **/
+.ad-widget-floatvideo-film {
+  font: 12px/1.5 "宋体", arial, sans-serif;
+  width: 82px;
+}
+.ad-widget-floatvideo-film p,
+.ad-widget-floatvideo-film ul,
+.ad-widget-floatvideo-film li {
+  margin: 0px;
+  padding: 0px;
+}
+.ad-widget-floatvideo-film ul {
+  list-style: none;
+}
+.ad-widget-floatvideo-film .ec-up {
+  background: url(//bs.baidu.com/adtest/a01fd9b5cf885957f820ba9c20589a91.png);
+  width: 82px;
+  height: 18px;
+  cursor: pointer;
+}
+.ad-widget-floatvideo-film .ec-up:hover {
+  background: url(//bs.baidu.com/adtest/3fe86f1513ef364c63b0c44441f9c868.png);
+}
+.ad-widget-floatvideo-film .ec-main {
+  overflow: hidden;
+  position: relative;
+  padding: 6px 1px;
+}
+.ad-widget-floatvideo-film .ec-main li {
+  position: relative;
+  height: 85px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ad-widget-floatvideo-film .ec-main .ec-bg {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 80px;
+  height: 60px;
+  background-color: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  z-index: 100;
+}
+.ad-widget-floatvideo-film .ec-main .ec-text {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 80px;
+  height: 60px;
+  z-index: 200;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  line-height: 60px;
+}
+.ad-widget-floatvideo-film .ec-main .ec-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 80px;
+  height: 60px;
+}
+.ad-widget-floatvideo-film .ec-main .ec-img img {
+  display: block;
+}
+.ad-widget-floatvideo-film .ec-main p {
+  position: absolute;
+  left: 0px;
+  top: 63px;
+}
+.ad-widget-floatvideo-film .ec-down {
+  background: url(//bs.baidu.com/adtest/b3ee4facce3dddc015a30261eee82862.png);
+  width: 82px;
+  height: 18px;
+  cursor: pointer;
+}
+.ad-widget-floatvideo-film .ec-down:hover {
+  background: url(//bs.baidu.com/adtest/e5323012c641c0539efdb9eb5aee5432.png);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

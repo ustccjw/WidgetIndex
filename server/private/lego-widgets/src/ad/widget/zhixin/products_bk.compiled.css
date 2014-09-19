@@ -1,0 +1,80 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhixin/products_bk.less ~ 2014/02/20 10:25:34
+ * @author chenli11@baidu.com (chestnutchen)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * products_bk样式文件
+ **/
+.ad-widget-zhixin-products-bk {
+  font: 13px/1.5 arial, sans-serif;
+  width: 516px;
+  padding: 0;
+  margin: 0;
+}
+.ad-widget-zhixin-products-bk .ec-content {
+  *zoom: 1;
+}
+.ad-widget-zhixin-products-bk .ec-content:before,
+.ad-widget-zhixin-products-bk .ec-content:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-products-bk .ec-content:after {
+  clear: both;
+}
+.ad-widget-zhixin-products-bk .ec-logo {
+  float: left;
+  width: 121px;
+  height: 91px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.ad-widget-zhixin-products-bk .ec-logo img {
+  border: none;
+}
+.ad-widget-zhixin-products-bk .ec-table {
+  float: left;
+  line-height: 19px;
+  width: 385px;
+}
+.ad-widget-zhixin-products-bk .ec-table .ec-td-last {
+  padding-right: 0;
+}
+.ad-widget-zhixin-products-bk .ec-table thead span,
+.ad-widget-zhixin-products-bk .ec-table thead a {
+  color: #666;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.ad-widget-zhixin-products-bk .ec-table a {
+  color: #333;
+  text-decoration: none;
+}
+.ad-widget-zhixin-products-bk .ec-foot {
+  color: #008000;
+  margin-top: 6px;
+  *zoom: 1;
+}
+.ad-widget-zhixin-products-bk .ec-foot:before,
+.ad-widget-zhixin-products-bk .ec-foot:after {
+  display: table;
+  content: "";
+}
+.ad-widget-zhixin-products-bk .ec-foot:after {
+  clear: both;
+}
+.ad-widget-zhixin-products-bk .ec-site {
+  clear: left;
+}
+.ad-widget-zhixin-products-bk .ec-site,
+.ad-widget-zhixin-products-bk .ec-date {
+  float: left;
+  margin-right: 5px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

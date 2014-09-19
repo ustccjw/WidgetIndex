@@ -1,0 +1,85 @@
+{
+    "contents": ["ad.widget.Flash"],
+    "userPrefs": [
+        {
+            "name": "width",
+            "displayName": "FLASH宽度",
+            "defaultValue": "720",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "height",
+            "displayName": "FLASH高度",
+            "defaultValue": "420",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {
+                "filters": "int"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "link_rcv_url",
+            "displayName": "跳转地址",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "tip": "可选，填写",
+            "multiline": false
+        },
+        {
+            "name": "src",
+            "displayName": "FLASH文件",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "tip": "",
+            "rules": {
+                "required": true
+            },
+            "tip": "",
+            "extraAttr":{
+                "fileType": "FLASH",
+                "maxSize": 15000,
+                "ext": "swf"
+            }
+        },
+        {
+            "name": "ipad_img",
+            "displayName": "ipad浮层备份图片",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "tip": "",
+            "rules": {
+                "required": true
+            },
+            "tip": "",
+            "extraAttr":{
+                "fileType": "IMAGE",
+                "maxSize": 50,
+                "width": 720,
+                "height": 420,
+                "ext": "jpg,png"
+            }
+        },
+        {
+            "name": "ipad_link_rcv_url",
+            "displayName": "ipad浮层图片跳转地址",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "tip": "可选，填写",
+            "multiline": false
+        }
+    ]
+}

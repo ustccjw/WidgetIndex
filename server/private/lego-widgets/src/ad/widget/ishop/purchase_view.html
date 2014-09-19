@@ -1,0 +1,137 @@
+<!-- target:AD_ad_widget_ishop_purchase_view -->
+<div class="ad-widget-ishop ad-widget-ishop-purchase-view">
+    <div class="ishop-purchase-header">
+        <div class="ishop-purchase-logo">
+            <img src="{{logo}}"/>
+        </div>
+        <div class="ishop-purchase-info">
+            <table>
+                <tbody>
+                <tr>
+                    <th>商品名称</th>
+                    <td>：</td>
+                    <td><span class="ishop-purchase-name" title="{{name}}" data-name="{{name}}"></span></td>
+                </tr>
+                <tr>
+                    <th>数量</th>
+                    <td>：</td>
+                    <td>
+                        <div class="ishop-purchase-count">
+                            <span class="ishop-purchase-count-minus"></span>
+                            <span class="ishop-purchase-count-value">
+                                <input id="ishop-purchase-count-input" class="ishop-purchase-count-input" value="1" type="text"/>
+                            </span>
+                            <span class="ishop-purchase-count-plus"></span>
+                        </div>
+                        <span class="ishop-purchase-count-text">　件</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>单价</th>
+                    <td>：</td>
+                    <td>¥{{price}}</td>
+                </tr>
+                <tr>
+                    <th>运费</th>
+                    <td>：</td>
+                    <td>
+                        <span class="ishop-purchase-fare">¥{{fare}}</span>
+                        <span id="ishop-purchase-fare-offset" class="ishop-purchase-fare-offset">
+                            <span>满{{fare_free_offset}}免运费</span><b></b>
+                        </span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="ishop-purchase-tip">*实际支付运费金额以短信确认为准</div>
+        </div>
+        <div class="clear"></div>
+        <div class="ishop-purchase-price">
+            应付总金额：
+            <div class="ishop-purchase-total-pay">
+                <strong id="ishop-purchase-total-pay"></strong>
+                <span>¥</span>
+            </div>
+        </div>
+    </div>
+    <div class="ishop-purchase-body">
+        <div class="ishop-purchase-body-top">
+            <div class="left">收货信息</div>
+            <div class="right">
+                <span>送货商家：</span><b></b>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <table>
+            <tbody>
+            <tr class="pay-method-wrapper">
+                <th>付款方式 </th>
+                <td>
+                    <span class="pay-method">货到付款</span>
+                    <span class="restore-btn-wrapper" id="restore-btn">
+                        [<span class="restore-btn">使用上次地址</span>]
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th>收货人</th>
+                <td>
+                    <input id="ishop-purchase-name-input" class="name text left" type="text" name="name" />
+                    <span class="ishop-purchase-error-message" title="请填写正确姓名"></span>
+                </td>
+            </tr>
+            <tr>
+                <th class="receive-address">收货地址</th>
+                <td>
+                    <div class="select-wrapper">
+                        <div class="left">
+                            <select id="ishop-purchase-province-select" name="province">
+                                <option value="">-选择省-</option>
+                            </select>
+                            <select id="ishop-purchase-city-select" name="city">
+                                <option value="">-选择市-</option>
+                            </select>
+                            <select id="ishop-purchase-district-select" name="district">
+                                <option value="">-选择区-</option>
+                            </select>
+                        </div>
+                        <span class="icon"></span>
+                        <span class="link"><a id="ishop-purchase-delivery-range" class="ishop-purchase-delivery-range" target="_blank">查看送货范围</a></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="address-wrapper">
+                        <input id="ishop-purchase-address-input" class="address text left" type="text" name="address" placeholder="请填写所在街道地址详情" />
+                        <span class="ishop-purchase-error-message" title="请填写地址"></span>
+                        <div class="clear"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>手机号码</th>
+                <td>
+                    <input id="ishop-purchase-mobile-input" class="mobile text left" type="text" name="mobile" />
+                    <span class="ishop-purchase-error-message" title="请填写正确的11位电话号码"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>短信安全码</th>
+                <td>
+                    <input id="ishop-purchase-mobile-vcode-input" maxlength="6" class="mobile-vcode text" type="text" name="mobile_vcode" />
+                    <span id="ishop-purchase-get-mobile-code" class="ishop-purchase-get-mobile-code">获取短信安全码</span>
+                    <span class="ishop-purchase-error-message" title="短信安全码错误"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>发票信息</th>
+                <td>
+                    <input class="invoice" type="checkbox" name="need_invoice" />
+                    需要发票<span class="invoice-tip">　*仅支持个人普通发票</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ishop-purchase-submit clearfix">
+        <div class="ishop-purchase-submit-btn" id="ishop-purchase-submit"> </div>
+    </div>
+<div>

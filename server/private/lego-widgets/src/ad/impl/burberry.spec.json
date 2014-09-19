@@ -1,0 +1,648 @@
+[
+    {
+        "name": "video_left",
+        "displayName": "左侧视频",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "img_url",
+                "displayName": "视频预览图片",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "width": 220,
+                    "height": 164,
+                    "maxSize": 30,
+                    "ext": "jpg,jpeg,png"
+                }
+            },
+            {
+                "name": "video_url",
+                "displayName": "视频FLV文件",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "FLV",
+                    "maxSize": 700,
+                    "width": 220,
+                    "height": 164,
+                    "ext": "flv"
+                }
+            },
+            {
+                "name": "ipad_img",
+                "displayName": "iPad替代图片（可选）",
+                "datatype": "UPLOAD",
+                "rules": {},
+                "extraAttr": {
+                    "width": 220,
+                    "height": 190,
+                    "ext": "jpg,jpeg,gif,png"
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "视频点击跳转地址（可选）",
+                "datatype": "STRING",
+                "rules": {
+                    "maxTextByteLength": 255,
+                    "stringType": "URL"
+                },
+                "tip": "http://",
+                "extraAttr": {}
+            },
+            {
+                "name": "width",
+                "displayName": "width",
+                "defaultValue": 220,
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "height",
+                "displayName": "height",
+                "defaultValue": 190,
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            }
+        ]
+    },
+    {
+        "name": "small_head",
+        "displayName": "头部模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "titletext",
+                "displayName": "标题",
+                "datatype": "HTML",
+                "multiline": false,
+                "tip": "标题为5~15个汉字，核心<em>飘红词</em>最多可选6个汉字",
+                "rules": {
+                    "maxTextByteLength": 30,
+                    "minTextByteLength": 10,
+                    "required": true,
+                    "tagList": {
+                        "em": {
+                            "maxCount": 1,
+                            "maxTextByteLength": 20,
+                            "minCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                }
+            },
+            {
+                "name": "titleurl_rcv_url",
+                "displayName": "标题URL",
+                "tip": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "maxTextByteLength": 255,
+                    "required": true
+                },
+                "extraAttr": {}
+            },
+            {
+                "name": "description_rcv_html",
+                "displayName": "描述",
+                "tip": "描述为45~65个汉字，<a href=\"http://fake.com\">链接词</a>最多5个，每个链接词最多5个汉字",
+                "datatype": "HTML",
+                "multiline": true,
+                "rules": {
+                    "maxTextByteLength": 130,
+                    "minTextByteLength": 90,
+                    "required": true,
+                    "tagList": {
+                        "a": {
+                            "maxTextByteLength": 20,
+                            "maxCount": 5
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "link"
+                        ]
+                    },
+                    "tagList": {
+                        "a": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false,
+                            "requiredAttributes": [
+                                "target",
+                                "href"
+                            ],
+                            "attributeRules": {
+                                "href": {
+                                    "isRequired": true,
+                                    "isAllowNoValue": false,
+                                    "valueType": "url"
+                                },
+                                "target": {
+                                    "isRequired": false,
+                                    "isAllowNoValue": false,
+                                    "defaultValue": "_blank"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "name": "site",
+                "displayName": "官方网站",
+                "tip": "最多可填写24个字节",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 24
+                },
+                "extraAttr": {}
+            },
+            {
+                "name": "image_group_head",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "options",
+                        "displayName": "产品小图展示",
+                        "datatype": "LIST",
+                        "items": [
+                            {
+                                "name": "imgsrc",
+                                "displayName": "图片地址",
+                                "datatype": "UPLOAD",
+                                "rules": {
+                                    "required": true,
+                                    "stringType": "URL"
+                                },
+                                "extraAttr": {
+                                    "width": 80,
+                                    "height": 70,
+                                    "maxSize": 10,
+                                    "ext": "jpg,jpeg,gif,png"
+                                }
+                            }
+                        ],
+                        "rules": {
+                            "minCount": 3,
+                            "maxCount": 3
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "flash",
+        "displayName": "产品浮层展示",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "Flash",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "width",
+                        "datatype": "HIDDEN",
+                        "defaultValue": 720
+                    },
+                    {
+                        "name": "height",
+                        "datatype": "HIDDEN",
+                        "defaultValue": 420
+                    },
+                    {
+                        "name": "src",
+                        "displayName": "Flash地址",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true,
+                            "stringType": "URL"
+                        },
+                        "extraAttr": {
+                            "fileType": "FLASH",
+                            "width": 720,
+                            "height": 420,
+                            "maxSize": 200,
+                            "ext": "swf"
+                        }
+                    },
+                    {
+                        "name": "ipad_img",
+                        "displayName": "iPad替代图片（可选）",
+                        "datatype": "UPLOAD",
+                        "rules": {},
+                        "extraAttr": {
+                            "width": 720,
+                            "height": 420,
+                            "maxSize": 200,
+                            "ext": "jpg,jpeg,gif,png"
+                        }
+                    },
+                    {
+                        "name": "ipad_link_rcv_url",
+                        "displayName": "iPad跳转链接（可选）",
+                        "datatype": "STRING",
+                        "tip": "http://",
+                        "rules": {
+                            "stringType": "URL",
+                            "maxTextByteLength": 255
+                        },
+                        "extraAttr": {}
+                    }
+                ],
+                "rules": {
+                    "minCount": 3,
+                    "maxCount": 3
+                }
+            }
+        ]
+    },
+    {
+        "name": "video_fwc",
+        "displayName": "浮层视频",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "img_url",
+                "displayName": "预览图片",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "width": 220,
+                    "height": 164,
+                    "maxSize": 30,
+                    "ext": "jpg,jpeg,png"
+                }
+            },
+            {
+                "name": "video_url",
+                "displayName": "视频地址",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "FLV",
+                    "maxSize": 700,
+                    "width": 220,
+                    "height": 164,
+                    "ext": "flv"
+                }
+            },
+            {
+                "name": "ipad_img",
+                "displayName": "iPad替代图片地址（可选）",
+                "datatype": "UPLOAD",
+                "rules": {},
+                "extraAttr": {
+                    "width": 400,
+                    "height": 250,
+                    "ext": "jpg,jpeg,gif,png"
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "视频点击跳转地址（可选）",
+                "datatype": "STRING",
+                "rules": {
+                    "maxTextByteLength": 255,
+                    "stringType": "URL"
+                },
+                "tip": "http://",
+                "extraAttr": {}
+            },
+            {
+                "name": "width",
+                "defaultValue": 440,
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "height",
+                "defaultValue": 250,
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "is_play",
+                "defaultValue": true,
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                }
+            }
+        ]
+    },
+    {
+        "name": "map",
+        "displayName": "浮层背景",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "width",
+                "datatype": "HIDDEN",
+                "defaultValue": 720
+            },
+            {
+                "name": "height",
+                "datatype": "HIDDEN",
+                "defaultValue": 420
+            },
+            {
+                "name": "src",
+                "displayName": "背景图片地址",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                },
+                "extraAttr": {
+                    "width": 720,
+                    "height": 420,
+                    "ext": "jpg,jpeg,gif,png"
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "背景图片跳转地址",
+                "tip": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                }
+            },
+            {
+                "name": "options",
+                "displayName": "热点区域（可选）",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "shape",
+                        "datatype": "HIDDEN",
+                        "defaultValue": "rect"
+                    },
+                    {
+                        "name": "coords",
+                        "tip": "格式是：x1,y1,x2,y2",
+                        "displayName": "区域",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "href_rcv_url",
+                        "tip": "http://",
+                        "displayName": "跳转地址",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "stringType": "URL"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "small_weibo",
+        "displayName": "新浪微博",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "id",
+                "displayName": "微博ID",
+                "defaultValue": "1924007153",
+                "datatype": "STRING",
+                "descriptionTip": "sina微博个人资料页地址中获取，如：\"http://*.weibo.com/2525235360/info?from=profile&wvr=5&loc=tabinf#profile_tab\"中“2525235360”即为微博ID",
+                "rules": {
+                    "required": true,
+                    "regex": {
+                        "pattern": "(^|(weibo\\.com\\/))\\d+",
+                        "errorText": "请填写纯数字或含id的url"
+                    }
+                }
+            },
+            {
+                "name": "name",
+                "displayName": "微博名称",
+                "defaultValue": "Burberry",
+                "tip": "微博名称",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 8
+                }
+            },
+            {
+                "name": "weibo_logo",
+                "displayName": "新浪微博账号LOGO",
+                "defaultValue": "http://dummyimage.com/56x56",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 56,
+                    "height": 56,
+                    "maxSize": 5,
+                    "ext": "jpg,jpeg,gif,png"
+                }
+            },
+            {
+                "name": "icon_rcv_url",
+                "displayName": "微博LOGO跳转地址（可选）",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL"
+                }
+            },
+            {
+                "name": "follow_imgsrc",
+                "displayName": "加关注图标（可选）",
+                "defaultValue": "http://drmcmm.baidu.com/media/id=PWbvPWc1PHm&gp=402&time=nHnYnj6LnHbkPf.png",
+                "datatype": "UPLOAD",
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "maxSize": 25,
+                    "ext": "jpg,jpeg,gif,png"
+                }
+            },
+            {
+                "name": "verify_img",
+                "displayName": "加V图标（可选）",
+                "defaultValue": "http://drmcmm.baidu.com/media/id=P10vPjf4rHn&gp=402&time=nHnYnj6LnHbkr0.png",
+                "datatype": "UPLOAD",
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "maxSize": 10,
+                    "height": 12,
+                    "width": 14,
+                    "ext": "jpg,jpeg,gif,png"
+                }
+            },
+            {
+                "name": "weibo_context_length",
+                "displayName": "微博内容字节长度",
+                "defaultValue": "80",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "int"
+                }
+            },
+            {
+                "name": "is_display_icon",
+                "displayName": "是否显示微博图标",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "is_display_fans",
+                "displayName": "是否显示粉丝数",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "is_display_weibo",
+                "displayName": "是否显示微博数",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "is_display_foot",
+                "displayName": "是否显示日期、转发、收藏、评论",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            }
+        ]
+    },
+    {
+        "name": "button_group_foot",
+        "displayName": "底部按钮列表",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "按钮",
+                "datatype": "LIST",
+                "rules": {
+                    "required": true,
+                    "minCount": 3,
+                    "maxCount": 5
+                },
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "tip": "最多10个字节（5个汉字）",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 10
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "tip": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 255,
+                            "stringType": "URL"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "fwc",
+        "displayName": "浮层配置信息",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "width",
+                "defaultValue": 720,
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "stringType": "NUMBER"
+                }
+            },
+            {
+                "name": "height",
+                "defaultValue": 420,
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "stringType": "NUMBER"
+                }
+            }
+        ]
+    }
+]

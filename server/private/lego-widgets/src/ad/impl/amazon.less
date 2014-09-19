@@ -1,0 +1,231 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: amazon.less 9564 2012-06-06 04:43:29Z songao $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/amazon.less ~ 2012/06/06 11:51:39
+ * @author songao(songao@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 533px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    font:13px arial,sans-serif;
+
+    .gain-bfc();
+
+    .ad-layout-block-1 {
+        padding-bottom:4px;
+        clear:both;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .ad-layout-block-1-0 {
+        float:left;
+        width:170px;
+        padding-top:4px;
+        height:150px;
+        overflow:hidden;
+
+        .ad-widget-slider {
+            width:170px;
+            height:150px;
+
+            ol {
+                li {
+                    width:170px;
+                    height:150px;
+                }
+            }
+
+            ul {
+                bottom:6px;
+                right:2px;
+                margin:0;
+
+                li {
+                    font-size:12px;
+                    width:16px;
+                    height:16px;
+                    line-height:16px;
+                    text-align:center;
+                    margin-right:5px;
+
+                    .border-radius(0);
+                }
+            }
+        }
+    }
+    .ad-layout-block-1-1 {
+        float:right;
+        width:350px;
+        padding:4px 0px 0px 10px;
+        line-height:18px;
+
+        .ad-widget-small-head {
+            .ec-description {
+                color:inherit;
+                line-height:18px;
+            }
+        }
+
+        .ad-widget-small-weibo {
+            padding-top:7px;
+            color:#333;
+
+            .ec-weibo-head {
+                height:22px;
+                overflow:hidden;
+
+                .ec-name {
+                    color:#0078b6;
+                    padding-right:16px;
+                }
+                .ec-follow {
+                    padding-top:2px;
+                    padding-left:4px;
+                }
+            }
+
+            .ec-context {
+                padding-top:0;
+                height:18px;
+                line-height:18px;
+            }
+        }
+
+        .ad-widget-search-box {
+            height:22px;
+            padding-top:8px;
+
+            input.ec-text {
+                .box-sizing(content-box);
+            }
+
+            .ec-text {
+                padding:1px 5px;
+                margin:0;
+                line-height:18px;
+                height:18px;
+                border:1px solid #6daee1;
+                width:280px;
+                float:left;
+            }
+
+            a {
+                float:right;
+            }
+
+            .ec-submit-button {
+                width: 50px;
+                height: 22px;
+                line-height: 22px;
+                border: medium none;
+                background: url("//bs.baidu.com/adtest/06d4df2c4975827ace04a6bf4fce4e98.png") no-repeat scroll center center transparent;
+                cursor: pointer;
+                margin-left:2px;
+            }
+        }
+    }
+
+    .ad-layout-block-2 {
+        padding-top:2px;
+
+        .ad-widget-image-cartoon {
+            background:#6daee1;
+            height:130px;
+            padding:3px;
+            width:auto;
+
+            .ec-item-wrapper {
+                width: 100%;
+                height:130px;
+
+                .ec-item {
+                    height:130px;
+                }
+            }
+
+            .ec-arrow {
+                bottom:55px;
+                width:16px;
+                height:23px;
+
+                .opacity(100);
+            }
+        }
+    }
+
+    .ad-layout-block-3 {
+        .ad-widget-table {
+            width:auto;
+            margin-top:5px;
+            border-bottom:1px solid #c5c0e8;
+            border-right:1px solid #c5c0e8;
+
+            thead {
+                tr {
+                    td {
+                        background:#e9e8fb;
+                        border-top:1px solid #c5c0e8;
+                        border-left:1px solid #c5c0e8;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        border-top:1px solid #c5c0e8;
+                        border-left:1px solid #c5c0e8;
+                    }
+                }
+
+                .ec-tr-bg {
+                    td {
+                        border-top:none;
+                        border-left:1px solid #c5c0e8;
+                    }
+                }
+            }
+
+            td {
+                width:100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

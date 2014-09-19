@@ -1,0 +1,45 @@
+{
+    "contents": [
+        "ad.widget.FullWindowContainer"
+    ],
+    "userPrefs": [{
+        "name": "click_to_close",
+        "displayName": "click_to_close",
+        "defaultValue": true,
+        "datatype": "BOOL",
+        "rules": {
+            "stringType": "BOOL"
+        }
+    }, {
+        "name": "has_close_btn",
+        "displayName": "has_close_btn",
+        "defaultValue": true,
+        "datatype": "BOOL",
+        "rules": {
+            "stringType": "BOOL"
+        }
+    }, {
+        "name": "background-color",
+        "displayName": "background-color",
+        "tip": "最多10个字节（5个汉字）",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 10,
+            "minByteLength": 0
+        }
+    }, {
+        "name": "opacity",
+        "displayName": "opacity",
+        "tip": "最多10个字节（5个汉字）",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 10,
+            "minByteLength": 0
+        },
+        "extraAttr": {
+            "filters": "float"
+        }
+    }]
+}

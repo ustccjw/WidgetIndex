@@ -1,0 +1,20 @@
+<!-- target:AD_ad_widget_bmw_image_list -->
+<div id="{{#_id}}bmw-image-list{{/_id}}" class="ad-widget-bmw ad-widget-bmw-image-list">
+    {{#options}}
+    <div style="{{#width}}width:{{width}}px;{{/width}}
+                background-image: url({{{img_url}}});" 
+         class="ec-image{{#@first}} ec-first{{/@first}}
+                {{#@last}} ec-last{{/@last}}">
+        <div class="ec-bg"></div>
+        <a {{#width}}style="width:{{width}}px;"{{/width}} {{#rcv_url}}href="{{{rcv_url}}}"{{/rcv_url}} target="_blank" title2="图片链接{{_index}}">
+            <img src="{{{img_url}}}" />
+            {{#text}}
+            <div class="ec-text">
+                <div class="ec-opacity-bg"></div>
+                <span>{{{text}}}</span>
+            </div>
+            {{/text}}
+        </a>
+    </div>
+    {{/options}}
+</div>

@@ -1,0 +1,211 @@
+[
+    {
+        "name": "head",
+        "displayName": "标题描述",
+        "display": "toggle-block",
+        "tip": "请参照各版式截断字数，按照规范填写主标题、按钮文字，如果太长则会截断造成语意不明",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "主标题",
+                "tip": "14汉字以内，<em>飘红词</em>最多6汉字",
+                "datatype": "HTML",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "maxTextByteLength": 28,
+                    "tagList": {
+                        "em": {
+                            "maxTextByteLength": 12,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "主标题指向URL",
+                "defaultValue": "http://",
+                "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                }
+            },
+            {
+                "name": "display_official_site_icon",
+                "displayName": "显示官网图标",
+                "datatype": "BOOL",
+                "defaultValue": true
+            },
+            {
+                "name": "logo_big",
+                "displayName": "LOGO图片(大)",
+                "datatype": "UPLOAD",
+                "tip": "http://dummyimage.com/90x90",
+                "multiline": false,
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 90,
+                    "height": 90,
+                    "maxSize": 10,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "logo_middle",
+                "displayName": "LOGO图片(中)",
+                "datatype": "UPLOAD",
+                "tip": "http://dummyimage.com/46x46",
+                "multiline": false,
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 46,
+                    "height": 46,
+                    "maxSize": 10,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "logo_small",
+                "displayName": "LOGO图片(小)",
+                "datatype": "UPLOAD",
+                "tip": "http://dummyimage.com/34x34",
+                "multiline": false,
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 34,
+                    "height": 34,
+                    "maxSize": 10,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "logo_rcv_url",
+                "displayName": "LOGO指向URL",
+                "defaultValue": "http://",
+                "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                }
+            },
+            {
+                "name": "description",
+                "displayName": "内容描述",
+                "tip": "可填写26~34个汉字",
+                "datatype": "STRING",
+                "multiline": true,
+                "rules": {
+                    "required": true,
+                    "minByteLength": 52,
+                    "maxByteLength": 68
+                }
+            },
+            {
+                "name": "site",
+                "displayName": "官方网站",
+                "tip": "最多22个字节",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 22
+                }
+            }
+        ]
+    },
+    {
+        "name": "buttons",
+        "displayName": "按钮区",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "count_per_row",
+                "displayName": "每行按钮数",
+                "defaultValue": 2,
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "int",
+                    "modifiable": false
+                }
+            },
+            {
+                "name": "options",
+                "displayName": "按钮",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "按钮文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "minByteLength": 8,
+                            "maxByteLength": 10
+                        },
+                        "extraAttr": {},
+                        "tip": "4~5个汉字",
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "指向URL",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 4,
+                    "maxCount": 4
+                },
+                "extraAttr": {
+                    "initialCount": 4
+                }
+            }
+        ],
+        "rules": {}
+    }
+]

@@ -1,0 +1,322 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: baomax5a.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/baomax5a.less ~ 2012/08/27 14:30:04
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * hm样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 "宋体", arial,sans-serif;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 10px 8px 15px 10px;
+    .pl-canvas-border();
+    width: 518px;
+    
+    .ec-official-site {
+        margin-top: 3px;
+    }
+    .ad-widget-title {
+        display: inline-block;
+        h2 {
+            .gain-bfc();
+            a,
+            span {
+                float: left;
+            }
+            a {
+                color: #0000cc;
+            }
+        }
+    }
+    .ad-block-0-0 {
+        height: 24px;
+    }
+    .ad-block-1 {
+        .gain-bfc();
+        .ad-block-1-0 {
+            float: left;
+        }
+        .ad-block-1-1 {
+            .gain-bfc();
+            width: 256px;
+            padding-left: 8px;
+            _padding-left: 5px;
+        }
+    }
+    .ad-widget-image-show-horizontal {
+        width: 254px;
+        height: 143px;
+        position: relative;
+        
+        .ec-img-container,
+        .ec-img-container a,
+        .ec-img-container a img {
+            width: 254px;
+            height: 143px;
+            display: inline-block;
+            border: none;
+        }
+        .ec-link-list {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            li{
+                width: 20px;
+                height: 6px;
+                margin-left: 2px;
+                a {
+                    disploy: none;
+                }
+                &.ec-current {
+                    border: 1px solid #2C99FE;
+                }
+            }
+            .ec-o0 {
+                background: #fff;
+                border: 1px solid #dadada;
+            }
+            .ec-o1 {
+                background: #E47732;
+                border: 1px solid #E47732;
+            }
+            .ec-o2 {
+                background: #BC272B;
+                border: 1px solid #BC272B;
+            }
+            .ec-o3 {
+                background: #B6B6B6;
+                border: 1px solid #B6B6B6;
+            }
+            .ec-o4 {
+                background: #5A5657;
+                border: 1px solid #5A5657;
+            }
+            .ec-o5 {
+                background: #000;
+                border: 1px solid #000;
+            }
+            .ec-o6 {
+                background: #847E72;
+                border: 1px solid #847E72;
+            }
+            
+        }
+    }
+    .ad-widget-small-head {
+        padding-left: 2px;
+        .ec-description {
+            font-size: 12px;
+            line-height: 19px;
+        }
+    }
+    .ad-widget-button {
+        width: 85px;
+        height: 26px;
+        margin: 6px 0 9px 2px;
+    }
+    .ec-bg {
+        display: none;
+    }
+    .ad-widget-image-normal {
+        padding: 2px;
+        a,
+        img{
+            width: 78px;
+            height: 43px;
+            display: block;
+            border: none;
+        }
+        a {
+            margin-right: 10px;
+            &.ec-last {
+                margin-right: 0;
+            }
+        }
+        span {
+            cursor: pointer;
+            position: absolute;
+            display: none;
+            width: 78px;
+            height: 43px;
+            line-height: 43px;
+            top: 0;
+            left: 0;
+            color: #FF8311;
+            .opacity(100);
+            z-index: 110;
+            
+            i {
+                font-size: 10px;
+                font-style: normal;
+            }
+        }
+        .ec-opacity-bg {
+            cursor: pointer;
+            position: absolute;
+            display: none;
+            width: 78px;
+            height: 43px;
+            line-height: 43px;
+            border: 2px solid #FF8311;
+            top: -2px;
+            left: -2px;
+            background: #000;
+            .opacity(50);
+            z-index: 100;
+        }
+        a.ec-hover {
+            span,
+            .ec-opacity-bg {
+                display: block;
+            }
+        }
+    }
+    .ad-widget-section {
+        margin-top: 6px;
+        li {
+            margin-bottom: 3px;
+            img {
+                margin-right: 3px;
+                vertical-align: baseline;
+            }
+            p {
+                margin-top: 2px;
+                margin-left: 20px;
+                a {
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .ad-widget-button-group {
+        background: #828282;
+        padding: 5px 0;
+        margin-top: 6px;
+        tr td {
+            border: none;
+            height: 16px;
+            a {
+                color: #fff;
+                font-size: 12px;
+                display: block;
+                border: none;
+                border-right: 1px solid #fff;
+                text-decoration: none;
+                background: transparent;
+                height: 13px;
+                line-height: 13px;
+                *height: 15px;
+                *line-height: 15px;
+                margin: 1px 0 2px 0;
+                *margin: 0 0 1px 0;
+            }
+        }
+        .ec-last {
+            a {
+                border-right: none;
+            }
+        }
+    }
+
+    .ad-widget-small-weibo {
+        margin-top: 9px;
+        padding-top: 6px;
+        border-top: 1px solid #e1e1e1;
+        position: relative;
+        legend {
+            margin-left: -900px;
+        }
+        .ec-weibo-head {
+            height: 20px;
+            padding-top: 2px;
+        }
+        .ec-name {
+            color: #0000cc;
+            font-weight: normal;
+            font-size: 14px;
+            padding-right: 20px;
+        }
+        .ec-follow {
+            float: right;
+            width: 66px;
+            height: 22px;
+        }
+        .ec-text {
+            height: 13px;
+            *height: 15px;
+            line-height: 1;
+            *line-height: 15px;
+            padding: 0px 10px;
+            margin-top: 3px;
+            *margin-top: 2px;
+            width: auto;
+            color: #008100;
+            span {
+                color: #008100;
+            }
+        }
+        .ec-seprate {
+            padding: 0px 10px;
+            width: auto;
+            color: #008100;
+            span {
+                color: #008100;
+            }
+        }
+        .ec-context {
+            color: #000000;
+            .ec-weibo-text {
+                height: auto;
+                overflow: hidden;
+                line-height: 18px;
+            }
+        }
+        .ec-datetime {
+            color: #999;
+            span {
+                color: #999;
+            }
+        }
+        .ec-rightbtn {
+            height: 20px;
+            div,a{
+                height: 13px;
+                line-height: 13px;
+                *height: 15px;
+                *line-height: 15px;
+                margin: 3px 0 4px 0;
+                *margin: 2px 0 3px 0;
+                color: #008100;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,266 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/plusbox/plusbox.less ~ 2012/09/26 17:55:39
+ * @author wangdawei04@baidu.com (wangdawei)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * plusbox样式文件
+ **/
+
+@import-once "mixins.less";
+
+.ad-widget-plusbox-plusbox {
+    font: 12px/1.5 arial,sans-serif;
+
+    @item_width : 150px;
+    @margin_right: 20px;
+    @item_count : 3;
+
+    .ec-icon {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+
+    .ec-icon-close,
+    .ec-icon-expand {
+        background: url(//bs.baidu.com/adtest/ebfa5222ffa531437b04b8d4658252e1.png) 0 0 no-repeat;
+        width: 14px;
+        height: 14px;
+    }
+
+    .ec-icon-expand {
+        background-position: 0 -14px;
+    }
+
+    .ec-icon-address {
+        background: url(//bs.baidu.com/adtest/2bce5bd596be80c7c85327f08c14cde4.png) 0 0 no-repeat;
+        width: 9px;
+        height: 14px;
+    }
+
+    .ec-icon-zhe,
+    .ec-icon-hui {
+        width: 25px;
+        height: 25px;
+    }
+    .ec-icon-zhe {
+        background: url(//bs.baidu.com/adtest/b70f96517f85b5d4fb3f715f898cb60d.gif) 0 0 no-repeat;
+    }
+    .ec-icon-hui {
+        background: url(//bs.baidu.com/adtest/f7f9b81daa68aa54d017789c86215c33.gif) 0 0 no-repeat;
+    }
+
+    .ec-plusbox-bar {
+        .gain-bfc();
+        cursor: pointer;
+        margin-bottom: 2px;
+
+        .ec-icon {
+            float: left;
+            margin-top: 2px;
+            margin-right: 3px;
+        }
+
+        a {
+            font-weight: bold;
+            float: left;
+        }
+        em {
+            font-style: normal;
+            color: #cd0001; 
+        }
+
+        .ec-slogan {
+            color: #666;
+        }
+    }
+
+    .ec-merchant {
+        .gain-bfc();
+        margin-left: 5px;
+        margin-bottom: 3px;
+
+        .ec-logo {
+            float: left;
+            img {
+                float: left;
+            }
+
+            .ec-slogan {
+                float: left;
+                margin-left: 10px;
+                margin-top: 2px;
+                color: #666;
+            }
+        }
+
+        .ec-promotion {
+            float: right;
+            margin-right: 18px;
+            margin-top: 2px;
+            a {
+                color: #666;
+            }
+        }
+    }
+
+    .ec-plusbox-content {
+        background: url(//bs.baidu.com/adtest/7c551efaaf72da91d4e4bc61dc1e133f.png) 0 0 repeat-x;
+        padding-top: 5px;
+        width: @item_width * @item_count + (@item_count) * @margin_right;
+    }
+
+    .ec-plusbox-items {
+        .gain-bfc();
+        margin-right: -@margin_right;
+    }
+
+    .ec-plusbox-item {
+        float: left;
+        width: @item_width;
+        margin-right: @margin_right;
+
+        a {
+            color: #00c;
+        }
+
+        .ec-figure {
+            display: block;
+            zoom: 1;
+            position: relative;
+            height: 90px;
+            &:hover {
+                // @see //ued.taobao.com/blog/2007/03/05/ie6-hover-bug/
+                border: none;
+                .ec-tip {
+                    display: block;
+                }
+            }
+        }
+
+        .ec-tip {
+            padding: 0 2px;
+            width: @item_width - 6;
+            height: 15px;
+            line-height: 15px;
+            overflow: hidden;
+
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            *background-color: #000;
+            *filter: alpha(opacity=60);
+
+            display: none;
+            position: absolute;
+            bottom: 1px;
+            left: 1px;
+        }
+
+        .ec-icon {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+        }
+
+        img {
+            border: none;
+            width: @item_width - 2;
+            height: 88px;
+            border: 1px solid #c3c3c3;
+            display: block;
+        }
+
+        .ec-price {
+            color: #cd0001;
+            text-align: center;
+        }
+
+        h3 {
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+            text-align: center;
+            font-weight: normal;
+            height: 18px;
+            width: @item_width;
+            .text-overflow();
+        }
+
+        address {
+            font-style: normal;
+            color: #000;
+            text-align: center;
+            height: 18px;
+            width: @item_width;
+            .text-overflow();
+            .ec-icon {
+                position: relative;
+                top: 2px;
+                margin-right: 4px;
+            }
+        }
+
+        .ec-ratings {
+            text-align: center;
+        }
+
+        .ec-rating {
+            background: url(//bs.baidu.com/adtest/b4acb8a9282e1c52b2ca5d93252febf8.png) no-repeat;
+            width: 72px;
+            height: 11px;
+            font-size: 0;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            margin: 0 auto;
+        }
+        .ec-rating-5 {
+            background-position: 0 0px;
+        }
+        .ec-rating-4 {
+            background-position: 0 -11px;
+        }
+        .ec-rating-3 {
+            background-position: 0 -22px;
+        }
+        .ec-rating-2 {
+            background-position: 0 -33px;
+        }
+        .ec-rating-1 {
+            background-position: 0 -44px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

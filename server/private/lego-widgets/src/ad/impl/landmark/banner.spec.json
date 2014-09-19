@@ -1,0 +1,42 @@
+[
+    {
+        "name": "image",
+        "displayName": "小Banner",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "image_url",
+                "displayName": "Banner图片",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 259,
+                    "height": 75,
+                    "maxSize": 20,
+                    "ext": "jpg,png"
+                },
+                "tip": "http://ecma.bdimg.com/adtest/f368f9646957d1a0e7d7e630ea3f4fd0.png",
+                "multiline": false
+            },
+            {
+                "name": "image_rcv_url",
+                "displayName": "Banner跳转URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    }
+]

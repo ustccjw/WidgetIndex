@@ -1,0 +1,39 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/qiang1212.less ~ 2013/11/07 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * qiang1212样式文件
+ **/
+.ad-widget-imageplus-qiang1212 {
+  font: 12px/1.5 arial, sans-serif;
+  position: relative;
+  padding: 1px;
+  background-color: #FFF;
+}
+.ad-widget-imageplus-qiang1212 img {
+  display: block;
+  width: 271px !important;
+  height: 134px !important;
+  border: none;
+  position: static !important;
+}
+.ad-widget-imageplus-qiang1212-redirect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  _left: -1px;
+  z-index: 2;
+  width: 273px;
+  height: 136px;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

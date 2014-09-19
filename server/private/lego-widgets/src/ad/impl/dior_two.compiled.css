@@ -1,0 +1,136 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: dior_two.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dior_two.less ~ 2012/11/27 13:04:08
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * dior样式文件
+ **/
+#canvas {
+  width: 515px;
+  background: #f1f5fc;
+  padding: 10px;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+}
+#canvas .ad-widget-video {
+  width: 220px;
+  float: left;
+}
+#canvas .ad-widget-small-head {
+  margin-left: 230px;
+  width: 285px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+  font-weight: 900;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #666;
+  font-family: arial, "宋体", sans-serif;
+}
+#canvas .ad-widget-small-head .ec-description a {
+  color: #0000cc;
+}
+#canvas .ad-widget-small-head .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-section {
+  margin: 10px 0px 14px 230px;
+  width: 285px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-section li {
+  margin: 0px;
+  margin-top: 10px;
+}
+#canvas .ad-widget-section li img {
+  vertical-align: middle;
+}
+#canvas .ec-tab-head {
+  border-left: 1px solid #C8DAF0;
+  margin: 0px;
+}
+#canvas .ec-tab-head li {
+  margin: 0px;
+}
+#canvas .ec-tab-head li a {
+  border-left: 0px;
+  background: #f4f8fc;
+  border-bottom: 1px solid #C8DAF0;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+#canvas .ec-tab-body {
+  background: #fff;
+  border: 1px solid #C8DAF0;
+  border-top: 0px;
+}
+#canvas .ec-tab-body .ec-tabcon .ec-tabcon {
+  display: none;
+}
+#canvas .ad-widget-small-weibo {
+  padding: 8px 10px 5px 10px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head a,
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-text {
+  height: 22px;
+  line-height: 22px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-name {
+  font-weight: 900;
+  padding-right: 16px;
+}
+#canvas .ad-widget-small-weibo .ec-weibo-head .ec-follow {
+  width: 66px;
+  float: right;
+}
+#canvas .ad-widget-small-weibo .ec-rightbtn a {
+  color: #008000;
+}
+#canvas .ad-widget-qq-weibo {
+  padding: 8px 0px 5px 0px;
+}
+#canvas .ad-widget-qq-weibo fieldset {
+  display: none;
+}
+#canvas .ad-widget-button-group {
+  background-color: transparent;
+  padding: 0px;
+  margin-top: 10px;
+}
+#canvas .ad-widget-button-group tr {
+  height: 22px;
+}
+#canvas .ad-widget-button-group td {
+  height: 22px;
+  line-height: 22px;
+  border: 0px;
+  text-align: left;
+}
+#canvas .ad-widget-button-group td a {
+  color: #0000cc;
+  display: block;
+  margin: 0px 4px;
+  text-decoration: none;
+  border: 1px solid #C8DAF0;
+  background: #fff;
+  text-align: center;
+}
+#canvas .ad-widget-button-group .ec-first a {
+  margin-left: 0px;
+}
+#canvas .ad-widget-button-group .ec-last a {
+  margin-right: 0px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

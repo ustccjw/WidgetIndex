@@ -1,0 +1,343 @@
+{
+    "contents": ["ad.widget.AllSpec"],
+    "userPrefs": [
+        {
+            "name": "html_test_rcv_html",
+            "displayName": "富文本",
+            "defaultValue": "",
+            "tip": "标题为6~30个汉字，核心<em>飘红词</em>最多可选6个汉字",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype": "HTML",
+            "multiline": false,
+            "rules": {
+                "required" : true,
+                "minTextByteLength": 12,
+                "maxTextByteLength": 60,
+                "tagList" : {
+                    "em": {
+                        "maxTextByteLength": 12,
+                        "minCount": 1,
+                        "maxCount": 1
+                    },
+                    "a": {
+                        "maxTextByteLength": 12,
+                        "maxCount": 5
+                    }
+                }
+            },
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": ["emphasize", "link"]
+                },
+                "tagList" : {
+                    "em": {
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    },
+                    "a": {
+                        "attributeRules": {
+                            "target": {
+                                "isRequired": false,
+                                "isAllowNoValue": false,
+                                "defaultValue": "_blank"
+                            },
+                            "href": {
+                                "isRequired": true,
+                                "isAllowNoValue": false,
+                                "valueType": "url"
+                            }
+                        },
+                        "requiredAttributes": [
+                            "target",
+                            "href"
+                        ],
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    }
+                }
+            }
+        },
+        {
+            "name": "string_test",
+            "displayName": "字符串",
+            "defaultValue": "http://",
+            "tip": "",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype": "STRING",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "stringType": "URL"
+            },
+            "extraAttr": {}
+        },
+        {
+            "name": "boolean_test",
+            "displayName": "BOOLEAN测试",
+            "defaultValue": "1",
+            "tip": "",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype": "BOOL",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name":"enum_test",
+            "displayName":"枚举类型",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype":"ENUM",
+            "defaultValue":"gbk",
+            "rules":{},
+            "extraAttr":{},
+            "enumValues":[
+                {
+                    "value":"utf-8",
+                    "displayValue":"UTF-8编码"
+                },
+                {
+                    "value":"gbk",
+                    "displayValue":"GBK编码"
+                }
+            ]
+        },
+        {
+            "name": "hidden_test",
+            "displayName": "隐藏参数",
+            "defaultValue": "1238676432187",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name":"upload_test",
+            "displayName":"上传",
+            "defaultValue":"",
+            "tip":"",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype":"UPLOAD",
+            "rules":{
+                "required":true
+            },
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "width":75,
+                "height":75,
+                "maxSize":5,
+                "ext":"jpg,gif,png"
+            }
+        },
+        {
+            "name":"alternative_test",
+            "displayName":"可选表单",
+            "datatype":"ALTERNATIVE",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "defaultValue":"upload",
+            "rules":{},
+            "extraAttr":{},
+            "enumValues":[{
+                "value":"upload",
+                "displayValue":"上传背景",
+                "items":[{
+                    "name":"upload_in_alternative_test",
+                    "displayName":"上传",
+                    "defaultValue":"",
+                    "tip":"",
+                    "datatype":"UPLOAD",
+                    "rules":{
+                        "required":true
+                    },
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "width":75,
+                        "height":75,
+                        "maxSize":5,
+                        "ext":"jpg,gif,png"
+                    }
+                }]
+            }, {
+                "value":"color",
+                "displayValue":"背景色",
+                "items":[{
+                    "name": "background_color",
+                    "displayName": "背景颜色",
+                    "defaultValue": "ffffff",
+                    "tip": "颜色值为6位十六进制数",
+                    "datatype": "STRING",
+                    "multiline": false,
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 6,
+                        "minByteLength": 6
+                    },
+                    "extraAttr": {}
+                }]
+            }]
+        },
+        {
+            "name":"grid_test",
+            "displayName":"表格",
+            "defaultValue":"",
+            "tip":"",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype":"GRID",
+            "multiline":false,
+            "rules":{},
+            "extraAttr":{
+                "rowRange" : [2, 9],
+                "colRange" : [3, 5]
+            },
+            "headCell":[
+                {
+                    "name": "string_test",
+                    "displayName": "字符串",
+                    "defaultValue": "http://",
+                    "tip": "",
+                    "nameTip": "-name-tip-",
+                    "descriptionTip": "-description-tip-",
+                    "datatype": "STRING",
+                    "multiline": false,
+                    "rules": {
+                        "required": true,
+                        "stringType": "URL"
+                    },
+                    "extraAttr": {}
+                }
+            ],
+            "dataCell":[
+                {
+                    "name": "string_test",
+                    "displayName": "字符串",
+                    "defaultValue": "http://",
+                    "tip": "",
+                    "nameTip": "-name-tip-",
+                    "descriptionTip": "-description-tip-",
+                    "datatype": "STRING",
+                    "multiline": false,
+                    "rules": {
+                        "required": true,
+                        "stringType": "URL"
+                    },
+                    "extraAttr": {}
+                },
+                {
+                    "name":"upload_test",
+                    "displayName":"上传",
+                    "defaultValue":"",
+                    "tip":"",
+                    "datatype":"UPLOAD",
+                    "rules":{
+                        "required":true
+                    },
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "width":75,
+                        "height":75,
+                        "maxSize":5,
+                        "ext":"jpg,gif,png"
+                    }
+                }
+            ]
+        },
+        {
+            "name":"object_test",
+            "displayName":"对象",
+            "defaultValue":"",
+            "tip": "",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype":"OBJECT",
+            "rules":{},
+            "extraAttr":{},
+            "items":[
+                {
+                    "name":"string_in_object_test",
+                    "displayName":"按钮文本",
+                    "defaultValue":"",
+                    "tip": "",
+                    "nameTip": "-name-tip-",
+                    "descriptionTip": "-description-tip-",
+                    "datatype":"STRING",
+                    "multiline":false,
+                    "rules":{
+                        "required":true,
+                        "maxByteLength":8
+                    },
+                    "extraAttr":{}
+                },
+                {
+                    "name":"upload_in_object_test",
+                    "displayName":"上传",
+                    "defaultValue":"",
+                    "tip":"",
+                    "datatype":"UPLOAD",
+                    "rules":{
+                        "required":true
+                    },
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "width":75,
+                        "height":75,
+                        "maxSize":5,
+                        "ext":"jpg,gif,png"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "list_test",
+            "displayName": "列表",
+            "defaultValue": "",
+            "display": "",
+            "tip": "",
+            "nameTip": "-name-tip-",
+            "descriptionTip": "-description-tip-",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 3,
+                "maxCount": 5
+            },
+            "extraAttr": {},
+            "items": [
+                {
+                    "name": "string_in_list_test",
+                    "displayName": "文字",
+                    "defaultValue": "",
+                    "tip": "20字节内",
+                    "nameTip": "-name-tip-",
+                    "descriptionTip": "-description-tip-",
+                    "datatype": "STRING",
+                    "multiline": false,
+                    "rules": {
+                        "required": true,
+                        "maxByteLength" : 20
+                    },
+                    "extraAttr": {}
+                },
+                {
+                    "name":"upload_in_object_test",
+                    "displayName":"上传",
+                    "defaultValue":"",
+                    "tip":"",
+                    "datatype":"UPLOAD",
+                    "rules":{
+                        "required":true
+                    },
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "width":75,
+                        "height":75,
+                        "maxSize":5,
+                        "ext":"jpg,gif,png"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+
+/**
+ * src/ad/widget/business_app/app_list.less ~ 2013/03/27 16:24:50
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $
+ * @description
+ * app_list样式文件
+ **/
+ .ad-widget-business_app-app-list {
+    font: 12px/1.5 arial, sans-serif;
+    width: 510px;
+    .float(@d) {
+        float: @d;
+        _display: inline;
+    }
+    ul, li, div, p {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        overflow: hidden;
+        _zoom: 1;
+    }
+    li {
+        .float(left);
+        margin-bottom: 30px;
+        width: 170px;
+        height: 71px;
+        overflow: hidden;
+        list-style: none;
+    }
+    .ec-app-list-icon {
+        position: relative;
+        z-index: 1;
+        .float(left);
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        cursor: pointer;
+        zoom: 1;
+        img {
+            display: block;
+            margin: 0 3px;
+            width: 64px;
+            height: 64px;
+        }
+        span {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            z-index: 1;
+            top: -1px;
+            _top: -3px;
+            left: 0;
+            background: url(//bs.baidu.com/adtest/54d2351822de45ccfce2fed02b54416e.png) 0 -2px;
+            _background: 0;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="//bs.baidu.com/adtest/54d2351822de45ccfce2fed02b54416e.png");
+            zoom: 1;
+        }
+        &.ec-app-list-icon-hover span {
+            background: url(//bs.baidu.com/adtest/8347fbf6413eb7693e893b2f5a56f7ca.png) 0 -2px;
+            _background: 0;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="//bs.baidu.com/adtest/8347fbf6413eb7693e893b2f5a56f7ca.png");
+        }
+    }
+    .ec-app-list-info {
+        .float(left);
+        width: 90px;
+        padding-left: 10px;
+        overflow: hidden;
+        zoom: 1;
+    }
+    .ec-app-list-title-box {
+        margin: 0 0 2px 0;
+        height: 20px;
+        line-height: 20px;
+        .ec-app-list-title {
+            display: inline;
+            font-size: 14px;
+            font-weight: normal;
+            color: #0064d3;
+            cursor: pointer;
+            &.ec-app-list-title-hover {
+                color: #FFF;
+                background-color: #06C;
+            }
+        }
+    }
+    .ec-app-list-desc, .ec-app-list-from {
+        color: #9d9d9d;
+        line-height: 20px;
+    }
+    .ec-app-list-from {
+        a {
+            color: #9d9d9d;
+            text-decoration: none;
+            &:hover {
+                color: #0064d3;
+            }
+        }
+    }
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

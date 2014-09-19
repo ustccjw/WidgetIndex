@@ -1,0 +1,1204 @@
+[
+    {
+        "name": "card",
+        "displayName": "卡片模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 12,
+                    "maxTextByteLength": 55,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 4,
+                            "maxTextByteLength": 20,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最少6个汉字，最多27个汉字",
+                "multiline": false
+            },
+            {
+                "name": "title_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "display_official_site_icon",
+                "datatype": "BOOL",
+                "displayName": "是否显示“官网”字样",
+                "defaultValue": true,
+                "display": "none",
+                "rules": {}
+            },
+            {
+                "name": "logo_img",
+                "displayName": "LOGO",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 121,
+                    "height": 91,
+                    "maxSize": 10,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "logo_rcv_url",
+                "displayName": "LOGO跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "description",
+                "displayName": "描述",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 4,
+                    "maxByteLength": 52
+                },
+                "extraAttr": {},
+                "multiline": true
+            },
+            {
+                "name": "intro",
+                "displayName": "简介",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 4,
+                    "maxByteLength": 46
+                },
+                "extraAttr": {},
+                "multiline": true
+            },
+            {
+                "name": "address",
+                "displayName": "地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 4,
+                    "maxByteLength": 60
+                },
+                "extraAttr": {},
+                "multiline": false
+            },
+            {
+                "name": "links",
+                "displayName": "短链",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 4,
+                    "maxCount": 4
+                },
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文字",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "minByteLength": 4,
+                            "maxByteLength": 26
+                        },
+                        "extraAttr": {},
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 1024
+                        },
+                        "extraAttr": {},
+                        "tip": "http://",
+                        "multiline": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "table",
+        "displayName": "表格模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 4,
+                    "maxTextByteLength": 40,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 4,
+                            "maxTextByteLength": 40,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最多20个汉字",
+                "multiline": false
+            },
+            {
+                "name": "title_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "tables",
+                "displayName": "表格内容",
+                "defaultValue": "",
+                "datatype": "ALTERNATIVE",
+                "rules": {},
+                "extraAttr": {},
+                "enumValues": [
+                    {
+                        "value": "course",
+                        "displayValue": "特色课程介绍",
+                        "items": [
+                            {
+                                "name": "consult_rcv_url",
+                                "displayName": "咨询跳转地址",
+                                "defaultValue": "",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "required": true,
+                                    "maxByteLength": 1024
+                                },
+                                "extraAttr": {},
+                                "tip": "http://",
+                                "multiline": false
+                            },
+                            {
+                                "name": "class",
+                                "displayName": "class",
+                                "defaultValue": "course",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "title",
+                                "displayName": "title",
+                                "defaultValue": "特色课程介绍",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "head",
+                                "displayName": "table-head",
+                                "datatype": "LIST",
+                                "defaultValue": "[{\"class\":\"teacher\",\"name\":\"特色课程\"},{\"class\":\"course\",\"name\":\"课程类型\"},{\"class\":\"intro\",\"name\":\"授课内容\"},{\"class\":\"campus\",\"name\":\"学制/学时\"},{\"class\":\"consult\",\"name\":\"联系方式\"}]",
+                                "display": "none",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "class",
+                                        "displayName": "class",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    },
+                                    {
+                                        "name": "name",
+                                        "displayName": "name",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "body",
+                                "displayName": "行",
+                                "datatype": "LIST",
+                                "rules": {
+                                    "minCount": 1,
+                                    "maxCount": 10
+                                },
+                                "items": [
+                                    {
+                                        "name": "cell-1",
+                                        "displayName": "table-cell-1",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "teacher",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "特色课程",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 8
+                                                },
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "课程跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": true,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-2",
+                                        "displayName": "table-cell-2",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "course",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "课程类型",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 12
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-3",
+                                        "displayName": "table-cell-3",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "intro",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "授课内容",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 26
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-4",
+                                        "displayName": "table-cell-4",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "campus",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "学制/学时",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 12
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-5",
+                                        "displayName": "table-cell-5",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "consult",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "consult",
+                                                "defaultValue": "可咨询",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "咨询跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "HIDDEN",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": false,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "major",
+                        "displayValue": "特色专业列表",
+                        "items": [
+                            {
+                                "name": "consult_rcv_url",
+                                "displayName": "咨询跳转地址",
+                                "defaultValue": "",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "required": true,
+                                    "maxByteLength": 1024
+                                },
+                                "extraAttr": {},
+                                "tip": "http://",
+                                "multiline": false
+                            },
+                            {
+                                "name": "class",
+                                "displayName": "class",
+                                "defaultValue": "major",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "title",
+                                "displayName": "title",
+                                "defaultValue": "特色专业列表",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "head",
+                                "displayName": "table-head",
+                                "datatype": "LIST",
+                                "defaultValue": "[{\"class\":\"teacher\",\"name\":\"特色专业\"},{\"class\":\"course\",\"name\":\"简介\"},{\"class\":\"intro\",\"name\":\"适合人群\"},{\"class\":\"campus\",\"name\":\"学制/学时\"},{\"class\":\"consult\",\"name\":\"联系方式\"}]",
+                                "display": "none",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "class",
+                                        "displayName": "class",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    },
+                                    {
+                                        "name": "name",
+                                        "displayName": "name",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "body",
+                                "displayName": "行",
+                                "datatype": "LIST",
+                                "rules": {
+                                    "minCount": 1,
+                                    "maxCount": 10
+                                },
+                                "items": [
+                                    {
+                                        "name": "cell-1",
+                                        "displayName": "table-cell-1",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "teacher",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "特色专业",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 8
+                                                },
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "专业跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": true,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-2",
+                                        "displayName": "table-cell-2",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "course",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "简介",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 12
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-3",
+                                        "displayName": "table-cell-3",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "intro",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "适合人群",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 26
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-4",
+                                        "displayName": "table-cell-4",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "campus",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "学制/学时",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 12
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-5",
+                                        "displayName": "table-cell-5",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "consult",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "consult",
+                                                "defaultValue": "可咨询",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "咨询跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "HIDDEN",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": false,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "teacher",
+                        "displayValue": "优秀教师列表",
+                        "items": [
+                            {
+                                "name": "consult_rcv_url",
+                                "displayName": "咨询跳转地址",
+                                "defaultValue": "",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "required": true,
+                                    "maxByteLength": 1024
+                                },
+                                "extraAttr": {},
+                                "tip": "http://",
+                                "multiline": false
+                            },
+                            {
+                                "name": "class",
+                                "displayName": "class",
+                                "defaultValue": "teacher",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "title",
+                                "displayName": "title",
+                                "defaultValue": "优秀教师列表",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "head",
+                                "displayName": "table-head",
+                                "datatype": "LIST",
+                                "defaultValue": "[{\"class\":\"teacher\",\"name\":\"优秀教师\"},{\"class\":\"course\",\"name\":\"教授课程\"},{\"class\":\"intro\",\"name\":\"教师简介\"},{\"class\":\"campus\",\"name\":\"所属校区\"},{\"class\":\"consult\",\"name\":\"联系方式\"}]",
+                                "display": "none",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "class",
+                                        "displayName": "class",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    },
+                                    {
+                                        "name": "name",
+                                        "displayName": "name",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "body",
+                                "displayName": "行",
+                                "datatype": "LIST",
+                                "display": "none",
+                                "rules": {
+                                    "minCount": 1,
+                                    "maxCount": 10
+                                },
+                                "items": [
+                                    {
+                                        "name": "cell-1",
+                                        "displayName": "table-cell-1",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "teacher",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "优秀教师",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 8
+                                                },
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "教师跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": true,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-2",
+                                        "displayName": "table-cell-2",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "course",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "教授课程",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 12
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-3",
+                                        "displayName": "table-cell-3",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "intro",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "教师简介",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 26
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-4",
+                                        "displayName": "table-cell-4",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "campus",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "所属校区",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 12
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-5",
+                                        "displayName": "table-cell-5",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "consult",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "consult",
+                                                "defaultValue": "可咨询",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "咨询跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "HIDDEN",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": false,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "campus",
+                        "displayValue": "校区分布列表",
+                        "items": [
+                            {
+                                "name": "consult_rcv_url",
+                                "displayName": "咨询跳转地址",
+                                "defaultValue": "",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "required": true,
+                                    "maxByteLength": 1024
+                                },
+                                "extraAttr": {},
+                                "tip": "http://",
+                                "multiline": false
+                            },
+                            {
+                                "name": "class",
+                                "displayName": "class",
+                                "defaultValue": "campus",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "title",
+                                "displayName": "title",
+                                "defaultValue": "校区分布列表",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {}
+                            },
+                            {
+                                "name": "head",
+                                "displayName": "table-head",
+                                "datatype": "LIST",
+                                "defaultValue": "[{\"class\":\"teacher\",\"name\":\"校区分布\"},{\"class\":\"course\",\"name\":\"校区课程简介\"},{\"class\":\"intro\",\"name\":\"校区地址\"},{\"class\":\"consult\",\"name\":\"联系方式\"}]",
+                                "display": "none",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "class",
+                                        "displayName": "class",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    },
+                                    {
+                                        "name": "name",
+                                        "displayName": "name",
+                                        "defaultValue": "",
+                                        "datatype": "STRING",
+                                        "rules": {},
+                                        "extraAttr": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "body",
+                                "displayName": "行",
+                                "datatype": "LIST",
+                                "rules": {
+                                    "minCount": 1,
+                                    "maxCount": 10
+                                },
+                                "items": [
+                                    {
+                                        "name": "cell-1",
+                                        "displayName": "table-cell-1",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "teacher",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "校区分布",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 10
+                                                },
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "校区跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": true,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-2",
+                                        "displayName": "table-cell-2",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "course",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "校区课程简介",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 2,
+                                                    "maxByteLength": 24
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-3",
+                                        "displayName": "table-cell-3",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "intro",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "校区地址",
+                                                "defaultValue": "",
+                                                "datatype": "STRING",
+                                                "rules": {
+                                                    "required": true,
+                                                    "minByteLength": 4
+                                                },
+                                                "extraAttr": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "cell-5",
+                                        "displayName": "table-cell-5",
+                                        "datatype": "OBJECT",
+                                        "rules": {},
+                                        "items": [
+                                            {
+                                                "name": "class",
+                                                "displayName": "class",
+                                                "defaultValue": "consult",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name",
+                                                "displayName": "consult",
+                                                "defaultValue": "可咨询",
+                                                "datatype": "HIDDEN",
+                                                "rules": {},
+                                                "extraAttr": {}
+                                            },
+                                            {
+                                                "name": "name_rcv_url",
+                                                "displayName": "咨询跳转地址",
+                                                "defaultValue": "",
+                                                "datatype": "HIDDEN",
+                                                "rules": {
+                                                    "stringType": "URL",
+                                                    "required": false,
+                                                    "maxByteLength": 1024
+                                                },
+                                                "extraAttr": {},
+                                                "tip": "http://",
+                                                "multiline": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "site",
+                "displayName": "网址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 32
+                },
+                "extraAttr": {
+                    "tags": [
+                        "SHOW_URL"
+                    ]
+                },
+                "tip": "www.",
+                "multiline": false
+            },
+            {
+                "name": "sign",
+                "displayName": "sign",
+                "datatype": "HIDDEN",
+                "nameTip": "",
+                "descriptionTip": "这里应该显示正确的vsign",
+                "extraAttr": {
+                    "tags": [
+                        "VSIGN"
+                    ]
+                },
+                "multiline": false,
+                "display": ""
+            }
+        ]
+    },
+    {
+        "name": "ader_info",
+        "displayName": "官网V认证请求URL",
+        "defaultValue": "",
+        "datatype": "HIDDEN",
+        "rules": {
+            "required": true,
+            "regex": {
+                "pattern": "^(http:\/\/10.)|(http:\/\/gx.baidu.com)",
+                "errorText": "不是合法的URL",
+                "modifiers": "i"
+            }
+        }
+    }
+]

@@ -1,0 +1,106 @@
+<!doctype html>
+<!--
+/***************************************************************************
+ *
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.app.html 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/widget/zhidao_wise/detail_container_a.app.html ~ 2014/02/17 16:55:31
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description
+ *
+ **/
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>[AD]ad.widget.zhidao_wise.DetailContainerA</title>
+    <script type="text/javascript" src="../../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script type="text/javascript" src="../../../../assets/js/mustache.js"></script>
+    <script type="text/javascript" src="../../../base.js"></script>
+    <script type="text/javascript" src="detail_container_a.config.js"></script>
+    <script type="text/javascript">
+        goog.require('ad.Debug');
+        goog.require('ad.Material');
+        goog.require('ad.widget.wireless.Tab');
+        goog.require('ad.widget.wireless.ProductList');
+        goog.require('ad.widget.zhidao_wise.DetailContainerA');
+    </script>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+ad.Debug(function() {
+    var material = new ad.Material('ec-ma-8964');
+    var detailCont = new ad.widget.zhidao_wise.DetailContainerA(WIDGET_CONFIG);
+    var tabConfig = {
+        'default_index' : 0, //默认载入的tab，从0开始
+        'options': [{
+            'tab_title': '立即试用'
+        },{
+            'tab_title': '独家优惠'
+        },{
+            'tab_title': '名人推荐'
+        }]
+    };
+    var tab = new ad.widget.wireless.Tab(tabConfig);
+    var pdConf1 = {
+        options: [{
+            'image': '//bs.baidu.com/adcoup-mat/32094935-363b-4c62-ba38-e0b0448c3481.png',
+            'rcv_url': 'http://www.baidu.com',
+            'title': '一二三四五',
+            'list': [{
+                'title': '一二三四五',
+                'rcv_url': 'http://cn.strawberrynet.com/?1'
+            }, {
+                'title': '一二三四五',
+                'rcv_url': 'http://cn.strawberrynet.com/?2'
+            }, {
+                'title': '一二三四五',
+                'rcv_url': 'http://cn.strawberrynet.com/?3'
+            }]
+        }, {
+            'image': '//bs.baidu.com/adcoup-mat/0face6c2-6447-4ca0-b476-cb66b4275c67.png',
+            'rcv_url': 'http://www.baidu.com',
+            'title': '一二三四五一二三四五',
+            'list': [{
+                'title': '一二三四五',
+                'rcv_url': 'http://cn.strawberrynet.com/?1'
+            }, {
+                'title': '一二三四五',
+                'rcv_url': 'http://cn.strawberrynet.com/?2'
+            }, {
+                'title': '一二三四五',
+                'rcv_url': 'http://cn.strawberrynet.com/?3'
+            }]
+        }]
+    };
+    var pdConf2 = baidu.object.clone(pdConf1);
+    var pdConf3 = baidu.object.clone(pdConf1);
+    pdConf2['options'][0]['title'] = '六七八九十';
+    pdConf3['options'][0]['title'] = '十一十二十';
+
+    var pd1 = new ad.widget.wireless.ProductList(pdConf1);
+    var pd2 = new ad.widget.wireless.ProductList(pdConf2);
+    var pd3 = new ad.widget.wireless.ProductList(pdConf3);
+    tab.setWidgets([pd1, pd2, pd3]);
+
+    //详细页
+    detailCont.setWidgets([tab]);
+
+    material.setWidgets(
+        [detailCont]
+    );
+    material.show();
+    material.initMonitor('www.baidu.com');
+
+    detailCont.checkViewport();
+});
+</script>
+</html>

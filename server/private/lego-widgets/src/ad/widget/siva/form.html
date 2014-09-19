@@ -1,0 +1,10 @@
+<!-- target:AD_ad_widget_siva_form -->
+<div class="ad-widget-siva ad-widget-siva-form">
+    <form id="{{#_id}}form{{/_id}}" class="ad-widget-siva-form-form">
+        {{#input_list}}
+        	<input maxlength="120" type="text" data-type="{{type}}" data-name="{{name}}" />
+        {{/input_list}}
+    </form>
+    <a href="{{{charge_rcv_url}}}" id="{{#_id}}submit{{/_id}}" class="ad-widget-siva-form-submit" target="_blank" title2="提交按钮">{{button_text}}</a>
+    <div id="{{#_id}}info{{/_id}}" class="ad-widget-siva-form-info"><img src="http://t11.baidu.com/it/u=1708578103,2344427960&fm=58"/><div>{{info_text}}</div></div>
+</div>

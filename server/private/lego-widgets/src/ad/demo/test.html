@@ -1,0 +1,49 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<title>Example</title> 
+<style> 
+#src > * 
+{ 
+float: left; 
+} 
+#target, #src > img 
+{ 
+border: thin solid black; 
+padding: 2px; 
+margin: 4px; 
+} 
+#target 
+{ 
+height: 123px; 
+width: 220px; 
+text-align: center; 
+display: table; 
+} 
+#target > p 
+{ 
+display: table-cell; 
+vertical-align: middle; 
+} 
+#target > img 
+{ 
+margin: 1px; 
+} 
+</style> 
+</head> 
+<body> 
+<div id="src"> 
+<img draggable="true" id="car1" src="img/1.jpg" alt="car1" /> 
+<img draggable="true" id="car2" src="img/2.jpg" alt="car2" /> 
+<img draggable="true" id="car3" src="img/3.jpg" alt="car3" /> 
+<div id="target"> 
+<p id="msg"> 
+drop here</p> 
+</div> 
+</div> 
+<script> 
+var src = document.getElementById("src"); 
+var target = document.getElementById("target"); 
+</script> 
+</body> 
+</html> 

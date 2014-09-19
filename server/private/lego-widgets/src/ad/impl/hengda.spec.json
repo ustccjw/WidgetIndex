@@ -1,0 +1,342 @@
+[
+    {
+        "name": "bg",
+        "displayName": "背景图片",
+        "tip": "http://dummyimage.com/540x400",
+        "datatype": "UPLOAD",
+        "display": "toggle-block",
+        "rules": {
+            "required": true
+        },
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "width": 540,
+            "height": 400,
+            "maxSize": 40,
+            "ext": "jpg"
+        }
+    },
+    {
+        "name": "logo",
+        "displayName": "右侧LOGO",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "image_rcv_url",
+                "displayName": "右侧LOGO链接地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 255
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "countdown1",
+        "displayName": "直播开始时间",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "endTime",
+                "displayName": "直播开始时间",
+                "defaultValue": "2014-05-07 19:30:00",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {}
+            },
+            {
+                "name": "displayText",
+                "displayName": "displayText",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "timeSeparator",
+                "displayName": "timeSeparator",
+                "defaultValue": "",
+                "datatype": "HIDDEN",
+                "rules": {},
+                "extraAttr": {}
+            },
+            {
+                "name": "displayDay",
+                "displayName": "displayDay",
+                "defaultValue": "false",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "displayDayUnit",
+                "displayName": "displayDayUnit",
+                "defaultValue": "false",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "displayTimeUnit",
+                "displayName": "displayTimeUnit",
+                "defaultValue": "false",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "countdown2",
+        "displayName": "直播结束时间",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "endTime",
+                "displayName": "直播结束时间",
+                "defaultValue": "2014-05-07 22:00:00",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {}
+            },
+            {
+                "name": "displayText",
+                "displayName": "displayText",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "timeSeparator",
+                "displayName": "timeSeparator",
+                "defaultValue": "",
+                "datatype": "HIDDEN",
+                "rules": {},
+                "extraAttr": {}
+            },
+            {
+                "name": "displayDay",
+                "displayName": "displayDay",
+                "defaultValue": "false",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "displayDayUnit",
+                "displayName": "displayDayUnit",
+                "defaultValue": "false",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "displayTimeUnit",
+                "displayName": "displayTimeUnit",
+                "defaultValue": "false",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "BOOL"
+                },
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "iframe",
+        "displayName": "直播页面",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "width",
+                "displayName": "width",
+                "defaultValue": "317",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "height",
+                "displayName": "height",
+                "defaultValue": "170",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "src",
+                "displayName": "直播页面地址",
+                "tip": "http://ecma.bdimg.com/lego-mat-offline/video/live/sina3.html",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxByteLength": 255
+                },
+                "extraAttr": {},
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "image",
+        "displayName": "直播结束图片",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "image_url",
+                "displayName": "直播结束图片",
+                "tip": "http://dummyimage.com/327x180",
+                "datatype": "UPLOAD",
+                "rules": {},
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 327,
+                    "height": 180,
+                    "maxSize": 30,
+                    "ext": "jpg"
+                }
+            },
+            {
+                "name": "image_rcv_url",
+                "displayName": "图片链接地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 255
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "links",
+        "displayName": "活动标语",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "按钮",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "rcv_url",
+                        "displayName": "活动标语链接地址",
+                        "tip": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 255
+                        }
+                    }
+                ],
+                "rules": {
+                    "minCount": 1,
+                    "maxCount": 1
+                },
+                "extraAttr": {
+                    "initialCount": 1
+                }
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "button",
+        "displayName": "加油按钮",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "top",
+                "displayName": "按钮垂直方向距离",
+                "defaultValue": "350",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "left",
+                "displayName": "按钮水平方向距离",
+                "defaultValue": "50",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            }
+        ],
+        "rules": {}
+    }
+]

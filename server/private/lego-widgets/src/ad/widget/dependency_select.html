@@ -1,0 +1,13 @@
+<!-- target:AD_ad_widget_dependency_select -->
+<div class="ad-widget ad-widget-dependency-select">
+    <div id="{{#_id}}select-con{{/_id}}" class="ec-select-con">
+        {{#dependency}}
+        <div class="ec-item">
+            {{#title}}
+            <span class="ec-title">{{title}}</span>&nbsp;
+            {{/title}}
+            <select id="{{#_id}}{{name}}{{/_id}}" name="{{name}}" class="ec-select-{{name}}"></select>
+        </div>
+        {{/dependency}}
+    </div>
+</div>

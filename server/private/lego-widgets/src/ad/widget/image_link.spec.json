@@ -1,0 +1,65 @@
+{
+    "contents": ["ad.widget.ImageLink"],
+    "userPrefs": [
+        {
+            "name": "src",
+            "displayName": "图片",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "width": 140,
+                "height": 98,
+                "maxSize": 20,
+                "ext": "jpg,png"
+            }
+        },
+        {
+            "name": "rcv_url",
+            "displayName": "图片链接",
+            "defaultValue": "http://www.baidu.com",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "tip",
+            "displayName": "tip",
+            "datatype": "OBJECT",
+            "display": "toggle-block",
+            "items": [
+                {
+                    "name": "text",
+                    "displayName": "text",
+                    "tip": "最多10个字节（5个汉字）",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 10
+                    }
+                },
+                {
+                    "name": "rcv_url",
+                    "displayName": "rcv_url",
+                    "tip": "http://",
+                    "datatype": "STRING",
+                    "defaultValue": "http://www.baidu.com",
+                    "rules": {
+                        "stringType": "URL",
+                        "required": true,
+                        "maxByteLength": 255
+                    },
+                    "extraAttr": {},
+                    "multiline": false
+                }
+            ]
+        }
+    ]
+}

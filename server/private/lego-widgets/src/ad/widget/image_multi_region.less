@@ -1,0 +1,75 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: image_multi_region.less  2012-07-16 10:17:29Z wangdawei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/image_multi_region.less~ 2012/07/17 22:10:40
+ * @author wangdawei(wangdawei04@baidu.com)
+ * @version $Revision:$ 
+ * @description 
+ *  
+ **/
+
+@import-once "mixins.less";
+
+.ad-widget-image-multi-region {
+    .gain-bfc();
+    .ec-image-multi-region-item{
+        width:265px;
+        height:67px;
+        border:solid 1px #D9DFDF;
+        position:relative;
+        float:left;
+        margin-right:5px;
+        overflow:hidden;
+    }
+    a{
+        position:absolute;
+        display:inline-block;
+        background:#fff;
+        .opacity(0);
+    }
+    a.ec-left {
+        width:52px;
+        height:55px;
+        left:15px;
+        top:6px;
+    }
+    a.ec-righttop {
+        width:185px;
+        height:23px;
+        right:0px;
+        top:7px;
+    }
+    a.ec-rightbottom {
+        width:185px;
+        height:32px;
+        right:0px;
+        top:32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

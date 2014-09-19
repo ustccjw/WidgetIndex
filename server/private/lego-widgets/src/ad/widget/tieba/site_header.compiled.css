@@ -1,0 +1,211 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/site_header.less ~ 2013/04/03 13:46:13
+ * @author guyiling@baidu.com (guyiling)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * site_header样式文件
+ **/
+.ad-widget-tieba-site-header {
+  width: 980px;
+  margin-bottom: 10px;
+  font: 12px/1.5 arial, sans-serif;
+  color: #666666;
+}
+.ad-widget-tieba-site-header img {
+  display: block;
+  -ms-interpolation-mode: bicubic;
+}
+.ad-widget-tieba-site-header .ec-site-banner {
+  position: relative;
+}
+.ad-widget-tieba-site-header .ec-site-banner a {
+  display: block;
+  text-decoration: none;
+}
+.ad-widget-tieba-site-header .ec-site-banner img {
+  width: 100%;
+  border: none;
+}
+.ad-widget-tieba-site-header .ec-baidu-share {
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 74px;
+  padding: 0;
+}
+.ad-widget-tieba-site-header .ec-share-button {
+  background: url(//bs.baidu.com/adtest/0f1918fe56e7a6a53d643fcc5aa411b7.png) no-repeat 0 0 !important;
+  height: 25px;
+  width: 74px;
+  padding: 0;
+}
+.ad-widget-tieba-site-header .ec-site-profile {
+  *zoom: 1;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  padding: 18px 17px;
+  background-color: #fff;
+}
+.ad-widget-tieba-site-header .ec-site-profile:before,
+.ad-widget-tieba-site-header .ec-site-profile:after {
+  display: table;
+  content: "";
+}
+.ad-widget-tieba-site-header .ec-site-profile:after {
+  clear: both;
+}
+.ad-widget-tieba-site-header .ec-site-logo {
+  position: absolute;
+  top: -125px;
+  left: 17px;
+  width: 156px;
+  height: 156px;
+  padding: 6px 6px 13px;
+  background: url("//bs.baidu.com/adtest/d5d6587e88a7d095c6aa3af4d962e4ce.png") no-repeat 0 0;
+}
+.ad-widget-tieba-site-header .ec-site-logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.ad-widget-tieba-site-header .ec-site-logo img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.ad-widget-tieba-site-header .ec-site-name-row {
+  overflow: hidden;
+}
+.ad-widget-tieba-site-header .ec-site-name {
+  float: left;
+  _display: inline;
+  margin-left: 185px;
+  font: 20px/30px "Microsoft YaHei", SimHei, sans-serif;
+}
+.ad-widget-tieba-site-header .ec-site-name a {
+  color: #666666;
+  text-decoration: none;
+}
+.ad-widget-tieba-site-header .ec-site-action-button {
+  float: right;
+  display: block;
+  width: 161px;
+  height: 25px;
+  background: url("//bs.baidu.com/adtest/1f4e2e8ffcda12cfce351f5a64791ce9.jpg") no-repeat 0 0;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+}
+.ad-widget-tieba-site-header .ec-site-intro {
+  clear: both;
+  float: left;
+  width: 350px;
+  margin-top: 12px;
+  _margin-top: -5px;
+  _margin-bottom: -18px;
+  line-height: 20px;
+  text-align: justify;
+}
+.ad-widget-tieba-site-header .ec-site-gallery {
+  float: right;
+  width: 560px;
+  margin: 12px 0 0;
+  _margin-top: -5px;
+  _margin-bottom: -18px;
+  padding-left: 0;
+}
+.ad-widget-tieba-site-header .ec-site-gallery-item {
+  display: block;
+  _display: inline;
+  position: relative;
+  float: left;
+  margin-left: 15px;
+  width: 125px;
+  height: 90px;
+}
+.ad-widget-tieba-site-header .ec-site-gallery-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.ad-widget-tieba-site-header .ec-site-gallery-item img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.ad-widget-tieba-site-header .ec-site-gallery-layer,
+.ad-widget-tieba-site-header .ec-site-gallery-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.ad-widget-tieba-site-header .ec-site-gallery-layer {
+  height: 20px;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.ad-widget-tieba-site-header .ec-site-gallery-caption {
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ad-widget-tieba-site-header .ec-site-nav {
+  height: 52px;
+  margin: 0;
+  padding: 0 30px;
+  border: 1px solid #e4e4e4;
+  border-top: none;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.ad-widget-tieba-site-header .ec-site-nav-item {
+  display: block;
+  _display: inline;
+  float: left;
+  margin-right: 40px;
+  font-size: 16px;
+}
+.ad-widget-tieba-site-header .ec-site-nav-item a {
+  display: block;
+  position: relative;
+  padding-left: 33px;
+  background: url("//bs.baidu.com/adtest/713e42031770f85a78a58434cf2c8692.png") no-repeat 0 -186px;
+  font-family: "Microsoft YaHei", simsun, sans-serif;
+  line-height: 52px;
+  color: #666666;
+  text-decoration: none;
+}
+.ad-widget-tieba-site-header .ec-site-nav-item a:hover {
+  background-position: 0 -436px;
+}
+.ad-widget-tieba-site-header .ec-site-nav-item a.ec-game {
+  background: url("//bs.baidu.com/adtest/4e568e40c75794631802d7d117a467ad.png") no-repeat 10px -303px;
+}
+.ad-widget-tieba-site-header .ec-site-nav-item a.ec-game:hover {
+  background-position: 10px -303px;
+}
+.ad-widget-tieba-site-header .ec-site-nav-item .ec-new {
+  position: absolute;
+  overflow: hidden;
+  width: 25px;
+  height: 11px;
+  right: -15px;
+  top: 4px;
+  background: url("//bs.baidu.com/adtest/65a03aff97e343db44f19225dfbe22d8.gif") no-repeat;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

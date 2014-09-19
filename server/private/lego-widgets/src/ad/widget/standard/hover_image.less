@@ -1,0 +1,112 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/standard/hover_image.less ~ 2013/12/04 15:00:35
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * hover_image样式文件
+ **/
+
+.ad-widget-standard-hover-image{
+    font: 12px/1.5 arial,sans-serif;
+    width: 259px;
+    height: 146px;
+
+    .ec-wrap {
+        position: relative;
+        width: 259px;
+        height: 146px;
+    }
+    .ec-hover {
+        .ec-bg {
+            display: block;
+        }
+        .ec-description {
+            display: block;
+        }
+        .ec-button {
+            display: block;
+        }
+    }
+    .ec-img {
+        position: absolute;
+    }
+    .ec-bg {
+        position: absolute;
+        width: 259px;
+        height: 146px;
+        background: #000;
+        opacity: .65;
+        filter:alpha(opacity=35);
+        display: none;
+    }
+    .ec-description {
+        position: absolute;
+        width: 239px;
+        bottom: 37px;
+        left: 10px;
+        color: #fff;
+        display: none;
+    }
+    .ec-button {
+        position: absolute;
+        top: 117px;
+        left: 10px;
+        background: #2c99ff;
+        height: 19px;
+        color: #fff;
+        margin: 0;
+        padding: 0 8px;
+        line-height: 19px;
+        overflow: hidden;
+        display: none;
+    }
+    .ec-mask {
+        position: absolute;
+        display: block;
+        background: url(//bs.baidu.com/adtest/27450f629545e68e1e647b3a5068cd00.gif) 0 0 repeat;
+        width: 259px;
+        height: 146px;
+    }
+}
+
+.ad-widget-float-window-container {
+    a.ec-close,
+    a.ec-close:hover {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/d7a1cb816e993f8ba3c4c02ac28a1a2d.png) 0 0 no-repeat;
+        _filter: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

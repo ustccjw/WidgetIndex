@@ -1,0 +1,137 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/player_look_image.less ~ 2013/07/05 13:44:25
+ * @author songao@baidu.com (songao)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * player_look_image样式文件
+ **/
+
+@import-once "mixins.less";
+
+.ad-widget-player-look-image {
+    font: 12px/1.5 arial,sans-serif;
+    position:relative;
+
+    img {
+        display:block;
+    }
+
+    .ad-widget-pli-bar {
+        height:25px;
+        background:url(//bs.baidu.com/adtest/1d5026e12682c96744e9d05029399e1e.jpg) repeat-x;
+
+        .ad-widget-pli-bar-left {
+            width:42px;
+            height:25px;
+            background:url(//bs.baidu.com/adtest/8e39858e30368756f3f0aa7ae4d3ad4e.jpg) no-repeat;
+            float:left;
+        }
+
+        .ad-widget-pli-bar-right {
+            width:70px;
+            height:25px;
+            background:url(//bs.baidu.com/adtest/6fd883d614b5bcbdb2663a7141fac510.jpg) no-repeat;
+            float:right;
+        }
+    }
+
+    .ad-widget-pli-cover {
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+
+        span.ad-widget-pli-mask {
+            /* 解决IE下会被点穿的bug */
+            background:#fff;
+            .opacity(0);
+            display:block;
+            position:absolute;
+            top:0;
+            left:0;
+            cursor:pointer;
+        }
+
+        span.ad-widget-pli-btnctner {
+            display:block;
+            position:absolute;
+            width:58px;
+            height:58px;
+            top:50%;
+            left:50%;
+            margin-top:-42px; /* -(25 + 58)/2 */
+            margin-left:-29px;
+            cursor:pointer;
+            background:url(//bs.baidu.com/adtest/e9ede102a457e660aaa9121bb7f88186.png) center center no-repeat;
+            _background:none;
+            _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="//bs.baidu.com/adtest/e9ede102a457e660aaa9121bb7f88186.png");
+            // _background:url(//bs.baidu.com/adtest/c1c0832c8dfadc8972570a3bca345fc1.gif) center center no-repeat;
+            // .opacity(80);
+        }
+
+        &:hover {
+            span.ad-widget-pli-btnctner {
+                background-image:url(//bs.baidu.com/adtest/898650cfd631b5889a04baa2b43f8fdd.png);
+                _background:none;
+                _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="//bs.baidu.com/adtest/898650cfd631b5889a04baa2b43f8fdd.png");
+                // _background-image:url(//bs.baidu.com/adtest/29888913316edfbae4067a6e012a615b.gif);
+            }
+        }
+    }
+
+    .ie-background-opacity(@color) {
+        background-color: @color;
+        filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr=%d, endColorstr=%d)", argb(@color), argb(@color)));
+        -ms-filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr=%d, endColorstr=%d)", argb(@color), argb(@color)));
+    }
+
+    span.ad-widget-pli-layer {
+        display:block;
+        position:absolute;
+        bottom:25px;
+        height:24px;
+        line-height:24px;
+        background-color: rgb(204, 204, 204);
+        color:white;
+        font-size:12px;
+
+        i {
+            font-style:normal;
+            padding-left:10px;
+            padding-right:10px;
+            color:white;
+        }
+
+        .ie-background-opacity(rgba(0, 0, 0, 0.5));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

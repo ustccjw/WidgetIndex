@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://jntest.baidu.com:8088/" />
+<title>jnsysadmin_login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">jnsysadmin_login</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>jnsysadmin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>Abc123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>verify-code</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>adm-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=客户管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>linkSelfset</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>form_modFrUserName_txt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>form_modFrUserName_txt</td>
+	<td>jnsysadmin</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>form_modFrUserName_mod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>form_modFrUserName_mod</td>
+	<td>修改</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>form_modFrUserName_mod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>form_modFrUserName_userName</td>
+	<td>jnsysadmin</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=nobr</td>
+	<td>保存</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>form_modFrUserName_cancel</td>
+	<td>取消</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>form_modFrUserName_cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>form_modFrUserName_mod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>form_roleId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>form_roleId</td>
+	<td>系统管理员</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>form_modFrPwd_mod</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

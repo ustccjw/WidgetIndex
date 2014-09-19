@@ -1,0 +1,21 @@
+<!-- target:AD_ad_widget_landmark_image_scroll -->
+<div class="ad-widget-landmark ad-widget-landmark-image-scroll">
+    <div class="ec-main" id="{{#_id}}main{{/_id}}">
+        <div class="ec-image-container" id="{{#_id}}image-container{{/_id}}">
+            {{#options}}
+                <a href="{{{url}}}" target="_blank" title2="image{{@index}}" id="{{#_id}}img{{@index}}{{/_id}}">
+                    <img width="259" height="146" src="{{image}}" />
+                </a>
+            {{/options}}
+        </div>
+        <div class="ec-title-ul" id="{{#_id}}link-container{{/_id}}">
+            <table class="ec-title-outer" id="lm-title-outer">
+                <tr>
+                    {{#options}}
+                        <td class="ec-td ec-td-{{@index}}" id="{{#_id}}link{{@index}}{{/_id}}" index="{{@index}}"><div class="ec-cube"></div></td>
+                    {{/options}}
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless/tab/smart.less ~ 2013/12/09 14:36:59
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * smart样式文件
+ **/
+#canvas {
+  font-family: arial, helvetica, sans-serif;
+  border: 1px solid #e0e0e0;
+  padding: 12px 10px;
+  background-color: #fff;
+  color: #262626;
+  margin: 6px 0;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

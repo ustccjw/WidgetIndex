@@ -1,0 +1,28 @@
+<!-- target:ec_sg_weigou_list_product -->
+<%
+var item;
+for(var i = 0, length = result.length; i < length; i++ ) {
+item = result[i];
+%>
+<table class="ec-sg-weigou-list-item WA_LOG_OTHER" data-id="<%=item.id%>">
+    <tr>
+        <th>
+            <img src="<%:h=item.logo%>" />
+        </th>
+        <td>
+            <p class="ec-sg-weigou-item-name" title="<%:h=item.name%>"><%:h=item.name%></p>
+            <p>
+                <span>发货商家：</span>
+                <span class="ec-sg-weigou-orange"><%:h=item.vendor%></span>
+            </p>
+            <p class="ec-sg-weigou-item-price">
+                <span>价格：</span>
+                <span class="ec-sg-weigou-orange">￥<%=item.price.toFixed(2)%></span>
+                <a href="javascript:;">查看详情</a>
+            </p>
+        </td>
+    </tr>
+</table>
+<%
+}
+%>

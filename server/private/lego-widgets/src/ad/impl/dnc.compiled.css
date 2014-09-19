@@ -1,0 +1,183 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: dnc.less 9923 2012/08/09 10:25:19Z wangdawei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/dnc.less ~ 2012/08/09 11:51:39
+ * @author wangdawei
+ * @version $Revision: 9923 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 516px;
+  height: 375px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font: 13px arial, "宋体", sans-serif;
+  background: url("//bs.baidu.com/adtest/f374139c79de993165a5fda1c78c5670.gif");
+}
+#canvas .ad-layout-wrapper {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-row-0 {
+  float: left;
+}
+#canvas .ad-layout-row-0 .ad-widget-video {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-layout-row-0 .ad-widget-video object {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-layout-row-0 .ad-widget-video embed {
+  width: 220px;
+  height: 190px;
+}
+#canvas .ad-layout-row-1 {
+  float: right;
+  width: 280px;
+}
+#canvas .ad-layout-row-1 .ad-widget-small-head h2 {
+  margin: 0 0 8px 0;
+}
+#canvas .ad-layout-row-1 .ad-widget-small-head h2 a {
+  font-family: arial, "宋体";
+  color: #0000cc;
+  font-size: 16px;
+  font-weight: bold;
+}
+#canvas .ad-layout-row-1 .ad-widget-small-head h2 a em {
+  color: #CC0000;
+  font-style: bold;
+}
+#canvas .ad-layout-row-1 .ad-widget-small-head .ec-content {
+  padding: 0;
+  margin: 10px 0;
+}
+#canvas .ad-layout-row-1 .ad-widget-small-head .ec-description {
+  width: auto;
+  font-family: "宋体";
+  color: #000000;
+  font-size: 12px;
+}
+#canvas .ad-layout-row-1 .ad-widget-section {
+  margin-top: 15px;
+}
+#canvas .ad-layout-row-1 .ad-widget-section li {
+  margin-bottom: 10px;
+}
+#canvas .ad-layout-row-1 .ad-widget-section li img {
+  vertical-align: text-bottom;
+}
+#canvas .ad-layout-row-1 .ad-widget-section li a {
+  font-size: 12px;
+}
+#canvas .ad-widget-tab {
+  margin-top: 5px;
+}
+#canvas .ad-widget-tab .ec-tab-head {
+  background: url("//bs.baidu.com/lego-mat/line-805ca8c4.png") repeat-x scroll center bottom transparent;
+  height: 24px;
+  list-style: none outside none;
+  margin: 10px 0 5px;
+  padding: 0 8px 0 0;
+}
+#canvas .ad-widget-tab .ec-tab-head li {
+  display: inline;
+  float: left;
+  margin-bottom: -1px;
+  margin-left: 8px;
+  position: relative;
+}
+#canvas .ad-widget-tab .ec-tab-head li a,
+#canvas .ad-widget-tab .ec-tab-head li a:visited {
+  background-color: #EAF2F7;
+  border: 1px solid #BECCF1;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  outline: 0 none;
+  padding: 4px 0;
+  text-align: center;
+  text-decoration: none;
+}
+#canvas .ad-widget-tab .ec-tab-head .ec-current-tab a {
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #FFF;
+}
+#canvas .ad-widget-tab .ec-tab-body {
+  margin: 0px;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon {
+  display: none;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon table td {
+  line-height: 18px;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon table td a {
+  color: #000000;
+  font-family: "宋体";
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon table td a img {
+  border: 0px;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-brand-pic {
+  height: 100px;
+  width: 195px;
+  padding-left: 8px;
+  word-wrap: break-word;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-brand-pic img {
+  height: 100px;
+  width: 180px;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-brand-intro {
+  padding-left: 12px;
+  padding-right: 10px;
+  word-wrap: break-word;
+  height: 102px;
+  overflow: hidden;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-brand-intro h1 {
+  margin: 0px;
+  padding: 0px;
+  *margin-bottom: 4px;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-brand-intro h3 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-td-border {
+  border-right: 1px solid #E1E1E1;
+  width: 166px;
+}
+#canvas .ad-widget-tab .ec-tab-body .ec-tabcon .ec-td-border .ec-brand-intro {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#canvas .ad-widget-button-group {
+  background: none;
+}
+#canvas .ad-widget-button-group tr td {
+  border: none;
+}
+#canvas .ad-widget-button-group tr td a {
+  color: #000;
+  font-size: 12px;
+  display: block;
+  border: solid 1px #A7CADC;
+  margin: 4px;
+  text-decoration: underline;
+  padding: 2px 20px;
+  background: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

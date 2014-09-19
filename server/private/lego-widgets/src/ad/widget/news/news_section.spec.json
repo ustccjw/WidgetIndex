@@ -1,0 +1,79 @@
+{
+    'contents': ['ad.widget.news.Section'],
+    'userPrefs': [
+        {
+            "name": "options",
+            "displayName": "栏目",
+            "datatype": "LIST",
+            "items": [
+                {
+                    "name": "icon",
+                    "displayName": "栏目图标",
+                    "defaultValue": "http://bs.baidu.com/adtest/12c4a72cc128eddd9917c34efd2670db.png",
+                    "datatype": "UPLOAD",
+                    "rules": {},
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "maxSize":50,
+                        "ext":"jpg,gif,png"
+                    },
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "text",
+                    "displayName": "栏目标题",
+                    "defaultValue": "HELLO WORLD",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "text_rcv_url",
+                    "displayName": "栏目标题跳转地址",
+                    "defaultValue": "http://www.baidu.com",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL",
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "detail",
+                    "displayName": "新闻来源及发布时间",
+                    "datatype": "LIST",
+                    "items": [
+                        {
+                            "name": "text",
+                            "displayName": "text",
+                            "defaultValue": "网易财经 2013-04-22 09:00:19",
+                            "datatype": "STRING",
+                            "rules": {
+                                "required": true
+                            },
+                            "extraAttr": {},
+                            "tip": "",
+                            "multiline": false
+                        }
+                    ],
+                    "tip": "",
+                    "rules": {
+                        "maxCount": 1
+                    }
+                }
+            ],
+            "tip": "",
+            "rules": {
+                "minCount": 0,
+                "maxCount": 99
+            }
+        }
+    ]
+}

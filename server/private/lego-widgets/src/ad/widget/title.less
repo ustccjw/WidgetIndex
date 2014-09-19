@@ -1,0 +1,72 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: title.less 11203 2012-08-17 03:45:21Z songao $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/title.less ~ 2012/07/02 17:44:45
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision: 11203 $ 
+ * @description 
+ *  
+ **/
+
+@import-once "mixins.less";
+
+.ad-widget-title {
+    font:13px/1.2 arial,sans-serif;
+
+    h2 {
+        margin:0px;
+        font-size:16px;
+        line-height:20px;
+        font-weight:normal;
+        a {
+            *zoom: 1; /*确保中英文下划线对齐*/
+            em {
+                color:#cc0000;
+                text-decoration:underline;
+                font-style:normal;
+            }
+        }
+        .ad-official-site();
+    }
+
+    .ec-logo {
+        float:right;
+        line-height:20px;
+        height:20px;
+        margin-top:1px;
+        a {
+            text-decoration:none;
+            img {
+                border:0px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

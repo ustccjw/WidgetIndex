@@ -1,0 +1,679 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/weigou/detail_view.less ~ 2013/03/04 14:04:52
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * detail_view样式文件
+ **/
+
+.ecl-weigou-detail {
+    padding: 10px 0 20px 0;
+}
+
+.ecl-weigou-detail-left {
+    float: left;
+    _display: inline;
+    width: 194px;
+    overflow: hidden;
+}
+
+.ecl-weigou-detail-right {
+    float: left;
+    padding-left: 20px;
+    _display: inline;
+    zoom: 1;
+    width: 325px;
+    height: 194px;
+    color: #666;
+    position: relative;
+    z-index: 11;
+}
+
+.ecl-weigou-detail-image-container {
+    border: 1px solid #e1e1e1;
+    background: #FFF;
+    div {
+        width: 192px;
+        height: 192px;
+        overflow: hidden;
+    }
+    img {
+        margin: 1px;
+        height: 190px;
+        width: 190px;
+    }
+}
+
+.ecl-weigou-detail-gallery-wrapper {
+    width: 10000px;
+    height: 46px;
+    position: absolute;
+    left: 0;
+}
+
+/*
+.ecl-weigou-detail-gallery-container {
+    display: none;
+}
+
+.ecl-weigou-detail-gallery-container {
+    margin-top: 10px;
+    width: 240px;
+    overflow: hidden;
+    display: none;
+}
+
+.ecl-weigou-detail-gallery-left {
+    float: left;
+    width: 13px;
+    height: 44px;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+
+.ecl-weigou-detail-gallery-right {
+    float: right;
+    width: 13px;
+    height: 44px;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+.ecl-weigou-detail-gallery {
+    float: left;
+    position: relative;
+    width: 206px;
+    height: 46px;
+    overflow: hidden;
+    margin-left: 4px;
+    _display: inline;
+
+    ul {
+        position: absolute;
+
+        li {
+            float: left;
+            cursor: pointer;
+            width: 45px;
+            height: 44px;
+            border: 1px solid #e1e1e1;
+            margin-right: 4px;
+        }
+
+        li.selected {
+            border: 1px solid #000;
+        }
+    }
+}
+*/
+
+
+.ecl-weigou-detail-name {
+    font-size: 14px;
+    line-height: 24px;
+
+    a {
+        cursor: default;
+        color: #000;
+        text-decoration: none;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}
+
+.ecl-weigou-detail-vendor {
+    color: #666;
+    margin-top: 7px;
+    position: relative;
+    z-index: 10;
+
+    span {
+        float: left;
+        margin-top: 3px;
+    }
+
+    a {
+        display: inline-block;
+        float: left;
+        color: #7a77c8;
+        margin: 2px 10px 0 4px;
+        padding: 1px 5px 2px 5px;
+        position: relative;
+        z-index: 4;
+    }
+
+}
+
+
+.ecl-weigou-detail-price {
+    margin-top: 7px;
+    span {
+        float: left;
+        margin-top: 2px;
+    }
+
+    .price {
+        color: #ff7800;
+        font-size: 16px;
+        margin: 0 0 0 2px;
+        font-weight: bold;
+    }
+
+    .tag {
+        margin: 0 0 0 10px;
+        height: 20px;
+        width: 66px;
+        background: url(/src/ad/impl/weigou/weigou.gif) 0 -610px;
+    }
+}
+
+.ecl-weigou-detail-counter {
+    margin-top: 7px;
+    span {
+        float: left;
+    }
+    .ecl-weigou-detail-counter-title {
+        margin-top: 2px;
+    }
+
+    .ecl-weigou-detail-minus, .ecl-weigou-detail-plus {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background: url(/src/ad/impl/weigou/weigou.gif) 0 -64px;
+    }
+
+    .ecl-weigou-detail-plus {
+        background-position: -24px -64px;
+    }
+
+    .ecl-weigou-detail-counter-input {
+        width: 32px;
+        height: 18px;
+        border: 1px solid #e1e1e1;
+        margin: 0 5px;
+        overflow: hidden;
+    }
+
+    input {
+        width: 32px;
+        height: 20px;
+        line-height: 20px;
+        _line-height: 18px;
+        outline: 0;
+        border: 0;
+        text-align: center;
+    }
+}
+
+.ecl-weigou-detail-submit-wrapper {
+    position: absolute;
+    left: 20px;
+    bottom:2px;
+    z-index:1;
+
+    span {
+        position: absolute;
+        top: 29px;
+        left: 144px;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: underline;
+        color: #7a77c8;
+        width: 50px;
+    }
+}
+
+.ecl-weigou-detail-submit {
+    background: url(/src/ad/impl/weigou/weigou.gif) -139px -21px;
+    width: 120px;
+    height: 28px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: 宋体;
+    font-weight: bold;
+    padding-top: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.ecl-weigou-detail-bottom {
+    display: none;
+    margin: 10px 0;
+    zoom: 1;
+}
+
+.ecl-weigou-rcmd-title {
+    height: 15px;
+    padding: 5px 0 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+    z-index: 2;
+    background: url(/src/ad/impl/weigou/weigou.gif) 0 -297px;
+    position: relative;
+}
+
+.ecl-weigou-rcmd-container {
+    border: 1px solid #e1e1e1;
+    background: #FFF;
+    margin-top: -1px;
+    padding: 15px 0;
+    color: #666;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.ecl-weigou-rcmd-left {
+    float: left;
+    width: 117px;
+    _display: inline;
+    _zoom: 1;
+
+    .ecl-weigou-rcmd-item-top img {
+        cursor: default;
+    }
+    .ecl-weigou-rcmd-item-middle a {
+        cursor: default;
+    }
+}
+
+.ecl-weigou-rcmd-middle {
+    float: left;
+    _display: inline;
+
+    b {
+        background: url(/src/ad/impl/weigou/weigou.gif) 0 -327px;
+        width: 23px;
+        height: 22px;
+        display: block;
+        margin: 64px 11px 0 0;
+    }
+}
+
+.ecl-weigou-rcmd-right {
+    float: left;
+    width: 376px;
+    height: 135px;
+}
+
+.ecl-weigou-rcmd-gallery-container {
+    position: relative;
+}
+
+.ecl-weigou-rcmd-gallery-left, .ecl-weigou-rcmd-gallery-right {
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: 34px;
+
+    div {
+        width: 15px;
+        height: 81px;
+        background: url(/src/ad/impl/weigou/weigou.gif) -34px -87px;
+    }
+}
+.ecl-weigou-rcmd-gallery-right div{
+    background-position: -51px -87px;
+}
+.ecl-weigou-rcmd-gallery-left div.disabled {
+    background-position: 0 -87px;
+    cursor: default;
+}
+.ecl-weigou-rcmd-gallery-right div.disabled {
+    background-position: -17px -87px;
+    cursor: default;
+}
+
+.ecl-weigou-rcmd-gallery-right {
+    right: 1px;
+    _right: 0;
+}
+
+.ecl-weigou-rcmd-gallery {
+    width: 345px;
+    height: 135px;
+    position: absolute;
+    overflow: hidden;
+    border-right: 1px dashed #ededed;
+    border-left: 1px dashed #ededed;
+    left: 14px;
+}
+
+.ecl-weigou-rcmd-gallery-wrapper {
+    height: 135px;
+    width: 5000px;
+    position: absolute;
+
+    ul {
+        position: absolute;
+
+        li {
+            float: left;
+            width: 115px;
+            height: 135px;
+            overflow: hidden;
+
+            .ecl-weigou-rcmd-item {
+                width: 132px;
+            }
+        }
+    }
+
+}
+
+.ecl-weigou-rcmd-item {
+    height: 130px;
+}
+
+.ecl-weigou-rcmd-item-top{
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+
+    img {
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.ecl-weigou-rcmd-item-middle {
+    width: 95px;
+    height: 32px;
+    line-height: 16px;
+    margin: 5px auto;
+    overflow: hidden;
+
+    a {
+        display: block;
+        width: 100px;
+        overflow: hidden;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}
+
+.ecl-weigou-rcmd-item-name {
+    color: #666;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.ecl-weigou-rcmd-item-bottom {
+    width: 95px;
+    margin: auto;
+    padding-left: 4px;
+
+    input {
+        margin: -2px 3px 1px 3px;
+        margin-top: 0   9;
+        _margin-top: -1px;
+        height: 13px;
+        width: 13px;
+        vertical-align: middle;
+    }
+    strong {
+        color: #ff7800;
+    }
+}
+
+.ecl-weigou-rcmd-add-wrapper {
+    width: 95px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.ecl-weigou-rcmd-add {
+    background: url(/src/ad/impl/weigou/weigou.gif) 0 -240px;
+    width: 82px;
+    height: 21px;
+    cursor: pointer;
+    
+    .ecl-weigou-rcmd-select {
+        display: block;
+        text-align: center;
+        line-height: 21px;
+        padding-left: 12px;
+        _line-height: 23px;
+    }
+
+    .ecl-weigou-rcmd-noselect {
+        display: none;
+        text-align: center;
+        line-height: 21px;
+        _line-height: 23px;
+    }
+}
+
+.ecl-weigou-rcmd-add.selected {
+    background-position: -87px -240px;
+}
+
+.selected {
+    .ecl-weigou-rcmd-select {
+        display: none;
+    }
+
+    .ecl-weigou-rcmd-noselect {
+        display: block;
+    }
+
+}
+
+.ecl-weigou-rcmd-bottom {
+    float: right;
+    margin: 5px 8px 0 0;
+    _display: inline;
+
+    span {
+        display: inline-block;
+        margin: 6px 2px 0;
+        _margin-top: 7px;
+    }
+}
+
+.ecl-weigou-rcmd-count-wrapper {
+    span {
+        color: #ff7800;
+        display: inline-block;
+        float: none;
+        margin: 0 3px 0;
+        font-weight: bold;
+    }
+}
+span.ecl-weigou-rcmd-buy {
+    background: url(/src/ad/impl/weigou/weigou.gif) -416px -22px;
+    width: 72px;
+    height: 25px;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 0px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    _line-height: 28px;
+}
+
+.ecl-weigou-rcmd-tip {
+    position: absolute;
+    background: #FFF;
+    font-size: 12px;
+    width: 540px;
+    z-index: 12;
+}
+
+.ecl-weigou-rcmd-tip-inner {
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    padding-bottom: 10px;
+
+    b {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 20px;
+        width: 20px;
+        background: url(/src/ad/impl/weigou/weigou.gif) 0 -481px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.ecl-weigou-rcmd-tip-left {
+    float: left;
+    margin: 10px;
+    _display: inline;
+    _zoom:1;
+    border: 1px solid #e1e1e1;
+
+    div {
+        width: 192px;
+        height: 192px;
+        overflow: hidden;
+    }
+
+    img {
+        height: 192px;
+        width: 192px;
+    }
+}
+
+.ecl-weigou-rcmd-tip-right {
+    float: left;
+    color: #666;
+    width: 314px;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+    _display: inline;
+    _zoom:1;
+}
+
+.ecl-weigou-rcmd-tip-name-wrapper {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    width: 314px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.ecl-weigou-rcmd-tip-vendor {
+    margin: 12px 0 8px 0;
+}
+
+.ecl-weigou-rcmd-tip-price {
+    strong {
+        color: #ff7800;
+        font-size: 13px;
+    }
+}
+
+.ecl-weigou-rcmd-tip-attrs {
+    margin-top: 4px;
+}
+.ecl-weigou-rcmd-tip-attr {
+    margin: 4px 0 0 0;
+    float: left;
+    height: 17px;
+    overflow: hidden;
+    width: 140px;
+    _display: inline;
+    _zoom: 1;
+}
+
+.ecl-weigou-detail-top {
+    height: 196px;
+    zoom: 1;
+}
+
+#ecl-weigou-detail-attr {
+    position: absolute;
+    z-index: 3;
+    top: -5px;
+    left: 195px;
+
+    b {
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        height: 20px;
+        width: 20px;
+        background: url(/src/ad/impl/weigou/weigou.gif) 0 -481px;
+        z-index: 3;
+    }
+
+    .ecl-weigou-attr-key {
+        color: #666;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        border: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        z-index: 0;
+        height: 0;
+        width: 0;
+    }
+}
+.ecl-tip-arrow {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 21px;
+    width: 11px;
+    background: url(/src/ad/impl/weigou/weigou.gif) 0 -637px;
+    z-index: 3;
+}
+
+.ecl-weigou-detail-attr-inner {
+    margin: 0 20px;
+    padding: 10px 0;
+    width: 360px;
+    overflow: auto;
+}
+
+.ecl-weigou-detail-attr-wrapper {
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius: 4px;
+    margin-left: 10px;
+    zoom:1;
+    z-index: 2;
+    position: relative;
+}
+
+.ecl-weigou-pur-attr-item {
+    float: left;
+    width: 180px;
+    height: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.ecl-attr-value {
+    color: #333;
+}
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 : */

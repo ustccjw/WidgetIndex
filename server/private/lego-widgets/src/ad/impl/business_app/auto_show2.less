@@ -1,0 +1,351 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/business_app/auto_show.less ~ 2013/03/13 14:14:29
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * auto_show2样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 "宋体";
+    color: #333;
+    width: 535px;   /* 原来是540px 改成 535px */
+    margin: 0 auto;
+    padding: 0 0 2px 0;
+    position: relative;
+    z-index: 1;
+    background-color: #fbfbfb;
+    .border-radius(@r) {
+        -webkit-border-radius: @r;
+        -moz-border-radius: @r;
+        -ms-border-radius: @r;
+        -o-border-radius: @r;
+        border-radius: @r;
+    }
+    .float(@d) {
+        float: @d;
+        _display: inline;
+    }
+
+    /* reset iframe style */
+    .ad-widget-iframe{
+        font-size: inherit;
+        height: auto;
+        .gain-bfc();
+        a, div{
+            float: none;
+            display: inline;
+        }
+        div {
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            img{
+                display:block;
+                border: 0px;
+                width: auto;
+                height: auto;
+            }
+        }
+        div{
+            margin-left: 0;
+        }
+    }
+
+    .ad-block-1-0
+    {
+        height: 370px;
+        .ad-widget-iframe {
+            height: 370px;
+        }
+    }
+    .ad-widget-tab-container {
+        padding: 0px;
+        margin: 0px;
+        height: 35px;
+        background-color: #ffffff;
+        ul.ec-tab-head {
+            padding:0px;
+            margin: 0px;
+            background: transparent;
+            height: 35px;
+            border-bottom: 1px solid #e3e3e3;
+            li {
+                margin:0px;
+                height: 35px;
+                border-right: 1px solid #e3e3e3;
+                a {
+                    margin: 0;
+                    padding: 0;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    font-size: 14px;
+                    background: #FFF;
+                    color: #000000;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border: 0px;
+                }
+            }
+
+            .ec-current-tab a {
+                color: #333;
+                background: #FBFBFB;
+                border-bottom: 2px solid #378bff;
+            }
+        }
+    }
+
+
+    .ec-normal-con-0-0 {
+        padding: 15px 0px;
+        overflow: hidden;
+        height: 25px;
+        background-color: white;
+        font-size: 13px;
+        _zoom: 1;
+        .ad-widget-select-label {
+            .float(left);
+            margin-left: 5px;
+            line-height: 25px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #000000;
+        }
+        .ad-widget-place-label {
+            .float(left);
+            margin-left: 12px;
+            line-height: 25px;
+            font-weight: normal;
+            font-size: 13px;
+            color: #666666;
+
+        }
+        .ad-widget-website-label {
+            .float(right);
+            line-height: 25px;
+            margin-right: 10px;
+            font-size: 13;
+        }
+    }
+
+    @eachImageCartoonWidth: 380px;
+    @eachImageCartoonHeight: 217px;
+    .ec-tab-content-1 .ec-normal-con-0-1 {
+        margin-right: 10px;
+        margin-left: 5px;
+        width: @eachImageCartoonWidth;
+        .float(left);
+    }
+    .ad-widget-iframe-image-or-video {
+        width: 100%;
+        height: @eachImageCartoonHeight;
+        .ad-widget-image-show-arrow {
+            width: 100%;
+            height: 100%;
+            .ec-img,
+            img {
+                display: block;
+                width: @eachImageCartoonWidth;
+                height: @eachImageCartoonHeight;
+                border: none;
+            }
+            .ec-link-right,
+            .ec-link-left {
+                top: (@eachImageCartoonHeight - 20)/2;
+                width: 20px;
+                height: 40px;
+                z-index: 2;
+            }
+            .ec-mask-right, .ec-mask-left {
+                top: (@eachImageCartoonHeight - 40)/2;
+                width: 35px;
+                height: 60px;
+                position: absolute;
+                background-color: #000000;
+                z-index: 1;
+                .opacity(20);
+            }
+            .ec-mask-right {
+                left: @eachImageCartoonWidth - 35;
+                .border-radius(5px 0 0 5px);
+            }
+            .ec-mask-left {
+                left: 0px;
+                .border-radius(0 5px 5px 0);
+            }
+            .ec-mask-hover {
+                .opacity(80);
+            }
+            .ec-link-right {
+                background-image:
+                url("//bs.baidu.com/adtest/fdb1b94525d47872d54638abc22ded71.png");
+                background-position: 3px 0px;
+                left: @eachImageCartoonWidth - 30;
+                .border-radius(5px 0 0 5px);
+            }
+            .ec-link-left {
+                background-image: url("//bs.baidu.com/adtest/6cf00c163050f2a59125737866f708d5.png");
+                background-position: 2px 0px;
+                left: 5px;
+                .border-radius(0 5px 5px 0);
+            }
+            .ec-pic-des {
+                display: none;
+            }
+        }
+    }
+
+
+    .ad-widget-description {
+        height: 290px;
+        width: 140px;
+        position: relative;
+        color: #666666;
+
+        h2 {
+            font-size: 13px;
+            font-family: "宋体";
+            line-height: 19px;
+            margin-bottom: 6px;
+        }
+        li {
+            font-size: 13px;
+            font-family: "宋体";
+            height: auto;
+            line-height: 19px;
+        }
+        .ec-desc-more {
+            position: absolute;
+            bottom: 5px;
+            width: 115px;
+            height: 31px;
+            right: 15px;
+            background-image: url("//bs.baidu.com/adtest/925953bfaf9b35aacee2647ba8121d03.jpg");
+        }
+    }
+
+    .ec-tab-content-2 {
+        .ad-widget-iframe {
+            height: 320px;
+        }
+        .ad-widget-detail {
+            padding: 0;
+            overflow: auto;
+            height: 300px;
+            width: 520px;
+            margin: 0 5px 0 10px;
+            overflow-x: hidden;
+            color: #666;
+            font-size: 13px;
+
+            li {
+                .float(left);
+                margin: -1px 0 0 0;
+                padding: 0;
+                width: 520px;
+                height: 35px;
+                line-height: 35px;
+                overflow: hidden;
+                list-style: none;
+                border-top: 1px solid #E3E3E3;
+                border-bottom: 1px solid #E3E3E3;
+                background: #ffffff;
+
+                b {
+                    .float(left);
+                    text-align: right;
+                    width: 120px;
+                    font-weight: normal;
+                }
+                span {
+                    .float(left);
+                    width: 120px;
+                    padding-left: 10px;
+                }
+
+                .ec-detail-key {
+                    background-color: #f6f6f6;
+                }
+            }
+            .ec-detail-first {
+                margin-top: 0;
+                border-top: 1px solid #efefef;
+            }
+        }
+    }
+
+    .ad-widget-dependency-select {
+        width: 188px;
+        float: left;
+        .ec-item select {
+            border: 1px solid #c5c5c5;
+            color: #333333;
+            width: 188px;
+            height: 26px;
+            padding:3px 0;
+        }
+    }
+
+    .ad-widget-image-normal {
+        text-align: center;
+        a {
+            margin: 0px;
+            width: 95px;
+            height: 73px;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        a:focus {
+            outline: none;
+        }
+        img {
+            width: 95px;
+            height: 73px;
+            border: 0px;
+        }
+
+        .ec-img-current {
+            border-width: 3px 4px 4px 3px;
+            border-style: solid;
+            border-color: #378BFF;
+            width: 89px;
+            height: 67px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

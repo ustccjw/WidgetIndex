@@ -1,0 +1,105 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: yapei.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/yapei.less ~ 2013/05/06 10:47:02
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * yapei样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 12px/1.5 arial,sans-serif;
+    color: #a4a4a4;
+    width: 515px;
+    border: 3px solid #e5edf8;
+    padding: 7px;
+
+    .ad-layout-block-0 {
+        .gain-bfc();
+        padding-bottom: 10px;
+        .ad-layout-block-0-0 {
+            float: left;
+            width: 220px;
+            height: 190px;
+        }
+        .ad-layout-block-0-1 {
+            float: left;
+            width: 280px;
+            padding-left: 15px;
+            a {
+                color: #00c;
+            }
+            .ec-site a {
+                color: #666;
+            }
+            .ad-widget-section {
+                .gain-bfc();
+                padding-top: 10px;
+                li {
+                    float: left;
+                    width: 125px;
+                    height: 25px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .ad-layout-block-1 {
+        border: 1px solid #dde8f2;
+        padding: 10px 10px 5px;
+        background: url(//bs.baidu.com/adtest/6f321dd5e5480e2a4284b5a767e79348.jpg) 0 bottom repeat-x;
+        h2 a {
+            font-size: 13px;
+            color: #356089;
+        }
+        .ec-content {
+            padding-top: 0;
+        }
+        .ec-description {
+            width: auto;
+        }
+
+        .ad-layout-block-1-1 {
+            padding-top: 5px;
+            .ad-widget-iframe {
+                height: 75px;
+                div {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .ad-widget-button-group {
+        background: transparent;
+        padding-top: 10px;
+        padding-bottom: 0;
+        font-size: 12px;
+        td {
+            padding-right: 6px;
+            border-right: 0 none;
+            a { 
+                color: #fff;
+                text-decoration: underline;
+                display: block;
+                padding: 3px 0;
+                background: #639ace;
+                border: 0 none;
+            }
+        }
+        .ec-last {
+            padding-right: 0;
+        }
+    }
+}

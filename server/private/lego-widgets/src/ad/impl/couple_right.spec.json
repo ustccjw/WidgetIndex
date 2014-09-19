@@ -1,0 +1,291 @@
+[
+    {
+        "name": "title",
+        "displayName": "右侧头部",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "tip": "标题为9~18个汉字",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "minByteLength": 18,
+                    "maxByteLength": 36
+                },
+                "extraAttr": {}
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "标题跳转地址",
+                "tip": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "maxByteLength": 255
+                }
+            }
+        ]
+    },
+    {
+        "name": "couple_slide",
+        "displayName": "右侧锚点图",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "cover",
+                "displayName": "默认封面",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "image_src",
+                        "displayName": "首帧图片",
+                        "tip": "http://dummyimage.com/259x194",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 259,
+                            "height": 194,
+                            "maxSize": 30,
+                            "ext": "jpg"
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "tip": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "maxByteLength": 255
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "slides",
+                "displayName": "锚点图",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "options",
+                        "displayName": "产品图",
+                        "datatype": "LIST",
+                        "items": [
+                            {
+                                "name": "image_src",
+                                "displayName": "产品图片",
+                                "tip": "http://dummyimage.com/259x154",
+                                "datatype": "UPLOAD",
+                                "rules": {
+                                    "required": true
+                                },
+                                "extraAttr": {
+                                    "fileType": "IMAGE",
+                                    "width": 259,
+                                    "height": 154,
+                                    "maxSize": 30,
+                                    "ext": "jpg"
+                                }
+                            },
+                            {
+                                "name": "rcv_url",
+                                "displayName": "跳转地址",
+                                "tip": "http://",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "maxByteLength": 255
+                                }
+                            },
+                            {
+                                "name": "text",
+                                "displayName": "描述文字",
+                                "tip": "描述文字",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "required": true,
+                                    "minByteLength": 18,
+                                    "maxByteLength": 112
+                                }
+                            }
+                        ],
+                        "rules": {
+                            "minCount": 1,
+                            "maxCount": 8
+                        },
+                        "extraAttr": {
+                            "initialCount": 2
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "baidu_share",
+        "displayName": "分享",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "rules": {},
+        "items": [
+            {
+                "name": "cfg",
+                "displayName": "是否显示分享按钮？",
+                "defaultValue": "true",
+                "datatype": "ALTERNATIVE",
+                "rules": {},
+                "enumValues": [
+                    {
+                        "value": "true",
+                        "displayValue": "显示",
+                        "items": [
+                            {
+                                "name": "display",
+                                "displayName": "display",
+                                "defaultValue": "true",
+                                "datatype": "HIDDEN",
+                                "rules": {},
+                                "extraAttr": {
+                                    "filters": "bool"
+                                }
+                            },
+                            {
+                                "name": "common",
+                                "datatype": "OBJECT",
+                                "rules": {},
+                                "items": [
+                                    {
+                                        "name": "bdText",
+                                        "displayName": "分享文字",
+                                        "tip": "最多可填写200个字节",
+                                        "datatype": "STRING",
+                                        "multiline": true,
+                                        "rules": {
+                                            "required": true,
+                                            "maxByteLength": 200
+                                        }
+                                    },
+                                    {
+                                        "name": "bdPic",
+                                        "displayName": "分享图片",
+                                        "datatype": "UPLOAD",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "fileType": "IMAGE",
+                                            "maxSize": 50,
+                                            "ext": "jpg,jpeg"
+                                        }
+                                    },
+                                    {
+                                        "name": "bdUrl",
+                                        "displayName": "分享url",
+                                        "tip": "http://",
+                                        "datatype": "STRING",
+                                        "rules": {
+                                            "stringType": "URL",
+                                            "maxByteLength": 80
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "type",
+                                "displayName": "分享按钮",
+                                "datatype": "OBJECT",
+                                "rules": {
+                                    "jsRule": "function(item){var index = 0;var key;for (key in item){if(item.hasOwnProperty(key) && item[key]){index++;}} if(index > 4){return '分享按钮不能超过4个';}else{return '';}}"
+                                },
+                                "extraAttr": {},
+                                "items": [
+                                    {
+                                        "name": "tsina",
+                                        "displayName": "新浪微博分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "tqq",
+                                        "displayName": "腾讯微博分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "weixin",
+                                        "displayName": "微信分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "renren",
+                                        "displayName": "人人分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "kaixin001",
+                                        "displayName": "开心分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "douban",
+                                        "displayName": "豆瓣分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    },
+                                    {
+                                        "name": "tsohu",
+                                        "displayName": "搜狐分享",
+                                        "defaultValue": "false",
+                                        "datatype": "BOOL",
+                                        "rules": {},
+                                        "extraAttr": {
+                                            "filters": "bool"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": "false",
+                        "displayValue": "不显示",
+                        "items": []
+                    }
+                ]
+            }
+        ]
+    }
+]

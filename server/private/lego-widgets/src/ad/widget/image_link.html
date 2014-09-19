@@ -1,0 +1,13 @@
+<!-- target:AD_ad_widget_image_link -->
+<div class="ad-widget ad-widget-image-link">
+  {{#rcv_url}}<a href="{{{rcv_url}}}" id="{{#_id}}image{{/_id}}" title2="图片" target="_blank"><img src="{{src}}" /></a>{{/rcv_url}}
+  {{^rcv_url}}<img id="{{#_id}}image{{/_id}}" src="{{src}}" />{{/rcv_url}}
+
+  {{#tip}}
+  <div class="ad-widget-image-layer" id="{{#_id}}image-layer{{/_id}}">
+      <div class="ad-widget-image-layer-bg"></div>
+      {{#rcv_url}}<a href="{{{rcv_url}}}" target="_blank" title2="图片悬浮文字">{{text}}</a>{{/rcv_url}}
+      {{^rcv_url}}<span>{{text}}</span>{{/rcv_url}}
+  </div>
+  {{/tip}}
+</div>

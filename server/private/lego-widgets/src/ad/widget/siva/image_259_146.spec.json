@@ -1,0 +1,43 @@
+{
+    "contents": ["ad.widget.siva.Image_259_146"],
+    "userPrefs": [{
+        "name": "image_url",
+        "displayName": "大图",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "UPLOAD",
+        "rules": {
+            "required": true
+        },
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "maxSize": 30,
+            "width" : 254,
+            "height":146,
+            "ext": "jpg,gif,png"
+        },
+        "multiline": false
+    },{
+        "name": "image_alt",
+        "displayName": "图片标题",
+        "defaultValue": "",
+        "tip": "标题最多15个汉字",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 30
+        },
+        "multiline": false
+    }, {
+        "name": "target_rcv_url",
+        "displayName": "图片跳转URL",
+        "defaultValue": "http://",
+        "tip": "",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "stringType": "URL"
+        },
+        "multiline": false
+    }]
+}

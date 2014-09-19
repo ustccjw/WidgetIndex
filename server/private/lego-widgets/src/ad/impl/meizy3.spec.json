@@ -1,0 +1,7 @@
+{
+  "video": "ad.widget.Video",
+  "head": "ad.widget.SmallHead",
+  "weibo": "ad.widget.SmallWeibo",
+  "title": "ad.widget.Title",
+  "image": "ad.widget.Image"
+}

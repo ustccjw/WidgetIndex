@@ -1,0 +1,230 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: bmws1.less 11222 2012-08-20 02:53:59Z dingguoliang01 $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/new_custom/bmws1.less ~ 2013/10/30 14:23:28
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1179样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    margin-bottom: 20px;
+    font: 12px/1.5 arial,sans-serif;
+    background: #f6f6f6;
+    width: 520px;
+    .ad-widget-title {
+        .gain-bfc();
+        a {
+            color: #0000cc;
+        }
+    }
+    .ad-widget-small-head {
+        width: 254px;
+        .ec-description {
+            color: #000;
+            text-indent: 2em;
+            line-height: 18px;
+        }
+        .ec-site {
+            text-indent: 0;
+            a {
+                color: #666;
+            }
+        }
+        .ec-image-group {
+            width: 254px;
+            position: relative;
+            margin-top: 9px;
+            .ec-last {
+                margin: 0px;
+            }
+        }
+    }
+    .ad-block-0-1 {
+        .gain-bfc();
+        padding: 8px 0 0 0;
+        .ad-widget-image {
+            float: left;
+            width: 254px;
+            height: 143px;
+            cursor: pointer;
+        }
+    }
+
+    .ad-block-0-1-0,
+    .ad-block-0-1-1,
+    .ad-block-0-1-2 {
+        float: left;
+    }
+
+    .ad-block-0-1-0 {
+        margin-right: 10px;
+    }
+    .ad-widget-multi-video-thunbnail {
+        width: 253px;
+        height: 59px;
+        position: relative;
+        margin-top: 10px;
+        top: 0;
+        left: -10px;
+        .ec-thunbnail-bg {
+            display: none;
+        }
+        .ec-thunbnail-cont {
+            width: 265px;
+            height: 59px;
+        }
+        .ec-item {
+            margin: 0 0 0 10px;
+            width: 78px;
+            height: 59px;
+            display: inline;
+        }
+        .ec-item-bg {
+            height: 59px;
+            .opacity(65);
+        }
+        .ec-play-btn {
+            background: #003399;
+        }
+    }
+    .ad-widget-tab-container {
+        background-color: #fff;
+        margin-top: 15px;
+        width: 518px;
+    }
+
+    .ec-tab-head {
+        margin: 0px;
+        padding: 0px;
+        height: 70px;
+        overflow: hidden;
+        width: 518px;
+        background: none;
+        li {
+            background: #ddd;
+            margin: 0px;
+            height: 70px;
+            border-right: solid 1px #c6c6c6;
+            border-left: solid 1px transparent;
+            _border-color:tomato;
+            _filter:chroma(color=tomato);
+            a {
+                background: none;
+                height: 70px;
+                border: none;
+                padding: 0;
+                .opacity(0);
+            }
+            .ec-show {
+                .opacity(100);
+            }
+        }
+
+        .ec-current-tab{
+            background: #fff;
+            border-left: solid 1px #fff;
+            border-right: solid 1px #fff;
+        }
+        .ec-previous-tab,
+        .ec-tab-list-last {
+            a {
+                border-right: none;
+            }
+        }
+        .ec-previous-tab {
+            border-right: solid 1px #fff;
+        }
+    }
+
+    .ec-tab-body {
+        .gain-bfc();
+        background: #fff;
+        padding-top: 10px;
+        height: 108px;
+    }
+    .ad-widget-standard-tab-cont {
+        .ec-description {
+            .ec-1,
+            .ec-2 {
+                width: auto;
+            }
+        }
+    }
+}
+
+.ec-bmws1-fwc {
+    .ad-widget-multi-video-thunbnail {
+        top: 56px;
+        .ec-thunbnail-cont {
+            height: 258px;
+        }
+        .ec-thunbnail-bg {
+            display: none;
+        }
+        .ec-play-btn {
+            margin: auto;
+            position: relative;
+            top: -40px;
+        }
+        .ec-title {
+            top:50px;
+        }
+        .ec-item {
+            margin: 20px 0 0 10px;
+        }
+        .ec-blue {
+            color: #1E95FA;
+        }
+    }
+    .ad-widget-video {
+        width: 540px;
+        height: 304px;
+        position: absolute;
+        top: 76px;
+        left: 20px;
+    }
+
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

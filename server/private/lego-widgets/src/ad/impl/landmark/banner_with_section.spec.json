@@ -1,0 +1,127 @@
+[
+    {
+        "name": "banner",
+        "displayName": "小Banner",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "image_url",
+                "displayName": "Banner图片",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 259,
+                    "height": 75,
+                    "maxSize": 30,
+                    "ext": "jpg,png"
+                },
+                "tip": "http://ecma.bdimg.com/adtest/f368f9646957d1a0e7d7e630ea3f4fd0.png",
+                "multiline": false
+            },
+            {
+                "name": "image_rcv_url",
+                "displayName": "Banner跳转URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "links",
+        "displayName": "栏目",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "栏目",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "栏目标题",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 36
+                        },
+                        "extraAttr": {},
+                        "tip": "必填，最多36字节(18个汉字)",
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "栏目标题URL",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 0,
+                    "maxCount": 1
+                },
+                "extraAttr": {
+                    "initialCount": 1
+                }
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "show_url",
+        "displayName": "官网地址",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "site",
+                "displayName": "显示URL",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 28
+                },
+                "extraAttr": {},
+                "tip": "最多28个字节",
+                "multiline": false
+            },
+            {
+                "name": "site_rcv_url",
+                "displayName": "显示URL指向URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    }
+]

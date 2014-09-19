@@ -1,0 +1,431 @@
+[
+    {
+        "name": "image",
+        "displayName": "轮播图",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "switch_time",
+                "displayName": "switch_time",
+                "defaultValue": "4000",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "display_animation",
+                "displayName": "display_animation",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "rules": {},
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "options",
+                "displayName": "轮播图",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "image_url",
+                        "displayName": "图片",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 220,
+                            "height": 190,
+                            "maxSize": 20,
+                            "ext": "jpg"
+                        },
+                        "tip": "http://placehold.it/220x190.jpg"
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 255
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 1,
+                    "maxCount": 4
+                },
+                "extraAttr": {
+                    "initialCount": 1
+                }
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "small_head",
+        "displayName": "头部",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "titletext",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 10,
+                    "maxTextByteLength": 30,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 2,
+                            "maxTextByteLength": 12,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "5~15个汉字，<em>飘红词</em>6个汉字以内",
+                "multiline": false
+            },
+            {
+                "name": "titleurl_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 255
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "description_rcv_html",
+                "displayName": "描述",
+                "defaultValue": "",
+                "tip": "描述为45~65个汉字",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 90,
+                    "maxTextByteLength": 130
+                },
+                "multiline": true,
+                "extraAttr": {
+                }
+            },
+            {
+                "name": "image_group_head",
+                "displayName": "产品图",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "options",
+                        "displayName": "产品图",
+                        "datatype": "LIST",
+                        "items": [
+                            {
+                                "name": "imgsrc",
+                                "displayName": "图片",
+                                "defaultValue": "",
+                                "datatype": "UPLOAD",
+                                "rules": {
+                                    "required": true
+                                },
+                                "extraAttr": {
+                                    "fileType": "IMAGE",
+                                    "width": 80,
+                                    "height": 70,
+                                    "maxSize": 10,
+                                    "ext": "jpg"
+                                },
+                                "tip": "http://placehold.it/80x70.jpg"
+                            },
+                            {
+                                "name": "img_rcv_url",
+                                "displayName": "图片跳转地址",
+                                "defaultValue": "",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "stringType": "URL",
+                                    "required": true,
+                                    "maxByteLength": 255
+                                },
+                                "extraAttr": {},
+                                "tip": "",
+                                "multiline": false
+                            }
+                        ],
+                        "tip": "",
+                        "rules": {
+                            "minCount": 3,
+                            "maxCount": 3
+                        },
+                        "extraAttr": {
+                            "initialCount": 3
+                        }
+                    }
+                ],
+                "rules": {}
+            },
+            {
+                "name": "site",
+                "displayName": "官方网站",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 24
+                },
+                "extraAttr": {},
+                "tip": "官方网站小于24字节",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "tab",
+        "displayName": "tab",
+        "datatype": "OBJECT",
+        "display": "none",
+        "items": [
+            {
+                "name": "interval_time",
+                "displayName": "interval_time",
+                "defaultValue": "5000",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "hover_time",
+                "displayName": "hover_time",
+                "defaultValue": "200",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "default_index",
+                "displayName": "default_index",
+                "defaultValue": "0",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "width",
+                "displayName": "width",
+                "defaultValue": "516",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "li_margin",
+                "displayName": "li_margin",
+                "defaultValue": "0",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            }
+        ]
+    },
+    {
+        "name": "small_weibo",
+        "displayName": "微博模块",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "rules": {
+            "required": true
+        },
+        "items": [
+            {
+                "name": "tab_title",
+                "displayName": "tab标题",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 12
+                },
+                "extraAttr": {},
+                "tip": "不超过12个字节"
+            },
+            {
+                "name": "weibo_type",
+                "displayName": "微博类型",
+                "defaultValue": "sina",
+                "tip": "",
+                "datatype": "ALTERNATIVE",
+                "multiline": false,
+                "rules": {},
+                "extraAttr": {},
+                "items": [],
+                "enumValues": [
+                    {
+                        "value": "sina",
+                        "displayValue": "新浪微博",
+                        "items": [
+                            {
+                                "name": "id",
+                                "displayName": "微博ID",
+                                "defaultValue": "",
+                                "datatype": "STRING",
+                                "rules": {
+                                    "required": true
+                                },
+                                "tip": "2525235360",
+                                "descriptionTip": "sina微博个人资料页地址中获取，如：\"http://*.weibo.com/2525235360/info?from=profile&wvr=5&loc=tabinf#profile_tab\"中“2525235360”即为微博ID",
+                                "multiline": false
+                            },
+                            {
+                                "name": "verify_img",
+                                "displayName": "认证图标",
+                                "defaultValue": "http://bs.baidu.com/adtest/bad0630957bb1be6a9fd748ea583e375.gif",
+                                "datatype": "HIDDEN"
+                            },
+                            {
+                                "name": "follow_imgsrc",
+                                "displayName": "关注图标",
+                                "defaultValue": "http://ecma.bdimg.com/adtest/c21230408d19594a8cf1503e00a9f64b.png",
+                                "datatype": "HIDDEN"
+                            }
+                        ]
+                    },
+                    {
+                        "value": "qq",
+                        "displayValue": "腾讯微博",
+                        "items": [
+                            {
+                                "name": "id",
+                                "displayName": "腾讯微博id",
+                                "defaultValue": "",
+                                "tip": "baidu",
+                                "datatype": "STRING",
+                                "multiline": false,
+                                "rules": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "verify_img",
+                                "displayName": "verify_img",
+                                "defaultValue": "http://eiv.baidu.com/mapm2/img/qq_verify.png",
+                                "datatype": "HIDDEN",
+                                "multiline": false,
+                                "rules": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "follow_imgsrc",
+                                "displayName": "follow_imgsrc",
+                                "defaultValue": "http://bs.baidu.com/adtest/d2274b7c05976b0fa4a9cbc2e22e0198.png",
+                                "datatype": "HIDDEN",
+                                "multiline": false,
+                                "rules": {
+                                    "required": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button_group",
+        "displayName": "底部链接",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "底部按钮",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "链接文本",
+                        "tip": "最多5个汉字",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 10
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "链接地址",
+                        "tip": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "stringType": "URL",
+                            "maxByteLength": 255
+                        }
+                    }
+                ],
+                "rules": {
+                    "minCount": 3,
+                    "maxCount": 5
+                },
+                "extraAttr": {
+                    "initialCount": 3
+                }
+            }
+        ]
+    }
+]

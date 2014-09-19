@@ -1,0 +1,17 @@
+<!-- target:AD_ad_widget_image_flash -->
+<div class="ad-widget ad-widget-flash" style="width:{{width}}px;height:{{height}}px">
+    {{^is_img}}
+    <div class="ec-flash">
+        <object width="{{width}}" height="{{height}}" id="{{#_id}}swf{{/_id}}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">
+            <param value="opaque" name="wmode">
+            <param value="always" name="allowscriptaccess">
+            <param value="{{src}}" name="movie">
+            <embed width="{{width}}" align="middle" height="{{height}}" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="{{#_id}}swf{{/_id}}" src="{{src}}" allowscriptaccess="always" wmode="opaque">
+        </object>
+    </div>
+    {{/is_img}}
+    {{#is_img}}<img width="{{width}}" height="{{height}}" src="{{src}}" />{{/is_img}}
+    {{#link_rcv_url}}
+    <a href="{{{link_rcv_url}}}" title2="flash-link" id="{{#_id}}link{{/_id}}" target="_blank" style="width:{{width}}px;height:{{height}}px">&nbsp;</a>
+    {{/link_rcv_url}}
+</div>

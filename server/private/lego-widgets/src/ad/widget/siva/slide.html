@@ -1,0 +1,14 @@
+<!-- target:AD_ad_widget_siva_slide -->
+<div class="ad-widget-siva ad-widget-siva-slide">
+    <ul class="ad-widget-siva-slide-slides" id="{{#_id}}slides{{/_id}}">
+    {{#slides}}
+        <li id="{{#_id}}slide{{@index}}{{/_id}}"><a href="{{{target_rcv_url}}}" target="_blank" title2="轮播图片{{@index}}"><img src="{{img_url}}" width="270" height="140"/></a></li>
+    {{/slides}}
+    </ul>
+	<div class="ec-siva-widget-sitelinks-bg"></div>
+	<ul class="ec-siva-widget-sitelinks-links">
+		{{#sitelinks}}
+		<li class="ad-widget-siva-sitelinks-link{{#@last}}-last{{/@last}}"><a href="{{{text_rcv_url}}}" target="_blank" title2="轮播子链跳转URL{{@index}}">{{text}}</a></li>
+		{{/sitelinks}}
+	</ul>
+</div>

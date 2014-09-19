@@ -1,0 +1,42 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless/j/big.less ~ 2013/12/26 15:21:53
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * big样式文件
+ **/
+#canvas .ec-list {
+  display: none;
+}
+#canvas .ad-widget-wireless-product-list .ec-title {
+  white-space: normal;
+}
+#canvas .ad-widget-wireless-product-list img {
+  border: none;
+}
+#canvas .ad-widget-button-group {
+  background: none;
+  padding: 6px 0 0;
+}
+#canvas .ad-widget-button-group td {
+  border: none;
+  text-align: left;
+  padding: 0 0 0 10px;
+  background: url(//bs.baidu.com/adtest/8f25d0baddbdf325a5d35deefef878c9.png) no-repeat left center;
+}
+#canvas .ad-widget-button-group a {
+  color: #00c;
+}
+#canvas .ad-widget-button-list {
+  padding-bottom: 0;
+}
+#canvas .ad-widget-button-list .ec-link-wrapper {
+  font-size: 12px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

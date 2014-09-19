@@ -1,0 +1,7 @@
+<div class="spec-show" ng-controller="SpecController">
+    <div class="spec-show-update">
+        <span class="glyphicon glyphicon-edit spec-show-edit" ng-click="spc.editable=!spc.editable"></span>
+        <button type="button" class="btn btn-primary spec-show-submit" ng-disabled="!spc.editable" ng-click="spc.update()">update</button>
+    </div>
+    <textarea class="form-control" ng-model="spc.spec" rows="{{spc.spec.split('\n').length}}" ng-disabled="!spc.editable" spellcheck="false"></textarea></code>
+</div>

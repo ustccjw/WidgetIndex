@@ -1,0 +1,69 @@
+<!-- target:AD_ad_widget_ishop_detail_view -->
+<div class="ad-widget-ishop ad-widget-ishop-detail-view">
+    <div class="ishop-detail">
+        <div class="ishop-detail-left"></div>
+        <div class="ishop-detail-right">
+            <div id="ishop-detail-name-wrapper" class="ishop-detail-name-wrapper">
+                <a id="ishop-detail-name-link" class="ishop-detail-name" target="_blank"></a>
+            </div>
+            <div class="ishop-detail-vendor-wrapper clearfix">
+                <span class="ishop-detail-vendor-text">商品来源：</span>
+                <span class="ishop-detail-vendor-icon"></span>
+                <span class="ishop-detail-vendor"></span>
+            </div>
+            <div class="ishop-detail-tags clearfix">
+                <div id="ishop-detail-tag-fare" class="ishop-detail-tag ishop-detail-tag-fare">
+                    <span class="ishop-detail-tag-content">
+                        满<span id="ishop-detail-tag-fare-offset"></span>包邮
+                    </span>
+                    <b></b>
+                </div>
+                <div class="ishop-detail-tag">
+                    <span class="ishop-detail-tag-content">
+                        货到付款
+                    </span>
+                    <b></b>
+                </div>
+                <div class="ishop-detail-tag">
+                    <span class="ishop-detail-tag-content">
+                        正品商家
+                    </span>
+                    <b></b>
+                </div>
+            </div>
+            <div class="ishop-detail-prices clearfix">
+                <cite class="ishop-price">现价　　：</cite>
+                <span class="ishop-price">¥</span>
+                <strong class="ishop-price"></strong>
+                <em class="ishop-price"></em>
+            </div>
+            <div class="ishop-detail-original-price clearfix">
+                <span class="ishop-price">原价　　：</span>
+                <s id="ishop-original-price" class="ishop-price"></s>
+            </div>
+            <div class="ishop-detail-attrs"></div>
+            <div class="ishop-detail-operation">
+                <a href="#" class="ishop-detail-btn-purchase"></a>
+                <a href="#" class="ishop-detail-btn-desc"></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="ishop-detail-desc">
+        <div class="ishop-detail-desc-header"></div>
+        <div class="ishop-detail-desc-text"></div>
+    </div>
+    <div class="ishop-detail-list clearfix">
+        {{#data}}
+        <div id="ishop-detail-item-{{id}}" class="ishop-detail-item" data-id="{{id}}">
+            <div class="ishop-item-content">
+                <div class="ishop-detail-item-logo">
+                    <img src="{{{logo}}}" />
+                </div>
+                <a class="ishop-detail-item-name" title="{{name}}" data-name="{{name}}" href="#"></a>
+                <div class="ishop-detail-item-price">¥{{{price}}}</div>
+            </div>
+        </div>
+        {{/data}}
+    </div>
+</div>

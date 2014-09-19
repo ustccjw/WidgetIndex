@@ -1,0 +1,580 @@
+[
+    {
+        "name": "title",
+        "displayName": "标题",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 12,
+                    "maxTextByteLength": 50,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 2,
+                            "maxTextByteLength": 12,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，6~25个汉字,飘红词最多6个汉字",
+                "multiline": false
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "跳转地址",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 255
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "display_official_site_icon",
+                "displayName": "显示官网标识",
+                "defaultValue": true,
+                "datatype": "BOOL"
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "video",
+        "displayName": "视频",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "player_ver",
+                "displayName": "player_ver",
+                "defaultValue": "7",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "video_url",
+                "displayName": "视频文件",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "ext": "flv",
+                    "fileType": "FLV",
+                    "width": 254,
+                    "height": 144,
+                    "maxSize": 1024
+                }
+            },
+            {
+                "name": "img_url",
+                "displayName": "首帧图片",
+                "tip": "http://dummyimage.com/254x144/ccc/999",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "width": 254,
+                    "height": 144,
+                    "fileType": "IMAGE",
+                    "maxSize": 30,
+                    "ext": "jpg,jpeg"
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "跳转地址",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 255,
+                    "stringType": "URL"
+                }
+            },
+            {
+                "name": "width",
+                "displayName": "width",
+                "defaultValue": "254",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "int"
+                }
+            },
+            {
+                "name": "is_play",
+                "displayName": "is_play",
+                "defaultValue": false,
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "height",
+                "displayName": "height",
+                "defaultValue": "144",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "int"
+                }
+            }
+        ]
+    },
+    {
+        "name": "small_head",
+        "displayName": "头部",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "description_rcv_html",
+                "displayName": "描述内容",
+                "tip": "描述为62~100个字节(31-50个汉字)",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 62,
+                    "maxTextByteLength": 100,
+                    "tagList": {
+                        "a": {
+                            "maxTextByteLength": 20,
+                            "maxCount": 5
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "link"
+                        ]
+                    },
+                    "tagList": {
+                        "a": {
+                            "attributeRules": {
+                                "target": {
+                                    "isRequired": false,
+                                    "isAllowNoValue": false,
+                                    "defaultValue": "_blank"
+                                },
+                                "href": {
+                                    "isRequired": true,
+                                    "isAllowNoValue": false,
+                                    "valueType": "url"
+                                }
+                            },
+                            "requiredAttributes": [
+                                "target",
+                                "href"
+                            ],
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "multiline": true
+            },
+            {
+                "name": "site",
+                "displayName": "显示url",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 24
+                },
+                "tip": "最多24字节"
+            }
+        ]
+    },
+    {
+        "name": "small_weibo",
+        "displayName": "微博",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "id",
+                "displayName": "微博ID",
+                "tip": "http://*.weibo.com/2525235360",
+                "datatype": "STRING",
+                "descriptionTip": "sina微博个人资料页地址中获取，如：\"http://*.weibo.com/2525235360/info?from=profile&wvr=5&loc=tabinf#profile_tab\"中“2525235360”即为微博ID",
+                "rules": {
+                    "required": true,
+                    "regex": {
+                        "pattern": "(^|(weibo\\.com\\/))\\d+",
+                        "errorText": "请填写纯数字或含id的url"
+                    }
+                }
+            },
+            {
+                "name": "name",
+                "displayName": "微博名称",
+                "datatype": "STRING",
+                "tip": "可不填，如不填则根据微博id自动获取微博名称"
+            },
+            {
+                "name": "icon",
+                "displayName": "微博账号LOGO",
+                "datatype": "HIDDEN",
+                "defaultValue": "http://ecmc.bdimg.com/adtest/60a8e35af016fd8b06a95e454bf5a1a0.png"
+            },
+            {
+                "name": "icon",
+                "displayName": "微博账号LOGO",
+                "tip": "http://dummyimage.com/15x15/ccc/999",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": false
+                },
+                "extraAttr": {
+                    "width": 15,
+                    "height": 15,
+                    "fileType": "IMAGE",
+                    "maxSize": 5,
+                    "ext": "jpg,jpeg"
+                }
+            },
+            {
+                "name": "follow_imgsrc",
+                "displayName": "加关注图标",
+                "defaultValue": "http://ecma.bdimg.com/adtest/5b3cff631506e0aa3b0e448a4f8c019e.png",
+                "datatype": "HIDDEN"
+            },
+            {
+                "name": "weibo_context_length",
+                "displayName": "微博内容字节长度",
+                "defaultValue": "90",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "int"
+                }
+            },
+            {
+                "name": "is_display_icon",
+                "displayName": "是否显示微博图标",
+                "defaultValue": "true",
+                "datatype": "HIDDEN",
+                "extraAttr": {
+                    "filters": "bool"
+                }
+            },
+            {
+                "name": "is_display_fans",
+                "displayName": "是否显示粉丝数",
+                "defaultValue": "false",
+                "datatype": "BOOL"
+            },
+            {
+                "name": "is_display_weibo",
+                "displayName": "是否显示微博数",
+                "defaultValue": "false",
+                "datatype": "BOOL"
+            },
+            {
+                "name": "is_display_foot",
+                "displayName": "是否显示日期、转发、收藏、评论",
+                "defaultValue": "true",
+                "datatype": "BOOL"
+            }
+        ]
+    },
+    {
+        "name": "section",
+        "displayName": "标题",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "tip": "12~20个汉字",
+                "datatype": "STRING",
+                "rules": {
+                    "required": false,
+                    "maxByteLength": 40,
+                    "minByteLength": 24
+                },
+                "extraAttr": {},
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "images",
+        "displayName": "图片列表",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "大图展示模块",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 4,
+                    "maxCount": 4
+                },
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "tip": "5汉字以内",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 10
+                        }
+                    },
+                    {
+                        "name": "img_url",
+                        "displayName": "图片",
+                        "datatype": "UPLOAD",
+                        "tip": "http://dummyimage.com/132x140/ccc/999",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "width": 132,
+                            "height": 140,
+                            "fileType": "IMAGE",
+                            "maxSize": 15,
+                            "ext": "jpg,jpeg"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "fwc",
+        "displayName": "视频浮层",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "width",
+                "displayName": "width",
+                "defaultValue": "830",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "height",
+                "displayName": "height",
+                "defaultValue": "400",
+                "datatype": "HIDDEN",
+                "rules": {
+                    "stringType": "NUMBER"
+                },
+                "extraAttr": {
+                    "filters": "float"
+                }
+            },
+            {
+                "name": "float_bg",
+                "displayName": "浮层背景",
+                "datatype": "OBJECT",
+                "items": [
+                    {
+                        "name": "src",
+                        "displayName": "背景图",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 830,
+                            "height": 400,
+                            "maxSize": 50,
+                            "ext": "jpg"
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 255
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "rules": {}
+            },
+            {
+                "name": "options",
+                "displayName": "视频",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "player_ver",
+                        "displayName": "player_ver",
+                        "defaultValue": "7",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        }
+                    },
+                    {
+                        "name": "img_url",
+                        "displayName": "首帧图片",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 540,
+                            "height": 304,
+                            "maxSize": 50,
+                            "ext": "jpg"
+                        }
+                    },
+                    {
+                        "name": "video_url",
+                        "displayName": "视频文件",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "FLV",
+                            "maxSize": 10240,
+                            "ext": "flv"
+                        }
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "跳转地址",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true,
+                            "maxByteLength": 255
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    },
+                    {
+                        "name": "width",
+                        "displayName": "width",
+                        "defaultValue": "540",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        }
+                    },
+                    {
+                        "name": "height",
+                        "displayName": "height",
+                        "defaultValue": "304",
+                        "datatype": "HIDDEN",
+                        "rules": {
+                            "stringType": "NUMBER"
+                        },
+                        "extraAttr": {
+                            "filters": "float"
+                        }
+                    },
+                    {
+                        "name": "is_play",
+                        "displayName": "is_play",
+                        "defaultValue": "true",
+                        "datatype": "HIDDEN",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "thumbnail_img_url",
+                        "displayName": "视频缩略图",
+                        "defaultValue": "",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "required": true
+                        },
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 100,
+                            "height": 56,
+                            "maxSize": 10,
+                            "ext": "jpg"
+                        }
+                    },
+                    {
+                        "name": "thumbnail_text",
+                        "displayName": "视频标题",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": false,
+                            "maxByteLength": 12,
+                            "minByteLength": 2
+                        },
+                        "extraAttr": {},
+                        "tip": "2~12字节",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 4,
+                    "maxCount": 6
+                },
+                "extraAttr": {
+                    "initialCount": 4
+                }
+            }
+        ],
+        "rules": {}
+    }
+]

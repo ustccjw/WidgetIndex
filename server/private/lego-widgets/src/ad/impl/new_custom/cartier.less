@@ -1,0 +1,281 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+
+
+
+/**
+ * src/ad/impl/new_custom/cartier.less ~ 2014/09/16 14:24:21
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $
+ * @description
+ * cartier样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 13px/1.5 arial,sans-serif;
+
+    width: 518px;
+    margin-bottom: 20px;
+
+    border: 1px solid #F0F0F0;
+    padding: 9px;
+
+    background: #fff url(//bs.baidu.com/adtest/468ce46b2c3e418366529083a33887cb.jpg) no-repeat center 0;
+
+
+
+    .ad-block-0 {
+        margin: 0 0 8px 0;
+    }
+
+    .ad-block-1 {
+        margin: 5px 0;
+        height: 144px;
+    }
+
+    .ad-block-1-0 {
+        float: left;
+    }
+
+    .ad-block-1-1 {
+        height: 100%;
+        margin-left: 10px + 254px;
+        position: relative;
+
+        .ad-widget-small-head {
+            .ec-description {
+                color: #333;
+                line-height: 1.6;
+                text-indent: 2em;
+                .ec-site {
+                    text-indent: 0;
+                }
+            }
+        }
+
+    }
+
+
+    .ad-block-2 {
+        margin-top: 15px;
+        .ad-widget-tab-container {
+            background: white;
+            .ec-tab-head {
+                height: 28px;
+                margin: 0;
+                text-align: center;
+                background: #D1D1D1;
+                li {
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    height: 100%;
+                    &.ec-current-tab {
+                        background-color: #fff;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    // height: 14px;
+                    padding: 5px 0 0 0;
+                    overflow: hidden;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: black;
+                    border: none;
+                    border-top: 2px solid #D1D1D1;
+                    background-color: transparent;
+                }
+                li.ec-current-tab a,
+                li.ec-previous-tab a,
+                li.ec-tab-list-last a {
+                    border-bottom: none;
+                    background-color: transparent;
+                }
+                li.ec-current-tab a {
+                    border-top-color: #2c99ff;
+                    font-weight: bold;
+                }
+            }
+
+            .ec-tab-body {
+                height: 96px;
+                overflow: hidden;
+                padding: 10px 0 15px 0;
+            }
+        }
+
+        .ad-widget-image-cartoon{
+            width: 518px;
+            .ec-item-wrapper {
+                height: 96px;
+                width: 518px;
+            }
+            .ec-item {
+                height: 96px;
+                img {
+                    width: 122px;
+                    height: 96px;
+                }
+            }
+
+            .ec-arrow {
+                top: 30px;
+                background: #000;
+                width: 22px;
+                height: 36px;
+                text-indent: -9999em;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .ec-left-arrow {
+                background-image: url(//bs.baidu.com/adtest/e03e418ffbbf7fae5c4227eefc13efbd.png);
+            }
+            .ec-right-arrow {
+                background-image: url(//bs.baidu.com/adtest/da8c94b0d380adb8e66f159da27252ff.png);
+            }
+        }
+
+        .ad-widget-normal-container {
+            .ec-normal-con {
+                float: left;
+                width: 255px;
+                margin-left: 8px;
+            }
+            .ec-normal-con-0 {
+                margin-left: 0;
+            }
+            .ad-widget-image {
+                img {
+                    width: 255px;
+                    height: 96px;
+                }
+            }
+            .ad-widget-htmltext {
+                .ec-htmltext-desc {
+                    padding-bottom: 6px;
+                    border-bottom: 1px solid #dfdfdf;
+                    background: transparent;
+                    line-height: 1.5;
+                }
+                a {
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
+            .ad-widget-link-list {
+                margin-top: 10px;
+                position: relative;
+                font-size: 13px;
+                a {
+                    color: #333;
+                    text-decoration: underline;
+                }
+                li {
+                    float: none;
+                    position: absolute;
+                    border: none;
+                    height: auto;
+                    line-height: 1;
+                    text-align: left;
+                    padding-left: 10px;
+                    background: transparent url(//bs.baidu.com/adtest/38f98f20c5664bbf56df06a36c53b517.gif) no-repeat 2px center;
+                }
+                .ec-o1 {
+                    left: 0;
+                    top: 0;
+                }
+                .ec-o2 {
+                    left: 0;
+                    top: 25px;
+                }
+                .ec-o3 {
+                    left: 128px;
+                    top: 0;
+                }
+                .ec-o4 {
+                    left: 128px;
+                    top: 25px;
+                }
+            }
+        }
+
+    }
+
+
+
+    .ad-widget-button-group {
+        margin-bottom: 5px;
+        background: #B3B3B3;
+        padding: 7px 0;
+        tr, td {
+            height: 14px;
+            padding: 0;
+        }
+        td {
+            border-color: #383838;
+            line-height: 14px;
+            *line-height: 16px;
+            a {
+                color: #333;
+            }
+        }
+    }
+
+
+}
+
+.ec-float-video-layer-fwc .ad-widget-float-window-container {
+    .ec-cont {
+        left: 28px;
+        top: 72px;
+    }
+    .ad-widget-video {
+        &,
+        embed,
+        object {
+            width: 540px;
+            height: 304px;
+        }
+    }
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+        right: 0;
+        top: 0;
+        &:hover {
+            background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+            .opacity(100);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

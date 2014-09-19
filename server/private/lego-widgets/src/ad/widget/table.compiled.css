@@ -1,0 +1,57 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: table.less 10019 2012-07-02 10:17:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/table.less ~ 2012/07/02 17:44:45
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 10019 $ 
+ * @description 
+ *  
+ **/
+.ad-widget-table {
+  font: 13px/1.2 arial, sans-serif;
+  margin-top: 10px;
+  line-height: 24px;
+  border: 1px solid #BECCF1;
+  border-left: 0px;
+  border-top: 0px;
+  width: 518px;
+}
+.ad-widget-table table {
+  width: 100%;
+}
+.ad-widget-table tr {
+  border-top: 1px solid #BECCF1;
+}
+.ad-widget-table td {
+  border-left: 1px solid #BECCF1;
+  border-top: 1px solid #BECCF1;
+  text-align: center;
+  line-height: 24px;
+}
+.ad-widget-table thead {
+  background: #dee6fe;
+}
+.ad-widget-table thead td {
+  color: #000;
+}
+.ad-widget-table thead a {
+  color: #000;
+}
+.ad-widget-table tbody a {
+  color: #0000cc;
+}
+.ad-widget-table tbody tr.ec-tr-bg {
+  background: #fff;
+  border-top: 1px solid #BECCF1;
+}
+.ad-widget-table tbody tr.ec-tr-bg td {
+  border-left: 1px solid #BECCF1;
+  border-top: 1px solid #BECCF1;
+  text-align: center;
+  line-height: 24px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

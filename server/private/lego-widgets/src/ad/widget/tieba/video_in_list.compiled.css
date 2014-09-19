@@ -1,0 +1,17 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/tieba/video_in_list.less ~ 2013/08/20 16:28:36
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * video_in_list样式文件
+ **/
+.ad-widget-tieba-video-in-list {
+  font: 12px/1.5 arial, sans-serif;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

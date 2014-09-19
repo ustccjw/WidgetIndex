@@ -1,0 +1,299 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/wireless_custom/burberry/smart.less ~ 2014/02/13 15:58:05
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * smart样式文件
+ **/
+#canvas {
+  font-family: arial, helvetica, sans-serif;
+  border: 1px solid #e0e0e0;
+  padding: 12px 10px;
+  background-color: #fff;
+  color: #262626;
+  margin: 6px 0;
+  padding: 12px 0;
+}
+#canvas .ad-widget-wireless-head {
+  padding-bottom: 6px;
+}
+#canvas .ad-widget-wireless-head .ec-official-site {
+  background-color: #3c75e0;
+}
+#canvas .ad-widget-wireless-head .ec-head-title {
+  padding: 0 10px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+#canvas .ad-widget-wireless-head .ec-head-content {
+  padding: 0 10px;
+}
+#canvas .ad-widget-wireless-head .ec-logo-img {
+  width: 54px;
+  height: 54px;
+  margin-top: 10px;
+}
+#canvas .ad-widget-wireless-head .ec-head-desc {
+  padding: 6px 0 0 0;
+  line-height: 22px;
+}
+#canvas .ad-block-1 {
+  padding: 0 10px;
+}
+#canvas .ad-widget-wireless-tip-button {
+  border-top: 1px solid #f5f5f5;
+}
+#canvas .ad-widget-wireless-tip-button b {
+  font-weight: normal;
+}
+#canvas .ec-tip-button-hide {
+  display: none;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container {
+  background: url(//bs.baidu.com/adtest/ae601aea8fdf6515c3de781a3059e26a.png) no-repeat #ffffff;
+  background-size: 100% 2px;
+  padding-top: 2px;
+  color: #262626;
+  -webkit-overflow-scrolling: touch;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container a,
+.ec-burberry-fwc-1 .ad-widget-float-window-container a:focus,
+.ec-burberry-fwc-1 .ad-widget-float-window-container a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-sub {
+  display: none;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-close {
+  right: 15px;
+  top: 13px;
+  width: 19px;
+  height: 19px;
+  background: url("//bs.baidu.com/adtest/3f016a065803ff97ff1f51d4695eef6e.png") no-repeat 3px 3px;
+  background-size: 13px 13px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-close:hover {
+  background: url("//bs.baidu.com/adtest/3f016a065803ff97ff1f51d4695eef6e.png") no-repeat 3px 3px;
+  background-size: 13px 13px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-cont {
+  width: 100%;
+  top: 2px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-0 {
+  padding: 12px 0 12px 10px;
+  font-size: 17px;
+  line-height: 17px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #efefef;
+  text-align: left;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-0 .ec-logo {
+  width: 11px;
+  height: 12px;
+  margin-right: 10px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 {
+  background-color: #fff;
+  padding: 12px 10px;
+  text-align: left;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-item-title {
+  font-size: 17px;
+  line-height: 17px;
+  padding-bottom: 8px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-item {
+  font-size: 14px;
+  line-height: 22px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button-wrap {
+  padding: 0 20px 8px;
+  margin: 8px 0 0;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  background-color: #3675df;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #3675df;
+  height: 30px;
+  line-height: 30px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button:active {
+  background-color: #0028ac;
+  border: 1px solid #0028ac;
+  -webkit-box-shadow: 0 2px 0 #0b3181 inset;
+  -moz-box-shadow: 0 2px 0 #0b3181 inset;
+  box-shadow: 0 2px 0 #0b3181 inset;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-light-button {
+  display: block;
+  color: #0058d2;
+  font-size: 14px;
+  background-color: #e8f4ff;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #92b9f8;
+  height: 30px;
+  line-height: 30px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-light-button:active {
+  background-color: #c9dff4;
+  border: 1px solid #92b9f8;
+  -webkit-box-shadow: 0 2px 0 #afd1ff inset;
+  -moz-box-shadow: 0 2px 0 #afd1ff inset;
+  box-shadow: 0 2px 0 #afd1ff inset;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button-disable,
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button-disable:active {
+  color: #aaa;
+  background-color: #f5f5f5;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 0 #f5f5f5 inset;
+  -moz-box-shadow: 0 0 0 #f5f5f5 inset;
+  box-shadow: 0 0 0 #f5f5f5 inset;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-row {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 12px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-row-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-row-title2 {
+  padding-top: 6px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-input {
+  font-size: 14px;
+  color: #262626;
+  background-color: #fff;
+  border: 1px solid #d2d6dd;
+  height: 32px;
+  width: 100%;
+  line-height: 24px;
+  padding: 3px 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) inset;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-input:focus,
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-input:active {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-color: #3b75df;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-input-default {
+  color: #aaa;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-input-error {
+  display: none;
+  clear: both;
+  font-size: 14px;
+  color: #c00;
+  padding-top: 6px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-mobile {
+  float: left;
+  width: 187px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-get-identify-wrap {
+  float: right;
+  padding-left: 6px;
+  width: 107px;
+  height: 32px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-name {
+  float: left;
+  width: 218px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-wrap {
+  text-decoration: none;
+  height: 32px;
+  position: relative;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-wrap:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: 4px solid #777;
+  border-color: #777 transparent transparent;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-default .ec-select-show-value {
+  color: #aaa;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-show-value {
+  color: #262626;
+  background-color: transparent;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-gender-wrap {
+  float: right;
+  margin-left: 6px;
+  width: 76px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-province-wrap {
+  float: left;
+  width: 147px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-city-wrap {
+  float: right;
+  margin-left: 6px;
+  width: 147px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-city-wrap {
+  float: right;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-wrap select {
+  top: 1px;
+  left: 1px;
+  position: absolute;
+  height: 30px;
+  opacity: 0;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-gender {
+  width: 74px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-province,
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-select-city {
+  width: 145px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button-submit-wrap {
+  height: 60px;
+  padding-top: 150px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-submit-success-title {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+.ec-burberry-fwc-1 .ad-widget-float-window-container .ec-fwcon-1 .ec-button-submit-success {
+  width: 135px;
+  margin: 0 auto;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

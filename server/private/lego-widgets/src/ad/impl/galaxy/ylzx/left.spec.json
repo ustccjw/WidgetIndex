@@ -1,0 +1,337 @@
+[
+    {
+        "name": "ader_info",
+        "displayName": "官网V认证请求URL",
+        "defaultValue": "",
+        "datatype": "HIDDEN",
+        "rules": {
+            "required": true,
+            "regex": {
+                "pattern": "^(http:\/\/10.)|(http:\/\/gx.baidu.com)",
+                "errorText": "不是合法的URL",
+                "modifiers": "i"
+            }
+        }
+    },
+    {
+        "name": "hospital_info",
+        "displayName": "医院信息",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 12,
+                    "maxTextByteLength": 52,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 4,
+                            "maxTextByteLength": 12,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最少6个汉字，最多26个汉字",
+                "multiline": false
+            },
+            {
+                "name": "title_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "logo",
+                "displayName": "LOGO",
+                "defaultValue": "",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 121,
+                    "height": 91,
+                    "maxSize": 10,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "credit",
+                "displayName": "医院资质",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 30
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "site",
+                "displayName": "官网",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 40
+                },
+                "extraAttr": {
+                    "tags": [
+                        "SHOW_URL"
+                    ]
+                },
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "sign",
+                "displayName": "sign",
+                "datatype": "HIDDEN",
+                "nameTip": "",
+                "descriptionTip": "这里应该显示正确的vsign",
+                "extraAttr": {
+                    "tags": [
+                        "VSIGN"
+                    ]
+                },
+                "multiline": false,
+                "display": ""
+            },
+            {
+                "name": "intro",
+                "displayName": "简介",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 46,
+                    "maxTextByteLength": 60,
+                    "tagList": {
+                        "em": {
+                            "minTextByteLength": 4,
+                            "maxTextByteLength": 40,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最多23个汉字",
+                "multiline": false
+            },
+            {
+                "name": "intro_rcv_url",
+                "displayName": "详情跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "tel",
+                "displayName": "电话",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minTextByteLength": 4,
+                    "maxTextByteLength": 20
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "consult_rcv_url",
+                "displayName": "在线咨询跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "reg_rcv_url",
+                "displayName": "预约挂号跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "type",
+                "displayName": "类型",
+                "defaultValue": "专科",
+                "datatype": "HIDDEN"
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "doctor_info",
+        "displayName": "医生信息",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "ps_select",
+                "displayName": "分享网址",
+                "datatype": "OBJECT",
+                "display": "none",
+                "items": []
+            },
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "rules": {
+                    "required": true,
+                    "maxTextByteLength": 30,
+                    "tagList": {
+                        "em": {
+                            "maxTextByteLength": 30,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                },
+                "tip": "请输入标题，最多15个汉字",
+                "multiline": false
+            },
+            {
+                "name": "title_rcv_url",
+                "displayName": "标题跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true,
+                    "maxByteLength": 1024
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            },
+            {
+                "name": "doctors",
+                "displayName": "医生信息",
+                "datatype": "LIST",
+                "display": "none",
+                "rules": {},
+                "items": [
+                    {
+                        "name": "name",
+                        "displayName": "姓名",
+                        "defaultValue": "",
+                        "datatype": "HIDDEN"
+                    },
+                    {
+                        "name": "name_rcv_url",
+                        "displayName": "个人主页",
+                        "defaultValue": "",
+                        "datatype": "HIDDEN"
+                    },
+                    {
+                        "name": "level",
+                        "displayName": "职称",
+                        "defaultValue": "",
+                        "datatype": "HIDDEN"
+                    },
+                    {
+                        "name": "division",
+                        "displayName": "科室",
+                        "defaultValue": "",
+                        "datatype": "HIDDEN"
+                    },
+                    {
+                        "name": "expert",
+                        "displayName": "擅长领域",
+                        "defaultValue": "",
+                        "datatype": "HIDDEN"
+                    },
+                    {
+                        "name": "fee",
+                        "displayName": "挂号费",
+                        "defaultValue": "",
+                        "datatype": "HIDDEN"
+                    }
+                ]
+            }
+        ],
+        "rules": {}
+    }
+]

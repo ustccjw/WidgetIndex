@@ -1,0 +1,412 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: sinaweibo.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/sinaweibo.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 513px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#canvas .ad-widget-h1 .ec-description {
+  width: 405px;
+}
+#canvas .ad-widget-tab-container {
+  background: url("//bs.baidu.com/adtest/9ca2cb33c0bf9416c8ac7f8fb0a06764.png") no-repeat;
+  margin-top: 10px;
+  height: 246px;
+}
+#canvas .ec-tab-head {
+  background-image: none;
+  margin: 0px;
+  padding: 29px 0px 0px 0px;
+  height: 28px;
+}
+#canvas .ec-tab-head li {
+  border: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  height: 28px;
+}
+#canvas .ec-tab-head .ec-current-tab {
+  background: url(//bs.baidu.com/adtest/e9cc1dd3672efcf3a85e793bc6dbe343.png) no-repeat center bottom;
+}
+#canvas .ec-tab-head .ec-tab-list-1 {
+  border: 0px;
+  margin-left: 34px;
+}
+#canvas .ec-tab-head .ec-tab-list-2 {
+  margin-left: 18px;
+}
+#canvas .ec-tab-head .ec-tab-list-3 {
+  margin-left: 13px;
+}
+#canvas .ec-tab-head .ec-tab-list-4 {
+  margin-left: 8px;
+}
+#canvas .ec-tab-head .ec-tab-list-5 {
+  padding-left: 5px;
+}
+#canvas .ec-tab-head a {
+  background-color: transparent;
+  padding: 0px;
+  border: 0px;
+  color: #000;
+  font-weight: normal;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  font-weight: 900;
+}
+#canvas .ec-tab-body .ec-tabcon .ec-tabcon {
+  display: none;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 {
+  padding: 10px 0px 0px 0px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con {
+  float: left;
+  display: inline;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal {
+  width: 140px;
+  margin-right: 0px;
+  padding-top: 10px;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a {
+  width: 140px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin: 0px;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a img {
+  width: 82px;
+  height: 99px;
+  border: 0px;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a span {
+  display: block;
+  color: #000;
+  line-height: 16px;
+  margin-top: 15px;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a span span {
+  margin-top: 0px;
+  color: #676767;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal {
+  width: 360px;
+  margin-left: 0px;
+  padding-top: 0px;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal a {
+  width: 60px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal a img {
+  width: 58px;
+  height: 58px;
+  display: block;
+  border: 1px solid #dcddd8;
+}
+#canvas .ec-tab-content-4 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal a span {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  color: #1680BC;
+  line-height: 16px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 {
+  padding: 10px 0px 0px 0px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con {
+  float: left;
+  display: inline;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal {
+  width: 140px;
+  margin-right: 0px;
+  padding-top: 10px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a {
+  width: 140px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin: 0px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a img {
+  width: 82px;
+  height: 99px;
+  border: 0px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a span {
+  display: block;
+  color: #000;
+  line-height: 16px;
+  margin-top: 15px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-0 .ad-widget-image-normal a span span {
+  margin-top: 0px;
+  color: #676767;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal {
+  width: 180px;
+  margin-left: -15px;
+  padding-top: 0px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal a {
+  width: 60px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal a img {
+  width: 58px;
+  height: 58px;
+  display: block;
+  border: 1px solid #dcddd8;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ec-normal-con-0-1 .ad-widget-image-normal a span {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  color: #1680BC;
+  line-height: 16px;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ad-widget-top .ec-top-index {
+  color: #fd9c27;
+}
+#canvas .ec-tab-content-3 .ec-normal-con-0 .ad-widget-top .ec-top-item {
+  border: 0px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 {
+  padding: 15px 0px 0px 0px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con {
+  float: left;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-image-normal {
+  width: 140px;
+  margin-right: 0px;
+  padding-top: 5px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-image-normal a {
+  width: 140px;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin: 0px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-image-normal a img {
+  width: 82px;
+  height: 99px;
+  border: 0px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-image-normal a span {
+  display: block;
+  color: #000;
+  line-height: 16px;
+  margin-top: 15px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-image-normal a span span {
+  margin-top: 0px;
+  color: #676767;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-top {
+  width: 167px;
+  margin-right: 20px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con .ad-widget-top .ec-top-text {
+  width: 65px;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 .ec-normal-con-0-2 .ad-widget-top {
+  margin-right: 0px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 {
+  overflow: hidden;
+  zoom: 1;
+  padding: 20px 0px 0px 10px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ec-normal-con-0-0,
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ec-normal-con-0-1,
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ec-normal-con-0-2 {
+  float: left;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ec-normal-con-0-0 {
+  width: 98px;
+  margin-right: 15px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-image-normal {
+  width: 90px;
+  height: 90px;
+  padding: 3px 3px;
+  border: 1px solid #d2d2d2;
+  margin-right: 0px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-image-normal a {
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  margin: 0px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-image-normal a img {
+  width: 90px;
+  height: 90px;
+  border: 0px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-small-weibo {
+  padding-top: 10px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-small-weibo .ec-weibo-head {
+  padding-left: 17px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-small-weibo .ec-weibo-head .ec-name {
+  display: none;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-small-weibo .ec-weibo-head .ec-follow {
+  width: 62px;
+  height: 25px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-small-weibo .ec-weibo-head .ec-follow img {
+  width: 62px;
+  height: 25px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-small-weibo .ec-context {
+  display: none;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-section {
+  width: 172px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-family: 宋体;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-section a {
+  text-decoration: none;
+  color: #000;
+  line-height: 18px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-section p {
+  margin: 0px;
+  margin-top: 5px;
+  padding-top: 5px;
+  background: url("//bs.baidu.com/adtest/900777bfeb36169e52116acd2ab0cab5.png") repeat-x left top;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-section p a {
+  border: 1px solid #e3e3e3;
+  border-top: 0px;
+  padding: 3px 5px;
+  color: #646464;
+  background: #f3f3f3;
+  display: block;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-top {
+  width: 205px;
+}
+#canvas .ec-tab-content-1 .ec-normal-con-0 .ad-widget-top .ec-top-item {
+  height: 25px;
+  line-height: 25px;
+  border-top: 0px;
+  overflow: hidden;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 {
+  overflow: hidden;
+  zoom: 1;
+  padding: 43px 0px 0px 25px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ec-normal-con {
+  float: left;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-image-normal {
+  width: 81px;
+  height: 98px;
+  margin-right: 25px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-image-normal a {
+  width: 81px;
+  height: 98px;
+  text-decoration: none;
+  margin: 0px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-image-normal a img {
+  width: 81px;
+  height: 98px;
+  border: 0px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-search-box {
+  margin-top: 38px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-search-box label {
+  font-size: 18px;
+  font-weight: 900px;
+  color: #000;
+  margin-right: 5px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-search-box .ec-text,
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-search-box .ec-placeholder {
+  width: 138px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0px 3px;
+  border: 1px solid #c8c8ca;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-search-box a {
+  display: inline-block;
+  width: 70px;
+  height: 26px;
+  margin-left: 5px;
+}
+#canvas .ec-tab-content-0 .ec-normal-con-0 .ad-widget-search-box .ec-submit-button {
+  width: 70px;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  background: url("//bs.baidu.com/adtest/fb856a1095cddf2cc443f43a5d24c778.png") no-repeat;
+}
+#canvas .ad-widget-link-list {
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+}
+#canvas .ad-widget-link-list li {
+  position: absolute;
+  top: 135px;
+  right: 8px;
+  background-color: transparent;
+  border: 0px;
+  z-index: 2000000000;
+  width: 100px;
+  height: 40px;
+}
+#canvas .ad-widget-link-list li a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

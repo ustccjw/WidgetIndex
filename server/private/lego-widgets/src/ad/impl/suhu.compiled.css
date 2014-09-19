@@ -1,0 +1,238 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: suhu.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/suhu.less ~ 2013/03/18 13:45:50
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * lv2样式文件
+ **/
+#canvas {
+  width: 524px;
+  background: #ffffff;
+  border: 6px solid #802062;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+  /** 视频模块 */
+
+  /** 右侧描述和按钮区域 */
+
+}
+#canvas .ad-block-0 {
+  overflow: hidden;
+  zoom: 1;
+  background: #ffffff;
+}
+#canvas .ad-block-0-0 {
+  float: left;
+  width: 220px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+#canvas .ad-block-0-1 {
+  float: right;
+  width: 276px;
+  padding: 4px 10px 0px 14px;
+}
+#canvas .ad-block-0-0-1 {
+  height: 20px;
+  line-height: 20px;
+}
+#canvas .ad-widget-video-title {
+  height: 20px;
+  line-height: 20px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #333;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 7px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #c3c3c3;
+}
+#canvas .ad-widget-tab-container {
+  background-color: #5D1D4D;
+  margin-top: 10px;
+}
+#canvas .ec-tab-head {
+  margin: 0px;
+  background: none;
+  background-color: #802062;
+  padding: 0px;
+  height: 30px;
+  overflow: hidden;
+  width: 524px;
+}
+#canvas .ec-tab-head li {
+  margin: 0px;
+  height: 30px;
+  border-left: solid 1px #802062;
+  border-right: solid 1px #802062;
+}
+#canvas .ec-tab-head li a {
+  background-color: #802062;
+  color: #fff;
+  height: 10px;
+  line-height: 10px;
+  *line-height: 14px;
+  border: none;
+  border-right: 1px solid #A25780;
+  margin-top: 10px;
+  padding: 0px;
+}
+#canvas .ec-tab-head .ec-current-tab a {
+  color: #fff;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  background-color: #5D1D4D;
+  margin-top: 0;
+  border-right: none;
+}
+#canvas .ec-tab-head .ec-previous-tab a,
+#canvas .ec-tab-head .ec-tab-list-last a {
+  border-right: none;
+}
+#canvas .ec-tab-body {
+  overflow: hidden;
+  zoom: 1;
+  height: 141px;
+  *height: 145px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  padding: 5px 0;
+}
+#canvas .ad-widget-image-cartoon .ec-item a {
+  width: 102px;
+  height: 130px;
+}
+#canvas .ad-widget-image-cartoon .ec-item div {
+  background: #7f7f7f;
+}
+#canvas .ad-widget-tab-cont {
+  padding-top: 10px;
+}
+#canvas .ad-widget-tab-cont .ec-td-border {
+  border-right: 1px solid #8C4D83;
+}
+#canvas .ad-widget-tab-cont a {
+  color: #fff;
+}
+#canvas .ad-widget-button-group {
+  background: #5D1D4D;
+  padding: 5px 0 0;
+}
+#canvas .ad-widget-button-group td {
+  border: none;
+}
+#canvas .ad-widget-button-group td a {
+  color: #fff;
+  text-decoration: underline;
+  border: noen;
+  margin: 0 5px 0 0;
+  height: 18px;
+  line-height: 18px;
+  display: block;
+  background-color: #5D1D4D;
+  font-family: "宋体";
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0 {
+  position: relative;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0-0 {
+  position: absolute;
+  height: 140px;
+  overflow: hidden;
+}
+#canvas .ec-tab-content-2 .ec-normal-con-0-1 {
+  position: absolute;
+  left: 25px;
+  top: 40px;
+}
+#canvas .ec-tab-content-2 .ad-widget-lv-list .ec-inner {
+  padding-right: 0px;
+}
+#canvas .ec-tab-content-2 .ad-widget-lv-list .ec-inner .ec-detail {
+  margin-left: 40px;
+  width: 260px;
+  overflow: hidden;
+}
+#canvas .ec-tab-content-2 .ad-widget-dependency-select .ec-item {
+  float: none;
+  margin-bottom: 10px;
+}
+#canvas .ec-tab-content-2 .ad-widget-dependency-select .ec-item .ec-title {
+  color: #FFEDE3;
+}
+#canvas .ec-tab-content-3 {
+  padding: 20px 0 20px 15px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tab-content-3 .ec-tabcon {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-tab-content-3 .ad-widget-normal-container .ad-widget {
+  float: left;
+  margin-left: 10px;
+}
+#canvas .ec-tab-content-3 .ad-widget-normal-container .ad-widget-image-link {
+  width: 180px;
+  height: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#canvas .ec-tab-content-3 .ad-widget-normal-container .ad-widget-title {
+  float: none;
+  margin-left: 0;
+}
+#canvas .ec-tab-content-3 .ad-widget-normal-container .ad-widget-title h2 {
+  width: 150px;
+  overflow: hidden;
+  zoom: 1;
+  font-size: 13px;
+  color: #C192B5;
+}
+#canvas .ec-tab-content-3 .ad-widget-normal-container .ad-widget-title h2 a {
+  color: #fff;
+  *float: left;
+}
+#canvas .ec-tab-content-3 .ad-widget-normal-container .ad-widget-title h2 span {
+  *float: left;
+}
+#canvas .ec-tab-content-4 {
+  border: 6px solid #E9CEEA;
+}
+#canvas .ec-tab-content-4 .ad-widget-small-weibo {
+  background-color: #fff;
+  padding: 20px 10px 10px 10px;
+  height: 101px;
+  line-height: normal;
+}
+#canvas .ec-tab-content-4 .ec-weibo-head {
+  position: relative;
+  margin-bottom: 5px;
+}
+#canvas .ec-tab-content-4 .ec-name {
+  color: #333;
+}
+#canvas .ec-tab-content-4 .ec-follow {
+  width: 56px;
+  height: 18px;
+  position: absolute;
+  right: 0px;
+}
+#canvas .ec-tab-content-4 .ec-context {
+  margin-bottom: 5px;
+}
+#canvas .ec-tab-content-4 .ec-rightbtn a,
+#canvas .ec-tab-content-4 .ec-rightbtn div {
+  color: #333;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

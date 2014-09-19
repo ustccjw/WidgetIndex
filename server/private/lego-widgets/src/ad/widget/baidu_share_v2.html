@@ -1,0 +1,14 @@
+<!-- target:AD_ad_widget_baidu_share_v2 -->
+{{#display}}
+<div id="{{#_id}}baidu-share-v2{{/_id}}" class="ad-widget ad-widget-baidu-share-v2">
+    <div id="bdshare" class="bdsharebuttonbox" data-tag="{{data_tag}}">
+        {{#display_more}}
+        <a class="bds_more" data-cmd="more" title2="更多"></a>
+        {{/display_more}}
+        <font>分享到：</font>
+        {{#options}}
+        <a class="bds_{{type}}{{#@last}} ec-last{{/@last}}" data-cmd="{{type}}" title2="{{name}}"></a>
+        {{/options}}
+    </div>
+</div>
+{{/display}}

@@ -1,0 +1,52 @@
+{ 
+    "contents": ["ad.widget.Colorlist"],
+    "userPrefs": [
+        {
+            "name": "options",
+            "displayName": "链接列表",
+            "datatype": "LIST",
+            "items": [
+                {
+                    "name": "desc",
+                    "displayName": "desc",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "maxByteLength": 32
+                    },
+                    "multiline": false
+                },
+                {
+                    "name": "desc_rcv_url",
+                    "displayName": "链接地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "multiline": false
+                },
+                {
+                    "name": "text",
+                    "displayName": "链接文本",
+                    "defaultValue": "dell inspiron",
+                    "datatype": "STRING",
+                    "rules": {
+                        "maxByteLength": 32
+                    },
+                    "multiline": false
+                },
+                {
+                    "name": "rcv_url",
+                    "displayName": "链接地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "multiline": false
+                }
+            ]
+        }
+    ]
+}

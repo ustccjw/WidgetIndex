@@ -1,0 +1,42 @@
+<!-- target:AD_ad_widget_zhidao_image_item -->
+<div class="ad-widget-zhidao ad-widget-zhidao-image-item">
+    <div class="ec-title">{{title}}{{#popularize_link}} - <a target="_blank" href="{{{popularize_link}}}">品牌推广</a>{{/popularize_link}}
+    </div>
+    <ul{{#width}} style="width:{{width}}px"{{/width}}>
+        {{#items}}
+        <li style="width:{{item_width}}px;" class="{{#@first}}ec-first{{/@first}}{{#@last}}ec-last{{/@last}}">
+            {{#img_link_rcv_url}}
+            <a href="{{{img_link_rcv_url}}}" target="_blank" title2="item{{_index}}-图片">
+            {{/img_link_rcv_url}}
+            <img src="{{img}}" alt="" width="{{img_width}}px" height="{{{img_height}}}px"/>
+            {{#img_link_rcv_url}}
+            </a>
+            {{/img_link_rcv_url}}
+            <div class="ec-img-desc">
+                {{#title}}
+                <p class="ec-img-title">
+                    {{#title_link_rcv_url}}
+                    <a href="{{{title_link_rcv_url}}}" target="_blank" title2="item{{_index}}-标题">
+                    {{/title_link_rcv_url}}
+                    {{{title}}}
+                    {{#title_link_rcv_url}}
+                    </a>
+                    {{/title_link_rcv_url}}
+                </p>
+                {{/title}}
+                {{#describe}}
+                <p class="ec-img-describe">
+                    {{#describe_link_rcv_url}}
+                    <a href="{{{describe_link_rcv_url}}}" target="_blank" title2="item{{_index}}-描述">
+                    {{/describe_link_rcv_url}}
+                    {{describe}}
+                    {{#describe_link_rcv_url}}
+                    </a>
+                    {{/describe_link_rcv_url}}
+                </p>
+                {{/describe}}
+            </div>
+        </li>
+        {{/items}}
+    </ul>
+</div>

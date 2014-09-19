@@ -1,0 +1,92 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: game.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhidao/game.less ~ 2013/01/23 18:38:28
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * result样式文件
+ **/
+.ad-widget-zhidao-game {
+  font: 13px/1.5 "宋体", arial, sans-serif;
+}
+.ad-widget-zhidao-game .ec-item {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 15px;
+}
+.ad-widget-zhidao-game .ec-game-content {
+  float: left;
+  color: #000;
+}
+.ad-widget-zhidao-game .ec-type span,
+.ad-widget-zhidao-game .ec-players span,
+.ad-widget-zhidao-game .ec-time span {
+  color: #666;
+}
+.ad-widget-zhidao-game .ec-button {
+  margin-top: 5px;
+  width: 62px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #237CCC;
+  background: #43A7FF;
+}
+.ad-widget-zhidao-game .ec-button a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+.ad-widget-zhidao-game .ec-link a {
+  color: #0000cc;
+}
+.ad-widget-zhidao-game .ec-title {
+  margin-bottom: 2px;
+  *margin: 0px;
+}
+.ad-widget-zhidao-game .ec-title span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  background: #00AEFF;
+}
+.ad-widget-zhidao-game .ec-title a {
+  color: #0000cc;
+}
+.ad-widget-zhidao-game .ec-game-logo {
+  float: left;
+  width: 72px;
+  height: 100px;
+  margin-right: 10px;
+}
+.ad-widget-zhidao-game .ec-game-logo a {
+  text-decoration: none;
+  display: block;
+  width: 72px;
+  height: 100px;
+}
+.ad-widget-zhidao-game .ec-game-logo a img {
+  border: none;
+  display: block;
+  width: 72px;
+  height: 100px;
+}
+.ad-widget-zhidao-game .ec-more {
+  border-top: 1px solid #E5E8F1;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.ad-widget-zhidao-game .ec-more a {
+  color: #0000cc;
+  text-decoration: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,88 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/image/shiyan1.less ~ 2013/03/07 15:23:39
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * shiyan1样式文件
+ **/
+.ad-widget-image-shiyan1 {
+  font: 13px/1.5 "宋体", arial, sans-serif;
+}
+.ad-widget-image-shiyan1 p {
+  margin: 0px;
+  padding: 0px;
+}
+.ad-widget-image-shiyan1 .ec-main {
+  width: 205px;
+  border: solid 1px #d3d3d3;
+  height: auto;
+  overflow-x: hidden;
+}
+.ad-widget-image-shiyan1 .ec-head {
+  height: 28px;
+  border-bottom: solid 1px #d3d3d3;
+  width: 100%;
+  overflow: hidden;
+  zoom: 1;
+  background: url(//bs.baidu.com/adtest/04589d9675d6796417b8906053a99633.png) 0 0 repeat-x;
+}
+.ad-widget-image-shiyan1 .ec-logo {
+  margin: 5px 5px 5px 14px;
+  float: left;
+  display: inline;
+}
+.ad-widget-image-shiyan1 .ec-logo img {
+  width: 65px;
+  height: 20px;
+}
+.ad-widget-image-shiyan1 .ec-title {
+  font-size: 15px;
+  color: #2886bc;
+  margin-top: 4px;
+  font-weight: bold;
+}
+.ad-widget-image-shiyan1 .ec-body {
+  padding: 7px 14px;
+  background-color: #f0f0f0;
+}
+.ad-widget-image-shiyan1 .ec-block {
+  border: solid 1px #d3d3d3;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.ad-widget-image-shiyan1 .ec-img {
+  display: block;
+}
+.ad-widget-image-shiyan1 .ec-text {
+  margin: 10px 0px;
+  color: #666;
+  line-height: 130%;
+}
+.ad-widget-image-shiyan1 .ec-play {
+  background: url(//bs.baidu.com/adtest/4a413491604ced3469afe23ff7f7fdc3.jpg) 0 0 no-repeat;
+  width: 78px;
+  height: 30px;
+  display: block;
+  margin: 0px auto;
+}
+.ad-widget-image-shiyan1 .ec-bottom {
+  margin-top: -10px;
+}
+.ad-widget-image-shiyan1 .ec-more em {
+  color: #ff0000;
+  font-style: normal;
+}
+.ad-widget-image-shiyan1 .ec-site {
+  color: #488048;
+}
+.ad-widget-image-shiyan1 .ec-site span {
+  color: #666;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

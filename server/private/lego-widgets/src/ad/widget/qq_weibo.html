@@ -1,0 +1,33 @@
+<!-- target:AD_ad_widget_qq_weibo -->
+<div class="ad-widget ad-widget-qq-weibo">
+    {{^no_fieldset}}
+    <fieldset><legend>微博互动区</legend></fieldset>
+    {{/no_fieldset}}
+    <div class="ec-weibo-head">
+        {{#is_display_icon}}
+        <a href="{{{icon_rcv_url}}}" target="_blank" class="ec-logo" title2="qq微博左侧标识"><img src="{{icon}}"/></a>
+        {{/is_display_icon}}
+        <a target="_blank" id="{{#_id}}name{{/_id}}" class="ec-name" href="{{{account_url}}}" title2="qq微博名称"
+           {{#verify_img}}style="background:url({{verify_img}}) no-repeat right center;padding-right:20px"{{/verify_img}}>{{name}}</a>
+        <a target="_blank" id="{{#_id}}follow{{/_id}}" class="ec-follow" href="{{{account_url}}}" ><img src="{{follow_imgsrc}}"/></a>
+        {{#is_display_fans}}<div class="ec-text ec-seprate">听众<span id="{{#_id}}fans{{/_id}}"></span></div>{{/is_display_fans}}
+        {{#is_display_weibo}}<div class="ec-text">广播<span id="{{#_id}}weibo{{/_id}}"></span></div>{{/is_display_weibo}}
+    </div>
+    <div class="ec-context">
+        {{#weibo_logo}}
+        <a target="_blank" class="ec-weibo-logo" title2="qq微博logo" href="{{{weibo_logo_rcv_url}}}"><img src="{{weibo_logo}}"/></a>
+        {{/weibo_logo}}
+        <div class="ec-weibo-text" id="{{#_id}}context{{/_id}}">加载中...</div>
+        {{#is_display_foot}}
+        <div class="ec-foot">
+            <div class="ec-datetime" id="{{#_id}}datetime{{/_id}}"></div>
+            <div class="ec-from">&nbsp;<a target="_blank" title2="QQ微博官网" href="http://t.qq.com">来自腾讯微博</a></div>
+            <div class="ec-rightbtn">
+                <a target="_blank" id="{{#_id}}transformation{{/_id}}"  class="ec-seprate" href="{{{account_url}}}">转播</a>
+                <a target="_blank" id="{{#_id}}store{{/_id}}"  class="ec-seprate" href="{{{account_url}}}" >收藏</a>
+                <a target="_blank" id="{{#_id}}crit{{/_id}}" title2="qq微博评论" href="{{{account_url}}}" >评论</a>
+            </div>
+        </div>
+        {{/is_display_foot}}
+    </div>
+</div>

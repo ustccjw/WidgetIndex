@@ -1,0 +1,842 @@
+[{
+    "name": "left_video",
+    "displayName": "视频",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "rcv_url",
+        "displayName": "视频链接",
+        "defaultValue": "",
+        "tip": "http://",
+        "datatype": "STRING",
+        "rules": {
+            "stringType": "URL",
+            "required": true,
+            "maxTextByteLength": 255
+        },
+        "extraAttr": {}
+    }, {
+        "name": "csttit",
+        "displayName": "csttit",
+        "defaultValue": "zhidao.baidu.com",
+        "datatype": "HIDDEN",
+        "rules": {}
+    }, {
+        "name": "img_url",
+        "displayName": "视频首帧图片",
+        "defaultValue": "",
+        "tip": "视频首帧图片",
+        "datatype": "UPLOAD",
+        "rules": {
+            "required": true
+        },
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "width": 220,
+            "height": 164,
+            "maxSize": 30,
+            "ext": "jpg"
+        },
+        "multiline": false
+    }, {
+        "name": "video_url",
+        "displayName": "视频文件",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "UPLOAD",
+        "rules": {
+            "required": true
+        },
+        "extraAttr": {
+            "fileType": "FLV",
+            "maxSize": 700,
+            "ext": "flv"
+        },
+        "multiline": false
+    }, {
+        "name": "ipad_img",
+        "displayName": "视频ipad显示图片",
+        "defaultValue": "",
+        "tip": "",
+        "datatype": "UPLOAD",
+        "rules": {},
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "width": 220,
+            "height": 190,
+            "maxSize": 30,
+            "ext": "jpg"
+        },
+        "multiline": false
+    }, {
+        "name": "width",
+        "displayName": "视频宽度",
+        "defaultValue": "220",
+        "tip": "",
+        "datatype": "HIDDEN",
+        "rules": {
+            "required": true,
+            "stringType": "NUMBER"
+        },
+        "multiline": false
+    }, {
+        "name": "height",
+        "displayName": "视频高度",
+        "defaultValue": "190",
+        "tip": "",
+        "datatype": "HIDDEN",
+        "rules": {
+            "required": true,
+            "stringType": "NUMBER"
+        },
+        "multiline": false
+    }]
+}, {
+    "name": "small_head",
+    "displayName": "头部",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "titletext",
+        "displayName": "标题",
+        "defaultValue": "",
+        "datatype": "HTML",
+        "rules": {
+            "required": true,
+            "minTextByteLength": 10,
+            "maxTextByteLength": 30,
+            "tagList": {
+                "em": {
+                    "minTextByteLength": 4,
+                    "maxTextByteLength": 12,
+                    "minCount": 1,
+                    "maxCount": 1
+                }
+            }
+        },
+        "extraAttr": {
+            "editorConfig": {
+                "tools": [
+                    "emphasize"
+                ]
+            },
+            "tagList": {
+                "em": {
+                    "isAllowNoContent": false,
+                    "isSimpleTag": false
+                }
+            }
+        },
+        "tip": "请输入标题，最少5个汉字，最多15个汉字",
+        "multiline": false
+    }, {
+        "name": "titleurl_rcv_url",
+        "displayName": "标题url",
+        "defaultValue": "",
+        "tip": "http://",
+        "datatype": "STRING",
+        "rules": {
+            "stringType": "URL",
+            "required": true,
+            "maxTextByteLength": 255
+        },
+        "extraAttr": {}
+    }, {
+        "name": "description_rcv_html",
+        "displayName": "描述",
+        "defaultValue": "",
+        "tip": "描述为45~65个汉字,不带链接",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "minTextByteLength": 90,
+            "maxTextByteLength": 130
+        },
+        "multiline": true,
+        "extraAttr": {}
+    }, {
+        "name": "site",
+        "displayName": "官方网站",
+        "defaultValue": "",
+        "tip": "最多可填写24个字节",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "maxByteLength": 24
+        },
+        "multiline": false
+    }]
+}, {
+    "name": "bar_code",
+    "displayName": "二维码",
+    "display": "toggle-block",
+    "datatype": "OBJECT",
+    "items": [{
+        "name": "pro_img_url",
+        "displayName": "二维码图片",
+        "defaultValue": "",
+        "tip": "http://ecma.bdimg.com/adtest/7899f875592a06693017e2af745b0f89.jpg",
+        "datatype": "UPLOAD",
+        "rules": {
+            "stringType": "URL",
+            "required": true,
+            "maxTextByteLength": 255
+        },
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "ext": "jpg,gif,png,jpeg",
+            "width": 70,
+            "height": 70,
+            "maxSize": 5
+        }
+    }, {
+        "name": "des_title",
+        "displayName": "二维码标题",
+        "defaultValue": "",
+        "tip": "二维码标题",
+        "datatype": "STRING",
+        "multiline": false,
+        "rules": {
+            "required": true,
+            "minByteLength": 4,
+            "maxByteLength": 26
+        }
+    }, {
+        "name": "des_text",
+        "displayName": "二维码描述",
+        "defaultValue": "",
+        "tip": "二维码描述",
+        "datatype": "STRING",
+        "multiline": false,
+        "rules": {
+            "required": true,
+            "minByteLength": 26,
+            "maxByteLength": 78
+        }
+    }, {
+        "name": "bar_url",
+        "displayName": "二维码链接",
+        "defaultValue": "",
+        "datatype": "STRING",
+        "rules": {
+            "required": true,
+            "stringType": "URL",
+            "maxTextByteLength": 255
+        },
+        "tip": "http://",
+        "multiline": false
+    }]
+}, {
+    "name": "tab0",
+    "displayName": "首个tab(带新闻资讯)",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "tab_title",
+        "displayName": "首个tab标题",
+        "defaultValue": "",
+        "datatype": "STRING",
+        "rules": {
+            "minTextByteLength": 1,
+            "maxTextByteLength": 20,
+            "required": true
+        },
+        "extraAttr": {},
+        "tip": "标题",
+        "multiline": false
+    }, {
+        "name": "tab_cont",
+        "displayName": "tab内容",
+        "datatype": "OBJECT",
+        "items": [{
+            "name": "pro_img_url",
+            "displayName": "对应图片",
+            "defaultValue": "",
+            "tip": "http://dummyimage.com/180x100/ccc/333.jpg",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "width": 180,
+                "height": 100,
+                "maxSize": 15,
+                "ext": "jpg,gif,png"
+            },
+            "multiline": false
+        }, {
+            "name": "pro_rcv_url",
+            "displayName": "图片链接",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL",
+                "maxTextByteLength": 255
+            },
+            "tip": "http://",
+            "multiline": false
+        }, {
+            "name": "type_title",
+            "displayName": "产品标题",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "minTextByteLength": 2,
+                "maxTextByteLength": 20,
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "产品标题",
+            "multiline": false
+        }, {
+            "name": "type_title_rcv_url",
+            "displayName": "产品标题链接",
+            "defaultValue": "",
+            "tip": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL",
+                "maxTextByteLength": 255
+            },
+            "multiline": false
+        }, {
+            "name": "type_links",
+            "displayName": "新闻资讯",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 3,
+                "maxCount": 3
+            },
+            "items": [{
+                "name": "text",
+                "displayName": "新闻资讯",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "minTextByteLength": 2,
+                    "maxTextByteLength": 42,
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "新闻资讯",
+                "multiline": false
+            }, {
+                "name": "rcv_url",
+                "displayName": "新闻链接",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxTextByteLength": 255
+                },
+                "tip": "http://",
+                "multiline": false
+            }]
+        }]
+    }]
+}, {
+    "name": "tab2",
+    "displayName": "第三个tab(带关键字链接)",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "tab_title",
+        "displayName": "tab标题",
+        "defaultValue": "",
+        "datatype": "STRING",
+        "rules": {
+            "minTextByteLength": 1,
+            "maxTextByteLength": 20,
+            "required": true
+        },
+        "extraAttr": {},
+        "tip": "标题",
+        "multiline": false
+    }, {
+        "name": "tab_cont",
+        "displayName": "tab内容",
+        "datatype": "OBJECT",
+        "items": [{
+            "name": "pro_img_url",
+            "displayName": "对应图片",
+            "defaultValue": "http://dummyimage.com/180x100/ccc/333.jpg",
+            "tip": "",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "width": 180,
+                "height": 100,
+                "maxSize": 15,
+                "ext": "jpg,gif,png"
+            },
+            "multiline": false
+        }, {
+            "name": "pro_rcv_url",
+            "displayName": "图片链接",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL",
+                "maxTextByteLength": 255
+            },
+            "tip": "http://",
+            "multiline": false
+        }, {
+            "name": "des_title",
+            "displayName": "产品标题",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "minTextByteLength": 2,
+                "maxTextByteLength": 20,
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "产品标题",
+            "multiline": false
+        }, {
+            "name": "des_title_rcv_url",
+            "displayName": "产品标题链接",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL",
+                "maxTextByteLength": 255
+            },
+            "tip": "http://",
+            "multiline": false
+        }, {
+            "name": "des_text_links",
+            "displayName": "描述",
+            "defaultValue": "",
+            "tip": "描述为1~35个汉字，<a href=\"http://baidu.com\">链接词</a>最多4个，每个链接词最多6个汉字",
+            "datatype": "HTML",
+            "rules": {
+                "required": true,
+                "minTextByteLength": 2,
+                "maxTextByteLength": 70,
+                "tagList": {
+                    "a": {
+                        "maxTextByteLength": 12,
+                        "maxCount": 4
+                    }
+                }
+            },
+            "multiline": true,
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": [
+                        "link"
+                    ]
+                },
+                "tagList": {
+                    "a": {
+                        "attributeRules": {
+                            "href": {
+                                "isAllowNoValue": false,
+                                "isRequired": true,
+                                "valueType": "url"
+                            },
+                            "target": {
+                                "defaultValue": "_blank",
+                                "isAllowNoValue": false,
+                                "isRequired": false
+                            }
+                        },
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false,
+                        "requiredAttributes": [
+                            "target",
+                            "href"
+                        ]
+                    }
+                }
+            }
+        }, {
+            "name": "type_title",
+            "displayName": "可选型号标题",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "minTextByteLength": 2,
+                "maxTextByteLength": 16,
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "可选型号标题",
+            "multiline": false
+        }, {
+            "name": "type_links",
+            "displayName": "可选型号",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 1,
+                "maxCount": 4
+            },
+            "items": [{
+                "name": "text",
+                "displayName": "可选型号文字",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "minTextByteLength": 2,
+                    "maxTextByteLength": 16,
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "可选型号文字",
+                "multiline": false
+            }, {
+                "name": "rcv_url",
+                "displayName": "可选型号链接",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxTextByteLength": 255
+                },
+                "tip": "http://",
+                "multiline": false
+            }]
+        }]
+    }]
+}, {
+    "name": "tab",
+    "displayName": "其他tab(2,4..)",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "interval_time",
+        "displayName": "tab切换时间间隔",
+        "defaultValue": "5000",
+        "datatype": "HIDDEN",
+        "rules": {},
+        "extraAttr": {},
+        "multiline": false
+    }, {
+        "name": "hover_time",
+        "displayName": "hover_time",
+        "defaultValue": "200",
+        "datatype": "HIDDEN",
+        "rules": {},
+        "extraAttr": {},
+        "multiline": false
+    }, {
+        "name": "default_index",
+        "displayName": "默认展现tab的索引",
+        "defaultValue": "0",
+        "datatype": "STRING",
+        "display": "none",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "extraAttr": {
+            "filters": "float"
+        },
+        "tip": "索引从0开始，在选择不随机展现tab时生效",
+        "multiline": false
+    }, {
+        "name": "options",
+        "displayName": "其他tab",
+        "datatype": "LIST",
+        "rules": {
+            "minCount": 1,
+            "maxCount": 4
+        },
+        "items": [{
+            "name": "tab_title",
+            "displayName": "tab标题",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "minTextByteLength": 1,
+                "maxTextByteLength": 20,
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "标题",
+            "multiline": false
+        }, {
+            "name": "tab_cont",
+            "displayName": "tab内容",
+            "datatype": "OBJECT",
+            "items": [{
+                "name": "pro_img_url",
+                "displayName": "对应图片",
+                "defaultValue": "",
+                "tip": "http://dummyimage.com/180x100/ccc/333.jpg",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 180,
+                    "height": 100,
+                    "maxSize": 15,
+                    "ext": "jpg,gif,png"
+                },
+                "multiline": false
+            }, {
+                "name": "pro_rcv_url",
+                "displayName": "图片链接",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxTextByteLength": 255
+                },
+                "tip": "http://",
+                "multiline": false
+            }, {
+                "name": "des_title",
+                "displayName": "产品标题",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "minTextByteLength": 2,
+                    "maxTextByteLength": 20,
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "产品标题",
+                "multiline": false
+            }, {
+                "name": "des_title_rcv_url",
+                "displayName": "产品标题链接",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxTextByteLength": 255
+                },
+                "tip": "http://",
+                "multiline": false
+            }, {
+                "name": "des_text",
+                "displayName": "对应产品描述",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "minTextByteLength": 2,
+                    "maxTextByteLength": 70,
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "描述",
+                "multiline": false
+            }, {
+                "name": "des_text_rcv_url",
+                "displayName": "对应产品描述链接",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxTextByteLength": 255
+                },
+                "tip": "http://",
+                "multiline": false
+            }, {
+                "name": "type_title",
+                "displayName": "可选型号标题",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "minTextByteLength": 2,
+                    "maxTextByteLength": 16,
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "可选型号标题",
+                "multiline": false
+            }, {
+                "name": "type_links",
+                "displayName": "可选型号",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 1,
+                    "maxCount": 4
+                },
+                "items": [{
+                    "name": "text",
+                    "displayName": "可选型号文字",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "minTextByteLength": 2,
+                        "maxTextByteLength": 16,
+                        "required": true
+                    },
+                    "extraAttr": {},
+                    "tip": "可选型号文字",
+                    "multiline": false
+                }, {
+                    "name": "rcv_url",
+                    "displayName": "可选型号链接",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "stringType": "URL",
+                        "maxTextByteLength": 255
+                    },
+                    "tip": "http://",
+                    "multiline": false
+                }]
+            }]
+        }],
+        "tip": "",
+        "extraAttr": {}
+    }]
+}, {
+    "name": "button_group",
+    "displayName": "按钮组",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "options",
+        "displayName": "按钮",
+        "datatype": "LIST",
+        "rules": {
+            "required": true,
+            "minCount": 3,
+            "maxCount": 5
+        },
+        "items": [{
+            "name": "text",
+            "displayName": "推广名",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 10
+            },
+            "tip": "按钮名称",
+            "multiline": false
+        }, {
+            "name": "rcv_url",
+            "displayName": "链接",
+            "defaultValue": "",
+            "tip": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxTextByteLength": 255,
+                "stringType": "URL"
+            },
+            "multiline": false
+        }]
+    }]
+}, {
+    "name": "float_window_container",
+    "displayName": "float_window_container",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "width",
+        "displayName": "width",
+        "defaultValue": "545",
+        "datatype": "HIDDEN",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "extraAttr": {
+            "filters": "float"
+        }
+    }, {
+        "name": "height",
+        "displayName": "height",
+        "defaultValue": "410",
+        "datatype": "HIDDEN",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "extraAttr": {
+            "filters": "float"
+        }
+    }]
+}, {
+    "name": "map",
+    "displayName": "地图及链接",
+    "datatype": "OBJECT",
+    "display": "toggle-block",
+    "items": [{
+        "name": "width",
+        "displayName": "width",
+        "defaultValue": "545",
+        "datatype": "HIDDEN",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "extraAttr": {}
+    }, {
+        "name": "height",
+        "displayName": "height",
+        "defaultValue": "410",
+        "datatype": "HIDDEN",
+        "rules": {
+            "stringType": "NUMBER"
+        },
+        "extraAttr": {}
+    }, {
+        "name": "src",
+        "displayName": "图片",
+        "datatype": "UPLOAD",
+        "defaultValue": "http://dummyimage.com/540x410/ccc/333.jpg",
+        "rules": {
+            "required": false
+        },
+        "extraAttr": {
+            "fileType": "IMAGE",
+            "width": 540,
+            "height": 410,
+            "maxSize": 100,
+            "ext": "jpg,gif,png"
+        },
+        "multiline": false
+    }, {
+        "name": "options",
+        "displayName": "链接块",
+        "datatype": "LIST",
+        "items": [{
+            "name": "shape",
+            "displayName": "shape",
+            "defaultValue": "rect",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        }, {
+            "name": "coords",
+            "displayName": "coords",
+            "defaultValue": "10,10,10,10",
+            "datatype": "STRING",
+            "rules": {},
+            "extraAttr": {}
+        }, {
+            "name": "href_rcv_url",
+            "displayName": "链接",
+            "defaultValue": "",
+            "tip": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "required": false,
+                "maxTextByteLength": 255,
+                "stringType": "URL"
+            },
+            "multiline": false
+        }]
+    }]
+}]

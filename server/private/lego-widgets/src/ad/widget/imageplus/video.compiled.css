@@ -1,0 +1,99 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/video.less ~ 2013/09/02 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * video样式文件
+ **/
+.ad-widget-imageplus-video {
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-imageplus-video-info {
+  position: relative;
+  width: 146px;
+  height: 147px;
+  background-color: #FFF;
+}
+.ad-widget-imageplus-video-vd-inner {
+  padding: 5px;
+  overflow: hidden;
+  _zoom: 1;
+}
+.ad-widget-imageplus-video-idea {
+  width: 134px;
+  height: 100px;
+  border: solid 1px #E5E5E5;
+  position: relative;
+}
+.ad-widget-imageplus-video-idea img {
+  position: static !important;
+  cursor: auto !important;
+  display: block;
+  width: 134px !important;
+  height: 100px !important;
+  border: none;
+}
+.ad-widget-imageplus-video-start {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 50px;
+  height: 17px;
+  background: url("http://ecma.bdimg.com/public03/imageplus/video-play.png") no-repeat 0 0;
+  background: none \9;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='corp', src='http://ecma.bdimg.com/public03/imageplus/video-play.png')\9;
+}
+.ad-widget-imageplus-video-text {
+  float: left;
+  width: 100%;
+  color: #333;
+  text-align: left;
+}
+.ad-widget-imageplus-video-title {
+  text-decoration: underline;
+}
+.ad-widget-imageplus-video-desc {
+  width: 136px;
+  height: 18px;
+  overflow: hidden;
+  text-decoration: underline;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ad-widget-imageplus-video-seller {
+  color: #666;
+  margin-top: 0;
+  text-align: right;
+}
+.ad-widget-imageplus-video-redirect {
+  width: 146px;
+  height: 147px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ad-widget-imageplus-video-info.ad-widget-imageplus-video-long {
+  height: 269px;
+}
+.ad-widget-imageplus-video-long .ad-widget-imageplus-video-idea {
+  height: 200px;
+}
+.ad-widget-imageplus-video-long .ad-widget-imageplus-video-idea img {
+  height: 200px !important;
+}
+.ad-widget-imageplus-video-long .ad-widget-imageplus-video-redirect {
+  height: 269px;
+}
+.ad-widget-imageplus-video-long .ad-widget-imageplus-video-seller {
+  margin-top: 6px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

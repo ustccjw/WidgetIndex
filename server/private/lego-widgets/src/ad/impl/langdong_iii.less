@@ -1,0 +1,151 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: langdong_iii.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/langdong_iii.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    width: 515px;
+    background: #f1f5fc;
+    padding:10px;
+    margin-bottom: 20px;
+    font:13px arial,sans-serif;
+    .gain-bfc();
+    
+    .ad-widget-title{
+         h2 {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+            margin: 0px;
+            padding-bottom: 5px;
+            
+            a {
+                color: #0000CC;
+                
+                em {
+                    color: #CC0000;
+                    font-style: normal;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .ad-layout-block-1{
+        .gain-bfc();
+    }
+    .ad-layout-block-1-0{
+        float:left;
+    }
+    .ad-layout-block-1-1{
+        .gain-bfc();
+        padding-left:14px;
+    }
+    .ad-widget-video{
+        width:224px;
+        height:151px;
+        object{
+            width:224px;
+            height:151px;
+            embed{
+                width:224px;
+                height:151px;
+            }
+        }
+    }
+    .ad-widget-small-head{
+          h2 a{
+              color:#0000cc;
+          }
+          .ec-description{
+              color:#333;
+              font-size:12px;
+          }
+          .ec-image-group{
+              margin-top:6px;
+              a {
+                  border-color:#666;
+              }
+          }
+    }
+    .ad-widget-section{
+        
+        li{
+            margin-top:15px;
+            margin-bottom:0px;
+            p {
+                line-height:18px;
+                margin-left:13px;
+                a{
+                    text-decoration:none;
+                    color:#9e9e9e;
+                }
+            }
+        }
+    }
+    .ad-widget-button-group{
+        margin-top:10px;
+        padding: 0px;
+        height:26px;
+        line-height:26px;
+        background:#d3d1f8;
+        
+        table tr{
+            height:26px;
+        }
+        td{
+            border:1px solid #f1f5fc;
+            border-left:4px solid #f1f5fc;
+            border-right:4px solid #f1f5fc;
+            padding:0px;
+            height:24px;
+            line-height:24px;
+            
+            a{
+                color:#0000cc;
+            }
+        }
+        .ec-first{
+            border-left:0px solid #f1f5fc;
+        }
+        .ec-last{
+            border-right:0px solid #f1f5fc;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

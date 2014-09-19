@@ -1,0 +1,158 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+
+/**
+ * src/ad/widget/float_video2.less ~ 2012/12/24 15:17:11
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $
+ * @description
+ * float_video2样式文件
+ **/
+ .ad-widget-float-video2 {
+    font: 12px/1.5 arial, sans-serif;
+    p, ul, li {
+        margin: 0px;
+        padding: 0px;
+    }
+    ul {
+        list-style: none;
+    }
+    width: 1024px;
+    height: 768px;
+    background-color: #F1F5FC;
+    padding: 10px;
+    .ec-inner {
+        position: relative;
+    }
+    .ec-fg {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 200;
+        border: solid 1px #B7B7B7;
+        width: 220px;
+        height: 190px;
+        cursor: pointer;
+        .ec-start {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            width: 58px;
+            height: 58px;
+            background: url(//bs.baidu.com/adtest/5c1527fcc874312e00a18a94b900ca0a.png) no-repeat;
+            _background: none;
+            _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/5c1527fcc874312e00a18a94b900ca0a.png");
+        }
+        .ec-hover {
+            background: url(//bs.baidu.com/adtest/54d2d616fd8faf6edec1cabc8b658ad7.png) no-repeat;
+            _background: none;
+            _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/54d2d616fd8faf6edec1cabc8b658ad7.png");
+        }
+        .ec-video-length {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 44px;
+            height: 18px;
+            background-color: #989998;
+            line-height: 18px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .ec-bg {
+        display: none;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        z-index: 100;
+        padding: 5px;
+        width: 222px;
+        height: 232px;
+        border-right: solid 1px #B7B7B7;
+        border-bottom: solid 1px #B7B7B7;
+        background-color: #fff;
+        .ec-detail {
+            position: absolute;
+            left: 5px;
+            top: 200px;
+            a {
+                color: #333;
+                font-size: 13px;
+            }
+        }
+    }
+    .ec-float {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 300;
+        padding: 60px 10px 10px 10px;
+        width: 570px;
+        height: 330px;
+        .ec-float-bg {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 310;
+            width: 590px;
+            height: 400px;
+        }
+        .ec-close {
+            width: 30px;
+            height: 30px;
+            top: 10px;
+            right: 10px;
+            position: absolute;
+            z-index: 2147483647;
+            display: block;
+            cursor: pointer;
+            background: url("//bs.baidu.com/adtest/9b406497a4739fa69b373bdf22723478.png");
+            _background: none;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/d2dbbc8d6af3b563b65019a278716639.png");
+        }
+        .ec-close:hover {
+            background: url("//bs.baidu.com/adtest/d2dbbc8d6af3b563b65019a278716639.png");
+            _background: none;
+            _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/9b406497a4739fa69b373bdf22723478.png");
+        }
+    }
+    .ec-main {
+        .ec-main-video {
+            width: 480px;
+            height: 295px;
+            float: left;
+            overflow: hidden;
+            .ec-video {
+                a {
+                    text-decoration: none;
+                    display: block;
+                    img {
+                        border: 0px;
+                        display: block;
+                    }
+                }
+                object {
+                    align: middle;
+                    z-index: 1;
+                }
+                embed {
+                    align: middle;
+                }
+            }
+        }
+        .ec-main-slider {
+            margin-left: 10px;
+            width: 80px;
+            height: 295px;
+            overflow: hidden;
+        }
+    }
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,248 @@
+[
+    {
+        "name": "logic",
+        "displayName": "拖拽",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "drop_img",
+                "displayName": "背景图片",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "stringType": "URL",
+                    "required": false
+                },
+                "tip": "http://dummyimage.com/160x120",
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 160,
+                    "height": 120,
+                    "maxSize": 40,
+                    "ext": "jpg"
+                }
+            },
+            {
+                "name": "refresh_img",
+                "displayName": "刷新图标",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "stringType": "URL",
+                    "required": false
+                },
+                "defaultValue": "http://ecma.bdimg.com/adtest/922d2067465edd2f1c9ca830e825ff3d.png",
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 32,
+                    "height": 32,
+                    "maxSize": 40,
+                    "ext": "png"
+                }
+            },
+            {
+                "name": "options",
+                "displayName": "拖拽块",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "tip": "物品名称",
+                        "datatype": "STRING",
+                        "extraAttr": {
+                            "filters": "float"
+                        },
+                        "multiline": false
+                    },
+                    {
+                        "name": "drag_img",
+                        "displayName": "背景图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": false
+                        },
+                        "tip": "http://dummyimage.com/78x69",
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+                            "width": 78,
+                            "height": 69,
+                            "maxSize": 40,
+                            "ext": "jpg"
+                        }
+                    }
+                ],
+                "rules": {
+                    "minCount": 5,
+                    "maxCount": 5
+                },
+                "extraAttr": {
+                    "initialCount": 5
+                }
+            }
+        ]
+    },
+    {
+        "name": "logic_map",
+        "displayName": "逻辑",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "11111",
+                "displayName": "11111",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "drag_img",
+                        "displayName": "背景图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": false
+                        },
+
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+
+                            "ext": "jpg,jpeg"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "11000",
+                "displayName": "11000",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "drag_img",
+                        "displayName": "背景图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": false
+                        },
+
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+
+                            "ext": "jpg,jpeg"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "11100",
+                "displayName": "11100",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "drag_img",
+                        "displayName": "背景图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": false
+                        },
+
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+
+                            "ext": "jpg,jpeg"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "11110",
+                "displayName": "11110",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "drag_img",
+                        "displayName": "背景图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": false
+                        },
+
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+
+                            "ext": "jpg,jpeg"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "default",
+                "displayName": "默认值",
+                "datatype": "OBJECT",
+                "display": "toggle-block",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {},
+                        "extraAttr": {}
+                    },
+                    {
+                        "name": "drag_img",
+                        "displayName": "背景图片",
+                        "datatype": "UPLOAD",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": false
+                        },
+                        "tip": "http://dummyimage.com/160x120",
+                        "extraAttr": {
+                            "fileType": "IMAGE",
+
+                            "ext": "jpg,jpeg"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

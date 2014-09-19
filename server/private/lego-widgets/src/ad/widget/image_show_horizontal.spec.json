@@ -1,0 +1,97 @@
+{
+    "contents": [
+        "ad.widget.ImageShowHorizontal"
+    ],
+    "userPrefs": [
+        {
+            "name": "options",
+            "displayName": "options",
+            "datatype": "LIST",
+            "rules": {
+                "minCount": 1,
+                "maxCount": 5
+            },
+            "items": [
+                {
+                    "name": "rcv_url",
+                    "displayName": "rcv_url",
+                    "tip": "http://",
+                    "datatype": "STRING",
+                    "defaultValue": "http://placehold.it/75x75",
+                    "rules": {
+                        "stringType": "URL",
+                        "required": true,
+                        "maxByteLength": 255
+                    },
+                    "extraAttr": {},
+                    "multiline": false
+                },
+                {
+                    "name": "image_url",
+                    "displayName": "image_url",
+                    "tip": "http://drmcmm.baidu.com/media/id=PWmYnjnkrH6&gp=402&time=nHn1rHDznHnvnf.jpg",
+                    "datatype": "UPLOAD",
+                    "defaultValue": "http://drmcmm.baidu.com/media/id=PWmYnjnkrH6&gp=402&time=nHn1rHDznHnvnf.jpg",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "width": 180,
+                        "height": 100,
+                        "maxSize": 15,
+                        "ext": "jpg"
+                    }
+                },
+                {
+                    "name": "title",
+                    "displayName": "title",
+                    "tip": "最多10个字节（5个汉字）",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 10,
+                        "minByteLength": 0
+                    }
+                },
+                {
+                    "name": "description",
+                    "displayName": "description",
+                    "tip": "最多10个字节（5个汉字）",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 10,
+                        "minByteLength": 0
+                    }
+                },
+                {
+                    "name": "description_rcv_url",
+                    "displayName": "description_rcv_url",
+                    "tip": "http://",
+                    "datatype": "STRING",
+                    "defaultValue": "http://www.google.com",
+                    "rules": {
+                        "stringType": "URL",
+                        "required": true,
+                        "maxByteLength": 255
+                    },
+                    "extraAttr": {},
+                    "multiline": false
+                }
+            ]
+        },
+        {
+            "name": "switch_time",
+            "displayName": "switch_time",
+            "defaultValue": "20000",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "NUMBER"
+            },
+            "extraAttr": {
+                "filters": "float"
+            }
+        }
+    ]
+}

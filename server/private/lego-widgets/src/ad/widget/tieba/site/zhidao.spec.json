@@ -1,0 +1,76 @@
+{
+    "contents": ["ad.widget.tieba.site.Zhidao"],
+    "userPrefs": [
+        {
+            "name": "title_background_url",
+            "displayName": "标题背景",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {},
+            "extraAttr": {
+                "fileType":"IMAGE",
+                "maxSize": 50,
+                "width": 230,
+                "height": 27,
+                "ext": "jpg,png"
+            }
+        },
+        {
+            "name": "zhidao_query",
+            "displayName": "问题关键词",
+            "nameTip": "（必填）",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "zhidao_open_site_id",
+            "displayName": "企业知道平台ID",
+            "nameTip": "（必填）",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "INTEGER"
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "open_site_frs_url",
+            "displayName": "企业知道平台主页地址",
+            "nameTip": "（必填）",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL",
+                "required": true
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "questions_json",
+            "displayName": "问题列表JSON数据",
+            "defaultValue": "%%QUESTION_LIST_JSON%%",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name": "questions_json_mockup",
+            "displayName": "问题列表JSON假数据",
+            "defaultValue": "[{\"text\":\"I7 Dell\/\\u6234\\u5c14 Ins15t-3728 15R Turbo \\u7279\\u522b\\u7248\\u600e\\u4e48\\u6837\\uff0c\\u597d\\u7528\\u5417\",\"url\":\"javascript:void(0);\"},{\"text\":\"I7 Dell\/\\u6234\\u5c14 Ins15t-3728 15R Turbo \\u7279\\u522b\\u7248\\u600e\\u4e48\\u6837\\uff0c\\u597d\\u7528\\u5417\",\"url\":\"javascript:void(0);\"},{\"text\":\"I7 Dell\/\\u6234\\u5c14 Ins15t-3728 15R Turbo \\u7279\\u522b\\u7248\\u600e\\u4e48\\u6837\\uff0c\\u597d\\u7528\\u5417\",\"url\":\"javascript:void(0);\"},{\"text\":\"I7 Dell\/\\u6234\\u5c14 Ins15t-3728 15R Turbo \\u7279\\u522b\\u7248\\u600e\\u4e48\\u6837\\uff0c\\u597d\\u7528\\u5417\",\"url\":\"javascript:void(0);\"},{\"text\":\"I7 Dell\/\\u6234\\u5c14 Ins15t-3728 15R Turbo \\u7279\\u522b\\u7248\\u600e\\u4e48\\u6837\\uff0c\\u597d\\u7528\\u5417\",\"url\":\"javascript:void(0);\"}]",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        }
+    ]
+}

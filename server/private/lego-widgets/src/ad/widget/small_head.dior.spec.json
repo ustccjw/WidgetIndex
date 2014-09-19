@@ -1,0 +1,147 @@
+{
+    "contents": ["ad.widget.SmallHead"],
+    "userPrefs": [
+        {
+            "name": "titletext",
+            "displayName": "标题",
+            "nameTip": "(核心飘红词最多6个汉字)",
+            "tip": "<em>标题</em>为5~10个汉字",
+            "defaultValue": "",
+            "datatype": "HTML",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "minTextByteLength": 10,
+                "maxTextByteLength": 20,
+                "tagList" : {
+                    "em": {
+                        "maxTextByteLength": 12,
+                        "minCount": 1,
+                        "maxCount": 1
+                    }
+                }
+            },
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": ["emphasize"]
+                },
+                "tagList" : {
+                    "em": {
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    }
+                }
+            }
+        },
+        {
+            "name": "titleurl_rcv_url",
+            "displayName": "跳转地址",
+            "defaultValue": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "description_rcv_html",
+            "displayName": "描述",
+            "defaultValue": "",
+            "display": "",
+            "tip": "描述为45~60个汉字，<a href=\"http://fake.com\">链接词</a>最多5个，每个链接词最多6个汉字",
+            "nameTip": "",
+            "descriptionTip": "",
+            "datatype": "HTML",
+            "multiline": true,
+            "rules": {
+                "required": true,
+                "minTextByteLength": 90,
+                "maxTextByteLength": 120,
+                "tagList": {
+                    "a": {
+                        "maxTextByteLength": 12,
+                        "maxCount": 5
+                    }
+                }
+            },
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": [
+                        "link"
+                    ]
+                },
+                "tagList": {
+                    "a": {
+                        "attributeRules": {
+                            "target": {
+                                "isRequired": false,
+                                "isAllowNoValue": false,
+                                "defaultValue": "_blank"
+                            },
+                            "href": {
+                                "isRequired": true,
+                                "isAllowNoValue": false,
+                                "valueType": "url"
+                            }
+                        },
+                        "requiredAttributes": [
+                            "target",
+                            "href"
+                        ],
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    }
+                }
+            }
+        },
+        {
+            "name": "site",
+            "displayName": "官网地址",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 24
+            },
+            "tip": "最多可填写24字节",
+            "multiline": false
+        },
+        {
+            "name": "logoimg",
+            "displayName": "LOGO",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "logourl_rcv_url",
+                    "displayName": "LOGO跳转地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "logoimg",
+                    "displayName": "LOGO图片",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "tip": "",
+                    "rules": {
+                    },
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "width": 108,
+                        "height": 14,
+                        "maxSize": 5,
+                        "ext": "jpg"
+                    }
+                }
+            ],
+            "rules": {}
+        }
+    ]
+}

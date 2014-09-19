@@ -1,0 +1,42 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/mweigou/success_view.less ~ 2013/04/02 18:12:30
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * success_view样式文件
+ **/
+.ec-sg-weigou-success {
+  text-align: center;
+  padding: 6px 5px 15px 8px;
+  font-size: 13px;
+  color: #262626;
+  background: #ffffff;
+}
+.ec-sg-weigou-success-title {
+  margin: 12px 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.ec-sg-weigou-success-goto-order-list {
+  color: #00c;
+}
+.ec-sg-weigou-success-continue {
+  display: block;
+  width: 103px;
+  height: 28px;
+  margin: 10px auto 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ffffff !important;
+  background: #df413f;
+  border: 1px solid #b71311;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 ft=css: */

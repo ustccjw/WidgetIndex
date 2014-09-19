@@ -1,0 +1,441 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: lv.less 11222 2012-08-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/new_custom/lv.less ~ 2013/10/30 14:23:28
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case1179样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    margin-bottom: 20px;
+    font: 12px/1.5 arial,sans-serif;
+    width: 528px;
+    border: 5px solid #aa8d7e;
+
+    .ad-widget-title {
+        .gain-bfc();
+        padding: 5px 5px 0 5px;
+        a {
+            color: #0000cc;
+        }
+    }
+    .ad-widget-video {
+        width: 254px;
+        height: 143px;
+        object, 
+        embed {
+            display: block;
+        }
+    }
+    .ad-widget-small-head {
+        width: 253px;
+        .ec-description {
+            color: #000;
+            text-indent: 2em;
+        }
+        .ec-site {
+            text-indent: 0;
+            a {
+                color: #666;
+            }
+        }
+    }
+    .ad-block-0-1 {
+        .gain-bfc();
+        padding: 8px 5px 0 5px;
+        .ad-widget-image {
+            float: left;
+            width: 254px;
+            height: 143px;
+            cursor: pointer;
+        }
+    }
+
+    .ad-block-0-1-0,
+    .ad-block-0-1-1,
+    .ad-block-0-1-2 {
+        float: left;
+    }
+
+    .ad-block-0-1-0 {
+        margin-right: 10px;
+    }
+    .ad-widget-multi-video-thunbnail {
+        width: 253px;
+        height: 43px;
+        position: relative;
+        margin-top: 10px;
+        top: 0;
+        left: -10px;
+        .ec-thunbnail-bg {
+            display: none;
+        }
+        .ec-thunbnail-cont {
+            width: 265px;
+            height: 43px;
+        }
+        .ec-item {
+            margin: 0 0 0 10px;
+            width: 78px;
+            height: 43px;
+            display: inline;
+        }
+        .ec-title {
+            height: 20px;
+            line-height: 20px;
+            margin-left: 0;
+            margin-top: 3px;
+            text-align: center;
+        }
+        .ec-item-bg {
+            height: 43px;
+            .opacity(65);
+        }
+        .ec-play-btn {
+            margin-left: 18px;
+            height: 20px;
+            line-height: 20px;
+            top: 12px;
+            background: #986d5b;
+        }
+    }
+    .ad-widget-tab-container {
+        background-color: #fff;
+        margin-top: 15px;
+    }
+
+    .ec-tab-head {
+        margin: 0px;
+        background: #aa8d7e;
+        padding: 0px;
+        height: 28px;
+        overflow: hidden;
+        width: 528px;
+        li {
+            margin: 0px;
+            height: 28px;
+            border-left: solid 1px #aa8d7e;
+            border-right: solid 1px #aa8d7e;
+            _border-color:tomato;
+            _filter:chroma(color=tomato);
+            a {
+                background: none;
+                color: #fff;
+                height: 10px;
+                line-height: 10px;
+                *line-height: 14px;
+                border: none;
+                border-right: 1px solid #fff;
+                margin-top: 9px;
+                padding: 0px;
+            }
+        }
+
+        .ec-current-tab{
+            border-left: solid 1px #986d5b;
+            border-right: solid 1px #986d5b;
+            a {
+                color: #fff;
+                height: 28px;
+                line-height: 28px;
+                background: #986d5b;
+                margin-top: 0;
+                border: none;
+            }
+        }
+        .ec-previous-tab,
+        .ec-tab-list-last {
+            a {
+                border-right:none; 
+            }
+        }
+    }
+
+    .ec-tab-body {
+        .gain-bfc();
+        height: 128px;
+        .ec-tab-content-tabcont {
+            height: 118px;
+            padding: 10px 0 0 5px;
+        }
+    }
+    .ad-widget-tab-cont {
+        .ec-brand-pic {
+            padding-left: 0;
+            height: 103px;
+            width: 254px;
+            a, img{
+                height: 103px;
+                width: 254px;
+                display: block;
+            }
+        }
+        .ec-brand-intro {
+            height: 104px;
+            margin-top: -1px;
+            h1 {
+                display: none;
+            }
+            a {
+                display: block;
+                color: #6e4c3b;
+                line-height: 19px;
+            }
+        }
+        .ec-td-border {
+            width: 186px;
+            height: 103px;
+            overflow: hidden;
+            border-right: 1px solid #ddd;
+            .ec-brand-intro {
+                height: 104px;
+                width: 166px;
+                margin-top: -1px;
+                h1 {
+                    height: 19px;
+                    line-height: 19px;
+                    display: block;
+                    margin: 0;
+                }
+                a {
+                    display: block;
+                    line-height: 19px;
+                }
+                .ec-des-more {
+                    display: inline-block;
+                    height: 27px;
+                    line-height: 27px;
+                    padding: 0 20px 0 28px;
+                    background: #EAE2DF url(//bs.baidu.com/adtest/616d9bb04caafbfc54bd7fd7608d0e09.jpg) no-repeat 20px center;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+    /** 表单的tab */
+    .ec-tab-content-form {
+        .ec-normal-con-0 {
+            position: relative;
+            width: 100%;
+            height: 128px;
+        }
+
+        .ec-normal-con-0-0 {
+            position: absolute;
+            height: 128px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .ec-normal-con-0-1 {
+            position: absolute;
+            left: 12px;
+            top: 36px;
+        }
+
+        .ad-widget-lv-list .ec-inner {
+            padding: 10px 0 0 10px;
+            background: #986D5C;
+            height: 118px;
+            .ec-select {
+                width: 248px;
+            }
+            .ec-detail {
+                height: 105px;
+                position: relative;
+                margin-left: 0;
+                border-left: 1px solid #b79484;
+                padding: 0 10px;
+                width: 249px;
+                overflow: hidden;
+            }
+            .ec-show-detail {
+                background: url(//bs.baidu.com/adtest/7d33c798047963201d09e789f0fd7747.jpg) repeat-x;
+                height: 26px;
+                line-height: 26px;
+                width: 90px;
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+            }
+        }
+
+        .ad-widget-dependency-select {
+            .ec-item {
+                float: none;
+                margin-bottom: 10px;
+                .ec-title {
+                    color: #FFEDE3;
+                }
+                select {
+                    width: 190px;
+                    line-height: 20px;
+                    height: 20px;
+                    word-wrap: normal;
+                }
+            }
+        }
+    }
+    .ad-widget-button-group {
+        background: #EAE2DF;
+        padding: 4px 0;
+        a {
+            color: #70584C;
+        }
+        td {
+            border: none;
+            a {
+                display: block;
+                height: 13px;
+                line-height: 13px;
+                *height: 15px;
+                line-height: 15px;
+                border-right: 1px solid #6E584B;
+            }
+        }
+        .ec-last a {
+            border-right: none;
+        }
+    }
+}
+
+.ec-lv-video-fwc {
+    .ec-float-bg-ifr {
+        z-index: -1;
+    }
+    .ad-widget-video {
+        width: 540px;
+        height: 304px;
+        position: absolute;
+        top: 76px;
+        left: 20px;
+    }
+    .ad-widget-multi-video-thunbnail {
+        width: 230px;
+        height: 208px;
+        position: absolute;
+        top: 171px;
+        left: 580px;
+    }
+    .ec-thunbnail-bg {
+        display: block;
+        width: 230px;
+        height: 208px;
+        background: #000;
+        .opacity(50);
+    }
+    .ec-thunbnail-cont {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .ec-item,
+    img {
+        width: 100px;
+        height: 56px;
+    }
+    .ec-item {
+        margin: 10px 0 0 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    .ec-item-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 56px;
+        background: #000;
+        .opacity(65);
+    }
+    .ec-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 10px;
+        color: #fff;
+    }
+    .ec-play-btn {
+        position: absolute;
+        top: 30px;
+        text-align: center;
+        left: 0;
+        color: #fff;
+        width: 40px;
+        height: 18px;
+        line-height: 18px;
+        margin-left: 10px;
+        background: #2C99FF;
+    }
+    
+    .ec-tip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 56px;
+        color: #fff;
+    }
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}
+.ec-lv-flash-fwc {
+    .ec-float-bg-ifr {
+        z-index: -1;
+    }
+    .ec-close {
+        width: 35px;
+        height: 35px;
+        top: 0;
+        right: 0;
+        background: url(//bs.baidu.com/adtest/7e5ad199871b95f37aa6648094d3ccf1.jpg) no-repeat;
+        .opacity(65);
+    }
+    .ec-close:hover {
+        background: url(//bs.baidu.com/adtest/bfab47358ba162de83c30607f738205e.jpg) no-repeat;
+        .opacity(100);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

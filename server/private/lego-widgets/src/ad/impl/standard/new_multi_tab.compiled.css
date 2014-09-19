@@ -1,0 +1,61 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/standard/new_multi_tab.less ~ 2013/11/27 14:37:24
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * new_multi_tab样式文件
+ **/
+#canvas {
+  background: url(//bs.baidu.com/lego-mat/pl-bg-d93cb673.png) repeat-x top left;
+  /*fix: ie6，7 description中某些字符会将内容折行，出现4行文字。*/
+
+  /*解决：site网址太长*/
+
+}
+#canvas .ad-widget-title h2 {
+  height: 26px;
+}
+#canvas .ad-widget-small-head .ec-description {
+  *width: 260px;
+}
+#canvas .ec-colorlist-item span {
+  background-color: #1fa4ff;
+}
+#canvas .ad-block-0-1 {
+  height: 150px;
+  position: relative;
+}
+#canvas .ad-block-0-1-0 {
+  width: 264px;
+  position: absolute;
+}
+#canvas .ad-block-0-1-1 {
+  position: absolute;
+  left: 264px;
+}
+#canvas .ec-date {
+  display: none;
+}
+#canvas .ad-block-0-1-2 {
+  position: absolute;
+  left: 264px;
+  top: 78px;
+}
+#canvas .ec-colorlist-item {
+  margin-left: 10px;
+  *margin-left: 5px;
+  height: 20px;
+}
+#canvas .ec-tab-head {
+  background: #fff;
+}
+#canvas .ec-tab-head a {
+  background: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

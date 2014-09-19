@@ -1,0 +1,27 @@
+<!-- target:AD_ad_widget_tieba_hovercard -->
+<div class="ad-widget-tieba ad-widget-tieba-hovercard">
+    <h4>{{title}}</h4>
+    <div class="ec-card-profile">
+        <div class="ec-card-avatar">
+            <a href="{{{url}}}" data-link-name="logo" {{#is_site}}class="ec-card-official" {{/is_site}}target="_blank">
+                <img src="{{logo}}" alt="{{name}}">
+                <div class="ec-card-avatar-icon-bg"></div>
+                <div class="ec-card-avatar-icon"></div>
+            </a>
+        </div>
+        <div class="ec-card-intro">
+            <h5>
+                <a class="ec-card-name" href="{{{url}}}" data-link-name="name" target="_blank">{{name}}</a>
+                {{#is_site}}<a class="ec-card-label" href="{{{url}}}" data-link-name="name" target="_blank">官方贴吧</a>{{/is_site}}
+            </h5>
+            <p class="ec-card-desc">{{desc}}</p>
+            {{#member}}<p class="ec-card-info">会员：<a href="{{{member_url}}}" data-link-name="member" target="_blank">{{member}}</a>{{/member}}
+        </div>
+    </div>
+    <ul class="ec-card-posts">
+        {{#posts}}
+        <li><a href="{{{url}}}" data-link-name="post" target="_blank">{{title}}</a></li>
+        {{/posts}}
+    </ul>
+    <div class="ec-card-arrow"></div>
+</div>

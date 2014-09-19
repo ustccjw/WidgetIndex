@@ -1,0 +1,25 @@
+<!-- target:AD_ad_widget_zhixin_baike -->
+<div class="ad-widget-zhixin ad-widget-zhixin-baike">
+    {{#title}}
+    <div class="ec-title">
+        <a target="_blank" data-is-main-url="true" href="{{{title_rcv_url}}}" title2="zx_baike_title">{{{title}}}</a>
+    </div>
+    {{/title}}
+
+    {{#logo}}
+    <a class="ec-logo" target="_blank" href="{{{logo_rcv_url}}}" title2="zx_baike_logo"><img src="{{logo}}"></a>
+    {{/logo}}
+
+    <div class="ec-desc" id="{{#_id}}description{{/_id}}">
+        {{{description}}}
+        <div class="ec-links">
+        {{#links}}
+            <a target="_blank" href="{{{text_rcv_url}}}" title2="zx_baike_link_{{text}}">{{{text}}}</a>{{^@last}}-{{/@last}}
+        {{/links}}
+        </div>
+    </div>
+
+    {{#showurl}}
+    <div class="ec-site">{{{site}}} {{date}}</div>
+    {{/showurl}}
+</div>

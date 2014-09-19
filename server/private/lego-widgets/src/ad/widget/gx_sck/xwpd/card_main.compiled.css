@@ -1,0 +1,129 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/gx_sck/xwpd/card_main.less ~ 2014/05/04 13:52:35
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * card_main样式文件
+ **/
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.ad-widget-gx_sck-xwpd-card-main {
+  font: 13px/1.4 arial, sans-serif;
+  width: 540px;
+  margin-bottom: 10px;
+}
+.ec-card-main h2 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.ec-card-main h2 a {
+  *zoom: 1;
+  color: #0000cc;
+}
+.ec-card-main h2 a em {
+  color: #c00;
+  text-decoration: underline;
+  font-style: normal;
+}
+.ec-card-main h2 a.ec-official-site {
+  display: inline-block;
+  margin-left: 10px;
+  height: 16px;
+  _height: 14px;
+  padding: 0 6px;
+  _padding-top: 2px;
+  line-height: 16px;
+  _line-height: 14px;
+  overflow: hidden;
+  vertical-align: text-bottom;
+  color: #fff!important;
+  background: #2196ff;
+  font-size: 12px!important;
+  font-family: simsun;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.ec-card-main h2 a.ec-official-site:hover {
+  background: #1e87ef;
+}
+.ec-card-main h2 a.ec-official-site:active {
+  height: 15px;
+  _height: 13px;
+  line-height: 15px;
+  _line-height: 13px;
+  padding-left: 5px;
+  background: #1c80d9;
+  border-left: 1px solid #145997;
+  border-top: 1px solid #145997;
+}
+.ec-card-main-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.ec-card-main-logo {
+  float: left;
+  margin-top: 3px;
+  height: 75px;
+  width: 75px;
+  overflow: hidden;
+}
+.ec-card-main-logo img {
+  border: none;
+}
+.ec-card-main-ctn {
+  float: right;
+  width: 455px;
+}
+.ec-card-main-ctn .ec-description,
+.ec-card-main-ctn .ec-address-ctn {
+  color: #000;
+}
+.ec-card-main-ctn .ec-description {
+  font-family: "宋体";
+  line-height: 20px;
+}
+.ec-card-main-ctn .ec-cache-link {
+  margin-left: 10px;
+  color: #666;
+}
+.ec-card-main-ctn .ec-links {
+  overflow: hidden;
+  zoom: 1;
+  list-style-type: none;
+  margin-top: 3px;
+}
+.ec-card-main-ctn .ec-links .ec-link-item {
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+}
+.ec-card-main-ctn .ec-links .ec-link-item-0 {
+  margin-left: 0;
+}
+.ec-card-main-ctn .ec-links a {
+  color: #0000cc;
+}
+.ec-card-main-ctn .ec-site-ctn {
+  width: 455px;
+  margin-top: 2px;
+}
+.ec-card-main-ctn .ec-site-ctn .ec-site {
+  color: #008000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

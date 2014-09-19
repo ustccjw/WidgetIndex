@@ -1,0 +1,305 @@
+[
+    {
+        "name": "banner",
+        "display": "toggle-block",
+        "displayName": "品专Banner图片",
+        "datatype": "OBJECT",
+        "tip": "品牌banner图片，左边请放置品牌logo，图片上文字建议采用12-16px字体",
+        "items": [
+            {
+                "name": "banner1",
+                "displayName": "Banner图片1",
+                "defaultValue": "",
+                "nameTip": "适用于iphone等高分辨率智能手机",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 286,
+                    "height": 50,
+                    "maxSize": 9,
+                    "ext": "jpg,png"
+                },
+                "tip": "http://ecma.bdimg.com/adtest/c301e3c05ed910ef650d5d1e8c5da9d7.png",
+                "multiline": false
+            },
+            {
+                "name": "banner2",
+                "displayName": "Banner图片2",
+                "nameTip": "适用于普通触屏机型",
+                "defaultValue": "",
+                "tip": "http://ecma.bdimg.com/adtest/698a715cbdaee8b72ea5938edd4f0cb2.png",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 206,
+                    "height": 40,
+                    "maxSize": 6,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "banner3",
+                "displayName": "Banner图片3",
+                "nameTip": "适用于低端炫彩机型",
+                "defaultValue": "",
+                "tip": "http://ecma.bdimg.com/adtest/bb5df79205bd97035196f09fec4f771f.png",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "width": 116,
+                    "height": 30,
+                    "maxSize": 3,
+                    "ext": "jpg,png"
+                }
+            },
+            {
+                "name": "image_rcv_url",
+                "displayName": "Banner指向URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "top_title",
+        "display": "toggle-block",
+        "displayName": "标题描述",
+        "tip": "请参照各版式截断字数，按照规范填写主标题、子链接，如果太长则会截断造成语意不明",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "主标题",
+                "nameTip": "",
+                "tip": "16个汉字以内，<em>飘红词</em>最多6汉字",
+                "defaultValue": "",
+                "datatype": "HTML",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "maxTextByteLength": 32,
+                    "tagList": {
+                        "em": {
+                            "maxTextByteLength": 12,
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    }
+                },
+                "extraAttr": {
+                    "editorConfig": {
+                        "tools": [
+                            "emphasize"
+                        ]
+                    },
+                    "tagList": {
+                        "em": {
+                            "isAllowNoContent": false,
+                            "isSimpleTag": false
+                        }
+                    }
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "主标题指向URL",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "description",
+        "display": "toggle-block",
+        "displayName": "描述",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "rcv_html",
+                "displayName": "描述文本",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 52,
+                    "maxByteLength": 76
+                },
+                "extraAttr": {},
+                "tip": "可填写26~38个汉字",
+                "multiline": false
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "描述跳转地址",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ]
+    },
+    {
+        "name": "show_url",
+        "displayName": "官网地址",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "site",
+                "displayName": "官网地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 22
+                },
+                "extraAttr": {},
+                "tip": "最多可填写22个字节",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "links",
+        "displayName": "栏目区",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "options",
+                "displayName": "栏目",
+                "datatype": "LIST",
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "链接文本",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 40
+                        },
+                        "extraAttr": {},
+                        "tip": "20个汉字以内",
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "指向URL",
+                        "defaultValue": "http://",
+                        "datatype": "STRING",
+                        "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "",
+                        "multiline": false
+                    }
+                ],
+                "tip": "",
+                "rules": {
+                    "minCount": 1,
+                    "maxCount": 2
+                },
+                "extraAttr": {}
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "tel",
+        "displayName": "客服电话按钮",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "tel_name",
+                "displayName": "热线名称（例如：客服专线）",
+                "defaultValue": "客服电话",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "minByteLength": 8,
+                    "maxByteLength": 8
+                },
+                "extraAttr": {},
+                "tip": "请填写4个汉字",
+                "multiline": false
+            },
+            {
+                "name": "tel",
+                "displayName": "热线号码",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "phoneNumber": true
+                },
+                "extraAttr": {
+                    "extensions": [
+                        {
+                            "name": "format",
+                            "params": [
+                                "http://wpl.baidu.com/call.php?from=0&page_type=1&w=&nm=${value}&nm_str=${value}",
+                                "",
+                                "../tel_rcv_url"
+                            ]
+                        }
+                    ]
+                },
+                "tip": "",
+                "multiline": false
+            },
+            {
+                "name": "tel_rcv_url",
+                "displayName": "电话拨打链接",
+                "defaultValue": "",
+                "datatype": "HIDDEN",
+                "nameTip": "",
+                "descriptionTip": "这里应该显示正确的电话拨打链接",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    }
+]

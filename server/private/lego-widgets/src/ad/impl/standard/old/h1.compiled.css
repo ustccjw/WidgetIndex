@@ -1,0 +1,34 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id$
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/standard/old/h1.less ~ 2013/10/28 13:47:01
+ * @author leeight(liyubei@baidu.com) fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision$
+ * @description
+ * ad.widget.H1的样式
+ **/
+#canvas .ec-logo {
+  width: 90px;
+  height: 90px;
+  margin-right: 8px;
+}
+#canvas .ec-desc {
+  line-height: 19px;
+  width: auto;
+}
+#canvas .ec-cont {
+  overflow: hidden;
+  zoom: 1;
+  padding-top: 5px;
+}
+#canvas .ec-site {
+  text-indent: 0;
+}
+#canvas .ec-site a {
+  color: #666;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

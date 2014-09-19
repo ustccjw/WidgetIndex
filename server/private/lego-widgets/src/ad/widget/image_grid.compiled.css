@@ -1,0 +1,58 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/image_grid.less ~ 2013/02/22 11:45:21
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * image_grid样式文件
+ **/
+.ad-widget-image-grid {
+  font: 12px/1.5 arial, sans-serif;
+  /** CODE HERE. */
+
+  overflow: hidden;
+  _zoom: 1;
+}
+.ad-widget-image-grid ul {
+  padding: 0;
+  margin: 0;
+}
+.ad-widget-image-grid ul li {
+  position: relative;
+  float: left;
+  _display: inline;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* img 和 p 可能不在a链接中 */
+
+}
+.ad-widget-image-grid ul li a:hover p {
+  text-decoration: none;
+}
+.ad-widget-image-grid ul li a p {
+  text-decoration: underline;
+}
+.ad-widget-image-grid ul li img {
+  display: block;
+  border: none;
+}
+.ad-widget-image-grid ul li p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  color: #FFF;
+  text-align: center;
+  background: #000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

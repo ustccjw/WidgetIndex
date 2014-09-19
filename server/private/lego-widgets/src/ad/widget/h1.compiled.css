@@ -1,0 +1,141 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: h1.less 12298 2012-09-26 04:32:59Z fanxueliang $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/h1.less ~ 2012/06/07 22:10:40
+ * @author leeight(liyubei@baidu.com)
+ * @version $Revision: 12298 $
+ * @description
+ *
+ **/
+.ad-widget-h1 {
+  overflow: hidden;
+  zoom: 1;
+  font: 13px/1.2 arial, sans-serif;
+  /* PS下拉菜单 */
+
+  /* PS信任等级 */
+
+}
+.ad-widget-h1 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.ad-widget-h1 h2 em {
+  color: #cc0000;
+  font-style: normal;
+  text-decoration: underline;
+}
+.ad-widget-h1 .ec-header-title {
+  *zoom: 1;
+  /*确保中英文下划线对齐*/
+
+}
+.ad-widget-h1 a.ec-official-site {
+  display: inline-block;
+  margin-left: 10px;
+  height: 16px;
+  _height: 14px;
+  padding: 0 6px;
+  _padding-top: 2px;
+  line-height: 16px;
+  _line-height: 14px;
+  overflow: hidden;
+  vertical-align: text-bottom;
+  color: #fff!important;
+  background: #2196ff;
+  font-size: 12px!important;
+  font-family: simsun;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.ad-widget-h1 a.ec-official-site:hover {
+  background: #1e87ef;
+}
+.ad-widget-h1 a.ec-official-site:active {
+  height: 15px;
+  _height: 13px;
+  line-height: 15px;
+  _line-height: 13px;
+  padding-left: 5px;
+  background: #1c80d9;
+  border-left: 1px solid #145997;
+  border-top: 1px solid #145997;
+}
+.ad-widget-h1 .ec-cont {
+  padding-top: 5px;
+  *padding-top: 3px;
+  padding-left: 2px;
+}
+.ad-widget-h1 .ec-logo {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin-top: 1px;
+  *margin-top: 3px;
+  margin-right: 10px;
+}
+.ad-widget-h1 .ec-logo-img {
+  border: none;
+  display: block;
+}
+.ad-widget-h1 .ec-desc {
+  line-height: 18px;
+  width: 410px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-h1 .ec-img-group {
+  line-height: 16px;
+  padding-top: 3px;
+}
+.ad-widget-h1 .ec-img-group-a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.ad-widget-h1 .ec-img-group-a img {
+  border: none;
+  display: block;
+}
+.ad-widget-h1 .ec-site {
+  padding-top: 1px;
+  word-spacing: -1px;
+  color: #008000;
+}
+.ad-widget-h1 .ec-site a {
+  color: #666;
+}
+.ad-widget-h1 .c-tools {
+  display: inline;
+}
+.ad-widget-h1 .c-tools .c-tip-icon i {
+  display: inline-block;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+  background: url(//bs.baidu.com/adtest/9536bfa0556d2d3b610d821e7d558913.png) -384px -336px no-repeat;
+}
+.ad-widget-h1 .c-trust-fake {
+  display: inline-block;
+  width: 19px;
+  height: 14px;
+  background: url(//bs.baidu.com/adtest/c327d50b9c08f411b6c4bf615df6602b.png) no-repeat 0 -191px;
+}
+#content_left .c-trust-fake,
+#bds-container .c-trust-fake {
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,158 @@
+{
+    "contents": ["ad.widget.SmallWeibo"],
+    "userPrefs": [
+        {
+            "name": "id",
+            "displayName": "微博ID",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true
+            },
+            "tip": "",
+            "descriptionTip": "sina微博个人资料页地址中获取，如：\"http://*.weibo.com/2525235360/info?from=profile&wvr=5&loc=tabinf#profile_tab\"中“2525235360”即为微博ID",
+            "multiline": false
+        },
+        {
+            "name": "name",
+            "displayName": "微博名称",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+            },
+            "descriptionTip": "此项可不填，如不填则自动根据微博ID获取微博名称",
+            "multiline": false
+        },
+        {
+            "name": "icon",
+            "displayName": "微博图标",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {},
+            "tip": "",
+            "multiline": false,
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "width":18,
+                "height":18,
+                "maxSize":25,
+                "ext":"jpg,gif,png"
+            }
+        },
+        {
+            "name": "icon_rcv_url",
+            "displayName": "微博图标跳转地址",
+            "defaultValue": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "verify_img",
+            "displayName": "认证图标",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {},
+            "tip": "",
+            "multiline": false,
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "width":14,
+                "height":12,
+                "maxSize":25,
+                "ext":"jpg,gif,png"
+            }
+        },
+        {
+            "name": "follow_imgsrc",
+            "displayName": "加关注图标",
+            "defaultValue": "http://drmcmm.baidu.com/media/id=PWbvPWc1PHm&gp=402&time=nHnYnj6LnHbkPf.png",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "tip": "",
+            "multiline": false,
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "maxSize":25,
+                "ext":"jpg,gif,png"
+            }
+        },
+        {
+            "name": "weibo_logo_rcv_url",
+            "displayName": "微博LOGO跳转地址",
+            "defaultValue": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "weibo_logo",
+            "displayName": "微博LOGO",
+            "defaultValue": "",
+            "datatype": "UPLOAD",
+            "rules": {},
+            "tip": "",
+            "multiline": false,
+            "extraAttr":{
+                "fileType":"IMAGE",
+                "maxSize":50,
+                "ext":"jpg,gif,png"
+            }
+        },
+        {
+            "name": "weibo_context_length",
+            "displayName": "微博内容字节长度",
+            "defaultValue": "80",
+            "datatype": "HIDDEN",
+            "extraAttr": {
+                "filters": "int"
+            },
+            "descriptionTip": "微博内容不超过160字节(1汉字=2字节)",
+            "multiline": false
+        },
+        {
+            "name": "is_display_icon",
+            "displayName": "是否显示微博图标",
+            "defaultValue": true,
+            "datatype": "BOOL",
+            "rules": {}
+        },
+        {
+            "name": "is_display_fans",
+            "displayName": "是否显示粉丝数",
+            "defaultValue": true,
+            "datatype": "BOOL",
+            "rules": {}
+        },
+        {
+            "name": "is_display_weibo",
+            "displayName": "是否显示微博数",
+            "defaultValue": true,
+            "datatype": "BOOL",
+            "rules": {}
+        },
+        {
+            "name": "is_display_foot",
+            "displayName": "是否显示日期、转发、收藏、评论",
+            "defaultValue": true,
+            "datatype": "BOOL",
+            "rules": {}
+        },
+        {
+            "name": "fieldset",
+            "displayName": "是否显示fieldset",
+            "defaultValue": false,
+            "datatype": "BOOL",
+            "rules": {}
+        }
+    ]
+}
+

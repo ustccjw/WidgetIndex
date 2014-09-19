@@ -1,0 +1,5 @@
+<ul class="row impls-show" ng-controller="ImplsController">
+    <li ng-repeat="impl in ipl.impls track by $index " class="col-xs-6 col-md-4">
+        <button type="button" class="btn btn-default" ng-click="req.url='/online_impls_show.html';req.impl=impl.implName" ng-disabled="!impl.flag">{{impl.implName}}</button>
+    </li>
+</ul>

@@ -1,0 +1,24 @@
+<!-- target:AD_ad_widget_image_show_horizontal -->
+<div class="ad-widget ad-widget-image-show-horizontal">
+    <ul class="ec-link-list">
+        {{#options}}
+        {{#title}}
+        <li class="ec-o{{@index}}{{#@first}} ec-current{{/@first}}" id="{{#_id}}nav{{@index}}{{/_id}}" data-index="{{@index}}">
+            <a href="javascript:void(0);" title2="[轮播图]图片标签{{_index}}">{{title}}</a>
+        </li>
+        {{/title}}
+        {{/options}}
+    </ul>
+    <div class="ec-img-container">
+        {{#options}}
+        <div id="{{#_id}}img{{@index}}{{/_id}}"{{^@first}} style="display:none"{{/@first}}>
+            <a title2="[轮播图]图片{{_index}}" target="_blank" class="ec-img" id="{{#_id}}img{{@index}}{{/_id}}" href="{{{rcv_url}}}">
+                <img src="{{image_url}}" />
+            </a>
+            {{#description}}
+            <a title2="[轮播图]描述{{_index}}" target="_blank" href="{{{description_rcv_url}}}">{{description}}</a>
+            {{/description}}
+        </div>
+        {{/options}}
+    </div>
+</div>

@@ -1,0 +1,238 @@
+<!-- target:AD_ad_widget_weigou_purchase_view -->
+<div class="ecl-weigou-pur">
+    <div class="ecl-weigou-pur-section ecl-weigou-pur-list">
+        <div class="ecl-weigou-pur-title">商品清单：</div>
+        <table border="0" width="636" cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="60"></col>
+                <col width="240"></col>
+                <col width="80"></col>
+                <col width="92"></col>
+                <col width="102"></col>
+                <col width="62"></col>
+            </colgroup>
+            <tr>
+                <th>预览</th>
+                <th>名称</th>
+                <th>发货商家</th>
+                <th>价格</th>
+                <th>数量</th>
+                <th>操作</th>
+            </tr>
+            <%
+            var key, item;
+            for(var key in list){
+                item = list[key];
+                %>
+                <tr class="ecl-weigou-pur-item" data-id="<%=key%>">
+                    <td>
+                        <div class="ecl-weigou-pur-logo">
+                            <div>
+                                <img src="<%=item.logo%>" />
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="ecl-weigou-pur-name" title="<%:h=item.name%>"></span>
+                    </td>
+                    <td>
+                        <span class="ecl-weigou-pur-vendor" title="<%:h=item.vendor%>"><%:h=item.vendor%></span>
+                    </td>
+                    <td class="ecl-weigou-product-price-td">
+                        <div class="ecl-weigou-pur-price-wrapper">
+                            <span class="ecl-weigou-money">¥</span>
+                            <span class="ecl-weigou-pur-price" data-price="<%=item.price%>"><%=item.price.toFixed(2)%></span>
+                        </div>
+                    </td>
+                    <td class="ecl-weigou-product-counter-td">
+                        <div class="ecl-weigou-product-counter-wrapper">
+                            <div class="ecl-weigou-counter c-clearfix">
+                                <span class="ecl-weigou-minus OP_LOG_BTN" data-click="{fm:'behz'}"></span>
+                                <span class="ecl-weigou-count">
+                                    <input class="ecl-weigou-count-input" data-count="1" value="<%=item.count%>" onclick="this.select()" />
+                                </span>
+                                <span class="ecl-weigou-plus OP_LOG_BTN" data-click="{fm:'behz'}"></span>
+                            </div>
+                            <div class="ecl-weigou-product-errmsg"></div>
+                        </div>
+                    </td>
+                    <td class="ecl-weigou-product-op-td">
+                        <span class="ecl-weigou-pur-delete OP_LOG_BTN" data-click="{fm:'behz'}" <%if(count === 1) print('style="display:none"');%>>删除</span>
+                    </td>
+                </tr>
+            <%
+            }
+            %>
+        </table>
+        <div class="ecl-weigou-pur-top-price">
+            <span class="ecl-weigou-pur-top-totalprice"></span>
+            <span class="ecl-weigou-money">¥</span>
+            <span>商品总价（不含运费）：</span>
+        </div>
+    </div>
+    <div class="ecl-weigou-pur-section">
+        <div class="ecl-weigou-pur-title">确认收货信息：</div>
+        <div class="ecl-weigou-pur-form-container">
+            <table>
+                <tr class="ecl-weigou-pur-form-first">
+                    <th>付款方式：</th>
+                    <td><span>货到付款</span></td>
+                </tr>
+                <tr>
+                    <th>手机号：</th>
+                    <td>
+                        <input id="ecl-weigou-phone-input" type="text" name="mobile"/>
+                        <span id="ecl-weigou-get-mobile-code" class="ecl-weigou-get-mobile-code OP_LOG_BTN" data-click="{fm:'behz'}">获取短信验证码</span>
+                        <span id="ecl-weigou-change-phone" class="ecl-weigou-change-phone OP_LOG_BTN" data-click="{fm:'behz'}">
+                            <a href="javascript:;">更换手机号</a>
+                        </span>
+                        <span class="ecl-weigou-pur-error-message" title="手机号格式错误"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>验证码/密码：</th>
+                    <td>
+                        <input id="ecl-weigou-vcode-input" type="text" />
+                        <span id="ecl-weigou-pur-vcode-verify" class="OP_LOG_BTN" data-click="{fm:'behz'}">
+                            <span>验证</span>
+                            <img src="//bs.baidu.com/adtest/748f07bb9481ce89f9a03de094ff5498.gif">
+                        </span>
+                        <span class="ecl-weigou-pur-error-message" title="短信安全码错误"></span>
+                        <span id="ecl-weigou-pur-item-success" class="ecl-weigou-pur-item-success"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <div id="ecl-weigou-pur-selector-address" class="ecl-weigou-pur-selector-wrapper">
+                            <span id="ecl-weigou-pur-selector" class="ecl-weigou-pur-selector c-clearfix OP_LOG_BTN" data-click="{fm:'behz'}">
+                                <span>使用已有地址</span><b></b>
+                            </span>
+                            <div id="ecl-weigou-pur-address-wrapper" data-num="0"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>收货人：</th>
+                    <td>
+                        <input id="ecl-weigou-username-input" type="text" name="name" maxlength="50"/>
+                        <span class="ecl-weigou-pur-error-message" title="请正确填写姓名"></span>
+                    </td>
+                </tr>
+                <tr class="ecl-weigou-pur-address-tr">
+                    <th>收货区域：</th>
+                    <td>
+                        <div class="ecl-weigou-pur-address-wrapper">
+                            <span class="ecl-weigou-pur-pick-address OP_LOG_BTN" data-click="{fm:'behz'}">
+                                <span>选择地址范围</span>
+                                <b></b>
+                            </span>
+                            <!--<span class="ecl-weigou-pur-range"><b></b><span>查看配送范围</span></span>-->
+                            <span class="ecl-weigou-pur-error-message c-clearfix" title="请选择正确的省市区"></span>
+                            <div class="ecl-weigou-pur-addresses">
+                                <b class="OP_LOG_BTN" data-click="{fm:'behz'}"></b>
+                                <div class="ecl-weigou-pur-address">
+                                    <select size="10" id="ecl-weigou-province-select"></select>
+                                </div>
+                                <div class="ecl-weigou-pur-address">
+                                    <select size="10" id="ecl-weigou-city-select"></select>
+                                </div>
+                                <div class="ecl-weigou-pur-address">
+                                    <select size="10" id="ecl-weigou-district-select"></select>
+                                </div>
+                                <div id="ecl-weigou-pur-address-town" class="ecl-weigou-pur-address" style="display:none">
+                                    <select size="10" id="ecl-weigou-town-select"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>街道地址：</th>
+                    <td>
+                        <input id="ecl-weigou-address-input" class="ecl-weigou-pur-address" type="text" name="address" maxlength="80"/>
+                        <span class="ecl-weigou-pur-error-message c-clearfix" title="请填写地址"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="ecl-weigou-pur-bottom">
+        <div class="ecl-weigou-pur-bottom-left">
+            <div class="c-clearfix">
+                <input id ="ecl-weigou-invoice-input" class="ecl-weigou-invoice OP_LOG_BTN" data-click="{fm:'behz'}" type="checkbox" />
+                <span class="ecl-weigou-invoice-text"><label for="ecl-weigou-invoice-input">需要发票</label></span>
+                <span class="ecl-weigou-invoice-tip">(仅提供个人发票)</span>
+            </div>
+            <div class="ecl-weigou-pur-agmt-wrapper">
+                <input id="ecl-weigou-pur-agmt" type="checkbox" value="" checked="checked" class="OP_LOG_BTN" data-click="{fm:'behz'}"/>
+                <span>同意</span><a href="javascript:;" target="_blank" id="ecl-weigou-pur-agmt-link">百度微购用户使用协议</a>
+            </div>
+        </div>
+        <div class="ecl-weigou-pur-bottom-right">
+            <div id="ecl-weigou-pur-prices">
+                <div>
+                    <span>运费：</span>
+                    <span class="ecl-weigou-money">¥</span>
+                    <span id="ecl-weigou-pur-fare"></span>
+                </div>
+                <div id="ecl-weigou-pur-offers">
+                    <span>优惠：</span>
+                    <span class="ecl-weigou-money">¥</span>
+                    <span id="ecl-weigou-pur-offers-money"></span>
+                </div>
+                <div class="ecl-weigou-pur-bottom-total">
+                    <span>合计：</span>
+                    <span class="ecl-weigou-money">¥</span>
+                    <span id="ecl-weigou-pur-total-price"></span>
+                    <span id="ecl-weigou-pur-total-price-text">（不含运费）</span>
+                </div>
+            </div>
+            <div class="ecl-weigou-pur-button c-clearfix">
+                <span id="ecl-weigou-pur-return-btn" class="OP_LOG_BTN" data-click="{fm:'behz'}">返回</span>
+                <div id="ecl-weigou-pur-submit" class="OP_LOG_BTN" data-click="{fm:'behz'}"></div>
+                <div id="ecl-weigou-pur-check" class="OP_LOG_BTN" data-click="{fm:'behz'}"></div>
+                <div id="ecl-weigou-pur-submit-loading">
+                    <img src="//bs.baidu.com/adtest/748f07bb9481ce89f9a03de094ff5498.gif" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ecl-weigou-pur-global-msg">
+        <b></b>
+        <span class="ecl-weigou-pur-global-arrow"></span>
+        <div class="ecl-weigou-pur-global-wrapper">
+            <div class="ecl-weigou-pur-global-inner"></div>
+        </div>
+    </div>
+</div>
+
+<!-- target:ecl_pur_addresses -->
+<%
+var item;
+for(var i = 0, length = result.length; i < length; i++) {
+item = result[i];
+%>
+<a href="javascript:;" data-click="{fm:'behz'}" class="OP_LOG_BTN c-clearfix<%
+    if(i === length - 1){
+        print(' ecl-last');
+    }
+    %>" data-province="<%:h=item['province']%>" data-city="<%:h=item['city']%>" data-district="<%:h=item['district']%>" data-address="<%:h=item['address']%>" data-name="<%:h=item['addressee'] %>" <%
+    if(item['town']){
+    %>data-town="<%:h=item['town']%>"<%
+    }
+    %>>
+<span class="ecl-name"><%:h=item['addressee']%></span>
+<span class="ecl-province"><%:h=item['province']%></span>
+<span class="ecl-city"><%:h=item['city']%></span>
+<span class="ecl-district"><%:h=item['district']%></span>
+<%if(item['town']) {%>
+<span class="ecl-town"><%:h=item['town']%></span>
+<%
+}
+%>
+<span class="ecl-address"><%:h=item['address']%></span>
+<%
+}
+%>
+</a>

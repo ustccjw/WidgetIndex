@@ -1,0 +1,126 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/imageplus/pa.less ~ 2014/03/0 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * pa样式文件
+ **/
+@import-once "mixins.less";
+
+.ad-widget-imageplus-lu {
+    padding: 5px 10px;
+    overflow: hidden;
+    font: 12px/1.5 arial,sans-serif;
+    text-align: left;
+    color: #333;
+    background-color: #FFF;
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    em {
+        color: red; //飘红
+        font-style: normal;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.ad-widget-imageplus-lu-ad {
+    a,
+    &,
+    h3,
+    img {
+        display: block;
+        width: 200px;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+    a:hover span {
+        text-decoration: none;
+    }
+
+    i {
+        padding: 0 2px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        font-style: normal;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #4ab4ff;
+    }
+    img {
+        margin: 5px 0;
+        width: 200px !important;
+        height: 200px !important;
+        border: none;
+        position: static !important;
+    }
+}
+.ad-widget-imageplus-lu-ad-title {
+    margin: 0;
+    padding: 2px 0;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: inherit;
+    white-space: nowrap;
+}
+
+/* foot */
+.ad-widget-imageplus-lu-ft {
+    padding: 2px 0;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: right;
+    color: #999;
+}
+.ad-widget-imageplus-lu-logo {
+    display: inline-block;
+    margin-right: 2px;
+    width: 13px;
+    height: 14px;
+    vertical-align: middle;
+    background: url(http://ecma.bdimg.com/public03/imageplus/baidu_mini_logo.png) no-repeat 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

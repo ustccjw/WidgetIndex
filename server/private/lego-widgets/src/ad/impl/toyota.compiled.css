@@ -1,0 +1,113 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: toyota.less 11222 2014-02-20 02:53:59Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/toyota.less ~ 2014/02/20 13:04:08
+ * @author fanxueliang@baidu.com (fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * dior样式文件
+ **/
+#canvas {
+  width: 524px;
+  border: 6px solid #f5f2f4;
+  background: #fff;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+}
+#canvas .ad-layout-block-0 {
+  padding: 4px 4px 0px 4px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+}
+#canvas .ad-layout-block-0 .ad-layout-block-0-1 {
+  float: left;
+  width: 281px;
+  margin-left: 14px;
+}
+#canvas .ad-widget-video obiect,
+#canvas .ad-widget-video embed {
+  display: block;
+}
+#canvas .ad-widget-small-head {
+  background-color: transparent;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #200000;
+}
+#canvas .ad-widget-small-head h2 a em {
+  color: #CC0000;
+  font-style: normal;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #4c4c4c;
+}
+#canvas .ad-widget-small-head .ec-description a {
+  color: #0000cc;
+}
+#canvas .ad-widget-small-head .ec-description .ec-site a {
+  color: #666;
+}
+#canvas .ad-widget-small-head .ec-image-group {
+  margin-top: 10px;
+}
+#canvas .ad-widget-small-head .ec-image-group a {
+  border: 1px solid #ddd;
+}
+#canvas .ad-widget-video-title a {
+  color: #200000;
+}
+#canvas .ad-layout-block-1 {
+  padding: 0px;
+}
+#canvas .ad-layout-block-1 .ad-widget-button-group {
+  margin-top: 0;
+  padding: 6px 0;
+  background-color: #e6e6e6;
+}
+#canvas .ad-layout-block-1 .ad-widget-button-group td {
+  border-right: 1px solid #acacac;
+}
+#canvas .ad-layout-block-1 .ad-widget-button-group td a {
+  color: #727272;
+}
+#canvas .ad-layout-block-1 .ad-widget-button-group .ec-last {
+  border: none;
+}
+#canvas .ad-widget-image-cartoon {
+  background-color: #fff;
+  width: 524px;
+  height: 136px;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  width: 522px;
+  height: 130px;
+  top: 3px;
+  left: 1px;
+}
+#canvas .ad-widget-image-cartoon .ec-item {
+  height: 130px;
+}
+#canvas .ad-widget-image-cartoon .ec-item img {
+  width: 102px;
+  height: 130px;
+}
+#canvas .ad-widget-image-cartoon .ec-item a {
+  position: relative;
+  height: 130px;
+}
+#canvas .ad-widget-image-cartoon .ec-item div {
+  display: block;
+  color: #fff;
+  background-color: #000;
+  height: 22px;
+  line-height: 22px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

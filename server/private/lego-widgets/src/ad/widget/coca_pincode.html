@@ -1,0 +1,18 @@
+<!-- target:AD_ad_widget_coca_pincode -->
+<div class="ad-widget ad-widget-coca-pincode">
+    <div class="ec-form" {{#img_bg}}style="background-image:url({{{img_bg}}})"{{/img_bg}}>
+        {{#title}}
+        <div class="ec-title">
+            <a target="_blank" href="{{{rcv_url}}}" title2="栏目标题">{{text}}</a>
+        </div>
+        {{/title}}
+        <div class="ec-form-row">
+            <input type="text" class="ec-pincode ec-default" id="{{#_id}}pincode{{/_id}}" maxlength="13" value="{{pincode_value}}"/>
+        </div>
+        <div class="ec-form-row">
+            <a id="{{#_id}}submitbtn-link{{/_id}}" class="ec-submitbtn-link" target="_blank" href="" title2="{{submitbtn}}">{{submitbtn}}</a>
+        </div>
+        <span id="{{#_id}}pincode-error{{/_id}}" class="ec-error ec-pincode-error ec-hide">请填写13位pincode字符</span>
+        <span id="{{#_id}}vcode-error{{/_id}}" class="ec-error ec-vcode-error ec-hide">请填写验证码</span>
+    </div>
+</div>

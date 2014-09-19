@@ -1,0 +1,65 @@
+<!-- target:AD_ad_widget_float_video2 -->
+<div class="ad-widget ad-widget-float-video2">
+  <div class="ec-inner">
+      {{#main}}
+      <div class="ec-fg" id="{{#_id}}fg{{/_id}}">
+          <img src="{{img_url}}" border="0" width="220" height="190" />
+          <div class="ec-start" id="{{#_id}}fg-start{{/_id}}"></div>
+          <div class="ec-video-length">
+              00:25
+          </div>
+      </div>
+      <div class="ec-bg" id="{{#_id}}bg{{/_id}}">
+          <div class="ec-detail">
+              <ul>
+                  {{#detail}}
+                  <li>
+                      <a href="{{{rcv_url}}}" title2="主图描述" target="_blank">{{text}}</a>
+                  </li>
+                  {{/detail}}
+              </ul>
+          </div>
+      </div>
+      {{/main}}
+      {{#float}}
+      {{#bg}}
+      <div class="ec-float" id="{{#_id}}float{{/_id}}" style="background: url({{src}}) no-repeat;">
+          <a href="{{{rcv_url}}}" title2="浮层跳转" target="_blank" class="ec-float-bg"></a>
+          <a id="{{#_id}}close{{/_id}}" title2="浮层关闭" class="ec-close">&nbsp;</a>
+          <div class="ec-main">
+              <div class="ec-main-video">
+                  {{#cur_video}}
+                  <div class="ec-video">
+                      {{#is_ipad}}
+                    <a target="_blank" href="{{{rcv_url}}}" title2="videoimg"><img width="{{width}}" height="{{height}}" src="{{ipad_img}}" /></a>
+                    {{/is_ipad}}
+                    {{^is_ipad}}
+                    <object id="{{#_id}}objad{{/_id}}" width="{{width}}" height="{{height}}"  codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" >
+                        <param value="always" name="allowScriptAccess">
+                        <param value="high" name="quality">
+                        <param value="{{player_url}}" name="movie">
+                        <param value="opaque" name="wmode">
+                        <param value="flashWidth={{width}}&flashHeight={{height}}&imgurl={{img_url}}&flvurl={{video_url}}&Track={{TrackCallBack}}&OpenCstUrl={{OpenCstUrlCallBack}}&isplay={{is_play}}" name="flashvars">
+                        <embed pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="opaque" name="{{#_id}}objad{{/_id}}" quality="high" width="{{width}}" height="{{height}}" flashvars="flashWidth={{width}}&flashHeight={{height}}&imgurl={{img_url}}&flvurl={{video_url}}&Track={{TrackCallBack}}&OpenCstUrl={{OpenCstUrlCallBack}}&isplay={{is_play}}" src="{{player_url}}">
+                    </object>
+                    {{/is_ipad}}
+                  </div>
+                  {{/cur_video}}
+              </div>
+              <div class="ec-main-slider">
+                  右侧视频缩略图导航
+              </div>
+          </div>
+          <div class="ec-like-share">
+            <div class="ec-like">
+                喜欢
+            </div>
+            <div class="ec-share">
+                分享
+            </div>
+        </div>
+      </div>
+      {{/bg}}
+      {{/float}}
+  </div>
+</div>

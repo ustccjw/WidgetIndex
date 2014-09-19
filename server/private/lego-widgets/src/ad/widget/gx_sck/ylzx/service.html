@@ -1,0 +1,31 @@
+<!-- target:AD_ad_widget_gx_sck_ylzx_service -->
+<div class="ad-widget-gx_sck-ylzx ad-widget-gx_sck-ylzx-service">
+    <div class="ec-gx-service-pic" {{#is_ipad}}style="width:298px;"{{/is_ipad}} >
+        <a title2="地图跳转" id="{{#_id}}pic-cover{{/_id}}" href="{{{api_url}}}geocoder?address={{addr_encode}}&output=html" target="_blank">
+            <img src="{{src_pic}}" />
+        </a>
+    </div>
+    <div class="ec-gx-service-route">
+        <ul class="ec-gx-tabs-nav" {{#is_ipad}}style="width:298px;"{{/is_ipad}} >
+            <li id="{{#_id}}li-to{{/_id}}" class="ec-gx-tabs-nav-li ec-gx-tabs-nav-selected">
+                <div class="ec-gx-tabs-nav-li-top"></div>到这里去</li>
+            <li id="{{#_id}}li-from{{/_id}}" class="ec-gx-tabs-nav-li">
+                <div class="ec-gx-tabs-nav-li-top"></div>从这里出发</li>
+        </ul>
+        <div class="ec-route-input">
+            <span class="c-gap-right">
+                <input type="text" id="{{#_id}}route-input{{/_id}}" class="c-input ec-gx-input-route" {{#is_ipad}}style="width:152px;"{{/is_ipad}} placeholder="输入起点" />
+            </span>
+            <span class="c-gap-right">
+                <button id="{{#_id}}route-bus{{/_id}}" class="c-btn c-btn-primary" href="javascript:void(0)">公交</button>
+            </span>
+            <span>
+                <button id="{{#_id}}route-car{{/_id}}" class="c-btn c-btn-primary" href="javascript:void(0)">驾车</button>
+            </span>
+        </div>
+    </div>
+    <div class="ec-gx-service-foot" {{#is_ipad}}style="width:298px;"{{/is_ipad}}>
+        <p>医院地址：{{addr}}</p>
+        <p>联系电话：{{tel}}</p>
+    </div>
+</div>

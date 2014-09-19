@@ -1,0 +1,25 @@
+<!-- target:AD_ad_widget_slider -->
+<div id="{{#_id}}slider{{/_id}}" class="ad-widget ad-widget-slider">
+    <ol id="{{#_id}}img{{/_id}}" class="ad-widget-slider-content">
+        {{#options}}
+            <li>
+                <a href="{{{rcv_url}}}" target="_blank" title2="{{#custom_title2}}多图轮播链接{{_index}}-{{{custom_title2}}}{{/custom_title2}}{{^custom_title2}}多图轮播链接{{_index}}{{/custom_title2}}">
+                    <img src="{{{img_url}}}" width="{{{width}}}" height="{{{height}}}" />
+                </a>
+                {{#extra}}
+                <div class="ad-widget-slider-info">
+                    {{#rcv_url}}<a href="{{{rcv_url}}}" target="_blank" title2="轮播模块覆盖层小图片{{_index}}" class="ad-widget-slider-info-img">{{/rcv_url}}
+                        <img src="{{{img_url}}}" alt="" />
+                    {{#rcv_url}}</a>{{/rcv_url}}
+                    <p>{{{info}}}</p>
+                </div>
+                {{/extra}}
+            </li>
+        {{/options}}
+    </ol>
+    <ul id="{{#_id}}btn{{/_id}}" class="ad-widget-slider-switcher">
+        {{#options}}
+        <li data-index="{{_index}}"{{#_is_current}} class="ad-widget-slider-cur"{{/_is_current}}>{{_index}}</li>
+        {{/options}}
+    </ul>
+</div>

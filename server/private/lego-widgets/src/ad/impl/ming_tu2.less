@@ -1,0 +1,312 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/ming_tu2.less ~ 2014/03/18 15:18:07
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * ming_tu2样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 13px/1.5 arial, sans-serif;
+
+    margin-bottom: 20px;
+    padding: 7px 10px 14px 9px;
+    width: 518px;
+
+    .pl-canvas-border();
+    .ad-widget-h1 .ec-cont {
+        display: none;
+    }
+
+    .ad-block-1 {
+        .gain-bfc();
+        padding-top: 8px;
+    }
+
+    .ad-block-1-0 {
+        float: left;
+        width: 254px;
+        height: 144px;
+        zoom: 1;
+    }
+
+    .ad-block-1-1 {
+        float: left;
+        width: 254px;
+        padding-left: 10px;
+        .ec-description {
+            text-indent: 2em;
+            .ec-site {
+                text-indent: 0;
+            }
+        }
+    }
+
+    .ad-widget-small-head .ec-image-group {
+        margin-top: 12px;
+        a {
+            width: 78px;
+            height: 59px;
+            border: 0 none;
+            margin-right: 10px;
+        }
+        a.ec-last {
+            margin-right: 0;
+        }
+        img {
+            width: 78px;
+            height: 59px;
+        }
+    }
+
+    .ad-widget-tab-container {
+        padding-top: 15px;
+        .ec-tab-head {
+            margin: 0 0 10px;
+            height: 28px;
+        }
+        .ec-tab-head li {
+            margin-left: 0;
+            margin-bottom: 0;
+            a {
+                border: 1px solid #e3e3e3;
+                border-width: 1px 0;
+                height: 18px;
+                line-height: 18px;
+                color: #000;
+                background-color: #fff;
+            }
+        }
+        .ec-tab-head li.ec-current-tab a {
+            border-width: 2px 0;
+            height: 16px;
+            line-height: 16px;
+            border-color: #2c99ff;
+        }
+    }
+
+    .ad-widget-image-link {
+        width: 518px;
+        height: 96px;
+    }
+
+    .ad-widget-iframe {
+        height: 96px;
+        a img {
+            width: 210px;
+            height: 96px;
+        }
+        div {
+            margin-left: 10px;
+            height: 96px;
+        }
+    }
+
+    .ad-widget-image-cartoon {
+        width: 518px;
+        .ec-item-wrapper {
+            width: 518px;
+            height: 96px;
+        }
+        .ec-item {
+            height: 96px;
+        }
+        .ec-arrow {
+            width: 22px;
+            height: 36px;
+            top: 30px;
+        }
+        .ec-right-arrow {
+            right: 1px;
+        }
+    }
+
+    .ad-widget-button-group {
+        margin-top: 15px;
+        padding: 0;
+        background-color: #e3e3e3;
+        td {
+            padding: 0;
+            height: 28px;
+            border: none;
+            a {
+                color: #000;
+                text-decoration: none;
+                border-right: solid 1px #000;
+                height: 13px;
+                height: 13px;
+                *height: 15px;
+                *line-height: 15px;
+                display: block;
+                background-color: #e3e3e3;
+            }
+        }
+        .ec-last a{
+            border: none;
+        }
+    }
+}
+
+
+.ec-ming-tu2-fwc-1 {
+    .ad-widget-float-window-container {
+        left: 0px;
+        top: 0px;
+        .ec-sub {
+            background-color: #fff;
+        }
+        .ec-close {
+            width: 35px;
+            height: 35px;
+            right: 0;
+            top: 0;
+            background: url("//bs.baidu.com/adtest/ef8f338b8e024c803b0df37f258dbaa8.png");
+            _background: none;
+            _filter: progid:dximagetransform.microsoft.alphaimageloader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/ef8f338b8e024c803b0df37f258dbaa8.png");
+        }
+
+        .ec-close:hover {
+            background: url("//bs.baidu.com/adtest/ea9c162791a25e5475e81df257f773b6.png");
+            _background: none;
+            _filter: progid:dximagetransform.microsoft.alphaimageloader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/ea9c162791a25e5475e81df257f773b6.png");
+        }
+    }
+
+    .ad-widget-video {
+        position: absolute;
+        left: 20px;
+        top: 141px;
+        width: 424px;
+        height: 240px;
+        object{
+            width: 424px;
+            height: 240px;
+        }
+        embed {
+            width: 424px;
+            height: 240px;
+        }
+    }
+
+    .ec-bg {
+        background-color: #fff;
+        .opacity(80);
+        width: 830px;
+        height: 76px;
+        position: absolute;
+        left: 0;
+        top: 45px;
+    }
+    
+    .ad-widget-image-normal {
+        position: absolute;
+        left: 20px;
+        top: 55px;
+        width: 830px;
+        a {
+            position: relative;
+            color: #fff;
+            margin:0 38px 0 0;
+            width: 100px;
+            height: 56px;
+            img {
+                border: none;
+            }
+            span {
+                display: none;
+            }
+            .ec-opacity-bg {
+                display: none;
+            }
+            .ec-cover {
+                text-align: center;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100px;
+                height: 56px;
+                font:13px "宋体";
+                color: #fff;
+                line-height: 55px;
+            }
+            .ec-play {
+                display: none;
+            }
+        }
+        a.ec-last {
+            margin-right: 0;
+        }
+        a:hover {
+            .ec-opacity-bg {
+                display: block;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100px;
+                height: 56px;
+                background-color: #000;
+                .opacity(50);
+            }
+            span {
+                display: block;
+                font: 13px "宋体";
+                color: #fff;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 90px;
+                height: 18px;
+                margin-top: 0;
+                text-align: left;
+                .opacity(100);
+            }
+            .ec-play {
+                display: block;
+                position: absolute;
+                left: 10px;
+                top: 29px;
+                width: 41px;
+                height: 18px;
+                line-height: 18px;
+                background-color: #2b98fd;
+                color: #fff;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        a.ec-current {
+            .ec-opacity-bg {
+                display: block;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100px;
+                height: 56px;
+                background-color: #000;
+                .opacity(50);
+            }
+        }
+        a.ec-current:hover {
+            span {
+                display: none;
+            }
+            .ec-play {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

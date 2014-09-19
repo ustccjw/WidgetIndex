@@ -1,0 +1,255 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/new_custom/braun.less ~ 2014/06/30 15:39:57
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * braun样式文件
+ **/
+#canvas {
+  width: 525px;
+  margin-bottom: 20px;
+  border: 5px solid #000;
+  font: 13px arial, sans-serif;
+  background: #FFF;
+  /** 表单的tab */
+
+}
+#canvas .ad-widget-title {
+  margin: 5px 5px 10px 5px;
+}
+#canvas .ad-block-1 {
+  height: 144px;
+  margin-bottom: 10px;
+}
+#canvas .ad-block-1-0 {
+  float: left;
+  margin-left: 5px;
+  _display: inline;
+}
+#canvas .ad-block-1-1 {
+  margin-left: 269px;
+  margin-right: 5px;
+}
+#canvas .ad-block-1-1 .ad-widget-small-head .ec-description {
+  text-indent: 2em;
+}
+#canvas .ad-block-1-1 .ad-widget-small-head .ec-site {
+  text-indent: 0;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list {
+  margin-top: 8px;
+  _width: 246px;
+  padding: 0;
+  background-color: transparent;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list td {
+  border: 0;
+  padding: 0;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list .ec-link-wrapper {
+  color: #3d3d3d;
+  text-decoration: none;
+  border: solid 1px #D8D8D8;
+  margin: 0 5px 0 0;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  font-family: "宋体";
+  background: #F9F9F9;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list .ec-last .ec-link-wrapper {
+  margin-left: 5px;
+  margin-right: 0;
+}
+#canvas .ad-block-1-1 .ad-widget-button-list a {
+  padding-right: 12px;
+  background: url(//bs.baidu.com/adtest/0035d722a16c5bbe28108746e37ca2f4.gif) no-repeat right center;
+}
+#canvas .ad-widget-tab-container .ec-tab-head {
+  margin: 0px;
+  background: none;
+  background-color: #000;
+  padding: 0px;
+  height: 30px;
+  overflow: hidden;
+}
+#canvas .ad-widget-tab-container .ec-tab-head li {
+  margin: 0px;
+  height: 30px;
+  line-height: 30px;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+#canvas .ad-widget-tab-container .ec-tab-head li a {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  border: none;
+  margin-left: -1px;
+  border-right: 1px solid #fff;
+  padding: 0px;
+  _margin-top: 9px;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-tab-list-last a {
+  border-right: none;
+}
+#canvas .ad-widget-tab-container .ec-tab-head .ec-current-tab a {
+  font-weight: bold;
+  color: #0068B8;
+}
+#canvas .ad-widget-tab-container .ec-tab-body {
+  overflow: hidden;
+  zoom: 1;
+  height: 140px;
+  background-color: #000;
+}
+#canvas .ad-widget-tab-container .ec-tab-body .ec-tabcon {
+  height: 100%;
+}
+#canvas .ad-widget-image-cartoon {
+  width: auto;
+}
+#canvas .ad-widget-image-cartoon .ec-item-wrapper {
+  width: auto;
+  height: 140px;
+}
+#canvas .ad-widget-image-cartoon .ec-item {
+  height: 140px;
+}
+#canvas .ad-widget-image-cartoon .ec-item a,
+#canvas .ad-widget-image-cartoon .ec-item img {
+  width: 105px;
+  height: 140px;
+}
+#canvas .ad-widget-image-cartoon a:hover {
+  position: static;
+  border: 0 none;
+}
+#canvas .ec-tab-content-3 {
+  height: 100%;
+  position: relative;
+}
+#canvas .ec-tab-content-list {
+  background: url(//bs.baidu.com/adtest/b150848fe6b49671ea479db2288d65ce.gif) no-repeat 270px 10px;
+}
+#canvas .ec-tab-content-list .ec-normal-con-0 {
+  position: relative;
+}
+#canvas .ec-tab-content-list .ec-normal-con-0-0 {
+  position: absolute;
+  height: 140px;
+  overflow: hidden;
+}
+#canvas .ec-tab-content-list .ec-normal-con-0-1 {
+  position: absolute;
+  left: 18px;
+  top: 46px;
+}
+#canvas .ec-tab-content-list .ad-widget-lv-list .ec-inner {
+  background: none;
+  padding: 18px 0 0 18px;
+}
+#canvas .ec-tab-content-list .ad-widget-lv-list .ec-inner .ec-detail {
+  margin-left: 80px;
+  width: 235px;
+  overflow: hidden;
+}
+#canvas .ec-tab-content-list .ad-widget-lv-list .ec-inner .ec-show-detail {
+  width: 90px;
+  height: 25px;
+  line-height: 25px;
+  background: #717171;
+}
+#canvas .ec-tab-content-list .ad-widget-lv-list .ec-inner .ec-extra {
+  margin-top: 5px;
+}
+#canvas .ec-tab-content-list .ad-widget-dependency-select .ec-item {
+  float: none;
+  margin-bottom: 10px;
+}
+#canvas .ec-tab-content-list .ad-widget-dependency-select .ec-item .ec-title {
+  color: #FFEDE3;
+  margin-right: 5px;
+}
+#canvas .ec-tab-content-list .ad-widget-dependency-select .ec-item select {
+  word-wrap: normal;
+  width: 180px;
+  height: 24px;
+}
+#canvas .ec-tab-content-activity {
+  height: 100%;
+  background: #1D1D1D;
+}
+#canvas .ec-tab-content-activity .ec-normal-con-0 .ec-normal-con {
+  float: left;
+  width: 49.5%;
+}
+#canvas .ad-widget-table {
+  border: none;
+  padding: 0px 10px;
+  width: 240px;
+  margin-top: 10px;
+}
+#canvas .ad-widget-table th,
+#canvas .ad-widget-table td,
+#canvas .ad-widget-table tr,
+#canvas .ad-widget-table thead,
+#canvas .ad-widget-table tbody {
+  background: transparent;
+  border: none;
+}
+#canvas .ad-widget-table td {
+  text-align: left;
+  line-height: 23px;
+}
+#canvas .ad-widget-table td a {
+  color: #cbcbcb;
+}
+#canvas .ad-widget-table thead td {
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+#canvas .ad-widget-table thead td a {
+  color: #989898;
+  text-decoration: none;
+}
+#canvas .ad-widget-table tbody {
+  margin-top: 3px;
+}
+#canvas .ad-widget-table tbody td {
+  padding-left: 14px;
+  background: url(//bs.baidu.com/adtest/406a6889f341c876086864ccb9f2dc75.gif) no-repeat 2px center;
+}
+#canvas .ad-widget-table tbody td a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#canvas .ad-block-3 {
+  background-color: #000;
+}
+#canvas .ad-block-3 .ad-widget-button-group {
+  padding-top: 6px;
+  padding-bottom: 2px;
+  background-color: #000;
+}
+#canvas .ad-block-3 .ad-widget-button-group td {
+  border: 0;
+}
+#canvas .ad-block-3 .ad-widget-button-group a {
+  color: #00AFE8;
+  text-decoration: none;
+  border: 0 none;
+  text-decoration: underline;
+  margin: 0;
+  background-color: #000;
+  font-family: "宋体";
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

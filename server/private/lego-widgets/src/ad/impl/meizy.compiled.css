@@ -1,0 +1,128 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: meizy.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/meizy.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 515px;
+  background: #fff9eb;
+  padding: 10px;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+}
+#canvas .ad-layout-block-0-1 {
+  overflow: hidden;
+  zoom: 1;
+  width: 276px;
+  padding: 0px 0px 0px 14px;
+}
+#canvas .ad-layout-wrapper {
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+}
+#canvas .ad-widget-small-head .ec-description {
+  color: #000;
+}
+#canvas .ad-widget-title {
+  margin-top: 10px;
+  line-height: 22px;
+  height: 22px;
+}
+#canvas .ad-widget-title h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  font-weight: normal;
+}
+#canvas .ad-widget-title h2 span {
+  color: #000;
+}
+#canvas .ad-widget-title h2 a {
+  color: #0000cc;
+}
+#canvas .ad-widget-image-multi-region {
+  height: 70px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-widget-image-multi-region .ec-image-multi-region-item {
+  border: 0px solid #D9DFDF;
+  float: left;
+  height: 70px;
+  margin-right: 0px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+#canvas .ad-widget-image-multi-region .ec-image-multi-region-item img {
+  border: 0px;
+  width: 100%;
+  height: 70px;
+}
+#canvas .ad-widget-image-multi-region .ec-image-multi-region-item .ec-left {
+  width: 114px;
+  height: 52px;
+  left: 24px;
+  top: 10px;
+}
+#canvas .ad-widget-image-multi-region .ec-image-multi-region-item .ec-righttop {
+  width: 211px;
+  height: 38px;
+  right: 142px;
+  top: 16px;
+}
+#canvas .ad-widget-image-multi-region .ec-image-multi-region-item .ec-rightbottom {
+  width: 84px;
+  height: 33px;
+  right: 32px;
+  top: 20px;
+}
+#canvas .ad-widget-button-group {
+  margin-top: 10px;
+  padding: 0px;
+  height: 26px;
+  line-height: 26px;
+  background: #fff9eb;
+}
+#canvas .ad-widget-button-group table tr {
+  height: 26px;
+}
+#canvas .ad-widget-button-group table tr td {
+  border: 0px;
+  padding: 0px;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group table tr td a {
+  color: #a45300;
+  display: block;
+  border: 1px solid #fde8d2;
+  background: #fff;
+  text-decoration: underline;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+#canvas .ad-widget-button-group table tr .ec-first a {
+  margin-left: 0px;
+}
+#canvas .ad-widget-button-group table tr .ec-last a {
+  margin-right: 0px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

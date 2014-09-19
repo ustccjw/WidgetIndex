@@ -1,0 +1,95 @@
+<!-- target:AD_ad_widget_hotel_form -->
+<div class="ad-widget ad-widget-hotel-form">
+    <div id="{{#_id}}content{{/_id}}" class="ec-content"> {{#hotel_options}}
+        <div id="{{#_id}}hotel-options{{/_id}}" class="ec-hotel-options"> {{#native_hotel}}
+            <label class="ec-options-label">
+                <input id="{{#_id}}hotel-options-native{{/_id}}" class="ec-options-item" name="hotel-type" type="radio" checked="checked" value="0"/>
+                国内酒店 </label>
+            {{/native_hotel}}
+            {{#internal_hotel}}
+            <label class="ec-options-label">
+                <input id="{{#_id}}hotel-options-internal{{/_id}}" class="ec-options-item" name="hotel-type" type="radio" value="1"/>
+                国际酒店 </label>
+            {{/internal_hotel}} </div>
+        {{/hotel_options}}
+        
+        {{#native_hotel}}
+        <form id="{{#_id}}native-hotel-form{{/_id}}" class="ec-hotel-form" target="_blank" method="{{form_method}}" accept-charset="{{form_charset}}" action="{{form_action}}" style="display:none;" >
+            <div class="ec-hidden-input">
+                {{#hidden_inputs}}
+                {{#name}}
+                <input type="hidden" name="{{name}}" value="{{value}}"/>
+                {{/name}}
+                {{/hidden_inputs}}
+            </div>
+            <div class="ec-item-content">
+                <label class="ec-control-label" for="{{#_id}}native-checkin-city{{/_id}}">入住城市</label>
+                <div class="ec-item-content-input ec-item-content-left">
+                    <input type="hidden" id="{{#_id}}{{native_hotel.city.submit_name}}{{/_id}}" name="{{native_hotel.city.submit_name}}" value="{{native_hotel.city.default_value}}"/>
+                    <input type="text" id="{{#_id}}native-checkin-city{{/_id}}" forid="{{#_id}}{{native_hotel.city.submit_name}}{{/_id}}" class="ec-default-text" defaulttext="请输入入住城市" value="请输入入住城市"/>
+                </div>
+                {{#keyword}}
+                <label class="ec-control-label" for="{{#_id}}native-keyword{{/_id}}" style="padding-left:8px;">&#12288;关键字</label>
+                <div class="ec-item-content-input ec-item-content-right">
+                    <input type="hidden" id="{{#_id}}{{native_hotel.keyword.submit_name}}{{/_id}}" name="{{native_hotel.keyword.submit_name}}" value="{{native_hotel.keyword.default_value}}"/>
+                    <input type="text" forid="{{#_id}}{{native_hotel.keyword.submit_name}}{{/_id}}" id="{{#_id}}native-keyword{{/_id}}"/>
+                </div>
+                {{/keyword}} </div>
+            <div class="ec-item-content">
+                <label class="ec-control-label" for="{{#_id}}native-checkindate{{/_id}}">入住日期</label>
+                <div class="ec-item-content-input ec-item-content-left">
+                    <input type="hidden" id="{{#_id}}{{native_hotel.checkin_date.submit_name}}{{/_id}}" name="{{native_hotel.checkin_date.submit_name}}" value="{{native_hotel.checkin_date.default_value}}"/>
+                    <input type="text" forid="{{#_id}}{{native_hotel.checkin_date.submit_name}}{{/_id}}" id="{{#_id}}native-checkindate{{/_id}}"/>
+                </div>
+                <label class="ec-control-label" for="{{#_id}}native-checkoutdate{{/_id}}" style="padding-left:8px;">离店日期</label>
+                <div class="ec-item-content-input ec-item-content-right">
+                    <input type="hidden" id="{{#_id}}{{native_hotel.checkout_date.submit_name}}{{/_id}}" name="{{native_hotel.checkout_date.submit_name}}" value="{{native_hotel.checkout_date.default_value}}"/>
+                    <input type="text" forid="{{#_id}}{{native_hotel.checkout_date.submit_name}}{{/_id}}" id="{{#_id}}native-checkoutdate{{/_id}}" />
+                </div>
+                <div class="ec-search-btn">
+                    <input type="button" value="立即搜索" id="{{#_id}}native-hotel-submit{{/_id}}" class="ec-hotel-submit"/>
+                </div>
+            </div>
+        </form>
+        {{/native_hotel}}
+        
+        {{#internal_hotel}}
+        <form id="{{#_id}}internal-hotel-form{{/_id}}" class="ec-hotel-form" target="_blank" method="{{form_method}}" accept-charset="{{form_charset}}" action="{{form_action}}" style="display:none;" >
+            <div class="ec-hidden-input">
+                {{#hidden_inputs}}
+                {{#name}}
+                <input type="hidden" name="{{name}}" value="{{value}}"/>
+                {{/name}}
+                {{/hidden_inputs}}
+            </div>
+            <div class="ec-item-content">
+                <label class="ec-control-label" for="{{#_id}}internal-checkin-city{{/_id}}">入住城市</label>
+                <div class="ec-item-content-input ec-item-content-left">
+                    <input type="hidden" id="{{#_id}}{{internal_hotel.city.submit_name}}{{/_id}}" name="{{internal_hotel.city.submit_name}}" value="{{internal_hotel.city.default_value}}"/>
+                    <input type="text" id="{{#_id}}internal-checkin-city{{/_id}}" forid="{{#_id}}{{internal_hotel.city.submit_name}}{{/_id}}" class="ec-default-text" defaulttext="请输入入住城市" value="请输入入住城市"/>
+                </div>
+                {{#keyword}}
+                <label class="ec-control-label" for="{{#_id}}internal-keyword{{/_id}}" style="padding-left:8px;">&#12288;关键字</label>
+                <div class="ec-item-content-input ec-item-content-right">
+                    <input type="hidden" id="{{#_id}}{{internal_hotel.keyword.submit_name}}{{/_id}}" name="{{internal_hotel.keyword.submit_name}}" value="{{internal_hotel.keyword.default_value}}"/>
+                    <input type="text" forid="{{#_id}}{{internal_hotel.keyword.submit_name}}{{/_id}}" id="{{#_id}}internal-keyword{{/_id}}"/>
+                </div>
+                {{/keyword}} </div>
+            <div class="ec-item-content">
+                <label class="ec-control-label" for="{{#_id}}internal-checkindate{{/_id}}">入住日期</label>
+                <div class="ec-item-content-input ec-item-content-left">
+                    <input type="hidden" id="{{#_id}}{{internal_hotel.checkin_date.submit_name}}{{/_id}}" name="{{internal_hotel.checkin_date.submit_name}}" value="{{internal_hotel.checkin_date.default_value}}"/>
+                    <input type="text" forid="{{#_id}}{{internal_hotel.checkin_date.submit_name}}{{/_id}}" id="{{#_id}}internal-checkindate{{/_id}}"/>
+                </div>
+                <label class="ec-control-label" for="{{#_id}}internal-checkoutdate{{/_id}}" style="padding-left:8px;">离店日期</label>
+                <div class="ec-item-content-input ec-item-content-right">
+                    <input type="hidden" id="{{#_id}}{{internal_hotel.checkout_date.submit_name}}{{/_id}}" name="{{internal_hotel.checkout_date.submit_name}}" value="{{internal_hotel.checkout_date.default_value}}"/>
+                    <input type="text" forid="{{#_id}}{{internal_hotel.checkout_date.submit_name}}{{/_id}}" id="{{#_id}}internal-checkoutdate{{/_id}}" />
+                </div>
+                <div class="ec-search-btn">
+                    <input type="button" value="立即搜索" id="{{#_id}}internal-hotel-submit{{/_id}}" class="ec-hotel-submit"/>
+                </div>
+            </div>
+        </form>
+        {{/internal_hotel}} </div>
+</div>

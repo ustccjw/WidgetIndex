@@ -1,0 +1,87 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/tab_cont.less ~ 2012/09/06 11:09:06
+ * @author wangdawei04@baidu.com (wangdawei)
+ * @version $Revision: 10927 $
+ * @description
+ * tab_cont样式文件
+ **/
+.ad-widget-tab-cont {
+  font: 12px/1.5 arial, sans-serif;
+}
+.ad-widget-tab-cont table td {
+  line-height: 18px;
+}
+.ad-widget-tab-cont table td a {
+  color: #000000;
+  font-family: "宋体";
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.ad-widget-tab-cont table td a img {
+  border: 0px;
+  display: block;
+}
+.ad-widget-tab-cont .ec-brand-pic {
+  height: 100px;
+  width: 195px;
+  padding-left: 8px;
+  word-wrap: break-word;
+}
+.ad-widget-tab-cont .ec-brand-pic a {
+  display: block;
+}
+.ad-widget-tab-cont .ec-brand-pic img {
+  height: 100px;
+  width: 180px;
+}
+.ad-widget-tab-cont .ec-brand-intro {
+  padding-left: 12px;
+  padding-right: 0px;
+  word-wrap: break-word;
+  height: 102px;
+  overflow: hidden;
+}
+.ad-widget-tab-cont .ec-brand-intro h1 {
+  margin: -1px 0px 5px;
+  padding: 0px;
+  height: 18px;
+  line-height: 18px;
+}
+.ad-widget-tab-cont .ec-brand-intro h1 a {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  vertical-align: baseline;
+  width: 115px;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.ad-widget-tab-cont .ec-brand-intro h3 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+.ad-widget-tab-cont .ec-brand-intro .ec-des-text-links a {
+  color: #00e;
+  text-decoration: underline;
+}
+.ad-widget-tab-cont .ec-td-border {
+  border-right: 1px solid #E1E1E1;
+  width: 185px;
+}
+.ad-widget-tab-cont .ec-td-border .ec-brand-intro {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ad-widget-tab-cont .ec-td-border .ec-brand-intro h1 a {
+  width: 165px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

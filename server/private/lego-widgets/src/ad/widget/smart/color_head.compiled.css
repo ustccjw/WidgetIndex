@@ -1,0 +1,46 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/smart/color_head.less ~ 2013/11/13 15:47:27
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * color_head样式文件
+ **/
+.ad-widget-smart-color-head .ec-color-ctn {
+  line-height: 18px;
+}
+.ad-widget-smart-color-head .ec-try-btn {
+  display: block;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid #b8bcbf;
+  text-decoration: none;
+  color: #333;
+  background-color: #fcfcfc;
+  background-image: -moz-linear-gradient(top, #fefefe, #fafafa);
+  background-image: -ms-linear-gradient(top, #fefefe, #fafafa);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fefefe), to(#fafafa));
+  background-image: -webkit-linear-gradient(top, #fefefe, #fafafa);
+  background-image: -o-linear-gradient(top, #fefefe, #fafafa);
+  background-image: linear-gradient(top, #fefefe, #fafafa);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#fafafa', GradientType=0);
+  margin-top: 8px;
+  height: 24px;
+  width: 164px;
+}
+.ad-widget-smart-color-head .ec-head-site {
+  margin: 0;
+  padding: 0;
+  clear: left;
+  color: #008102;
+}
+.ad-widget-smart-color-head .ec-head-site-text {
+  color: #666;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

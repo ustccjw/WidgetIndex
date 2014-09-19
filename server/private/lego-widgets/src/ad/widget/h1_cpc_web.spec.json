@@ -1,0 +1,192 @@
+{
+    "contents": ["ad.widget.H1Cpc"],
+    "userPrefs": [
+        {
+            "name": "title",
+            "displayName": "标题",
+            "nameTip": "富文本",
+            "tip": "标题为6~30个汉字，核心<em>飘红词</em>最多可选6个汉字",
+            "defaultValue": "《<em>大唐无双2</em>》- 网易第一战斗网游",
+            "datatype": "HTML",
+            "multiline": false,
+            "rules": {
+                "required": true,
+                "minTextByteLength": 12,
+                "maxTextByteLength": 60,
+                "tagList" : {
+                    "em": {
+                        "maxTextByteLength": 12,
+                        "minCount": 1,
+                        "maxCount": 1
+                    }
+                }
+            },
+            "extraAttr": {
+                "editorConfig": {
+                    "tools": ["emphasize"]
+                },
+                "tagList" : {
+                    "em": {
+                        "isAllowNoContent": false,
+                        "isSimpleTag": false
+                    }
+                }
+            }
+        },
+        {
+            "name": "url",
+            "displayName": "标题URL",
+            "defaultValue": "http://",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL"
+            },
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "logo",
+            "displayName": "LOGO",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "logo_url",
+                    "displayName": "LOGO跳转地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "tip": "",
+                    "multiline": false
+                },
+                {
+                    "name": "logo",
+                    "displayName": "LOGO图片",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "tip": "",
+                    "multiline": false,
+                    "rules": {},
+                    "extraAttr":{
+                        "fileType":"IMAGE",
+                        "width":90,
+                        "height":90,
+                        "maxSize":50,
+                        "ext":"jpg,gif,png"
+                    }
+                }
+            ],
+            "rules": {}
+        },
+        {
+            "name": "description",
+            "displayName": "描述",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "minByteLength": 60,
+                "maxByteLength": 250
+            },
+            "tip": "描述为30~125个汉字",
+            "multiline": true
+        },
+         {
+            "name": "description_url",
+            "displayName": "描述URL",
+            "defaultValue": "",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "URL"
+            },
+            "descriptionTip": "不可与连接词同时使用",
+            "multiline": false
+        },
+        {
+            "name": "query",
+            "displayName": "链接词",
+            "datatype": "LIST",
+            "items": [
+                {
+                    "name": "key_word",
+                    "displayName": "文字",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "maxByteLength": 20
+                    },
+                    "tip": "20字节内",
+                    "multiline": false
+                },
+                {
+                    "name": "url",
+                    "displayName": "跳转地址",
+                    "defaultValue": "http://",
+                    "datatype": "STRING",
+                    "rules": {
+                        "required": true,
+                        "stringType": "URL"
+                    },
+                    "tip": "",
+                    "multiline": false
+                }
+            ],
+            "descriptionTip": "不可与描述url同时使用",
+            "rules": {
+                "maxCount": 5
+            }
+        },
+        {
+            "name": "site",
+            "displayName": "官方网站",
+            "defaultValue": "http://g.cn",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "maxByteLength": 40
+            },
+            "tip": "最多可填写40个字节",
+            "multiline": false
+        },
+        {
+            "name": "image_links",
+            "displayName": "图片链接",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "options",
+                    "displayName": "图片链接选项",
+                    "datatype": "LIST",
+                    "items": [
+                        {
+                            "name": "url",
+                            "displayName": "图片跳转地址",
+                            "defaultValue": "http://",
+                            "datatype": "STRING",
+                            "rules": {
+                                "stringType": "URL"
+                            }
+                        }
+                    ],
+                    "rules": {
+                        "maxCount": 2,
+                        "minCount": 2
+                    }
+                }
+            ],
+            "rules": {
+                "required": true
+            }
+        },
+        {
+            "name": "img_sources",
+            "displayName": "按钮图片地址",
+            "defaultValue": "http://ecma.bdimg.com/adtest/baf40ac552fd561c9bb66778e7cf66db.gif,http://ecma.bdimg.com/adtest/8158ffda6b78d3b01089c7361d0907f6.gif",
+            "datatype": "HIDDEN"
+        }
+    ]
+}
+

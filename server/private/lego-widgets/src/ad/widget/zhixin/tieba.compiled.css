@@ -1,0 +1,91 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z dingguoliang01 $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhixin/tieba.less ~ 2013/10/31 10:19:22
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * zhidao样式文件
+ **/
+.ad-widget-zhixin-tieba {
+  font: 13px/1.5 arial, sans-serif;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-zhixin-tieba em {
+  color: #c00;
+  font-style: normal;
+}
+.ad-widget-zhixin-tieba ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 0 0 10px;
+}
+.ad-widget-zhixin-tieba .ec-title {
+  margin-bottom: 10px;
+}
+.ad-widget-zhixin-tieba .ec-title a {
+  font-size: 16px;
+}
+.ad-widget-zhixin-tieba .ec-logo {
+  outline: none;
+  border: 0;
+  float: left;
+}
+.ad-widget-zhixin-tieba .ec-logo img {
+  margin-top: 2px;
+  width: 52px;
+  height: 52px;
+}
+.ad-widget-zhixin-tieba .ec-desc {
+  margin-left: 65px;
+}
+.ad-widget-zhixin-tieba .ec-desc span {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #333333;
+}
+.ad-widget-zhixin-tieba .ec-desc .ec-seperator {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 0;
+  height: 15px;
+}
+.ad-widget-zhixin-tieba .ec-tieba {
+  clear: both;
+  margin: 0 0 0 16px;
+}
+.ad-widget-zhixin-tieba .ec-tieba a {
+  display: block;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.ad-widget-zhixin-tieba .ec-tieba a,
+.ad-widget-zhixin-tieba .ec-tieba span {
+  float: left;
+}
+.ad-widget-zhixin-tieba .ec-tieba span {
+  color: #666;
+  width: 80px;
+}
+.ad-widget-zhixin-tieba .ec-more {
+  color: #7978c6;
+}
+.ad-widget-zhixin-tieba .ec-foot {
+  clear: both;
+  color: #008000;
+}
+.ad-widget-zhixin-tieba .ec-foot li {
+  float: left;
+  margin-right: 10px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

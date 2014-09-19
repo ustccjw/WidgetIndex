@@ -1,0 +1,20 @@
+<!-- target:AD_ad_widget_business_app_app_list2 -->
+<div class="ad-widget-business_app ad-widget-business_app-app-list2">
+    <ul>
+        {{#apps}}
+        <li>
+            <a target="_blank" data-index="{{@index}}" title2="品牌{{_index}}">
+                <img src="{{icon}}" class="ec-app-list-icon-img"/>
+                <span class="ec-wrapper"></span>
+                <div class="ec-app-list-mask"></div>
+                <div class="ec-app-list-info">
+                    <p class="ec-app-list-desc">{{desc}}</p>
+                    <p class="ec-app-list-desc">{{room}}</p>
+                    <h4></h4>
+                </div>
+                {{name}}
+            </a>
+        </li>
+        {{/apps}}
+    </ul>
+</div>

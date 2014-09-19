@@ -1,0 +1,208 @@
+{
+    "contents": ["ad.widget.tieba.site.SiteBriefHeader"],
+    "userPrefs": [
+        {
+            "name": "name",
+            "displayName": "显示吧名",
+            "nameTip": "（必填）",
+            "defaultValue": "%%TIEBA_NAME%%",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "minByteLength": 4,
+                "maxByteLength": 28,
+                "regex": {
+                    "pattern": "^[0-9a-zA-Z_\\u4E00-\\u9FA5]+$",
+                    "errorText": "吧名限汉字、字母、数字和下划线"
+                }
+            },
+            "extraAttr": {},
+            "tip": "",
+            "multiline": false
+        },
+        {
+            "name": "banner",
+            "displayName": "头图",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "image_url",
+                    "displayName": "头图",
+                    "nameTip": "（必填）",
+                    "defaultValue": "",
+                    "tip": "http://bcscdn.baidu.com/adtest/d52af9b5d331ace9b7f971a4189dd483.gif",
+                    "datatype": "UPLOAD",
+                    "rules": {
+                        "required": true
+                    },
+                    "extraAttr": {
+                        "fileType": "IMAGE",
+                        "maxSize": 200,
+                        "width": 980,
+                        "height": 260,
+                        "ext": "jpg,png"
+                    }
+                },
+                {
+                    "name": "rcv_url",
+                    "displayName": "头图跳转地址",
+                    "defaultValue": "",
+                    "datatype": "STRING",
+                    "rules": {
+                        "stringType": "URL"
+                    },
+                    "extraAttr": {},
+                    "tip": "http://",
+                    "multiline": false
+                }
+            ],
+            "rules": {}
+        },
+        {
+            "name": "logo_url",
+            "displayName": "Logo图片",
+            "nameTip": "（必填）",
+            "defaultValue": "",
+            "tip": "http://bcscdn.baidu.com/adtest/a815d63a02aa7ad89702d0bcbc301be9.gif",
+            "datatype": "UPLOAD",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "maxSize": 50,
+                "width": 156,
+                "height": 156,
+                "ext": "jpg,png"
+            }
+        },
+        {
+            "name": "skin",
+            "displayName": "背景皮肤",
+            "datatype": "OBJECT",
+            "items": [
+                {
+                    "name": "top_url",
+                    "displayName": "皮肤顶图",
+                    "defaultValue": "",
+                    "datatype": "UPLOAD",
+                    "rules": {},
+                    "extraAttr": {
+                        "fileType":"IMAGE",
+                        "maxSize": 200,
+                        "minWidth": 1280,
+                        "maxWidth": 2400,
+                        "height": 460,
+                        "ext": "jpg,png"
+                    }
+                },
+                {
+                    "name": "bottom_repeat",
+                    "displayName": "底图水平平铺",
+                    "defaultValue": "true",
+                    "datatype": "ALTERNATIVE",
+                    "rules": {},
+                    "extraAttr": {},
+                    "enumValues": [
+                        {
+                            "value": "true",
+                            "displayValue": "平铺",
+                            "items": [
+                                {
+                                    "name": "bottom_url",
+                                    "displayName": "皮肤底图",
+                                    "defaultValue": "",
+                                    "datatype": "UPLOAD",
+                                    "rules": {},
+                                    "extraAttr": {
+                                        "fileType":"IMAGE",
+                                        "maxSize": 50,
+                                        "width": 1,
+                                        "height": 860,
+                                        "ext": "jpg,png"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "value": "false",
+                            "displayValue": "不平铺",
+                            "items": [
+                                {
+                                    "name": "bottom_url",
+                                    "displayName": "皮肤底图",
+                                    "defaultValue": "",
+                                    "datatype": "UPLOAD",
+                                    "rules": {},
+                                    "extraAttr": {
+                                        "fileType":"IMAGE",
+                                        "maxSize": 200,
+                                        "minWidth": 1280,
+                                        "maxWidth": 2400,
+                                        "ext": "jpg,png"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "color",
+                    "displayName": "皮肤背景色",
+                    "tip": "填写HEX格式色值，如：#FF0000",
+                    "datatype": "STRING",
+                    "rules": {
+                        "regex": {
+                            "pattern": "^#[\\da-f]{3}|#[\\da-f]{6}$",
+                            "modifiers": "i",
+                            "errorText": "色值必须为HEX格式，如：#FF0000"
+                        }
+                    }
+                }
+            ],
+            "rules": {}
+        },
+        {
+            "name": "frs_rcv_url",
+            "displayName": "官吧首页地址",
+            "defaultValue": "%%TIEBA_FRS_URL%%",
+            "datatype": "HIDDEN",
+            "rules": {
+                "stringType": "URL"
+            },
+            "extraAttr": {}
+        },
+        {
+            "name": "has_game_tab",
+            "displayName": "游戏tab",
+            "defaultValue": false,
+            "datatype": "BOOL",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name": "game_tab_url",
+            "displayName": "游戏tab地址",
+            "defaultValue": "%%TIEBA_GAME_URL%%",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name": "nav_json_mockup",
+            "displayName": "精品贴导航JSON假数据",
+            "defaultValue": "[{\"text\":\"全部\",\"url\":\"javascript:void(0);\"},{\"text\":\"产品咨询\",\"url\":\"javascript:void(0);\"},{\"text\":\"经验分享\",\"url\":\"javascript:void(0);\"}]",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        },
+        {
+            "name": "nav_json",
+            "displayName": "精品贴导航JSON数据",
+            "defaultValue": "%%GOOD_CATEGORY_JSON%%",
+            "datatype": "HIDDEN",
+            "rules": {},
+            "extraAttr": {}
+        }
+    ]
+}

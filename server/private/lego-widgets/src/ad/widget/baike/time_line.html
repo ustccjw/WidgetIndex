@@ -1,0 +1,40 @@
+<!-- target:AD_ad_widget_baike_time_line -->
+<div class="ad-widget-baike ad-widget-baike-time-line">
+    <div id="{{#_id}}prev{{/_id}}" class="ec-prev"></div>
+    <div class="ec-center">
+        <div id="{{#_id}}wrapper{{/_id}}" style="width:{{_total_width}}px">
+            {{#options}}
+            <a href="#" data-index="{{@index}}" hidefocus="hidefocus">
+                <div class="ec-poster{{#normal}} ec-normal{{/normal}}{{#text}} ec-text{{/text}}{{#picture}} ec-picture{{/picture}}">
+                    {{#normal}}
+                    <img src="{{small_img}}">
+                    <h4>{{title}}</h4>
+                    <p>{{brief}}</p>
+                    {{/normal}}
+                    {{#text}}
+                    <h4>{{title}}</h4>
+                    <p>{{desc}}</p>
+                    {{/text}}
+                    {{#picture}}
+                    <img src="{{small_img}}">
+                    <h4>{{title}}</h4>
+                    {{/picture}}
+                </div>
+                <div class="ec-angle"></div>
+                <div class="ec-dot"></div>
+                {{time}}
+            </a>
+            {{/options}}
+        </div>
+    </div>
+    <div id="{{#_id}}mask{{/_id}}" class="ec-mask ec-hide">
+        <div class="ec-left" id="{{#_id}}container{{/_id}}"></div>
+        <div class="ec-right">
+            <h4 id="{{#_id}}title{{/_id}}"></h4>
+            <p id="{{#_id}}desc{{/_id}}"></p>
+        </div>
+        <img id="{{#_id}}close{{/_id}}" class="ec-close" src="//bs.baidu.com/adtest/37e2516876fb992759aa129617eb8c5d.png">
+    </div>
+    <div id="{{#_id}}next{{/_id}}" class="ec-next"></div>
+    {{#copyright}}<div class="ec-copyright"><span></span>{{copyright}}<span></span></div>{{/copyright}}
+</div>

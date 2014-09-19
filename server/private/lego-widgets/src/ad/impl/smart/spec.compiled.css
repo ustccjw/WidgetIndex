@@ -1,0 +1,54 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/impl/smart/spec.less ~ 2013/10/30 16:51:42
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * spec样式文件
+ **/
+#canvas {
+  font: 13px/1.54 arial, sans-serif;
+  border: 1px solid #e3e3e3;
+  border-bottom-color: #e0e0e0;
+  border-right-color: #ececec;
+  -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  -moz-box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  box-shadow: 1px 2px 1px rgba(0,0,0,0.072);
+  padding: 9px;
+  width: 518px;
+  margin-bottom: 20px;
+}
+#canvas .ad-block-1 {
+  overflow: hidden;
+  _zoom: 1;
+  margin-top: 6px;
+}
+#canvas .ad-block-1-0 {
+  float: left;
+}
+#canvas .ec-head-row {
+  line-height: 18px;
+}
+#canvas .ad-block-1-1 {
+  float: right;
+  position: relative;
+  height: 143px;
+  width: 254px;
+}
+#canvas .ad-block-1-1-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#canvas .ad-widget-image-normal a {
+  width: 78px;
+}
+#canvas .ad-widget-image-normal img {
+  border: none;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

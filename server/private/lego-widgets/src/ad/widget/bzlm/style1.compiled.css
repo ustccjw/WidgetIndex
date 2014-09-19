@@ -1,0 +1,93 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/bzlm/style1.less ~ 2012/12/12 14:03:47
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $
+ * @description
+ * style3样式文件
+ **/
+.ad-widget-bzlm-style1 {
+  font: 13px/1.5 "宋体", arial, sans-serif;
+  /** CODE HERE. */
+
+}
+.ad-widget-bzlm-style1 ul,
+.ad-widget-bzlm-style1 li,
+.ad-widget-bzlm-style1 p {
+  padding: 0px;
+  margin: 0px;
+}
+.ad-widget-bzlm-style1 ul {
+  list-style: none;
+}
+.ad-widget-bzlm-style1 .ec-inner {
+  width: 260px;
+  border: solid 1px #DDD;
+}
+.ad-widget-bzlm-style1 .ec-header {
+  padding: 10px;
+  background-color: #F9F9F9;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-bzlm-style1 .ec-title {
+  background: url(//bs.baidu.com/adtest/b30fc57af8f48726552ce6c6047bc002.jpg) 0 center no-repeat;
+  padding-left: 11px;
+  float: left;
+}
+.ad-widget-bzlm-style1 .ec-title a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ad-widget-bzlm-style1 .ec-change {
+  background: url(//bs.baidu.com/adtest/610ddf9012de33e21925441257d47bc4.jpg) 0 center no-repeat;
+  padding-left: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+  float: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ad-widget-bzlm-style1 .ec-body {
+  border-top: solid 1px #DDD;
+}
+.ad-widget-bzlm-style1 .ec-body .ec-group {
+  display: none;
+}
+.ad-widget-bzlm-style1 .ec-body li {
+  border-bottom: solid 1px #DDD;
+  padding: 9px 0px 9px 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-bzlm-style1 .ec-body li a {
+  float: left;
+}
+.ad-widget-bzlm-style1 .ec-body li div {
+  margin-left: 14px;
+  float: left;
+  display: inline-block;
+}
+.ad-widget-bzlm-style1 .ec-body li div a {
+  color: #0000cc;
+}
+.ad-widget-bzlm-style1 .ec-body li div p {
+  color: #999;
+}
+.ad-widget-bzlm-style1 .ec-footer {
+  padding: 10px;
+  text-align: right;
+}
+.ad-widget-bzlm-style1 .ec-footer a {
+  color: #000;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

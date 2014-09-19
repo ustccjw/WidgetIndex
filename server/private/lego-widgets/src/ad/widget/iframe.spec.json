@@ -1,0 +1,70 @@
+{
+    "contents": ["ad.widget.Iframe"],
+    "userPrefs": [
+        {
+            "name": "image",
+            "displayName": "image",
+            "tip": "../impl/img/burberry.png",
+            "datatype": "UPLOAD",
+            "defaultValue": "../impl/img/burberry.png",
+            "rules": {
+                "required": true
+            },
+            "extraAttr": {
+                "fileType": "IMAGE",
+                "width": 180,
+                "height": 100,
+                "maxSize": 15,
+                "ext": "jpg,png"
+            }
+        },
+        {
+            "name": "image_rcv_url",
+            "displayName": "image_rcv_url",
+            "tip": "http://",
+            "datatype": "STRING",
+            "defaultValue": "www.baidu.com",
+            "rules": {
+                "stringType": "URL",
+                "required": true,
+                "maxByteLength": 255
+            },
+            "extraAttr": {},
+            "multiline": false
+        },
+        {
+            "name": "width",
+            "displayName": "宽度",
+            "defaultValue": "400",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "NUMBER"
+            },
+            "tip": "页面宽度",
+            "multiline": false
+        },
+        {
+            "name": "height",
+            "displayName": "高度",
+            "defaultValue": "120",
+            "datatype": "STRING",
+            "rules": {
+                "stringType": "NUMBER"
+            },
+            "tip": "页面高度",
+            "multiline": false
+        },
+        {
+            "name": "src",
+            "displayName": "内嵌网页地址",
+            "defaultValue": "http://wap.baidu.com",
+            "datatype": "STRING",
+            "rules": {
+                "required": true,
+                "stringType": "URL"
+            },
+            "tip": "",
+            "multiline": false
+        }
+    ]
+}

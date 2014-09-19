@@ -1,0 +1,45 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/avatar/video_entry.less ~ 2014/05/21 19:22:44
+ * @author xiongjie01@baidu.com (xiongjie)
+ * @version $Revision: 150523 $
+ * @description
+ * video_entry样式文件
+ **/
+.ad-widget-imageplus-avatar-video-entry {
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  height: 86px;
+  overflow: hidden;
+}
+.ad-widget-imageplus-avatar-video-entry .ec-video-thumbimg {
+  width: 100px;
+  height: 86px;
+  border: none;
+}
+.ad-widget-imageplus-avatar-video-entry .ec-play-btn {
+  position: absolute;
+  top: 10px;
+  left: 28px;
+  width: 45px;
+  height: 45px;
+  background: url(http://ecma.bdimg.com/adtest/77ed8b2ebfc933136c17ca3a5f098658.png) 0 0 no-repeat;
+  _background: none;
+  _filter: progid:dximagetransform.microsoft.alphaimageloader(enabled='true', sizingMethod='corp', src='http://ecmc.bdimg.com/adtest/108899c026960af203ace6c657f90b6e.png');
+}
+.ad-widget-imageplus-avatar-video-entry .ec-lauch-text {
+  position: absolute;
+  width: 100px;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

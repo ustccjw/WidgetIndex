@@ -1,0 +1,274 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: bjxd.less 9923 2012/08/06 10:25:19Z wangdawei $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/bjxd.less ~ 2012/08/06 11:51:39
+ * @author wangdawei
+ * @version $Revision: 9923 $ 
+ * @description 
+ *  
+ **/
+ 
+@import-once "mixins.less";
+
+#canvas {
+    width: 535px;
+    margin-bottom: 20px;
+    font: 13px arial,sans-serif;
+    
+    .ad-layout-block-0 {
+        .gain-bfc();
+        .ad-layout-block-0-0 {
+            float: left;
+            width: 220px;
+            height: 190px;
+            margin-right: 14px;
+        }
+        .ad-layout-block-0-1 {
+            float: left;
+            width: 300px;
+        }
+    }
+
+    .ad-widget-small-head {
+        h2 {
+            a {
+                color: #0000cc;
+                font-weight: 900;
+            }
+        }
+        .ec-content {
+            padding: 0;
+            margin: 0;
+        }
+
+        .ec-description {
+              color: #000000;
+              word-wrap: break-word;
+              word-break: break-all;
+              font-size: 13px;
+        }
+    }
+
+    .ad-widget-section {
+        margin-top: 25px;
+        img {
+            vertical-align: middle;
+        }
+        a {
+            font-size: 13px;
+        }
+    }
+    
+    .ec-tab-head {
+        background: url("//bs.baidu.com/lego-mat/line-805ca8c4.png") repeat-x scroll center bottom transparent;
+        height: 24px;
+        list-style: none outside none;
+        margin: 10px 0;
+        padding: 0;
+        
+        li {
+            display: inline;
+            float: left;
+            margin-bottom: -1px;
+            margin-left: 8px;
+            position: relative;
+            
+            a,
+            a:visited {
+                background-color: #E4EBFA;
+                border: 1px solid #BECCF1;
+                display: block;
+                font-size: 12px;
+                line-height: 14px;
+                outline: 0 none;
+                padding: 4px 0;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        .ec-current-tab a {
+            background-color: #FFF;
+            border-bottom: 1px solid #FFF;
+        }
+    }
+    
+    .ec-tab-body {
+        margin: 0px;
+    }
+
+    .ad-widget-tab-item {
+        td {
+            line-height:18px;
+            a{
+                color: #000000;
+                font-size: 13px;
+                line-height: 20px;
+                text-decoration: none;
+                
+                img{
+                    border:0px;
+                }
+            }
+        }
+        
+        .ec-brand-pic {
+            height: 100px;
+            width: 195px;
+            padding-left: 8px;
+            word-wrap: break-word;
+            
+            img{
+                height: 100px;
+                width: 180px;
+            }
+        }
+        
+        .ec-brand-intro {
+            padding-left: 12px;
+            padding-right: 10px;
+            word-wrap: break-word;
+            height: 102px;
+            overflow: hidden;
+            h1 {
+                margin: 0px;
+                padding: 0px;
+                *margin-bottom: 4px;
+            }
+            h3 {
+                margin: 0px;
+                padding: 0px;
+                font-weight: normal;
+            }
+        }
+        
+        .ec-td-border {
+            border-right: 1px solid #E1E1E1;
+            width: 188px;
+            
+            .ec-brand-intro {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+    }
+
+    .ad-widget-button-group {
+        background-color: #fff;
+        padding-top: 10px;
+        tr td {
+            background-color: #D3D1F8;
+            border-right: 2px solid #fff;
+            height: 24px;
+            line-height: 24px;
+            a {
+                color: #0000cc;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.ec-bjxd-fwc-1 {
+    .ad-widget-float-window-container {
+        left: 0px;
+        top: 0px;
+    }
+
+    .ad-widget-video {
+        position: absolute;
+        left: 35px;
+        top: 136px;
+        width: 400px;
+        height: 250px;
+        object{
+            width: 400px;
+            height: 250px;
+        }
+        embed {
+            width: 400px;
+            height: 250px;
+        }
+    }
+    
+    .ec-fwcon-0-1 {
+        .ec-bg {
+            background-color: #000;
+            .opacity(40);
+            width: 235px;
+            height: 250px;
+            position: absolute;
+            left: 450px;
+            top: 136px;
+        }
+    }
+
+    .ad-widget-image-normal {
+        position: absolute;
+        left: 450px;
+        top: 136px;
+        width: 235px;
+        padding: 10px;
+        a {
+            position: relative;
+            color: #fff;
+            margin:0 15px 7px 0;
+            img {
+                border: none;
+            }
+            span {
+                font: 13px "宋体";
+                color: #fff;
+                display: block;
+                margin-top: 3px;
+                .opacity(100);
+            }
+            .ec-cover {
+                text-align: center;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100px;
+                height: 55px;
+                background-color: #000;
+                .opacity(40);
+                font:13px "宋体";
+                color: #c9c9c9;
+                line-height: 55px;
+            }
+        }
+    }
+
+    .ec-close {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

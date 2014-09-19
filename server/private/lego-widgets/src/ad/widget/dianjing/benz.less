@@ -1,0 +1,236 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+
+/**
+ * src/ad/widget/dianjing/benz.less ~ 2013/08/08 11:40:22
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $
+ * @description
+ * benz样式文件
+ **/
+ @import-once "mixins.less";
+ .ad-widget-dianjing-benz {
+    font: 12px/1.5 arial, sans-serif;
+    ul, li {
+        margin: 0px;
+        padding: 0px;
+    }
+    /** CODE HERE. */
+    .ec-dianjing-pl-panel {
+        display: none;
+        position: absolute;
+        left: 12px;
+        top: 0px;
+        width: 224px;
+        _width: 184px;
+        height: 201px;
+        border-radius: 3px;
+        background-color: #fff;
+    }
+    .ec-dianjing-pl-panel-head {
+        _width: 194px;
+        height: 31px;
+        font-size: 13px;
+        font-family: "宋体";
+        color: #000;
+        background-color: #f1f1f1;
+        border-bottom: solid 1px #e2e2e2;
+        border-radius: 3px;
+        ul {
+            margin-left: 30px;
+            width: 100%;
+        }
+        li {
+            list-style: none;
+            float: left;
+            margin-right: 5px;
+            margin-top: 7px;
+            a {
+                width: 40px;
+                height: 18px;
+                display: block;
+                text-decoration: none;
+                color: #000;
+                text-align: center;
+                line-height: 18px;
+            }
+            .ec-hover {
+                background-color: #6f7382;
+                color: #fff;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+        }
+    }
+    .ec-dianjing-pl-li-intro-body {
+        display: none;
+        padding: 10px 20px;
+        width: 184px;
+    }
+    .ec-dianjing-pl-li-intro-body-head {
+        .gain-bfc();
+        .ec-logo {
+            width: 38px;
+            height: 38px;
+            border: solid 1px #e6e6e6;
+            float: left;
+            img {
+                width: 38px;
+                height: 38px;
+                border: none;
+            }
+        }
+        .ec-name {
+            float: left;
+            padding-left: 10px;
+            margin-top: 8px;
+            width: 134px;
+            height: 38px;
+            overflow: hidden;
+            a {
+                font-size: 14px;
+                font-family: "宋体";
+                color: #0000cc;
+            }
+        }
+    }
+    .ec-dianjing-pl-li-intro-body-body {
+        margin-top: 10px;
+        font-size: 12px;
+        font-family: "宋体";
+        color: #333;
+        overflow: hidden;
+        width: 184px;
+        height: 55px;
+    }
+    .ec-dianjing-pl-li-intro-body-foot {
+        width: 184px;
+        height: 18px;
+        overflow: hidden;
+        a {
+            font-size: 12px;
+            font-family: "宋体";
+            color: #0000cc;
+        }
+        span {
+            color: #0000cc;
+        }
+    }
+    .ec-dianjing-pl-li-video-body {
+        display: none;
+        padding: 10px 11px;
+        img {
+            border: none;
+        }
+    }
+    .ec-dianjing-pl-li-section-body {
+        display: none;
+        padding: 15px;
+        _padding: 15px 10px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                _width: 204px;
+                margin-bottom: 5px;
+                img {
+                    vertical-align: text-bottom;
+                }
+                a {
+                    color: #0000cc;
+                    font-size: 12px;
+                }
+                p {
+                    margin: 0px 0px 0px 20px;
+                }
+                span {
+                    display: block;
+                    margin: 0;
+                    color: #666;
+                    .text-overflow();
+                    _width: 170px;
+                }
+            }
+        }
+    }
+    .ec-dianjing-pl-li-weibo-body {
+        display: none;
+        padding: 8px;
+        width: 205px;
+    }
+    .ec-dianjing-pl-li-weibo-body-head {
+        .gain-bfc();
+        .ec-logo {
+            float: left;
+            width: 43px;
+            height: 43px;
+            img {
+                width: 43px;
+                height: 43px;
+                border: none;
+            }
+        }
+        .ec-info {
+            float: left;
+            margin-left: 10px;
+            .ec-name {
+                width: 150px;
+                height: 20px;
+                overflow: hidden;
+                a {
+                    font-size: 14px;
+                    font-family: "宋体";
+                    color: #0000cc;
+                }
+            }
+            .ec-fans {
+                width: 130px;
+                height: 20px;
+                overflow: hidden;
+                margin-top: 4px;
+                background: url(//bs.baidu.com/adtest/13fb54e7748065178bc1b38e7f8f3da5.jpg) 0 0 no-repeat;
+                padding-left: 20px;
+                font-size: 12px;
+                font-family: "宋体";
+                color: #666;
+            }
+        }
+    }
+    .ec-dianjing-pl-li-weibo-body-main {
+        padding: 10px 2px;
+        height: 60px;
+        overflow: hidden;
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            font-family: "宋体";
+            color: #333;
+        }
+    }
+    .ec-dianjing-pl-panel-foot {
+        position: absolute;
+        right: 10px;
+        bottom: -3px;
+        height: 23px;
+        text-align: right;
+        font-family: "宋体";
+        color: #999;
+    }
+    .ec-dianjing-pl-biaozhu {
+        cursor: pointer;
+        position: absolute;
+        left: -2px;
+        top:-3px;
+        width: 36px;
+        height: 36px;
+        background: url(//bs.baidu.com/adtest/7c9c86fbcb4225f0f435954d38f0e26f.png) 0 0 no-repeat;
+        _background: none;
+        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="corp", src="//bs.baidu.com/adtest/7c9c86fbcb4225f0f435954d38f0e26f.png");
+    }
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

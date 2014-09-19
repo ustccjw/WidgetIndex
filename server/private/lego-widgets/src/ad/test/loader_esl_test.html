@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Loader Esl Test</title>
+  </head>
+  <body>
+    <!-- BEGIN 准备好容器-->
+    <div id="canvas"></div>
+    <!-- END 准备好容器-->
+
+    <script src="esl.js"></script>
+    <script>
+    var ECMA_require = require;
+    var ECMA_define  = define;
+    </script>
+    <script>
+    function URL(name, opt_delay) {
+      var delay = opt_delay || parseInt(Math.random() * 5, 10);
+      var url = 'http://cq01-rdqa-pool017.cq01.baidu.com:8964/src/ad/test/data/' + name;
+      var realUrl = 'http://cq01-rdqa-pool017.cq01.baidu.com:8080/service/dev/default/fetch?url=' + encodeURIComponent(url) + '&delay=' + encodeURIComponent(delay);
+      return realUrl;
+    }
+
+    var moduleIds = [];
+    for(var i = 1; i < 10; i ++) {
+        moduleIds.push(('data/ad' + i + ''));
+    }
+    ECMA_require(moduleIds, function(){
+        var rv = [];
+        for(var i = 0; i < arguments.length; i ++) {
+            rv.push(arguments[i]);
+        }
+        document.getElementById('canvas').innerHTML = rv.join(';');
+    });
+    </script>
+  </body>
+</html>

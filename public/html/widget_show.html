@@ -1,0 +1,10 @@
+<div class="row widget-show">
+    <ul class="col-md-3 nav nav-pills nav-stacked widget-show-nav">
+        <li ng-class="{active: req.url=='/examples_show.html'}" ng-click="req.url='/examples_show.html'"><a href="#">实例</a></li>
+        <li ng-class="{active: req.url=='/spec_show.html'}"><a href="#" ng-click="req.url='/spec_show.html'">spec</a></li>
+        <li ng-class="{active: req.url=='/impls_show.html'||req.url=='/online_impls_show.html'}"><a href="#" ng-click="req.url='/impls_show.html'">关联物料</a></li>
+    </ul>
+    <div class="col-md-9">
+        <div ng-include="req.url"></div>
+    </div>
+</div>

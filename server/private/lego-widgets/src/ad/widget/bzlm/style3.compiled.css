@@ -1,0 +1,102 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $
+ *
+ **************************************************************************/
+/**
+ * src/ad/widget/bzlm/style3.less ~ 2012/12/12 14:03:47
+ * @author wangdawei04@baidu.com (wangdawei04)
+ * @version $Revision: 10927 $
+ * @description
+ * style3样式文件
+ **/
+.ad-widget-bzlm-style3 {
+  font: 12px/1.5 "宋体", arial, sans-serif;
+  /** CODE HERE. */
+
+}
+.ad-widget-bzlm-style3 p {
+  margin: 0px;
+}
+.ad-widget-bzlm-style3 .ec-title {
+  background: url(//bs.baidu.com/adtest/b30fc57af8f48726552ce6c6047bc002.jpg) 0 center no-repeat;
+  padding-left: 11px;
+}
+.ad-widget-bzlm-style3 .ec-title a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ad-widget-bzlm-style3 .ec-main {
+  width: 180px;
+  height: 140px;
+  position: relative;
+}
+.ad-widget-bzlm-style3 .ec-main-table {
+  background: url(//bs.baidu.com/adtest/0b2843821fb46eb119b8efc1a051fbd8.jpg) center no-repeat;
+  width: 180px;
+  height: 140px;
+}
+.ad-widget-bzlm-style3 .ec-main-table td .ec-inner {
+  width: 60px;
+  height: 40px;
+  padding: 15px;
+}
+.ad-widget-bzlm-style3 .ec-main-table td .ec-logo {
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+}
+.ad-widget-bzlm-style3 .ec-main-bg {
+  display: none;
+  width: 180px;
+  height: 140px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  background-color: #fff;
+  cursor: pointer;
+}
+.ad-widget-bzlm-style3 .ec-main-bg table {
+  width: 180px;
+  height: 140px;
+}
+.ad-widget-bzlm-style3 .ec-logo-hover {
+  display: none;
+  position: absolute;
+  background-color: #228DEE;
+  padding: 1px;
+  width: 148px;
+  height: 120px;
+  z-index: 1;
+}
+.ad-widget-bzlm-style3 .ec-logo-hover a {
+  display: block;
+  height: 120px;
+}
+.ad-widget-bzlm-style3 .ec-logo-hover a p {
+  width: 148px;
+  height: 24px;
+  line-height: 24px;
+  color: #fff;
+  font-size: 13px;
+  background-color: #117BDB;
+  text-align: center;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ad-widget-bzlm-style3 .ec-more {
+  padding-left: 11px;
+}
+.ad-widget-bzlm-style3 .ec-more a {
+  font-size: 13px;
+  color: #0000cc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

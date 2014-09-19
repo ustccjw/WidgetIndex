@@ -1,0 +1,16 @@
+<!-- target:AD_ad_widget_card_flash -->
+<div class="ad-widget ad-widget-card-flash">
+    {{#is_ipad}}
+    <a target="_blank" href="{{{rcv_url}}}" title2="videoimg"><img width="{{width}}" height="{{height}}" src="{{ipad_img}}" /></a>
+    {{/is_ipad}}
+    {{^is_ipad}}
+    <object id="objad" width="{{width}}" height="{{height}}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" >
+        <param value="always" name="allowScriptAccess">
+        <param value="high" name="quality">
+        <param value="{{flash_url}}" name="movie">
+        <param value="opaque" name="wmode">
+        <param value="imgconfig={{imgconfig}}&Track={{TrackCallBack}}" name="flashvars">
+        <embed pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" allowscriptaccess="always" wmode="opaque" name="objad" quality="high" width="{{width}}" height="{{height}}" flashvars="imgconfig={{imgconfig}}&Track={{TrackCallBack}}" src="{{flash_url}}">
+    </object>
+    {{/is_ipad}}
+</div>

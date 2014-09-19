@@ -1,0 +1,28 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z dingguoliang01 $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/animate/logic.less ~ 2013/09/13 15:59:32
+ * @author dingguoliang01@baidu.com (dingguoliang01)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * logic样式文件
+ **/
+#canvas .ec-wrapper span {
+  color: #3158CC;
+}
+#canvas .ec-wrapper div {
+  background-color: cornsilk;
+}
+#canvas .ec-mask div {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+#canvas .ec-drop span {
+  font-size: 18px;
+  color: #3158CC;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

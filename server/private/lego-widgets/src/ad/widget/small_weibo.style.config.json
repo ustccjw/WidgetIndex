@@ -1,0 +1,187 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-small-weibo",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "padding-top",
+                    "displayName": "内边距(上)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding-right",
+                    "displayName": "内边距(右)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding-bottom",
+                    "displayName": "内边距(下)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding-left",
+                    "displayName": "内边距(左)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "color",
+                    "displayName": "字体颜色", // 可选
+                    "defaultValue": "#000"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .weibo-head .name",
+            "displayName": "微博名称设置",
+            "rules": [
+                {
+                    "name": "padding-top",
+                    "displayName": "内边距(上)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding-right",
+                    "displayName": "内边距(右)", // 可选
+                    "defaultValue": "16px"
+                },
+                {
+                    "name": "padding-bottom",
+                    "displayName": "内边距(下)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "padding-left",
+                    "displayName": "内边距(左)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "color",
+                    "displayName": "字体颜色", // 可选
+                    "defaultValue": "#0000cc"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .weibo-head .follow",
+            "displayName": "加关注设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "加关注宽度", // 可选
+                    "defaultValue": "66px"
+                },
+                {
+                    "name": "height",
+                    "displayName": "加关注高度", // 可选
+                    "defaultValue": "22px"
+                },
+                {
+                    "name": "float",
+                    "displayName": "对齐方式", // 可选
+                    "options": ["left", "right", "none"],
+                    "defaultValue": "right"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .weibo-head .text",
+            "displayName": "粉丝、微博数设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "字体颜色", // 可选
+                    "defaultValue": "#666"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .context .weibo-logo, .ad-widget-small-weibo .context .weibo-logo img",
+            "displayName": "微博LOGO设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "displayName": "微博LOGO宽度", // 可选
+                    "defaultValue": "60px"
+                },
+                {
+                    "name": "height",
+                    "displayName": "微博LOGO高度", // 可选
+                    "defaultValue": "60px"
+                },
+                {
+                    "name": "float",
+                    "displayName": "微博LOGO对齐方式", // 可选
+                    "options": ["left", "right", "none"],
+                    "defaultValue": "left"
+                },
+                {
+                    "name": "margin-top",
+                    "displayName": "微博LOGO外边距(上)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "margin-right",
+                    "displayName": "微博LOGO外边距(右)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "margin-bottom",
+                    "displayName": "微博LOGO外边距(下)", // 可选
+                    "defaultValue": "0px"
+                },
+                {
+                    "name": "margin-left",
+                    "displayName": "微博LOGO外边距(左)", // 可选
+                    "defaultValue": "0px"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .context .weibo-text",
+            "displayName": "微博内容设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "字体颜色", // 可选
+                    "defaultValue": "#000"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .context .foot .datetime",
+            "displayName": "微博日期设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "字体颜色", // 可选
+                    "defaultValue": "#666"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .context .foot .rightbtn",
+            "displayName": "微博转发、收藏、评论对齐设置",
+            "rules": [
+                {
+                    "name": "float",
+                    "displayName": "对齐方式", // 可选
+                    "options": ["left", "right", "none"],
+                    "defaultValue": "right"
+                }
+            ]
+        },
+        {
+            "name": ".ad-widget-small-weibo .context .foot .rightbtn a",
+            "displayName": "微博转发、收藏、评论字体设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "displayName": "字体颜色", // 可选
+                    "defaultValue": "#008000"
+                }
+            ]
+        }
+    ]
+}
+

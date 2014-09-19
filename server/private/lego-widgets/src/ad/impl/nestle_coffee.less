@@ -1,0 +1,97 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: nestle_coffee.less 9564 2012-06-06 04:43:29Z FANXUELIANG $
+ *
+ **************************************************************************/
+
+/**
+ * src/ad/impl/nestle_coffee.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $
+ * @description
+ *
+ **/
+ @import-once "mixins.less";
+
+ #canvas {
+    width: 536px;
+    margin-bottom: 20px;
+    font: 13px arial, sans-serif;
+    .ad-block-0 {
+        .gain-bfc();
+
+        .ad-block-0-0 {
+            float: left;
+            width: 220px;
+        }
+        .ad-block-0-1 {
+            float: right;
+            width: 300px;
+        }
+    }
+    .ad-widget-video {
+        height: 190px;
+    }
+    .ad-widget-small-head {
+        h2 {
+            a {
+                color: #00c;
+                font-weight: bold;
+            }
+        }
+        .ec-description {
+            color: #000;
+        }
+    }
+    .ad-widget-small-weibo {
+        padding-top: 10px;
+    }
+    .ad-block-1 {
+        margin: 10px 0 6px;
+    }
+    .ad-widget-image-cartoon {
+        width: 534px;
+        _overflow: hidden;
+        .ec-item-wrapper {
+            width: auto;
+            height: 170px;
+        }
+        .ec-item {
+            height: 170px;
+            img {
+                border: 1px solid #ccc;
+            }
+            div {
+                background-color: #fff;
+                .opacity(100);
+                color: #bea596;
+                position: static;
+            }
+        }
+        .ec-arrow {
+            height: 25px;
+            bottom: 86px;
+            .opacity(100);
+        }
+    }
+    .ad-widget-button-list {
+        .ec-link-wrapper {
+            background-color: #D3D1F8;
+            border: none;
+            line-height: 24px;
+            height: 24px;
+            a {
+                color: #00c;
+                text-decoration: underline;
+            }
+        }
+        td {
+            padding-right: 10px;
+        }
+        .ec-last {
+            padding-right: 0;
+        }
+    }
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

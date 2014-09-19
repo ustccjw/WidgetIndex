@@ -1,0 +1,32 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 10927 2012-08-05 07:35:29Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhixin/rank_title.less ~ 2014/03/05 15:06:48
+ * @author shaojunjie@baidu.com (shaojunjie)
+ * @version $Revision: 10927 $ 
+ * @description 
+ * rank_title样式文件
+ **/
+.ad-widget-zhixin-rank-title {
+  font: 12px/1.5 arial, sans-serif;
+  color: #666;
+  height: 28px;
+}
+.ad-widget-zhixin-rank-title .ec-title {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  color: #333;
+  padding-right: 8px;
+}
+.ad-widget-zhixin-rank-title a.ec-link:link,
+.ad-widget-zhixin-rank-title a.ec-link:visited {
+  color: #666;
+  display: inline-block;
+  padding: 0 2px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

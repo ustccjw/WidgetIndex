@@ -1,0 +1,17 @@
+<!-- target:AD_ad_widget_pageable_tab_container -->
+<div class="ad-widget ad-widget-pageable-tab-container">
+    <div class="ec-tab-head-container">
+        <input type="button" id="{{#_id}}left-arrow{{/_id}}" class="ec-tab-arrow ec-tab-left-arrow ec-disabled" />
+        <div id="{{#_id}}wrapper{{/_id}}" class="ec-tab-head-wrapper">
+            <ul id="{{#_id}}tab-head{{/_id}}" class="ec-tab-head" style="width:{{_total_width}}px">
+                {{#options}}
+                <li data-index="{{@index}}" class="ec-tab-list-{{_index}}{{#@first}} ec-tab-list-first{{/@first}}{{#@last}} ec-tab-list-last{{/@last}}{{#_current}} ec-current-tab{{/_current}}" style="width:{{_width}}"><a hidefocus="true" href="javascript:void(0)"><span>{{{tab_title}}}</span></a></li>
+                {{/options}}
+            </ul>
+        </div>
+        <input type="button" id="{{#_id}}right-arrow{{/_id}}" class="ec-tab-arrow ec-tab-right-arrow" />
+    </div>
+    <div id="{{#_id}}tab-body{{/_id}}" class="ec-tab-body">
+        {{{_content}}}
+    </div>
+</div>

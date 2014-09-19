@@ -1,0 +1,35 @@
+<!-- target:AD_ad_widget_baike_simple_title2 -->
+<div class="ad-widget-baike ad-widget-baike-simple-title2">
+    <div class="ec-simple-title2-main">
+        <a title2="logo" class="ec-logo-left" href="{{{logo_rcv_url}}}" target="_blank">
+            <img src="{{logo}}" />
+        </a>
+        <div class="ec-main">
+            <div class="ec-title">{{title}}</div>
+            <div class="ec-desc">{{desc}}</div>
+            <ul class="ec-text-links">
+                {{#text_links}}
+                <li class="ec-links-li">
+                    <span class="ec-links-li-flag-{{@index}}"></span>
+                    <a title2="文字链-{{@index}}" href="{{{rcv_url}}}" target="_blank">{{text}}</a>
+                </li>
+                {{/text_links}}
+            </ul>
+            <div class="ec-tags" style="display: {{tag_display}};">
+                相关词条：
+                <ul class="ec-tags">
+                    {{#tags}}
+                    <li class="ec-tags-li">
+                        <a title2="相关词条-{{@index}}" href="{{{rcv_url}}}" target="_blank">{{text}}</a>
+                    </li>
+                    {{/tags}}
+                </ul>
+            </div>
+        </div>
+        <a title2="右侧图片" class="ec-img-right" href="{{{img_right_rcv_url}}}" target="_blank">
+            <img src="{{img_right}}" />
+            <div class="ec-img-right-mask"></div>
+        </a>
+    </div>
+    <div class="ec-simple-title2-footer">以上信息由企业官方提供<span></span>品牌推广</div>
+</div>

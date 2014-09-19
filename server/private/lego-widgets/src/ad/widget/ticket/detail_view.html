@@ -1,0 +1,85 @@
+<!-- target:AD_ad_widget_ticket_detail_view -->
+<div class="ecl-ticket-detail">
+    <div class="ecl-ticket-detail-top">
+        <div class="ecl-ticket-detail-top-left">
+            <div class="ecl-ticket-detail-pic-wrapper">
+                <img src="<%:h=picture%>" />
+            </div>
+        </div>
+        <div class="ecl-ticket-detail-top-right">
+            <div class="ecl-ticket-detail-info-item">
+                <a href="javascript:;" class="ecl-ticket-detail-name" title="<%:h=name%>"></a>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>票价：</span>
+                <span class="ecl-weigou-money">¥</span>
+                <span class="price orange"><%:h=lowest_price + ' - ' + highest_price%></span>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>状态：</span>
+                <span class="orange"><%:h=status%></span>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>主演：</span>
+                <span class="ecl-ticket-detail-actors" title="<%:h=actors.join('、')%>"></span>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>时间：</span>
+                <span class="ecl-ticket-detail-starttime" data-time="<%:h=start_time%>"></span>
+                <span class="seperator"> - </span>
+                <span class="ecl-ticket-detail-endtime" data-time="<%:h=end_time%>"></span>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>城市：</span>
+                <span><%:h=city%></span>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>场馆：</span>
+                <span><%:h=venue%></span>
+            </div>
+            <div class="ecl-ticket-detail-info-item">
+                <span>商家：</span>
+                <span><%:h=vendor%></span>
+            </div>
+        </div>
+    </div>
+    <div class="ecl-ticket-detail-center">
+        <div class="ecl-ticket-detail-agendas">
+            <table><tr>
+                <th>演出时间：</th>
+                <td>
+                    <%
+                    var item;
+                    for(var i=0,length=agenda.length;i<length;i++) {
+                        item=agenda[i];
+                        if(i===3 && length>4) {
+                    %>
+                    <div class="ecl-ticket-detail-agenda">
+                        <span>更多演出时间</span><div></div>
+                    </div>
+                    <%
+                        } else {
+                    %>
+                    <div class="ecl-ticket-detail-agenda" style="<%if(i>3&&length>4){print('display:none')}%>" data-id="<%=item.id%>" data-time="<%=item.time%>"></div>
+                    <%
+                        }
+                    }
+                    %>
+                    </div>
+                </td>
+            </tr></table>
+        <div class="ecl-ticket-detail-prices">
+            <table><tr>
+                <th>价　　位：</th>
+                <td></td>
+            </tr></table>
+        </div>
+        <div class="ecl-ticket-detail-number">
+            <table><tr>
+                <th>选择数量：</th>
+                <td></td>
+            </tr></table>
+        </div>
+    </div>
+    <div class="ecl-ticket-detail-bottom"></div>
+</div>

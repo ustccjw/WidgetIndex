@@ -1,0 +1,26 @@
+<!-- target:AD_ad_widget_animate_dragdrop -->
+<div class="ad-widget-animate ad-widget-animate-dragdrop">
+    <ul class="ec-drag">
+        {{#options}}
+        <li class="ec-wrapper">
+            {{#drag_img}}
+            <img src="{{drag_img}}">
+            {{/drag_img}}
+            <div></div>
+            {{#text}}
+            <span>{{unit}}{{text}}</span>
+            {{/text}}
+        </li>
+        {{/options}}
+    </ul>
+    <div class="ec-drop">
+        <div>
+        {{#drop_img}}
+        <img src="{{drop_img}}">
+        {{/drop_img}}
+        <span>Drop here!</span>
+        </div>
+    </div>
+    <img class="ec-refresh" src="{{refresh_img}}">
+</div>
+

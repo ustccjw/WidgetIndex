@@ -1,0 +1,122 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-h1",
+            "displayName": "基本设置",
+            "rules": [
+                {
+                    "name": "font-size",
+                    "displayName": "字体大小", // 可选
+                    "options": ["12px", "13px", "14px"], // 可选
+                    "defaultValue": "12px"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 h2 a",
+            "displayName" : "标题设置",
+            "rules": [
+                {
+                    "name": "font-family",
+                    "options": ["宋体, Arial", "Arial, sans-serif"],
+                    "defaultValue": "Arial, sans-serif"
+                },
+                {
+                    "name": "color",
+                    "options": ["red", "#333333", "#0000cc"],
+                    "defaultValue": "#0000cc"
+                },
+                {
+                    "name": "font-size",
+                    "options": ["12px", "14px", "16px"],
+                    "defaultValue": "16px"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 .ec-cont",
+            "displayName" : "描述区域设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "options": ["red", "#000", "#999999"],
+                    "defaultValue": "#000"
+                },
+                {
+                    "name": "padding-top",
+                    "displayName": "标题与内容间距",
+                    "defaultValue": "3px"
+                },
+                {
+                    "name": "padding-left",
+                    "displayName": "内容左内边距",
+                    "defaultValue": "2px"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 .ec-cont .ec-desc",
+            "displayName" : "描述内容设置",
+            "rules": [
+                {
+                    "name": "width",
+                    "options": ["410px", "auto"],
+                    "defaultValue": "410px"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 .ec-cont .ec-site",
+            "displayName" : "站点设置",
+            "rules": [
+                {
+                    "name": "color",
+                    "options": ["red", "#008000", "#999999"],
+                    "defaultValue": "#008000"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 .ec-cont .ec-desc .ec-img-group",
+            "displayName" : "图片链接区域设置",
+            "rules": [
+                {
+                    "name": "padding-top",
+                    "options": ["0", "5px", "10px"],
+                    "defaultValue": "0"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 .ec-cont .ec-desc .ec-img-group a",
+            "displayName" : "图片链接间距设置",
+            "rules": [
+                {
+                    "name": "margin-right",
+                    "options": ["0", "5px", "10px"],
+                    "defaultValue": "10px"
+                }
+            ]
+        },
+        {
+            "name" : ".ad-widget-h1 .ec-cont .ec-desc .head-img-group a",
+            "displayName" : "图片链接边框设置",
+            "rules": [
+                {
+                    "name": "border-width",
+                    "options": ["0", "5px", "10px"],
+                    "defaultValue": "0"
+                },{
+                    "name": "border-color",
+                    "options": ["#000", "#666", "#999"],
+                    "defaultValue": "#666"
+                },{
+                    "name": "border-style",
+                    "options": ["dotted", "solid", "double", "dashed"],
+                    "defaultValue": "solid"
+                }
+            ]
+        }
+    ]
+}
+

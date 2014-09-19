@@ -1,0 +1,29 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/tuwen_rcres1.less ~ 2013/11/28 22:35:47
+ * @author shaojunjie@baidu.com (shaojunjie) fanxueliang@baidu.com(fanxueliang)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * tuwen样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 520px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#canvas .ad-widget-h2 strong {
+  font-weight: normal;
+}
+#canvas .ad-widget-search-box {
+  padding-top: 10px;
+}
+#canvas .ad-widget-search-box .ec-text {
+  border: 1px solid #ABADB3;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

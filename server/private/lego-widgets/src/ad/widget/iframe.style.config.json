@@ -1,0 +1,16 @@
+{
+    "selectors" : [
+        {
+            "name": ".ad-widget-iframe div",
+            "displayName": "内嵌页设置",
+            "rules": [
+                {
+                    "name": "margin",
+                    "displayName": "外边距", // 可选
+                    "options": ['0', '10px 0', '10px 10px'],
+                    "defaultValue": '0'
+                }
+            ]
+        }
+    ]
+}

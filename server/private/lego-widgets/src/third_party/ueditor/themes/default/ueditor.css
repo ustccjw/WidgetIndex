@@ -1,0 +1,310 @@
+/* common layer */
+.edui-box { border: none; padding: 0; margin: 0; overflow: hidden; }
+a.edui-box { display: block; text-decoration: none; color: black; }
+a.edui-box:hover { text-decoration: none; }
+a.edui-box:active { text-decoration: none; }
+table.edui-box { border-collapse: collapse; }
+ul.edui-box { list-style-type: none; }
+div.edui-box { position: relative; display: -moz-inline-box!important; display: inline-block!important; vertical-align: top;  }
+.edui-clearfix { zoom:1 }
+.edui-clearfix:after { content: '\20'; display: block; clear: both; }
+* html div.edui-box { display: inline!important; }
+*:first-child+html div.edui-box { display: inline!important; }
+
+
+/* control layout */
+.edui-button-body, .edui-splitbutton-body, .edui-menubutton-body, .edui-combox-body { position: relative; }
+.edui-popup { position: absolute; -webkit-user-select: none; -moz-user-select: none; }
+.edui-popup .edui-shadow { position: absolute; z-index: -1; }
+.edui-popup .edui-bordereraser { position: absolute; overflow: hidden; }
+.edui-tablepicker .edui-canvas { position: relative; }
+.edui-tablepicker .edui-canvas .edui-overlay { position: absolute; }
+.edui-dialog-modalmask, .edui-dialog-dragmask { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.edui-toolbar { position: relative; }
+
+/*
+ * default theme
+ */
+.edui-label {
+    cursor: default;
+}
+span.edui-clickable {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+span.edui-unclickable {
+    color: gray;
+    cursor:default;
+}
+/* popup */
+.edui-popup {
+    z-index: 3000;
+}
+.edui-popup-content {
+    border: 1px solid gray;
+    background-color: white;
+    padding: 5px;
+}
+.edui-popup .edui-bordereraser {
+    background-color: white;
+    height: 3px;
+}
+
+.edui-state-checked .edui-menuitem-body {
+    background: url("images/icons-all.gif") no-repeat 6px -205px;
+}
+.edui-state-disabled .edui-menuitem-label {
+    color: gray;
+}
+.edui-state-disabled .edui-icon {
+    opacity: 0.3;
+    -ms-filter: 'alpha(opacity=30)';
+    filter: alpha(opacity=30);
+}
+
+/*by taoqili*/
+.edui-state-disabled .edui-label {
+    color: gray;
+}
+
+/* dialog */
+.edui-dialog {
+    z-index: 2000;
+    position: absolute;
+}
+.edui-dialog-wrap {
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #c6c6c6;
+}
+.edui-dialog-body {
+    position: relative;
+    background-color: white;
+    _zoom: 1;
+}
+.edui-dialog-foot {
+    background-color: white;
+}
+.edui-dialog-titlebar {
+    height: 26px;
+    border-bottom: 1px solid #c6c6c6;
+    background: url(images/dialog-title-bg.png) repeat-x bottom;
+    position: relative;
+    cursor: move;
+}
+.edui-dialog-caption {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 26px;
+    padding-left: 5px;
+}
+.edui-dialog-draghandle {
+    height: 26px;
+}
+.edui-dialog-closebutton {
+    position: absolute !important;
+    right: 5px;
+    top: 3px;
+}
+.edui-dialog-closebutton .edui-button-body {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background: url("images/icons-all.gif") no-repeat 0 -59px;
+}
+.edui-dialog-closebutton .edui-state-hover .edui-button-body {
+    background: url("images/icons-all.gif") no-repeat 0 -89px;
+}
+.edui-dialog-foot {
+    height: 40px;
+}
+.edui-dialog-buttons {
+    position: absolute;
+    right: 0;
+}
+.edui-dialog-buttons .edui-button {
+    margin-right: 10px;
+}
+.edui-dialog-buttons .edui-button .edui-button-body {
+    background: url("images/icons-all.gif") no-repeat;
+    height: 24px;
+    width: 96px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    cursor: default;
+}
+.edui-dialog-buttons .edui-button .edui-state-hover .edui-button-body {
+    background: url("images/icons-all.gif") no-repeat 0 -30px;
+}
+.edui-dialog iframe {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+.edui-dialog-modalmask {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    background-color: #ccc;
+    position: absolute;
+    /*z-index: 1999;*/
+}
+.edui-dialog-dragmask {
+    position: absolute;
+    /*z-index: 2001;*/
+    background-color: transparent;
+    cursor: move;
+}
+.edui-dialog-content  {
+    position: relative;
+}
+.dialogcontmask{cursor:move;visibility:hidden;display:block;position:absolute;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);}
+
+
+/* toolbar button */
+.edui-toolbar .edui-button .edui-icon{
+
+    height: 20px!important;
+    width: 20px!important;
+    background-image: url(images/icons.png);
+    _background-image: url(images/icons.gif);
+}
+
+.edui-toolbar .edui-button .edui-button-wrap {
+    padding: 1px;
+    position: relative;
+    margin: 2px;
+}
+.edui-toolbar .edui-button .edui-state-hover .edui-button-wrap {
+    background-color: #fff5d4;
+    padding: 0;
+    border: 1px solid #dcac6c;
+}
+.edui-toolbar .edui-button .edui-state-checked .edui-button-wrap {
+    background-color: #ffe69f;
+    padding: 0;
+    border: 1px solid #dcac6c;
+}
+.edui-toolbar .edui-button .edui-state-active .edui-button-wrap {
+    background-color: #ffffff;
+    padding: 0;
+    border: 1px solid gray;
+}
+
+.edui-toolbar .edui-state-hover .edui-splitborder{
+    width: 1px;
+    border-left: 0px solid #dcac6c;
+}
+.edui-toolbar .edui-state-active .edui-splitborder{
+    width: 0;
+    border-left: 1px solid gray;
+}
+.edui-toolbar .edui-state-opened .edui-splitborder{
+    width: 1px;
+    border: 0;
+}
+
+/* toolbar icons */
+.edui-for-italic .edui-icon {
+    background-position: -60px 0;
+}
+
+.edui-for-link .edui-icon {
+    background-position: -500px 0;
+}
+.edui-for-unlink .edui-icon {
+    background-position: -640px 0;
+}
+
+/*link-dialog*/
+.edui-for-link .edui-dialog-content  {
+    width:420px;
+    height:200px;
+    overflow: hidden;
+}
+
+/* ui.Editor */
+.edui-editor {
+    border:  1px solid #ccc;
+    background-color: white;
+    position: relative;
+    overflow: visible;
+}
+.edui-editor-toolbarbox {
+    position: relative;
+    zoom: 1;
+}
+.edui-editor-toolbarboxouter {
+    border-bottom:  1px solid #ccc;
+    background: white url(images/toolbar_bg.png) repeat-x bottom left;
+}
+.edui-editor-toolbarboxinner {
+    padding: 2px;
+}
+.edui-editor-iframeholder {
+    position: relative;
+    /*for fix ie6 toolbarmsg under iframe bug. relative -> static */
+    /*_position: static !important;*/
+}
+.edui-editor-iframeholder textarea {
+    font-family: consolas, "Courier New", "lucida console", monospace;
+    font-size: 12px;
+    line-height: 18px;
+}
+.edui-editor-bottombar {
+    /*border-top: 1px solid #ccc;*/
+    /*height: 20px;*/
+    /*width: 40%;*/
+    /*float: left;*/
+    /*overflow: hidden;*/
+}
+.edui-editor-bottomContainer{overflow:hidden;}
+.edui-editor-bottomContainer table{width:100%;height:0;overflow:hidden;border-spacing:0;border-collapse:collapse;}
+.edui-editor-bottomContainer td{white-space:nowrap;border-top: 1px solid #ccc;line-height: 20px;font-size:12px;font-family: Arial,Helvetica,Tahoma,Verdana,Sans-Serif;}
+.edui-editor-wordcount{
+    text-align: right;
+    margin-right: 5px;
+    color: #aaa;
+}
+.edui-editor-breadcrumb {
+    margin: 2px 0 0 3px;
+}
+.edui-editor-breadcrumb span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.edui-bubble .edui-popup-content {
+    border: 1px solid #DCAC6C;
+    background-color: #fff6d9;
+    padding: 5px;
+    font-size: 10pt;
+    font-family: "宋体";
+}
+
+.edui-editor-toolbarmsg {
+    background-color: #FFF6D9;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    bottom:-25px;
+    left:0;
+    z-index: 1009;
+    width: 99.9%;
+}
+.edui-editor-toolbarmsg-label {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px;
+}
+.edui-editor-toolbarmsg-close {
+    float: right;
+    width: 20px;
+    height: 16px;
+    line-height:16px;
+    cursor:pointer;
+    color:red;
+}
+

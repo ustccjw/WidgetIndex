@@ -1,0 +1,120 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 11222 2012-08-20 02:53:59Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/rcres/case18.less ~ 2013/12/02 20:15:47
+ * @author chenli11@baidu.com (chenli11)
+ * @version $Revision: 11222 $ 
+ * @description 
+ * case18样式文件
+ **/
+#canvas {
+  font: 12px/1.5 arial, sans-serif;
+  width: 540px;
+  margin-bottom: 20px;
+  background-color: #eff4fc;
+}
+#canvas .ad-block-0-0 {
+  position: relative;
+  float: left;
+  padding: 10px 0 8px 10px;
+}
+#canvas .ad-block-0-0 .ec-link-list {
+  position: absolute;
+  list-style-type: none;
+  filter: alpha(opacity=80);
+  opacity: .8;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  bottom: 18px;
+  right: 2px;
+}
+#canvas .ad-block-0-0 .ec-link-list li {
+  margin-right: 3px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background: #fff;
+  border: none;
+}
+#canvas .ad-block-0-0 .ec-link-list li a {
+  display: block;
+  color: #333;
+  font-size: 10px;
+  text-decoration: none;
+}
+#canvas .ad-block-0-0 .ec-link-list .ec-current {
+  background: #333;
+  color: #fff;
+}
+#canvas .ad-block-0-0 .ec-link-list .ec-current a {
+  color: #fff;
+}
+#canvas .ad-block-0-1 {
+  float: left;
+  padding: 10px 0 0 12px;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head {
+  width: 286px;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head h2 a {
+  color: blue;
+  font-weight: 600;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head .ec-image-group a {
+  margin-right: 18px;
+}
+#canvas .ad-block-0-1 .ad-widget-small-head .ec-image-group .ec-last {
+  margin-right: 0;
+}
+#canvas .ad-block-1 {
+  clear: both;
+  padding: 0 10px;
+}
+#canvas .ad-block-1 .ad-widget-section li {
+  padding-bottom: 5px;
+}
+#canvas .ad-block-1 .ad-widget-section li > a {
+  font-size: 14px;
+  padding-left: 20px;
+  background: url(//bs.baidu.com/adtest/771feaac8215e1a012af0cc879a337f3.png) 0 4px no-repeat;
+}
+#canvas .ad-block-1 .ad-widget-section li p {
+  padding-top: 3px;
+}
+#canvas .ad-block-1 .ad-widget-section li p a {
+  color: #666;
+  text-decoration: none;
+}
+#canvas .ad-widget-button-group {
+  background: transparent;
+  padding: 4px 10px 15px;
+}
+#canvas .ad-widget-button-group table {
+  width: 100%;
+}
+#canvas .ad-widget-button-group td {
+  border: none;
+  padding: 0 4px;
+}
+#canvas .ad-widget-button-group .ec-first {
+  padding-left: 0;
+}
+#canvas .ad-widget-button-group .ec-last {
+  padding-right: 0;
+}
+#canvas .ad-widget-button-group a {
+  font-size: 12px;
+  color: #00c;
+  text-decoration: underline;
+  border: 1px solid #c8daf0;
+  background: #fff;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,38 @@
+<!-- target:AD_ad_widget_zhidao_intermediate -->
+<div class="ad-widget-zhidao ad-widget-zhidao-intermediate">
+    <div class="ec-inner">
+        <iframe class="ec-customer" frameborder="0" scrolling="no" id="{{#_id}}ifr{{/_id}}" src="{{url}}"></iframe>
+        <a id="{{#_id}}a-bg{{/_id}}" href="{{{turl_9}}}" title2="[中间页][背景遮罩层]{{#q}}{{text}}{{/q}}" class="ec-a-bg" ></a>
+        <iframe id="{{#_id}}dlg-ifr-bg{{/_id}}" class="ec-dlg-ifr-bg" src="about:blank" frameborder="0" scrolling="no"></iframe>
+        <div id="{{#_id}}dlg-bg{{/_id}}" class="ec-dlg-bg"></div>
+        <div id="{{#_id}}fg{{/_id}}" class="ec-fg">
+            <div class="ec-main">
+                {{#q}}
+                <div class="ec-q-block">
+                    <div class="ec-logo">
+                        <img src="{{logo}}" class="ec-logo" />
+                    </div>
+                    <div class="ec-q">{{text}}</div>
+                </div>
+                {{/q}}
+                {{#a}}
+                <div class="ec-a-block">
+                    <div class="ec-logo">
+                        <img src="{{logo}}" class="ec-logo" />
+                        <span>{{name}}</span>
+                        <a href="{{{turl_7}}}" title2="[中间页][了解更多]{{#q}}{{text}}{{/q}}" class="ec-more" ></a>
+                    </div>
+                    <div class="ec-a">{{{text}}}</div>
+                </div>
+                {{/a}}
+                <div class="ec-zhidao-footer">
+                    {{#is_feedback}}
+                    <a id="{{#_id}}feedback{{/_id}}" class="ec-zhidao-feedback" href="javascript:void(0);">意见反馈</a>
+                    {{/is_feedback}}
+                    <div class="ec-zhidao-logo"></div>
+                </div>
+            </div>
+            <a href="{{{turl_6}}}" title2="[中间页][关闭按钮]{{#q}}{{text}}{{/q}}" class="ec-close" ></a>
+        </div>
+    </div>
+</div>

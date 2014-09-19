@@ -1,0 +1,17 @@
+<!-- target:AD_ad_widget_player_look_image -->
+<div class="ad-widget ad-widget-player-look-image">
+    <img src="{{img}}" width="{{img_width}}" height="{{img_height}}" />
+    <div class="ad-widget-pli-bar" style="width:{{width}}px;">
+        <div class="ad-widget-pli-bar-left"></div>
+        <div class="ad-widget-pli-bar-right"></div>
+    </div>
+    <a class="ad-widget-pli-cover" style="width:{{width}}px;height:{{height}}px;" href="{{#rcv_url}}{{{rcv_url}}}{{/rcv_url}}{{^rcv_url}}#{{/rcv_url}}" target="_blank" title2="播放缩略图点击跳转">
+        <span class="ad-widget-pli-mask" style="width:{{width}}px;height:{{height}}px;">&nbsp;</span>
+        <span class="ad-widget-pli-btnctner">&nbsp;</span>
+        {{#tip}}
+        <span class="ad-widget-pli-layer" style="width:{{width}}px;">
+            <i>{{tip}}</i>
+        </span>
+        {{/tip}}
+    </a>
+</div>

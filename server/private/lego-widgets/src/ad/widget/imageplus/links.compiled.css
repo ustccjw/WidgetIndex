@@ -1,0 +1,84 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/imageplus/links.less ~ 2013/09/02 12:35:05
+ * @author zhouminming01@baidu.com (zhouminming01)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * links样式文件
+ **/
+.ad-widget-imageplus-links {
+  font: 12px/1.5 arial, sans-serif;
+  position: relative;
+  width: 325px;
+  overflow: hidden;
+  _zoom: 1;
+  text-align: left;
+  color: #333;
+  background-color: #FFF;
+}
+/* title */
+.ad-widget-imageplus-links-title {
+  padding: 6px 15px 4px;
+  width: 295px;
+  height: 15px;
+  line-height: 15px;
+  overflow: hidden;
+  font-weight: bold;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #F5F5F5;
+}
+.ad-widget-imageplus-links-title span {
+  display: inline-block;
+  _zoom: 1;
+  width: 15px;
+  height: 15px;
+  background: url("http://ecma.bdimg.com/public03/imageplus/pa-icons.png") no-repeat -97px 0;
+}
+/* body */
+.ad-widget-imageplus-links-bd {
+  margin: 9px 15px 0;
+  overflow: hidden;
+  _zoom: 1;
+}
+.ad-widget-imageplus-links-bd span {
+  float: left;
+  width: 97px;
+  line-height: 22px;
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  color: #2385FE;
+  white-space: nowrap;
+}
+.ad-widget-imageplus-links-url {
+  margin: 2px 15px 0;
+  color: #666;
+}
+/* foot */
+.ad-widget-imageplus-links-ft {
+  margin-bottom: 7px;
+  padding-right: 10px;
+  text-align: right;
+  color: #999;
+}
+/* link */
+.ad-widget-imageplus-links-redirect {
+  width: 100%;
+  height: 100%;
+  _height: 600px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100  */

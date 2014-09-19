@@ -1,0 +1,384 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/widget/mweigou/purchase_view2.less ~ 2013/05/07 11:27:48
+ * @author pengxing@baidu.com (pengxing)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * purchase_view2样式文件
+ **/
+
+@orange: #fb4f03;
+@black: #262626;
+@white: #fff;
+@blue: #ebf4fd;
+@text-gray: #666;
+@border-gray: #f2f2f2;
+
+.ellipsis() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ec-sg-weigou-purchase {
+    position: relative;
+}
+
+i.ec-sg-weigou-purchase-newaddr-plus {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: data-uri("../../impl/weigou/mobile1/i/icon-plus.png");
+    background-size: 100% 100%;
+}
+
+.ec-sg-weigou-purchase-image {
+    @imgSize: 71px;
+
+    float: left;
+    width: @imgSize;
+    height: @imgSize;
+    padding: 1px;
+    border: 1px solid #ededed;
+
+    img {
+        width: @imgSize;
+        height: @imgSize;
+    }
+}
+
+.ec-sg-weigou-purchase-vendor {
+    span {
+        color: @orange;
+    }
+}
+
+.ec-sg-weigou-purchase-list {
+    position: relative;
+    margin-left: 90px;
+    padding: 0 15px 0 0;
+    line-height: 28px;
+
+    h2 {
+        line-height: 20px;
+        margin-bottom: 3px;
+        font-weight: normal;
+        font-size: 14px;
+        .ellipsis();
+    }
+
+    input {
+        font-size: 16px;
+        width: 37px;
+        height: 20px;
+        padding: 0;
+        text-align: center;
+        border: 1px solid #D5D5D5;
+        background: transparent;
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+    span {
+        color: @orange;
+    }
+}
+
+.ec-sg-weigou-purchase-header {
+    line-height: 29px;
+    padding-left: 7px;
+    background: #f5f5f5;
+}
+.ec-sg-weigou-purchase-body {
+    background: #fff;
+    padding: 10px 7px;
+}
+
+.ec-sg-weigou-purchase-newaddr {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    position: relative;
+
+    header {
+        background: #fff;
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+        vertical-align: middle;
+
+        span {
+            display: inline-block;
+            height: 27px;
+            overflow: hidden;
+        }
+    }
+
+    b {
+        display: none;
+    }
+}
+
+.ec-sg-weigou-purchase-new-addr-plus {
+    font-size: 23px;
+    margin-left: 3px;
+}
+
+.ec-sg-weigou-purchase-form {
+    display: none;
+    padding: 2px 15px 10px;
+
+    table {
+        width: 100%;
+        th {
+            font-weight: normal;
+            padding-top: 5px;
+            span {
+                display: none;
+                color: #df1f1c;
+            }
+        }
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    input, select, .ec-sg-weigou-purchase-region-dummy {
+        height: 28px;
+        font-size: 16px;
+        color: @text-gray;
+        border: 1px solid #d5d5d5;
+        background: #fff;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    select {
+        padding-right: 18px;
+        background: #f2f2f2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAFCAMAAACtk0YeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRTVEQTVDRTlBOEUxMUUyOEFBNkRCMzMwMzQyRkUzMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRTVEQTVDRjlBOEUxMUUyOEFBNkRCMzMwMzQyRkUzMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNFNURBNUNDOUE4RTExRTI4QUE2REIzMzAzNDJGRTMwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNFNURBNUNEOUE4RTExRTI4QUE2REIzMzAzNDJGRTMwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+3M9F/AAAAAZQTFRFn5+f/////5x6eAAAAAJ0Uk5T/wDltzBKAAAAI0lEQVR42mJggANGEGBgROEC+YzIXBCfEYkL5jMiuIwAAQYABc0ALrjCjzIAAAAASUVORK5CYII=) no-repeat right;
+    }
+
+    .ec-sg-weigou-purchase-town {
+        background: #fff;
+    }
+}
+
+.ec-sg-weigou-purchase-newaddr-btns{
+    margin-top: 10px;
+    overflow: hidden;
+
+    a {
+        width: 110px;
+        font-size: 14px;
+        color: #FFF!important;
+        background: #DF413F;
+        border: 1px solid #B71311;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+
+.ec-sg-weigou-purchase-newaddr-ok {
+    float: left;
+}
+
+a.ec-sg-weigou-purchase-newaddr-cancel {
+    float: right;
+    background: #fa6666;
+    border: 1px solid #e65c5a;
+}
+
+.ec-sg-weigou-purchase-region-dummy {
+    line-height: 28px;
+    width: 100%;
+    overflow: hidden;
+}
+.ec-sg-weigou-purchase-newaddr-actived {
+    border: 1px solid #df1f1e;
+
+    header {
+        background: #f9f9f9;
+    }
+
+    .ec-sg-weigou-purchase-form {
+        display: block;
+    }
+
+    b {
+        display: block;
+    }
+}
+
+.ec-sg-weigou-purchase-name {
+    font-weight: bold;
+}
+
+.ec-sg-weigou-purchase-address-item {
+    border: 1px solid #df1f1e;
+    padding: 5px;
+    display: none;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.ec-sg-weigou-purchase-offers, .ec-sg-weigou-purchase-fare {
+    display: none;
+}
+
+
+.ec-sg-weigou-purchase-bottom {
+    border-top: 1px solid #e5e5e5;
+    padding: 10px;
+    background: #fff;
+}
+
+.ec-sg-weigou-purchase-checkboxes {
+    float: left;
+
+    input, label {
+        vertical-align: middle;
+    }
+}
+
+.ec-sg-weigou-purchase-prices {
+    float: right;
+    text-align: right;
+
+    th {
+        font-weight: normal;
+        color: #333;
+    }
+
+    td {
+        color: @orange;
+    }
+    .ec-sg-weigou-purchase-offers td {
+        color: #219a33;
+    }
+}
+
+.ec-sg-weigou-purchase-check, .ec-sg-weigou-purchase-submit {
+    float: right;
+    width: 110px;
+    font-size: 14px;
+    color: #FFF!important;
+    background: #DF413F;
+    border: 1px solid #B71311;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.ec-sg-weigou-purchase-addresses {
+    position: relative;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    display: none;
+    height: 27px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 27px;
+        opacity: 0;
+        font-size: 16px;
+    }
+}
+
+.ec-sg-weigou-purchase-addres-cover {
+    vertical-align: middle;
+
+    span, b {
+        display: inline-block;
+    }
+
+    b {
+        display: inline-block;
+        background: data-uri("../../impl/weigou/mobile1/i/icon-address-arrow.png");
+        background-size: 100% 100%;
+        height: 12px;
+        width: 8px;
+    }
+}
+
+.ec-sg-weigou-purchase-details {
+    display: none;
+    border: 1px solid #fc9898;
+    background: #ffffcd;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+
+    div {
+        margin-top: 3px;
+    }
+}
+
+
+.ec-sg-weigou-purchase-details-top {
+    strong {
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 3px;
+    }
+}
+
+.ec-sg-weigou-purchase-details-bottom {
+    overflow: hidden;
+}
+
+.ec-sg-weigou-left {
+    float: left;
+    color: #df1410;
+    margin-top: 3px;
+}
+
+.ec-sg-weigou-right {
+    float: right;
+
+    strong {
+        color: #df1410;
+        font-size: 20px;
+    }
+
+    i {
+        color: #df1410;
+        font-style: normal;
+    }
+}
+
+.ec-sg-weigou-purchase-disabled {
+    color: @white;
+    background: #ddd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#c0c0c0));
+    border: 1px solid #b9b9b9;
+}
+
+.ec-sg-weigou-purchase-bottom-tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: data-uri("../../impl/weigou/mobile1/i/icon-bottom-tag.png");
+    background-size: 100% 100%;
+}
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

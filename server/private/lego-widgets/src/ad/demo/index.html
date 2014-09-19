@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 华彩物料开发回顾 </title>
+  <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="wangdawei04">
+  <meta name="Keywords" content="华彩 物料">
+  <meta name="Description" content="">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+  	.triangle-right {
+	    background: -moz-linear-gradient(#2E88C4, #075698) repeat scroll 0 0 transparent;
+	    border-radius: 10px 10px 10px 10px;
+	   position: relative;
+	   width:200px;
+	}
+	.triangle-right:after {
+	    border-color: #075698 transparent transparent transparent ;
+	    border-style: solid;
+	    /* border-width: 20px;*/
+	    border-width: 20px 0 20px 20px;
+	    bottom: -40px;
+	    content: "";
+	    display: block;
+	    left: 50px;
+	    position: absolute;
+	}
+
+  </style>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.9.2.custom.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+ </head>
+
+ <body>
+ 	<div id="wl_panel"></div>
+  	<div class="mb-layout-ft minwidth" onselectstart="return false;">
+	    <div class="panel" id="playPanel">
+	        <div class="left-panel">
+	            <ul class="play-btn">
+	                <li class="prev">
+	                    <a id="btn-prev" class="wg-button" hidefocus="true" title="上一首[←]"><span class="wg-button-inner"></span></a>
+	                </li>
+	                <li class="play stop" title="播放[空格键]">
+	                    <a id="btn-play-stop" class="wg-button" hidefocus="true"><span class="wg-button-inner"></span></a>
+	                </li>
+	                <li class="next">
+	                    <a id="btn-next" class="wg-button" hidefocus="true" title="下一首[→]"><span class="wg-button-inner"></span></a>
+	                </li>
+	            </ul>
+	        </div>
+	        <div class="main-panel">
+	            <div class="title-wrapper" id="playTitle">
+	                <div style="overflow: hidden; float: left; margin-left: 20px;"><div class="title">
+	                        <a id="wl-text" class="songname" target="_blank" href="http://music.baidu.com/song/233076?fr=musicsong_play"></a>
+	                        <span class="split">-</span>
+	                        <a id="wl-income" class="artist" target="" href="javascript:;"></a>
+	                </div></div>
+	            </div>
+	            <div class="pane">
+	                <div class="time">
+	                    <span id="day-start" class="curTime"></span>
+	                    <span class="split">/</span>
+	                    <span id="day-end" class="totalTime"></span>
+	                </div>
+	                <div class="progress-wrapper">
+	                    <div id="progressSlider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+	                        <div class="ui-slider-left"></div>
+	                        <div class="ui-slider-right"></div>
+	                    	<div id="play-bar" class="ui-slider-range ui-widget-header ui-slider-range-min"></div>
+	                    	<div id="play-bar-bg" class="ui-slider-progressbar ui-widget-header" style="width: 100%;cursor:pointer;"></div>
+	                    	<a id="cursor" class="ui-slider-handle ui-state-default ui-corner-all ui-state-focus ui-slider-handle-focus" hidefocus="true" ><span></span></a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+ </body>
+</html>

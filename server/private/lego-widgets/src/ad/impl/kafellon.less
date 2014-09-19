@@ -1,0 +1,368 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: material.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+ 
+ 
+ 
+/**
+ * src/ad/impl/kafellon.less ~ 2014/05/22 14:07:08
+ * @author hekai02@baidu.com (Kyle He)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * kafellon样式文件
+ **/
+
+@import-once "mixins.less";
+
+#canvas {
+    font: 13px/1.5 arial,sans-serif;
+
+    width: 530px;
+    margin-bottom: 20px;
+
+    border: 4px solid #7d177d;
+
+}
+
+
+#canvas .ad-block-0 {
+    margin: 3px 5px 8px 5px;
+}
+
+#canvas .ad-block-1 {
+    margin: 5px;
+    height: 144px;
+}
+
+#canvas .ad-block-1-0 {
+    float: left;
+}
+
+#canvas .ad-block-1-1 {
+    height: 100%;
+    margin-left: 10px + 254px;
+    position: relative;
+
+    .ad-widget-small-head {
+        .ec-description {
+            line-height: 1.5;
+        }
+    }
+
+
+    .ad-widget-multi-video-thunbnail {
+        top: auto;
+        left: auto;
+        bottom: 0;
+        right: 0;
+        width: 280px;
+        height: auto;
+
+        .ec-thunbnail-cont {
+            position: static;
+            width: auto;
+            height: auto;
+            float: right;
+        }
+
+        .ec-thunbnail-bg {
+            display: none;
+        }
+
+        .ec-item {
+            width: 78px;
+            height: 59px;
+            margin: 0 0 0 11px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .ec-item-bg {
+            height: 100%;
+            background: #7d177e;
+        }
+
+        .ec-play-btn {
+            background-color: #7d177e;
+        }
+    }
+    
+}
+
+
+#canvas .ad-block-2 {
+    margin-top: 16px;
+    .ad-widget-tab-container {
+        .ec-tab-head {
+            height: 28px;
+            margin: 0;
+            text-align: center;
+            background: #7d177e;
+            li {
+                display: block;
+                float: left;
+                margin: 0;
+                width: 20% !important;
+                height: 100%;
+                &.ec-current-tab {
+                    background-color: #e1aee2;
+                }
+            }
+            a {
+                display: block;
+                height: 15px;
+                margin: 6px 0 0 0;
+                padding: 0;
+                overflow: hidden;
+                font-size: 13px;
+                line-height: 16px;
+                color: white;
+                border: none;
+                border-right: 1px solid white;
+                background-color: transparent;
+            }
+            li.ec-current-tab a,
+            li.ec-previous-tab a,
+            li.ec-tab-list-last a {
+                border-bottom: none;
+                background-color: transparent;
+            }
+            li.ec-tab-list-last a {
+                border-right: none;
+            }
+            li.ec-current-tab a {
+                border-right-color: #e1aee2;
+            }
+            li.ec-previous-tab a {
+                border-right-color: #7d177e;
+            }
+        }
+
+        .ec-tab-body {
+            background-color: #e1aee2;
+        }
+
+    }
+
+
+    .ad-widget-button-group {
+        padding: 8px 0;
+        font-size: 12px;
+        background: transparent;
+        tr, td {
+            height: 13px;
+        }
+        td {
+            line-height: 13px;
+            border-right-color: #7d177e;
+            overflow: hidden;
+        }
+        a {
+            color: #7d177e;
+        }
+    }
+
+    .ad-widget-image-cartoon {
+        width: 100%;
+        .ec-item-wrapper {
+            width: 100%;
+        }
+        .ec-item {
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .ec-arrow {
+            bottom: 50px;
+            background: #000;
+            width: 22px;
+            height: 36px;
+            text-indent: -9999em;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .ec-left-arrow {
+            background-image: url(//bs.baidu.com/adtest/e03e418ffbbf7fae5c4227eefc13efbd.png);
+        }
+        .ec-right-arrow {
+            background-image: url(//bs.baidu.com/adtest/da8c94b0d380adb8e66f159da27252ff.png);
+        }
+    }
+
+    .ec-normal-con-0-0 {
+        height: 128px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .ad-widget-tab-cont {
+        padding: 10px 5px;
+
+        table {
+            width: 100%;
+        }
+
+        .ec-brand-pic {
+            width: 254px;
+            height: 103px;
+            padding: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .ec-td-border {
+            border-right-color: #7d177e;
+        }
+
+        .ec-brand-links {
+            h1 {
+                font-weight: normal;
+                display: none;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    .ec-tab-content-4 {
+        .ec-normal-con-0 {
+            position: relative;
+        }
+        .ec-normal-con-0-0 {
+            width: 100%;
+            background-color: white;
+        }
+
+        .ad-widget-image {
+            position: absolute;
+            top: 10px;
+            // right: 5px;
+            left: 445px;
+    
+            .ad-widget-image-layer {
+                margin-top: 7px;
+                text-align: center;
+                position: static;
+                background-color: transparent;
+                filter: none;
+                -ms-filter: none;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .ad-widget-sina-weibo {
+        width: 418px;
+        margin-left: 6px;
+        padding-top: 10px;
+        position: relative;
+
+        .ec-follow {
+            width: 78px;
+            height: 23px;
+            position: absolute;
+            right: 0;
+        }
+
+        .ec-seprate {
+            border-right-color: green;
+        }
+
+        .ec-weibo-head {
+            .ec-text {
+                color: green;
+            }
+            
+            .ec-name {
+                color: blue;
+                margin-right: 5px;
+                padding-right: 20px;
+            }
+        }
+
+        .ec-context {
+            margin-top: 5px;
+        }
+
+        .ec-weibo-text {
+            height: 54px;
+            overflow: hidden;
+        }
+        
+        .ec-foot {
+            padding-top: 5px;
+            line-height: 16px;
+            .ec-rightbtn {
+                a {
+                    color: green;
+                }
+            }
+        }
+    
+    }
+
+}
+
+.ec-float-image-fwc,
+.ec-float-video-fwc {
+    .ad-widget-float-window-container {
+        .ec-close {
+            @bg-img: '//bs.baidu.com/adtest/7b6b3a690f1048161e97ce2e198b75b5.gif';
+            width: 36px;
+            height: 36px;
+            top: 0;
+            right: 0;
+            background: black url(@bg-img) no-repeat center center;
+            .opacity(70);
+            &:hover {
+                background: black url(@bg-img) no-repeat center center;
+                .opacity(90);
+            }
+        }
+    }
+}
+
+.ec-float-video-fwc {
+    .ad-widget-video {
+        position: absolute;
+        left: 20px;
+        top: 76px;
+    }
+    .ad-widget-multi-video-thunbnail {
+        left: 580px;
+        top: 172px;
+
+        .ec-play-btn {
+            background-color: #7d177e;
+        }
+
+        .ec-item-bg {
+            background: #7d177e;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

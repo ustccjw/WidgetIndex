@@ -1,0 +1,110 @@
+/***************************************************************************
+ *
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: calendar.less 14270 2012-11-12 03:04:09Z liyubei $
+ *
+ **************************************************************************/
+
+/**
+ * src/ad/widget/calendar/calendar.less ~ 2012/11/11 12:51:51
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 14270 $
+ * @description
+ * calendar样式文件
+ **/
+
+ @import-once "mixins.less";
+ .ad-widget-calendar-calendar {
+    font: 12px/1.5 arial, sans-serif;
+    overflow: hidden;
+    width: 700px;
+    height: 720px;
+    .ec-timeline {
+        float: left;
+        width: 65px;
+        font-size: 10px;
+        padding-right: 10px;
+        .ec-time {
+            text-align: right;
+            color: #a6a6a6;
+            height: 60px;
+            line-height: 10px;
+        }
+        strong {
+            color: #000;
+            font-size: 12px;
+        }
+    }
+    .ec-events {
+        float: left;
+        background-color: #ececec;
+        border-left: 1px solid #d6d6d6;
+        padding: 0 10px;
+    }
+    .ec-events-inner {
+        position: relative;
+        width: 600px;
+        height: 720px;
+    }
+    .ec-event {
+        overflow: hidden;
+        position: absolute;
+        background-color: #fff;
+        *border-bottom: 1px solid #d5d5d5;
+    }
+    .ec-event-body {
+        .box-sizing(border-box);
+        vertical-align: top;
+        height: 100%;
+        padding: 8px;
+        border: 1px solid #d5d5d5;
+        border-left: 4px solid #4b6ea8;
+        h3 {
+            color: #4b6ea8;
+            font-size: 10px;
+            margin: 0;
+        }
+        p {
+            color: #a0a0a0;
+            margin: 0;
+        }
+    }
+    .ec-nowmarker {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        font-size: 0;
+        border-top: 2px solid #ff7f6e;
+        overflow: hidden;
+        z-index: 99999;
+    }
+    .ec-close {
+        float: right;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 15px;
+        color: #000;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+        .opacity(20);
+        &:hover {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            .opacity(40);
+        }
+    }
+    button.ec-close {
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        display: none;
+    }
+    .ec-event:hover {
+        button.ec-close {
+            display: block;
+        }
+    }
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

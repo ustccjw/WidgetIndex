@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Loader Asp Test</title>
+  </head>
+  <body>
+    <!--
+    // 请求这个地址：http://a.baidu.com/ecom?di=641&tm=baiduASPGBannerTRH&lang=3&word=%E7%A5%9E%E6%9B%B2%E4%BA%86_9958753037412595954&r=0.543107817415148
+    返回的代码如下：
+    arrBaiduAds[641]="  <script type='text/javascript'> var AD_CONFIG = {'id':'ecma-8964','sticker': {'seller_name':'哥们网','city':'全国','url':'http://bzclk.baidu.com/adrc.php?t=00aK06000f7i8s60rGsl00gals_n9XIw0000000000ay0000Y4j5NZ.THLFtTxlsT_0UWY0T1Y3rHc1uhc1nycdn1bzrH610ZRqwjmdnWb1PRFDP1TYf1b4rH6zrDc3nbm3PDDkfWP7fRm0mHdbXWK_H-NuUD4Nyg-PwD7LHRwKIYdDNykrNN-_RgGFU77lHykiwDd_RHKNUD4NyykrNN-VmLCsPDqRigGpUR-lHNIFnRdlpL-5NAIlihYkph7gRH-PNDRsHYwNPR4JHHP2UbF4mWFiT7GDnjFPfdGCR7wAubdjyWKBNjKVu7TsrRGVrg-9Nj0sih4rnN-Vrg-9NjKVmY92T7KRHyduNdFlmvdPrRdKFHPDFHPD0ARqpZwYTjCEQLILIz4Mmyd-nB4WUBt0mLFW5Hnsn1fz','logo':'http://bs.baidu.com/xinjuejin/200000005_1_100_80.jpg','options':[{'url':'http://bzclk.baidu.com/adrc.php?t=00aK06000f7i8s60rGsl00gals_n9XIw00000KxzzKpy0000Y4j5NZ.THLFtTxlsT_0UWY0T1Y3rHc1uhc1nycdn1bzrH610ZRqwjmdnWb1PRFDP1TYf1b4rH6zrDc3nbm3PDDkfWP7fRm0mHdbXWK_H-NuUD4Nyg-PwD7LHRwKIYdDNykrNN-_RgGFU77lHykiwDd_RHKNUD4NyykrNN-VmLCsPDqRigGpUR-lHNIFnRdlpL-5NAIlihYkph7gRH-PNDRsHYwNPR4JHHP2UbF4mWFiT7GDnjFPfdGCR7wAubdjyWKBNjKVu7TsrRGVrg-9Nj0sih4rnN-Vrg-9NjKVmY92T7KRHyduNdFlmvdPrRdKFHPDFHPD0ARqpZwYTjCEQLwMQhI9UyRzQhP8QvqGuMF9nWbzPz4CIAY0mLFW5HcYnHf3','src':'http://bs.baidu.com/xinjuejin/182267927_0_205_520.swf','score':'','price':'0.00','text':'天界'}],'more_url':'http://bzclk.baidu.com/adrc.php?t=00aK06000f7i8s60rGsl00gals_n9XIw000000D000ay0000Y4j5NZ.THLFtTxlsT_0UWY0T1Y3rHc1uhc1nycdn1bzrH610ZRqwjmdnWb1PRFDP1TYf1b4rH6zrDc3nbm3PDDkfWP7fRm0mHdbXWK_H-NuUD4Nyg-PwD7LHRwKIYdDNykrNN-_RgGFU77lHykiwDd_RHKNUD4NyykrNN-VmLCsPDqRigGpUR-lHNIFnRdlpL-5NAIlihYkph7gRH-PNDRsHYwNPR4JHHP2UbF4mWFiT7GDnjFPfdGCR7wAubdjyWKBNjKVu7TsrRGVrg-9Nj0sih4rnN-Vrg-9NjKVmY92T7KRHyduNdFlmvdPrRdKFHPDFHPD0ARqpZwYTjCEQLwMQhI9UyRzQhP8QvqGuMF9nWbsPi4CIAY0mLFW5Hm1n1c1','show_url':'http://www.game2.cn/'}};window.AD_CONFIG = AD_CONFIG;</script><script type='text/javascript' src='http://eiv.baidu.com/mapm2/wdw/sticker/ad_render_flash.js'></script>   ";
+    -->
+    <!-- BEGIN 这个容器应该是动态创建的，这里只是举个例子，因此首先准备好-->
+    <div id="ecma-8964"></div>
+    <!-- END -->
+
+    <script src="../../base.js"></script>
+    <script src="../../../assets/js/tangram-base-1.3.7.1.js"></script>
+    <script>
+    goog.require("ad.plugin.AspLoader");
+    </script>
+    <!--
+    <script src="../../../target/output/ad_plugin_asploader/ad_plugin_asploader.app-6b5ec295.js"></script>
+    -->
+    <script>
+    var aspUrl = 'http://img.fe.baidu.com/lego/preview/zhidao/asp.js?di=641&tm=baiduASPGBannerTRH&lang=3&word=%E7%A5%9E%E6%9B%B2%E4%BA%86_9958753037412595954&r=0.543107817415148';
+    ECMA_ASP_require(aspUrl, function(material){
+          // TODO
+    });
+    </script>
+  </body>

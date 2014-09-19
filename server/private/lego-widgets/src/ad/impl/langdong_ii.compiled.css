@@ -1,0 +1,148 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: langdong_ii.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/langdong_ii.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 515px;
+  background: #f1f5fc;
+  padding: 10px;
+  margin-bottom: 20px;
+  font: 13px arial, sans-serif;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ad-layout-block-0-0 {
+  float: left;
+  width: 220px;
+}
+#canvas .ad-layout-block-0-1 {
+  overflow: hidden;
+  zoom: 1;
+  width: 276px;
+  padding: 0px 0px 0px 14px;
+}
+#canvas .ad-widget-image {
+  border: 1px solid #666;
+  width: 220px;
+  height: 190px;
+  cursor: pointer;
+}
+#canvas .ad-widget-image img {
+  width: 220px;
+  height: 190px;
+  display: block;
+  boeder: 0px;
+}
+#canvas .ad-widget-small-head h2 a {
+  color: #0000cc;
+}
+#canvas .ec-description {
+  color: #333;
+  font-size: 12px;
+}
+#canvas .ec-image-group {
+  margin-top: 22px;
+}
+#canvas .ec-image-group a {
+  border-color: #666;
+}
+#canvas .ad-widget-section li {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+#canvas .ad-widget-section li p {
+  line-height: 18px;
+}
+#canvas .ad-widget-section li p a {
+  text-decoration: none;
+  color: #333;
+}
+#canvas .ad-widget-button-group {
+  margin-top: 20px;
+  padding: 0px;
+  height: 26px;
+  line-height: 26px;
+  background: #d3d1f8;
+}
+#canvas .ad-widget-button-group table tr {
+  height: 26px;
+}
+#canvas .ad-widget-button-group td {
+  border: 1px solid #f1f5fc;
+  padding: 0px;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group td a {
+  color: #0000cc;
+}
+#canvas .ad-widget-float-window {
+  display: none;
+  width: 650px;
+  height: 395px;
+}
+#canvas .ec-sub {
+  width: 650px;
+  height: 395px;
+}
+#canvas .ec-float-bg {
+  width: 650px;
+  height: 395px;
+}
+#canvas .ec-float-iframe {
+  width: 416px;
+  height: 234px;
+}
+#canvas .ad-widget-iframe,
+#canvas .ad-widget-iframe div {
+  width: 416px;
+  height: 234px;
+  margin-left: 0px;
+}
+#canvas .ad-widget-video {
+  width: 416px;
+  height: 234px;
+}
+#canvas .ad-widget-video object {
+  width: 416px;
+  height: 234px;
+}
+#canvas .ad-widget-video embed {
+  width: 416px;
+  height: 234px;
+}
+#canvas .ec-share-site {
+  height: 27px;
+  width: 371px;
+  overflow: hidden;
+  zoom: 1;
+}
+#canvas .ec-share-site a {
+  float: left;
+  display: inline;
+  height: 27px;
+}
+#canvas .ec-float-link {
+  bottom: 9px;
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  width: 150px;
+  z-index: 2147483643;
+}
+#canvas .ec-close {
+  right: 6px;
+  top: 6px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

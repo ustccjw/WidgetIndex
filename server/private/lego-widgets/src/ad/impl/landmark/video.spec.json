@@ -1,0 +1,223 @@
+[
+    {
+        "name": "top_title",
+        "displayName": "标题",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题文字",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 24
+                },
+                "extraAttr": {},
+                "tip": "填写24字节(12个汉字)以内",
+                "multiline": false
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL"
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "video",
+        "displayName": "视频",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "video_url",
+                "displayName": "视频文件",
+                "datatype": "UPLOAD",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "FLV",
+                    "ext": "flv",
+                    "width": 260,
+                    "height": 146,
+                    "maxSize": 700
+                }
+            },
+            {
+                "name": "img_url",
+                "displayName": "视频首帧图片",
+                "datatype": "UPLOAD",
+                "tip": "http://dummyimage.com/259x146",
+                "rules": {
+                    "required": true
+                },
+                "extraAttr": {
+                    "fileType": "IMAGE",
+                    "ext": "jpg,png",
+                    "width": 259,
+                    "height": 146,
+                    "maxSize": 30
+                }
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "视频跳转地址",
+                "tip": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "stringType": "URL",
+                    "maxByteLength": 255
+                }
+            },
+            {
+                "name": "width",
+                "datatype": "HIDDEN",
+                "defaultValue": "259"
+            },
+            {
+                "name": "height",
+                "datatype": "HIDDEN",
+                "defaultValue": "146"
+            },
+            {
+                "name": "is_play",
+                "datatype": "BOOL",
+                "display": "none"
+            },
+            {
+                "name": "player_ver",
+                "datatype": "STRING",
+                "defaultValue": "7",
+                "display": "none"
+            }
+        ]
+    },
+    {
+        "name": "description",
+        "displayName": "描述",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "rcv_html",
+                "displayName": "描述文本",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 84
+                },
+                "extraAttr": {},
+                "tip": "共2行，最多84个字符，共42个汉字",
+                "multiline": true
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "跳转地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            }
+        ],
+        "rules": {}
+    },
+    {
+        "name": "buttons",
+        "displayName": "按钮块",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "rules": {},
+        "items": [
+            {
+                "name": "options",
+                "displayName": "按钮",
+                "datatype": "LIST",
+                "rules": {
+                    "minCount": 2,
+                    "maxCount": 4
+                },
+                "items": [
+                    {
+                        "name": "text",
+                        "displayName": "文字",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "required": true,
+                            "maxByteLength": 16
+                        },
+                        "extraAttr": {},
+                        "tip": "最多16个字符，共8个汉字",
+                        "multiline": false
+                    },
+                    {
+                        "name": "rcv_url",
+                        "displayName": "链接",
+                        "defaultValue": "",
+                        "datatype": "STRING",
+                        "rules": {
+                            "stringType": "URL",
+                            "required": true
+                        },
+                        "extraAttr": {},
+                        "tip": "http://",
+                        "multiline": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "show_url",
+        "displayName": "官网地址",
+        "display": "toggle-block",
+        "datatype": "OBJECT",
+        "rules": {},
+        "items": [
+            {
+                "name": "site",
+                "displayName": "官网地址",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 28
+                },
+                "extraAttr": {},
+                "tip": "最多28个字节",
+                "multiline": false
+            },
+            {
+                "name": "site_rcv_url",
+                "displayName": "官网地址指向URL",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL",
+                    "required": true
+                },
+                "extraAttr": {},
+                "tip": "http://",
+                "multiline": false
+            }
+        ]
+    }
+]

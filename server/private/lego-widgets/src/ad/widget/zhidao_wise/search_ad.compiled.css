@@ -1,0 +1,76 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2013 Baidu.com, Inc. All Rights Reserved
+ * $Id: widget.less 150523 2012-10-30 10:06:05Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/zhidao_wise/search_ad.less ~ 2013/12/18 18:04:56
+ * @author xiebin01@baidu.com (DestinyXie)
+ * @version $Revision: 150523 $ 
+ * @description 
+ * search_ad样式文件
+ **/
+.ad-widget-zhidao_wise-search-ad {
+  padding: 15px 10px 14px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-title-link {
+  overflow: hidden;
+  zoom: 1;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: #00c;
+  text-decoration: none;
+  padding-bottom: 11px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-title-link .ec-icon {
+  float: left;
+  margin-top: 1px;
+  color: #fff;
+  font-size: 12px;
+  width: 28px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  background-color: #ff8400;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-description {
+  color: #262626;
+  line-height: 23px;
+  font-size: 14px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-answerer,
+.ad-widget-zhidao_wise-search-ad .ec-tip {
+  overflow: hidden;
+  zoom: 1;
+  font-size: 12px;
+  color: #777;
+  padding-top: 5px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-tip {
+  padding-top: 8px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-answerer img {
+  width: 8.5px;
+  height: 8.5px;
+  margin-left: 5px;
+}
+.ad-widget-zhidao_wise-search-ad .ec-answerer-tel {
+  float: right;
+  color: #00c;
+  font-size: 15px;
+  line-height: 15px;
+  text-decoration: none;
+}
+.ad-widget-zhidao_wise-search-ad .ec-answerer-tel img {
+  vertical-align: bottom;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

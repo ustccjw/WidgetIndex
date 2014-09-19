@@ -1,0 +1,48 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: show_case.less 10885 2012-08-02 12:47:38Z liyubei $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/mobile/showcase/show_case.less ~ 2012/08/01 10:59:25
+ * @author leeight@gmail.com (leeight)
+ * @version $Revision: 10885 $ 
+ * @description 
+ * show_case样式文件
+ **/
+.ac-ad-mobile-showcase-show-case .ui-textarea,
+.ac-ad-mobile-showcase-show-case .ui-text {
+  height: auto;
+}
+.ac-ad-mobile-showcase-show-case .ui-mateditor .pref-block-fieldset {
+  margin: 10px;
+}
+.ac-ad-mobile-showcase-show-case .ui-mateditor .pref-block-legend {
+  border-bottom: none;
+}
+.ac-ad-mobile-showcase-show-case .preview {
+  margin: 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ac-ad-mobile-showcase-show-case .preview dl {
+  float: left;
+  margin-right: 10px;
+  height: 200px;
+  width: 300px;
+}
+.ac-ad-mobile-showcase-show-case #code {
+  padding: 5px 0;
+}
+.ac-ad-mobile-showcase-show-case #code textarea {
+  width: 500px;
+  height: 200px;
+}
+.loading {
+  width: 228px;
+}
+.loading .loading-inner {
+  width: 224px;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

@@ -1,0 +1,128 @@
+[
+    {
+        "name": "detail_fqa",
+        "displayName": "问答模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "question",
+                "displayName": "问题",
+                "tip": "营销问题",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true
+                }
+            },
+            {
+                "name": "answer",
+                "displayName": "答案",
+                "tip": "营销答案",
+                "datatype": "STRING",
+                "rules": {
+                    "required": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "iframe",
+        "displayName": "iframe模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "width",
+                "displayName": "width",
+                "defaultValue": "100%",
+                "datatype": "HIDDEN"
+            },
+            {
+                "name": "height",
+                "displayName": "height",
+                "defaultValue": "500",
+                "descriptionTip": "给iframe留的展示高度",
+                "datatype": "STRING"
+            },
+            {
+                "name": "src",
+                "displayName": "iframe地址",
+                "defaultValue": "http://",
+                "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                }
+            }
+        ]
+    },
+    {
+        "name": "detail_provider",
+        "displayName": "提供者模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "provider_name",
+                "displayName": "提供者名称",
+                "tip": "提供者名称",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true
+                }
+            },
+            {
+                "name": "provider_rcv_url",
+                "displayName": "提供者名称指向URL",
+                "defaultValue": "http://",
+                "descriptionTip": "用于无线设备展现，URL推荐填写WAP地址",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "stringType": "URL"
+                }
+            }
+        ]
+    },
+    {
+        "name": "detail_cont",
+        "displayName": "详情页容器模块",
+        "datatype": "OBJECT",
+        "display": "toggle-block",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "详情页标题",
+                "tip": "5个汉字以内",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "maxByteLength": 10
+                }
+            },
+            {
+                "name": "tel",
+                "displayName": "热线号码",
+                "datatype": "STRING",
+                "multiline": false,
+                "rules": {
+                    "required": true,
+                    "phoneNumber": true
+                }
+            },
+            {
+                "display": "none",
+                "name": "has_more_options",
+                "displayName": "has_more_options",
+                "defaultValue": false,
+                "datatype": "BOOL"
+            }
+        ]
+    }
+]

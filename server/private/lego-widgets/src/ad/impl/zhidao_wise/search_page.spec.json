@@ -1,0 +1,51 @@
+[
+    {
+        "name": "search_ad",
+        "displayName": "search_ad",
+        "datatype": "OBJECT",
+        "items": [
+            {
+                "name": "title",
+                "displayName": "标题",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {},
+                "extraAttr": {}
+            },
+            {
+                "name": "rcv_url",
+                "displayName": "跳转地址",
+                "defaultValue": "http://",
+                "datatype": "STRING",
+                "rules": {
+                    "stringType": "URL"
+                },
+                "extraAttr": {}
+            },
+            {
+                "name": "description",
+                "displayName": "描述",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {},
+                "extraAttr": {}
+            },
+            {
+                "name": "answerer",
+                "displayName": "answerer",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {},
+                "extraAttr": {}
+            },
+            {
+                "name": "tip",
+                "displayName": "tip",
+                "defaultValue": "",
+                "datatype": "STRING",
+                "rules": {},
+                "extraAttr": {}
+            }
+        ]
+    }
+]

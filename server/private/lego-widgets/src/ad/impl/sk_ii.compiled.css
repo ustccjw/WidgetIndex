@@ -1,0 +1,100 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: sk_ii.less 9564 2012-06-06 04:43:29Z FANXUELIANG $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/impl/sk_ii.less ~ 2012/06/06 11:51:39
+ * @author FANXUELIANG(FANXUELIANG@baidu.com)
+ * @version $Revision: 9564 $ 
+ * @description 
+ *  
+ **/
+#canvas {
+  width: 516px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f4f4f4;
+  font-size: 12px;
+}
+#canvas .layout {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #831728;
+}
+#canvas .ad-widget-h1 {
+  font-size: 12px;
+  overflow: hidden;
+}
+#canvas .ad-widget-h1 .ec-content {
+  padding-left: 0px;
+}
+#canvas .ad-widget-tab-container {
+  font-size: 12px;
+}
+#canvas .ad-widget-tab-item {
+  padding-bottom: 5px;
+}
+#canvas .ec-tab-head {
+  background: url("//bs.baidu.com/adtest/53e717d56c6cced7ee9481a3a9076af5.png") repeat-x scroll center bottom transparent;
+  height: 24px;
+  list-style: none outside none;
+  margin: 15px 0 10px;
+  padding: 0;
+}
+#canvas .ec-tab-head li a,
+#canvas .ec-tab-head li a:visited {
+  background-color: #831728;
+  border: 1px solid #831728;
+  color: #fff;
+}
+#canvas .ec-tab-head .ec-current-tab a,
+#canvas .ec-tab-head .ec-current-tab a:visited {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  color: #831728;
+}
+#canvas .ec-tab-body .ec-brand-pic {
+  height: 100px;
+  width: 180px;
+  padding-left: 8px;
+  word-wrap: break-word;
+}
+#canvas .ec-tab-body .ec-brand-pic a img {
+  height: 100px;
+  width: 180px;
+}
+#canvas .ec-tab-body .ec-td-border {
+  border-right: 0px solid #E1E1E1;
+  width: 310px;
+}
+#canvas .ec-tab-body .ec-td-border .ec-brand-intro {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 8px;
+  height: 92px;
+  overflow: hidden;
+}
+#canvas .ec-tab-body .ec-td-border .ec-brand-intro a {
+  line-height: 18px;
+}
+#canvas .ad-widget-button-group {
+  padding: 0px;
+  height: 26px;
+  line-height: 26px;
+  background: #EFC1C8;
+  font-size: 12px;
+}
+#canvas .ad-widget-button-group table tr {
+  height: 26px;
+}
+#canvas .ad-widget-button-group td {
+  border: 1px solid #fff;
+  padding: 0px;
+  height: 24px;
+  line-height: 24px;
+}
+#canvas .ad-widget-button-group td a {
+  color: #0000cc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */

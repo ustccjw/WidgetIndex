@@ -1,0 +1,154 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2012 Baidu.com, Inc. All Rights Reserved
+ * $Id: qq_weibo.less 9848 2012-06-20 10:14:29Z fanxueliang $ 
+ * 
+ **************************************************************************/
+/**
+ * src/ad/widget/qq_weibo.less ~ 2012/06/07 22:10:40
+ * @author fanxueliang(fanxueliang@baidu.com)
+ * @version $Revision: 9848 $ 
+ * @description 
+ *  
+ **/
+.ad-widget-qq-weibo {
+  font: 13px arial, sans-serif;
+  line-height: 18px;
+}
+.ad-widget-qq-weibo fieldset {
+  margin-left: 0px;
+  overflow: hidden;
+  padding: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: solid 1px #e1e1e1;
+}
+.ad-widget-qq-weibo legend {
+  background: url("//bs.baidu.com/adtest/4d21785c780e3e618ad788bfae2adff1.png") no-repeat scroll left center transparent;
+  text-align: left;
+  margin-left: 0px;
+  *margin-left: -5px;
+  padding-left: 18px;
+  padding-right: 8px;
+  color: #000;
+}
+.ad-widget-qq-weibo .ec-weibo-head {
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-qq-weibo .ec-weibo-head .ec-seprate {
+  padding-right: 10px;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.ad-widget-qq-weibo .ec-logo {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 2px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+.ad-widget-qq-weibo .ec-logo img {
+  border: 0px;
+}
+.ad-widget-qq-weibo .ec-name {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 2px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #0000cc;
+  display: inline-block;
+}
+.ad-widget-qq-weibo .ec-verify {
+  float: left;
+  height: 22px;
+  width: 17px;
+  margin-left: 3px;
+  line-height: 22px;
+  display: inline-block;
+}
+.ad-widget-qq-weibo .ec-follow {
+  float: right;
+  height: 22px;
+  line-height: 22px;
+  width: 66px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+.ad-widget-qq-weibo .ec-follow img {
+  border: none;
+}
+.ad-widget-qq-weibo .ec-text {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 10px;
+  color: #666;
+  display: inline-block;
+}
+.ad-widget-qq-weibo .ec-context {
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-qq-weibo .ec-weibo-logo {
+  float: left;
+  text-decoration: none;
+  display: block;
+}
+.ad-widget-qq-weibo .ec-weibo-logo img {
+  border: 0px;
+  display: block;
+}
+.ad-widget-qq-weibo .ec-foot {
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  overflow: hidden;
+  zoom: 1;
+}
+.ad-widget-qq-weibo .ec-datetime {
+  float: left;
+  color: #666;
+}
+.ad-widget-qq-weibo .ec-from {
+  float: left;
+}
+.ad-widget-qq-weibo .ec-from a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+.ad-widget-qq-weibo .ec-rightbtn {
+  float: right;
+}
+.ad-widget-qq-weibo .ec-rightbtn div,
+.ad-widget-qq-weibo .ec-rightbtn a {
+  float: left;
+  width: 35px;
+  text-align: center;
+  color: #008000;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.ad-widget-qq-weibo .ec-seprate {
+  border-right: 1px solid #ccc;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100: */
