@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ -f $1 ]; then
-    path=$1
-else
-    path=$(dirname "$0")/$1
-fi
-
-php $(dirname "$0")/base64Encoder.php $path

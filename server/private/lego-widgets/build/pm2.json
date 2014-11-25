@@ -1,7 +1,0 @@
-[
-  {
-    "name"      : "fserver-dev",
-    "script"    : "tools/server.js",
-    "args"      : "['--port=8967', '--root=.']"
-  }
-]

@@ -1,4 +1,0 @@
-如果需要同步post_video_url.js话，按照如下步骤：
-1. 下载http://static.tieba.baidu.com/tb/nocache/post_video_url.js
-2. 执行ant patch，给tangram完善patch
-3. 如果post_video_url.js中的API有更新，需要同步完善tangram.externs.js
